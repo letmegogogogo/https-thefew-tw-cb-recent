@@ -1,0 +1,3074 @@
+{
+  "generatedAt": "2026-06-21T06:21:40+08:00",
+  "total": 383,
+  "withHistory": 380,
+  "complete": 380,
+  "withoutHistory": 3,
+  "totalPoints": 89291,
+  "coverage": {
+    "11011": {
+      "name": "台泥一永",
+      "points": 327,
+      "first": "2024-12-10",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "12561": {
+      "name": "鮮活果汁一KY",
+      "points": 78,
+      "first": "2025-10-08",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "13166": {
+      "name": "上曜六",
+      "points": 196,
+      "first": "2024-12-27",
+      "last": "2026-06-02",
+      "complete": true,
+      "error": null
+    },
+    "13382": {
+      "name": "廣華二KY",
+      "points": 366,
+      "first": "2023-12-04",
+      "last": "2026-06-17",
+      "complete": true,
+      "error": null
+    },
+    "140201": {
+      "name": "遠東新E1永",
+      "points": 255,
+      "first": "2024-08-08",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "140202": {
+      "name": "遠東新E2永",
+      "points": 276,
+      "first": "2024-08-08",
+      "last": "2026-06-17",
+      "complete": true,
+      "error": null
+    },
+    "14363": {
+      "name": "華友聯三",
+      "points": 381,
+      "first": "2024-08-27",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "14364": {
+      "name": "華友聯四",
+      "points": 260,
+      "first": "2025-03-18",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "14381": {
+      "name": "三地開發一",
+      "points": 36,
+      "first": "2024-12-19",
+      "last": "2025-11-26",
+      "complete": true,
+      "error": null
+    },
+    "14664": {
+      "name": "聚隆四",
+      "points": 116,
+      "first": "2025-06-20",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "14722": {
+      "name": "三洋實業二",
+      "points": 130,
+      "first": "2025-05-29",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "14723": {
+      "name": "三洋實業三",
+      "points": 146,
+      "first": "2025-06-17",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "14743": {
+      "name": "弘裕三",
+      "points": 131,
+      "first": "2025-03-31",
+      "last": "2026-06-17",
+      "complete": true,
+      "error": null
+    },
+    "15142": {
+      "name": "亞力二",
+      "points": 338,
+      "first": "2025-01-13",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "15261": {
+      "name": "日馳一",
+      "points": 446,
+      "first": "2023-09-19",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "15364": {
+      "name": "和大四",
+      "points": 382,
+      "first": "2024-08-12",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "15601": {
+      "name": "中砂一",
+      "points": 474,
+      "first": "2024-06-24",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "15864": {
+      "name": "和勤四",
+      "points": 284,
+      "first": "2023-08-30",
+      "last": "2026-05-04",
+      "complete": true,
+      "error": null
+    },
+    "15865": {
+      "name": "和勤五",
+      "points": 498,
+      "first": "2023-08-31",
+      "last": "2026-06-17",
+      "complete": true,
+      "error": null
+    },
+    "15894": {
+      "name": "永冠四KY",
+      "points": 598,
+      "first": "2023-02-20",
+      "last": "2026-04-02",
+      "complete": true,
+      "error": null
+    },
+    "15952": {
+      "name": "川寶二",
+      "points": 133,
+      "first": "2024-09-02",
+      "last": "2026-06-16",
+      "complete": true,
+      "error": null
+    },
+    "15984": {
+      "name": "岱宇四",
+      "points": 148,
+      "first": "2025-03-03",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "16095": {
+      "name": "大亞五",
+      "points": 356,
+      "first": "2024-09-30",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "17172": {
+      "name": "長興二",
+      "points": 9,
+      "first": "2026-06-08",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "17813": {
+      "name": "合世三",
+      "points": 151,
+      "first": "2024-09-24",
+      "last": "2026-06-10",
+      "complete": true,
+      "error": null
+    },
+    "17863": {
+      "name": "科妍三",
+      "points": 41,
+      "first": "2025-08-01",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "19094": {
+      "name": "榮成四",
+      "points": 389,
+      "first": "2021-12-20",
+      "last": "2026-06-15",
+      "complete": true,
+      "error": null
+    },
+    "20344": {
+      "name": "允強四",
+      "points": 193,
+      "first": "2024-10-04",
+      "last": "2026-06-16",
+      "complete": true,
+      "error": null
+    },
+    "20662": {
+      "name": "世德二",
+      "points": 267,
+      "first": "2023-07-31",
+      "last": "2026-06-04",
+      "complete": true,
+      "error": null
+    },
+    "21043": {
+      "name": "國際中橡三",
+      "points": 380,
+      "first": "2023-10-13",
+      "last": "2026-04-20",
+      "complete": true,
+      "error": null
+    },
+    "22013": {
+      "name": "裕隆三",
+      "points": 626,
+      "first": "2023-05-25",
+      "last": "2026-05-22",
+      "complete": true,
+      "error": null
+    },
+    "22283": {
+      "name": "劍麟三",
+      "points": 339,
+      "first": "2024-08-29",
+      "last": "2026-06-17",
+      "complete": true,
+      "error": null
+    },
+    "22331": {
+      "name": "宇隆一",
+      "points": 92,
+      "first": "2026-01-23",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "22363": {
+      "name": "百達三KY",
+      "points": 66,
+      "first": "2026-02-10",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "22471": {
+      "name": "汎德永業一",
+      "points": 227,
+      "first": "2025-06-26",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "22472": {
+      "name": "汎德永業二",
+      "points": 203,
+      "first": "2025-06-30",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "23291": {
+      "name": "華泰一",
+      "points": 64,
+      "first": "2026-03-18",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "23372": {
+      "name": "旺宏二",
+      "points": 253,
+      "first": "2025-03-24",
+      "last": "2026-05-28",
+      "complete": true,
+      "error": null
+    },
+    "23383": {
+      "name": "光罩三",
+      "points": 862,
+      "first": "2021-08-03",
+      "last": "2026-06-16",
+      "complete": true,
+      "error": null
+    },
+    "23511": {
+      "name": "順德一",
+      "points": 233,
+      "first": "2025-06-17",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "23683": {
+      "name": "金像電三",
+      "points": 136,
+      "first": "2025-11-24",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "23742": {
+      "name": "佳能二",
+      "points": 75,
+      "first": "2026-02-02",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "24023": {
+      "name": "毅嘉三",
+      "points": 139,
+      "first": "2025-11-19",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "24271": {
+      "name": "三商電一",
+      "points": 496,
+      "first": "2023-12-13",
+      "last": "2026-06-17",
+      "complete": true,
+      "error": null
+    },
+    "24361": {
+      "name": "偉詮電一",
+      "points": 567,
+      "first": "2023-09-11",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "24394": {
+      "name": "美律四",
+      "points": 450,
+      "first": "2024-07-10",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "24395": {
+      "name": "美律五",
+      "points": 358,
+      "first": "2024-07-22",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "24423": {
+      "name": "新美齊三",
+      "points": 308,
+      "first": "2024-11-29",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "24424": {
+      "name": "新美齊四",
+      "points": 241,
+      "first": "2024-12-25",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "24552": {
+      "name": "全新二",
+      "points": 86,
+      "first": "2026-01-23",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "24553": {
+      "name": "全新三",
+      "points": 76,
+      "first": "2026-01-27",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "24624": {
+      "name": "良得電四",
+      "points": 312,
+      "first": "2023-08-11",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "24642": {
+      "name": "盟立二",
+      "points": 379,
+      "first": "2024-09-16",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "24672": {
+      "name": "志聖二",
+      "points": 97,
+      "first": "2026-01-09",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "24673": {
+      "name": "志聖三",
+      "points": 91,
+      "first": "2026-01-22",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "24762": {
+      "name": "鉅祥二",
+      "points": 507,
+      "first": "2024-01-26",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "24866": {
+      "name": "一詮六",
+      "points": 243,
+      "first": "2024-07-01",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "25283": {
+      "name": "皇普三",
+      "points": 161,
+      "first": "2024-12-31",
+      "last": "2026-06-15",
+      "complete": true,
+      "error": null
+    },
+    "25284": {
+      "name": "皇普四",
+      "points": 220,
+      "first": "2025-01-17",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "25303": {
+      "name": "華建三",
+      "points": 159,
+      "first": "2025-06-23",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "25304": {
+      "name": "華建四",
+      "points": 200,
+      "first": "2025-06-30",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "25483": {
+      "name": "華固三",
+      "points": 365,
+      "first": "2024-10-04",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "25484": {
+      "name": "華固四",
+      "points": 273,
+      "first": "2024-10-18",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "26417": {
+      "name": "正德七",
+      "points": 214,
+      "first": "2024-07-26",
+      "last": "2026-06-15",
+      "complete": true,
+      "error": null
+    },
+    "26418": {
+      "name": "正德八",
+      "points": 163,
+      "first": "2025-08-06",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "27271": {
+      "name": "王品一",
+      "points": 703,
+      "first": "2023-03-29",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "27323": {
+      "name": "六角三",
+      "points": 152,
+      "first": "2024-01-26",
+      "last": "2026-01-12",
+      "complete": true,
+      "error": null
+    },
+    "27324": {
+      "name": "六角四",
+      "points": 52,
+      "first": "2025-12-08",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "27431": {
+      "name": "山富一",
+      "points": 130,
+      "first": "2025-08-28",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "27451": {
+      "name": "五福一",
+      "points": 78,
+      "first": "2026-01-05",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "27531": {
+      "name": "八方雲集一",
+      "points": 151,
+      "first": "2025-10-09",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "27532": {
+      "name": "八方雲集二",
+      "points": 92,
+      "first": "2025-10-20",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "27551": {
+      "name": "揚秦一",
+      "points": 162,
+      "first": "2025-01-15",
+      "last": "2026-06-04",
+      "complete": true,
+      "error": null
+    },
+    "27561": {
+      "name": "聯發國際一",
+      "points": 119,
+      "first": "2024-05-31",
+      "last": "2026-05-18",
+      "complete": true,
+      "error": null
+    },
+    "29061": {
+      "name": "高林一",
+      "points": 420,
+      "first": "2023-09-20",
+      "last": "2026-05-29",
+      "complete": true,
+      "error": null
+    },
+    "30112": {
+      "name": "今皓二",
+      "points": 56,
+      "first": "2026-03-26",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "30134": {
+      "name": "晟銘電四",
+      "points": 370,
+      "first": "2024-10-18",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "30165": {
+      "name": "嘉晶五",
+      "points": 166,
+      "first": "2024-07-26",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "30321": {
+      "name": "偉訓一",
+      "points": 93,
+      "first": "2025-11-13",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "30322": {
+      "name": "偉訓二",
+      "points": 101,
+      "first": "2025-11-25",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "30336": {
+      "name": "威健六",
+      "points": 819,
+      "first": "2022-06-01",
+      "last": "2026-06-08",
+      "complete": true,
+      "error": null
+    },
+    "30337": {
+      "name": "威健七",
+      "points": 309,
+      "first": "2024-09-11",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "30371": {
+      "name": "欣興一",
+      "points": 149,
+      "first": "2025-11-03",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "30401": {
+      "name": "遠見一",
+      "points": 118,
+      "first": "2025-07-02",
+      "last": "2026-05-25",
+      "complete": true,
+      "error": null
+    },
+    "30454": {
+      "name": "台灣大四",
+      "points": 295,
+      "first": "2025-02-24",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "30455": {
+      "name": "台灣大五",
+      "points": 283,
+      "first": "2025-02-25",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "30882": {
+      "name": "艾訊二",
+      "points": 571,
+      "first": "2023-08-28",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "30922": {
+      "name": "鴻碩二",
+      "points": 432,
+      "first": "2023-07-04",
+      "last": "2026-06-17",
+      "complete": true,
+      "error": null
+    },
+    "30954": {
+      "name": "及成四",
+      "points": 131,
+      "first": "2025-02-25",
+      "last": "2026-06-17",
+      "complete": true,
+      "error": null
+    },
+    "31222": {
+      "name": "笙泉二",
+      "points": 199,
+      "first": "2024-05-03",
+      "last": "2026-05-07",
+      "complete": true,
+      "error": null
+    },
+    "31282": {
+      "name": "昇銳二",
+      "points": 302,
+      "first": "2023-07-03",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "31311": {
+      "name": "弘塑一",
+      "points": 215,
+      "first": "2025-07-30",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "31312": {
+      "name": "弘塑二",
+      "points": 209,
+      "first": "2025-08-05",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "31351": {
+      "name": "凌航一",
+      "points": 95,
+      "first": "2025-12-05",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "31352": {
+      "name": "凌航二",
+      "points": 31,
+      "first": "2026-05-07",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "31413": {
+      "name": "晶宏三",
+      "points": 222,
+      "first": "2024-05-21",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "31672": {
+      "name": "大量二",
+      "points": 168,
+      "first": "2025-08-06",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "31882": {
+      "name": "鑫龍騰二",
+      "points": 220,
+      "first": "2025-06-20",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "32071": {
+      "name": "耀勝一",
+      "points": 171,
+      "first": "2024-03-25",
+      "last": "2026-03-17",
+      "complete": true,
+      "error": null
+    },
+    "32571": {
+      "name": "虹冠電一",
+      "points": 218,
+      "first": "2024-11-01",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "32608": {
+      "name": "威剛八",
+      "points": 105,
+      "first": "2026-01-08",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "32723": {
+      "name": "東碩三",
+      "points": 371,
+      "first": "2024-03-07",
+      "last": "2026-06-17",
+      "complete": true,
+      "error": null
+    },
+    "32843": {
+      "name": "太普高三",
+      "points": 68,
+      "first": "2025-09-15",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "32943": {
+      "name": "英濟三",
+      "points": 1,
+      "first": "2026-06-18",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "33035": {
+      "name": "岱稜五",
+      "points": 126,
+      "first": "2024-11-26",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "33055": {
+      "name": "昇貿五",
+      "points": 395,
+      "first": "2023-12-25",
+      "last": "2026-06-11",
+      "complete": true,
+      "error": null
+    },
+    "33121": {
+      "name": "弘憶股一",
+      "points": 219,
+      "first": "2024-06-25",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "33133": {
+      "name": "斐成三",
+      "points": 255,
+      "first": "2024-11-29",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "33225": {
+      "name": "建舜電五",
+      "points": 89,
+      "first": "2024-09-02",
+      "last": "2026-05-21",
+      "complete": true,
+      "error": null
+    },
+    "33245": {
+      "name": "雙鴻五",
+      "points": 423,
+      "first": "2024-07-31",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "33246": {
+      "name": "雙鴻六",
+      "points": 76,
+      "first": "2026-03-02",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "33247": {
+      "name": "雙鴻七",
+      "points": 66,
+      "first": "2026-03-16",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "33466": {
+      "name": "麗清六",
+      "points": 150,
+      "first": "2024-11-27",
+      "last": "2026-06-17",
+      "complete": true,
+      "error": null
+    },
+    "33571": {
+      "name": "臺慶科一",
+      "points": 572,
+      "first": "2023-10-31",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "33621": {
+      "name": "先進光一",
+      "points": 411,
+      "first": "2024-07-16",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "33763": {
+      "name": "新日興三",
+      "points": 427,
+      "first": "2024-08-23",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "33881": {
+      "name": "崇越電一",
+      "points": 719,
+      "first": "2022-11-09",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "33902": {
+      "name": "旭軟二",
+      "points": 176,
+      "first": "2025-02-21",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "34163": {
+      "name": "融程電三",
+      "points": 431,
+      "first": "2024-01-25",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "34793": {
+      "name": "安勤三",
+      "points": 456,
+      "first": "2024-01-22",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "34834": {
+      "name": "力致四",
+      "points": 230,
+      "first": "2024-05-22",
+      "last": "2026-06-15",
+      "complete": true,
+      "error": null
+    },
+    "34843": {
+      "name": "崧騰三",
+      "points": 482,
+      "first": "2023-04-24",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "34913": {
+      "name": "昇達科三",
+      "points": 8,
+      "first": "2026-06-09",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "35161": {
+      "name": "亞帝歐一",
+      "points": 187,
+      "first": "2024-10-18",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "35181": {
+      "name": "柏騰一",
+      "points": 167,
+      "first": "2024-08-15",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "35221": {
+      "name": "御嵿一",
+      "points": 264,
+      "first": "2023-12-18",
+      "last": "2026-06-05",
+      "complete": true,
+      "error": null
+    },
+    "35265": {
+      "name": "凡甲五",
+      "points": 622,
+      "first": "2022-02-14",
+      "last": "2026-06-03",
+      "complete": true,
+      "error": null
+    },
+    "35266": {
+      "name": "凡甲六",
+      "points": 496,
+      "first": "2024-01-29",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "35267": {
+      "name": "凡甲七",
+      "points": 218,
+      "first": "2025-07-24",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "35431": {
+      "name": "州巧一",
+      "points": 91,
+      "first": "2025-12-26",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "35482": {
+      "name": "兆利二",
+      "points": 476,
+      "first": "2024-01-08",
+      "last": "2026-06-17",
+      "complete": true,
+      "error": null
+    },
+    "35483": {
+      "name": "兆利三",
+      "points": 281,
+      "first": "2025-02-25",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "35513": {
+      "name": "世禾三",
+      "points": 149,
+      "first": "2025-10-28",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "35642": {
+      "name": "其陽二",
+      "points": 134,
+      "first": "2024-09-03",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "35831": {
+      "name": "辛耘一",
+      "points": 349,
+      "first": "2024-06-07",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "35832": {
+      "name": "辛耘二",
+      "points": 459,
+      "first": "2024-06-19",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "35871": {
+      "name": "閎康一",
+      "points": 595,
+      "first": "2023-06-20",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "35872": {
+      "name": "閎康二",
+      "points": 86,
+      "first": "2026-02-04",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "35914": {
+      "name": "艾笛森四",
+      "points": 95,
+      "first": "2024-11-22",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "36053": {
+      "name": "宏致三",
+      "points": 289,
+      "first": "2024-08-06",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "36173": {
+      "name": "碩天三",
+      "points": 240,
+      "first": "2025-06-16",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "36804": {
+      "name": "家登四",
+      "points": 573,
+      "first": "2023-10-18",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "36805": {
+      "name": "家登五",
+      "points": 30,
+      "first": "2026-05-08",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "36806": {
+      "name": "家登六",
+      "points": 21,
+      "first": "2026-05-21",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "36841": {
+      "name": "榮昌一",
+      "points": 92,
+      "first": "2025-10-28",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "36872": {
+      "name": "歐買尬二",
+      "points": 110,
+      "first": "2025-10-02",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "36873": {
+      "name": "歐買尬三",
+      "points": 63,
+      "first": "2025-10-03",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "36894": {
+      "name": "湧德四",
+      "points": 318,
+      "first": "2024-03-06",
+      "last": "2026-06-04",
+      "complete": true,
+      "error": null
+    },
+    "36913": {
+      "name": "碩禾三",
+      "points": 337,
+      "first": "2024-08-30",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "370201": {
+      "name": "大聯大E1",
+      "points": 100,
+      "first": "2026-01-14",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "37022": {
+      "name": "大聯大二",
+      "points": 371,
+      "first": "2024-11-11",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "37023": {
+      "name": "大聯大三",
+      "points": 354,
+      "first": "2024-11-21",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "37075": {
+      "name": "漢磊五",
+      "points": 155,
+      "first": "2025-08-20",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "37083": {
+      "name": "上緯投控三",
+      "points": 952,
+      "first": "2021-09-27",
+      "last": "2026-06-17",
+      "complete": true,
+      "error": null
+    },
+    "37084": {
+      "name": "上緯投控四",
+      "points": 388,
+      "first": "2021-09-28",
+      "last": "2026-04-01",
+      "complete": true,
+      "error": null
+    },
+    "37151": {
+      "name": "定穎投控一",
+      "points": 90,
+      "first": "2026-01-21",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "37152": {
+      "name": "定穎投控二",
+      "points": 56,
+      "first": "2026-03-24",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "37171": {
+      "name": "聯嘉投控一",
+      "points": 95,
+      "first": "2026-01-21",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "41135": {
+      "name": "聯上五",
+      "points": 76,
+      "first": "2025-10-27",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "41136": {
+      "name": "聯上六",
+      "points": 33,
+      "first": "2026-03-20",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "41236": {
+      "name": "晟德六",
+      "points": 577,
+      "first": "2023-04-26",
+      "last": "2026-06-12",
+      "complete": true,
+      "error": null
+    },
+    "41237": {
+      "name": "晟德七",
+      "points": 722,
+      "first": "2023-04-27",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "41238": {
+      "name": "晟德八",
+      "points": 34,
+      "first": "2026-05-04",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "41239": {
+      "name": "晟德九",
+      "points": 22,
+      "first": "2026-05-14",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "41295": {
+      "name": "聯合五",
+      "points": 226,
+      "first": "2025-05-29",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "41372": {
+      "name": "麗豐二KY",
+      "points": 207,
+      "first": "2024-08-12",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "41645": {
+      "name": "承業醫五",
+      "points": 142,
+      "first": "2025-06-20",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "41684": {
+      "name": "醣聯四",
+      "points": 159,
+      "first": "2025-09-18",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "41903": {
+      "name": "佐登三KY",
+      "points": 356,
+      "first": "2024-07-11",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "41904": {
+      "name": "佐登四KY",
+      "points": 0,
+      "first": null,
+      "last": null,
+      "complete": false,
+      "error": "尚未掛牌，暫無歷史成交資料"
+    },
+    "44163": {
+      "name": "三圓三",
+      "points": 654,
+      "first": "2022-09-30",
+      "last": "2026-06-05",
+      "complete": true,
+      "error": null
+    },
+    "44383": {
+      "name": "廣越三",
+      "points": 139,
+      "first": "2025-09-30",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "44391": {
+      "name": "冠星一KY",
+      "points": 124,
+      "first": "2025-03-03",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "44421": {
+      "name": "竣邦一KY",
+      "points": 117,
+      "first": "2025-07-28",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "45031": {
+      "name": "金雨一",
+      "points": 27,
+      "first": "2026-05-13",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "45102": {
+      "name": "高鋒二",
+      "points": 262,
+      "first": "2025-02-26",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "45421": {
+      "name": "科嶠一",
+      "points": 245,
+      "first": "2024-09-06",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "45491": {
+      "name": "桓達一",
+      "points": 199,
+      "first": "2024-11-07",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "45554": {
+      "name": "氣立四",
+      "points": 235,
+      "first": "2025-06-09",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "45581": {
+      "name": "寶緯一",
+      "points": 129,
+      "first": "2025-08-28",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "45641": {
+      "name": "元翎一",
+      "points": 282,
+      "first": "2023-09-26",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "45663": {
+      "name": "時碩工業三",
+      "points": 266,
+      "first": "2023-11-27",
+      "last": "2026-06-05",
+      "complete": true,
+      "error": null
+    },
+    "45691": {
+      "name": "六方科一KY",
+      "points": 90,
+      "first": "2025-01-15",
+      "last": "2026-06-17",
+      "complete": true,
+      "error": null
+    },
+    "45721": {
+      "name": "駐龍一",
+      "points": 315,
+      "first": "2024-07-16",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "45811": {
+      "name": "光隆精密一KY",
+      "points": 146,
+      "first": "2025-08-15",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "47148": {
+      "name": "永捷八",
+      "points": 27,
+      "first": "2026-05-04",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "47223": {
+      "name": "國精化三",
+      "points": 165,
+      "first": "2025-10-02",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "47224": {
+      "name": "國精化四",
+      "points": 18,
+      "first": "2026-05-26",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "47393": {
+      "name": "康普三",
+      "points": 706,
+      "first": "2021-10-28",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "47394": {
+      "name": "康普四",
+      "points": 119,
+      "first": "2025-12-17",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "47491": {
+      "name": "新應材一",
+      "points": 16,
+      "first": "2026-05-28",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "47602": {
+      "name": "勤凱二",
+      "points": 16,
+      "first": "2026-05-27",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "47721": {
+      "name": "台特化一",
+      "points": 133,
+      "first": "2025-11-27",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "49231": {
+      "name": "力士一",
+      "points": 67,
+      "first": "2026-01-29",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "49311": {
+      "name": "新盛力一",
+      "points": 15,
+      "first": "2026-05-29",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "49674": {
+      "name": "十銓四",
+      "points": 100,
+      "first": "2026-01-15",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "49793": {
+      "name": "華星光三",
+      "points": 229,
+      "first": "2024-12-10",
+      "last": "2026-06-11",
+      "complete": true,
+      "error": null
+    },
+    "49794": {
+      "name": "華星光四",
+      "points": 232,
+      "first": "2024-12-25",
+      "last": "2026-06-17",
+      "complete": true,
+      "error": null
+    },
+    "50097": {
+      "name": "榮剛七",
+      "points": 615,
+      "first": "2023-07-31",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "52011": {
+      "name": "凱衛一",
+      "points": 79,
+      "first": "2025-10-15",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "52091": {
+      "name": "新鼎一",
+      "points": 336,
+      "first": "2023-10-06",
+      "last": "2026-06-04",
+      "complete": true,
+      "error": null
+    },
+    "52121": {
+      "name": "凌網一",
+      "points": 132,
+      "first": "2024-10-15",
+      "last": "2026-05-22",
+      "complete": true,
+      "error": null
+    },
+    "52303": {
+      "name": "雷笛克光學三",
+      "points": 255,
+      "first": "2023-07-24",
+      "last": "2026-06-17",
+      "complete": true,
+      "error": null
+    },
+    "52441": {
+      "name": "弘凱一",
+      "points": 249,
+      "first": "2024-09-25",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "52452": {
+      "name": "智晶二",
+      "points": 289,
+      "first": "2024-12-18",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "52635": {
+      "name": "智崴五",
+      "points": 321,
+      "first": "2024-03-04",
+      "last": "2026-06-15",
+      "complete": true,
+      "error": null
+    },
+    "52844": {
+      "name": "jpp四KY",
+      "points": 31,
+      "first": "2026-05-05",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "52845": {
+      "name": "jpp五KY",
+      "points": 26,
+      "first": "2026-05-11",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "53064": {
+      "name": "桂盟四",
+      "points": 568,
+      "first": "2023-11-08",
+      "last": "2026-06-17",
+      "complete": true,
+      "error": null
+    },
+    "53095": {
+      "name": "系統電五",
+      "points": 360,
+      "first": "2023-08-08",
+      "last": "2026-06-03",
+      "complete": true,
+      "error": null
+    },
+    "53096": {
+      "name": "系統電六",
+      "points": 104,
+      "first": "2025-12-15",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "53097": {
+      "name": "系統電七",
+      "points": 99,
+      "first": "2025-12-15",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "53211": {
+      "name": "美而快一",
+      "points": 230,
+      "first": "2024-03-04",
+      "last": "2026-02-26",
+      "complete": true,
+      "error": null
+    },
+    "53887": {
+      "name": "中磊七",
+      "points": 599,
+      "first": "2023-12-06",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "54342": {
+      "name": "崇越二",
+      "points": 560,
+      "first": "2023-06-29",
+      "last": "2026-06-17",
+      "complete": true,
+      "error": null
+    },
+    "54391": {
+      "name": "高技一",
+      "points": 185,
+      "first": "2025-09-09",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "54501": {
+      "name": "南良一",
+      "points": 492,
+      "first": "2023-03-21",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "54573": {
+      "name": "宣德三",
+      "points": 402,
+      "first": "2024-03-06",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "54642": {
+      "name": "霖宏二",
+      "points": 19,
+      "first": "2026-05-25",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "55344": {
+      "name": "長虹四",
+      "points": 62,
+      "first": "2026-03-11",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "56086": {
+      "name": "四維航六",
+      "points": 474,
+      "first": "2023-06-21",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "56087": {
+      "name": "四維航七",
+      "points": 261,
+      "first": "2024-12-17",
+      "last": "2026-06-03",
+      "complete": true,
+      "error": null
+    },
+    "60152": {
+      "name": "宏遠證二",
+      "points": 276,
+      "first": "2024-01-05",
+      "last": "2026-06-15",
+      "complete": true,
+      "error": null
+    },
+    "61011": {
+      "name": "寬魚國際一",
+      "points": 61,
+      "first": "2026-01-29",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "61012": {
+      "name": "寬魚國際二",
+      "points": 74,
+      "first": "2026-01-30",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "61041": {
+      "name": "創惟一",
+      "points": 488,
+      "first": "2022-08-26",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "61112": {
+      "name": "光聚晶電二",
+      "points": 327,
+      "first": "2024-09-10",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "61171": {
+      "name": "迎廣一",
+      "points": 315,
+      "first": "2024-05-27",
+      "last": "2026-06-17",
+      "complete": true,
+      "error": null
+    },
+    "61172": {
+      "name": "迎廣二",
+      "points": 178,
+      "first": "2025-05-28",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "61255": {
+      "name": "廣運五",
+      "points": 281,
+      "first": "2024-06-21",
+      "last": "2026-06-16",
+      "complete": true,
+      "error": null
+    },
+    "61263": {
+      "name": "信音三",
+      "points": 242,
+      "first": "2023-11-30",
+      "last": "2026-06-17",
+      "complete": true,
+      "error": null
+    },
+    "61506": {
+      "name": "撼訊六",
+      "points": 357,
+      "first": "2024-03-07",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "61565": {
+      "name": "松上五",
+      "points": 97,
+      "first": "2025-06-25",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "61635": {
+      "name": "華電網五",
+      "points": 47,
+      "first": "2025-10-16",
+      "last": "2026-01-28",
+      "complete": true,
+      "error": null
+    },
+    "61777": {
+      "name": "達麗七",
+      "points": 109,
+      "first": "2025-06-25",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "61793": {
+      "name": "亞通三",
+      "points": 245,
+      "first": "2023-07-25",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "61794": {
+      "name": "亞通四",
+      "points": 244,
+      "first": "2024-08-28",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "61827": {
+      "name": "合晶七",
+      "points": 257,
+      "first": "2021-07-28",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "61828": {
+      "name": "合晶八",
+      "points": 361,
+      "first": "2024-09-27",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "61843": {
+      "name": "大豐電三",
+      "points": 433,
+      "first": "2024-03-06",
+      "last": "2026-06-11",
+      "complete": true,
+      "error": null
+    },
+    "61894": {
+      "name": "豐藝四",
+      "points": 253,
+      "first": "2023-11-10",
+      "last": "2026-06-16",
+      "complete": true,
+      "error": null
+    },
+    "61907": {
+      "name": "萬泰科七",
+      "points": 145,
+      "first": "2025-11-06",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "61973": {
+      "name": "佳必琪三",
+      "points": 390,
+      "first": "2024-10-15",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "61993": {
+      "name": "天品三",
+      "points": 73,
+      "first": "2026-01-20",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "61994": {
+      "name": "天品四",
+      "points": 90,
+      "first": "2026-01-21",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "62075": {
+      "name": "雷科五",
+      "points": 165,
+      "first": "2025-08-26",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "62076": {
+      "name": "雷科六",
+      "points": 112,
+      "first": "2025-09-05",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "62093": {
+      "name": "今國光三",
+      "points": 134,
+      "first": "2025-10-23",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "62194": {
+      "name": "富旺四",
+      "points": 88,
+      "first": "2025-10-16",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "622010": {
+      "name": "岳豐十",
+      "points": 7,
+      "first": "2026-06-10",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "62236": {
+      "name": "旺矽六",
+      "points": 4,
+      "first": "2026-06-15",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "62433": {
+      "name": "迅杰三",
+      "points": 206,
+      "first": "2024-06-25",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "62695": {
+      "name": "台郡五",
+      "points": 317,
+      "first": "2024-08-02",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "62696": {
+      "name": "台郡六",
+      "points": 196,
+      "first": "2024-08-02",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "62745": {
+      "name": "台燿五",
+      "points": 143,
+      "first": "2025-11-13",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "62756": {
+      "name": "元山六",
+      "points": 315,
+      "first": "2021-09-30",
+      "last": "2026-06-16",
+      "complete": true,
+      "error": null
+    },
+    "62822": {
+      "name": "康舒二",
+      "points": 627,
+      "first": "2023-06-13",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "62843": {
+      "name": "佳邦三",
+      "points": 460,
+      "first": "2023-12-14",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "629010": {
+      "name": "良維十",
+      "points": 181,
+      "first": "2025-05-14",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "64145": {
+      "name": "樺漢五",
+      "points": 688,
+      "first": "2023-08-16",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "64251": {
+      "name": "易發一",
+      "points": 198,
+      "first": "2024-10-16",
+      "last": "2026-05-27",
+      "complete": true,
+      "error": null
+    },
+    "64324": {
+      "name": "今展科四",
+      "points": 124,
+      "first": "2024-08-16",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "64423": {
+      "name": "光聖三",
+      "points": 122,
+      "first": "2025-12-11",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "64512": {
+      "name": "訊芯二KY",
+      "points": 279,
+      "first": "2025-02-27",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "64693": {
+      "name": "大樹三",
+      "points": 174,
+      "first": "2025-07-28",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "64724": {
+      "name": "保瑞四",
+      "points": 52,
+      "first": "2026-04-01",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "64725": {
+      "name": "保瑞五",
+      "points": 42,
+      "first": "2026-04-15",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "64773": {
+      "name": "安集三",
+      "points": 626,
+      "first": "2021-08-04",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "64774": {
+      "name": "安集四",
+      "points": 500,
+      "first": "2022-07-21",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "64775": {
+      "name": "安集五",
+      "points": 137,
+      "first": "2025-10-09",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "65096": {
+      "name": "聚和六",
+      "points": 362,
+      "first": "2024-07-03",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "65101": {
+      "name": "精測一",
+      "points": 108,
+      "first": "2026-01-05",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "65152": {
+      "name": "穎崴二",
+      "points": 85,
+      "first": "2026-02-05",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "65331": {
+      "name": "晶心科一",
+      "points": 181,
+      "first": "2025-09-08",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "65381": {
+      "name": "倉和一",
+      "points": 181,
+      "first": "2025-06-26",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "65461": {
+      "name": "正基一",
+      "points": 191,
+      "first": "2024-06-05",
+      "last": "2026-06-01",
+      "complete": true,
+      "error": null
+    },
+    "65462": {
+      "name": "正基二",
+      "points": 8,
+      "first": "2026-06-09",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "65463": {
+      "name": "正基三",
+      "points": 0,
+      "first": null,
+      "last": null,
+      "complete": false,
+      "error": "尚未掛牌，暫無歷史成交資料"
+    },
+    "65472": {
+      "name": "高端疫苗二",
+      "points": 60,
+      "first": "2026-03-19",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "65521": {
+      "name": "易華電一",
+      "points": 544,
+      "first": "2021-10-25",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "65761": {
+      "name": "逸達一",
+      "points": 51,
+      "first": "2026-03-25",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "65841": {
+      "name": "南俊國際一",
+      "points": 344,
+      "first": "2024-10-29",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "65842": {
+      "name": "南俊國際二",
+      "points": 182,
+      "first": "2024-10-30",
+      "last": "2026-04-29",
+      "complete": true,
+      "error": null
+    },
+    "65851": {
+      "name": "鼎基一",
+      "points": 402,
+      "first": "2023-10-26",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "65852": {
+      "name": "鼎基二",
+      "points": 193,
+      "first": "2023-10-27",
+      "last": "2026-06-17",
+      "complete": true,
+      "error": null
+    },
+    "65914": {
+      "name": "動力四KY",
+      "points": 116,
+      "first": "2025-08-27",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "66034": {
+      "name": "富強鑫四",
+      "points": 30,
+      "first": "2026-05-04",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "66163": {
+      "name": "特昇三KY",
+      "points": 313,
+      "first": "2023-09-20",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "66241": {
+      "name": "萬年清一",
+      "points": 115,
+      "first": "2024-07-05",
+      "last": "2026-04-24",
+      "complete": true,
+      "error": null
+    },
+    "66292": {
+      "name": "泰金二KY",
+      "points": 172,
+      "first": "2024-09-13",
+      "last": "2026-06-12",
+      "complete": true,
+      "error": null
+    },
+    "66451": {
+      "name": "金萬林一創",
+      "points": 91,
+      "first": "2024-12-04",
+      "last": "2026-03-20",
+      "complete": true,
+      "error": null
+    },
+    "66642": {
+      "name": "群翊二",
+      "points": 304,
+      "first": "2024-11-19",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "66702": {
+      "name": "復盛應用二",
+      "points": 113,
+      "first": "2025-12-26",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "66721": {
+      "name": "騰輝電子一KY",
+      "points": 84,
+      "first": "2026-01-22",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "66722": {
+      "name": "騰輝電子二KY",
+      "points": 76,
+      "first": "2026-02-03",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "66801": {
+      "name": "鑫創電子一",
+      "points": 103,
+      "first": "2024-09-02",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "67062": {
+      "name": "惠特二",
+      "points": 317,
+      "first": "2024-10-25",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "67531": {
+      "name": "龍德造船一",
+      "points": 395,
+      "first": "2024-06-25",
+      "last": "2026-06-16",
+      "complete": true,
+      "error": null
+    },
+    "67681": {
+      "name": "志強一KY",
+      "points": 260,
+      "first": "2024-11-01",
+      "last": "2026-06-03",
+      "complete": true,
+      "error": null
+    },
+    "67711": {
+      "name": "平和環保一創",
+      "points": 198,
+      "first": "2025-05-08",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "67961": {
+      "name": "晉弘一",
+      "points": 216,
+      "first": "2023-08-25",
+      "last": "2026-06-15",
+      "complete": true,
+      "error": null
+    },
+    "67962": {
+      "name": "晉弘二",
+      "points": 67,
+      "first": "2025-12-22",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "68032": {
+      "name": "崑鼎二",
+      "points": 21,
+      "first": "2026-05-21",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "68061": {
+      "name": "森崴能源一",
+      "points": 534,
+      "first": "2023-11-22",
+      "last": "2026-06-16",
+      "complete": true,
+      "error": null
+    },
+    "68211": {
+      "name": "聯寶一",
+      "points": 107,
+      "first": "2025-08-15",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "68301": {
+      "name": "汎銓一",
+      "points": 314,
+      "first": "2024-08-15",
+      "last": "2026-06-17",
+      "complete": true,
+      "error": null
+    },
+    "68351": {
+      "name": "圓裕一",
+      "points": 188,
+      "first": "2024-11-01",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "68401": {
+      "name": "東研信超一",
+      "points": 212,
+      "first": "2024-05-27",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "68431": {
+      "name": "進典一",
+      "points": 93,
+      "first": "2025-08-04",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "68461": {
+      "name": "綠茵一",
+      "points": 197,
+      "first": "2025-03-13",
+      "last": "2026-06-15",
+      "complete": true,
+      "error": null
+    },
+    "68462": {
+      "name": "綠茵二",
+      "points": 157,
+      "first": "2025-03-25",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "68541": {
+      "name": "錼創科技一KY創",
+      "points": 212,
+      "first": "2025-02-27",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "68621": {
+      "name": "三集瑞一KY",
+      "points": 67,
+      "first": "2026-03-13",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "68631": {
+      "name": "永道一KY",
+      "points": 274,
+      "first": "2024-10-15",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "68701": {
+      "name": "騰雲一",
+      "points": 172,
+      "first": "2024-12-05",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "68702": {
+      "name": "騰雲二",
+      "points": 228,
+      "first": "2024-12-05",
+      "last": "2026-06-17",
+      "complete": true,
+      "error": null
+    },
+    "68731": {
+      "name": "泓德能源一",
+      "points": 316,
+      "first": "2023-09-28",
+      "last": "2025-10-08",
+      "complete": true,
+      "error": null
+    },
+    "68732": {
+      "name": "泓德能源二",
+      "points": 244,
+      "first": "2025-05-29",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "68741": {
+      "name": "倍力一",
+      "points": 89,
+      "first": "2024-11-04",
+      "last": "2026-06-15",
+      "complete": true,
+      "error": null
+    },
+    "68901": {
+      "name": "來億一KY",
+      "points": 105,
+      "first": "2025-11-28",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "68902": {
+      "name": "來億二KY",
+      "points": 80,
+      "first": "2025-12-10",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "68941": {
+      "name": "衛司特一",
+      "points": 47,
+      "first": "2026-03-09",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "69041": {
+      "name": "伯鑫一",
+      "points": 45,
+      "first": "2025-12-26",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "69131": {
+      "name": "鴻呈一",
+      "points": 60,
+      "first": "2026-03-19",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "69571": {
+      "name": "裕慶一KY",
+      "points": 121,
+      "first": "2025-10-02",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "69821": {
+      "name": "大井泵浦一",
+      "points": 128,
+      "first": "2025-07-23",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "69822": {
+      "name": "大井泵浦二",
+      "points": 147,
+      "first": "2025-08-04",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "74022": {
+      "name": "邑錡二",
+      "points": 81,
+      "first": "2025-09-03",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "75561": {
+      "name": "意德士一永",
+      "points": 91,
+      "first": "2025-08-12",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "75562": {
+      "name": "意德士二",
+      "points": 131,
+      "first": "2025-08-15",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "76101": {
+      "name": "聯友金屬一創",
+      "points": 21,
+      "first": "2026-05-21",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "77131": {
+      "name": "威力德生醫一",
+      "points": 102,
+      "first": "2025-10-20",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "80212": {
+      "name": "尖點二",
+      "points": 97,
+      "first": "2026-01-20",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "80273": {
+      "name": "鈦昇三",
+      "points": 455,
+      "first": "2022-07-13",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "80282": {
+      "name": "昇陽半導體二",
+      "points": 330,
+      "first": "2025-01-22",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "80426": {
+      "name": "金山電六",
+      "points": 84,
+      "first": "2025-12-16",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "80506": {
+      "name": "廣積六",
+      "points": 547,
+      "first": "2022-11-22",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "80746": {
+      "name": "鉅橡六",
+      "points": 26,
+      "first": "2026-05-14",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "80872": {
+      "name": "麗升能源二",
+      "points": 195,
+      "first": "2025-05-02",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "80914": {
+      "name": "翔名四",
+      "points": 348,
+      "first": "2024-08-15",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "80924": {
+      "name": "建暐四",
+      "points": 87,
+      "first": "2024-03-11",
+      "last": "2026-05-12",
+      "complete": true,
+      "error": null
+    },
+    "81042": {
+      "name": "錸寶二",
+      "points": 486,
+      "first": "2022-01-11",
+      "last": "2026-04-27",
+      "complete": true,
+      "error": null
+    },
+    "81114": {
+      "name": "立碁四",
+      "points": 32,
+      "first": "2026-04-28",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "811210": {
+      "name": "至上十",
+      "points": 439,
+      "first": "2024-05-24",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "811211": {
+      "name": "至上11",
+      "points": 0,
+      "first": null,
+      "last": null,
+      "complete": false,
+      "error": "尚未掛牌，暫無歷史成交資料"
+    },
+    "81473": {
+      "name": "正淩三",
+      "points": 231,
+      "first": "2024-10-04",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "81551": {
+      "name": "博智一",
+      "points": 341,
+      "first": "2025-01-10",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "81714": {
+      "name": "天宇四",
+      "points": 170,
+      "first": "2024-11-12",
+      "last": "2026-05-19",
+      "complete": true,
+      "error": null
+    },
+    "81715": {
+      "name": "天宇五",
+      "points": 232,
+      "first": "2024-11-14",
+      "last": "2026-06-16",
+      "complete": true,
+      "error": null
+    },
+    "82102": {
+      "name": "勤誠二",
+      "points": 93,
+      "first": "2026-01-26",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "82103": {
+      "name": "勤誠三",
+      "points": 87,
+      "first": "2026-02-03",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "82551": {
+      "name": "朋程一",
+      "points": 589,
+      "first": "2023-08-09",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "82711": {
+      "name": "宇瞻一",
+      "points": 33,
+      "first": "2026-05-05",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "82993": {
+      "name": "群聯三",
+      "points": 84,
+      "first": "2026-02-06",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "83742": {
+      "name": "羅昇二",
+      "points": 175,
+      "first": "2024-11-15",
+      "last": "2026-06-09",
+      "complete": true,
+      "error": null
+    },
+    "84041": {
+      "name": "百和興業一KY",
+      "points": 141,
+      "first": "2025-10-03",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "84113": {
+      "name": "福貞三KY",
+      "points": 178,
+      "first": "2025-08-01",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "84221": {
+      "name": "可寧衛一",
+      "points": 729,
+      "first": "2022-11-22",
+      "last": "2026-06-10",
+      "complete": true,
+      "error": null
+    },
+    "84222": {
+      "name": "可寧衛二",
+      "points": 233,
+      "first": "2025-04-07",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "84312": {
+      "name": "匯鑽科二",
+      "points": 89,
+      "first": "2026-01-05",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "84332": {
+      "name": "弘帆二",
+      "points": 97,
+      "first": "2024-05-24",
+      "last": "2026-04-17",
+      "complete": true,
+      "error": null
+    },
+    "84333": {
+      "name": "弘帆三",
+      "points": 187,
+      "first": "2024-05-27",
+      "last": "2026-05-22",
+      "complete": true,
+      "error": null
+    },
+    "84422": {
+      "name": "威宏二KY",
+      "points": 271,
+      "first": "2023-10-19",
+      "last": "2026-06-17",
+      "complete": true,
+      "error": null
+    },
+    "84624": {
+      "name": "柏文四",
+      "points": 28,
+      "first": "2026-05-08",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "84662": {
+      "name": "美吉吉二KY",
+      "points": 420,
+      "first": "2023-07-26",
+      "last": "2026-06-17",
+      "complete": true,
+      "error": null
+    },
+    "84672": {
+      "name": "波力二KY",
+      "points": 186,
+      "first": "2024-05-30",
+      "last": "2026-05-07",
+      "complete": true,
+      "error": null
+    },
+    "84673": {
+      "name": "波力三KY",
+      "points": 128,
+      "first": "2024-05-31",
+      "last": "2026-04-01",
+      "complete": true,
+      "error": null
+    },
+    "84732": {
+      "name": "山林水二",
+      "points": 505,
+      "first": "2021-09-28",
+      "last": "2026-06-17",
+      "complete": true,
+      "error": null
+    },
+    "84762": {
+      "name": "台境二",
+      "points": 23,
+      "first": "2026-04-21",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "84781": {
+      "name": "東哥遊艇一",
+      "points": 408,
+      "first": "2024-07-15",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "84881": {
+      "name": "吉源一KY",
+      "points": 228,
+      "first": "2023-12-19",
+      "last": "2026-06-17",
+      "complete": true,
+      "error": null
+    },
+    "84891": {
+      "name": "三貝德一",
+      "points": 150,
+      "first": "2024-12-09",
+      "last": "2026-05-20",
+      "complete": true,
+      "error": null
+    },
+    "89277": {
+      "name": "北基七",
+      "points": 163,
+      "first": "2024-08-16",
+      "last": "2026-05-27",
+      "complete": true,
+      "error": null
+    },
+    "89278": {
+      "name": "北基八",
+      "points": 119,
+      "first": "2024-08-22",
+      "last": "2026-06-15",
+      "complete": true,
+      "error": null
+    },
+    "89964": {
+      "name": "高力四",
+      "points": 419,
+      "first": "2023-12-06",
+      "last": "2026-06-16",
+      "complete": true,
+      "error": null
+    },
+    "98026": {
+      "name": "鈺齊六KY",
+      "points": 331,
+      "first": "2024-11-15",
+      "last": "2026-06-15",
+      "complete": true,
+      "error": null
+    },
+    "99063": {
+      "name": "欣巴巴三",
+      "points": 236,
+      "first": "2025-02-27",
+      "last": "2026-06-17",
+      "complete": true,
+      "error": null
+    },
+    "99332": {
+      "name": "中鼎二",
+      "points": 447,
+      "first": "2024-07-23",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "99353": {
+      "name": "慶豐富三",
+      "points": 186,
+      "first": "2024-10-14",
+      "last": "2026-06-09",
+      "complete": true,
+      "error": null
+    },
+    "99392": {
+      "name": "宏全二",
+      "points": 388,
+      "first": "2024-10-29",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "99412": {
+      "name": "裕融二",
+      "points": 548,
+      "first": "2023-11-20",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "99587": {
+      "name": "世紀鋼七",
+      "points": 291,
+      "first": "2024-10-28",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    },
+    "99588": {
+      "name": "世紀鋼八永",
+      "points": 313,
+      "first": "2024-11-08",
+      "last": "2026-06-18",
+      "complete": true,
+      "error": null
+    }
+  }
+}

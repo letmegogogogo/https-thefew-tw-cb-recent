@@ -1,0 +1,2 @@
+window.CB_HISTORY_DATA = window.CB_HISTORY_DATA || {};
+window.CB_HISTORY_DATA["65463"] = {"bondCode":"65463","bondName":"正基三","issueDate":"2026-06-30","updatedAt":"2026-06-21T06:21:39+08:00","complete":false,"dataKind":"actual-market-ohlcv","interval":"1d","timezone":"Asia/Taipei","source":"TPEx 櫃買中心｜轉（交）換公司債每日交易行情","sourceUrl":"https://www.tpex.org.tw/zh-tw/bond/info/statistics-cb/day.html","previousClose":null,"points":[],"error":"尚未掛牌，暫無歷史成交資料","fetchError":null};

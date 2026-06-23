@@ -1,0 +1,844 @@
+{
+  "updatedAt": "2026-06-23T19:20:03.834886+08:00",
+  "definition": "每週以股票收盤價本週漲幅取前 30 名；同一週快照覆寫且只計一次；連續 30 天未再入榜則累積次數歸零。",
+  "currentWeek": "2026-06-22",
+  "weeklySnapshots": {
+    "2026-06-22": {
+      "updatedAt": "2026-06-23T19:20:03.834886+08:00",
+      "top30": [
+        {
+          "stockCode": "3257",
+          "stockName": "虹冠電子工業股份有限公司",
+          "weeklyChangePct": 20.94926902032452,
+          "fineIndustryTags": [
+            "功率元件"
+          ],
+          "groupTags": [
+            "功率元件"
+          ],
+          "rank": 1
+        },
+        {
+          "stockCode": "5464",
+          "stockName": "霖宏科技股份有限公司",
+          "weeklyChangePct": 20.89552532369028,
+          "fineIndustryTags": [
+            "PCB印刷電路板"
+          ],
+          "groupTags": [
+            "PCB"
+          ],
+          "rank": 2
+        },
+        {
+          "stockCode": "3707",
+          "stockName": "漢磊科技股份有限公司",
+          "weeklyChangePct": 20.793273661440104,
+          "fineIndustryTags": [
+            "化合物半導體",
+            "功率元件晶圓"
+          ],
+          "groupTags": [
+            "功率半導體"
+          ],
+          "rank": 3
+        },
+        {
+          "stockCode": "3016",
+          "stockName": "嘉晶電子股份有限公司",
+          "weeklyChangePct": 20.553359683794458,
+          "fineIndustryTags": [
+            "半導體"
+          ],
+          "groupTags": [
+            "半導體"
+          ],
+          "rank": 4
+        },
+        {
+          "stockCode": "6538",
+          "stockName": "倉和股份有限公司",
+          "weeklyChangePct": 20.5240174672489,
+          "fineIndustryTags": [
+            "電子零組件"
+          ],
+          "groupTags": [
+            "電子零組件"
+          ],
+          "rank": 5
+        },
+        {
+          "stockCode": "5321",
+          "stockName": "美而快國際股份有限公司",
+          "weeklyChangePct": 19.302614459440793,
+          "fineIndustryTags": [
+            "社群電商",
+            "服飾電商平台"
+          ],
+          "groupTags": [
+            "電商平台"
+          ],
+          "rank": 6
+        },
+        {
+          "stockCode": "6243",
+          "stockName": "迅杰科技股份有限公司",
+          "weeklyChangePct": 18.911169586130505,
+          "fineIndustryTags": [
+            "微控制器",
+            "消費性IC設計"
+          ],
+          "groupTags": [
+            "IC設計",
+            "MCU"
+          ],
+          "rank": 7
+        },
+        {
+          "stockCode": "3522",
+          "stockName": "御嵿國際股份有限公司",
+          "weeklyChangePct": 16.101691422192665,
+          "fineIndustryTags": [
+            "餐飲宴會",
+            "觀光餐旅"
+          ],
+          "groupTags": [
+            "餐飲宴會"
+          ],
+          "rank": 8
+        },
+        {
+          "stockCode": "3591",
+          "stockName": "艾笛森光電股份有限公司",
+          "weeklyChangePct": 15.03130839015161,
+          "fineIndustryTags": [
+            "LED封裝",
+            "照明模組"
+          ],
+          "groupTags": [
+            "LED封裝",
+            "照明"
+          ],
+          "rank": 9
+        },
+        {
+          "stockCode": "6275",
+          "stockName": "元山科技工業股份有限公司",
+          "weeklyChangePct": 12.050741765072548,
+          "fineIndustryTags": [
+            "散熱風扇",
+            "車用風扇"
+          ],
+          "groupTags": [
+            "散熱風扇"
+          ],
+          "rank": 10
+        },
+        {
+          "stockCode": "3284",
+          "stockName": "太普高精密影像股份有限公司",
+          "weeklyChangePct": 11.894267686540783,
+          "fineIndustryTags": [
+            "多角化",
+            "其他"
+          ],
+          "groupTags": [
+            "其他"
+          ],
+          "rank": 11
+        },
+        {
+          "stockCode": "7402",
+          "stockName": "邑錡股份有限公司",
+          "weeklyChangePct": 11.834963850668977,
+          "fineIndustryTags": [
+            "影像攝錄",
+            "執法記錄設備"
+          ],
+          "groupTags": [
+            "影像攝錄設備"
+          ],
+          "rank": 12
+        },
+        {
+          "stockCode": "2066",
+          "stockName": "世德工業股份有限公司",
+          "weeklyChangePct": 9.737254016870512,
+          "fineIndustryTags": [
+            "機械",
+            "自動化"
+          ],
+          "groupTags": [
+            "機械"
+          ],
+          "rank": 13
+        },
+        {
+          "stockCode": "4923",
+          "stockName": "力士科技股份有限公司",
+          "weeklyChangePct": 9.70536984415078,
+          "fineIndustryTags": [
+            "功率元件"
+          ],
+          "groupTags": [
+            "功率元件"
+          ],
+          "rank": 14
+        },
+        {
+          "stockCode": "6101",
+          "stockName": "寬魚國際股份有限公司",
+          "weeklyChangePct": 9.243693476767167,
+          "fineIndustryTags": [
+            "演藝經紀",
+            "文創娛樂"
+          ],
+          "groupTags": [
+            "文創娛樂"
+          ],
+          "rank": 15
+        },
+        {
+          "stockCode": "6806",
+          "stockName": "森崴能源股份有限公司",
+          "weeklyChangePct": 8.333332720116825,
+          "fineIndustryTags": [
+            "再生能源EPC",
+            "綠電服務"
+          ],
+          "groupTags": [
+            "再生能源EPC"
+          ],
+          "rank": 16
+        },
+        {
+          "stockCode": "5245",
+          "stockName": "智晶光電股份有限公司",
+          "weeklyChangePct": 7.061062672707874,
+          "fineIndustryTags": [
+            "OLED",
+            "PMOLED顯示模組"
+          ],
+          "groupTags": [
+            "OLED顯示模組"
+          ],
+          "rank": 17
+        },
+        {
+          "stockCode": "1595",
+          "stockName": "川寶科技股份有限公司",
+          "weeklyChangePct": 6.493506493506485,
+          "fineIndustryTags": [
+            "半導體"
+          ],
+          "groupTags": [
+            "半導體"
+          ],
+          "rank": 18
+        },
+        {
+          "stockCode": "5450",
+          "stockName": "南良國際股份有限公司",
+          "weeklyChangePct": 6.315786796703682,
+          "fineIndustryTags": [
+            "機能材料",
+            "防護紡織材料"
+          ],
+          "groupTags": [
+            "機能材料"
+          ],
+          "rank": 19
+        },
+        {
+          "stockCode": "6451",
+          "stockName": "訊芯科技控股股份有限公司",
+          "weeklyChangePct": 6.238859180035661,
+          "fineIndustryTags": [
+            "半導體"
+          ],
+          "groupTags": [
+            "半導體"
+          ],
+          "rank": 20
+        },
+        {
+          "stockCode": "6282",
+          "stockName": "康舒科技股份有限公司",
+          "weeklyChangePct": 5.851982125943311,
+          "fineIndustryTags": [
+            "電源供應器",
+            "能源系統"
+          ],
+          "groupTags": [
+            "電源供應器"
+          ],
+          "rank": 21
+        },
+        {
+          "stockCode": "8476",
+          "stockName": "台境企業股份有限公司",
+          "weeklyChangePct": 5.747126436781613,
+          "fineIndustryTags": [
+            "綠能環保"
+          ],
+          "groupTags": [
+            "綠能環保"
+          ],
+          "rank": 22
+        },
+        {
+          "stockCode": "2436",
+          "stockName": "偉詮電子股份有限公司",
+          "weeklyChangePct": 5.585828867694964,
+          "fineIndustryTags": [
+            "電源管理IC",
+            "USB PD控制IC"
+          ],
+          "groupTags": [
+            "IC設計",
+            "電源控制"
+          ],
+          "rank": 23
+        },
+        {
+          "stockCode": "3518",
+          "stockName": "柏騰科技股份有限公司",
+          "weeklyChangePct": 5.4673693693269465,
+          "fineIndustryTags": [
+            "功能性鍍膜",
+            "表面處理"
+          ],
+          "groupTags": [
+            "功能性鍍膜"
+          ],
+          "rank": 24
+        },
+        {
+          "stockCode": "6269",
+          "stockName": "台郡科技股份有限公司",
+          "weeklyChangePct": 5.276387761492463,
+          "fineIndustryTags": [
+            "軟性印刷電路板FPC"
+          ],
+          "groupTags": [
+            "FPC軟板"
+          ],
+          "rank": 25
+        },
+        {
+          "stockCode": "6645",
+          "stockName": "金萬林企業股份有限公司",
+          "weeklyChangePct": 5.211721284556403,
+          "fineIndustryTags": [
+            "基因檢測",
+            "精準醫療服務"
+          ],
+          "groupTags": [
+            "檢測服務"
+          ],
+          "rank": 26
+        },
+        {
+          "stockCode": "6156",
+          "stockName": "松上電子股份有限公司",
+          "weeklyChangePct": 5.133470145451202,
+          "fineIndustryTags": [
+            "光電膜材",
+            "電子材料加工"
+          ],
+          "groupTags": [
+            "光電",
+            "電子材料"
+          ],
+          "rank": 27
+        },
+        {
+          "stockCode": "3390",
+          "stockName": "旭軟電子科技股份有限公司",
+          "weeklyChangePct": 5.087721975226156,
+          "fineIndustryTags": [
+            "軟性印刷電路板FPC"
+          ],
+          "groupTags": [
+            "FPC軟板"
+          ],
+          "rank": 28
+        },
+        {
+          "stockCode": "6585",
+          "stockName": "鼎基先進材料股份有限公司",
+          "weeklyChangePct": 4.710144927536231,
+          "fineIndustryTags": [
+            "TPU薄膜",
+            "高分子材料"
+          ],
+          "groupTags": [
+            "高分子材料"
+          ],
+          "rank": 29
+        },
+        {
+          "stockCode": "1514",
+          "stockName": "亞力電機股份有限公司",
+          "weeklyChangePct": 4.526748971193406,
+          "fineIndustryTags": [
+            "重電",
+            "電力設備"
+          ],
+          "groupTags": [
+            "重電",
+            "電力"
+          ],
+          "rank": 30
+        }
+      ]
+    }
+  },
+  "ranking": [
+    {
+      "stockCode": "3257",
+      "stockName": "虹冠電子工業股份有限公司",
+      "count": 1,
+      "lastEnteredWeek": "2026-06-22",
+      "latestWeeklyChangePct": 20.94926902032452,
+      "fineIndustryTags": [
+        "功率元件"
+      ],
+      "groupTags": [
+        "功率元件"
+      ],
+      "rank": 1
+    },
+    {
+      "stockCode": "5464",
+      "stockName": "霖宏科技股份有限公司",
+      "count": 1,
+      "lastEnteredWeek": "2026-06-22",
+      "latestWeeklyChangePct": 20.89552532369028,
+      "fineIndustryTags": [
+        "PCB印刷電路板"
+      ],
+      "groupTags": [
+        "PCB"
+      ],
+      "rank": 2
+    },
+    {
+      "stockCode": "3707",
+      "stockName": "漢磊科技股份有限公司",
+      "count": 1,
+      "lastEnteredWeek": "2026-06-22",
+      "latestWeeklyChangePct": 20.793273661440104,
+      "fineIndustryTags": [
+        "化合物半導體",
+        "功率元件晶圓"
+      ],
+      "groupTags": [
+        "功率半導體"
+      ],
+      "rank": 3
+    },
+    {
+      "stockCode": "3016",
+      "stockName": "嘉晶電子股份有限公司",
+      "count": 1,
+      "lastEnteredWeek": "2026-06-22",
+      "latestWeeklyChangePct": 20.553359683794458,
+      "fineIndustryTags": [
+        "半導體"
+      ],
+      "groupTags": [
+        "半導體"
+      ],
+      "rank": 4
+    },
+    {
+      "stockCode": "6538",
+      "stockName": "倉和股份有限公司",
+      "count": 1,
+      "lastEnteredWeek": "2026-06-22",
+      "latestWeeklyChangePct": 20.5240174672489,
+      "fineIndustryTags": [
+        "電子零組件"
+      ],
+      "groupTags": [
+        "電子零組件"
+      ],
+      "rank": 5
+    },
+    {
+      "stockCode": "5321",
+      "stockName": "美而快國際股份有限公司",
+      "count": 1,
+      "lastEnteredWeek": "2026-06-22",
+      "latestWeeklyChangePct": 19.302614459440793,
+      "fineIndustryTags": [
+        "社群電商",
+        "服飾電商平台"
+      ],
+      "groupTags": [
+        "電商平台"
+      ],
+      "rank": 6
+    },
+    {
+      "stockCode": "6243",
+      "stockName": "迅杰科技股份有限公司",
+      "count": 1,
+      "lastEnteredWeek": "2026-06-22",
+      "latestWeeklyChangePct": 18.911169586130505,
+      "fineIndustryTags": [
+        "微控制器",
+        "消費性IC設計"
+      ],
+      "groupTags": [
+        "IC設計",
+        "MCU"
+      ],
+      "rank": 7
+    },
+    {
+      "stockCode": "3522",
+      "stockName": "御嵿國際股份有限公司",
+      "count": 1,
+      "lastEnteredWeek": "2026-06-22",
+      "latestWeeklyChangePct": 16.101691422192665,
+      "fineIndustryTags": [
+        "餐飲宴會",
+        "觀光餐旅"
+      ],
+      "groupTags": [
+        "餐飲宴會"
+      ],
+      "rank": 8
+    },
+    {
+      "stockCode": "3591",
+      "stockName": "艾笛森光電股份有限公司",
+      "count": 1,
+      "lastEnteredWeek": "2026-06-22",
+      "latestWeeklyChangePct": 15.03130839015161,
+      "fineIndustryTags": [
+        "LED封裝",
+        "照明模組"
+      ],
+      "groupTags": [
+        "LED封裝",
+        "照明"
+      ],
+      "rank": 9
+    },
+    {
+      "stockCode": "6275",
+      "stockName": "元山科技工業股份有限公司",
+      "count": 1,
+      "lastEnteredWeek": "2026-06-22",
+      "latestWeeklyChangePct": 12.050741765072548,
+      "fineIndustryTags": [
+        "散熱風扇",
+        "車用風扇"
+      ],
+      "groupTags": [
+        "散熱風扇"
+      ],
+      "rank": 10
+    },
+    {
+      "stockCode": "3284",
+      "stockName": "太普高精密影像股份有限公司",
+      "count": 1,
+      "lastEnteredWeek": "2026-06-22",
+      "latestWeeklyChangePct": 11.894267686540783,
+      "fineIndustryTags": [
+        "多角化",
+        "其他"
+      ],
+      "groupTags": [
+        "其他"
+      ],
+      "rank": 11
+    },
+    {
+      "stockCode": "7402",
+      "stockName": "邑錡股份有限公司",
+      "count": 1,
+      "lastEnteredWeek": "2026-06-22",
+      "latestWeeklyChangePct": 11.834963850668977,
+      "fineIndustryTags": [
+        "影像攝錄",
+        "執法記錄設備"
+      ],
+      "groupTags": [
+        "影像攝錄設備"
+      ],
+      "rank": 12
+    },
+    {
+      "stockCode": "2066",
+      "stockName": "世德工業股份有限公司",
+      "count": 1,
+      "lastEnteredWeek": "2026-06-22",
+      "latestWeeklyChangePct": 9.737254016870512,
+      "fineIndustryTags": [
+        "機械",
+        "自動化"
+      ],
+      "groupTags": [
+        "機械"
+      ],
+      "rank": 13
+    },
+    {
+      "stockCode": "4923",
+      "stockName": "力士科技股份有限公司",
+      "count": 1,
+      "lastEnteredWeek": "2026-06-22",
+      "latestWeeklyChangePct": 9.70536984415078,
+      "fineIndustryTags": [
+        "功率元件"
+      ],
+      "groupTags": [
+        "功率元件"
+      ],
+      "rank": 14
+    },
+    {
+      "stockCode": "6101",
+      "stockName": "寬魚國際股份有限公司",
+      "count": 1,
+      "lastEnteredWeek": "2026-06-22",
+      "latestWeeklyChangePct": 9.243693476767167,
+      "fineIndustryTags": [
+        "演藝經紀",
+        "文創娛樂"
+      ],
+      "groupTags": [
+        "文創娛樂"
+      ],
+      "rank": 15
+    },
+    {
+      "stockCode": "6806",
+      "stockName": "森崴能源股份有限公司",
+      "count": 1,
+      "lastEnteredWeek": "2026-06-22",
+      "latestWeeklyChangePct": 8.333332720116825,
+      "fineIndustryTags": [
+        "再生能源EPC",
+        "綠電服務"
+      ],
+      "groupTags": [
+        "再生能源EPC"
+      ],
+      "rank": 16
+    },
+    {
+      "stockCode": "5245",
+      "stockName": "智晶光電股份有限公司",
+      "count": 1,
+      "lastEnteredWeek": "2026-06-22",
+      "latestWeeklyChangePct": 7.061062672707874,
+      "fineIndustryTags": [
+        "OLED",
+        "PMOLED顯示模組"
+      ],
+      "groupTags": [
+        "OLED顯示模組"
+      ],
+      "rank": 17
+    },
+    {
+      "stockCode": "1595",
+      "stockName": "川寶科技股份有限公司",
+      "count": 1,
+      "lastEnteredWeek": "2026-06-22",
+      "latestWeeklyChangePct": 6.493506493506485,
+      "fineIndustryTags": [
+        "半導體"
+      ],
+      "groupTags": [
+        "半導體"
+      ],
+      "rank": 18
+    },
+    {
+      "stockCode": "5450",
+      "stockName": "南良國際股份有限公司",
+      "count": 1,
+      "lastEnteredWeek": "2026-06-22",
+      "latestWeeklyChangePct": 6.315786796703682,
+      "fineIndustryTags": [
+        "機能材料",
+        "防護紡織材料"
+      ],
+      "groupTags": [
+        "機能材料"
+      ],
+      "rank": 19
+    },
+    {
+      "stockCode": "6451",
+      "stockName": "訊芯科技控股股份有限公司",
+      "count": 1,
+      "lastEnteredWeek": "2026-06-22",
+      "latestWeeklyChangePct": 6.238859180035661,
+      "fineIndustryTags": [
+        "半導體"
+      ],
+      "groupTags": [
+        "半導體"
+      ],
+      "rank": 20
+    },
+    {
+      "stockCode": "6282",
+      "stockName": "康舒科技股份有限公司",
+      "count": 1,
+      "lastEnteredWeek": "2026-06-22",
+      "latestWeeklyChangePct": 5.851982125943311,
+      "fineIndustryTags": [
+        "電源供應器",
+        "能源系統"
+      ],
+      "groupTags": [
+        "電源供應器"
+      ],
+      "rank": 21
+    },
+    {
+      "stockCode": "8476",
+      "stockName": "台境企業股份有限公司",
+      "count": 1,
+      "lastEnteredWeek": "2026-06-22",
+      "latestWeeklyChangePct": 5.747126436781613,
+      "fineIndustryTags": [
+        "綠能環保"
+      ],
+      "groupTags": [
+        "綠能環保"
+      ],
+      "rank": 22
+    },
+    {
+      "stockCode": "2436",
+      "stockName": "偉詮電子股份有限公司",
+      "count": 1,
+      "lastEnteredWeek": "2026-06-22",
+      "latestWeeklyChangePct": 5.585828867694964,
+      "fineIndustryTags": [
+        "電源管理IC",
+        "USB PD控制IC"
+      ],
+      "groupTags": [
+        "IC設計",
+        "電源控制"
+      ],
+      "rank": 23
+    },
+    {
+      "stockCode": "3518",
+      "stockName": "柏騰科技股份有限公司",
+      "count": 1,
+      "lastEnteredWeek": "2026-06-22",
+      "latestWeeklyChangePct": 5.4673693693269465,
+      "fineIndustryTags": [
+        "功能性鍍膜",
+        "表面處理"
+      ],
+      "groupTags": [
+        "功能性鍍膜"
+      ],
+      "rank": 24
+    },
+    {
+      "stockCode": "6269",
+      "stockName": "台郡科技股份有限公司",
+      "count": 1,
+      "lastEnteredWeek": "2026-06-22",
+      "latestWeeklyChangePct": 5.276387761492463,
+      "fineIndustryTags": [
+        "軟性印刷電路板FPC"
+      ],
+      "groupTags": [
+        "FPC軟板"
+      ],
+      "rank": 25
+    },
+    {
+      "stockCode": "6645",
+      "stockName": "金萬林企業股份有限公司",
+      "count": 1,
+      "lastEnteredWeek": "2026-06-22",
+      "latestWeeklyChangePct": 5.211721284556403,
+      "fineIndustryTags": [
+        "基因檢測",
+        "精準醫療服務"
+      ],
+      "groupTags": [
+        "檢測服務"
+      ],
+      "rank": 26
+    },
+    {
+      "stockCode": "6156",
+      "stockName": "松上電子股份有限公司",
+      "count": 1,
+      "lastEnteredWeek": "2026-06-22",
+      "latestWeeklyChangePct": 5.133470145451202,
+      "fineIndustryTags": [
+        "光電膜材",
+        "電子材料加工"
+      ],
+      "groupTags": [
+        "光電",
+        "電子材料"
+      ],
+      "rank": 27
+    },
+    {
+      "stockCode": "3390",
+      "stockName": "旭軟電子科技股份有限公司",
+      "count": 1,
+      "lastEnteredWeek": "2026-06-22",
+      "latestWeeklyChangePct": 5.087721975226156,
+      "fineIndustryTags": [
+        "軟性印刷電路板FPC"
+      ],
+      "groupTags": [
+        "FPC軟板"
+      ],
+      "rank": 28
+    },
+    {
+      "stockCode": "6585",
+      "stockName": "鼎基先進材料股份有限公司",
+      "count": 1,
+      "lastEnteredWeek": "2026-06-22",
+      "latestWeeklyChangePct": 4.710144927536231,
+      "fineIndustryTags": [
+        "TPU薄膜",
+        "高分子材料"
+      ],
+      "groupTags": [
+        "高分子材料"
+      ],
+      "rank": 29
+    },
+    {
+      "stockCode": "1514",
+      "stockName": "亞力電機股份有限公司",
+      "count": 1,
+      "lastEnteredWeek": "2026-06-22",
+      "latestWeeklyChangePct": 4.526748971193406,
+      "fineIndustryTags": [
+        "重電",
+        "電力設備"
+      ],
+      "groupTags": [
+        "重電",
+        "電力"
+      ],
+      "rank": 30
+    }
+  ]
+}
