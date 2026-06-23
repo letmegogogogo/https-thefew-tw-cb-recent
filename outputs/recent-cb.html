@@ -1,0 +1,1398 @@
+﻿<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <title>近期新發行可轉債列表</title>
+  <meta name="description" content="官方來源整理的近期與即將發行可轉債列表，串接 TPEx、MOPS 與 TWSE 資料。" />
+  <style>
+    :root {
+      --bg: #eef3f8;
+      --panel: #ffffff;
+      --panel-2: #f7f9fc;
+      --line: #dbe4ef;
+      --line-2: #edf2f7;
+      --text: #1e2a3a;
+      --muted: #5f7088;
+      --muted-2: #8b99ad;
+      --accent: #5978a5;
+      --accent-2: #dfe8f2;
+      --accent-3: #eef4fa;
+      --shadow: 0 10px 30px rgba(29, 45, 68, 0.08);
+      --font: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", "Segoe UI", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; }
+    body {
+      font-family: var(--font);
+      color: var(--text);
+      background: #f4f6f8;
+      font-size: 16px;
+    }
+    a { color: inherit; }
+    .page {
+      width: min(1840px, calc(100% - 12px));
+      margin: 0 auto;
+      padding: 8px 0 12px;
+    }
+    .shell {
+      display: grid;
+      grid-template-columns: 205px minmax(0, 1fr);
+      gap: 14px;
+      align-items: start;
+    }
+    .sidebar, .content {
+      background: var(--panel);
+      border: 0;
+      border-radius: 14px;
+      box-shadow: 0 4px 18px rgba(29, 45, 68, 0.06);
+    }
+    .sidebar {
+      padding: 14px 12px;
+      position: sticky;
+      top: 8px;
+    }
+    .side-title {
+      font-size: 1rem;
+      color: var(--accent);
+      margin: 0 0 10px 8px;
+      font-weight: 700;
+    }
+    .menu { display: grid; gap: 6px; }
+    .menu button {
+      appearance: none;
+      width: 100%;
+      border: 1px solid transparent;
+      background: transparent;
+      color: var(--accent);
+      font: inherit;
+      font-size: 1rem;
+      text-align: left;
+      padding: 12px 12px;
+      border-radius: 10px;
+      white-space: nowrap;
+      cursor: pointer;
+      transition: background 140ms ease, border-color 140ms ease;
+    }
+    .menu button[aria-pressed="true"] {
+      background: var(--accent-2);
+      color: #30496d;
+      border-color: #bfd0e3;
+    }
+    .content {
+      padding: 14px 12px 12px;
+      min-width: 0;
+    }
+    .header { margin-bottom: 8px; }
+    .title {
+      font-size: 1.02rem;
+      font-weight: 700;
+      color: #395b85;
+      margin: 0 0 6px;
+      letter-spacing: 0.01em;
+    }
+    .title::before {
+      content: "";
+      display: inline-block;
+      width: 4px;
+      height: 1em;
+      margin-right: 8px;
+      border-radius: 999px;
+      vertical-align: -2px;
+      background: linear-gradient(180deg, #4f76a8, #8eaccd);
+    }
+    .desc {
+      margin: 0;
+      color: #5e6f87;
+      font-size: 0.84rem;
+      line-height: 1.25;
+    }
+    .toolbar {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+      margin-bottom: 6px;
+      color: var(--muted);
+      font-size: 0.78rem;
+    }
+    .legend {
+      display: flex;
+      gap: 8px;
+      flex-wrap: nowrap;
+      line-height: 1.15;
+    }
+    #meta {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      text-align: right;
+    }
+    .search-panel {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 10px 0 12px;
+      padding: 10px;
+      border: 0;
+      border-radius: 12px;
+      background: #f6f8fb;
+    }
+    .search-panel[hidden] {
+      display: none;
+    }
+    .search-box {
+      position: relative;
+      flex: 1 1 360px;
+    }
+    .search-box::before {
+      content: "⌕";
+      position: absolute;
+      left: 11px;
+      top: 50%;
+      transform: translateY(-52%);
+      color: #6f86a3;
+      font-size: 1.15rem;
+      pointer-events: none;
+    }
+    .search-input {
+      width: 100%;
+      height: 44px;
+      padding: 0 14px 0 38px;
+      border: 1px solid #c8d7e8;
+      border-radius: 10px;
+      outline: none;
+      color: #29415f;
+      background: #fff;
+      font: inherit;
+      font-size: 1rem;
+      transition: border-color 140ms ease, box-shadow 140ms ease;
+    }
+    .search-input:focus {
+      border-color: #6f91ba;
+      box-shadow: 0 0 0 3px rgba(89, 120, 165, 0.12);
+    }
+    .filter-select, .utility-filter summary, .filter-check {
+      height: 42px;
+      border: 1px solid #c8d7e8;
+      border-radius: 10px;
+      background: #fff;
+      color: #516b8c;
+      font: inherit;
+      font-size: 0.95rem;
+    }
+    .filter-select { padding: 0 34px 0 12px; cursor: pointer; }
+    .filter-check { display: inline-flex; align-items: center; gap: 6px; padding: 0 12px; white-space: nowrap; }
+    .filter-check input { margin: 0; accent-color: #5378a6; }
+    .utility-filter { position: relative; }
+    .utility-filter summary { display: flex; align-items: center; padding: 0 12px; cursor: pointer; list-style: none; white-space: nowrap; }
+    .utility-filter summary::-webkit-details-marker { display: none; }
+    .utility-options {
+      position: absolute;
+      z-index: 8;
+      top: 47px;
+      right: 0;
+      width: max-content;
+      min-width: 150px;
+      padding: 8px;
+      border: 1px solid #c8d7e8;
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0 12px 30px rgba(35, 58, 88, 0.16);
+    }
+    .utility-options .filter-check { border: 0; width: 100%; }
+    .column-options { display: grid; grid-template-columns: repeat(2, minmax(155px, 1fr)); gap: 8px 12px; width: 360px; }
+    .column-options label { display: flex; align-items: center; gap: 7px; color: #405a79; font-size: 14px; white-space: nowrap; }
+    .column-options input { accent-color: #5378a6; }
+    .search-count {
+      min-width: 112px;
+      text-align: right;
+      color: #6a7d95;
+      font-size: 0.92rem;
+      white-space: nowrap;
+    }
+    .weekly-rank-panel {
+      margin: 0 0 12px;
+      padding: 0 12px 12px;
+      border: 1px solid #d9e5f1;
+      border-radius: 12px;
+      background: #fff;
+      box-shadow: 0 4px 16px rgba(48, 73, 109, 0.05);
+    }
+    .weekly-rank-panel[hidden] { display: none; }
+    .weekly-rank-head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 16px 0 11px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #e1e8f0;
+      color: #395b85;
+      font-weight: 800;
+    }
+    .weekly-rank-title h2 {
+      margin: 0;
+      color: #253d5b;
+      font-size: 15px;
+      font-weight: 800;
+    }
+    .weekly-rank-title p {
+      margin: 4px 0 0;
+      color: #718197;
+      font-size: 12px;
+      font-weight: 500;
+    }
+    .weekly-rank-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    .weekly-rank-note { color: #718197; font-size: 12px; font-weight: 500; }
+    .weekly-rank-toggle {
+      border: 1px solid #c8d7e8;
+      border-radius: 999px;
+      padding: 5px 10px;
+      background: #fff;
+      color: #315f97;
+      font: inherit;
+      font-size: 12px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .weekly-rank-toggle[hidden] { display: none; }
+    .weekly-rank-list {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(150px, 1fr));
+      gap: 10px;
+    }
+    .weekly-rank-item {
+      position: relative;
+      display: block;
+      min-height: 150px;
+      padding: 14px;
+      border: 1px solid #e1e8f0;
+      border-radius: 10px;
+      background: #fff;
+      color: #29415f;
+      font-size: 13px;
+    }
+    .weekly-rank-item:hover { border-color: #bfd0e3; background: #fbfdff; }
+    .weekly-rank-no {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      min-width: 0;
+      color: #6e86a3;
+      font-weight: 800;
+      font-size: 11px;
+    }
+    .weekly-rank-no.rank-top { color: #185fa5; }
+    .weekly-rank-code {
+      margin: 18px 0 2px;
+      color: #8a98aa;
+      font-size: 11px;
+      font-weight: 700;
+    }
+    .weekly-rank-name {
+      min-height: 34px;
+      color: #23384f;
+      font-size: 13px;
+      font-weight: 800;
+      line-height: 1.35;
+    }
+    .weekly-rank-gain {
+      margin: 9px 0 8px;
+      color: #185fa5;
+      font-size: 20px;
+      font-weight: 900;
+      line-height: 1;
+    }
+    .weekly-rank-gain.high { color: #a32d2d; }
+    .weekly-rank-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-bottom: 8px;
+    }
+    .weekly-rank-tag {
+      display: inline-flex;
+      align-items: center;
+      max-width: 100%;
+      padding: 2px 7px;
+      border-radius: 5px;
+      background: #f0f4f8;
+      color: #5f7187;
+      font-size: 10px;
+      font-weight: 800;
+      line-height: 1.45;
+    }
+    .weekly-product-summary {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin: 2px 0 10px;
+    }
+    .weekly-product-summary:not(:empty)::before {
+      content: "前 30 名產品標籤 Top 10";
+      align-self: center;
+      margin-right: 2px;
+      color: #6f7f91;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .weekly-product-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      background: #fff7e8;
+      color: #8a5a13;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .weekly-product-chip strong {
+      color: #c45d15;
+      font-size: 13px;
+    }
+    .weekly-rank-count {
+      margin-top: 6px;
+      padding-top: 7px;
+      border-top: 1px solid #e1e8f0;
+      color: #8a98aa;
+      font-size: 11px;
+      font-weight: 700;
+    }
+    .legend span::before {
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 999px;
+      margin-right: 8px;
+      vertical-align: -1px;
+      background: currentColor;
+      opacity: 0.9;
+    }
+    .table-wrap {
+      border: 1px solid var(--line);
+      overflow: auto;
+      border-radius: 12px;
+      background: #fff;
+      box-shadow: 0 4px 16px rgba(48, 73, 109, 0.06), inset 0 1px 0 #fff;
+    }
+    table {
+      width: 100%;
+      min-width: 1180px;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+    thead th {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      background: #eef2f6;
+      color: #496685;
+      font-weight: 700;
+      text-align: center;
+      padding: 7px 8px;
+      border-bottom: 1px solid #dce2e8;
+      white-space: nowrap;
+      font-size: 13px;
+    }
+    .recent-table thead th {
+      padding: 10px 10px;
+      font-size: 14px;
+      line-height: 1.25;
+    }
+    tbody td {
+      border-bottom: 1px solid #edf0f3;
+      padding: 8px 9px;
+      vertical-align: middle;
+      color: #304058;
+      white-space: nowrap;
+      font-size: 15px;
+      text-align: center;
+      transition: background-color 140ms ease, color 140ms ease;
+    }
+    .recent-table tbody td {
+      padding: 14px 12px;
+      font-size: 16px;
+      line-height: 1.4;
+    }
+    .recent-table tbody tr:not(.chart-row):nth-child(odd) { background: #ffffff; }
+    .recent-table tbody tr:not(.chart-row):nth-child(even) { background: #f8fbff; }
+    tbody tr:hover { background: #f4f8fc; }
+    .recent-table tbody tr:not(.chart-row):hover { background: #eef6ff; }
+    .issue-date-this-week {
+      background: #fff0a8;
+      color: #775400;
+      font-weight: 700;
+    }
+    .recent-table {
+      table-layout: auto;
+      min-width: 100%;
+    }
+    .recent-table [data-col="0"] { min-width: 260px; }
+    .recent-table [data-col="1"], .recent-table [data-col="2"], .recent-table [data-col="3"] { min-width: 108px; }
+    .recent-table [data-col="4"], .recent-table [data-col="5"] { min-width: 100px; width: 1%; max-width: 112px; }
+    .recent-table [data-col="6"] { min-width: 170px; }
+    .recent-table [data-col="7"], .recent-table [data-col="8"] { min-width: 118px; }
+    .recent-table [data-col="9"], .recent-table [data-col="10"], .recent-table [data-col="11"],
+    .recent-table [data-col="12"], .recent-table [data-col="13"], .recent-table [data-col="14"] { min-width: 92px; }
+    .recent-table .subline {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .primary-table { table-layout: auto; min-width: 1160px; }
+    .primary-table th, .primary-table td { min-width: 92px; }
+    .primary-table th:nth-child(2), .primary-table td:nth-child(2) { min-width: 150px; }
+    .primary-table td { white-space: pre-line; line-height: 1.25; }
+    .code-name { display: grid; gap: 5px; min-width: 0; text-align: left; }
+    .code {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      color: #8b98a9;
+      flex: 0 0 auto;
+      min-width: 3em;
+    }
+    .name-wrap { min-width: 0; text-align: left; }
+    .name {
+      display: inline-block;
+      font-size: 16px;
+      line-height: 1.25;
+      font-weight: 700;
+      color: #18283a;
+      text-decoration: none;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 100%;
+    }
+    .name:hover { text-decoration: underline; }
+    .chart-toggle {
+      border: 0;
+      padding: 0;
+      background: transparent;
+      font: inherit;
+      cursor: pointer;
+    }
+    .name.chart-toggle { font-size: 16px; font-weight: 750; }
+    .chart-toggle:hover { color: #174f8b; text-decoration: underline; }
+    .detail-link { margin-left: 5px; color: #8ba0b9; text-decoration: none; font-size: 0.7rem; }
+    .chart-row td { padding: 0 !important; background: #edf3fa; }
+    .chart-card {
+      margin: 8px 10px 12px;
+      padding: 12px 14px 10px;
+      border: 1px solid #d4e0ec;
+      border-radius: 13px;
+      background: #fff;
+      box-shadow: 0 8px 24px rgba(44, 71, 104, 0.10);
+    }
+    .chart-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
+    .chart-title { font-weight: 700; color: #294968; }
+    .chart-meta { color: #7b8ea7; font-size: 0.72rem; }
+    .range-tabs { display: flex; gap: 4px; padding: 3px; border-radius: 999px; background: #edf2f8; }
+    .range-tabs button { border: 0; border-radius: 999px; padding: 5px 12px; background: transparent; color: #53708f; cursor: pointer; font: inherit; font-size: 0.75rem; }
+    .range-tabs button.active { background: #fff; color: #173d68; box-shadow: 0 2px 7px rgba(37, 62, 94, 0.15); font-weight: 700; }
+    .sort-button {
+      width: 100%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      color: inherit;
+      font: inherit;
+      font-weight: inherit;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+    .sort-button:hover { color: #174f8b; }
+    .sort-icon { width: 12px; color: #91a3b8; font-size: 0.68rem; }
+    th.sort-active { background: linear-gradient(180deg, #e7f1fd 0%, #dceaf8 100%); color: #173f6c; }
+    .history-chart { width: 100%; min-height: 300px; overflow: hidden; }
+    .history-chart svg { display: block; width: 100%; height: auto; min-height: 300px; }
+    .chart-empty { display: grid; place-items: center; min-height: 220px; color: #8091a6; }
+    .eps-panel { margin-top: 12px; padding-top: 14px; border-top: 1px solid #e1e9f2; }
+    .eps-head { margin-bottom: 10px; color: #294968; font-size: 0.86rem; font-weight: 800; }
+    .eps-grid { display: grid; grid-template-columns: repeat(3, minmax(190px, 1fr)); gap: 16px; }
+    .eps-card { min-height: 220px; padding: 24px 28px; border: 1px solid #d9dee5; border-radius: 15px; background: #fff; text-align: left; }
+    .eps-card.focus { padding: 23px 27px; border: 2px solid #1264c5; }
+    .eps-card.no-data .eps-value { color: #707070; font-weight: 500; }
+    .eps-card-head { display: flex; align-items: center; gap: 9px; color: #444; }
+    .eps-calendar { width: 17px; height: 17px; color: #444; flex: 0 0 auto; }
+    .eps-year { color: #444; font-size: 17px; font-weight: 800; }
+    .eps-focus-badge { margin-left: 4px; padding: 4px 10px; border-radius: 999px; background: #dceaff; color: #2767b1; font-size: 12px; font-weight: 800; }
+    .eps-value { margin-top: 16px; color: #101214; font-size: clamp(32px, 3vw, 46px); line-height: 1; font-weight: 850; font-variant-numeric: tabular-nums; }
+    .eps-divider { height: 1px; margin: 18px 0 14px; background: #dfe3e8; }
+    .eps-stats { display: grid; gap: 10px; }
+    .eps-stat { display: flex; align-items: baseline; justify-content: space-between; gap: 14px; color: #777; font-size: 14px; }
+    .eps-stat strong { color: #42464b; font-size: 15px; font-weight: 800; text-align: right; font-variant-numeric: tabular-nums; }
+    .eps-stat.missing strong { color: #888; }
+    .eps-disclaimer { margin-top: 22px; color: #858585; font-size: 12px; line-height: 1.5; }
+    .industry-cell { line-height: 1.2; }
+    .identity-industry { color: #66778a; font-size: 14px; font-weight: 700; }
+    .tag-groups { display: grid; gap: 3px; margin-top: 4px; }
+    .tag-row { display: flex; flex-wrap: wrap; align-items: center; gap: 3px; color: #718197; font-size: 11px; }
+    .tag-label { font-weight: 700; }
+    .tag-badge { padding: 2px 5px; border-radius: 999px; background: #edf3f9; color: #45627f; font-weight: 700; }
+    .tag-badge.theme { background: #fff2dc; color: #9a5b13; }
+    .product-line { margin-top: 1px; color: #8a98aa; font-size: 12px; line-height: 1.45; white-space: normal; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
+    .product-line strong { color: #6f7f91; font-weight: 700; }
+    .industry-alert { display: inline-block; margin-top: 4px; padding: 2px 5px; border-radius: 999px; font-size: 0.66rem; font-weight: 800; }
+    .industry-alert.up { color: #c92e2e; background: #fff0f0; }
+    .industry-alert.down { color: #087f48; background: #eaf8f1; }
+    .catalyst-panel { margin-top: 12px; padding: 12px 14px; border: 1px solid #dbe5ef; border-radius: 10px; background: #fbfcfe; text-align: left; }
+    .catalyst-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 8px; color: #294968; font-size: 0.84rem; font-weight: 700; }
+    .catalyst-date { color: #8797aa; font-size: 0.68rem; font-weight: 400; }
+    .catalyst-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .catalyst-title { margin-bottom: 5px; color: #5b7089; font-size: 0.72rem; font-weight: 700; }
+    .catalyst-list { margin: 0; padding-left: 18px; color: #40546d; font-size: 0.75rem; line-height: 1.55; white-space: normal; }
+    .catalyst-list a { color: #285f99; text-decoration: none; }
+    .catalyst-list a:hover { text-decoration: underline; }
+    .catalyst-empty { color: #8a99aa; font-size: 0.74rem; }
+    .subline {
+      margin-top: 3px;
+      color: var(--muted-2);
+      font-size: 0.82rem;
+      line-height: 1.3;
+      white-space: normal;
+    }
+    .num { text-align: right; font-size: 16px; font-variant-numeric: tabular-nums; }
+    .recent-table .num {
+      font-size: 16px;
+      font-weight: 700;
+    }
+    .recent-table [data-col="6"],
+    .recent-table [data-col="7"],
+    .recent-table [data-col="8"],
+    .recent-table [data-col="9"] {
+      font-size: 18px;
+      font-weight: 800;
+    }
+    th.numeric-header .sort-button { justify-content: flex-end; }
+    .pos { color: #e00019; font-weight: 850; }
+    .neg { color: #00843d; font-weight: 850; }
+    .record-high { color: #d62828; font-weight: 800; }
+    .record-label { display: inline-block; padding: 2px 6px; border-radius: 999px; color: #fff; background: #f05a32; font-weight: 800; }
+    .premium-badge, .no-trade { display: inline-block; padding: 4px 8px; border-radius: 999px; font-size: 15px; font-weight: 800; }
+    .premium-high { color: #fff; background: #d71920; }
+    .premium-mid { color: #fff; background: #008a4b; }
+    .premium-low, .no-trade { color: #5d6774; background: #e6e9ed; }
+    .stock-price-line { font-size: 18px; font-weight: 900; line-height: 1.2; }
+    .muted { color: var(--muted-2); }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 52px;
+      padding: 3px 7px;
+      border-radius: 999px;
+      font-size: 0.7rem;
+      background: #f3f6fb;
+      color: #55657b;
+      text-decoration: none;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 0.88rem;
+      line-height: 1.55;
+    }
+    .empty {
+      padding: 40px 20px;
+      text-align: center;
+      color: var(--muted);
+    }
+    @media (max-width: 980px) {
+      .shell { grid-template-columns: 1fr; }
+      .sidebar { position: static; }
+      .sidebar { padding: 12px; }
+      .menu {
+        grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+      }
+      .weekly-rank-list { grid-template-columns: repeat(2, minmax(140px, 1fr)); }
+      .weekly-rank-head { align-items: flex-start; flex-direction: column; }
+      .weekly-rank-actions { justify-content: flex-start; }
+      table { min-width: 1320px; }
+      .recent-table { min-width: 1400px; }
+    }
+    @media (max-width: 680px) {
+      .page { width: min(100% - 8px, 1600px); padding-top: 4px; }
+      .content { padding: 12px 10px 10px; }
+      .title { font-size: 1rem; }
+      .legend { gap: 6px; }
+      .toolbar { font-size: 0.76rem; }
+      .search-panel { align-items: stretch; gap: 8px; }
+      .search-box,
+      .filter-select,
+      .utility-filter,
+      .utility-filter summary,
+      .search-count {
+        width: 100%;
+      }
+      .weekly-rank-list { grid-template-columns: 1fr; }
+      .search-count { text-align: left; }
+      .utility-options {
+        left: 0;
+        right: auto;
+        width: min(360px, calc(100vw - 28px));
+      }
+      .column-options {
+        grid-template-columns: 1fr;
+        width: 100%;
+      }
+      .recent-table tbody td { padding: 12px 10px; }
+      .chart-head, .eps-head { align-items: flex-start; flex-direction: column; }
+      .eps-grid { grid-template-columns: 1fr; }
+      .catalyst-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <script>
+    const dataVersion = Date.now();
+    document.write(`<script src="recent-cb-data.js?v=${dataVersion}"><\/script>`);
+    document.write(`<script src="cb-primary-market-data.js?v=${dataVersion}"><\/script>`);
+    document.write(`<script src="eps-forecast-data.js?v=${dataVersion}"><\/script>`);
+    document.write(`<script src="company-insights-data.js?v=${dataVersion}"><\/script>`);
+    window.CB_HISTORY_DATA = window.CB_HISTORY_DATA || {};
+  </script>
+  <main class="page">
+    <div class="shell">
+      <aside class="sidebar" aria-label="可轉債資料主題">
+        <p class="side-title">可轉債資訊</p>
+        <nav class="menu" aria-label="可轉債篩選">
+          <button type="button" data-view="recent" aria-pressed="true">即將/近期發行</button>
+          <button type="button" data-view="auction" aria-pressed="false">詢圈／競拍</button>
+          <button type="button" data-view="filing" aria-pressed="false">送件中</button>
+          <button type="button" data-view="board" aria-pressed="false">董事會通過</button>
+        </nav>
+      </aside>
+
+      <section class="content" aria-labelledby="page-title">
+        <div class="header">
+          <h1 class="title" id="page-title">近期新發行可轉債列表</h1>
+          <p class="desc">所有發行三個月內、或即將發行的可轉債。</p>
+        </div>
+
+        <div class="toolbar">
+          <div class="legend">
+            <span class="muted">官方來源：TPEx / MOPS / TWSE</span>
+          </div>
+          <div id="meta" class="muted"></div>
+        </div>
+
+        <div class="search-panel" id="search-panel">
+          <div class="search-box">
+            <input class="search-input" id="search-input" type="search" autocomplete="off" placeholder="搜尋債券代碼、簡稱、公司、產業…" aria-label="搜尋可轉債" />
+          </div>
+          <select class="filter-select" id="high-filter" aria-label="創新高"><option value="">創新高</option><option value="cb">CB 收盤價創新高</option><option value="stock">股票收盤價創新高</option><option value="margin">毛利率創新高</option></select>
+          <details class="utility-filter" id="utility-filter"><summary>隱藏功能鍵</summary><div class="utility-options column-options" id="column-options"></div></details>
+          <div class="search-count" id="search-count"></div>
+        </div>
+
+        <section class="weekly-rank-panel" id="weekly-rank-panel" aria-label="本週股價漲幅前 30 名追蹤">
+          <div class="weekly-rank-head">
+            <div class="weekly-rank-title">
+              <h2>本週股價漲幅前 10 名追蹤</h2>
+              <p>前 30 名產品標籤統計，預設顯示 Top 10。</p>
+            </div>
+            <div class="weekly-rank-actions">
+              <span class="weekly-rank-note" id="weekly-rank-note"></span>
+              <button class="weekly-rank-toggle" id="weekly-rank-toggle" type="button" hidden>展開 11–30 名</button>
+            </div>
+          </div>
+          <div class="weekly-product-summary" id="weekly-product-summary"></div>
+          <div class="weekly-rank-list" id="weekly-rank-list"></div>
+        </section>
+
+        <div class="table-wrap">
+          <table id="data-table" aria-describedby="page-title">
+            <thead id="head"></thead>
+            <tbody id="rows"></tbody>
+          </table>
+        </div>
+
+        <div class="footer">
+          <div id="count">0 筆資料</div>
+          <div id="updated">更新時間：-</div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    const raw = window.RECENT_CB_DATA || { rows: [], fetchedAt: null, source: '' };
+    const primary = window.CB_PRIMARY_MARKET_DATA || { sections: [], updatedAt: null, sourceFile: '' };
+    const tableEl = document.getElementById('data-table');
+    const headEl = document.getElementById('head');
+    const rowsEl = document.getElementById('rows');
+    const countEl = document.getElementById('count');
+    const updatedEl = document.getElementById('updated');
+    const metaEl = document.getElementById('meta');
+    const titleEl = document.getElementById('page-title');
+    const descEl = document.querySelector('.desc');
+    const buttons = Array.from(document.querySelectorAll('[data-view]'));
+    const searchPanelEl = document.getElementById('search-panel');
+    const searchInputEl = document.getElementById('search-input');
+    const searchCountEl = document.getElementById('search-count');
+    const highFilterEl = document.getElementById('high-filter');
+    const utilityFilterEl = document.getElementById('utility-filter');
+    const columnOptionsEl = document.getElementById('column-options');
+    const weeklyRankPanelEl = document.getElementById('weekly-rank-panel');
+    const weeklyRankListEl = document.getElementById('weekly-rank-list');
+    const weeklyRankNoteEl = document.getElementById('weekly-rank-note');
+    const weeklyRankToggleEl = document.getElementById('weekly-rank-toggle');
+    const weeklyProductSummaryEl = document.getElementById('weekly-product-summary');
+    let currentView = 'recent';
+    let weeklyRankExpanded = false;
+
+    const toDate = (value) => {
+      if (!value) return null;
+      const text = String(value).trim();
+      const m = text.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+      if (m) return new Date(`${m[1]}-${m[2]}-${m[3]}T00:00:00+08:00`);
+      const roc = text.match(/^(\d{2,3})\/(\d{1,2})\/(\d{1,2})$/);
+      if (roc) return new Date(`${Number(roc[1]) + 1911}-${String(roc[2]).padStart(2, '0')}-${String(roc[3]).padStart(2, '0')}T00:00:00+08:00`);
+      const d = new Date(text);
+      return Number.isNaN(d.getTime()) ? null : d;
+    };
+
+    const fmtDate = (value) => {
+      const d = toDate(value);
+      if (!d) return '-';
+      return new Intl.DateTimeFormat('zh-TW', {
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit',
+        timeZone: 'Asia/Taipei'
+      }).format(d).replaceAll('/', '-');
+    };
+
+    const fmtMoney = (value) => {
+      if (value == null || Number.isNaN(value)) return '-';
+      return new Intl.NumberFormat('zh-TW', {
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 0
+      }).format(value);
+    };
+
+    const fmtHundredMillion = (value) => {
+      if (value == null || Number.isNaN(value)) return '-';
+      return `${new Intl.NumberFormat('zh-TW', { maximumFractionDigits: 2 }).format(value / 100000000)} 億`;
+    };
+
+    const fmtPrice = (value, digits = 2) => {
+      if (value == null || Number.isNaN(value)) return '-';
+      return new Intl.NumberFormat('zh-TW', {
+        minimumFractionDigits: digits,
+        maximumFractionDigits: digits
+      }).format(value);
+    };
+
+    const fmtPct = (value, digits = 1) => {
+      if (value == null || Number.isNaN(value)) return '-';
+      return `${fmtPrice(value, digits)}%`;
+    };
+
+    const statusForRow = (row) => {
+      const d = toDate(row.issueDate || row.listedDateROC);
+      if (!d) return '近期發行';
+      return d.getTime() > Date.now() ? '即將發行' : '近期發行';
+    };
+    const isDateThisWeek = (value) => {
+      const date = toDate(value);
+      if (!date) return false;
+      const now = new Date();
+      const day = now.getDay() || 7;
+      const start = new Date(now);
+      start.setHours(0, 0, 0, 0);
+      start.setDate(now.getDate() - day + 1);
+      const end = new Date(start);
+      end.setDate(start.getDate() + 7);
+      return date >= start && date < end;
+    };
+
+    const sorted = (Array.isArray(raw.rows) ? raw.rows : [])
+      .slice()
+      .sort((a, b) => (toDate(b.issueDate || b.listedDateROC)?.getTime() || 0) - (toDate(a.issueDate || a.listedDateROC)?.getTime() || 0));
+
+    const searchText = (row) => [
+      row.bondCode,
+      row.bondShortName,
+      row.issuerCode,
+      row.issuerName,
+      row.industryCategory,
+      ...(Array.isArray(row.fineIndustryTags) ? row.fineIndustryTags : []),
+      ...(Array.isArray(row.productTags) ? row.productTags : []),
+      ...(Array.isArray(row.themeTags) ? row.themeTags : []),
+      ...(Array.isArray(row.groupTags) ? row.groupTags : [])
+    ].filter(Boolean).join(' ').toLocaleLowerCase('zh-TW');
+    const priceUnits = (value) => value == null ? null : Math.round(Number(value) * 100);
+    const isCbRecordHigh = (row) => row.cbHistoryValid === true && row.cbIsRecordHigh === true;
+    const isStockRecordHigh = (row) => row.stockHistoryValid === true && row.stockIsRecordHigh === true;
+
+    const recentColumns = [
+      { label: '債券代碼／名稱／產業', value: (row) => row.bondCode || '' },
+      { label: '營收年增率', value: (row) => row.revenueYoY, numeric: true },
+      { label: '營收月增率', value: (row) => row.revenueMoM, numeric: true },
+      { label: '毛利率', value: (row) => row.grossMargin, numeric: true },
+      { label: '發行日', value: (row) => toDate(row.issueDate || row.listedDateROC)?.getTime() },
+      { label: '到期日', value: (row) => toDate(row.maturityDate)?.getTime() },
+      { label: '股票收盤價', value: (row) => row.stockClose, numeric: true },
+      { label: 'CB收盤價／漲跌幅', value: (row) => row.cbClose, numeric: true },
+      { label: '轉換價', value: (row) => row.conversionPrice, numeric: true },
+      { label: '轉換價值', value: (row) => row.conversionValue, numeric: true },
+      { label: '轉換溢價率', value: (row) => row.cbClose != null && row.conversionValue ? (row.cbClose / row.conversionValue - 1) * 100 : null, numeric: true },
+      { label: '已轉換(%)', value: (row) => row.convertedPct, numeric: true },
+      { label: '發行總額', value: (row) => row.issueAmount, numeric: true },
+      { label: '發行餘額', value: (row) => row.remainingAmount, numeric: true }
+    ];
+    let sortState = { index: 4, direction: 'desc' };
+    const sortRows = (rows) => {
+      if (sortState.index == null) return rows;
+      const column = recentColumns[sortState.index];
+      const direction = sortState.direction === 'asc' ? 1 : -1;
+      return rows.slice().sort((a, b) => {
+        const av = column.value(a), bv = column.value(b);
+        if (av == null || av === '') return bv == null || bv === '' ? 0 : 1;
+        if (bv == null || bv === '') return -1;
+        if (typeof av === 'number' && typeof bv === 'number') return (av - bv) * direction;
+        return String(av).localeCompare(String(bv), 'zh-TW', { numeric: true }) * direction;
+      });
+    };
+
+    const filteredRows = () => {
+      const query = searchInputEl.value.trim().toLocaleLowerCase('zh-TW');
+      return sortRows(sorted.filter((row) => {
+        if (query && !searchText(row).includes(query)) return false;
+        if (highFilterEl.value === 'cb' && !isCbRecordHigh(row)) return false;
+        if (highFilterEl.value === 'stock' && !isStockRecordHigh(row)) return false;
+        if (highFilterEl.value === 'margin' && !row.grossMarginIsRecordHigh) return false;
+        return true;
+      }));
+    };
+
+    const renderTagRow = (label, tags, className = '') => Array.isArray(tags) && tags.length
+      ? `<div class="tag-row"><span class="tag-label">${label}：</span>${tags.map((tag) => `<span class="tag-badge ${className}">${escapeHtml(tag)}</span>`).join('')}</div>`
+      : '';
+
+    const renderRow = (row) => {
+      const issueThisWeek = isDateThisWeek(row.issueDate || row.listedDateROC);
+      const cbRecordHigh = isCbRecordHigh(row);
+      const stockRecordHigh = isStockRecordHigh(row);
+      const companyInsight = window.CB_COMPANY_INSIGHTS?.[String(row.issuerCode || '')] || {};
+      const primaryProducts = companyInsight.primaryProductsServices || '主要產品／服務資料待更新';
+      const primaryProductsBasis = companyInsight.primaryProductsBasis || '公開資訊觀測站公司基本資料';
+      const shortName = row.bondShortName || row.issuerName || '-';
+      const name = `<button class="name chart-toggle" type="button" data-chart-code="${row.bondCode || ''}" aria-expanded="false">${shortName}</button>${row.detailUrl ? `<a class="detail-link" href="${row.detailUrl}" target="_blank" rel="noreferrer noopener" title="查看發行辦法">↗</a>` : ''}`;
+      const detailLine = [
+        row.conversionWindow ? `轉換期間：${row.conversionWindow}` : null
+      ].filter(Boolean).join('｜');
+      const stockDailyMove = row.stockChangePct == null ? '' : `<div class="subline">今日 <span class="${row.stockChangePct >= 0 ? 'pos' : 'neg'}">${row.stockChangePct >= 0 ? '+' : ''}${fmtPct(row.stockChangePct, 1)}</span></div>`;
+      const stockWeeklyMove = row.stockWeeklyChangePct == null ? '' : `<div class="subline">本週 <span class="${row.stockWeeklyChangePct >= 0 ? 'pos' : 'neg'}">${row.stockWeeklyChangePct >= 0 ? '+' : ''}${fmtPct(row.stockWeeklyChangePct, 1)}</span></div>`;
+      const weeklyTop30 = row.weeklyTop30Rank ? `<div class="subline"><span class="badge">本週#${row.weeklyTop30Rank}｜累積${row.weeklyTop30Count || 0}次</span></div>` : '';
+      const stockMove = row.stockClose == null ? '' : `<div class="subline">${row.stockMarket || ''}</div>${stockDailyMove}${stockWeeklyMove}${weeklyTop30}${stockRecordHigh ? '<div class="subline"><span class="record-label">新高</span></div>' : ''}`;
+      const industryAlert = row.industryTrendAlert
+        ? `<div class="industry-alert ${row.industryWeeklyAveragePct >= 0 ? 'up' : 'down'}">${escapeHtml(row.industryTrendAlert)} ${row.industryWeeklyAveragePct >= 0 ? '+' : ''}${fmtPct(row.industryWeeklyAveragePct, 1)}</div>`
+        : '';
+      const tagGroups = [
+        renderTagRow('細產業', row.fineIndustryTags),
+        renderTagRow('產品標籤', row.productTags),
+        renderTagRow('題材標籤', row.themeTags, 'theme'),
+        renderTagRow('族群標籤', row.groupTags)
+      ].filter(Boolean).join('');
+      const conversionValue = row.conversionValue == null ? '-' : fmtPrice(row.conversionValue, 2);
+      const premiumValue = row.cbClose != null && row.conversionValue != null
+        ? (row.cbClose / row.conversionValue - 1) * 100
+        : null;
+      const premiumClass = premiumValue > 40 ? 'premium-high' : premiumValue >= 10 ? 'premium-mid' : 'premium-low';
+      const conversionPremium = premiumValue == null ? '<span class="premium-badge premium-low">無</span>' : `<span class="premium-badge ${premiumClass}">${fmtPct(premiumValue, 1)}</span>`;
+      const cbClose = row.cbClose == null ? '<span class="no-trade">無成交</span>' : `<div class="stock-price-line">${fmtPrice(row.cbClose, 2)}</div>`;
+      const cbChangeLabel = row.cbChangeBasis === 'previous_trade' ? '距前次成交' : '漲跌幅';
+      const cbLiquidityNote = row.cbChangeBasis === 'previous_trade'
+        ? `<div class="subline muted">低流動／${row.cbPrevTradeDate ? fmtDate(row.cbPrevTradeDate) : '前次成交'}</div>`
+        : '';
+      const cbChange = row.cbChangePct == null
+        ? ''
+        : `<div class="subline">${cbChangeLabel} <span class="${row.cbChangePct >= 0 ? 'pos' : 'neg'}">${row.cbChangePct >= 0 ? '+' : ''}${fmtPct(row.cbChangePct, 1)}</span></div>${cbLiquidityNote}`;
+      const convertedPct = row.convertedPct == null ? '-' : fmtPct(row.convertedPct, 1);
+      const revenueGrowth = row.revenueYoY == null ? '-' : `<span class="${row.revenueYoY >= 0 ? 'pos' : 'neg'}">${row.revenueYoY >= 0 ? '+' : ''}${fmtPct(row.revenueYoY, 1)}</span>`;
+      const revenueMomentum = row.revenueMoM == null ? '-' : `<span class="${row.revenueMoM >= 0 ? 'pos' : 'neg'}">${row.revenueMoM >= 0 ? '+' : ''}${fmtPct(row.revenueMoM, 1)}</span>`;
+      const grossMargin = row.grossMargin == null ? '-' : `<span class="${row.grossMarginIsRecordHigh ? 'record-high' : ''}" title="${row.grossMarginIsRecordHigh ? '毛利率突破已累積季度紀錄新高' : '最新季度毛利率'}">${fmtPct(row.grossMargin, 1)}</span>${row.grossMarginIsRecordHigh ? '<div class="subline record-label">新高</div>' : ''}`;
+      return `
+        <tr>
+          <td class="identity-cell">
+            <div class="code-name">
+              <button class="code chart-toggle" type="button" data-chart-code="${row.bondCode || ''}" aria-expanded="false">${row.bondCode || '-'}</button>
+              <div class="name-wrap">
+                ${name}
+                ${detailLine ? `<div class="subline">${detailLine}</div>` : ''}
+              </div>
+              <div class="identity-industry">官方產業：${escapeHtml(row.industryCategory || '-')}</div>
+              ${tagGroups ? `<div class="tag-groups">${tagGroups}</div>` : ''}
+              ${industryAlert}
+              <div class="product-line" title="${escapeHtml(primaryProductsBasis + '：' + primaryProducts)}"><strong>主要產品／服務：</strong>${escapeHtml(primaryProducts)}</div>
+            </div>
+          </td>
+          <td class="num">${revenueGrowth}</td>
+          <td class="num">${revenueMomentum}</td>
+          <td class="num">${grossMargin}</td>
+          <td class="${issueThisWeek ? 'issue-date-this-week' : ''}">${fmtDate(row.issueDate || row.listedDateROC)}</td>
+          <td>${fmtDate(row.maturityDate)}</td>
+          <td class="num ${stockRecordHigh ? 'record-high' : ''}" title="${stockRecordHigh ? '目前股票收盤價已達上市／上櫃以來最高收盤價' : ''}">${row.stockClose == null ? '-' : `<div class="stock-price-line">${fmtPrice(row.stockClose, 2)}</div>${stockMove}`}</td>
+          <td class="num ${cbRecordHigh ? 'record-high' : ''}" title="${cbRecordHigh ? '目前 CB 價格為掛牌以來最高價' : ''}">${cbClose}${cbChange}${cbRecordHigh ? '<div class="subline record-label">新高</div>' : ''}</td>
+          <td class="num">${fmtPrice(row.conversionPrice, 2)}</td>
+          <td class="num">${conversionValue}</td>
+          <td class="num">${conversionPremium}</td>
+          <td class="num">${convertedPct}</td>
+          <td class="num">${fmtHundredMillion(row.issueAmount)}</td>
+          <td class="num">${fmtHundredMillion(row.remainingAmount)}</td>
+        </tr>
+      `;
+    };
+
+    const recentHeaders = recentColumns.map((column) => column.label);
+    let savedHiddenColumns = [];
+    try { savedHiddenColumns = JSON.parse(localStorage.getItem('cbHiddenColumnsV4') || '[]'); } catch (_) { savedHiddenColumns = []; }
+    const hiddenColumns = new Set(savedHiddenColumns.filter((index) => index >= 0 && index < recentHeaders.length));
+    const visibleColumnCount = () => recentHeaders.length - hiddenColumns.size;
+    const applyColumnVisibility = () => {
+      recentHeaders.forEach((_, index) => {
+        document.querySelectorAll(`[data-col="${index}"]`).forEach((cell) => {
+          cell.style.display = hiddenColumns.has(index) ? 'none' : '';
+        });
+      });
+      const columnMinWidths = [230, 92, 92, 92, 88, 88, 150, 125, 92, 92, 100, 92, 92, 92];
+      const visibleWidth = columnMinWidths.reduce((total, width, index) => total + (hiddenColumns.has(index) ? 0 : width), 0);
+      tableEl.style.minWidth = `${Math.max(720, visibleWidth)}px`;
+    };
+
+    recentHeaders.forEach((header, index) => {
+      columnOptionsEl.insertAdjacentHTML('beforeend', `<label><input type="checkbox" data-column="${index}" ${hiddenColumns.has(index) ? '' : 'checked'} />${header}</label>`);
+    });
+
+    const cleanHeader = (value) => String(value || '').replaceAll('\n', ' / ');
+    const escapeHtml = (value) => String(value ?? '')
+      .replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;')
+      .replaceAll('"', '&quot;').replaceAll("'", '&#039;');
+
+    const renderWeeklyTop30Ranking = () => {
+      const tracker = raw.weeklyStockTop30Tracker || {};
+      const ranking = Array.isArray(tracker.ranking) ? tracker.ranking.slice(0, 30) : [];
+      if (!ranking.length) {
+        weeklyRankPanelEl.hidden = true;
+        weeklyRankListEl.innerHTML = '';
+        weeklyProductSummaryEl.innerHTML = '';
+        weeklyRankNoteEl.textContent = '';
+        weeklyRankToggleEl.hidden = true;
+        return;
+      }
+      const productTagsByCode = new Map();
+      sorted.forEach((row) => {
+        const code = String(row.issuerCode || '');
+        if (code && !productTagsByCode.has(code)) {
+          productTagsByCode.set(code, Array.isArray(row.productTags) ? row.productTags : []);
+        }
+      });
+      const productCounts = new Map();
+      ranking.slice(0, 30).forEach((item) => {
+        const tags = [...new Set(productTagsByCode.get(String(item.stockCode || '')) || item.productTags || [])];
+        tags.forEach((tag) => productCounts.set(tag, (productCounts.get(tag) || 0) + 1));
+      });
+      const productTop10 = [...productCounts.entries()]
+        .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'zh-TW'))
+        .slice(0, 10);
+      weeklyProductSummaryEl.innerHTML = productTop10.length
+        ? productTop10.map(([tag, count]) => `<span class="weekly-product-chip">${escapeHtml(tag)} <strong>${escapeHtml(count)}</strong></span>`).join('')
+        : '';
+      weeklyRankPanelEl.hidden = false;
+      weeklyRankToggleEl.hidden = ranking.length <= 10;
+      weeklyRankToggleEl.textContent = weeklyRankExpanded ? '收合至前 10 名' : '展開 11–30 名';
+      weeklyRankNoteEl.textContent = `統計週別：${tracker.currentWeek ? fmtDate(tracker.currentWeek).replaceAll('-', '/') : '-'}｜同週只計一次｜${weeklyRankExpanded ? '顯示前 30 名' : '顯示前 10 名'}`;
+      weeklyRankListEl.innerHTML = ranking.slice(0, weeklyRankExpanded ? 30 : 10).map((item) => {
+        const change = item.latestWeeklyChangePct == null ? '-' : `${item.latestWeeklyChangePct >= 0 ? '+' : ''}${fmtPct(item.latestWeeklyChangePct, 1)}`;
+        const tags = (productTagsByCode.get(String(item.stockCode || '')) || item.productTags || []).slice(0, 3);
+        const tagLine = tags.length ? `<span class="weekly-rank-tags">${tags.map((tag) => `<span class="weekly-rank-tag">${escapeHtml(tag)}</span>`).join('')}</span>` : '';
+        return `
+          <div class="weekly-rank-item" title="${escapeHtml(tags.join('、'))}">
+            <span class="weekly-rank-no ${Number(item.rank) <= 5 ? 'rank-top' : ''}">#${escapeHtml(item.rank || '')}</span>
+            <div class="weekly-rank-code">${escapeHtml(item.stockCode)}</div>
+            <div class="weekly-rank-name">${escapeHtml(item.stockName || '')}</div>
+            <div class="weekly-rank-gain ${Number(item.latestWeeklyChangePct) >= 20 ? 'high' : ''}">${escapeHtml(change)}</div>
+            ${tagLine}
+            <div class="weekly-rank-count">本週入榜累積 ${escapeHtml(item.count || 0)} 次</div>
+          </div>
+        `;
+      }).join('');
+    };
+    const chartDataCache = new Map();
+    let openChartCode = null;
+    const chartRowByCode = (code) => sorted.find((row) => String(row.bondCode) === String(code));
+    const chartNumber = (value) => {
+      if (value == null || value === '') return null;
+      const parsed = Number(value);
+      return Number.isFinite(parsed) ? parsed : null;
+    };
+    const chartPoint = (item) => {
+      const close = chartNumber(item.close);
+      if (!item.date || close == null) return null;
+      const open = chartNumber(item.open);
+      const high = chartNumber(item.high);
+      const low = chartNumber(item.low);
+      const volume = chartNumber(item.volume);
+      return {
+        date: String(item.date), close,
+        open, high, low, volume
+      };
+    };
+    const verifyChartPayload = (payload, row) => {
+      if (payload.dataKind !== 'actual-market-ohlcv' || !payload.source) throw new Error('unverified history');
+      const issueDate = String(row.listingDate || row.issueDate || '');
+      const dates = new Set();
+      payload.points = (payload.points || [])
+        .map(chartPoint)
+        .filter((point) => {
+          if (!point || (issueDate && point.date < issueDate) || dates.has(point.date)) return false;
+          const ohlc = [point.open, point.high, point.low, point.close];
+          const completeOhlc = ohlc.every((value) => value != null);
+          if (completeOhlc && (point.high < Math.max(point.open, point.close, point.low) || point.low > Math.min(point.open, point.close, point.high))) return false;
+          dates.add(point.date);
+          return true;
+        })
+        .sort((a, b) => a.date.localeCompare(b.date));
+      if (!payload.points.length) throw new Error('empty verified history');
+      return payload;
+    };
+    const fetchTpexChartData = async (row) => {
+      const issueDate = String(row.listingDate || row.issueDate || '');
+      const start = new Date(`${issueDate}T00:00:00+08:00`);
+      const end = new Date();
+      if (!issueDate || Number.isNaN(start.getTime()) || start > end) throw new Error('not issued');
+      const months = [];
+      const cursor = new Date(start.getFullYear(), start.getMonth(), 1);
+      const lastMonth = new Date(end.getFullYear(), end.getMonth(), 1);
+      while (cursor <= lastMonth) {
+        months.push(`${cursor.getFullYear()}/${String(cursor.getMonth() + 1).padStart(2, '0')}/01`);
+        cursor.setMonth(cursor.getMonth() + 1);
+      }
+      const points = [];
+      for (let index = 0; index < months.length; index += 6) {
+        const batch = months.slice(index, index + 6);
+        const results = await Promise.all(batch.map(async (month) => {
+          const url = new URL('https://www.tpex.org.tw/www/zh-tw/bond/cbDayQry');
+          url.search = new URLSearchParams({ code: String(row.bondCode), date: month, id: '', response: 'json' });
+          const response = await fetch(url, { credentials: 'omit' });
+          if (!response.ok) throw new Error('TPEx unavailable');
+          return response.json();
+        }));
+        results.forEach((result) => {
+          const rows = result?.tables?.[0]?.data || [];
+          rows.forEach((item) => {
+            if (!Array.isArray(item) || item.length < 11 || item[1] !== '等價') return;
+            const rawDate = String(item[0] || '');
+            if (!/^\d{7}$/.test(rawDate)) return;
+            const year = Number(rawDate.slice(0, 3)) + 1911;
+            const date = `${year}-${rawDate.slice(3, 5)}-${rawDate.slice(5, 7)}`;
+            const marketNumber = (value) => chartNumber(String(value ?? '').replaceAll(',', '').replaceAll('--', ''));
+            const units = marketNumber(item[8]);
+            points.push({ date, volume: units == null ? null : units * 1000, open: marketNumber(item[4]), high: marketNumber(item[5]), low: marketNumber(item[6]), close: marketNumber(item[2]) });
+          });
+        });
+      }
+      return verifyChartPayload({
+        bondCode: row.bondCode,
+        bondName: row.bondShortName,
+        issueDate: row.issueDate,
+        updatedAt: new Date().toISOString(),
+        complete: true,
+        dataKind: 'actual-market-ohlcv',
+        interval: '1d',
+        timezone: 'Asia/Taipei',
+        source: 'TPEx 櫃買中心｜轉（交）換公司債每日交易行情（即時讀取）',
+        sourceUrl: 'https://www.tpex.org.tw/zh-tw/bond/info/statistics-cb/day-quotes.html',
+        points
+      }, row);
+    };
+    const loadLocalChartScript = (code) => new Promise((resolve, reject) => {
+      const script = document.createElement('script');
+      script.src = `cb-history/${encodeURIComponent(code)}.js?v=${encodeURIComponent(raw.fetchedAt || '')}`;
+      script.onload = () => { script.remove(); resolve(window.CB_HISTORY_DATA?.[code]); };
+      script.onerror = () => { script.remove(); reject(new Error('local history unavailable')); };
+      document.head.appendChild(script);
+    });
+    const loadChartData = async (row) => {
+      const code = String(row.bondCode);
+      if (chartDataCache.has(code)) return chartDataCache.get(code);
+      let embeddedPayload = window.CB_HISTORY_DATA?.[code];
+      if (!embeddedPayload) {
+        try { embeddedPayload = await loadLocalChartScript(code); } catch (_) { embeddedPayload = null; }
+      }
+      if (embeddedPayload) {
+        chartDataCache.set(code, verifyChartPayload(structuredClone(embeddedPayload), row));
+        return chartDataCache.get(code);
+      }
+      try {
+        const response = await fetch(`cb-history/${encodeURIComponent(code)}.json?v=${encodeURIComponent(raw.fetchedAt || '')}`);
+        if (!response.ok) throw new Error('history unavailable');
+        chartDataCache.set(code, verifyChartPayload(await response.json(), row));
+      } catch (_) {
+        try {
+          chartDataCache.set(code, await fetchTpexChartData(row));
+        } catch (_) {
+          chartDataCache.set(code, { bondCode: row.bondCode, bondName: row.bondShortName, issueDate: row.issueDate, complete: false, source: '', points: [], error: '官方行情暫時無法連線，尚未取得真實歷史行情' });
+        }
+      }
+      return chartDataCache.get(code);
+    };
+    const filterChartRange = (points, range) => {
+      if (range === 'all' || !points.length) return points;
+      const end = new Date(`${points[points.length - 1].date}T00:00:00+08:00`);
+      const months = { '1m': 1, '3m': 3, '6m': 6 }[range] || 6;
+      const start = new Date(end); start.setMonth(start.getMonth() - months);
+      return points.filter((point) => new Date(`${point.date}T00:00:00+08:00`) >= start);
+    };
+    const renderChartSvg = (points) => {
+      if (!points.length) return '<div class="chart-empty">目前沒有可顯示的歷史成交資料。</div>';
+      const width = 1200, height = 350, left = 20, right = 76, top = 26, priceBottom = 248, volumeTop = 272, bottom = 326;
+      const highs = points.map((point) => point.high ?? point.close), lows = points.map((point) => point.low ?? point.close);
+      let maxPrice = Math.max(...highs), minPrice = Math.min(...lows);
+      const padding = Math.max((maxPrice - minPrice) * 0.08, maxPrice * 0.01, 0.5);
+      maxPrice += padding; minPrice -= padding;
+      const maxVolume = Math.max(...points.map((point) => point.volume ?? 0), 1);
+      const x = (index) => points.length === 1 ? (left + width - right) / 2 : left + index * (width - left - right) / (points.length - 1);
+      const y = (price) => top + (maxPrice - price) * (priceBottom - top) / (maxPrice - minPrice || 1);
+      const grid = Array.from({ length: 5 }, (_, index) => {
+        const value = maxPrice - index * (maxPrice - minPrice) / 4;
+        const yy = y(value);
+        return `<line x1="${left}" x2="${width - right}" y1="${yy}" y2="${yy}" stroke="#e8eef5"/><text x="${width - right + 10}" y="${yy + 4}" fill="#6c809b" font-size="12">${fmtPrice(value, 2)}</text>`;
+      }).join('');
+      const candleWidth = Math.max(2, Math.min(14, (width - left - right) / Math.max(points.length, 1) * 0.58));
+      const candles = points.map((point, index) => {
+        const hasOhlc = point.open != null && point.high != null && point.low != null;
+        const xx = x(index), color = point.open == null || point.close >= point.open ? '#d34040' : '#29a05d';
+        const bodyTop = y(Math.max(point.open ?? point.close, point.close)), bodyBottom = y(Math.min(point.open ?? point.close, point.close));
+        const bodyHeight = Math.max(1.5, bodyBottom - bodyTop);
+        const volumeHeight = (point.volume ?? 0) / maxVolume * (bottom - volumeTop);
+        const priceMark = hasOhlc
+          ? `<line x1="${xx}" x2="${xx}" y1="${y(point.high)}" y2="${y(point.low)}" stroke="${color}"/><rect x="${xx - candleWidth / 2}" y="${bodyTop}" width="${candleWidth}" height="${bodyHeight}" fill="${color}"/>`
+          : `<circle cx="${xx}" cy="${y(point.close)}" r="2.5" fill="${color}"/>`;
+        return `<g>${priceMark}<rect x="${xx - candleWidth / 2}" y="${bottom - volumeHeight}" width="${candleWidth}" height="${volumeHeight}" fill="${color}" opacity=".22"/></g>`;
+      }).join('');
+      const labelIndexes = [...new Set([0, Math.floor((points.length - 1) / 4), Math.floor((points.length - 1) / 2), Math.floor((points.length - 1) * 3 / 4), points.length - 1])];
+      const labels = labelIndexes.map((index) => `<text x="${x(index)}" y="345" text-anchor="middle" fill="#627792" font-size="12">${points[index].date.slice(5).replace('-', '/')}</text>`).join('');
+      const last = points[points.length - 1];
+      return `<svg viewBox="0 0 ${width} ${height}" role="img" aria-label="CB 歷史走勢圖">${grid}<line x1="${left}" x2="${width - right}" y1="${priceBottom}" y2="${priceBottom}" stroke="#dce6f0"/>${candles}${labels}<line x1="${left}" x2="${width - right}" y1="${y(last.close)}" y2="${y(last.close)}" stroke="#d34040" stroke-dasharray="3 3"/><rect x="${width - right}" y="${y(last.close) - 11}" width="64" height="22" rx="3" fill="#d34040"/><text x="${width - right + 32}" y="${y(last.close) + 4}" text-anchor="middle" fill="#fff" font-weight="700" font-size="12">${fmtPrice(last.close, 2)}</text></svg>`;
+    };
+    const renderEpsForecast = (row) => {
+      const forecast = window.CB_EPS_FORECASTS?.[String(row?.issuerCode || '')];
+      const currentYear = new Date().getFullYear();
+      const years = [currentYear, currentYear + 1, currentYear + 2];
+      const maxAnalysts = Math.max(0, ...years.map((year) => Number(forecast?.years?.[String(year)]?.analysts) || 0));
+      const calendarIcon = '<svg class="eps-calendar" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3v3M17 3v3M4 9h16M5 5h14a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
+      const targetCandidate = forecast?.analystTargetPriceMean
+        ?? forecast?.targetMeanPrice
+        ?? forecast?.consensusTargetPrice
+        ?? forecast?.latestBrokerTargetPrice
+        ?? forecast?.brokerTargetPrice
+        ?? forecast?.targetPrice?.mean;
+      const targetValue = chartNumber(
+        typeof targetCandidate === 'object' && targetCandidate !== null
+          ? targetCandidate.mean ?? targetCandidate.price ?? targetCandidate.value
+          : targetCandidate
+      );
+      const cards = years.map((year) => {
+        const existingItem = forecast?.years?.[String(year)] || {};
+        const epsCandidate = forecast?.analystEpsByYear?.[String(year)]
+          ?? forecast?.annualEpsByYear?.[String(year)]
+          ?? existingItem.eps;
+        const item = typeof epsCandidate === 'object' && epsCandidate !== null ? epsCandidate : existingItem;
+        const value = chartNumber(
+          typeof epsCandidate === 'object' && epsCandidate !== null
+            ? epsCandidate.eps ?? epsCandidate.mean ?? epsCandidate.value
+            : epsCandidate
+        );
+        const range = chartNumber(item.low) != null && chartNumber(item.high) != null
+          ? `${fmtPrice(chartNumber(item.low), 2)}～${fmtPrice(chartNumber(item.high), 2)}` : '來源未提供區間';
+        const analysts = Number(item.analysts) || 0;
+        const isFocus = year === currentYear + 1;
+        const focusBadge = isFocus && analysts > 0 && analysts === maxAnalysts ? '<span class="eps-focus-badge">最多分析師</span>' : '';
+        const epsStats = value == null
+          ? '<div class="eps-stat missing"><span>資料來源</span><strong>公開來源未提供</strong></div>'
+          : `<div class="eps-stat"><span>分析師人數</span><strong>${analysts} 位</strong></div><div class="eps-stat"><span>預估區間</span><strong>${range}</strong></div>`;
+        const targetDisplay = targetValue == null ? '— / 公開來源未提供' : fmtPrice(targetValue, 2);
+        return `<div class="eps-card${isFocus ? ' focus' : ''}${value == null ? ' no-data' : ''}"><div class="eps-card-head">${calendarIcon}<span class="eps-year">${year} 年</span>${focusBadge}</div><div class="eps-value">${value == null ? '—' : fmtPrice(value, 2)}</div><div class="eps-divider"></div><div class="eps-stats">${epsStats}<div class="eps-stat${targetValue == null ? ' missing' : ''}"><span>法人平均目標價</span><strong>${targetDisplay}</strong></div></div></div>`;
+      }).join('');
+      return `<div class="eps-head">法人預估 EPS（分析師共識）與目標價</div><div class="eps-grid">${cards}</div><div class="eps-disclaimer">EPS 為分析師年度共識預估；目標價為目前公開來源整理之分析師 12 個月平均目標價，非各年度目標價，非財務建議。</div>`;
+    };
+    const renderCompanyCatalysts = (row) => {
+      const insight = window.CB_COMPANY_INSIGHTS?.[String(row?.issuerCode || '')] || {};
+      const reasons = Array.isArray(insight.conferenceGrowthReasons) ? insight.conferenceGrowthReasons : [];
+      const reasonItems = reasons.length
+        ? reasons.map((item) => `<li>${escapeHtml(item)}</li>`).join('')
+        : '<li class="catalyst-empty">最新法說會簡報未明確揭露可核對的未來成長原因。</li>';
+      const sourceLink = insight.conferenceSourceUrl
+        ? `<a href="${escapeHtml(insight.conferenceSourceUrl)}" target="_blank" rel="noreferrer noopener">公開資訊觀測站法說會資料${insight.conferenceFileName ? `｜${escapeHtml(insight.conferenceFileName)}` : ''}</a>`
+        : '尚未取得法說會公開資料';
+      return `<div class="catalyst-head"><span>未來營收／獲利成長原因重點</span><span class="catalyst-date">法說日期：${escapeHtml(insight.conferenceDate || '尚未確認')}｜每月更新</span></div><div><div class="catalyst-title">公司法說會公開資訊整理</div><ul class="catalyst-list">${reasonItems}</ul><div class="catalyst-title" style="margin-top:8px">資料來源：${sourceLink}</div></div>`;
+    };
+    const drawHistoryChart = (host, payload, range) => {
+      const points = filterChartRange(payload.points || [], range);
+      const first = payload.points?.[0]?.date || '-';
+      const last = payload.points?.[payload.points.length - 1]?.date || '-';
+      const previousClose = chartNumber(payload.previousClose);
+      const previousText = previousClose == null ? '' : `｜前收：${fmtPrice(previousClose, 2)}`;
+      host.querySelector('.chart-meta').textContent = payload.points?.length
+        ? `${payload.complete ? '完整' : '目前可取得'}區間：${first}～${last}｜${payload.points.length} 筆${previousText}｜來源：${payload.source || '市場行情資料'}`
+        : (payload.error || '尚未取得真實歷史行情');
+      host.querySelector('.history-chart').innerHTML = renderChartSvg(points);
+      host.querySelector('.eps-panel').innerHTML = renderEpsForecast(chartRowByCode(payload.bondCode));
+      host.querySelector('.catalyst-panel').innerHTML = renderCompanyCatalysts(chartRowByCode(payload.bondCode));
+      host.querySelectorAll('[data-range]').forEach((button) => button.classList.toggle('active', button.dataset.range === range));
+    };
+    const openHistoryChart = async (sourceButton) => {
+      const code = sourceButton.dataset.chartCode;
+      const mainRow = sourceButton.closest('tr');
+      document.querySelector('.chart-row')?.remove();
+      document.querySelectorAll('[data-chart-code]').forEach((button) => button.setAttribute('aria-expanded', 'false'));
+      if (openChartCode === code) { openChartCode = null; return; }
+      openChartCode = code;
+      document.querySelectorAll(`[data-chart-code="${code}"]`).forEach((button) => button.setAttribute('aria-expanded', 'true'));
+      const row = chartRowByCode(code);
+      const chartRow = document.createElement('tr');
+      chartRow.className = 'chart-row';
+      chartRow.innerHTML = `<td colspan="${visibleColumnCount()}"><div class="chart-card"><div class="chart-head"><div><div class="chart-title">${escapeHtml(row?.bondCode || '')} ${escapeHtml(row?.bondShortName || '')}｜發行日起歷史走勢</div><div class="chart-meta">載入中…</div></div><div class="range-tabs"><button data-range="1m">1M</button><button data-range="3m">3M</button><button data-range="6m">6M</button><button class="active" data-range="all">全部</button></div></div><div class="history-chart"><div class="chart-empty">載入歷史資料中…</div></div><div class="eps-panel"><div class="chart-empty">載入法人 EPS 共識中…</div></div><div class="catalyst-panel"><div class="chart-empty">載入成長題材中…</div></div></div></td>`;
+      mainRow.after(chartRow);
+      const payload = await loadChartData(row);
+      if (openChartCode !== code || !chartRow.isConnected) return;
+      drawHistoryChart(chartRow, payload, 'all');
+      chartRow.addEventListener('click', (event) => {
+        const rangeButton = event.target.closest('[data-range]');
+        if (rangeButton) drawHistoryChart(chartRow, payload, rangeButton.dataset.range);
+      });
+    };
+    const formatPrimaryValue = (header, value) => {
+      if (value == null || value === '') return '-';
+      const text = String(value).trim();
+      if (!/^-?\d+(?:\.\d+)?$/.test(text)) return text;
+      const number = Number(text);
+      if (header.includes('代碼')) return text;
+      if (header.includes('溢價率')) {
+        return `${new Intl.NumberFormat('zh-TW', { maximumFractionDigits: 2 }).format(number * 100)}%`;
+      }
+      if (header.includes('轉換價值')) {
+        return new Intl.NumberFormat('zh-TW', { maximumFractionDigits: 2 }).format(number * 100);
+      }
+      return new Intl.NumberFormat('zh-TW', { maximumFractionDigits: 2 }).format(number);
+    };
+
+    const renderRecent = () => {
+      tableEl.className = 'recent-table';
+      searchPanelEl.hidden = false;
+      renderWeeklyTop30Ranking();
+      titleEl.textContent = '存續可轉債列表';
+      descEl.textContent = '所有已掛牌、尚未下市且仍有發行餘額的可轉債。';
+      headEl.innerHTML = `<tr>${recentHeaders.map((h, index) => {
+        const active = sortState.index === index;
+        const icon = active ? (sortState.direction === 'desc' ? '▼' : '▲') : '↕';
+        const directionText = active ? (sortState.direction === 'desc' ? '，目前由大到小' : '，目前由小到大') : '';
+        const classes = [active ? 'sort-active' : '', recentColumns[index].numeric ? 'numeric-header' : ''].filter(Boolean).join(' ');
+        return `<th data-col="${index}" class="${classes}"><button class="sort-button" type="button" data-sort-index="${index}" aria-label="排列${escapeHtml(h)}${directionText}"><span>${escapeHtml(h)}</span><span class="sort-icon">${icon}</span></button></th>`;
+      }).join('')}</tr>`;
+      const visibleRows = filteredRows();
+      openChartCode = null;
+      rowsEl.innerHTML = visibleRows.length
+        ? visibleRows.map(renderRow).join('')
+        : `<tr><td colspan="${visibleColumnCount()}"><div class="empty">找不到符合篩選條件的可轉債。</div></td></tr>`;
+      rowsEl.querySelectorAll('tr').forEach((tr) => Array.from(tr.children).forEach((cell, index) => cell.dataset.col = index));
+      applyColumnVisibility();
+      countEl.textContent = `${visibleRows.length} / ${sorted.length} 筆資料`;
+      searchCountEl.textContent = `找到 ${visibleRows.length} 筆`;
+      updatedEl.textContent = `更新時間：${raw.fetchedAt ? fmtDate(raw.fetchedAt).replaceAll('-', '/') : '-'}`;
+      metaEl.textContent = '資料來源：官方公開資訊';
+    };
+
+    const renderPrimary = (view) => {
+      const section = primary.sections.find((item) => item.id === view);
+      if (!section) return;
+      searchPanelEl.hidden = true;
+      weeklyRankPanelEl.hidden = true;
+      tableEl.className = 'primary-table';
+      tableEl.style.minWidth = '';
+      titleEl.textContent = section.title;
+      descEl.textContent = 'CB 初級市場最新進度與發行條件。';
+      headEl.innerHTML = `<tr>${section.headers.map((h) => `<th>${escapeHtml(cleanHeader(h))}</th>`).join('')}</tr>`;
+      rowsEl.innerHTML = section.rows.length
+        ? section.rows.map((row) => `<tr>${section.headers.map((h) => `<td>${escapeHtml(formatPrimaryValue(h, row[h]))}</td>`).join('')}</tr>`).join('')
+        : `<tr><td colspan="${section.headers.length}"><div class="empty">目前沒有可顯示資料。</div></td></tr>`;
+      countEl.textContent = `${section.rows.length} 筆資料`;
+      updatedEl.textContent = `資料日期：${primary.updatedAt ? fmtDate(primary.updatedAt).replaceAll('-', '/') : '-'}`;
+      metaEl.textContent = `資料來源：${primary.sheetTitle || 'CB初級市場資訊'}`;
+    };
+
+    const showView = (view) => {
+      currentView = view;
+      buttons.forEach((button) => button.setAttribute('aria-pressed', String(button.dataset.view === view)));
+      if (view === 'recent') renderRecent();
+      else renderPrimary(view);
+      document.querySelector('.table-wrap').scrollLeft = 0;
+    };
+
+    buttons.forEach((button) => button.addEventListener('click', () => showView(button.dataset.view)));
+    weeklyRankToggleEl.addEventListener('click', () => {
+      weeklyRankExpanded = !weeklyRankExpanded;
+      renderWeeklyTop30Ranking();
+    });
+    [searchInputEl, highFilterEl].forEach((control) => control.addEventListener('input', () => {
+      if (currentView === 'recent') renderRecent();
+    }));
+    columnOptionsEl.addEventListener('change', (event) => {
+      const input = event.target.closest('[data-column]');
+      if (!input) return;
+      const index = Number(input.dataset.column);
+      if (input.checked) hiddenColumns.delete(index); else hiddenColumns.add(index);
+      localStorage.setItem('cbHiddenColumnsV4', JSON.stringify([...hiddenColumns]));
+      if (currentView === 'recent') renderRecent();
+    });
+    headEl.addEventListener('click', (event) => {
+      const button = event.target.closest('[data-sort-index]');
+      if (!button || currentView !== 'recent') return;
+      const index = Number(button.dataset.sortIndex);
+      if (sortState.index !== index) sortState = { index, direction: 'desc' };
+      else if (sortState.direction === 'desc') sortState = { index, direction: 'asc' };
+      else sortState = { index: null, direction: null };
+      renderRecent();
+    });
+    document.addEventListener('click', (event) => {
+      if (utilityFilterEl.open && !utilityFilterEl.contains(event.target)) utilityFilterEl.open = false;
+    });
+    rowsEl.addEventListener('click', (event) => {
+      const chartButton = event.target.closest('[data-chart-code]');
+      if (chartButton) openHistoryChart(chartButton);
+    });
+    showView('recent');
+    const requestedChart = new URLSearchParams(location.search).get('chart');
+    if (requestedChart) {
+      const chartButton = Array.from(document.querySelectorAll('[data-chart-code]'))
+        .find((button) => button.dataset.chartCode === requestedChart);
+      if (chartButton) openHistoryChart(chartButton);
+    }
+  </script>
+</body>
+</html>
