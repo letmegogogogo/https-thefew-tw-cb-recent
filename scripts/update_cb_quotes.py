@@ -14,6 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = ROOT / "outputs" / "recent-cb-data.js"
 HISTORY_DIR = ROOT / "outputs" / "cb-history"
 STOCK_TAGS_PATH = ROOT / "data" / "tw-stock-tags.json"
+ISSUANCE_PURPOSE_PATH = ROOT / "data" / "cb-issuance-purpose.json"
 WEEKLY_TOP30_TRACKER_PATH = ROOT / "data" / "weekly-stock-top30-tracker.json"
 PREFIX = "window.RECENT_CB_DATA = "
 TZ = timezone(timedelta(hours=8))
@@ -54,6 +55,14 @@ def load_data() -> dict:
 def load_stock_tags() -> dict:
     try:
         payload = json.loads(STOCK_TAGS_PATH.read_text(encoding="utf-8"))
+        return payload if isinstance(payload, dict) else {}
+    except (OSError, ValueError):
+        return {}
+
+
+def load_issuance_purposes() -> dict:
+    try:
+        payload = json.loads(ISSUANCE_PURPOSE_PATH.read_text(encoding="utf-8"))
         return payload if isinstance(payload, dict) else {}
     except (OSError, ValueError):
         return {}
@@ -599,6 +608,7 @@ def main() -> int:
         rows = data.get("rows", [])
         data["issuanceSyncWarning"] = f"Using cached active list: {type(error).__name__}"
     stock_tags = load_stock_tags()
+    issuance_purposes = load_issuance_purposes()
     for row in rows:
         tag = stock_tags.get(str(row.get("issuerCode") or ""), {})
         row["fineIndustryTags"] = tag.get("fineIndustries", [])
@@ -608,6 +618,11 @@ def main() -> int:
         row["tagConfidence"] = tag.get("confidence")
         row["tagSource"] = tag.get("source")
         row["tagUpdatedAt"] = tag.get("updatedAt")
+        purpose = issuance_purposes.get(str(row.get("bondCode") or "").strip(), {})
+        row["issuancePurpose"] = purpose.get("summary") or "公開資料未整理"
+        row["issuancePurposeTags"] = purpose.get("purposes") if isinstance(purpose.get("purposes"), list) else []
+        row["issuancePurposeSource"] = purpose.get("source") or "pending"
+        row["issuancePurposeUpdatedAt"] = purpose.get("updatedAt")
     data["rows"] = rows
     codes = [str(row.get("bondCode", "")).strip() for row in rows if row.get("bondCode")]
     try:

@@ -442,11 +442,12 @@
     }
     .recent-table [data-col="0"] { min-width: 260px; }
     .recent-table [data-col="1"], .recent-table [data-col="2"], .recent-table [data-col="3"] { min-width: 108px; }
-    .recent-table [data-col="4"], .recent-table [data-col="5"] { min-width: 100px; width: 1%; max-width: 112px; }
-    .recent-table [data-col="6"] { min-width: 170px; }
-    .recent-table [data-col="7"], .recent-table [data-col="8"] { min-width: 118px; }
-    .recent-table [data-col="9"], .recent-table [data-col="10"], .recent-table [data-col="11"],
-    .recent-table [data-col="12"], .recent-table [data-col="13"], .recent-table [data-col="14"] { min-width: 92px; }
+    .recent-table [data-col="4"], .recent-table [data-col="6"] { min-width: 100px; width: 1%; max-width: 112px; }
+    .recent-table [data-col="5"] { min-width: 150px; max-width: 190px; }
+    .recent-table [data-col="7"] { min-width: 170px; }
+    .recent-table [data-col="8"], .recent-table [data-col="9"] { min-width: 118px; }
+    .recent-table [data-col="10"], .recent-table [data-col="11"], .recent-table [data-col="12"],
+    .recent-table [data-col="13"], .recent-table [data-col="14"], .recent-table [data-col="15"] { min-width: 92px; }
     .recent-table .subline {
       white-space: nowrap;
       overflow: hidden;
@@ -574,13 +575,17 @@
       font-size: 16px;
       font-weight: 700;
     }
-    .recent-table [data-col="6"],
     .recent-table [data-col="7"],
     .recent-table [data-col="8"],
-    .recent-table [data-col="9"] {
+    .recent-table [data-col="9"],
+    .recent-table [data-col="10"] {
       font-size: 18px;
       font-weight: 800;
     }
+    .purpose-cell { color: #52657b; font-size: 14px; line-height: 1.45; white-space: normal; }
+    .purpose-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 4px; }
+    .purpose-tag { display: inline-flex; padding: 2px 6px; border-radius: 999px; background: #f0f6ff; color: #315f97; font-size: 12px; font-weight: 800; }
+    .purpose-summary { color: #607188; font-size: 13px; font-weight: 700; }
     th.numeric-header .sort-button { justify-content: flex-end; }
     .pos { color: #e00019; font-weight: 850; }
     .neg { color: #00843d; font-weight: 850; }
@@ -661,6 +666,68 @@
       .chart-head, .eps-head { align-items: flex-start; flex-direction: column; }
       .eps-grid { grid-template-columns: 1fr; }
       .catalyst-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 768px) {
+      body { font-size: 17px; }
+      .page { width: min(100% - 8px, 1600px); padding-top: 4px; }
+      .shell { grid-template-columns: 1fr; gap: 8px; }
+      .sidebar { position: static; padding: 8px; border-radius: 12px; }
+      .side-title { margin: 0 0 6px 4px; font-size: 0.88rem; }
+      .menu { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
+      .menu button { min-height: 44px; padding: 9px 10px; text-align: center; font-size: 0.95rem; }
+      .content { padding: 10px 8px; border-radius: 12px; }
+      .toolbar { align-items: flex-start; flex-direction: column; gap: 4px; }
+      #meta { text-align: left; white-space: normal; }
+      .search-panel { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 8px; }
+      .search-box, .search-count { grid-column: 1 / -1; width: 100%; }
+      .search-input, .filter-select, .utility-filter summary { min-height: 46px; font-size: 1rem; }
+      .utility-filter { width: 100%; }
+      .search-count { text-align: left; }
+      .weekly-rank-panel { padding: 0 10px 10px; }
+      .weekly-rank-list { grid-template-columns: 1fr; }
+      .table-wrap { overflow: visible; border: 0; background: transparent; box-shadow: none; }
+      .mobile-card-table { display: block; width: 100%; min-width: 0 !important; }
+      .mobile-card-table thead { display: none; }
+      .mobile-card-table tbody { display: grid; gap: 10px; }
+      .mobile-card-table tr,
+      .mobile-card-table td { display: block; width: 100%; }
+      .mobile-card-table td { padding: 0; border: 0; }
+      .mobile-card-row { background: transparent !important; }
+      .mobile-cb-card {
+        padding: 14px;
+        border: 1px solid #d8e4f1;
+        border-radius: 14px;
+        background: #fff;
+        box-shadow: 0 4px 14px rgba(29, 45, 68, 0.07);
+      }
+      .mobile-card-head { display: flex; justify-content: space-between; gap: 10px; align-items: flex-start; margin-bottom: 10px; }
+      .mobile-card-title { min-width: 0; }
+      .mobile-card-name {
+        appearance: none;
+        border: 0;
+        padding: 0;
+        background: transparent;
+        color: #1f3d5f;
+        font: inherit;
+        font-size: 1.08rem;
+        font-weight: 900;
+        line-height: 1.25;
+        text-align: left;
+      }
+      .mobile-card-code { margin-top: 4px; color: #7d8ca0; font-size: 0.82rem; font-weight: 800; }
+      .mobile-card-date { flex: 0 0 auto; padding: 4px 8px; border-radius: 999px; background: #eef5fd; color: #416990; font-size: 0.78rem; font-weight: 800; }
+      .mobile-card-tags { display: flex; flex-wrap: wrap; gap: 4px; margin: 8px 0 10px; }
+      .mobile-card-tag { padding: 3px 7px; border-radius: 999px; background: #edf3f9; color: #45627f; font-size: 0.76rem; font-weight: 800; }
+      .mobile-card-tag.product { background: #fff2dc; color: #9a5b13; }
+      .mobile-card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+      .mobile-card-metric { padding: 9px; border-radius: 10px; background: #f6f9fd; }
+      .mobile-card-metric.wide { grid-column: 1 / -1; }
+      .mobile-cb-card > .mobile-card-metric.wide { margin-bottom: 8px; }
+      .mobile-card-label { color: #728197; font-size: 0.75rem; font-weight: 800; }
+      .mobile-card-value { margin-top: 3px; color: #253d5b; font-size: 1.02rem; font-weight: 900; line-height: 1.25; }
+      .mobile-card-value .subline { white-space: normal; overflow: visible; text-overflow: clip; }
+      .mobile-card-footer { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; margin-top: 8px; }
+      .mobile-card-footer .mobile-card-metric { padding: 8px; }
     }
   </style>
 </head>
@@ -854,6 +921,7 @@
       { label: '營收月增率', value: (row) => row.revenueMoM, numeric: true },
       { label: '毛利率', value: (row) => row.grossMargin, numeric: true },
       { label: '發行日', value: (row) => toDate(row.issueDate || row.listedDateROC)?.getTime() },
+      { label: '發債原因', value: (row) => row.issuancePurpose || '' },
       { label: '到期日', value: (row) => toDate(row.maturityDate)?.getTime() },
       { label: '股票收盤價', value: (row) => row.stockClose, numeric: true },
       { label: 'CB收盤價／漲跌幅', value: (row) => row.cbClose, numeric: true },
@@ -892,6 +960,15 @@
     const renderTagRow = (label, tags, className = '') => Array.isArray(tags) && tags.length
       ? `<div class="tag-row"><span class="tag-label">${label}：</span>${tags.map((tag) => `<span class="tag-badge ${className}">${escapeHtml(tag)}</span>`).join('')}</div>`
       : '';
+
+    const renderIssuancePurpose = (row) => {
+      const summary = row.issuancePurpose || '公開資料未整理';
+      const tags = Array.isArray(row.issuancePurposeTags) ? row.issuancePurposeTags : [];
+      const tagHtml = tags.length
+        ? `<div class="purpose-tags">${tags.map((tag) => `<span class="purpose-tag">${escapeHtml(tag)}</span>`).join('')}</div>`
+        : '';
+      return `${tagHtml}<div class="purpose-summary">${escapeHtml(summary)}</div>`;
+    };
 
     const renderRow = (row) => {
       const issueThisWeek = isDateThisWeek(row.issueDate || row.listedDateROC);
@@ -936,6 +1013,7 @@
       const revenueGrowth = row.revenueYoY == null ? '-' : `<span class="${row.revenueYoY >= 0 ? 'pos' : 'neg'}">${row.revenueYoY >= 0 ? '+' : ''}${fmtPct(row.revenueYoY, 1)}</span>`;
       const revenueMomentum = row.revenueMoM == null ? '-' : `<span class="${row.revenueMoM >= 0 ? 'pos' : 'neg'}">${row.revenueMoM >= 0 ? '+' : ''}${fmtPct(row.revenueMoM, 1)}</span>`;
       const grossMargin = row.grossMargin == null ? '-' : `<span class="${row.grossMarginIsRecordHigh ? 'record-high' : ''}" title="${row.grossMarginIsRecordHigh ? '毛利率突破已累積季度紀錄新高' : '最新季度毛利率'}">${fmtPct(row.grossMargin, 1)}</span>${row.grossMarginIsRecordHigh ? '<div class="subline record-label">新高</div>' : ''}`;
+      const issuancePurpose = renderIssuancePurpose(row);
       return `
         <tr>
           <td class="identity-cell">
@@ -955,6 +1033,7 @@
           <td class="num">${revenueMomentum}</td>
           <td class="num">${grossMargin}</td>
           <td class="${issueThisWeek ? 'issue-date-this-week' : ''}">${fmtDate(row.issueDate || row.listedDateROC)}</td>
+          <td class="purpose-cell">${issuancePurpose}</td>
           <td>${fmtDate(row.maturityDate)}</td>
           <td class="num ${stockRecordHigh ? 'record-high' : ''}" title="${stockRecordHigh ? '目前股票收盤價已達上市／上櫃以來最高收盤價' : ''}">${row.stockClose == null ? '-' : `<div class="stock-price-line">${fmtPrice(row.stockClose, 2)}</div>${stockMove}`}</td>
           <td class="num ${cbRecordHigh ? 'record-high' : ''}" title="${cbRecordHigh ? '目前 CB 價格為掛牌以來最高價' : ''}">${cbClose}${cbChange}${cbRecordHigh ? '<div class="subline record-label">新高</div>' : ''}</td>
@@ -964,6 +1043,68 @@
           <td class="num">${convertedPct}</td>
           <td class="num">${fmtHundredMillion(row.issueAmount)}</td>
           <td class="num">${fmtHundredMillion(row.remainingAmount)}</td>
+        </tr>
+      `;
+    };
+
+    const isMobileLayout = () => window.matchMedia('(max-width: 767px)').matches;
+
+    const renderMobileCard = (row) => {
+      const cbRecordHigh = isCbRecordHigh(row);
+      const stockRecordHigh = isStockRecordHigh(row);
+      const shortName = row.bondShortName || row.issuerName || '-';
+      const stockDailyMove = row.stockChangePct == null ? '' : `<div class="subline">今日 <span class="${row.stockChangePct >= 0 ? 'pos' : 'neg'}">${row.stockChangePct >= 0 ? '+' : ''}${fmtPct(row.stockChangePct, 1)}</span></div>`;
+      const stockWeeklyMove = row.stockWeeklyChangePct == null ? '' : `<div class="subline">本週 <span class="${row.stockWeeklyChangePct >= 0 ? 'pos' : 'neg'}">${row.stockWeeklyChangePct >= 0 ? '+' : ''}${fmtPct(row.stockWeeklyChangePct, 1)}</span></div>`;
+      const stockValue = row.stockClose == null
+        ? '-'
+        : `<div>${fmtPrice(row.stockClose, 2)}</div>${stockDailyMove}${stockWeeklyMove}${stockRecordHigh ? '<div class="subline"><span class="record-label">新高</span></div>' : ''}`;
+      const cbClose = row.cbClose == null ? '<span class="no-trade">無成交</span>' : `<div>${fmtPrice(row.cbClose, 2)}</div>`;
+      const cbChangeLabel = row.cbChangeBasis === 'previous_trade' ? '距前次成交' : '漲跌幅';
+      const cbChange = row.cbChangePct == null
+        ? ''
+        : `<div class="subline">${cbChangeLabel} <span class="${row.cbChangePct >= 0 ? 'pos' : 'neg'}">${row.cbChangePct >= 0 ? '+' : ''}${fmtPct(row.cbChangePct, 1)}</span></div>`;
+      const conversionValue = row.conversionValue == null ? '-' : fmtPrice(row.conversionValue, 2);
+      const premiumValue = row.cbClose != null && row.conversionValue != null
+        ? (row.cbClose / row.conversionValue - 1) * 100
+        : null;
+      const premiumClass = premiumValue > 40 ? 'premium-high' : premiumValue >= 10 ? 'premium-mid' : 'premium-low';
+      const conversionPremium = premiumValue == null ? '<span class="premium-badge premium-low">無</span>' : `<span class="premium-badge ${premiumClass}">${fmtPct(premiumValue, 1)}</span>`;
+      const revenueGrowth = row.revenueYoY == null ? '-' : `<span class="${row.revenueYoY >= 0 ? 'pos' : 'neg'}">${row.revenueYoY >= 0 ? '+' : ''}${fmtPct(row.revenueYoY, 1)}</span>`;
+      const revenueMomentum = row.revenueMoM == null ? '-' : `<span class="${row.revenueMoM >= 0 ? 'pos' : 'neg'}">${row.revenueMoM >= 0 ? '+' : ''}${fmtPct(row.revenueMoM, 1)}</span>`;
+      const grossMargin = row.grossMargin == null ? '-' : `<span class="${row.grossMarginIsRecordHigh ? 'record-high' : ''}">${fmtPct(row.grossMargin, 1)}</span>${row.grossMarginIsRecordHigh ? '<div class="subline"><span class="record-label">新高</span></div>' : ''}`;
+      const fineTags = Array.isArray(row.fineIndustryTags) ? row.fineIndustryTags.slice(0, 2) : [];
+      const productTags = Array.isArray(row.productTags) ? row.productTags.slice(0, 3) : [];
+      const tagLine = [
+        ...fineTags.map((tag) => `<span class="mobile-card-tag">${escapeHtml(tag)}</span>`),
+        ...productTags.map((tag) => `<span class="mobile-card-tag product">${escapeHtml(tag)}</span>`)
+      ].join('');
+      const issuancePurpose = renderIssuancePurpose(row);
+      return `
+        <tr class="mobile-card-row">
+          <td colspan="${recentHeaders.length}">
+            <article class="mobile-cb-card">
+              <div class="mobile-card-head">
+                <div class="mobile-card-title">
+                  <button class="mobile-card-name chart-toggle" type="button" data-chart-code="${row.bondCode || ''}" aria-expanded="false">${escapeHtml(shortName)}</button>
+                  <div class="mobile-card-code">股票 ${escapeHtml(row.issuerCode || '-')}｜債券 ${escapeHtml(row.bondCode || '-')}</div>
+                </div>
+                <div class="mobile-card-date">發行 ${fmtDate(row.issueDate || row.listedDateROC)}</div>
+              </div>
+              ${tagLine ? `<div class="mobile-card-tags">${tagLine}</div>` : ''}
+              <div class="mobile-card-metric wide"><div class="mobile-card-label">發債原因</div><div class="mobile-card-value">${issuancePurpose}</div></div>
+              <div class="mobile-card-grid">
+                <div class="mobile-card-metric"><div class="mobile-card-label">股票收盤價</div><div class="mobile-card-value ${stockRecordHigh ? 'record-high' : ''}">${stockValue}</div></div>
+                <div class="mobile-card-metric"><div class="mobile-card-label">CB 收盤價</div><div class="mobile-card-value ${cbRecordHigh ? 'record-high' : ''}">${cbClose}${cbChange}${cbRecordHigh ? '<div class="subline"><span class="record-label">新高</span></div>' : ''}</div></div>
+                <div class="mobile-card-metric"><div class="mobile-card-label">轉換價值</div><div class="mobile-card-value">${conversionValue}</div></div>
+                <div class="mobile-card-metric"><div class="mobile-card-label">溢價率</div><div class="mobile-card-value">${conversionPremium}</div></div>
+              </div>
+              <div class="mobile-card-footer">
+                <div class="mobile-card-metric"><div class="mobile-card-label">營收年增</div><div class="mobile-card-value">${revenueGrowth}</div></div>
+                <div class="mobile-card-metric"><div class="mobile-card-label">營收月增</div><div class="mobile-card-value">${revenueMomentum}</div></div>
+                <div class="mobile-card-metric"><div class="mobile-card-label">毛利率</div><div class="mobile-card-value">${grossMargin}</div></div>
+              </div>
+            </article>
+          </td>
         </tr>
       `;
     };
@@ -979,7 +1120,7 @@
           cell.style.display = hiddenColumns.has(index) ? 'none' : '';
         });
       });
-      const columnMinWidths = [230, 92, 92, 92, 88, 88, 150, 125, 92, 92, 100, 92, 92, 92];
+      const columnMinWidths = [230, 92, 92, 92, 88, 150, 88, 150, 125, 92, 92, 100, 92, 92, 92];
       const visibleWidth = columnMinWidths.reduce((total, width, index) => total + (hiddenColumns.has(index) ? 0 : width), 0);
       tableEl.style.minWidth = `${Math.max(720, visibleWidth)}px`;
     };
@@ -1303,12 +1444,14 @@
     };
 
     const renderRecent = () => {
-      tableEl.className = 'recent-table';
+      const mobile = isMobileLayout();
+      tableEl.className = mobile ? 'recent-table mobile-card-table' : 'recent-table';
+      tableEl.style.minWidth = mobile ? '' : tableEl.style.minWidth;
       searchPanelEl.hidden = false;
       renderWeeklyTop30Ranking();
       titleEl.textContent = '存續可轉債列表';
       descEl.textContent = '所有已掛牌、尚未下市且仍有發行餘額的可轉債。';
-      headEl.innerHTML = `<tr>${recentHeaders.map((h, index) => {
+      headEl.innerHTML = mobile ? '' : `<tr>${recentHeaders.map((h, index) => {
         const active = sortState.index === index;
         const icon = active ? (sortState.direction === 'desc' ? '▼' : '▲') : '↕';
         const directionText = active ? (sortState.direction === 'desc' ? '，目前由大到小' : '，目前由小到大') : '';
@@ -1318,10 +1461,12 @@
       const visibleRows = filteredRows();
       openChartCode = null;
       rowsEl.innerHTML = visibleRows.length
-        ? visibleRows.map(renderRow).join('')
+        ? visibleRows.map(mobile ? renderMobileCard : renderRow).join('')
         : `<tr><td colspan="${visibleColumnCount()}"><div class="empty">找不到符合篩選條件的可轉債。</div></td></tr>`;
-      rowsEl.querySelectorAll('tr').forEach((tr) => Array.from(tr.children).forEach((cell, index) => cell.dataset.col = index));
-      applyColumnVisibility();
+      if (!mobile) {
+        rowsEl.querySelectorAll('tr').forEach((tr) => Array.from(tr.children).forEach((cell, index) => cell.dataset.col = index));
+        applyColumnVisibility();
+      }
       countEl.textContent = `${visibleRows.length} / ${sorted.length} 筆資料`;
       searchCountEl.textContent = `找到 ${visibleRows.length} 筆`;
       updatedEl.textContent = `更新時間：${raw.fetchedAt ? fmtDate(raw.fetchedAt).replaceAll('-', '/') : '-'}`;
@@ -1381,6 +1526,13 @@
     });
     document.addEventListener('click', (event) => {
       if (utilityFilterEl.open && !utilityFilterEl.contains(event.target)) utilityFilterEl.open = false;
+    });
+    let resizeTimer = null;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        if (currentView === 'recent') renderRecent();
+      }, 150);
     });
     rowsEl.addEventListener('click', (event) => {
       const chartButton = event.target.closest('[data-chart-code]');
