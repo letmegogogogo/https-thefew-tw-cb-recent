@@ -33,6 +33,9 @@ jobs:
       - name: Update CB data
         run: python scripts/update_cb_quotes.py
 
+      - name: Fetch analyst target prices
+        run: python scripts/fetch_analyst_targets_from_web.py --limit 50 || true
+
       - name: Build public site
         run: python scripts/build_public_site.py
 
