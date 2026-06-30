@@ -43,6 +43,26 @@
       gap: 14px;
       align-items: start;
     }
+    body.sidebar-collapsed .shell {
+      grid-template-columns: minmax(0, 1fr);
+    }
+    body.sidebar-collapsed .sidebar {
+      display: none;
+    }
+    body.sidebar-collapsed.sidebar-menu-open .sidebar {
+      display: block;
+      position: fixed;
+      z-index: 30;
+      top: 10px;
+      left: 10px;
+      width: 220px;
+      max-width: calc(100vw - 20px);
+      box-shadow: 0 18px 42px rgba(29, 45, 68, 0.22);
+    }
+    body.sidebar-collapsed .content {
+      width: 100%;
+      min-width: 0;
+    }
     .sidebar, .content {
       background: var(--panel);
       border: 0;
@@ -84,6 +104,26 @@
     .content {
       padding: 14px 12px 12px;
       min-width: 0;
+    }
+    .sidebar-toggle {
+      display: none;
+      align-items: center;
+      gap: 6px;
+      min-height: 38px;
+      margin: 0 0 10px;
+      padding: 0 12px;
+      border: 1px solid #c8d7e8;
+      border-radius: 10px;
+      background: #fff;
+      color: #3e628e;
+      font: inherit;
+      font-size: 0.94rem;
+      font-weight: 800;
+      cursor: pointer;
+      box-shadow: 0 3px 12px rgba(42, 65, 96, 0.08);
+    }
+    body.sidebar-collapsed .sidebar-toggle {
+      display: inline-flex;
     }
     .header { margin-bottom: 8px; }
     .title {
@@ -442,12 +482,13 @@
     }
     .recent-table [data-col="0"] { min-width: 260px; }
     .recent-table [data-col="1"], .recent-table [data-col="2"], .recent-table [data-col="3"] { min-width: 108px; }
-    .recent-table [data-col="4"], .recent-table [data-col="6"] { min-width: 100px; width: 1%; max-width: 112px; }
-    .recent-table [data-col="5"] { min-width: 150px; max-width: 190px; }
-    .recent-table [data-col="7"] { min-width: 170px; }
-    .recent-table [data-col="8"], .recent-table [data-col="9"] { min-width: 118px; }
-    .recent-table [data-col="10"], .recent-table [data-col="11"], .recent-table [data-col="12"],
-    .recent-table [data-col="13"], .recent-table [data-col="14"], .recent-table [data-col="15"] { min-width: 92px; }
+    .recent-table [data-col="4"], .recent-table [data-col="7"] { min-width: 100px; width: 1%; max-width: 112px; }
+    .recent-table [data-col="5"] { min-width: 108px; max-width: 132px; }
+    .recent-table [data-col="6"] { min-width: 150px; max-width: 190px; }
+    .recent-table [data-col="8"] { min-width: 170px; }
+    .recent-table [data-col="9"], .recent-table [data-col="10"] { min-width: 118px; }
+    .recent-table [data-col="11"], .recent-table [data-col="12"], .recent-table [data-col="13"],
+    .recent-table [data-col="14"], .recent-table [data-col="15"], .recent-table [data-col="16"] { min-width: 92px; }
     .recent-table .subline {
       white-space: nowrap;
       overflow: hidden;
@@ -541,6 +582,11 @@
     .eps-stat { display: flex; align-items: baseline; justify-content: space-between; gap: 14px; color: #777; font-size: 14px; }
     .eps-stat strong { color: #42464b; font-size: 15px; font-weight: 800; text-align: right; font-variant-numeric: tabular-nums; }
     .eps-stat.missing strong { color: #888; }
+    .eps-sources { margin-top: 8px; color: #64748b; font-size: 12px; }
+    .eps-sources summary { cursor: pointer; font-weight: 800; color: #2c5f9e; }
+    .eps-source-list { margin: 8px 0 0; padding-left: 16px; display: grid; gap: 6px; }
+    .eps-source-list a { color: #1d5fa7; text-decoration: none; }
+    .eps-yahoo-target { margin-top: 14px; padding: 10px 12px; border-radius: 10px; background: #f5f8fc; color: #60758e; font-size: 12px; line-height: 1.45; }
     .eps-disclaimer { margin-top: 22px; color: #858585; font-size: 12px; line-height: 1.5; }
     .industry-cell { line-height: 1.2; }
     .identity-industry { color: #66778a; font-size: 14px; font-weight: 700; }
@@ -575,17 +621,23 @@
       font-size: 16px;
       font-weight: 700;
     }
-    .recent-table [data-col="7"],
     .recent-table [data-col="8"],
     .recent-table [data-col="9"],
-    .recent-table [data-col="10"] {
+    .recent-table [data-col="10"],
+    .recent-table [data-col="11"] {
       font-size: 18px;
       font-weight: 800;
     }
-    .purpose-cell { color: #52657b; font-size: 14px; line-height: 1.45; white-space: normal; }
-    .purpose-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 4px; }
+    .purpose-cell { width: 132px; min-width: 120px; max-width: 150px; color: #52657b; font-size: 13px; line-height: 1.35; white-space: normal; word-break: break-word; overflow-wrap: anywhere; }
+    .purpose-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 0; }
     .purpose-tag { display: inline-flex; padding: 2px 6px; border-radius: 999px; background: #f0f6ff; color: #315f97; font-size: 12px; font-weight: 800; }
-    .purpose-summary { color: #607188; font-size: 13px; font-weight: 700; }
+    .purpose-summary { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; color: #607188; font-size: 13px; font-weight: 700; }
+    .redemption-cell { min-width: 108px; color: #52657b; font-size: 13px; line-height: 1.35; white-space: normal; }
+    .redemption-status { display: inline-flex; align-items: center; justify-content: center; padding: 4px 8px; border-radius: 999px; background: #edf3f8; color: #5d7188; font-size: 12px; font-weight: 800; }
+    .redemption-status.warning { background: #fff0e8; color: #c2410c; box-shadow: inset 0 0 0 1px #fdba74; }
+    .redemption-link { display: block; margin-top: 5px; color: #2d6fb7; font-size: 12px; font-weight: 800; text-decoration: none; }
+    .redemption-link:hover { text-decoration: underline; }
+    th[data-col="6"] { width: 132px; min-width: 120px; max-width: 150px; }
     th.numeric-header .sort-button { justify-content: flex-end; }
     .pos { color: #e00019; font-weight: 850; }
     .neg { color: #00843d; font-weight: 850; }
@@ -627,6 +679,7 @@
     @media (max-width: 980px) {
       .shell { grid-template-columns: 1fr; }
       .sidebar { position: static; }
+      body.sidebar-collapsed.sidebar-menu-open .sidebar { top: 8px; left: 8px; }
       .sidebar { padding: 12px; }
       .menu {
         grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
@@ -726,6 +779,7 @@
       .mobile-card-label { color: #728197; font-size: 0.75rem; font-weight: 800; }
       .mobile-card-value { margin-top: 3px; color: #253d5b; font-size: 1.02rem; font-weight: 900; line-height: 1.25; }
       .mobile-card-value .subline { white-space: normal; overflow: visible; text-overflow: clip; }
+      .mobile-cb-card .purpose-summary { display: block; overflow: visible; -webkit-line-clamp: unset; }
       .mobile-card-footer { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; margin-top: 8px; }
       .mobile-card-footer .mobile-card-metric { padding: 8px; }
     }
@@ -753,6 +807,7 @@
       </aside>
 
       <section class="content" aria-labelledby="page-title">
+        <button class="sidebar-toggle" type="button" id="sidebar-toggle" aria-expanded="false">功能選單</button>
         <div class="header">
           <h1 class="title" id="page-title">近期新發行可轉債列表</h1>
           <p class="desc">所有發行三個月內、或即將發行的可轉債。</p>
@@ -822,6 +877,7 @@
     const highFilterEl = document.getElementById('high-filter');
     const utilityFilterEl = document.getElementById('utility-filter');
     const columnOptionsEl = document.getElementById('column-options');
+    const sidebarToggleEl = document.getElementById('sidebar-toggle');
     const weeklyRankPanelEl = document.getElementById('weekly-rank-panel');
     const weeklyRankListEl = document.getElementById('weekly-rank-list');
     const weeklyRankNoteEl = document.getElementById('weekly-rank-note');
@@ -921,6 +977,7 @@
       { label: '營收月增率', value: (row) => row.revenueMoM, numeric: true },
       { label: '毛利率', value: (row) => row.grossMargin, numeric: true },
       { label: '發行日', value: (row) => toDate(row.issueDate || row.listedDateROC)?.getTime() },
+      { label: '贖回警示', value: (row) => row.redemptionStatus || 'normal' },
       { label: '發債原因', value: (row) => row.issuancePurpose || '' },
       { label: '到期日', value: (row) => toDate(row.maturityDate)?.getTime() },
       { label: '股票收盤價', value: (row) => row.stockClose, numeric: true },
@@ -967,7 +1024,23 @@
       const tagHtml = tags.length
         ? `<div class="purpose-tags">${tags.map((tag) => `<span class="purpose-tag">${escapeHtml(tag)}</span>`).join('')}</div>`
         : '';
-      return `${tagHtml}<div class="purpose-summary">${escapeHtml(summary)}</div>`;
+      if (tags.length) return tagHtml;
+      return `${tagHtml}<div class="purpose-summary" title="${escapeHtml(summary)}">${escapeHtml(summary)}</div>`;
+    };
+
+    const renderRedemptionAlert = (row) => {
+      const status = row.redemptionStatus || 'normal';
+      if (status === 'normal') return '<span class="redemption-status">正常</span>';
+      const details = [
+        row.redemptionSummary || '已公告收回',
+        row.redemptionStartDate ? `收回起日：${row.redemptionStartDate}` : null,
+        row.redemptionEndDate ? `收回迄日：${row.redemptionEndDate}` : null,
+        row.redemptionDelistDate ? `終止買賣日：${row.redemptionDelistDate}` : null
+      ].filter(Boolean).join('｜');
+      const source = row.redemptionSourceUrl
+        ? `<a class="redemption-link" href="${escapeHtml(row.redemptionSourceUrl)}" target="_blank" rel="noreferrer noopener">來源</a>`
+        : '';
+      return `<div title="${escapeHtml(details)}"><span class="redemption-status warning">⚠ 已公告收回</span>${source}</div>`;
     };
 
     const renderRow = (row) => {
@@ -975,8 +1048,6 @@
       const cbRecordHigh = isCbRecordHigh(row);
       const stockRecordHigh = isStockRecordHigh(row);
       const companyInsight = window.CB_COMPANY_INSIGHTS?.[String(row.issuerCode || '')] || {};
-      const primaryProducts = companyInsight.primaryProductsServices || '主要產品／服務資料待更新';
-      const primaryProductsBasis = companyInsight.primaryProductsBasis || '公開資訊觀測站公司基本資料';
       const shortName = row.bondShortName || row.issuerName || '-';
       const name = `<button class="name chart-toggle" type="button" data-chart-code="${row.bondCode || ''}" aria-expanded="false">${shortName}</button>${row.detailUrl ? `<a class="detail-link" href="${row.detailUrl}" target="_blank" rel="noreferrer noopener" title="查看發行辦法">↗</a>` : ''}`;
       const detailLine = [
@@ -1014,6 +1085,7 @@
       const revenueMomentum = row.revenueMoM == null ? '-' : `<span class="${row.revenueMoM >= 0 ? 'pos' : 'neg'}">${row.revenueMoM >= 0 ? '+' : ''}${fmtPct(row.revenueMoM, 1)}</span>`;
       const grossMargin = row.grossMargin == null ? '-' : `<span class="${row.grossMarginIsRecordHigh ? 'record-high' : ''}" title="${row.grossMarginIsRecordHigh ? '毛利率突破已累積季度紀錄新高' : '最新季度毛利率'}">${fmtPct(row.grossMargin, 1)}</span>${row.grossMarginIsRecordHigh ? '<div class="subline record-label">新高</div>' : ''}`;
       const issuancePurpose = renderIssuancePurpose(row);
+      const redemptionAlert = renderRedemptionAlert(row);
       return `
         <tr>
           <td class="identity-cell">
@@ -1026,13 +1098,13 @@
               <div class="identity-industry">官方產業：${escapeHtml(row.industryCategory || '-')}</div>
               ${tagGroups ? `<div class="tag-groups">${tagGroups}</div>` : ''}
               ${industryAlert}
-              <div class="product-line" title="${escapeHtml(primaryProductsBasis + '：' + primaryProducts)}"><strong>主要產品／服務：</strong>${escapeHtml(primaryProducts)}</div>
             </div>
           </td>
           <td class="num">${revenueGrowth}</td>
           <td class="num">${revenueMomentum}</td>
           <td class="num">${grossMargin}</td>
           <td class="${issueThisWeek ? 'issue-date-this-week' : ''}">${fmtDate(row.issueDate || row.listedDateROC)}</td>
+          <td class="redemption-cell">${redemptionAlert}</td>
           <td class="purpose-cell">${issuancePurpose}</td>
           <td>${fmtDate(row.maturityDate)}</td>
           <td class="num ${stockRecordHigh ? 'record-high' : ''}" title="${stockRecordHigh ? '目前股票收盤價已達上市／上櫃以來最高收盤價' : ''}">${row.stockClose == null ? '-' : `<div class="stock-price-line">${fmtPrice(row.stockClose, 2)}</div>${stockMove}`}</td>
@@ -1079,6 +1151,7 @@
         ...productTags.map((tag) => `<span class="mobile-card-tag product">${escapeHtml(tag)}</span>`)
       ].join('');
       const issuancePurpose = renderIssuancePurpose(row);
+      const redemptionAlert = renderRedemptionAlert(row);
       return `
         <tr class="mobile-card-row">
           <td colspan="${recentHeaders.length}">
@@ -1091,6 +1164,7 @@
                 <div class="mobile-card-date">發行 ${fmtDate(row.issueDate || row.listedDateROC)}</div>
               </div>
               ${tagLine ? `<div class="mobile-card-tags">${tagLine}</div>` : ''}
+              <div class="mobile-card-metric wide"><div class="mobile-card-label">贖回警示</div><div class="mobile-card-value">${redemptionAlert}</div></div>
               <div class="mobile-card-metric wide"><div class="mobile-card-label">發債原因</div><div class="mobile-card-value">${issuancePurpose}</div></div>
               <div class="mobile-card-grid">
                 <div class="mobile-card-metric"><div class="mobile-card-label">股票收盤價</div><div class="mobile-card-value ${stockRecordHigh ? 'record-high' : ''}">${stockValue}</div></div>
@@ -1120,7 +1194,7 @@
           cell.style.display = hiddenColumns.has(index) ? 'none' : '';
         });
       });
-      const columnMinWidths = [230, 92, 92, 92, 88, 150, 88, 150, 125, 92, 92, 100, 92, 92, 92];
+      const columnMinWidths = [230, 92, 92, 92, 88, 132, 88, 150, 125, 92, 92, 100, 92, 92, 92];
       const visibleWidth = columnMinWidths.reduce((total, width, index) => total + (hiddenColumns.has(index) ? 0 : width), 0);
       tableEl.style.minWidth = `${Math.max(720, visibleWidth)}px`;
     };
@@ -1347,19 +1421,29 @@
       const years = [currentYear, currentYear + 1, currentYear + 2];
       const maxAnalysts = Math.max(0, ...years.map((year) => Number(forecast?.years?.[String(year)]?.analysts) || 0));
       const calendarIcon = '<svg class="eps-calendar" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3v3M17 3v3M4 9h16M5 5h14a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
-      const targetCandidate = forecast?.analystTargetPriceMean
-        ?? forecast?.targetMeanPrice
-        ?? forecast?.consensusTargetPrice
-        ?? forecast?.latestBrokerTargetPrice
-        ?? forecast?.brokerTargetPrice
-        ?? forecast?.targetPrice?.mean;
-      const targetValue = chartNumber(
-        typeof targetCandidate === 'object' && targetCandidate !== null
-          ? targetCandidate.mean ?? targetCandidate.price ?? targetCandidate.value
-          : targetCandidate
-      );
+      const yahooTargetValue = chartNumber(forecast?.targetPrice?.mean);
+      const yahooTargetText = yahooTargetValue == null
+        ? 'Yahoo Finance 目前分析師平均目標價：— / 公開來源未提供'
+        : `Yahoo Finance 目前分析師平均目標價：${fmtPrice(yahooTargetValue, 2)}（非年度目標價）`;
+      const renderTargetSources = (targetInfo) => {
+        const sources = Array.isArray(targetInfo?.sources) ? targetInfo.sources : [];
+        if (!sources.length) return '';
+        const items = sources.slice(0, 6).map((source) => {
+          const title = source.sourceTitle || source.sourceName || source.sourceUrl || '公開來源';
+          const dateText = source.reportDate ? `${escapeHtml(source.reportDate)}｜` : '';
+          const ratingText = source.rating ? `｜${escapeHtml(source.rating)}` : '';
+          const epsText = source.eps != null ? `｜EPS ${fmtPrice(chartNumber(source.eps), 2)}` : '';
+          const peText = source.valuationMultiple != null ? `｜${fmtPrice(chartNumber(source.valuationMultiple), 1)} 倍` : '';
+          const link = source.sourceUrl
+            ? `<a href="${escapeHtml(source.sourceUrl)}" target="_blank" rel="noreferrer noopener">${escapeHtml(title)}</a>`
+            : escapeHtml(title);
+          return `<li>${dateText}${link}｜目標價 ${fmtPrice(chartNumber(source.targetPrice), 2)}${ratingText}${epsText}${peText}</li>`;
+        }).join('');
+        return `<details class="eps-sources"><summary>查看來源明細</summary><ul class="eps-source-list">${items}</ul></details>`;
+      };
       const cards = years.map((year) => {
         const existingItem = forecast?.years?.[String(year)] || {};
+        const targetInfo = forecast?.analystReportTargetsByYear?.[String(year)] || {};
         const epsCandidate = forecast?.analystEpsByYear?.[String(year)]
           ?? forecast?.annualEpsByYear?.[String(year)]
           ?? existingItem.eps;
@@ -1377,10 +1461,16 @@
         const epsStats = value == null
           ? '<div class="eps-stat missing"><span>資料來源</span><strong>公開來源未提供</strong></div>'
           : `<div class="eps-stat"><span>分析師人數</span><strong>${analysts} 位</strong></div><div class="eps-stat"><span>預估區間</span><strong>${range}</strong></div>`;
-        const targetDisplay = targetValue == null ? '— / 公開來源未提供' : fmtPrice(targetValue, 2);
-        return `<div class="eps-card${isFocus ? ' focus' : ''}${value == null ? ' no-data' : ''}"><div class="eps-card-head">${calendarIcon}<span class="eps-year">${year} 年</span>${focusBadge}</div><div class="eps-value">${value == null ? '—' : fmtPrice(value, 2)}</div><div class="eps-divider"></div><div class="eps-stats">${epsStats}<div class="eps-stat${targetValue == null ? ' missing' : ''}"><span>法人平均目標價</span><strong>${targetDisplay}</strong></div></div></div>`;
+        const targetMean = chartNumber(targetInfo.mean);
+        const targetRange = chartNumber(targetInfo.low) != null && chartNumber(targetInfo.high) != null
+          ? `${fmtPrice(chartNumber(targetInfo.low), 2)}～${fmtPrice(chartNumber(targetInfo.high), 2)}`
+          : '公開來源未提供';
+        const targetCount = Number(targetInfo.count) || 0;
+        const targetDisplay = targetMean == null ? '— / 公開來源未提供' : fmtPrice(targetMean, 2);
+        const targetStats = `<div class="eps-stat${targetMean == null ? ' missing' : ''}"><span>${year} 年目標價均值</span><strong>${targetDisplay}</strong></div><div class="eps-stat${targetMean == null ? ' missing' : ''}"><span>目標價區間</span><strong>${targetRange}</strong></div><div class="eps-stat"><span>目標價來源數</span><strong>${targetCount} 筆</strong></div>${renderTargetSources(targetInfo)}`;
+        return `<div class="eps-card${isFocus ? ' focus' : ''}${value == null ? ' no-data' : ''}"><div class="eps-card-head">${calendarIcon}<span class="eps-year">${year} 年</span>${focusBadge}</div><div class="eps-value">${value == null ? '—' : fmtPrice(value, 2)}</div><div class="eps-divider"></div><div class="eps-stats">${epsStats}${targetStats}</div></div>`;
       }).join('');
-      return `<div class="eps-head">法人預估 EPS（分析師共識）與目標價</div><div class="eps-grid">${cards}</div><div class="eps-disclaimer">EPS 為分析師年度共識預估；目標價為目前公開來源整理之分析師 12 個月平均目標價，非各年度目標價，非財務建議。</div>`;
+      return `<div class="eps-head">法人預估 EPS（分析師共識）與年度目標價</div><div class="eps-grid">${cards}</div><div class="eps-yahoo-target">${escapeHtml(yahooTargetText)}</div><div class="eps-disclaimer">EPS 為分析師年度共識預估；年度目標價僅採公開來源明確可歸屬估值年度的法人／分析師目標價。若無法判斷年度，列為未分類目標價，不會套用到 2026／2027／2028 年卡片；非財務建議。</div>`;
     };
     const renderCompanyCatalysts = (row) => {
       const insight = window.CB_COMPANY_INSIGHTS?.[String(row?.issuerCode || '')] || {};
@@ -1491,15 +1581,49 @@
       metaEl.textContent = `資料來源：${primary.sheetTitle || 'CB初級市場資訊'}`;
     };
 
-    const showView = (view) => {
+    const setSidebarCollapsed = (collapsed) => {
+      document.body.classList.toggle('sidebar-collapsed', collapsed);
+      if (!collapsed) document.body.classList.remove('sidebar-menu-open');
+      sidebarToggleEl?.setAttribute('aria-expanded', String(document.body.classList.contains('sidebar-menu-open')));
+    };
+    const sectionFromHash = () => {
+      const params = new URLSearchParams((window.location.hash || '').replace(/^#/, ''));
+      const section = params.get('section');
+      return ['recent', 'auction', 'filing', 'board'].includes(section) ? section : null;
+    };
+    const setHistoryState = (view, replace = false) => {
+      const state = view === 'home' ? { page: 'home' } : { page: 'section', section: view };
+      const url = view === 'home' ? `${location.pathname}${location.search}` : `#section=${encodeURIComponent(view)}`;
+      if (replace) history.replaceState(state, '', url);
+      else history.pushState(state, '', url);
+    };
+    const showView = (view, options = {}) => {
       currentView = view;
       buttons.forEach((button) => button.setAttribute('aria-pressed', String(button.dataset.view === view)));
       if (view === 'recent') renderRecent();
       else renderPrimary(view);
       document.querySelector('.table-wrap').scrollLeft = 0;
+      if (options.collapseSidebar) setSidebarCollapsed(true);
     };
 
-    buttons.forEach((button) => button.addEventListener('click', () => showView(button.dataset.view)));
+    buttons.forEach((button) => button.addEventListener('click', () => {
+      const view = button.dataset.view;
+      setHistoryState(view);
+      document.body.classList.remove('sidebar-menu-open');
+      showView(view, { collapseSidebar: true });
+    }));
+    sidebarToggleEl?.addEventListener('click', () => {
+      const opened = document.body.classList.toggle('sidebar-menu-open');
+      sidebarToggleEl.setAttribute('aria-expanded', String(opened));
+    });
+    window.addEventListener('popstate', (event) => {
+      const section = event.state?.section || sectionFromHash();
+      if (section) showView(section, { collapseSidebar: true });
+      else {
+        showView('recent');
+        setSidebarCollapsed(false);
+      }
+    });
     weeklyRankToggleEl.addEventListener('click', () => {
       weeklyRankExpanded = !weeklyRankExpanded;
       renderWeeklyTop30Ranking();
@@ -1526,6 +1650,14 @@
     });
     document.addEventListener('click', (event) => {
       if (utilityFilterEl.open && !utilityFilterEl.contains(event.target)) utilityFilterEl.open = false;
+      if (
+        document.body.classList.contains('sidebar-menu-open')
+        && !event.target.closest('.sidebar')
+        && !event.target.closest('#sidebar-toggle')
+      ) {
+        document.body.classList.remove('sidebar-menu-open');
+        sidebarToggleEl?.setAttribute('aria-expanded', 'false');
+      }
     });
     let resizeTimer = null;
     window.addEventListener('resize', () => {
@@ -1538,7 +1670,15 @@
       const chartButton = event.target.closest('[data-chart-code]');
       if (chartButton) openHistoryChart(chartButton);
     });
-    showView('recent');
+    const initialSection = sectionFromHash();
+    if (initialSection) {
+      setHistoryState(initialSection, true);
+      showView(initialSection, { collapseSidebar: true });
+    } else {
+      setHistoryState('home', true);
+      showView('recent');
+      setSidebarCollapsed(false);
+    }
     const requestedChart = new URLSearchParams(location.search).get('chart');
     if (requestedChart) {
       const chartButton = Array.from(document.querySelectorAll('[data-chart-code]'))

@@ -15,6 +15,7 @@ DATA_PATH = ROOT / "outputs" / "recent-cb-data.js"
 HISTORY_DIR = ROOT / "outputs" / "cb-history"
 STOCK_TAGS_PATH = ROOT / "data" / "tw-stock-tags.json"
 ISSUANCE_PURPOSE_PATH = ROOT / "data" / "cb-issuance-purpose.json"
+REDEMPTION_ALERTS_PATH = ROOT / "data" / "cb-redemption-alerts.json"
 WEEKLY_TOP30_TRACKER_PATH = ROOT / "data" / "weekly-stock-top30-tracker.json"
 PREFIX = "window.RECENT_CB_DATA = "
 TZ = timezone(timedelta(hours=8))
@@ -63,6 +64,14 @@ def load_stock_tags() -> dict:
 def load_issuance_purposes() -> dict:
     try:
         payload = json.loads(ISSUANCE_PURPOSE_PATH.read_text(encoding="utf-8"))
+        return payload if isinstance(payload, dict) else {}
+    except (OSError, ValueError):
+        return {}
+
+
+def load_redemption_alerts() -> dict:
+    try:
+        payload = json.loads(REDEMPTION_ALERTS_PATH.read_text(encoding="utf-8"))
         return payload if isinstance(payload, dict) else {}
     except (OSError, ValueError):
         return {}
@@ -609,6 +618,7 @@ def main() -> int:
         data["issuanceSyncWarning"] = f"Using cached active list: {type(error).__name__}"
     stock_tags = load_stock_tags()
     issuance_purposes = load_issuance_purposes()
+    redemption_alerts = load_redemption_alerts()
     for row in rows:
         tag = stock_tags.get(str(row.get("issuerCode") or ""), {})
         row["fineIndustryTags"] = tag.get("fineIndustries", [])
@@ -623,6 +633,14 @@ def main() -> int:
         row["issuancePurposeTags"] = purpose.get("purposes") if isinstance(purpose.get("purposes"), list) else []
         row["issuancePurposeSource"] = purpose.get("source") or "pending"
         row["issuancePurposeUpdatedAt"] = purpose.get("updatedAt")
+        redemption = redemption_alerts.get(str(row.get("bondCode") or "").strip(), {})
+        row["redemptionStatus"] = redemption.get("status") or "normal"
+        row["redemptionAlertLevel"] = redemption.get("alertLevel") or ""
+        row["redemptionSummary"] = redemption.get("summary") or ""
+        row["redemptionStartDate"] = redemption.get("redemptionStartDate") or ""
+        row["redemptionEndDate"] = redemption.get("redemptionEndDate") or ""
+        row["redemptionDelistDate"] = redemption.get("delistDate") or ""
+        row["redemptionSourceUrl"] = redemption.get("sourceUrl") or ""
     data["rows"] = rows
     codes = [str(row.get("bondCode", "")).strip() for row in rows if row.get("bondCode")]
     try:
