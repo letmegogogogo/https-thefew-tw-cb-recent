@@ -1021,11 +1021,10 @@
     const renderIssuancePurpose = (row) => {
       const summary = row.issuancePurpose || '公開資料未整理';
       const tags = Array.isArray(row.issuancePurposeTags) ? row.issuancePurposeTags : [];
-      const tagHtml = tags.length
-        ? `<div class="purpose-tags">${tags.map((tag) => `<span class="purpose-tag">${escapeHtml(tag)}</span>`).join('')}</div>`
-        : '';
-      if (tags.length) return tagHtml;
-      return `${tagHtml}<div class="purpose-summary" title="${escapeHtml(summary)}">${escapeHtml(summary)}</div>`;
+      if (tags.length) {
+        return `<div class="purpose-tags" title="${escapeHtml(summary)}">${tags.map((tag) => `<span class="purpose-tag">${escapeHtml(tag)}</span>`).join('')}</div>`;
+      }
+      return `<div class="purpose-summary" title="${escapeHtml(summary)}">未整理</div>`;
     };
 
     const renderRedemptionAlert = (row) => {
