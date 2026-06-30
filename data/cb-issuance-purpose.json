@@ -1,32 +1,6039 @@
 {
-  "81551": {
-    "bondCode": "81551",
-    "issuerCode": "8155",
-    "issuerName": "博智",
-    "purposes": [],
-    "summary": "公開資料未整理",
-    "source": "pending",
-    "sourceUrl": "",
-    "updatedAt": "2026-06-24"
+  "11011": {
+    "bondCode": "11011",
+    "evidenceText": "償還銀行借款及轉投資海外子公司。",
+    "issuerCode": "1101",
+    "issuerName": "台泥",
+    "purposes": [
+      "償還借款",
+      "轉投資"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=ed1a905f-14d8-406d-abd5-faf6a0e26162",
+    "summary": "償還銀行借款及轉投資海外子公司。",
+    "updatedAt": "2026-06-30"
   },
-  "62236": {
-    "bondCode": "62236",
-    "issuerCode": "6223",
-    "issuerName": "旺矽",
-    "purposes": [],
-    "summary": "公開資料未整理",
-    "source": "pending",
-    "sourceUrl": "",
-    "updatedAt": "2026-06-24"
+  "12561": {
+    "bondCode": "12561",
+    "confidence": "高",
+    "evidenceText": "10.募得價款之用途及運用計畫:償還銀行借款，購置廠房及設備暨裝修工程及充實營運資金",
+    "issuerCode": "1256",
+    "issuerName": "鮮活果汁-KY",
+    "purposes": [
+      "償還借款",
+      "購置設備",
+      "營運資金"
+    ],
+    "source": "Yahoo股市重訊",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%AE%AE%E6%B4%BB%E6%9E%9...",
+    "summary": "償還銀行借款，購置廠房及設備暨裝修工程及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "13166": {
+    "bondCode": "13166",
+    "evidenceText": "充實營運資金。",
+    "issuerCode": "1316",
+    "issuerName": "上曜",
+    "purposes": [
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=4ef41ced-08ec-4bd3-b843-14c885518e26",
+    "summary": "充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "13382": {
+    "bondCode": "13382",
+    "evidenceText": "償還第一次無擔保轉換公司債持有人執行賣回本金及利息。",
+    "issuerCode": "1338",
+    "issuerName": "廣華-KY",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "Yahoo股市重訊",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%BB%A3%E8%8F%AF-ky%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E4%B8%AD%E8%8F%AF%E6%B0%91%E5%9C%8B%E5%A2%83%E5%85%A7%E7%AC%AC%E4%BA%8C%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-110438676.html",
+    "summary": "償還第一次無擔保轉換公司債持有人執行賣回本金及利息。",
+    "updatedAt": "2026-06-30"
+  },
+  "140201": {
+    "bondCode": "140201",
+    "evidenceText": "支應本公司及增資子公司亞東石化用於綠色效益之投資計畫。",
+    "issuerCode": "1402",
+    "issuerName": "遠東新",
+    "purposes": [
+      "永續",
+      "綠色投資"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=3e45e534-4c49-4c13-a68d-7575d1277030",
+    "summary": "支應本公司及增資子公司亞東石化用於綠色效益之投資計畫。",
+    "updatedAt": "2026-06-30"
+  },
+  "140202": {
+    "bondCode": "140202",
+    "evidenceText": "支應本公司及增資子公司亞東石化用於綠色效益之投資計畫。",
+    "issuerCode": "1402",
+    "issuerName": "遠東新",
+    "purposes": [
+      "永續",
+      "綠色投資"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=3e45e534-4c49-4c13-a68d-7575d1277030",
+    "summary": "支應本公司及增資子公司亞東石化用於綠色效益之投資計畫。",
+    "updatedAt": "2026-06-30"
+  },
+  "14363": {
+    "bondCode": "14363",
+    "evidenceText": "償還銀行借款。",
+    "issuerCode": "1436",
+    "issuerName": "華友聯",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "公開資訊觀測站重大訊息轉載",
+    "sourceUrl": "https://www.capitalim.com.tw/newsite/stock-news/stock-news/de0f5a82-16ca-444f-90c9-5ce478fb4db2%3Bpage%3D1%28popup%3Alogin%29",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "14364": {
+    "bondCode": "14364",
+    "evidenceText": "償還銀行借款。",
+    "issuerCode": "1436",
+    "issuerName": "華友聯",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=13fc98a1-ef49-47b2-b06c-f20e3372bb21",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "14381": {
+    "bondCode": "14381",
+    "evidenceText": "償還銀行借款及支付營建工程款。",
+    "issuerCode": "1438",
+    "issuerName": "三地開發",
+    "purposes": [
+      "償還借款",
+      "營建工程款"
+    ],
+    "source": "Yahoo股市重訊",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B8%89%E5%9C%B0%E9%96%8B%E7%99%BC%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E9%80%9A%E9%81%8E%E7%99%BC%E8%A1%8C113%E5%B9%B4%E5%9C%8B%E5%85%A7%E7%AC%AC-%E6%AC%A1%E6%9C%89%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-121611125.html",
+    "summary": "償還銀行借款及支付營建工程款。",
+    "updatedAt": "2026-06-30"
+  },
+  "14664": {
+    "bondCode": "14664",
+    "evidenceText": "償還銀行借款。",
+    "issuerCode": "1466",
+    "issuerName": "聚隆",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "Yahoo股市重訊",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%81%9A%E9%9A%86%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%BE%A6%E7%90%86%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC%E5%9B%9B%E6%AC%A1%E6%9C%89%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-082651957.html",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "14722": {
+    "bondCode": "14722",
+    "evidenceText": "充實營運資金及轉投資子公司。",
+    "issuerCode": "1472",
+    "issuerName": "三洋實業",
+    "purposes": [
+      "營運資金",
+      "轉投資"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=43e6514f-727e-4a96-b349-1796a9c4c412",
+    "summary": "充實營運資金及轉投資子公司。",
+    "updatedAt": "2026-06-30"
+  },
+  "14723": {
+    "bondCode": "14723",
+    "evidenceText": "充實營運資金及轉投資子公司。",
+    "issuerCode": "1472",
+    "issuerName": "三洋實業",
+    "purposes": [
+      "營運資金",
+      "轉投資"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=43e6514f-727e-4a96-b349-1796a9c4c412",
+    "summary": "充實營運資金及轉投資子公司。",
+    "updatedAt": "2026-06-30"
+  },
+  "14743": {
+    "bondCode": "14743",
+    "evidenceText": "償還弘裕國內第二次無擔保轉換公司債到期所需資金。",
+    "issuerCode": "1474",
+    "issuerName": "弘裕",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=92f1920a-32b8-4061-9826-1a65c0482f48",
+    "summary": "償還弘裕國內第二次無擔保轉換公司債到期所需資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "15141": {
+    "bondCode": "15141",
+    "evidenceText": "償還金融機構借款。",
+    "issuerCode": "1514",
+    "issuerName": "亞力",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "鉅亨網/MOPS公告",
+    "sourceUrl": "https://news.cnyes.com/news/id/5265683",
+    "summary": "償還金融機構借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "15142": {
+    "bondCode": "15142",
+    "evidenceText": "償還銀行借款。",
+    "issuerCode": "1514",
+    "issuerName": "亞力",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "Yahoo股市重訊",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%BA%9E%E5%8A%9B%E9%9B%BB%E6%A9%9F%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%BA%8C%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-030356131.html",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "15261": {
+    "bondCode": "15261",
+    "evidenceText": "充實營運資金及償還銀行借款。",
+    "issuerCode": "1526",
+    "issuerName": "日馳",
+    "purposes": [
+      "營運資金",
+      "償還借款"
+    ],
+    "source": "Yahoo股市重訊",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%97%A5%E9%A6%B3%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC-%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-065803886.html",
+    "summary": "充實營運資金及償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "15364": {
+    "bondCode": "15364",
+    "evidenceText": "募得價款之用途及運用計畫：償還銀行借款",
+    "issuerCode": "1536",
+    "issuerName": "和大",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=4c14af48-c71f-40b8-a90e-e402299b2a84",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "15601": {
+    "bondCode": "15601",
+    "evidenceText": "募得價款之用途及運用計畫：償還銀行借款",
+    "issuerCode": "1560",
+    "issuerName": "中砂",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=da2f307c-bdae-4cfb-b230-85c84f7252b3",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "15864": {
+    "bondCode": "15864",
+    "evidenceText": "償還公司債及銀行借款。",
+    "issuerCode": "1586",
+    "issuerName": "和勤",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=9fd6f572-a6b5-49e6-ae0b-52c3fc667bfc",
+    "summary": "償還公司債及銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "15865": {
+    "bondCode": "15865",
+    "evidenceText": "募得價款之用途及運用計畫：償還公司債及銀行借款",
+    "issuerCode": "1586",
+    "issuerName": "和勤",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=3b7df45d-142c-4106-b230-cfb210b256a7",
+    "summary": "償還公司債及銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "15894": {
+    "bondCode": "15894",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "1589",
+    "issuerName": "永冠-KY",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "Yahoo股市/MOPS重大訊息",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%B0%B8%E5%86%A0-ky%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E4%B8%AD%E8%8F%AF%E6%B0%91%E5%9C%8B%E5%A2%83%E5%85%A7%E7%AC%AC%E5%9B%9B%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-095643045.html",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "15952": {
+    "bondCode": "15952",
+    "confidence": "高",
+    "evidenceText": "川寶二資金運用計畫變更：停止泰國廠房建置，變更為償還本公司銀行借款及轉投資寶虹科技用以償還銀行借款，以改善財務結構。",
+    "issuerCode": "1595",
+    "issuerName": "川寶",
+    "purposes": [
+      "擴廠",
+      "償還借款",
+      "轉投資",
+      "充實財務結構"
+    ],
+    "source": "上傳表：CB明細檢核表/TheFew與櫃買中心清單",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%B7%9D%E5%AF%B6%E8%BE%A6%E7%90%86113%E5%B9%B4%E5%BA%A6%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%BA%8C%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5%E4%B9%8B%E8%B3%87%E9%87%91%E9%81%8B%E7%94%A8%E8%A8%88%E7%95%AB%E8%AE%8A%E6%9B%B4-094324633.html",
+    "summary": "川寶二資金運用計畫變更：停止泰國廠房建置，變更為償還本公司銀行借款及轉投資寶虹科技用以償還銀行借款，以改善財務結構。",
+    "updatedAt": "2026-06-30"
+  },
+  "15984": {
+    "bondCode": "15984",
+    "evidenceText": "償還銀行借款。",
+    "issuerCode": "1598",
+    "issuerName": "岱宇",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "Yahoo股市重訊",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%B2%B1%E5%AE%87%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC%E5%9B%9B%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-133904380.html",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "16094": {
+    "bondCode": "16094",
+    "evidenceText": "轉投資子公司及償還銀行借款。",
+    "issuerCode": "1609",
+    "issuerName": "大亞",
+    "purposes": [
+      "轉投資",
+      "償還借款"
+    ],
+    "source": "Yahoo股市重訊",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%AA%BF%E6%95%B4%E5%A4%A7%E4%BA%9E110%E5%B9%B45%E6%9C%8813%E6%97%A5%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC%E5%9B%9B%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5%E4%B9%8B%E7%99%BC%E8%A1%8C%E7%B8%BD%E9%A1%8D-074356210.html",
+    "summary": "轉投資子公司及償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "16095": {
+    "bondCode": "16095",
+    "evidenceText": "償還金融機構借款及充實營運資金。",
+    "issuerCode": "1609",
+    "issuerName": "大亞",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "承銷公告/公開說明書摘要",
+    "sourceUrl": "https://www.emega.com.tw/emega/upload/bulletin/18f4be5d4770000085da.pdf",
+    "summary": "償還金融機構借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "16173": {
+    "bondCode": "16173",
+    "evidenceText": "償還銀行借款。",
+    "issuerCode": "1617",
+    "issuerName": "榮星",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=a1dd886f-ac26-4954-8ff6-6d883a7f36a8",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "17172": {
+    "bondCode": "17172",
+    "confidence": "高",
+    "evidenceText": "募得價款之用途及運用計畫:償還110年度第一期有擔保普通公司債及銀行借款",
+    "issuerCode": "1717",
+    "issuerName": "長興",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=d475397b-0d94-4285-bce1-c...",
+    "summary": "償還110年度第一期有擔保普通公司債及銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "17813": {
+    "bondCode": "17813",
+    "evidenceText": "償還借款及充實營運資金。",
+    "issuerCode": "1781",
+    "issuerName": "合世",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=fc1f0c7d-ec0e-43d2-be46-7d690f9035d2",
+    "summary": "償還借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "17863": {
+    "bondCode": "17863",
+    "evidenceText": "充實營運資金。",
+    "issuerCode": "1786",
+    "issuerName": "科妍",
+    "purposes": [
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=de657ede-4b3d-41e9-8859-9d773cde8321",
+    "summary": "充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "19094": {
+    "bondCode": "19094",
+    "evidenceText": "募得價款之用途及運用計畫：償還銀行借款",
+    "issuerCode": "1909",
+    "issuerName": "榮成",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=5e78dd1f-e2f6-4e3b-9e63-874433c8c951",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "20344": {
+    "bondCode": "20344",
+    "evidenceText": "償還銀行借款。",
+    "issuerCode": "2034",
+    "issuerName": "允強",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e16a96b2-91e9-4b7f-907b-f6586eb34251",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "20632": {
+    "bondCode": "20632",
+    "evidenceText": "募得價款之用途及運用計畫：償還銀行借款及充實營運資金",
+    "issuerCode": "2063",
+    "issuerName": "世鎧精密",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=2a08ea1d-061b-4a11-89d0-3d8a1737a8a5",
+    "summary": "償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "20662": {
+    "bondCode": "20662",
+    "evidenceText": "募得價款之用途及運用計畫：償還銀行借款及充實營運資金",
+    "issuerCode": "2066",
+    "issuerName": "世德",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "Yahoo股市/中央社重大訊息",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B8%96%E5%BE%B7%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%BA%8C%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-105402460.html",
+    "summary": "償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "21043": {
+    "bondCode": "21043",
+    "evidenceText": "募得價款之用途及運用計畫：償還本公司銀行借款、支應印度子公司Continental Carbon Eco Technology Private Limited碳黑工廠工程款及相關支出，並充實營運資金需求",
+    "issuerCode": "2104",
+    "issuerName": "國際中橡",
+    "purposes": [
+      "償還借款",
+      "轉投資",
+      "營運資金",
+      "擴廠"
+    ],
+    "source": "精誠資訊/公開資訊觀測站重大訊息",
+    "sourceUrl": "https://ww2.money-link.com.tw/RealtimeNews/NewsContent.aspx?PU=0010&SN=1953582002",
+    "summary": "償還本公司銀行借款、支應印度子公司Continental Carbon Eco Technology Private Limited碳黑工廠工程款及相關支出，並充實營運資金需求。",
+    "updatedAt": "2026-06-30"
+  },
+  "22013": {
+    "bondCode": "22013",
+    "evidenceText": "募得價款之用途及運用計畫：償還債務、改善財務結構",
+    "issuerCode": "2201",
+    "issuerName": "裕隆",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=78d2b2ed-9f8d-40a9-97e6-94169811d72d",
+    "summary": "償還債務、改善財務結構。",
+    "updatedAt": "2026-06-30"
+  },
+  "22283": {
+    "bondCode": "22283",
+    "evidenceText": "募得價款之用途及運用計畫：償還銀行借款、充實營運資金",
+    "issuerCode": "2228",
+    "issuerName": "劍麟",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "鉅亨網/公開資訊觀測站重大訊息",
+    "sourceUrl": "https://news.cnyes.com/news/id/5545808",
+    "summary": "償還銀行借款、充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "22331": {
+    "bondCode": "22331",
+    "evidenceText": "募得價款之用途及運用計畫：償還銀行借款及充實營運資金",
+    "issuerCode": "2233",
+    "issuerName": "宇隆",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=6c867aba-3bf5-4618-8064-154aa4cd7d02",
+    "summary": "償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "22362": {
+    "bondCode": "22362",
+    "evidenceText": "募得價款之用途及運用計畫：償還銀行借款、充實營運資金",
+    "issuerCode": "2236",
+    "issuerName": "百達-KY",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "Yahoo股市/中央社重大訊息",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%99%BE%E9%81%94-ky%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%BA%8C%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-112319191.html",
+    "summary": "償還銀行借款、充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "22363": {
+    "bondCode": "22363",
+    "evidenceText": "償還銀行借款、充實營運資金。",
+    "issuerCode": "2236",
+    "issuerName": "百達-KY",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=6678d9d9-0291-4aa8-a57a-8301b3c7c1cc",
+    "summary": "償還銀行借款、充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "22471": {
+    "bondCode": "22471",
+    "evidenceText": "募得價款之用途及運用計畫：充實營運資金",
+    "issuerCode": "2247",
+    "issuerName": "汎德永業",
+    "purposes": [
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=b138a957-21fc-4a8c-8b5a-7eb11041a1ef",
+    "summary": "充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "22472": {
+    "bondCode": "22472",
+    "evidenceText": "募得價款之用途及運用計畫：充實營運資金",
+    "issuerCode": "2247",
+    "issuerName": "汎德永業",
+    "purposes": [
+      "營運資金"
+    ],
+    "source": "鉅亨網/公開資訊觀測站重大訊息",
+    "sourceUrl": "https://news.cnyes.com/news/id/5971149",
+    "summary": "充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "22501": {
+    "bondCode": "22501",
+    "evidenceText": "募得價款之用途及運用計畫：償還銀行借款及充實營運資金",
+    "issuerCode": "2250",
+    "issuerName": "IKKA-KY",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "Yahoo股市/中央社重大訊息",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-ikka-ky%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC-%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-080305851.html",
+    "summary": "償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "23291": {
+    "bondCode": "23291",
+    "evidenceText": "募得價款之用途及運用計畫：償還銀行借款及充實營運資金",
+    "issuerCode": "2329",
+    "issuerName": "華泰",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "Yahoo股市/中央社重大訊息",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%8F%AF%E6%B3%B0%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E9%80%9A%E9%81%8E%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC-%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-085806808.html",
+    "summary": "償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "23372": {
+    "bondCode": "23372",
+    "evidenceText": "募得價款之用途及運用計畫：償還銀行借款",
+    "issuerCode": "2337",
+    "issuerName": "旺宏",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=0ea669b7-e1ab-47a9-bbcc-04b392ff36c7",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "23383": {
+    "bondCode": "23383",
+    "evidenceText": "募得價款之用途及運用計畫：購買機器設備、償還銀行借款",
+    "issuerCode": "2338",
+    "issuerName": "光罩",
+    "purposes": [
+      "購置設備",
+      "償還借款"
+    ],
+    "source": "Yahoo股市/中央社重大訊息",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%89%E7%BD%A9%E8%91%A3%E4%BA%8B%E6%9C%83%E9%80%9A%E9%81%8E%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%B8%89%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-120705408.html",
+    "summary": "購買機器設備、償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "23511": {
+    "bondCode": "23511",
+    "evidenceText": "募得價款之用途及運用計畫：償還銀行借款",
+    "issuerCode": "2351",
+    "issuerName": "順德",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "Yahoo股市/中央社重大訊息",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC-%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-085535550.html",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "23682": {
+    "bondCode": "23682",
+    "evidenceText": "募得價款之用途及運用計畫：償還銀行借款及充實營運資金",
+    "issuerCode": "2368",
+    "issuerName": "金像電",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=58d00281-8866-43b9-8d24-89a2b749d9a5",
+    "summary": "償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "23683": {
+    "bondCode": "23683",
+    "evidenceText": "募得價款之用途及運用計畫：購置土地、興建廠房、新建廠房購買設備、償還銀行借款及充實營運資金",
+    "issuerCode": "2368",
+    "issuerName": "金像電",
+    "purposes": [
+      "購置設備",
+      "擴廠",
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=efa4b8e9-5ee6-4f25-b144-9b349bdc8e20",
+    "summary": "購置土地、興建廠房、新建廠房購買設備、償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "23742": {
+    "bondCode": "23742",
+    "evidenceText": "募得價款之用途及運用計畫：充實營運資金",
+    "issuerCode": "2374",
+    "issuerName": "佳能",
+    "purposes": [
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=bf86363f-cbbe-4297-bd19-49453667504e",
+    "summary": "充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "23835": {
+    "bondCode": "23835",
+    "evidenceText": "募得價款之用途及運用計畫：購置不動產、廠房及償還銀行借款",
+    "issuerCode": "2383",
+    "issuerName": "台光電",
+    "purposes": [
+      "購置設備",
+      "擴廠",
+      "償還借款"
+    ],
+    "source": "鉅亨網/公開資訊觀測站重大訊息",
+    "sourceUrl": "https://news.cnyes.com/news/id/4848476",
+    "summary": "購置不動產、廠房及償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "23836": {
+    "bondCode": "23836",
+    "evidenceText": "募得價款之用途及運用計畫：償還銀行借款及充實營運資金",
+    "issuerCode": "2383",
+    "issuerName": "台光電",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f2faf09d-d62e-4281-a1d6-9c1b84c2ef78",
+    "summary": "償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "23837": {
+    "bondCode": "23837",
+    "evidenceText": "募得價款之用途及運用計畫：償還銀行借款及充實營運資金",
+    "issuerCode": "2383",
+    "issuerName": "台光電",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "Nstock/公開資訊觀測站重大訊息",
+    "sourceUrl": "https://www.nstock.tw/news/article_m?id=220349",
+    "summary": "償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "24023": {
+    "bondCode": "24023",
+    "evidenceText": "募得價款之用途及運用計畫：償還金融機構借款",
+    "issuerCode": "2402",
+    "issuerName": "毅嘉",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "CMoney/公開資訊觀測站重大訊息",
+    "sourceUrl": "https://www.1458.com.tw/newsD475394.html",
+    "summary": "償還金融機構借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "24213": {
+    "bondCode": "24213",
+    "evidenceText": "募得價款之用途及運用計畫：償還銀行借款",
+    "issuerCode": "2421",
+    "issuerName": "建準",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "Yahoo股市/中央社重大訊息",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%BB%BA%E6%BA%96%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E9%80%9A%E9%81%8E%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%B8%89%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-073555739.html",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "24271": {
+    "bondCode": "24271",
+    "evidenceText": "募得價款之用途及運用計畫：充實營運資金",
+    "issuerCode": "2427",
+    "issuerName": "三商電",
+    "purposes": [
+      "營運資金"
+    ],
+    "source": "鉅亨網/公開資訊觀測站重大訊息",
+    "sourceUrl": "https://news.cnyes.com/news/id/5390041",
+    "summary": "充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "24361": {
+    "bondCode": "24361",
+    "evidenceText": "募得價款之用途及運用計畫：償還銀行借款",
+    "issuerCode": "2436",
+    "issuerName": "偉詮電",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=aaf5843b-96b5-4a9a-b243-ca64232dedda",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "24394": {
+    "bondCode": "24394",
+    "evidenceText": "募得價款之用途及運用計畫：充實營運資金及償還銀行借款",
+    "issuerCode": "2439",
+    "issuerName": "美律",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "美律官網/MOPS重大訊息",
+    "sourceUrl": "https://www.merry.com.tw/page/news/show.aspx?num=2651",
+    "summary": "充實營運資金及償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "24395": {
+    "bondCode": "24395",
+    "evidenceText": "募得價款之用途及運用計畫：充實營運資金及償還銀行借款",
+    "issuerCode": "2439",
+    "issuerName": "美律",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "美律官網/MOPS重大訊息",
+    "sourceUrl": "https://www.merry.com.tw/page/news/show.aspx?num=2652",
+    "summary": "充實營運資金及償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "24423": {
+    "bondCode": "24423",
+    "evidenceText": "募得價款之用途及運用計畫：償還債務及充實營運資金",
+    "issuerCode": "2442",
+    "issuerName": "新美齊",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=6d633566-ef0f-4565-ad99-0432cd2760e2",
+    "summary": "償還債務及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "24424": {
+    "bondCode": "24424",
+    "evidenceText": "募得價款之用途及運用計畫：償還債務及充實營運資金",
+    "issuerCode": "2442",
+    "issuerName": "新美齊",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=6d633566-ef0f-4565-ad99-0432cd2760e2",
+    "summary": "償還債務及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "24552": {
+    "bondCode": "24552",
+    "evidenceText": "募得價款之用途及運用計畫：償還銀行借款暨購置機器設備",
+    "issuerCode": "2455",
+    "issuerName": "全新",
+    "purposes": [
+      "購置設備",
+      "償還借款"
+    ],
+    "source": "Yahoo股市/中央社重大訊息",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%A8%E6%96%B0%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%BA%8C%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-091716818.html",
+    "summary": "償還銀行借款暨購置機器設備。",
+    "updatedAt": "2026-06-30"
+  },
+  "24553": {
+    "bondCode": "24553",
+    "evidenceText": "募得價款之用途及運用計畫：償還銀行借款暨購置機器設備",
+    "issuerCode": "2455",
+    "issuerName": "全新",
+    "purposes": [
+      "購置設備",
+      "償還借款"
+    ],
+    "source": "Yahoo股市/中央社重大訊息",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%A8%E6%96%B0%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%B8%89%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-091714308.html",
+    "summary": "償還銀行借款暨購置機器設備。",
+    "updatedAt": "2026-06-30"
+  },
+  "24624": {
+    "bondCode": "24624",
+    "evidenceText": "募得價款之用途及運用計畫：償還銀行借款",
+    "issuerCode": "2462",
+    "issuerName": "良得電",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=cd94fcf0-04b1-4333-8793-bb2932c6996a",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "24642": {
+    "bondCode": "24642",
+    "evidenceText": "募得價款之用途及運用計畫：償還銀行借款",
+    "issuerCode": "2464",
+    "issuerName": "盟立",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=69e70f17-7e96-4c47-8eb7-75de7668ced4",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "24672": {
+    "bondCode": "24672",
+    "evidenceText": "募得價款之用途及運用計畫：償還銀行借款",
+    "issuerCode": "2467",
+    "issuerName": "志聖",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c9f96a17-0103-4cac-a383-da9a152a90f7",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "24673": {
+    "bondCode": "24673",
+    "evidenceText": "募得價款之用途及運用計畫：償還銀行借款",
+    "issuerCode": "2467",
+    "issuerName": "志聖",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c9f96a17-0103-4cac-a383-da9a152a90f7",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "24762": {
+    "bondCode": "24762",
+    "evidenceText": "募得價款之用途及運用計畫：購置廠房、機器設備及廠務設施",
+    "issuerCode": "2476",
+    "issuerName": "鉅祥",
+    "purposes": [
+      "購置設備",
+      "擴廠"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=a0526f91-3f03-4da1-8a7e-ced61e4366f2",
+    "summary": "購置廠房、機器設備及廠務設施。",
+    "updatedAt": "2026-06-30"
+  },
+  "24866": {
+    "bondCode": "24866",
+    "evidenceText": "募得價款之用途及運用計畫：償還銀行借款及充實營運資金",
+    "issuerCode": "2486",
+    "issuerName": "一詮",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=3338b19f-5217-4944-ac47-2fed57b006be",
+    "summary": "償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "25283": {
+    "bondCode": "25283",
+    "evidenceText": "募得價款之用途及運用計畫：償還銀行借款",
+    "issuerCode": "2528",
+    "issuerName": "皇普",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=0e5cd8d9-f31a-4e5b-b9ec-dd6dc5e7bdf4",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "25284": {
+    "bondCode": "25284",
+    "evidenceText": "募得價款之用途及運用計畫：償還銀行借款",
+    "issuerCode": "2528",
+    "issuerName": "皇普",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=0e5cd8d9-f31a-4e5b-b9ec-dd6dc5e7bdf4",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "25303": {
+    "bondCode": "25303",
+    "evidenceText": "募得價款之用途及運用計畫：充實營運資金",
+    "issuerCode": "2530",
+    "issuerName": "華建",
+    "purposes": [
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=fa226f3b-a2db-4db2-a52c-f7c09215af6c",
+    "summary": "充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "25304": {
+    "bondCode": "25304",
+    "evidenceText": "募得價款之用途及運用計畫：充實營運資金",
+    "issuerCode": "2530",
+    "issuerName": "華建",
+    "purposes": [
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=fa226f3b-a2db-4db2-a52c-f7c09215af6c",
+    "summary": "充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "25483": {
+    "bondCode": "25483",
+    "evidenceText": "充實營運資金及償還銀行借款。",
+    "issuerCode": "2548",
+    "issuerName": "華固",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "富邦證券/MOPS重大訊息轉載",
+    "sourceUrl": "https://ebroker-dj.fbs.com.tw/z/zf/zfz/zfz_C47BFEEE-F293-467F-8711-85903F8CC55A.djhtm",
+    "summary": "充實營運資金及償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "25484": {
+    "bondCode": "25484",
+    "evidenceText": "充實營運資金及償還銀行借款。",
+    "issuerCode": "2548",
+    "issuerName": "華固",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "富邦證券/MOPS重大訊息轉載",
+    "sourceUrl": "https://ebroker-dj.fbs.com.tw/z/zf/zfz/zfz_C47BFEEE-F293-467F-8711-85903F8CC55A.djhtm",
+    "summary": "充實營運資金及償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "26185": {
+    "bondCode": "26185",
+    "evidenceText": "償還銀行借款及公司債。",
+    "issuerCode": "2618",
+    "issuerName": "長榮航",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=cef9607a-d239-445e-8b40-382dad32d0cd",
+    "summary": "償還銀行借款及公司債。",
+    "updatedAt": "2026-06-30"
+  },
+  "26416": {
+    "bondCode": "26416",
+    "evidenceText": "轉投資子公司及償還109年度第一次國內有擔保普通公司債。",
+    "issuerCode": "2641",
+    "issuerName": "正德",
+    "purposes": [
+      "償還借款",
+      "轉投資"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=9e0c1b8c-d66f-4c96-a977-c201dfe47b51",
+    "summary": "轉投資子公司及償還109年度第一次國內有擔保普通公司債。",
+    "updatedAt": "2026-06-30"
+  },
+  "26417": {
+    "bondCode": "26417",
+    "evidenceText": "轉投資子公司。",
+    "issuerCode": "2641",
+    "issuerName": "正德",
+    "purposes": [
+      "轉投資"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=b73103d2-8efd-413f-b1cb-5d9864ea33d8",
+    "summary": "轉投資子公司。",
+    "updatedAt": "2026-06-30"
+  },
+  "26418": {
+    "bondCode": "26418",
+    "evidenceText": "償還銀行借款及轉投資子公司。",
+    "issuerCode": "2641",
+    "issuerName": "正德",
+    "purposes": [
+      "償還借款",
+      "轉投資"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=28517c64-7608-403a-a3f9-52714b0f6c83",
+    "summary": "償還銀行借款及轉投資子公司。",
+    "updatedAt": "2026-06-30"
+  },
+  "27271": {
+    "bondCode": "27271",
+    "evidenceText": "展店計畫。",
+    "issuerCode": "2727",
+    "issuerName": "王品",
+    "purposes": [
+      "擴廠"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=b80981e9-dddf-4528-b71d-3c5c9535e86d",
+    "summary": "展店計畫。",
+    "updatedAt": "2026-06-30"
+  },
+  "27323": {
+    "bondCode": "27323",
+    "evidenceText": "償還銀行借款。",
+    "issuerCode": "2732",
+    "issuerName": "六角",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "鉅亨/MOPS重大訊息",
+    "sourceUrl": "https://news.cnyes.com/news/id/5433431",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "27324": {
+    "bondCode": "27324",
+    "evidenceText": "償還國內第三次可轉換公司債持有人執行賣回權所需資金。",
+    "issuerCode": "2732",
+    "issuerName": "六角",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=9521f370-7788-4d35-8882-cf267289029f",
+    "summary": "償還國內第三次可轉換公司債持有人執行賣回權所需資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "27431": {
+    "bondCode": "27431",
+    "evidenceText": "充實營運資金。",
+    "issuerCode": "2743",
+    "issuerName": "山富",
+    "purposes": [
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c7c2e0d8-1819-46f1-bbfd-296badc9df4c",
+    "summary": "充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "27451": {
+    "bondCode": "27451",
+    "evidenceText": "充實營運資金。",
+    "issuerCode": "2745",
+    "issuerName": "五福",
+    "purposes": [
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=334f4141-4bb2-4cd4-a880-367a43bbd09b",
+    "summary": "充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "27531": {
+    "bondCode": "27531",
+    "evidenceText": "轉投資及充實營運資金。",
+    "issuerCode": "2753",
+    "issuerName": "八方雲集",
+    "purposes": [
+      "轉投資",
+      "營運資金"
+    ],
+    "source": "鉅亨/MOPS重大訊息",
+    "sourceUrl": "https://news.cnyes.com/news/id/6107055",
+    "summary": "轉投資及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "27532": {
+    "bondCode": "27532",
+    "evidenceText": "轉投資及充實營運資金。",
+    "issuerCode": "2753",
+    "issuerName": "八方雲集",
+    "purposes": [
+      "轉投資",
+      "營運資金"
+    ],
+    "source": "鉅亨/MOPS重大訊息",
+    "sourceUrl": "https://news.cnyes.com/news/id/6107055",
+    "summary": "轉投資及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "27551": {
+    "bondCode": "27551",
+    "evidenceText": "償還中壢廠區土地融資銀行借款及拓展「涮金鍋」品牌門市展店計畫。",
+    "issuerCode": "2755",
+    "issuerName": "揚秦",
+    "purposes": [
+      "償還借款",
+      "擴廠"
+    ],
+    "source": "Yahoo股市重訊",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%8F%9A%E7%A7%A6%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E9%80%9A%E9%81%8E%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC-%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-080023079.html",
+    "summary": "償還中壢廠區土地融資銀行借款及拓展「涮金鍋」品牌門市展店計畫。",
+    "updatedAt": "2026-06-30"
+  },
+  "27561": {
+    "bondCode": "27561",
+    "evidenceText": "充實營運資金及償還銀行借款。",
+    "issuerCode": "2756",
+    "issuerName": "聯發國際",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=48a30531-b8e1-4273-be24-191ea5260765",
+    "summary": "充實營運資金及償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "28887": {
+    "bondCode": "28887",
+    "evidenceText": "償還國內第五次無擔保轉換公司債。",
+    "issuerCode": "2888",
+    "issuerName": "新光金",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=10004f70-02c1-43ce-b67e-7f09169bb063",
+    "summary": "償還國內第五次無擔保轉換公司債。",
+    "updatedAt": "2026-06-30"
+  },
+  "29061": {
+    "bondCode": "29061",
+    "evidenceText": "償還銀行借款。",
+    "issuerCode": "2906",
+    "issuerName": "高林",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "鉅亨/MOPS重大訊息",
+    "sourceUrl": "https://news.cnyes.com/news/id/5305964",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "30061": {
+    "bondCode": "30061",
+    "evidenceText": "償還銀行借款。",
+    "issuerCode": "3006",
+    "issuerName": "晶豪科",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "晶豪科技公司公告/MOPS重大訊息",
+    "sourceUrl": "https://www.esmt.com.tw/zh-tw/News/Company-News/%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E6%9C%AC%E5%85%AC%E5%8F%B8%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%B8%80%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "30112": {
+    "bondCode": "30112",
+    "evidenceText": "償還銀行借款。",
+    "issuerCode": "3011",
+    "issuerName": "今皓",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "鉅亨/MOPS重大訊息",
+    "sourceUrl": "https://news.cnyes.com/news/id/6252712",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "30133": {
+    "bondCode": "30133",
+    "evidenceText": "償還銀行借款。",
+    "issuerCode": "3013",
+    "issuerName": "晟銘電",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "鉅亨/MOPS重大訊息",
+    "sourceUrl": "https://news.cnyes.com/news/print/5370343",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "30134": {
+    "bondCode": "30134",
+    "evidenceText": "轉投資泰國子公司及償還銀行借款。",
+    "issuerCode": "3013",
+    "issuerName": "晟銘電",
+    "purposes": [
+      "償還借款",
+      "轉投資"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=5bc8d7ea-7988-45a9-a90d-1534870269eb",
+    "summary": "轉投資泰國子公司及償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "30165": {
+    "bondCode": "30165",
+    "evidenceText": "購置機器設備及其相關安裝工程。",
+    "issuerCode": "3016",
+    "issuerName": "嘉晶",
+    "purposes": [
+      "購置設備"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=7210677d-675e-4d0e-bdac-7b58a440a6d5",
+    "summary": "購置機器設備及其相關安裝工程。",
+    "updatedAt": "2026-06-30"
+  },
+  "30321": {
+    "bondCode": "30321",
+    "evidenceText": "償還過渡性及其他銀行借款。",
+    "issuerCode": "3032",
+    "issuerName": "偉訓",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=82d1d9fb-61a9-48d5-aabc-d8e28b10f206",
+    "summary": "償還過渡性及其他銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "30322": {
+    "bondCode": "30322",
+    "evidenceText": "償還過渡性及其他銀行借款。",
+    "issuerCode": "3032",
+    "issuerName": "偉訓",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=82d1d9fb-61a9-48d5-aabc-d8e28b10f206",
+    "summary": "償還過渡性及其他銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "30336": {
+    "bondCode": "30336",
+    "evidenceText": "償還銀行借款。",
+    "issuerCode": "3033",
+    "issuerName": "威健",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://m.moneydj.com/f1a.aspx?a=ad8a9fb5-aeb9-456a-a0ec-96627b9750d6",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "30337": {
+    "bondCode": "30337",
+    "evidenceText": "償還銀行借款。",
+    "issuerCode": "3033",
+    "issuerName": "威健",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=87f766d8-05f0-44de-a1c7-d7f4ee369279",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "30371": {
+    "bondCode": "30371",
+    "evidenceText": "償還109年第一次無擔保普通公司債、110年第一次無擔保普通公司債及充實營運資金。",
+    "issuerCode": "3037",
+    "issuerName": "欣興",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=8fac010a-3772-40ce-9e42-5184abbccf88",
+    "summary": "償還109年第一次無擔保普通公司債、110年第一次無擔保普通公司債及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "30401": {
+    "bondCode": "30401",
+    "evidenceText": "購置物流倉儲中心。",
+    "issuerCode": "3040",
+    "issuerName": "遠見",
+    "purposes": [
+      "購置設備"
+    ],
+    "source": "鉅亨/MOPS重大訊息",
+    "sourceUrl": "https://news.cnyes.com/news/id/5939910",
+    "summary": "購置物流倉儲中心。",
+    "updatedAt": "2026-06-30"
+  },
+  "30454": {
+    "bondCode": "30454",
+    "evidenceText": "償還債務。",
+    "issuerCode": "3045",
+    "issuerName": "台灣大",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=8f5fe16a-50b9-48d0-afbf-53c23e23c9c2",
+    "summary": "償還債務。",
+    "updatedAt": "2026-06-30"
+  },
+  "30455": {
+    "bondCode": "30455",
+    "evidenceText": "償還債務。",
+    "issuerCode": "3045",
+    "issuerName": "台灣大",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=6ba911b0-685b-4c31-8d00-ea7a8f670094",
+    "summary": "償還債務。",
+    "updatedAt": "2026-06-30"
+  },
+  "30882": {
+    "bondCode": "30882",
+    "evidenceText": "償還銀行借款及充實營運資金。",
+    "issuerCode": "3088",
+    "issuerName": "艾訊",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=fc9e9857-4bdc-4978-a294-7b0ebf3e648c",
+    "summary": "償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "30922": {
+    "bondCode": "30922",
+    "evidenceText": "償還銀行借款。",
+    "issuerCode": "3092",
+    "issuerName": "鴻碩",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=8f407071-a69c-459b-85a1-d901eb8f83a8",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "30954": {
+    "bondCode": "30954",
+    "evidenceText": "償還銀行借款。",
+    "issuerCode": "3095",
+    "issuerName": "及成",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=932592f5-94b7-4110-a6ff-f9530ada8b60",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "31222": {
+    "bondCode": "31222",
+    "evidenceText": "償還國內第一次有擔保轉換公司債到期之本金及充實營運資金。",
+    "issuerCode": "3122",
+    "issuerName": "笙泉",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "Yahoo股市重訊",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%AC%99%E6%B3%89%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E9%80%9A%E9%81%8E%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%BA%8C%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-100008781.html",
+    "summary": "償還國內第一次有擔保轉換公司債到期之本金及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "31282": {
+    "bondCode": "31282",
+    "evidenceText": "償還銀行借款。",
+    "issuerCode": "3128",
+    "issuerName": "昇銳",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://m.moneydj.com/f1a.aspx?a=ea932b12-6909-4c9f-8821-abfcb2cccb50",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "31311": {
+    "bondCode": "31311",
+    "evidenceText": "償還銀行借款暨充實營運資金。",
+    "issuerCode": "3131",
+    "issuerName": "弘塑",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=95d416a3-3056-4956-b691-1bccf3d87128",
+    "summary": "償還銀行借款暨充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "31312": {
+    "bondCode": "31312",
+    "evidenceText": "償還銀行借款暨充實營運資金。",
+    "issuerCode": "3131",
+    "issuerName": "弘塑",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=95d416a3-3056-4956-b691-1bccf3d87128",
+    "summary": "償還銀行借款暨充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "31351": {
+    "bondCode": "31351",
+    "evidenceText": "充實營運資金。",
+    "issuerCode": "3135",
+    "issuerName": "凌航",
+    "purposes": [
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=52f75338-1457-4255-8c11-e90e08465bd2",
+    "summary": "充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "31352": {
+    "bondCode": "31352",
+    "evidenceText": "充實營運資金。",
+    "issuerCode": "3135",
+    "issuerName": "凌航",
+    "purposes": [
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=3ccc55c0-aed2-48da-b315-9b89081d29e7",
+    "summary": "充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "31382": {
+    "bondCode": "31382",
+    "evidenceText": "支應國內第一次有擔保轉換公司債到期償還之本金、營運總部之工程款及室內裝修款。",
+    "issuerCode": "3138",
+    "issuerName": "耀登",
+    "purposes": [
+      "償還借款",
+      "其他"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=dc08bb6a-e1f7-495e-aadc-eec8020545b9",
+    "summary": "支應國內第一次有擔保轉換公司債到期償還之本金、營運總部之工程款及室內裝修款。",
+    "updatedAt": "2026-06-30"
+  },
+  "31413": {
+    "bondCode": "31413",
+    "evidenceText": "償還銀行借款及充實營運資金。",
+    "issuerCode": "3141",
+    "issuerName": "晶宏",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "群益投顧/MOPS重大訊息轉載",
+    "sourceUrl": "https://www.capitalim.com.tw/newsite/stock-news/stock-news/2dcb34c2-ffca-4f5e-ad66-64db5d54e7d0%3Bpage%3D1%28popup%3Alogin%29",
+    "summary": "償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "31672": {
+    "bondCode": "31672",
+    "evidenceText": "償還銀行借款及充實營運資金。",
+    "issuerCode": "3167",
+    "issuerName": "大量",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=b67d733f-1587-423c-88ec-0ff597dc54e5",
+    "summary": "償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "31882": {
+    "bondCode": "31882",
+    "evidenceText": "償還銀行借款。",
+    "issuerCode": "3188",
+    "issuerName": "鑫龍騰",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "Yahoo股市重訊",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%91%AB%E9%BE%8D%E9%A8%B0%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%8F%8A%E7%AC%AC%E4%B8%89%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-092258608.html",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "32071": {
+    "bondCode": "32071",
+    "evidenceText": "長期股權投資需求；後續曾公告部分資金用途變更為償還銀行借款及充實營運資金。",
+    "issuerCode": "3207",
+    "issuerName": "耀勝",
+    "purposes": [
+      "轉投資"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=fa38cfe9-8c89-4572-b8b4-4affe21da95d",
+    "summary": "長期股權投資需求；後續曾公告部分資金用途變更為償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "32571": {
+    "bondCode": "32571",
+    "evidenceText": "充實營運資金。",
+    "issuerCode": "3257",
+    "issuerName": "虹冠電",
+    "purposes": [
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=5f40d4a3-1afe-4360-9aa2-4144e0dcd5fe",
+    "summary": "充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "32608": {
+    "bondCode": "32608",
+    "evidenceText": "償還銀行借款以改善財務結構。",
+    "issuerCode": "3260",
+    "issuerName": "威剛",
+    "purposes": [
+      "償還借款",
+      "充實財務結構"
+    ],
+    "source": "第一銀行投資趨勢/MOPS重大訊息",
+    "sourceUrl": "https://wealth.firstbank.com.tw/investment-tips/trend-insight/news/news-detail?id=%7BA8A99845-2F61-4381-83D8-C262641BB593%7D",
+    "summary": "償還銀行借款以改善財務結構。",
+    "updatedAt": "2026-06-30"
+  },
+  "32723": {
+    "bondCode": "32723",
+    "evidenceText": "償還銀行借款。",
+    "issuerCode": "3272",
+    "issuerName": "東碩",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=03815163-63ea-4f14-9bed-d407c5d30195",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "32843": {
+    "bondCode": "32843",
+    "evidenceText": "償還銀行借款。",
+    "issuerCode": "3284",
+    "issuerName": "太普高",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "Yahoo股市重訊",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%A4%AA%E6%99%AE%E9%AB%98%E8%91%A3%E4%BA%8B%E6%9C%83%E9%80%9A%E9%81%8E%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%B8%89%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-083536211.html",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "32943": {
+    "bondCode": "32943",
+    "evidenceText": "償還銀行借款。",
+    "issuerCode": "3294",
+    "issuerName": "英濟",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "Yahoo股市重訊",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E8%8B%B1%E6%BF%9F%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%9C%89%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-%E4%B8%8A%E9%99%903%E5%84%84%E5%85%83-082300044.html",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "33035": {
+    "bondCode": "33035",
+    "confidence": "高",
+    "evidenceText": "",
+    "issuerCode": "3303",
+    "issuerName": "岱稜",
+    "purposes": [
+      "營運資金",
+      "購置設備",
+      "轉投資"
+    ],
+    "source": "上傳表：CB明細檢核表/TheFew與櫃買中心清單",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%B2%B1%E7%A8%9C%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%BA%94%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5%E8%B3%87%E9%87%91%E9%81%8B%E7%94%A8%E8%A8%88%E7%95%AB%E5%85%A7%E5%AE%B9%E8%AE%8A%E6%9B%B4-085226326.html",
+    "summary": "岱稜五資金運用計畫變更：原轉投資波蘭子公司之部分資金改用於充實營運資金；原計畫涉及波蘭子公司設備建置。",
+    "updatedAt": "2026-06-30"
+  },
+  "33055": {
+    "bondCode": "33055",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "3305",
+    "issuerName": "昇貿",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=7be56602-66a3-48cc-a829-26cf42ecc537",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "33121": {
+    "bondCode": "33121",
+    "evidenceText": "公告第10點：募得價款用途為償還銀行借款，改善財務結構。",
+    "issuerCode": "3312",
+    "issuerName": "弘憶股",
+    "purposes": [
+      "償還借款",
+      "充實財務結構"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=10f2a01e-8c7a-4694-9d8b-391cdbdc65a8",
+    "summary": "公告第10點：募得價款用途為償還銀行借款，改善財務結構。",
+    "updatedAt": "2026-06-30"
+  },
+  "33133": {
+    "bondCode": "33133",
+    "evidenceText": "原始公告第10點為支付營建工程款；後續資金運用計畫變更，部分改為償還金融機構借款及充實營運資金。",
+    "issuerCode": "3313",
+    "issuerName": "斐成",
+    "purposes": [
+      "工程款",
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息；鉅亨網/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=823afd28-bc03-4736-a8d2-e0ada90a7be5；https://news.cnyes.com/news/id/6103760",
+    "summary": "原始公告第10點為支付營建工程款；後續資金運用計畫變更，部分改為償還金融機構借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "33225": {
+    "bondCode": "33225",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "3322",
+    "issuerName": "建舜電",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=393cc357-c457-4f08-902d-7196ac3b6dda",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "33245": {
+    "bondCode": "33245",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為充實營運資金。",
+    "issuerCode": "3324",
+    "issuerName": "雙鴻",
+    "purposes": [
+      "營運資金"
+    ],
+    "source": "群益投顧/MOPS重大訊息轉載",
+    "sourceUrl": "https://www.capitalim.com.tw/newsite/stock-news/stock-news/f2de78e0-6651-4f5a-9a33-18875221736b%3Bpage%3D1%28popup%3Alogin%29",
+    "summary": "公告第10點：募得價款之用途及運用計畫為充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "33246": {
+    "bondCode": "33246",
+    "evidenceText": "公告第10點：募得價款用途為償還銀行借款及充實營運資金。",
+    "issuerCode": "3324",
+    "issuerName": "雙鴻",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=7cbc7ed9-eded-4dc1-bb07-71c2dfe06370",
+    "summary": "公告第10點：募得價款用途為償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "33247": {
+    "bondCode": "33247",
+    "evidenceText": "公告第10點：募得價款用途為償還銀行借款及充實營運資金。",
+    "issuerCode": "3324",
+    "issuerName": "雙鴻",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=7cbc7ed9-eded-4dc1-bb07-71c2dfe06370",
+    "summary": "公告第10點：募得價款用途為償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "33466": {
+    "bondCode": "33466",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "3346",
+    "issuerName": "麗清",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "群益投顧/MOPS重大訊息轉載",
+    "sourceUrl": "https://www.capitalim.com.tw/newsite/stock-news/stock-news/16c88b70-e66c-4d92-920d-f03352fc00b6%3Bpage%3D1%28popup%3Alogin%29",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "33571": {
+    "bondCode": "33571",
+    "evidenceText": "公告第10點：募得價款用途為充實營運資金、償還銀行借款。",
+    "issuerCode": "3357",
+    "issuerName": "臺慶科",
+    "purposes": [
+      "營運資金",
+      "償還借款"
+    ],
+    "source": "鉅亨網/MOPS重大訊息",
+    "sourceUrl": "https://news.cnyes.com/news/id/5353692",
+    "summary": "公告第10點：募得價款用途為充實營運資金、償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "33621": {
+    "bondCode": "33621",
+    "evidenceText": "公告第10點：募得價款用途為充實營運資金及償還銀行借款。",
+    "issuerCode": "3362",
+    "issuerName": "先進光",
+    "purposes": [
+      "營運資金",
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=06cf9af8-a807-47d1-861c-e55b009b42c7",
+    "summary": "公告第10點：募得價款用途為充實營運資金及償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "33763": {
+    "bondCode": "33763",
+    "evidenceText": "公告第10點：募得價款用途為償還銀行借款及充實營運之資金需求。",
+    "issuerCode": "3376",
+    "issuerName": "新日興",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=ea34f470-9d40-4c3a-80be-c13fd1009424",
+    "summary": "公告第10點：募得價款用途為償還銀行借款及充實營運之資金需求。",
+    "updatedAt": "2026-06-30"
+  },
+  "33881": {
+    "bondCode": "33881",
+    "evidenceText": "公告第10點：募得價款用途為償還銀行借款及充實營運資金。",
+    "issuerCode": "3388",
+    "issuerName": "崇越電",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=8815199d-bffc-464c-9e39-6875d7e83191",
+    "summary": "公告第10點：募得價款用途為償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "33902": {
+    "bondCode": "33902",
+    "evidenceText": "公告第10點：募得價款用途為購買毗鄰工業用地、興建廠房及其廠房設施。",
+    "issuerCode": "3390",
+    "issuerName": "旭軟",
+    "purposes": [
+      "擴廠",
+      "購置設備"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=ed1f5eec-e155-48e3-819e-6bf40081f67e",
+    "summary": "公告第10點：募得價款用途為購買毗鄰工業用地、興建廠房及其廠房設施。",
+    "updatedAt": "2026-06-30"
+  },
+  "34163": {
+    "bondCode": "34163",
+    "evidenceText": "公告第10點：募得價款用途為充實營運資金。",
+    "issuerCode": "3416",
+    "issuerName": "融程電",
+    "purposes": [
+      "營運資金"
+    ],
+    "source": "鉅亨網/MOPS重大訊息",
+    "sourceUrl": "https://news.cnyes.com/news/id/5427454",
+    "summary": "公告第10點：募得價款用途為充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "34341": {
+    "bondCode": "34341",
+    "evidenceText": "公告第10點：募得價款用途為充實營運資金、償還銀行借款。",
+    "issuerCode": "3434",
+    "issuerName": "哲固",
+    "purposes": [
+      "營運資金",
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=d6315261-2757-49aa-83a6-30009c2753d2",
+    "summary": "公告第10點：募得價款用途為充實營運資金、償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "34793": {
+    "bondCode": "34793",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "3479",
+    "issuerName": "安勤",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=507a85c0-27b6-44db-8cee-4d95074508b7",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "34834": {
+    "bondCode": "34834",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "3483",
+    "issuerName": "力致",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "Yahoo股市/MOPS重大訊息轉載",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8A%9B%E8%87%B4%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC%E5%9B%9B%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-073522859.html",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "34843": {
+    "bondCode": "34843",
+    "evidenceText": "公告第10點：募得價款用途為償還銀行借款及充實營運資金。",
+    "issuerCode": "3484",
+    "issuerName": "崧騰",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "鉅亨網/MOPS重大訊息",
+    "sourceUrl": "https://news.cnyes.com/news/id/5133765",
+    "summary": "公告第10點：募得價款用途為償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "34912": {
+    "bondCode": "34912",
+    "evidenceText": "公告第10點：募得價款用途為轉投資子公司及償還銀行借款。",
+    "issuerCode": "3491",
+    "issuerName": "昇達科",
+    "purposes": [
+      "轉投資",
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=53404e23-b1df-4a90-acca-b789a875f938",
+    "summary": "公告第10點：募得價款用途為轉投資子公司及償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "34913": {
+    "bondCode": "34913",
+    "confidence": "高",
+    "evidenceText": "募得價款之用途及運用計畫:償還銀行借款及充實營運資金",
+    "issuerCode": "3491",
+    "issuerName": "昇達科",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=2b1fdc2e-ec92-4dd6-b618-b...",
+    "summary": "償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "35161": {
+    "bondCode": "35161",
+    "evidenceText": "公告第10點：募得價款用途為擴建廠房及充實營運資金。",
+    "issuerCode": "3516",
+    "issuerName": "亞帝歐",
+    "purposes": [
+      "擴廠",
+      "營運資金"
+    ],
+    "source": "Yahoo股市/MOPS重大訊息轉載",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%BA%9E%E5%B8%9D%E6%AD%90%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC-%E6%AC%A1%E6%9C%89%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-111348763.html",
+    "summary": "公告第10點：募得價款用途為擴建廠房及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "35181": {
+    "bondCode": "35181",
+    "evidenceText": "公告第10點：募得價款用途為轉投資子公司。",
+    "issuerCode": "3518",
+    "issuerName": "柏騰",
+    "purposes": [
+      "轉投資"
+    ],
+    "source": "群益投顧/MOPS重大訊息轉載",
+    "sourceUrl": "https://www.capitalim.com.tw/newsite/stock-news/stock-news/321e16fe-6a5f-4df6-a714-c6aaba963fda%3Bpage%3D1%28popup%3Alogin%29",
+    "summary": "公告第10點：募得價款用途為轉投資子公司。",
+    "updatedAt": "2026-06-30"
+  },
+  "35221": {
+    "bondCode": "35221",
+    "evidenceText": "公告第10點：轉投資國內子公司事業；若實際募集金額高於預定金額，增加資金亦將用於充實營運資金。",
+    "issuerCode": "3522",
+    "issuerName": "御嵿",
+    "purposes": [
+      "轉投資",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=93ce9d05-6bd8-4e3d-b474-700d0eb33cf8",
+    "summary": "公告第10點：轉投資國內子公司事業；若實際募集金額高於預定金額，增加資金亦將用於充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "35265": {
+    "bondCode": "35265",
+    "evidenceText": "公告第10點：募得價款用途為充實營運資金。",
+    "issuerCode": "3526",
+    "issuerName": "凡甲",
+    "purposes": [
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=754fc4f4-5f73-4d45-ae52-3d1d94ad0cc9",
+    "summary": "公告第10點：募得價款用途為充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "35266": {
+    "bondCode": "35266",
+    "evidenceText": "公告第10點：募得價款用途為充實營運資金。",
+    "issuerCode": "3526",
+    "issuerName": "凡甲",
+    "purposes": [
+      "營運資金"
+    ],
+    "source": "Yahoo股市/MOPS重大訊息轉載",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%A1%E7%94%B2%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC%E5%85%AD%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-093511175.html",
+    "summary": "公告第10點：募得價款用途為充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "35267": {
+    "bondCode": "35267",
+    "evidenceText": "公告第10點：募得價款用途為充實營運資金。",
+    "issuerCode": "3526",
+    "issuerName": "凡甲",
+    "purposes": [
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=40e40cbb-fbaa-4ce9-a1dc-c6d2cb2767e8",
+    "summary": "公告第10點：募得價款用途為充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "35431": {
+    "bondCode": "35431",
+    "evidenceText": "公告第10點：募得價款用途為償還銀行借款及轉投資越南子公司。",
+    "issuerCode": "3543",
+    "issuerName": "州巧",
+    "purposes": [
+      "償還借款",
+      "轉投資"
+    ],
+    "source": "第一銀行財富管理/MOPS重大訊息轉載",
+    "sourceUrl": "https://wealth.firstbank.com.tw/investment-tips/trend-insight/news/news-detail?id=%7B2D07F284-09BB-4B75-9E6C-85C68B6539DD%7D",
+    "summary": "公告第10點：募得價款用途為償還銀行借款及轉投資越南子公司。",
+    "updatedAt": "2026-06-30"
+  },
+  "35482": {
+    "bondCode": "35482",
+    "evidenceText": "公告第10點：募得價款用途為償還銀行借款、充實營運資金及轉投資孫公司 JARLLYTEC(VIETNAM) CO., LTD.。",
+    "issuerCode": "3548",
+    "issuerName": "兆利",
+    "purposes": [
+      "償還借款",
+      "營運資金",
+      "轉投資"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=5727d138-f535-4e03-b9a8-8bed059594e3",
+    "summary": "公告第10點：募得價款用途為償還銀行借款、充實營運資金及轉投資孫公司 JARLLYTEC(VIETNAM) CO., LTD.。",
+    "updatedAt": "2026-06-30"
+  },
+  "35483": {
+    "bondCode": "35483",
+    "evidenceText": "公告第10點：募得價款用途為償還銀行借款及充實營運資金。",
+    "issuerCode": "3548",
+    "issuerName": "兆利",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e87bc0d0-99e8-4041-9d42-3ff421420819",
+    "summary": "公告第10點：募得價款用途為償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "35513": {
+    "bondCode": "35513",
+    "evidenceText": "公告第10點：募得價款用途為償還銀行借款及充實營運之資金需求。",
+    "issuerCode": "3551",
+    "issuerName": "世禾",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e6a369ef-e0de-4797-a35f-282f03936b2a",
+    "summary": "公告第10點：募得價款用途為償還銀行借款及充實營運之資金需求。",
+    "updatedAt": "2026-06-30"
+  },
+  "35642": {
+    "bondCode": "35642",
+    "evidenceText": "公告第10點：募得價款用途為償還銀行借款及充實營運資金。",
+    "issuerCode": "3564",
+    "issuerName": "其陽",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=b727526e-8201-4bee-b12b-6b2f06fb1174",
+    "summary": "公告第10點：募得價款用途為償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "35831": {
+    "bondCode": "35831",
+    "evidenceText": "公告第10點：募得價款用途為再生晶圓產能擴充。",
+    "issuerCode": "3583",
+    "issuerName": "辛耘",
+    "purposes": [
+      "擴廠",
+      "購置設備"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=8d45e38c-9fed-4fca-8718-936678da7d17",
+    "summary": "公告第10點：募得價款用途為再生晶圓產能擴充。",
+    "updatedAt": "2026-06-30"
+  },
+  "35832": {
+    "bondCode": "35832",
+    "evidenceText": "公開承銷/投資資訊揭露第一次及第二次無擔保轉換公司債籌資用於擴廠買設備；第二次金額為10億元。",
+    "issuerCode": "3583",
+    "issuerName": "辛耘",
+    "purposes": [
+      "擴廠",
+      "購置設備"
+    ],
+    "source": "Vocus公開資料整理",
+    "sourceUrl": "https://vocus.cc/article/6640456efd89780001f1ce76",
+    "summary": "公開承銷/投資資訊揭露第一次及第二次無擔保轉換公司債籌資用於擴廠買設備；第二次金額為10億元。",
+    "updatedAt": "2026-06-30"
+  },
+  "35872": {
+    "bondCode": "35872",
+    "evidenceText": "公告第10點：募得價款用途為償還銀行借款及充實營運資金。",
+    "issuerCode": "3587",
+    "issuerName": "閎康",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=a5e43dea-e3e9-430e-8f85-27a1d7b21917",
+    "summary": "公告第10點：募得價款用途為償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "35914": {
+    "bondCode": "35914",
+    "evidenceText": "初始公告為償還銀行借款；後續董事會變更用途為償還銀行借款及轉投資子公司艾特光電(股)公司。",
+    "issuerCode": "3591",
+    "issuerName": "艾笛森",
+    "purposes": [
+      "償還借款",
+      "轉投資"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息；第一銀行/MOPS重大訊息轉載",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=be61041e-0575-4a6b-88b0-55af88bab2da；https://wealth.firstbank.com.tw/investment-tips/trend-insight/news/news-detail?id=%7B548EE0DB-94EC-49AF-BF52-8334BD6EC542%7D",
+    "summary": "初始公告為償還銀行借款；後續董事會變更用途為償還銀行借款及轉投資子公司艾特光電(股)公司。",
+    "updatedAt": "2026-06-30"
+  },
+  "36053": {
+    "bondCode": "36053",
+    "evidenceText": "公告第10點：募得價款用途為償還本公司銀行借款。",
+    "issuerCode": "3605",
+    "issuerName": "宏致",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=5106a32e-8728-482d-a917-6a3af99056bb",
+    "summary": "公告第10點：募得價款用途為償還本公司銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "36172": {
+    "bondCode": "36172",
+    "evidenceText": "公告第10點：募得價款用途為償還銀行借款。",
+    "issuerCode": "3617",
+    "issuerName": "碩天",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=b0ae78b3-9414-450d-8827-edb737da97d7",
+    "summary": "公告第10點：募得價款用途為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "36173": {
+    "bondCode": "36173",
+    "evidenceText": "公告第10點：募得價款用途為償還銀行借款。",
+    "issuerCode": "3617",
+    "issuerName": "碩天",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=8b01edb7-c4b1-40d9-a016-fa38fa46ef6a",
+    "summary": "公告第10點：募得價款用途為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "36534": {
+    "bondCode": "36534",
+    "evidenceText": "公告第10點：募得價款用途為興建大園三廠廠房及充實營運資金。",
+    "issuerCode": "3653",
+    "issuerName": "健策",
+    "purposes": [
+      "擴廠",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=3bc39104-30a9-4267-bcef-5dd47d0fcd31",
+    "summary": "公告第10點：募得價款用途為興建大園三廠廠房及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "36535": {
+    "bondCode": "36535",
+    "evidenceText": "公告第10點：募得價款用途為興建大園三廠廠房及充實營運資金。",
+    "issuerCode": "3653",
+    "issuerName": "健策",
+    "purposes": [
+      "擴廠",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=3bc39104-30a9-4267-bcef-5dd47d0fcd31",
+    "summary": "公告第10點：募得價款用途為興建大園三廠廠房及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "36804": {
+    "bondCode": "36804",
+    "evidenceText": "公告第10點：募得價款用途為償還銀行借款及充實營運資金。",
+    "issuerCode": "3680",
+    "issuerName": "家登",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=49a6158c-3919-4c51-a482-bba90e5983f8",
+    "summary": "公告第10點：募得價款用途為償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "36805": {
+    "bondCode": "36805",
+    "evidenceText": "公告第10點：募得價款用途為償還銀行借款。",
+    "issuerCode": "3680",
+    "issuerName": "家登",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=d77ee8f8-181c-4046-9f60-72a536da43e7",
+    "summary": "公告第10點：募得價款用途為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "36806": {
+    "bondCode": "36806",
+    "evidenceText": "公告第10點：募得價款用途為償還銀行借款。",
+    "issuerCode": "3680",
+    "issuerName": "家登",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=d77ee8f8-181c-4046-9f60-72a536da43e7",
+    "summary": "公告第10點：募得價款用途為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "36841": {
+    "bondCode": "36841",
+    "evidenceText": "公告第10點：募得價款用途為償還銀行借款及充實營運資金。",
+    "issuerCode": "3684",
+    "issuerName": "榮昌",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=13ef065e-d1a9-481a-9913-967662083c2f",
+    "summary": "公告第10點：募得價款用途為償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "36872": {
+    "bondCode": "36872",
+    "evidenceText": "公告第10點：募得價款用途為償還銀行借款。",
+    "issuerCode": "3687",
+    "issuerName": "歐買尬",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "Yahoo股市/MOPS重大訊息轉載",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%AD%90%E8%B2%B7%E5%B0%AC%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%8F%8A%E7%AC%AC%E4%B8%89%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-060732392.html",
+    "summary": "公告第10點：募得價款用途為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "36873": {
+    "bondCode": "36873",
+    "evidenceText": "公告第10點：募得價款用途為償還銀行借款。",
+    "issuerCode": "3687",
+    "issuerName": "歐買尬",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "Yahoo股市/MOPS重大訊息轉載",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%AD%90%E8%B2%B7%E5%B0%AC%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%8F%8A%E7%AC%AC%E4%B8%89%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-060732392.html",
+    "summary": "公告第10點：募得價款用途為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "36894": {
+    "bondCode": "36894",
+    "evidenceText": "公告第10點：募得價款用途為償還銀行借款。",
+    "issuerCode": "3689",
+    "issuerName": "湧德",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=a432c2e0-840a-4ab0-8535-44310f9982c6",
+    "summary": "公告第10點：募得價款用途為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "36913": {
+    "bondCode": "36913",
+    "evidenceText": "公告第10點：募得價款用途為償還銀行借款及充實營運資金。",
+    "issuerCode": "3691",
+    "issuerName": "碩禾",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=8f16c2c4-d18a-4f6e-b897-29e66216ee8f",
+    "summary": "公告第10點：募得價款用途為償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "370201": {
+    "bondCode": "370201",
+    "evidenceText": "公告第10點：募得價款用途為償還銀行借款。",
+    "issuerCode": "3702",
+    "issuerName": "大聯大",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=49a2a60d-d846-48f3-9428-25d2f1e4f3e3",
+    "summary": "公告第10點：募得價款用途為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "37022": {
+    "bondCode": "37022",
+    "evidenceText": "公告第10點：募得價款用途為用於收回甲種特別股。",
+    "issuerCode": "3702",
+    "issuerName": "大聯大",
+    "purposes": [
+      "其他"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=b6d95fcd-26d9-46e7-bdd8-8048dc0abfb7",
+    "summary": "公告第10點：募得價款用途為用於收回甲種特別股。",
+    "updatedAt": "2026-06-30"
+  },
+  "37023": {
+    "bondCode": "37023",
+    "evidenceText": "公告第10點：募得價款用途為用於收回甲種特別股。",
+    "issuerCode": "3702",
+    "issuerName": "大聯大",
+    "purposes": [
+      "其他"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=b6d95fcd-26d9-46e7-bdd8-8048dc0abfb7",
+    "summary": "公告第10點：募得價款用途為用於收回甲種特別股。",
+    "updatedAt": "2026-06-30"
+  },
+  "37075": {
+    "bondCode": "37075",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "3707",
+    "issuerName": "漢磊",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f777bb93-ed10-4325-b089-9b69ab2c95fb",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "37083": {
+    "bondCode": "37083",
+    "evidenceText": "公告第9點：募得價款之用途及運用計畫為興建研發暨營運總部及償還銀行借款。",
+    "issuerCode": "3708",
+    "issuerName": "上緯投控",
+    "purposes": [
+      "擴廠",
+      "研發",
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=02b5a646-82fe-43d0-94ce-e9235bf190e4",
+    "summary": "公告第9點：募得價款之用途及運用計畫為興建研發暨營運總部及償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "37084": {
+    "bondCode": "37084",
+    "evidenceText": "公告第9點：募得價款之用途及運用計畫為興建研發暨營運總部及償還銀行借款。",
+    "issuerCode": "3708",
+    "issuerName": "上緯投控",
+    "purposes": [
+      "擴廠",
+      "研發",
+      "償還借款"
+    ],
+    "source": "Yahoo股市/MOPS重大訊息",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B8%8A%E7%B7%AF%E6%8A%95%E6%8E%A7%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC%E5%9B%9B%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-091538464.html",
+    "summary": "公告第9點：募得價款之用途及運用計畫為興建研發暨營運總部及償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "37151": {
+    "bondCode": "37151",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "issuerCode": "3715",
+    "issuerName": "定穎投控",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "Yahoo股市/MOPS重大訊息",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%9A%E7%A9%8E%E6%8A%95%E6%8E%A7%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC-%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-111729559.html",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "37152": {
+    "bondCode": "37152",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "issuerCode": "3715",
+    "issuerName": "定穎投控",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "鉅亨網/MOPS重大訊息",
+    "sourceUrl": "https://news.cnyes.com/news/id/6206293",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "37171": {
+    "bondCode": "37171",
+    "evidenceText": "公告第10點：募得價款用途為轉投資子公司聯嘉光電，以改善財務結構、提升營運及強化競爭力。",
+    "issuerCode": "3717",
+    "issuerName": "聯嘉投控",
+    "purposes": [
+      "轉投資",
+      "充實財務結構",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f863d3a0-0144-4030-868e-49df05123e37",
+    "summary": "公告第10點：募得價款用途為轉投資子公司聯嘉光電，以改善財務結構、提升營運及強化競爭力。",
+    "updatedAt": "2026-06-30"
+  },
+  "41135": {
+    "bondCode": "41135",
+    "evidenceText": "公告第10點：用途為償還金融機構借款、償還公司債本金及充實營運資金。",
+    "issuerCode": "4113",
+    "issuerName": "聯上",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=cde01234-a173-4e12-b2f3-cbf9dd3bed24",
+    "summary": "公告第10點：用途為償還金融機構借款、償還公司債本金及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "41136": {
+    "bondCode": "41136",
+    "evidenceText": "公告第10點：用途為償還金融機構借款、償還公司債本金及充實營運資金。",
+    "issuerCode": "4113",
+    "issuerName": "聯上",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=eb5c4150-91ad-4b45-9235-70d1f57870c9",
+    "summary": "公告第10點：用途為償還金融機構借款、償還公司債本金及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "41236": {
+    "bondCode": "41236",
+    "evidenceText": "公告第10點：用途為償還銀行借款及償還國內第四次、第五次可轉債賣回本金及利息補償金。",
+    "issuerCode": "4123",
+    "issuerName": "晟德",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "公司官網/MOPS重大訊息",
+    "sourceUrl": "https://www.centerlab.com.tw/investor/material_info/detail/437",
+    "summary": "公告第10點：用途為償還銀行借款及償還國內第四次、第五次可轉債賣回本金及利息補償金。",
+    "updatedAt": "2026-06-30"
+  },
+  "41237": {
+    "bondCode": "41237",
+    "evidenceText": "公告第10點：用途為償還銀行借款及償還國內第四次、第五次可轉債賣回本金及利息補償金。",
+    "issuerCode": "4123",
+    "issuerName": "晟德",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "公司官網/MOPS重大訊息",
+    "sourceUrl": "https://www.centerlab.com.tw/investor/material_info/detail/437",
+    "summary": "公告第10點：用途為償還銀行借款及償還國內第四次、第五次可轉債賣回本金及利息補償金。",
+    "updatedAt": "2026-06-30"
+  },
+  "41238": {
+    "bondCode": "41238",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還銀行借款及轉投資。",
+    "issuerCode": "4123",
+    "issuerName": "晟德",
+    "purposes": [
+      "償還借款",
+      "轉投資"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=30e5887e-2d12-486f-b4e2-8107eee2f72e",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還銀行借款及轉投資。",
+    "updatedAt": "2026-06-30"
+  },
+  "41239": {
+    "bondCode": "41239",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還銀行借款及轉投資。",
+    "issuerCode": "4123",
+    "issuerName": "晟德",
+    "purposes": [
+      "償還借款",
+      "轉投資"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=30e5887e-2d12-486f-b4e2-8107eee2f72e",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還銀行借款及轉投資。",
+    "updatedAt": "2026-06-30"
+  },
+  "41295": {
+    "bondCode": "41295",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "4129",
+    "issuerName": "聯合",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "Genet/MOPS重大訊息",
+    "sourceUrl": "https://www.genetinfo.com/investment/company-news/item/85691.html",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "41372": {
+    "bondCode": "41372",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "4137",
+    "issuerName": "麗豐-KY",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=1bb7bfd2-1de3-4db6-b54e-c5da557737bf",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "41645": {
+    "bondCode": "41645",
+    "evidenceText": "公告第10點：用途為償還國內第四次有擔保轉換公司債到期本金及償還銀行借款。",
+    "issuerCode": "4164",
+    "issuerName": "承業醫",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "Genet/MOPS重大訊息",
+    "sourceUrl": "https://www.genetinfo.com/investment/company-news/item/84106.html",
+    "summary": "公告第10點：用途為償還國內第四次有擔保轉換公司債到期本金及償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "41684": {
+    "bondCode": "41684",
+    "evidenceText": "公告第10點：用途為支應抗體新藥GNX1021臨床前動物實驗及臨床一期試驗等支出。",
+    "issuerCode": "4168",
+    "issuerName": "醣聯",
+    "purposes": [
+      "研發"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=7bb86389-2576-4341-9051-713b77d250e2",
+    "summary": "公告第10點：用途為支應抗體新藥GNX1021臨床前動物實驗及臨床一期試驗等支出。",
+    "updatedAt": "2026-06-30"
+  },
+  "41903": {
+    "bondCode": "41903",
+    "evidenceText": "公告第10點：用途為償還境內第二次無擔保轉換公司債本金及償還銀行借款。",
+    "issuerCode": "4190",
+    "issuerName": "佐登-KY",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "Genet/MOPS重大訊息",
+    "sourceUrl": "https://www.genetinfo.com/investment/company-news/item/79689.html",
+    "summary": "公告第10點：用途為償還境內第二次無擔保轉換公司債本金及償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "41904": {
+    "bondCode": "41904",
+    "confidence": "高",
+    "evidenceText": "募得價款之用途及運用計畫:償還第三次無擔保轉換公司債持有人執行賣回權所需資金",
+    "issuerCode": "4190",
+    "issuerName": "佐登-KY",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "財訊快報/MOPS重大訊息",
+    "sourceUrl": "https://ww2.money-link.com.tw/RealtimeNews/NewsContent.aspx?pu=News_0046&sn=2...",
+    "summary": "償還第三次無擔保轉換公司債持有人執行賣回權所需資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "44163": {
+    "bondCode": "44163",
+    "evidenceText": "公告第10點：用途為償還國內第二次有擔保轉換公司債及償還銀行借款。",
+    "issuerCode": "4416",
+    "issuerName": "三圓",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=0c9ebecc-347c-4ce0-abbc-7f4ae8d824bf",
+    "summary": "公告第10點：用途為償還國內第二次有擔保轉換公司債及償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "44383": {
+    "bondCode": "44383",
+    "evidenceText": "公告第10點：用途為償還國內第二次無擔保轉換公司債到期之資金。",
+    "issuerCode": "4438",
+    "issuerName": "廣越",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=413409ef-421d-47da-b196-cff89afadb04",
+    "summary": "公告第10點：用途為償還國內第二次無擔保轉換公司債到期之資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "44391": {
+    "bondCode": "44391",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "4439",
+    "issuerName": "冠星-KY",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f0f5cb83-0581-42ae-be36-d20b0075f29d",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "44421": {
+    "bondCode": "44421",
+    "evidenceText": "公告第10點：用途為償還銀行借款、興建廠房及充實營運資金。",
+    "issuerCode": "4442",
+    "issuerName": "竣邦-KY",
+    "purposes": [
+      "償還借款",
+      "擴廠",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f8bfae16-8f28-4980-86c7-6237e102fa54",
+    "summary": "公告第10點：用途為償還銀行借款、興建廠房及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "45031": {
+    "bondCode": "45031",
+    "evidenceText": "公開報導及公告補充：本次募資主要用於轉投資越南子公司及充實營運資金。",
+    "issuerCode": "4503",
+    "issuerName": "金雨",
+    "purposes": [
+      "轉投資",
+      "營運資金"
+    ],
+    "source": "經濟日報/公開報導",
+    "sourceUrl": "https://www.sinotrade.com.tw/richclub/news/69e123a5a2aa8bdc319000ec",
+    "summary": "公開報導及公告補充：本次募資主要用於轉投資越南子公司及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "45102": {
+    "bondCode": "45102",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "4510",
+    "issuerName": "高鋒",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=4b7e3872-86aa-44a9-9b54-a3849b65047c",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "45421": {
+    "bondCode": "45421",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為充實營運資金及償還銀行借款。",
+    "issuerCode": "4542",
+    "issuerName": "科嶠",
+    "purposes": [
+      "營運資金",
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=0e7cad7f-1625-4d01-b2f0-fb5f7312c881",
+    "summary": "公告第10點：募得價款之用途及運用計畫為充實營運資金及償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "45491": {
+    "bondCode": "45491",
+    "evidenceText": "公告第10點：用途為償還銀行借款與充實營運資金之資金需求。",
+    "issuerCode": "4549",
+    "issuerName": "桓達",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=a65bdb53-707a-41e2-a890-4eb152c6718e",
+    "summary": "公告第10點：用途為償還銀行借款與充實營運資金之資金需求。",
+    "updatedAt": "2026-06-30"
+  },
+  "45554": {
+    "bondCode": "45554",
+    "evidenceText": "公告第10點：用途為償還銀行借款及充實營運資金。",
+    "issuerCode": "4555",
+    "issuerName": "氣立",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=2b5eb044-42d3-4bb0-aec6-08a1aeb216ab",
+    "summary": "公告第10點：用途為償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "45581": {
+    "bondCode": "45581",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "4558",
+    "issuerName": "寶緯",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "第一金證券/MOPS重大訊息",
+    "sourceUrl": "https://wealth.firstbank.com.tw/investment-tips/trend-insight/news/news-detail?id=%7BE949CF8A-3584-44C5-BD28-592E5EC66C85%7D",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "45641": {
+    "bondCode": "45641",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "4564",
+    "issuerName": "元翎",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "Yahoo股市/MOPS重大訊息",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%83%E7%BF%8E%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC-%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-082157828.html",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "45663": {
+    "bondCode": "45663",
+    "evidenceText": "公告第10點：用途為償還銀行借款與充實營運資金之資金需求。",
+    "issuerCode": "4566",
+    "issuerName": "時碩工業",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://5850web.moneydj.com/z/zh/zhf/zhfz/zhfz_2C900FDD-F1E2-4C8F-A0D9-DD136911CF86.djhtm",
+    "summary": "公告第10點：用途為償還銀行借款與充實營運資金之資金需求。",
+    "updatedAt": "2026-06-30"
+  },
+  "45691": {
+    "bondCode": "45691",
+    "evidenceText": "公告第10點：用途為充實營運資金及/或購置機器設備。",
+    "issuerCode": "4569",
+    "issuerName": "六方科-KY",
+    "purposes": [
+      "營運資金",
+      "購置設備"
+    ],
+    "source": "第一金證券/MOPS重大訊息",
+    "sourceUrl": "https://wealth.firstbank.com.tw/investment-tips/trend-insight/news/news-detail?id=%7B6D8F6908-1AA8-4793-8487-E37256B83BFD%7D",
+    "summary": "公告第10點：用途為充實營運資金及/或購置機器設備。",
+    "updatedAt": "2026-06-30"
+  },
+  "45721": {
+    "bondCode": "45721",
+    "evidenceText": "公告第10點：用途為興建新廠及購置機器設備。",
+    "issuerCode": "4572",
+    "issuerName": "駐龍",
+    "purposes": [
+      "擴廠",
+      "購置設備"
+    ],
+    "source": "Yahoo股市/MOPS重大訊息",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%A7%90%E9%BE%8D%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC-%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-062315972.html",
+    "summary": "公告第10點：用途為興建新廠及購置機器設備。",
+    "updatedAt": "2026-06-30"
+  },
+  "45811": {
+    "bondCode": "45811",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為興建廠房及充實營運資金。",
+    "issuerCode": "4581",
+    "issuerName": "光隆精密-KY",
+    "purposes": [
+      "擴廠",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=71c882c8-124b-4120-bdbf-0012adbb815d",
+    "summary": "公告第10點：募得價款之用途及運用計畫為興建廠房及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "47146": {
+    "bondCode": "47146",
+    "evidenceText": "公告第9點：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "issuerCode": "4714",
+    "issuerName": "永捷",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://m.moneydj.com/f1a.aspx?a=5ef6b6d8-322c-438c-8531-4a0d9cd25e17",
+    "summary": "公告第9點：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "47148": {
+    "bondCode": "47148",
+    "evidenceText": "公告第10點：用途為償還銀行借款及充實營運資金。",
+    "issuerCode": "4714",
+    "issuerName": "永捷",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "Yahoo股市/MOPS重大訊息",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%B0%B8%E6%8D%B7%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC%E5%85%AB%E6%AC%A1%E6%9C%89%E6%93%94%E4%BF%9D%E5%8F%AF%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-084142932.html",
+    "summary": "公告第10點：用途為償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "47223": {
+    "bondCode": "47223",
+    "evidenceText": "公告第10點：用途為償還銀行借款及未來發展所需。",
+    "issuerCode": "4722",
+    "issuerName": "國精化",
+    "purposes": [
+      "償還借款",
+      "其他"
+    ],
+    "source": "鉅亨網/MOPS重大訊息",
+    "sourceUrl": "https://news.cnyes.com/news/id/6050666",
+    "summary": "公告第10點：用途為償還銀行借款及未來發展所需。",
+    "updatedAt": "2026-06-30"
+  },
+  "47224": {
+    "bondCode": "47224",
+    "evidenceText": "公告第10點：用途為償還銀行借款及充實營運資金。",
+    "issuerCode": "4722",
+    "issuerName": "國精化",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=54cd5a96-a8ea-4cbb-986b-43278ca686f4",
+    "summary": "公告第10點：用途為償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "47393": {
+    "bondCode": "47393",
+    "evidenceText": "發行公告第六點：公司債募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "4739",
+    "issuerName": "康普",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "鉅亨網/發行公告",
+    "sourceUrl": "https://news.cnyes.com/news/id/4749161",
+    "summary": "發行公告第六點：公司債募得價款之用途及運用計畫為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "47394": {
+    "bondCode": "47394",
+    "confidence": "高",
+    "evidenceText": "10.募得價款之用途及運用計畫:償還銀行借款及充實營運資金",
+    "issuerCode": "4739",
+    "issuerName": "康普",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=cbfe29e1-eec9-4a61-96dd-9...",
+    "summary": "償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "47491": {
+    "bondCode": "47491",
+    "evidenceText": "公告第10點：用途為購置廠辦；相關資本支出說明為興建龍科廠研發中心。",
+    "issuerCode": "4749",
+    "issuerName": "新應材",
+    "purposes": [
+      "擴廠"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c1a8a55a-5632-4284-b50c-59092ccc032c",
+    "summary": "公告第10點：用途為購置廠辦；相關資本支出說明為興建龍科廠研發中心。",
+    "updatedAt": "2026-06-30"
+  },
+  "47602": {
+    "bondCode": "47602",
+    "confidence": "高",
+    "evidenceText": "",
+    "issuerCode": "4760",
+    "issuerName": "勤凱科技",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "上傳表：CB明細檢核表/TheFew與櫃買中心清單",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%8B%A4%E5%87%B1-%E6%9C%AC%E5%85%AC%E5%8F%B8%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E9%80%9A%E9%81%8E%E8%AE%8A%E6%9B%B4%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%BA%8C%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5%E8%B3%87%E9%87%91%E7%94%A8%E9%80%94%E5%8F%8A%E7%99%BC%E8%A1%8C%E6%A2%9D%E4%BB%B6-090300111.html",
+    "summary": "國內第二次無擔保轉換公司債資金用途及發行條件變更為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "47633": {
+    "bondCode": "47633",
+    "evidenceText": "公告第10點：用途為償還銀行借款及償還中華民國境內第一次無擔保轉換公司債。",
+    "issuerCode": "4763",
+    "issuerName": "材料*-KY",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=77ab9d39-bc69-4255-8c56-b6aef4882aca",
+    "summary": "公告第10點：用途為償還銀行借款及償還中華民國境內第一次無擔保轉換公司債。",
+    "updatedAt": "2026-06-30"
+  },
+  "47721": {
+    "bondCode": "47721",
+    "evidenceText": "公告第10點：用途為收購弘潔科技股份有限公司65.22%股權。",
+    "issuerCode": "4772",
+    "issuerName": "台特化",
+    "purposes": [
+      "轉投資"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=da632c37-bc56-46a4-80ba-459b42684200",
+    "summary": "公告第10點：用途為收購弘潔科技股份有限公司65.22%股權。",
+    "updatedAt": "2026-06-30"
+  },
+  "49163": {
+    "bondCode": "49163",
+    "evidenceText": "公告第9點：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "4916",
+    "issuerName": "事欣科",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "富邦證券/MOPS重大訊息",
+    "sourceUrl": "https://fubon-ebrokerdj.fbs.com.tw/z/zh/zhf/zhfz/zhfz_2AB84E3B-B6BB-45A7-9AD3-A6CBFE49066B.djhtm",
+    "summary": "公告第9點：募得價款之用途及運用計畫為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "49164": {
+    "bondCode": "49164",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "4916",
+    "issuerName": "事欣科",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "Yahoo股市/MOPS重大訊息",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%BA%8B%E6%AC%A3%E7%A7%91%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC%E5%9B%9B%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-081816912.html",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "49165": {
+    "bondCode": "49165",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "4916",
+    "issuerName": "事欣科",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c625ea25-7a91-4002-b845-0341abb89105",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "49191": {
+    "bondCode": "49191",
+    "evidenceText": "公告第9點：用途為支應取得 Panasonic Corporation 半導體相關事業價款。",
+    "issuerCode": "4919",
+    "issuerName": "新唐",
+    "purposes": [
+      "轉投資"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f9fa686b-ffb6-46eb-9839-c72ab4d5828d",
+    "summary": "公告第9點：用途為支應取得 Panasonic Corporation 半導體相關事業價款。",
+    "updatedAt": "2026-06-30"
+  },
+  "49231": {
+    "bondCode": "49231",
+    "evidenceText": "公告第10點：用途為償還銀行借款及充實營運資金。",
+    "issuerCode": "4923",
+    "issuerName": "力士",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=0854f555-a19c-48c3-b6e0-3daadc89813d",
+    "summary": "公告第10點：用途為償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "49311": {
+    "bondCode": "49311",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為充實營運資金。",
+    "issuerCode": "4931",
+    "issuerName": "新盛力",
+    "purposes": [
+      "營運資金"
+    ],
+    "source": "台視財經/MOPS重大訊息",
+    "sourceUrl": "https://www.ttv.com.tw/finance/view/032026061401D316AAE2D5834E6B9CCA49C4E5C074601774/588",
+    "summary": "公告第10點：募得價款之用途及運用計畫為充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "49673": {
+    "bondCode": "49673",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "4967",
+    "issuerName": "十銓",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=63292c22-8858-4450-8e9c-3e4462da51ba",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "49674": {
+    "bondCode": "49674",
+    "confidence": "高",
+    "evidenceText": "10.募得價款之用途及運用計畫:償還銀行借款及充實營運資金",
+    "issuerCode": "4967",
+    "issuerName": "十銓",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "Yahoo股市重訊",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8D%81%E9%8A%93%E8%91%A...",
+    "summary": "償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "49712": {
+    "bondCode": "49712",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為擴建廠房、購置及升級生產機台。",
+    "issuerCode": "4971",
+    "issuerName": "IET-KY",
+    "purposes": [
+      "擴廠",
+      "購置設備"
+    ],
+    "source": "群益投顧/MOPS重大訊息",
+    "sourceUrl": "https://www.capitalim.com.tw/newsite/stock-news/stock-news/9459a0ea-8136-4ef6-be4b-570212061e28%3Bpage%3D1%28popup%3Alogin%29",
+    "summary": "公告第10點：募得價款之用途及運用計畫為擴建廠房、購置及升級生產機台。",
+    "updatedAt": "2026-06-30"
+  },
+  "49793": {
+    "bondCode": "49793",
+    "evidenceText": "公告第10點：用途為購置廠房、購置機器設備及充實營運資金。",
+    "issuerCode": "4979",
+    "issuerName": "華星光",
+    "purposes": [
+      "擴廠",
+      "購置設備",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=8a8dddac-84e0-4d60-9a99-9d3230fa374e",
+    "summary": "公告第10點：用途為購置廠房、購置機器設備及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "49794": {
+    "bondCode": "49794",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為購置廠房、購置機器設備及充實營運資金。",
+    "issuerCode": "4979",
+    "issuerName": "華星光",
+    "purposes": [
+      "擴廠",
+      "購置設備",
+      "營運資金"
+    ],
+    "source": "鉅亨網/MOPS重大訊息",
+    "sourceUrl": "https://news.cnyes.com/news/id/5745736",
+    "summary": "公告第10點：募得價款之用途及運用計畫為購置廠房、購置機器設備及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "50097": {
+    "bondCode": "50097",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為充實營運資金。",
+    "issuerCode": "5009",
+    "issuerName": "榮剛",
+    "purposes": [
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=079b9d4d-e2a6-4597-9b5a-7015d1eb6714",
+    "summary": "公告第10點：募得價款之用途及運用計畫為充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "52011": {
+    "bondCode": "52011",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為購置辦公大樓與辦公設備所需之資金。",
+    "issuerCode": "5201",
+    "issuerName": "凱衛",
+    "purposes": [
+      "購置不動產",
+      "購置設備"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=6f5ead41-a9e2-4fab-b9e1-6738cb751a28",
+    "summary": "公告第10點：募得價款之用途及運用計畫為購置辦公大樓與辦公設備所需之資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "52091": {
+    "bondCode": "52091",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "issuerCode": "5209",
+    "issuerName": "新鼎",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "華南永昌/MOPS重大訊息",
+    "sourceUrl": "https://www.capitalim.com.tw/newsite/stock-news/stock-news/cf5ce4e0-8b0d-4238-af92-1371cbd7e0aa%3Bpage%3D1%28popup%3Alogin%29",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "52121": {
+    "bondCode": "52121",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還銀行借款、購置辦公大樓及轉投資子公司。",
+    "issuerCode": "5212",
+    "issuerName": "凌網",
+    "purposes": [
+      "償還借款",
+      "購置不動產",
+      "轉投資"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=9b415261-f31d-4063-bd81-296046041162",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還銀行借款、購置辦公大樓及轉投資子公司。",
+    "updatedAt": "2026-06-30"
+  },
+  "52303": {
+    "bondCode": "52303",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "5230",
+    "issuerName": "雷笛克光學",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=7872e940-e4f0-4cd7-a4af-47fa840634ca",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "52441": {
+    "bondCode": "52441",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為轉投資子公司弘凱光電（江蘇）有限公司及充實營運資金。",
+    "issuerCode": "5244",
+    "issuerName": "弘凱",
+    "purposes": [
+      "轉投資",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=59913ef7-a5ff-4f7a-b097-4b33b42c0cca",
+    "summary": "公告第10點：募得價款之用途及運用計畫為轉投資子公司弘凱光電（江蘇）有限公司及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "52452": {
+    "bondCode": "52452",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "issuerCode": "5245",
+    "issuerName": "智晶",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=8a7f85ea-44d4-4bcd-afb4-ecc308cf42b3",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "52635": {
+    "bondCode": "52635",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "5263",
+    "issuerName": "智崴",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "鉅亨網/MOPS重大訊息",
+    "sourceUrl": "https://news.cnyes.com/news/id/5370459",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "52843": {
+    "bondCode": "52843",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還銀行借款及/或充實營運資金。",
+    "issuerCode": "5284",
+    "issuerName": "jpp-KY",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c329bab6-014f-4277-8f38-167ad768e3c3",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還銀行借款及/或充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "52844": {
+    "bondCode": "52844",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還銀行借款及/或充實營運資金。",
+    "issuerCode": "5284",
+    "issuerName": "jpp-KY",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f4539713-248e-4ff2-82c4-326a4b6bd653",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還銀行借款及/或充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "52845": {
+    "bondCode": "52845",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還銀行借款及/或充實營運資金。",
+    "issuerCode": "5284",
+    "issuerName": "jpp-KY",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "鉅亨網/MOPS重大訊息",
+    "sourceUrl": "https://news.cnyes.com/news/id/6378674",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還銀行借款及/或充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "52892": {
+    "bondCode": "52892",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "issuerCode": "5289",
+    "issuerName": "宜鼎",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "台視財經/MOPS重大訊息",
+    "sourceUrl": "https://www.ttv.com.tw/finance/view/?from=587&i=022026262317AE820DE8C6C54F6F9083795E8F33759C507B",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "53064": {
+    "bondCode": "53064",
+    "evidenceText": "公告第10點：募得價款用途為支應國內第三次有擔保轉換公司債到期還本；若實際募集金額高於預定金額，增加資金將用於償還銀行借款或充實營運資金。",
+    "issuerCode": "5306",
+    "issuerName": "桂盟",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://m.moneydj.com/f1a.aspx?a=40efd785-b655-4312-b7b7-78de8f9898ae",
+    "summary": "公告第10點：募得價款用途為支應國內第三次有擔保轉換公司債到期還本；若實際募集金額高於預定金額，增加資金將用於償還銀行借款或充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "53095": {
+    "bondCode": "53095",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為充實營運資金。",
+    "issuerCode": "5309",
+    "issuerName": "系統電",
+    "purposes": [
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://5850web.moneydj.com/z/zh/zhf/zhfz/zhfz_45281ED6-20F4-4366-9FD1-379944F53FFE.djhtm",
+    "summary": "公告第10點：募得價款之用途及運用計畫為充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "53096": {
+    "bondCode": "53096",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為充實營運資金及償還銀行借款。",
+    "issuerCode": "5309",
+    "issuerName": "系統電",
+    "purposes": [
+      "營運資金",
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=877a09de-c2a0-4368-b528-1e4b3cf96cb9",
+    "summary": "公告第10點：募得價款之用途及運用計畫為充實營運資金及償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "53097": {
+    "bondCode": "53097",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為充實營運資金及償還銀行借款。",
+    "issuerCode": "5309",
+    "issuerName": "系統電",
+    "purposes": [
+      "營運資金",
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=877a09de-c2a0-4368-b528-1e4b3cf96cb9",
+    "summary": "公告第10點：募得價款之用途及運用計畫為充實營運資金及償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "53211": {
+    "bondCode": "53211",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還債務、改善財務結構。",
+    "issuerCode": "5321",
+    "issuerName": "美而快",
+    "purposes": [
+      "償還債務",
+      "充實財務結構"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=756683b1-5130-4893-bcf6-e28ca6080369",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還債務、改善財務結構。",
+    "updatedAt": "2026-06-30"
+  },
+  "53513": {
+    "bondCode": "53513",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "5351",
+    "issuerName": "鈺創",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=3e3c339d-82cc-40fe-b53b-4454a452484b",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "53886": {
+    "bondCode": "53886",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "5388",
+    "issuerName": "中磊",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "Yahoo股市/MOPS重大訊息",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B8%AD%E7%A3%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC%E5%85%AD%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-110004991.html",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "53887": {
+    "bondCode": "53887",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為充實營運資金、償還銀行借款、償還公司債款等一項或多項用途。",
+    "issuerCode": "5388",
+    "issuerName": "中磊",
+    "purposes": [
+      "營運資金",
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=05287582-b93d-4e31-9319-3857b0d3d3c0",
+    "summary": "公告第10點：募得價款之用途及運用計畫為充實營運資金、償還銀行借款、償還公司債款等一項或多項用途。",
+    "updatedAt": "2026-06-30"
+  },
+  "54342": {
+    "bondCode": "54342",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為購買自用辦公大樓。",
+    "issuerCode": "5434",
+    "issuerName": "崇越",
+    "purposes": [
+      "購置不動產"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=6e5a83fa-84a0-485c-8e73-ed6d593215e3",
+    "summary": "公告第10點：募得價款之用途及運用計畫為購買自用辦公大樓。",
+    "updatedAt": "2026-06-30"
+  },
+  "54391": {
+    "bondCode": "54391",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為擴充廠房及購置機器設備。",
+    "issuerCode": "5439",
+    "issuerName": "高技",
+    "purposes": [
+      "擴廠",
+      "購置設備"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=ad1ad969-81d0-44d3-9819-56aa644ad929",
+    "summary": "公告第10點：募得價款之用途及運用計畫為擴充廠房及購置機器設備。",
+    "updatedAt": "2026-06-30"
+  },
+  "54501": {
+    "bondCode": "54501",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "5450",
+    "issuerName": "南良",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://pscnetsecrwd.moneydj.com/z/zh/zhf/zhfz/zhfz_1F933C0C-2A2F-4C29-ABD7-B6EE8F8144E0.djhtm",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "54573": {
+    "bondCode": "54573",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "5457",
+    "issuerName": "宣德",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c8c06b59-a542-4bc2-be23-27c618f0d185",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "updatedAt": "2026-06-30"
   },
   "54642": {
     "bondCode": "54642",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
     "issuerCode": "5464",
     "issuerName": "霖宏",
-    "purposes": [],
-    "summary": "公開資料未整理",
-    "source": "pending",
-    "sourceUrl": "",
-    "updatedAt": "2026-06-24"
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "Yahoo股市/MOPS重大訊息",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%9C%96%E5%AE%8F%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%BA%8C%E6%AC%A1%E6%9C%89%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-100913137.html",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "55344": {
+    "bondCode": "55344",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "5534",
+    "issuerName": "長虹",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "華南永昌/MOPS重大訊息",
+    "sourceUrl": "https://www.capitalim.com.tw/newsite/stock-news/stock-news/e3935133-02a4-4d32-84b0-0d373616829d%3Bpage%3D0",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "56087": {
+    "bondCode": "56087",
+    "evidenceText": "公告第10點：募得價款用途為投資全資子公司DONG LIEN MARITIME S.A. PANAMA，再轉投資全資孫公司以償還銀行借款。",
+    "issuerCode": "5608",
+    "issuerName": "四維航",
+    "purposes": [
+      "轉投資",
+      "償還借款"
+    ],
+    "source": "Yahoo股市/MOPS重大訊息",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%9B%9B%E7%B6%AD%E8%88%AA%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%B8%83%E6%AC%A1%E6%9C%89%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-103834439.html",
+    "summary": "公告第10點：募得價款用途為投資全資子公司DONG LIEN MARITIME S.A. PANAMA，再轉投資全資孫公司以償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "60152": {
+    "bondCode": "60152",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還國內第一次無擔保轉換公司債持有人執行賣回權之本金。",
+    "issuerCode": "6015",
+    "issuerName": "宏遠證",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "華南永昌/MOPS重大訊息",
+    "sourceUrl": "https://www.capitalim.com.tw/newsite/stock-news/stock-news/61de523f-f5c5-4518-aaa0-5a1c7a17e907%3Bpage%3D1%28popup%3Alogin%29",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還國內第一次無擔保轉換公司債持有人執行賣回權之本金。",
+    "updatedAt": "2026-06-30"
+  },
+  "61011": {
+    "bondCode": "61011",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為充實營運資金。",
+    "issuerCode": "6101",
+    "issuerName": "寬魚國際",
+    "purposes": [
+      "營運資金"
+    ],
+    "source": "Yahoo股市/MOPS重大訊息",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AF%AC%E9%AD%9A%E5%9C%8B%E9%9A%9B%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC-%E6%AC%A1%E6%9C%89%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5%E6%9A%A8%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%BA%8C%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-081248267.html",
+    "summary": "公告第10點：募得價款之用途及運用計畫為充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "61012": {
+    "bondCode": "61012",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為充實營運資金。",
+    "issuerCode": "6101",
+    "issuerName": "寬魚國際",
+    "purposes": [
+      "營運資金"
+    ],
+    "source": "Yahoo股市/MOPS重大訊息",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AF%AC%E9%AD%9A%E5%9C%8B%E9%9A%9B%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC-%E6%AC%A1%E6%9C%89%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5%E6%9A%A8%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%BA%8C%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-081248267.html",
+    "summary": "公告第10點：募得價款之用途及運用計畫為充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "61041": {
+    "bondCode": "61041",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "6104",
+    "issuerName": "創惟",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=cdf208dd-ffd8-4e42-8d92-d2e570649499",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "61112": {
+    "bondCode": "61112",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還銀行借款、轉投資子公司、充實營運資金。",
+    "issuerCode": "6111",
+    "issuerName": "光聚晶電",
+    "purposes": [
+      "償還借款",
+      "轉投資",
+      "營運資金"
+    ],
+    "source": "Yahoo股市/MOPS重大訊息",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%A4%A7%E5%AE%87%E8%B3%87%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%BA%8C%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E5%8F%AF%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-072459420.html",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還銀行借款、轉投資子公司、充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "61171": {
+    "bondCode": "61171",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "6117",
+    "issuerName": "迎廣",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "Yahoo股市/MOPS重大訊息",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%BF%8E%E5%BB%A3%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC-%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-071742447.html",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "61172": {
+    "bondCode": "61172",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "6117",
+    "issuerName": "迎廣",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c7ff13b0-c280-4587-ae3f-1a5d4e23db99",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "61255": {
+    "bondCode": "61255",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為充實營運資金或償還銀行借款。",
+    "issuerCode": "6125",
+    "issuerName": "廣運",
+    "purposes": [
+      "營運資金",
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=37f80405-b5f7-44cb-b2eb-016e7a00cb3c",
+    "summary": "公告第10點：募得價款之用途及運用計畫為充實營運資金或償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "61263": {
+    "bondCode": "61263",
+    "evidenceText": "公告第10點/發行公告：公司債募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "6126",
+    "issuerName": "信音",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "鉅亨網/MOPS重大訊息",
+    "sourceUrl": "https://news.cnyes.com/news/id/5389085",
+    "summary": "公告第10點/發行公告：公司債募得價款之用途及運用計畫為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "61394": {
+    "bondCode": "61394",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為充實營運資金。",
+    "issuerCode": "6139",
+    "issuerName": "亞翔",
+    "purposes": [
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=6430b1e6-e8f9-4266-9d76-06cb0037511e",
+    "summary": "公告第10點：募得價款之用途及運用計畫為充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "61506": {
+    "bondCode": "61506",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "6150",
+    "issuerName": "撼訊",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=100a8519-4b1f-4e34-b596-bdafa07fb189",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "61565": {
+    "bondCode": "61565",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "issuerCode": "6156",
+    "issuerName": "松上",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "公司官網/MOPS重大訊息",
+    "sourceUrl": "https://www.song-shang.com.tw/newsdetail_tw.php?id=6649",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "61635": {
+    "bondCode": "61635",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "6163",
+    "issuerName": "華電網",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c0a54bf3-c077-41ea-bb78-40a515a778e3",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "61777": {
+    "bondCode": "61777",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還金融機構借款及支付營建工程款。",
+    "issuerCode": "6177",
+    "issuerName": "達麗",
+    "purposes": [
+      "償還借款",
+      "營建工程款"
+    ],
+    "source": "Yahoo股市/MOPS重大訊息",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%81%94%E9%BA%97%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%B8%83%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-%E9%80%9A%E9%81%8E%E8%AE%8A%E6%9B%B4%E7%99%BC%E8%A1%8C%E7%B8%BD%E9%A1%8D-092757494.html",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還金融機構借款及支付營建工程款。",
+    "updatedAt": "2026-06-30"
+  },
+  "61793": {
+    "bondCode": "61793",
+    "evidenceText": "發行公告：公司債募得價款之用途及運用計畫為充實營運資金。",
+    "issuerCode": "6179",
+    "issuerName": "亞通",
+    "purposes": [
+      "營運資金"
+    ],
+    "source": "鉅亨網/MOPS重大訊息",
+    "sourceUrl": "https://news.cnyes.com/news/id/5254567",
+    "summary": "發行公告：公司債募得價款之用途及運用計畫為充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "61794": {
+    "bondCode": "61794",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為充實營運資金。",
+    "issuerCode": "6179",
+    "issuerName": "亞通",
+    "purposes": [
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=dac13c4e-87ec-42d6-8e04-c70068e17cee",
+    "summary": "公告第10點：募得價款之用途及運用計畫為充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "61827": {
+    "bondCode": "61827",
+    "evidenceText": "公告第9點：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "issuerCode": "6182",
+    "issuerName": "合晶",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=3de2fd86-ee09-4c32-86a0-47d157d42929",
+    "summary": "公告第9點：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "61828": {
+    "bondCode": "61828",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為購置研發設備及相關資本支出。",
+    "issuerCode": "6182",
+    "issuerName": "合晶",
+    "purposes": [
+      "研發",
+      "購置設備",
+      "資本支出"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=5d1be2d2-7700-480e-a961-4a810c13d230",
+    "summary": "公告第10點：募得價款之用途及運用計畫為購置研發設備及相關資本支出。",
+    "updatedAt": "2026-06-30"
+  },
+  "61843": {
+    "bondCode": "61843",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "6184",
+    "issuerName": "大豐電",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=a702aa80-89ad-4bf9-9b2b-44e2db8165d6",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "61875": {
+    "bondCode": "61875",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為充實營運資金。",
+    "issuerCode": "6187",
+    "issuerName": "萬潤",
+    "purposes": [
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=a1d00991-755c-42dc-a081-602c95d1ce17",
+    "summary": "公告第10點：募得價款之用途及運用計畫為充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "61876": {
+    "bondCode": "61876",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為充實營運資金。",
+    "issuerCode": "6187",
+    "issuerName": "萬潤",
+    "purposes": [
+      "營運資金"
+    ],
+    "source": "Yahoo股市/MOPS重大訊息",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E8%90%AC%E6%BD%A4%E8%91%A3%E4%BA%8B%E6%9C%83%E9%80%9A%E9%81%8E%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC%E5%85%AD%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%82%B5-%E4%B8%8A%E9%99%9030%E5%84%84%E5%85%83-141700333.html",
+    "summary": "公告第10點：募得價款之用途及運用計畫為充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "61894": {
+    "bondCode": "61894",
+    "evidenceText": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "6189",
+    "issuerName": "豐藝",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "Yahoo股市/MOPS重大訊息",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%B1%90%E8%97%9D%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC%E5%9B%9B%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-055302151.html",
+    "summary": "公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "61907": {
+    "bondCode": "61907",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款及未來發展所需。",
+    "issuerCode": "6190",
+    "issuerName": "萬泰科",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=1ea7bb98-6fc4-4894-9128-7bebe6368962",
+    "summary": "償還銀行借款及未來發展所需。",
+    "updatedAt": "2026-06-30"
+  },
+  "61965": {
+    "bondCode": "61965",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "6196",
+    "issuerName": "帆宣",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=6d0c3231-b4ef-4549-95c1-269dc46f907f",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "61973": {
+    "bondCode": "61973",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為投入新產品開發、研發人才、設備暨軟體，擴充海外子公司北越廠機器設備及產能，並償還銀行借款。",
+    "issuerCode": "6197",
+    "issuerName": "佳必琪",
+    "purposes": [
+      "研發",
+      "擴廠",
+      "購置設備",
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=cc20cc06-0a76-4d22-ad9c-78f8962e2f93",
+    "summary": "投入新產品開發、研發人才、設備暨軟體，擴充海外子公司北越廠機器設備及產能，並償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "61993": {
+    "bondCode": "61993",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為轉投資子公司天品國際股份有限公司。",
+    "issuerCode": "6199",
+    "issuerName": "天品",
+    "purposes": [
+      "轉投資"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=1c53b95e-f296-4680-93ce-f3a860ecd3b4",
+    "summary": "轉投資子公司天品國際股份有限公司。",
+    "updatedAt": "2026-06-30"
+  },
+  "61994": {
+    "bondCode": "61994",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為轉投資子公司天品國際股份有限公司。",
+    "issuerCode": "6199",
+    "issuerName": "天品",
+    "purposes": [
+      "轉投資"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=1c53b95e-f296-4680-93ce-f3a860ecd3b4",
+    "summary": "轉投資子公司天品國際股份有限公司。",
+    "updatedAt": "2026-06-30"
+  },
+  "62075": {
+    "bondCode": "62075",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "6207",
+    "issuerName": "雷科",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=40e9430f-e4c5-4161-a807-a79f48f22122",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "62076": {
+    "bondCode": "62076",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "6207",
+    "issuerName": "雷科",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=40e9430f-e4c5-4161-a807-a79f48f22122",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "62093": {
+    "bondCode": "62093",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "issuerCode": "6209",
+    "issuerName": "今國光",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=0af5e5b9-d85e-4075-9d7e-b28b3beec73c",
+    "summary": "償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "62174": {
+    "bondCode": "62174",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為購買土地及廠房。",
+    "issuerCode": "6217",
+    "issuerName": "中探針",
+    "purposes": [
+      "擴廠",
+      "購置不動產"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=d49d2fc0-009e-4645-b704-f1a2fa29cc00",
+    "summary": "購買土地及廠房。",
+    "updatedAt": "2026-06-30"
+  },
+  "62194": {
+    "bondCode": "62194",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為支付營建工程款。",
+    "issuerCode": "6219",
+    "issuerName": "富旺",
+    "purposes": [
+      "其他"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=1e205e50-9fef-4655-afd2-028a1306868b",
+    "summary": "支付營建工程款。",
+    "updatedAt": "2026-06-30"
+  },
+  "622010": {
+    "bondCode": "622010",
+    "confidence": "高",
+    "evidenceText": "募得價款之用途及運用計畫:償還銀行借款",
+    "issuerCode": "6220",
+    "issuerName": "岳豐",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=a182108d-5ffb-49dc-8c64-e...",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "62235": {
+    "bondCode": "62235",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款、充實營運資金。",
+    "issuerCode": "6223",
+    "issuerName": "旺矽",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "第一銀行/MOPS重大訊息",
+    "sourceUrl": "https://wealth.firstbank.com.tw/investment-tips/trend-insight/news/news-detail?id=%7B156C8171-224D-45B7-B903-E7CDD422C879%7D",
+    "summary": "償還銀行借款、充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "62236": {
+    "bondCode": "62236",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為充實營運資金。",
+    "issuerCode": "6223",
+    "issuerName": "旺矽",
+    "purposes": [
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c10b588b-782b-45a8-8ef1-62bd90841171",
+    "summary": "充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "62433": {
+    "bondCode": "62433",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "issuerCode": "6243",
+    "issuerName": "迅杰",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e8cd1688-1be6-436e-93c4-d09deadaeff3",
+    "summary": "償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "62695": {
+    "bondCode": "62695",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款、購買設備、充實營運資金。",
+    "issuerCode": "6269",
+    "issuerName": "台郡",
+    "purposes": [
+      "償還借款",
+      "購置設備",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=04a37b3c-642b-478d-b3dc-5f0dfca83173",
+    "summary": "償還銀行借款、購買設備、充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "62696": {
+    "bondCode": "62696",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款、購買設備、充實營運資金。",
+    "issuerCode": "6269",
+    "issuerName": "台郡",
+    "purposes": [
+      "償還借款",
+      "購置設備",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=aaabc05d-c54a-458e-9e6e-a69d52588717",
+    "summary": "償還銀行借款、購買設備、充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "62744": {
+    "bondCode": "62744",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為充實營運資金。",
+    "issuerCode": "6274",
+    "issuerName": "台燿",
+    "purposes": [
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=7712700c-d29a-41ff-82be-27114d85beeb",
+    "summary": "充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "62745": {
+    "bondCode": "62745",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為充實營運資金。",
+    "issuerCode": "6274",
+    "issuerName": "台燿",
+    "purposes": [
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=16b72404-2759-42d9-9a7c-49e3f24676f0",
+    "summary": "充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "62756": {
+    "bondCode": "62756",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "issuerCode": "6275",
+    "issuerName": "元山",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "鉅亨網/MOPS重大訊息",
+    "sourceUrl": "https://news.cnyes.com/news/id/4715309",
+    "summary": "償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "62791": {
+    "bondCode": "62791",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "6279",
+    "issuerName": "胡連",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=3f652cb9-2401-4f8f-abe0-5544ede08de0",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "62821": {
+    "bondCode": "62821",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款，改善財務結構。",
+    "issuerCode": "6282",
+    "issuerName": "康舒",
+    "purposes": [
+      "償還借款",
+      "充實財務結構"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=1e4a9a4e-5542-4fb9-8214-0cbcb9aa8cc7",
+    "summary": "償還銀行借款，改善財務結構。",
+    "updatedAt": "2026-06-30"
+  },
+  "62822": {
+    "bondCode": "62822",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為支應轉投資子公司之資金需求。",
+    "issuerCode": "6282",
+    "issuerName": "康舒",
+    "purposes": [
+      "轉投資"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=0ffe64c4-164c-4096-980e-2f85291dd2b9",
+    "summary": "支應轉投資子公司之資金需求。",
+    "updatedAt": "2026-06-30"
+  },
+  "62843": {
+    "bondCode": "62843",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "6284",
+    "issuerName": "佳邦",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=379d73c3-c285-42d5-bc34-df567ad65d10",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "62884": {
+    "bondCode": "62884",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還借款及購買設備。",
+    "issuerCode": "6288",
+    "issuerName": "聯嘉",
+    "purposes": [
+      "償還借款",
+      "購置設備"
+    ],
+    "source": "鉅亨網/MOPS重大訊息",
+    "sourceUrl": "https://news.cnyes.com/news/id/5275477",
+    "summary": "償還借款及購買設備。",
+    "updatedAt": "2026-06-30"
+  },
+  "629010": {
+    "bondCode": "629010",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款或充實營運資金。",
+    "issuerCode": "6290",
+    "issuerName": "良維",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=5badaa24-bbdd-4137-ba49-a3532862d4bb",
+    "summary": "償還銀行借款或充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "62909": {
+    "bondCode": "62909",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "6290",
+    "issuerName": "良維",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "Yahoo/中央社/MOPS重大訊息",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%89%AF%E7%B6%AD%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%B9%9D%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-103238186.html",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "64144": {
+    "bondCode": "64144",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "issuerCode": "6414",
+    "issuerName": "樺漢",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "鉅亨網/MOPS重大訊息",
+    "sourceUrl": "https://news.cnyes.com/news/id/4698343",
+    "summary": "償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "64145": {
+    "bondCode": "64145",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "6414",
+    "issuerName": "樺漢",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=9ead5dc2-2e2c-431e-84db-25566043071b",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "64146": {
+    "bondCode": "64146",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為原私募所募得金額已全數用於充實營運資金。",
+    "issuerCode": "6414",
+    "issuerName": "樺漢",
+    "purposes": [
+      "營運資金"
+    ],
+    "source": "Yahoo/MOPS重大訊息",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E6%A8%BA%E6%BC%A2-%E6%9C%AC%E5%85%AC%E5%8F%B8%E5%9C%8B%E5%85%A7%E7%AC%AC%E5%85%AD%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5%E7%A7%81%E5%8B%9F%E8%B3%87%E9%87%91%E9%81%8B%E7%94%A8%E6%83%85%E5%BD%A2%E5%AD%A3%E5%A0%B1%E8%A1%A8-095448995.html",
+    "summary": "原私募所募得金額已全數用於充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "64251": {
+    "bondCode": "64251",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款以及充實營運資金。",
+    "issuerCode": "6425",
+    "issuerName": "易發",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=ed9ffdb9-d763-4110-a11a-f28f8b2746f7",
+    "summary": "償還銀行借款以及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "64324": {
+    "bondCode": "64324",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "issuerCode": "6432",
+    "issuerName": "今展科",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "群益投顧/MOPS重大訊息",
+    "sourceUrl": "https://www.capitalim.com.tw/newsite/stock-news/stock-news/5ed6d08f-cafd-401d-bc5c-45e4bef2e493%3Bpage%3D1%28popup%3Alogin%29",
+    "summary": "償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "64421": {
+    "bondCode": "64421",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "issuerCode": "6442",
+    "issuerName": "光聖",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=972c4ed7-64b7-4d1b-9bb9-544663e103d5",
+    "summary": "償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "64422": {
+    "bondCode": "64422",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "issuerCode": "6442",
+    "issuerName": "光聖",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "第一銀行/MOPS重大訊息",
+    "sourceUrl": "https://wealth.firstbank.com.tw/investment-tips/trend-insight/news/news-detail?id=%7B5B0C11C6-66B0-4871-8A4C-40482F344F88%7D",
+    "summary": "償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "64423": {
+    "bondCode": "64423",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "issuerCode": "6442",
+    "issuerName": "光聖",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=5822d8a2-e799-4f18-ab6f-cac607692506",
+    "summary": "償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "64512": {
+    "bondCode": "64512",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為建置廠房及購買機器設備。",
+    "issuerCode": "6451",
+    "issuerName": "訊芯-KY",
+    "purposes": [
+      "擴廠",
+      "購置設備"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=58b143c7-c40e-4290-8125-6bc031d5b3be",
+    "summary": "建置廠房及購買機器設備。",
+    "updatedAt": "2026-06-30"
+  },
+  "64693": {
+    "bondCode": "64693",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為因應國內第二次無擔保轉換公司債到期償還本金、國內第一次私募無擔保轉換公司債到期償還本金及充實營運資金。",
+    "issuerCode": "6469",
+    "issuerName": "大樹",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "公司公告/PDF",
+    "sourceUrl": "https://www.greattree.com.tw/files/15-investor/news/114/CH/1140227-2.pdf",
+    "summary": "因應國內第二次無擔保轉換公司債到期償還本金、國內第一次私募無擔保轉換公司債到期償還本金及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "64722": {
+    "bondCode": "64722",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "6472",
+    "issuerName": "保瑞",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "Yahoo/中央社/MOPS重大訊息",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E4%BF%9D%E7%91%9E%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%BA%8C%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E5%8F%AF%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-121438558.html",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "64723": {
+    "bondCode": "64723",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "6472",
+    "issuerName": "保瑞",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=08901f3c-acf6-461e-9e72-c1e7564d4e3b",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "64724": {
+    "bondCode": "64724",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "6472",
+    "issuerName": "保瑞",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f7a6e897-4896-4c6d-b766-72d4fa202b8a",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "64725": {
+    "bondCode": "64725",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "6472",
+    "issuerName": "保瑞",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f7a6e897-4896-4c6d-b766-72d4fa202b8a",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "64773": {
+    "bondCode": "64773",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為建置電廠；另公開說明書/變更公告顯示主要為興建或購置電廠並含充實營運資金。",
+    "issuerCode": "6477",
+    "issuerName": "安集",
+    "purposes": [
+      "擴廠",
+      "營運資金"
+    ],
+    "source": "鉅亨網/MOPS發行公告",
+    "sourceUrl": "https://news.cnyes.com/news/id/4687350",
+    "summary": "建置電廠；另公開說明書/變更公告顯示主要為興建或購置電廠並含充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "64774": {
+    "bondCode": "64774",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為興建或購置電廠或充實營運資金。",
+    "issuerCode": "6477",
+    "issuerName": "安集",
+    "purposes": [
+      "擴廠",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=da0d39dc-c42d-463e-b06d-a38fdfbeb3e7",
+    "summary": "興建或購置電廠或充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "64775": {
+    "bondCode": "64775",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "6477",
+    "issuerName": "安集",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e5788fbd-af67-45a5-87d7-ce4b0a797043",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "65096": {
+    "bondCode": "65096",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為資本支出、償還借款及充實營運資金。",
+    "issuerCode": "6509",
+    "issuerName": "聚和",
+    "purposes": [
+      "購置設備",
+      "資本支出",
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=92ace479-bc23-46c5-9681-042a151fcbe7",
+    "summary": "資本支出、償還借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "65101": {
+    "bondCode": "65101",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為建置廠房。",
+    "issuerCode": "6510",
+    "issuerName": "精測",
+    "purposes": [
+      "擴廠"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=16864dc9-c2d8-4dff-9ed6-bb152dd023cb",
+    "summary": "建置廠房。",
+    "updatedAt": "2026-06-30"
+  },
+  "65151": {
+    "bondCode": "65151",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為充實營運資金。",
+    "issuerCode": "6515",
+    "issuerName": "穎崴",
+    "purposes": [
+      "營運資金"
+    ],
+    "source": "Yahoo/中央社/MOPS重大訊息",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%A9%8E%E5%B4%B4%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC-%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-112520425.html",
+    "summary": "充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "65152": {
+    "bondCode": "65152",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為充實營運資金。",
+    "issuerCode": "6515",
+    "issuerName": "穎崴",
+    "purposes": [
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=4f4c409f-6133-47d2-934e-42ad9be79d63",
+    "summary": "充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "65331": {
+    "bondCode": "65331",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為為因應長期發展高階技術之研發支出資金需求。",
+    "issuerCode": "6533",
+    "issuerName": "晶心科",
+    "purposes": [
+      "研發"
+    ],
+    "source": "Yahoo/中央社/MOPS重大訊息",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%99%B6%E5%BF%83%E7%A7%91%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E9%80%9A%E9%81%8E%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC-%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-110219919.html",
+    "summary": "為因應長期發展高階技術之研發支出資金需求。",
+    "updatedAt": "2026-06-30"
+  },
+  "65381": {
+    "bondCode": "65381",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "6538",
+    "issuerName": "倉和",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=8e812138-33ed-4555-9306-8d75e795b5c5",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "65461": {
+    "bondCode": "65461",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為充實營運資金及償還銀行借款。",
+    "issuerCode": "6546",
+    "issuerName": "正基",
+    "purposes": [
+      "營運資金",
+      "償還借款"
+    ],
+    "source": "群益投顧/MOPS重大訊息",
+    "sourceUrl": "https://www.capitalim.com.tw/newsite/stock-news/stock-news/d14d3b35-9eb0-47cc-aec3-34fe5f1467b4%3Bpage%3D1%28popup%3Alogin%29",
+    "summary": "充實營運資金及償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "65462": {
+    "bondCode": "65462",
+    "confidence": "高",
+    "evidenceText": "10.募得價款之用途及運用計畫:充實營運資金及/或償還國內第一次無擔保可轉換公司債持有人執行賣回權之資金需求",
+    "issuerCode": "6546",
+    "issuerName": "正基",
+    "purposes": [
+      "營運資金",
+      "償還借款"
+    ],
+    "source": "公開資訊觀測站重大訊息轉載",
+    "sourceUrl": "https://data.zhupiter.com/oddt/25833208/%E6%9C%AC%E5%85%AC%E5%8F%B8%E8%91%A3%...",
+    "summary": "充實營運資金及/或償還國內第一次無擔保可轉換公司債持有人執行賣回權之資金需求。",
+    "updatedAt": "2026-06-30"
+  },
+  "65463": {
+    "bondCode": "65463",
+    "confidence": "高",
+    "evidenceText": "10.募得價款之用途及運用計畫:充實營運資金及/或償還國內第一次無擔保可轉換公司債持有人執行賣回權之資金需求",
+    "issuerCode": "6546",
+    "issuerName": "正基",
+    "purposes": [
+      "營運資金",
+      "償還借款"
+    ],
+    "source": "公開資訊觀測站重大訊息轉載",
+    "sourceUrl": "https://data.zhupiter.com/oddt/25833208/%E6%9C%AC%E5%85%AC%E5%8F%B8%E8%91%A3%...",
+    "summary": "充實營運資金及/或償還國內第一次無擔保可轉換公司債持有人執行賣回權之資金需求。",
+    "updatedAt": "2026-06-30"
+  },
+  "65472": {
+    "bondCode": "65472",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為因應東南亞市場對腸病毒71型疫苗需求而需擴增產線、擴大產能。",
+    "issuerCode": "6547",
+    "issuerName": "高端疫苗",
+    "purposes": [
+      "擴廠"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=0a3ff1dc-3367-4f54-88cd-cee531b3995d",
+    "summary": "因應東南亞市場對腸病毒71型疫苗需求而需擴增產線、擴大產能。",
+    "updatedAt": "2026-06-30"
+  },
+  "65481": {
+    "bondCode": "65481",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "6548",
+    "issuerName": "長科*",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=a7fabaaa-6b3c-4065-9f33-582b3beb4586",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "65521": {
+    "bondCode": "65521",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款及購置機器設備。",
+    "issuerCode": "6552",
+    "issuerName": "易華電",
+    "purposes": [
+      "償還借款",
+      "購置設備"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=13ebb7d6-2d25-45bd-a043-cd464c63983c",
+    "summary": "償還銀行借款及購置機器設備。",
+    "updatedAt": "2026-06-30"
+  },
+  "65761": {
+    "bondCode": "65761",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為充實營運資金及償還銀行借款。",
+    "issuerCode": "6576",
+    "issuerName": "逸達",
+    "purposes": [
+      "營運資金",
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f9775627-2a66-4744-b830-d6cb03323675",
+    "summary": "充實營運資金及償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "65841": {
+    "bondCode": "65841",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "6584",
+    "issuerName": "南俊國際",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=8f46a1cb-60c5-4878-b519-7f4e6d61f12a",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "65842": {
+    "bondCode": "65842",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "6584",
+    "issuerName": "南俊國際",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=8f46a1cb-60c5-4878-b519-7f4e6d61f12a",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "65851": {
+    "bondCode": "65851",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "issuerCode": "6585",
+    "issuerName": "鼎基",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "鉅亨網/MOPS重大訊息",
+    "sourceUrl": "https://news.cnyes.com/news/id/5279111",
+    "summary": "償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "65852": {
+    "bondCode": "65852",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "issuerCode": "6585",
+    "issuerName": "鼎基",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=3b87349f-3967-45b1-83c1-23a669891c06",
+    "summary": "償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "65914": {
+    "bondCode": "65914",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為轉投資海外泰國子公司需求及充實營運資金。",
+    "issuerCode": "6591",
+    "issuerName": "動力-KY",
+    "purposes": [
+      "轉投資",
+      "營運資金"
+    ],
+    "source": "第一銀行/MOPS重大訊息轉載",
+    "sourceUrl": "https://wealth.firstbank.com.tw/investment-tips/trend-insight/news/news-detail?id=%7B6D281A79-8562-45ED-9847-21E7889A58AB%7D",
+    "summary": "轉投資海外泰國子公司需求及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "66034": {
+    "bondCode": "66034",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "6603",
+    "issuerName": "富強鑫",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=197fc46b-8098-42ba-916e-9ea976e308bc",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "66163": {
+    "bondCode": "66163",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為支應第二次無擔保轉換公司債持有人執行賣回權之本金（含利息補償金）及充實營運資金。",
+    "issuerCode": "6616",
+    "issuerName": "特昇-KY",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c184d710-bfb2-4fd9-bf1f-f44e17153b04",
+    "summary": "支應第二次無擔保轉換公司債持有人執行賣回權之本金（含利息補償金）及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "66241": {
+    "bondCode": "66241",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為支應國內第一次有擔保轉換公司債到期還本；若募集金額高於預定金額，增加資金將用於償還銀行借款或充實營運資金。",
+    "issuerCode": "6624",
+    "issuerName": "萬年清",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "Yahoo股市重訊",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%90%AC%E5%B9%B4%E6%B8%85%E6%93%AC%E8%BE%A6%E7%90%86%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC1%E6%AC%A1%E6%9C%89%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5%E6%A1%88-094935646.html",
+    "summary": "支應國內第一次有擔保轉換公司債到期還本；若募集金額高於預定金額，增加資金將用於償還銀行借款或充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "66292": {
+    "bondCode": "66292",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "issuerCode": "6629",
+    "issuerName": "泰金-KY",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e233e503-c5e2-41ce-9fdf-aa4d8d349b7c",
+    "summary": "償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "66451": {
+    "bondCode": "66451",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "issuerCode": "6645",
+    "issuerName": "金萬林-創",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "Genet觀點/MOPS重大訊息轉載",
+    "sourceUrl": "https://www.genetinfo.com/investment/company-news/item/82798.html",
+    "summary": "償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "66642": {
+    "bondCode": "66642",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為購置土地及新建廠房。",
+    "issuerCode": "6664",
+    "issuerName": "群翊",
+    "purposes": [
+      "擴廠"
+    ],
+    "source": "鉅亨網/MOPS重大訊息",
+    "sourceUrl": "https://news.cnyes.com/news/id/5720390",
+    "summary": "購置土地及新建廠房。",
+    "updatedAt": "2026-06-30"
+  },
+  "66702": {
+    "bondCode": "66702",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為充實營運資金。",
+    "issuerCode": "6670",
+    "issuerName": "復盛應用",
+    "purposes": [
+      "營運資金"
+    ],
+    "source": "第一銀行/MOPS重大訊息轉載",
+    "sourceUrl": "https://wealth.firstbank.com.tw/investment-tips/trend-insight/news/news-detail?id=%7B47EEA846-4518-4C8A-AA84-2D1EE8085AEA%7D",
+    "summary": "充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "66721": {
+    "bondCode": "66721",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為充實營運資金及泰國子公司興建廠房及購置機器設備所需。",
+    "issuerCode": "6672",
+    "issuerName": "騰輝電子-KY",
+    "purposes": [
+      "營運資金",
+      "擴廠",
+      "購置設備"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f442c8e3-202d-44d0-b45b-f520f31b8c74",
+    "summary": "充實營運資金及泰國子公司興建廠房及購置機器設備所需。",
+    "updatedAt": "2026-06-30"
+  },
+  "66722": {
+    "bondCode": "66722",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為充實營運資金及泰國子公司興建廠房及購置機器設備所需。",
+    "issuerCode": "6672",
+    "issuerName": "騰輝電子-KY",
+    "purposes": [
+      "營運資金",
+      "擴廠",
+      "購置設備"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=307bf42d-4ef8-4dbb-82d8-45b8990348c8",
+    "summary": "充實營運資金及泰國子公司興建廠房及購置機器設備所需。",
+    "updatedAt": "2026-06-30"
+  },
+  "66801": {
+    "bondCode": "66801",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為購買辦公大樓及償還銀行借款。",
+    "issuerCode": "6680",
+    "issuerName": "鑫創電子",
+    "purposes": [
+      "償還借款",
+      "其他"
+    ],
+    "source": "Yahoo股市重訊",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%91%AB%E5%89%B5%E9%9B%BB%E5%AD%90%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC-%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-105003254.html",
+    "summary": "購買辦公大樓及償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "67062": {
+    "bondCode": "67062",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "issuerCode": "6706",
+    "issuerName": "惠特",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=dfc805c7-0f4f-40dd-83e2-d1f365177bec",
+    "summary": "償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "67152": {
+    "bondCode": "67152",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為興建廠房。",
+    "issuerCode": "6715",
+    "issuerName": "嘉基",
+    "purposes": [
+      "擴廠"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=27a0dc8b-6905-4250-a901-f3af98e02e45",
+    "summary": "興建廠房。",
+    "updatedAt": "2026-06-30"
+  },
+  "67531": {
+    "bondCode": "67531",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款及興建六廠北棟廠房。",
+    "issuerCode": "6753",
+    "issuerName": "龍德造船",
+    "purposes": [
+      "償還借款",
+      "擴廠"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=87e9ae04-6f08-48a7-81e3-beb61c0fed58",
+    "summary": "償還銀行借款及興建六廠北棟廠房。",
+    "updatedAt": "2026-06-30"
+  },
+  "67681": {
+    "bondCode": "67681",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為興建廠房暨購置機器設備之資金需求。",
+    "issuerCode": "6768",
+    "issuerName": "志強-KY",
+    "purposes": [
+      "擴廠",
+      "購置設備"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=ed441ed7-a00d-48c0-9e87-78e19b145358",
+    "summary": "興建廠房暨購置機器設備之資金需求。",
+    "updatedAt": "2026-06-30"
+  },
+  "67711": {
+    "bondCode": "67711",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為轉投資子公司。",
+    "issuerCode": "6771",
+    "issuerName": "平和環保-創",
+    "purposes": [
+      "轉投資"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=ff25fd00-1990-4b0c-883a-3720e38e518a",
+    "summary": "轉投資子公司。",
+    "updatedAt": "2026-06-30"
+  },
+  "67961": {
+    "bondCode": "67961",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為充實營運資金。",
+    "issuerCode": "6796",
+    "issuerName": "晉弘",
+    "purposes": [
+      "營運資金"
+    ],
+    "source": "Genet觀點/MOPS重大訊息轉載",
+    "sourceUrl": "https://www.genetinfo.com/investment/company-news/item/71736.html",
+    "summary": "充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "67962": {
+    "bondCode": "67962",
+    "confidence": "高",
+    "evidenceText": "10.募得價款之用途及運用計畫:充實營運資金",
+    "issuerCode": "6796",
+    "issuerName": "晉弘",
+    "purposes": [
+      "營運資金"
+    ],
+    "source": "Yahoo股市重訊",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%99%89%E5%BC%98%E8%91%A...",
+    "summary": "充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "68032": {
+    "bondCode": "68032",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還債務及充實營運資金。",
+    "issuerCode": "6803",
+    "issuerName": "崑鼎",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=a1efc2f7-e39b-4f91-b4f3-cc0e7ebf5c6d",
+    "summary": "償還債務及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "68061": {
+    "bondCode": "68061",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為預計用於案場開發及充實營運資金。",
+    "issuerCode": "6806",
+    "issuerName": "森崴能源",
+    "purposes": [
+      "案場開發",
+      "營運資金"
+    ],
+    "source": "Yahoo股市重訊",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%A3%AE%E5%B4%B4%E8%83%BD%E6%BA%90%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E7%AC%AC-%E6%AC%A1%E6%9C%89%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-070227049.html",
+    "summary": "預計用於案場開發及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "68211": {
+    "bondCode": "68211",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為購置廠辦大樓。",
+    "issuerCode": "6821",
+    "issuerName": "聯寶",
+    "purposes": [
+      "其他"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=5c7a72cb-daa9-403a-84b6-95e69e3b8210",
+    "summary": "購置廠辦大樓。",
+    "updatedAt": "2026-06-30"
+  },
+  "68301": {
+    "bondCode": "68301",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為轉投資及償還銀行借款。",
+    "issuerCode": "6830",
+    "issuerName": "汎銓",
+    "purposes": [
+      "轉投資",
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=434cae18-89e7-4abe-b61d-fe81cd6763bd",
+    "summary": "轉投資及償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "68351": {
+    "bondCode": "68351",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為轉投資子公司。",
+    "issuerCode": "6835",
+    "issuerName": "圓裕",
+    "purposes": [
+      "轉投資"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=5a3e83d2-be29-4202-975d-491a32d1bb35",
+    "summary": "轉投資子公司。",
+    "updatedAt": "2026-06-30"
+  },
+  "68401": {
+    "bondCode": "68401",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款、建置實驗室及購置儀器設備。",
+    "issuerCode": "6840",
+    "issuerName": "東研信超",
+    "purposes": [
+      "償還借款",
+      "研發",
+      "購置設備"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=1c9fe92f-547b-4eae-9e84-2aa5e0d129e4",
+    "summary": "償還銀行借款、建置實驗室及購置儀器設備。",
+    "updatedAt": "2026-06-30"
+  },
+  "68431": {
+    "bondCode": "68431",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "issuerCode": "6843",
+    "issuerName": "進典",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f88e8afc-80c5-4e36-8e14-7176e07db609",
+    "summary": "償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "68461": {
+    "bondCode": "68461",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為興建廠房及購買機器設備。",
+    "issuerCode": "6846",
+    "issuerName": "綠茵",
+    "purposes": [
+      "擴廠",
+      "購置設備"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=3979293f-7080-4dd2-a220-4b2f5bf404d0",
+    "summary": "興建廠房及購買機器設備。",
+    "updatedAt": "2026-06-30"
+  },
+  "68462": {
+    "bondCode": "68462",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為興建廠房及購買機器設備。",
+    "issuerCode": "6846",
+    "issuerName": "綠茵",
+    "purposes": [
+      "擴廠",
+      "購置設備"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=3979293f-7080-4dd2-a220-4b2f5bf404d0",
+    "summary": "興建廠房及購買機器設備。",
+    "updatedAt": "2026-06-30"
+  },
+  "68541": {
+    "bondCode": "68541",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為充實營運資金及購買機械設備。",
+    "issuerCode": "6854",
+    "issuerName": "錼創科技-KY創",
+    "purposes": [
+      "營運資金",
+      "購置設備"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e47bc85c-5a76-4a12-812b-cf534bb80194",
+    "summary": "充實營運資金及購買機械設備。",
+    "updatedAt": "2026-06-30"
+  },
+  "68621": {
+    "bondCode": "68621",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為轉投資泰國子公司以因應泰國擴廠計畫支出等中長期資金需求，並緩解子公司營運資金壓力。",
+    "issuerCode": "6862",
+    "issuerName": "三集瑞-KY",
+    "purposes": [
+      "轉投資",
+      "擴廠",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=4ba59b21-9848-4c0c-bb97-481050f53656",
+    "summary": "轉投資泰國子公司以因應泰國擴廠計畫支出等中長期資金需求，並緩解子公司營運資金壓力。",
+    "updatedAt": "2026-06-30"
+  },
+  "68631": {
+    "bondCode": "68631",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為擴廠及購買機器設備。",
+    "issuerCode": "6863",
+    "issuerName": "永道-KY",
+    "purposes": [
+      "擴廠",
+      "購置設備"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f018a079-2726-4362-b015-f0363a1f5fca",
+    "summary": "擴廠及購買機器設備。",
+    "updatedAt": "2026-06-30"
+  },
+  "68691": {
+    "bondCode": "68691",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "issuerCode": "6869",
+    "issuerName": "雲豹能源",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=5fcb7753-2e9d-4a76-a5ce-b78cbd35eae0",
+    "summary": "償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "68701": {
+    "bondCode": "68701",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為購置集團研發暨營運總部及其附屬設備。",
+    "issuerCode": "6870",
+    "issuerName": "騰雲",
+    "purposes": [
+      "購置設備",
+      "研發",
+      "營運總部"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=ae52e6e5-f23d-4225-a47c-8f7574426b98",
+    "summary": "購置集團研發暨營運總部及其附屬設備。",
+    "updatedAt": "2026-06-30"
+  },
+  "68702": {
+    "bondCode": "68702",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為購置集團研發暨營運總部及其附屬設備。",
+    "issuerCode": "6870",
+    "issuerName": "騰雲",
+    "purposes": [
+      "購置設備",
+      "研發",
+      "營運總部"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=3af614e3-061b-4390-a9df-52aeb159515b",
+    "summary": "購置集團研發暨營運總部及其附屬設備。",
+    "updatedAt": "2026-06-30"
+  },
+  "68731": {
+    "bondCode": "68731",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "issuerCode": "6873",
+    "issuerName": "泓德能源",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=8691407c-daa2-4929-af9b-b6468da64805",
+    "summary": "償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "68732": {
+    "bondCode": "68732",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "issuerCode": "6873",
+    "issuerName": "泓德能源",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=759111eb-b2d9-49cc-8e4b-d221d0763bd5",
+    "summary": "償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "68741": {
+    "bondCode": "68741",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "6874",
+    "issuerName": "倍力",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "Yahoo股市重訊",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%80%8D%E5%8A%9B%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E9%80%9A%E9%81%8E%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC-%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-111705159.html",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "68901": {
+    "bondCode": "68901",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "issuerCode": "6890",
+    "issuerName": "來億-KY",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "時報資訊/券商新聞轉載",
+    "sourceUrl": "https://www.sinotrade.com.tw/richclub/news/68df747b8ff59b56a62b86ce",
+    "summary": "償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "68902": {
+    "bondCode": "68902",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "issuerCode": "6890",
+    "issuerName": "來億-KY",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "時報資訊/券商新聞轉載",
+    "sourceUrl": "https://www.sinotrade.com.tw/richclub/news/68df747b8ff59b56a62b86ce",
+    "summary": "償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "68941": {
+    "bondCode": "68941",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為充實營運資金。",
+    "issuerCode": "6894",
+    "issuerName": "衛司特",
+    "purposes": [
+      "營運資金"
+    ],
+    "source": "第一銀行/MOPS重大訊息轉載",
+    "sourceUrl": "https://wealth.firstbank.com.tw/investment-tips/trend-insight/news/news-detail?id=%7BB2899FF1-B105-4A90-8C00-5544211B0076%7D",
+    "summary": "充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "69041": {
+    "bondCode": "69041",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "issuerCode": "6904",
+    "issuerName": "伯鑫",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c356d283-5bab-4f7a-a6f3-b3dfa62bff53",
+    "summary": "償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "69131": {
+    "bondCode": "69131",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為充實營運資金與償還銀行借款。",
+    "issuerCode": "6913",
+    "issuerName": "鴻呈",
+    "purposes": [
+      "營運資金",
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=d537d45a-59a9-4e10-b1dd-aac465601022",
+    "summary": "充實營運資金與償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "69571": {
+    "bondCode": "69571",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "issuerCode": "6957",
+    "issuerName": "裕慶-KY",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=3f48bf4d-87b0-44a3-ad2c-8a679f1e4946",
+    "summary": "償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "69821": {
+    "bondCode": "69821",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "issuerCode": "6982",
+    "issuerName": "大井泵浦",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=10af1027-1d27-477d-a940-9cf05f9fc398",
+    "summary": "償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "69822": {
+    "bondCode": "69822",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "issuerCode": "6982",
+    "issuerName": "大井泵浦",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=10af1027-1d27-477d-a940-9cf05f9fc398",
+    "summary": "償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "74022": {
+    "bondCode": "74022",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為購置內湖辦公室與停車位、室內裝潢等設備更新。",
+    "issuerCode": "7402",
+    "issuerName": "邑錡",
+    "purposes": [
+      "購置設備"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=428cc2fb-5650-48a4-a11a-f7dda861c2f1",
+    "summary": "購置內湖辦公室與停車位、室內裝潢等設備更新。",
+    "updatedAt": "2026-06-30"
+  },
+  "75561": {
+    "bondCode": "75561",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為興建廠房及充實營運資金。",
+    "issuerCode": "7556",
+    "issuerName": "意德士科技",
+    "purposes": [
+      "擴廠",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=42b9733e-e2d1-4972-8d22-27bed3de30e3",
+    "summary": "興建廠房及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "75562": {
+    "bondCode": "75562",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為興建廠房及充實營運資金。",
+    "issuerCode": "7556",
+    "issuerName": "意德士科技",
+    "purposes": [
+      "擴廠",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=42b9733e-e2d1-4972-8d22-27bed3de30e3",
+    "summary": "興建廠房及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "76101": {
+    "bondCode": "76101",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為充實營運資金、購置廠房、廠房整修與購置機器設備。",
+    "issuerCode": "7610",
+    "issuerName": "聯友金屬-創",
+    "purposes": [
+      "營運資金",
+      "擴廠",
+      "購置設備"
+    ],
+    "source": "nStock/MOPS重大訊息轉載",
+    "sourceUrl": "https://www.nstock.tw/news/article_m?id=476049",
+    "summary": "充實營運資金，以及購置廠房、廠房整修與購置機器設備。",
+    "updatedAt": "2026-06-30"
+  },
+  "77131": {
+    "bondCode": "77131",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "issuerCode": "7713",
+    "issuerName": "威力德生醫",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=04912713-b1da-4804-bfd3-8057114ff0a6",
+    "summary": "償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "80212": {
+    "bondCode": "80212",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為購置機器設備、償還銀行借款及充實營運資金。",
+    "issuerCode": "8021",
+    "issuerName": "尖點",
+    "purposes": [
+      "購置設備",
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "nStock/MOPS重大訊息轉載",
+    "sourceUrl": "https://www.nstock.tw/news/article_m?id=401627",
+    "summary": "購置機器設備、償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "80273": {
+    "bondCode": "80273",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為充實營運資金及興建廠房。",
+    "issuerCode": "8027",
+    "issuerName": "鈦昇",
+    "purposes": [
+      "營運資金",
+      "擴廠"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=15a78d4e-352f-4d3d-b41d-2f491e9526b3",
+    "summary": "充實營運資金及興建廠房。",
+    "updatedAt": "2026-06-30"
+  },
+  "80282": {
+    "bondCode": "80282",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為購置機器設備及償還銀行借款。",
+    "issuerCode": "8028",
+    "issuerName": "昇陽半導體",
+    "purposes": [
+      "購置設備",
+      "償還借款"
+    ],
+    "source": "第一銀行/MOPS重大訊息轉載",
+    "sourceUrl": "https://wealth.firstbank.com.tw/investment-tips/trend-insight/news/news-detail?id=%7B2EA494EC-FA5C-49BF-8B6F-E3E404717CA4%7D",
+    "summary": "購置機器設備及償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "80426": {
+    "bondCode": "80426",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "8042",
+    "issuerName": "金山電",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "鉅亨網/MOPS重大訊息",
+    "sourceUrl": "https://news.cnyes.com/news/id/6104332",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "80506": {
+    "bondCode": "80506",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款暨充實營運資金。",
+    "issuerCode": "8050",
+    "issuerName": "廣積",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=b95a64be-48d7-42b5-ae24-0695d57fdf24",
+    "summary": "償還銀行借款暨充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "80746": {
+    "bondCode": "80746",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為購置機器設備、償還銀行借款及充實營運資金。",
+    "issuerCode": "8074",
+    "issuerName": "鉅橡",
+    "purposes": [
+      "購置設備",
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=cfa522a5-1f9c-498c-8154-54bb41a5306b",
+    "summary": "購置機器設備、償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "80872": {
+    "bondCode": "80872",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為充實營運資金。",
+    "issuerCode": "8087",
+    "issuerName": "麗升能源",
+    "purposes": [
+      "營運資金"
+    ],
+    "source": "Yahoo股市/MOPS重大訊息",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%BA%97%E5%8D%87%E8%83%BD%E6%BA%90%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%BA%8C%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-113337240.html",
+    "summary": "充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "80914": {
+    "bondCode": "80914",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為建置新廠及償還銀行借款。",
+    "issuerCode": "8091",
+    "issuerName": "翔名",
+    "purposes": [
+      "擴廠",
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=66d48e83-9987-4c19-91bd-f34d43b900df",
+    "summary": "建置新廠及償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "80924": {
+    "bondCode": "80924",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "issuerCode": "8092",
+    "issuerName": "建暐",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=1b106b23-05e8-4d64-a21c-5c6dab9a285b",
+    "summary": "償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "81042": {
+    "bondCode": "81042",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為轉投資新寶資產股份有限公司。",
+    "issuerCode": "8104",
+    "issuerName": "錸寶",
+    "purposes": [
+      "轉投資"
+    ],
+    "source": "鉅亨網/MOPS重大訊息",
+    "sourceUrl": "https://news.cnyes.com/news/id/4795751",
+    "summary": "轉投資新寶資產股份有限公司。",
+    "updatedAt": "2026-06-30"
+  },
+  "81114": {
+    "bondCode": "81114",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "8111",
+    "issuerName": "立碁",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=859f35bc-d795-46b1-ba01-87b192149eec",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "811210": {
+    "bondCode": "811210",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "8112",
+    "issuerName": "至上",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=1fb73af2-b62e-4041-8da1-c701d63e23b7",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "811211": {
+    "bondCode": "811211",
+    "confidence": "高",
+    "evidenceText": "10.募得價款之用途及運用計畫:償還銀行借款",
+    "issuerCode": "8112",
+    "issuerName": "至上",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=4636ec9a-c796-445f-9951-b...",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "81473": {
+    "bondCode": "81473",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為充實營運資金及償還銀行借款。",
+    "issuerCode": "8147",
+    "issuerName": "正淩",
+    "purposes": [
+      "營運資金",
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=2fa1aa06-a8b7-4d77-b1d4-217b32a185de",
+    "summary": "充實營運資金及償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "81551": {
+    "bondCode": "81551",
+    "evidenceText": "公告：原募集用途為新建廠房；董事會決議變更未支用資金用途為購置機器設備及充實營運資金。",
+    "issuerCode": "8155",
+    "issuerName": "博智",
+    "purposes": [
+      "購置設備",
+      "營運資金",
+      "擴廠用途變更"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=beb3394f-fae8-491a-9417-26d111c3205f",
+    "summary": "原募集用途為新建廠房；114/09/26董事會決議變更，未支用資金轉作購置機器設備及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "81714": {
+    "bondCode": "81714",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款及建置太陽能發電設備。",
+    "issuerCode": "8171",
+    "issuerName": "天宇",
+    "purposes": [
+      "償還借款",
+      "購置設備"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=53660bdd-f18c-4bd6-b564-663a9b339da1",
+    "summary": "償還銀行借款及建置太陽能發電設備。",
+    "updatedAt": "2026-06-30"
+  },
+  "81715": {
+    "bondCode": "81715",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款及建置太陽能發電設備。",
+    "issuerCode": "8171",
+    "issuerName": "天宇",
+    "purposes": [
+      "償還借款",
+      "購置設備"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=53660bdd-f18c-4bd6-b564-663a9b339da1",
+    "summary": "償還銀行借款及建置太陽能發電設備。",
+    "updatedAt": "2026-06-30"
+  },
+  "82101": {
+    "bondCode": "82101",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "8210",
+    "issuerName": "勤誠",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "公開資訊觀測站重大訊息轉載",
+    "sourceUrl": "https://fund.hncb.com.tw/z/zh/zhf/zhfz/zhfz_802D8E2B-4435-4EFE-BABF-4553AB5C7F94.djhtm",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "82102": {
+    "bondCode": "82102",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為轉投資子公司及充實營運資金。",
+    "issuerCode": "8210",
+    "issuerName": "勤誠",
+    "purposes": [
+      "轉投資",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=fda3d660-e6e3-4212-ac9c-f3ecbbb9077f",
+    "summary": "轉投資子公司及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "82103": {
+    "bondCode": "82103",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為轉投資子公司及充實營運資金。",
+    "issuerCode": "8210",
+    "issuerName": "勤誠",
+    "purposes": [
+      "轉投資",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=fda3d660-e6e3-4212-ac9c-f3ecbbb9077f",
+    "summary": "轉投資子公司及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "82551": {
+    "bondCode": "82551",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "8255",
+    "issuerName": "朋程",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "鉅亨網/MOPS重大訊息",
+    "sourceUrl": "https://news.cnyes.com/news/id/5271104",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "82711": {
+    "bondCode": "82711",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為充實營運資金。",
+    "issuerCode": "8271",
+    "issuerName": "宇瞻",
+    "purposes": [
+      "營運資金"
+    ],
+    "source": "公開資訊觀測站重大訊息轉載",
+    "sourceUrl": "https://www.capitalim.com.tw/newsite/stock-news/stock-news/2694ae06-780e-49b8-9d82-6ac47dc07d69%3Bpage%3D1%28popup%3Alogin%29",
+    "summary": "充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "82992": {
+    "bondCode": "82992",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為充實營運資金。",
+    "issuerCode": "8299",
+    "issuerName": "群聯",
+    "purposes": [
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=bf12f092-a4d0-41ec-a5d3-1cfcca2cbcb9",
+    "summary": "充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "82993": {
+    "bondCode": "82993",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為充實營運資金。",
+    "issuerCode": "8299",
+    "issuerName": "群聯",
+    "purposes": [
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=7273a7c0-9571-49db-8341-4e0e32e9ff46",
+    "summary": "充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "83742": {
+    "bondCode": "83742",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "issuerCode": "8374",
+    "issuerName": "羅昇",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=6b3fef64-270a-4889-9c42-8157530ba86c",
+    "summary": "償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "84041": {
+    "bondCode": "84041",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "8404",
+    "issuerName": "百和興業-KY",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=9704bba1-fe6e-469b-841e-3f9907a6be2c",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "84113": {
+    "bondCode": "84113",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款及償還中華民國境內第二次無擔保轉換公司債。",
+    "issuerCode": "8411",
+    "issuerName": "福貞-KY",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "第一銀行/MOPS重大訊息轉載",
+    "sourceUrl": "https://wealth.firstbank.com.tw/investment-tips/trend-insight/news/news-detail?id=%7B30DD563D-733F-4F0E-A551-E57910856A89%7D",
+    "summary": "償還銀行借款及償還中華民國境內第二次無擔保轉換公司債。",
+    "updatedAt": "2026-06-30"
+  },
+  "84221": {
+    "bondCode": "84221",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款及轉投資子公司。",
+    "issuerCode": "8422",
+    "issuerName": "可寧衛*",
+    "purposes": [
+      "償還借款",
+      "轉投資"
+    ],
+    "source": "鉅亨網/MOPS重大訊息",
+    "sourceUrl": "https://news.cnyes.com/news/id/4984072",
+    "summary": "償還銀行借款及轉投資子公司。",
+    "updatedAt": "2026-06-30"
+  },
+  "84222": {
+    "bondCode": "84222",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "8422",
+    "issuerName": "可寧衛*",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "Yahoo股市/MOPS重大訊息",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8F%AF%E5%AF%A7%E8%A1%9B%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%BA%8C%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-091928527.html",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "84312": {
+    "bondCode": "84312",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為轉投資海外事業、擴建新廠與新線；發行公告列示轉投資泰國子公司。",
+    "issuerCode": "8431",
+    "issuerName": "匯鑽科",
+    "purposes": [
+      "轉投資",
+      "擴廠"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=b164cbfa-9d7c-4108-b7de-61ded5f6fae0",
+    "summary": "轉投資泰國子公司，擴建新廠與新線。",
+    "updatedAt": "2026-06-30"
+  },
+  "84332": {
+    "bondCode": "84332",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "8433",
+    "issuerName": "弘帆",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=554c6f15-e4b8-46ac-ac9b-606e6eda44dd",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "84333": {
+    "bondCode": "84333",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "8433",
+    "issuerName": "弘帆",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "Yahoo股市/MOPS重大訊息",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%BC%98%E5%B8%86%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%B8%89%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-090818145.html",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "84422": {
+    "bondCode": "84422",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "issuerCode": "8442",
+    "issuerName": "威宏-KY",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "Yahoo股市/MOPS重大訊息",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%A8%81%E5%AE%8F-ky%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%BE%A6%E7%90%86%E4%B8%AD%E8%8F%AF%E6%B0%91%E5%9C%8B%E5%A2%83%E5%85%A7%E7%AC%AC%E4%BA%8C%E6%AC%A1%E6%9C%89%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-102100099.html",
+    "summary": "償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "84624": {
+    "bondCode": "84624",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為建置「健身工廠」新設營業據點資本支出及償還銀行借款之資金需求。",
+    "issuerCode": "8462",
+    "issuerName": "柏文",
+    "purposes": [
+      "擴廠",
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=fd9495c5-c582-40fe-bb67-51146ea9bc3e",
+    "summary": "建置「健身工廠」新設營業據點資本支出及償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "84662": {
+    "bondCode": "84662",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還中華民國境內第一次無擔保轉換公司債到期本金。",
+    "issuerCode": "8466",
+    "issuerName": "美吉吉-KY",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "Yahoo股市/MOPS重大訊息",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%BE%8E%E5%90%89%E5%90%89-ky%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%BA%8C%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-100133025.html",
+    "summary": "償還中華民國境內第一次無擔保轉換公司債到期本金。",
+    "updatedAt": "2026-06-30"
+  },
+  "84672": {
+    "bondCode": "84672",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "8467",
+    "issuerName": "波力-KY",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "鉅亨網/MOPS重大訊息",
+    "sourceUrl": "https://news.cnyes.com/news/id/5505582",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "84673": {
+    "bondCode": "84673",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "8467",
+    "issuerName": "波力-KY",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "nStock/MOPS重大訊息轉載",
+    "sourceUrl": "https://www.nstock.tw/news/article_m?id=176149",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "84732": {
+    "bondCode": "84732",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為充實營運資金及償還銀行借款／金融機構借款。",
+    "issuerCode": "8473",
+    "issuerName": "山林水",
+    "purposes": [
+      "營運資金",
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=7e439cb8-05a3-41d0-85f1-f5305e46ee59",
+    "summary": "充實營運資金及償還銀行借款／金融機構借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "84762": {
+    "bondCode": "84762",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "8476",
+    "issuerName": "台境*",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=b60fe90b-1da6-4896-982f-53bce62d6981",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "84781": {
+    "bondCode": "84781",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款及充實營運資金之需求。",
+    "issuerCode": "8478",
+    "issuerName": "東哥遊艇",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=8600aaa1-e38a-488a-a078-989ad490df23",
+    "summary": "償還銀行借款及充實營運資金之需求。",
+    "updatedAt": "2026-06-30"
+  },
+  "84881": {
+    "bondCode": "84881",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為充實營運資金及償還銀行借款。",
+    "issuerCode": "8488",
+    "issuerName": "吉源-KY",
+    "purposes": [
+      "營運資金",
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c6ec97f9-721d-4125-82ef-5ab4d02c12ca",
+    "summary": "充實營運資金及償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "84891": {
+    "bondCode": "84891",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "issuerCode": "8489",
+    "issuerName": "三貝德",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=4100b37f-5a54-47ba-a9b3-bb115d254f77",
+    "summary": "償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "89277": {
+    "bondCode": "89277",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還金融機構借款。",
+    "issuerCode": "8927",
+    "issuerName": "北基",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=0bd18c13-048f-4e47-a55f-cf73be6ae6a8",
+    "summary": "償還金融機構借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "89278": {
+    "bondCode": "89278",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還金融機構借款。",
+    "issuerCode": "8927",
+    "issuerName": "北基",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e4affa45-94bb-4ca1-abdd-7d1d5e522128",
+    "summary": "償還金融機構借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "89964": {
+    "bondCode": "89964",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "8996",
+    "issuerName": "高力",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=cfd13cb4-c958-4e8c-b318-545bf227d074",
+    "summary": "償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "98026": {
+    "bondCode": "98026",
+    "evidenceText": "公告第10點/發行公告：募得價款之用途及運用計畫為償還銀行借款及充實營運資金。",
+    "issuerCode": "9802",
+    "issuerName": "鈺齊-KY",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "公開資訊觀測站重大訊息轉載",
+    "sourceUrl": "https://www.capitalim.com.tw/newsite/stock-news/stock-news/c5b100ac-5d73-4efb-84bd-45c44c02ce58%3Bpage%3D1%28popup%3Alogin%29",
+    "summary": "償還銀行借款及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "99062": {
+    "bondCode": "99062",
+    "evidenceText": "公開說明書列明 113 年度第二次無擔保轉換公司債計畫項目為償還銀行借款；並說明可減省利息支出、健全財務結構、提高資金調度彈性。",
+    "issuerCode": "9906",
+    "issuerName": "欣巴巴",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "公開說明書/公開資訊觀測站電子書",
+    "sourceUrl": "https://www.tcbs.com.tw/Data/UW/01-%E5%85%AC%E8%AA%AA%E6%9B%B8%28%E7%A8%BF%E6%9C%AC%29-%E6%AC%A3%E5%B7%B4%E5%B7%B4%E4%B8%89%2899063%29.pdf",
+    "summary": "發行國內第二次無擔保轉換公司債，資金用途為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "99063": {
+    "bondCode": "99063",
+    "evidenceText": "公開說明書之本次籌資資金運用計畫列明支付營建工程款，總額新臺幣 1,300,000 仟元。",
+    "issuerCode": "9906",
+    "issuerName": "欣巴巴",
+    "purposes": [
+      "其他"
+    ],
+    "source": "公開說明書/公開資訊觀測站電子書",
+    "sourceUrl": "https://www.tcbs.com.tw/Data/UW/01-%E5%85%AC%E8%AA%AA%E6%9B%B8%28%E7%A8%BF%E6%9C%AC%29-%E6%AC%A3%E5%B7%B4%E5%B7%B4%E4%B8%89%2899063%29.pdf",
+    "summary": "支應高雄「龍中段」、「龍華段」、台南「欣府城-君子樓」及屏東「幸福欣印象-豐收區」等建案之營建工程款。",
+    "updatedAt": "2026-06-30"
+  },
+  "99211": {
+    "bondCode": "99211",
+    "evidenceText": "重大訊息公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "9921",
+    "issuerName": "巨大",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "Yahoo股市/中央社重訊",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%B7%A8%E5%A4%A7%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC-%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-082037024.html",
+    "summary": "募得價款用途為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "99332": {
+    "bondCode": "99332",
+    "evidenceText": "重大訊息公告第10點：募得價款之用途及運用計畫為償還公司債及充實營運資金。",
+    "issuerCode": "9933",
+    "issuerName": "中鼎",
+    "purposes": [
+      "償還借款",
+      "營運資金"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=2d3346d7-2834-4009-b5c3-a305ba05c03c",
+    "summary": "償還公司債及充實營運資金。",
+    "updatedAt": "2026-06-30"
+  },
+  "99353": {
+    "bondCode": "99353",
+    "evidenceText": "重大訊息公告第10點：募得價款之用途及運用計畫為償還銀行借款。",
+    "issuerCode": "9935",
+    "issuerName": "慶豐富",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "鉅亨網/MOPS重大訊息",
+    "sourceUrl": "https://news.cnyes.com/news/id/5673829",
+    "summary": "募得價款用途為償還銀行借款。",
+    "updatedAt": "2026-06-30"
+  },
+  "99392": {
+    "bondCode": "99392",
+    "evidenceText": "重大訊息公告第10點：募得價款之用途及運用計畫為改善財務結構，擬償還金融機構借款。",
+    "issuerCode": "9939",
+    "issuerName": "宏全",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "Yahoo股市/中央社重訊",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%8F%E5%85%A8%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%BA%8C%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-093728424.html",
+    "summary": "為改善財務結構，擬償還金融機構借款，以提升整體競爭力。",
+    "updatedAt": "2026-06-30"
+  },
+  "99412": {
+    "bondCode": "99412",
+    "evidenceText": "重大訊息公告第10點：募得價款之用途及運用計畫為償還金融機構借款，改善財務結構。",
+    "issuerCode": "9941",
+    "issuerName": "裕融",
+    "purposes": [
+      "償還借款"
+    ],
+    "source": "Yahoo股市/中央社重訊",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%A3%95%E8%9E%8D%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%BA%8C%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-092806713.html",
+    "summary": "償還金融機構借款，改善財務結構。",
+    "updatedAt": "2026-06-30"
+  },
+  "99585": {
+    "bondCode": "99585",
+    "evidenceText": "變更公告及發行條件列明募得價款用途為償還借款及轉投資子公司世紀風電。",
+    "issuerCode": "9958",
+    "issuerName": "世紀鋼",
+    "purposes": [
+      "償還借款",
+      "轉投資"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=5795919f-1508-489f-9bad-5e7226a703cf",
+    "summary": "償還借款及轉投資子公司世紀風電。",
+    "updatedAt": "2026-06-30"
+  },
+  "99586": {
+    "bondCode": "99586",
+    "evidenceText": "重大訊息公告第10點：募得價款之用途及運用計畫為償還借款及投資子公司世紀風電。",
+    "issuerCode": "9958",
+    "issuerName": "世紀鋼",
+    "purposes": [
+      "償還借款",
+      "轉投資"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=22fff36b-baf2-4c82-8c2d-9f2ee53eee31",
+    "summary": "償還借款及投資子公司世紀風電。",
+    "updatedAt": "2026-06-30"
+  },
+  "99587": {
+    "bondCode": "99587",
+    "evidenceText": "重大訊息公告第10點：募得價款之用途及運用計畫為償還借款及轉投資子公司世紀風電。",
+    "issuerCode": "9958",
+    "issuerName": "世紀鋼",
+    "purposes": [
+      "償還借款",
+      "轉投資"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=4216f633-f239-40dc-8acf-1f88282a5e93",
+    "summary": "償還借款及轉投資子公司世紀風電。",
+    "updatedAt": "2026-06-30"
+  },
+  "99588": {
+    "bondCode": "99588",
+    "evidenceText": "重大訊息公告第10點：募得價款之用途及運用計畫為轉投資子公司世紀風電。",
+    "issuerCode": "9958",
+    "issuerName": "世紀鋼",
+    "purposes": [
+      "轉投資"
+    ],
+    "source": "MoneyDJ/MOPS重大訊息",
+    "sourceUrl": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=336757ae-39c5-41d0-8cbd-d1585ae044d1",
+    "summary": "轉投資子公司世紀風電。",
+    "updatedAt": "2026-06-30"
+  },
+  "待公布": {
+    "bondCode": "待公布",
+    "confidence": "高",
+    "evidenceText": "10.募得價款之用途及運用計畫:充實營運資金",
+    "issuerCode": "8155",
+    "issuerName": "博智",
+    "purposes": [
+      "營運資金"
+    ],
+    "source": "Yahoo股市重訊",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%8D%9A%E6%99%BA%E8%91%A3%E4%BA%8B%E6%9C%83...",
+    "summary": "充實營運資金。",
+    "updatedAt": "2026-06-30"
   }
 }
