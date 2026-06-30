@@ -631,6 +631,7 @@
     .purpose-cell { width: 132px; min-width: 120px; max-width: 150px; color: #52657b; font-size: 13px; line-height: 1.35; white-space: normal; word-break: break-word; overflow-wrap: anywhere; }
     .purpose-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 0; }
     .purpose-tag { display: inline-flex; padding: 2px 6px; border-radius: 999px; background: #f0f6ff; color: #315f97; font-size: 12px; font-weight: 800; }
+    .purpose-tag-important { color: #d60000; font-size: 1.08rem; font-weight: 900; }
     .purpose-summary { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; color: #607188; font-size: 13px; font-weight: 700; }
     .redemption-cell { min-width: 108px; color: #52657b; font-size: 13px; line-height: 1.35; white-space: normal; }
     .redemption-status { display: inline-flex; align-items: center; justify-content: center; padding: 4px 8px; border-radius: 999px; background: #edf3f8; color: #5d7188; font-size: 12px; font-weight: 800; }
@@ -1022,7 +1023,10 @@
       const summary = row.issuancePurpose || '公開資料未整理';
       const tags = Array.isArray(row.issuancePurposeTags) ? row.issuancePurposeTags : [];
       if (tags.length) {
-        return `<div class="purpose-tags" title="${escapeHtml(summary)}">${tags.map((tag) => `<span class="purpose-tag">${escapeHtml(tag)}</span>`).join('')}</div>`;
+        return `<div class="purpose-tags" title="${escapeHtml(summary)}">${tags.map((tag) => {
+          const important = tag === '擴廠' || tag === '購置設備';
+          return `<span class="purpose-tag ${important ? 'purpose-tag-important' : ''}">${escapeHtml(tag)}</span>`;
+        }).join('')}</div>`;
       }
       return `<div class="purpose-summary" title="${escapeHtml(summary)}">未整理</div>`;
     };
