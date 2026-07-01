@@ -33,6 +33,9 @@ jobs:
       - name: Fetch CB redemption alerts
         run: python scripts/fetch_cb_redemption_alerts.py --max-seconds 480
 
+      - name: Update CB primary market data
+        run: python scripts/update_cb_primary_market.py
+
       - name: Update CB data
         run: python scripts/update_cb_quotes.py
 
