@@ -20,6 +20,7 @@ OUTPUT_PATH = ROOT / "outputs" / "cb-primary-market-data.js"
 RECENT_CB_DATA_PATH = ROOT / "outputs" / "recent-cb-data.js"
 UPDATE_LOG_PATH = ROOT / "outputs" / "cb-primary-market-update-log.csv"
 REMOVED_LOG_PATH = ROOT / "outputs" / "cb-primary-market-removed-log.csv"
+AUCTION_AUDIT_LOG_PATH = ROOT / "outputs" / "cb-primary-market-auction-audit-log.csv"
 PRIMARY_PREFIX = "window.CB_PRIMARY_MARKET_DATA = "
 RECENT_PREFIX = "window.RECENT_CB_DATA = "
 TZ = timezone(timedelta(hours=8))
@@ -71,6 +72,14 @@ def is_probable_excel_date(value: str) -> bool:
 def normalize_cell(value: str) -> str:
     text = (value or "").strip()
     if is_probable_excel_date(text):
+        return excel_serial_to_date(text) or text
+    return text
+
+
+def normalize_by_header(header: str, value: str) -> str:
+    text = (value or "").strip()
+    date_headers = ("日期", "掛牌日", "送件日", "生效日", "公告日", "開標日")
+    if any(name in header for name in date_headers) and is_probable_excel_date(text):
         return excel_serial_to_date(text) or text
     return text
 
@@ -213,7 +222,7 @@ def parse_sheet_rows(xlsx_path: Path) -> list[list[str]]:
             idx = cell_col_index(cell.attrib["r"])
             while len(values) <= idx:
                 values.append("")
-            values[idx] = normalize_cell(cell_text(cell, shared))
+            values[idx] = cell_text(cell, shared).strip()
         rows.append(values)
     return rows
 
@@ -296,7 +305,7 @@ def parse_sections(rows: list[list[str]], source_type: str, source: str, source_
             if len(next_compact) >= 2 and headers:
                 values = rows[j][: len(headers)]
                 item = {
-                    header: normalize_cell(values[index] if index < len(values) else "")
+                    header: normalize_by_header(header, values[index] if index < len(values) else "")
                     for index, header in enumerate(headers)
                 }
                 body.append(normalize_row(item, meta["status"], source_type, source, source_url, updated_at))
@@ -320,11 +329,12 @@ def is_date_like_code(code: str) -> bool:
     return bool(re.fullmatch(r"\d{4}-\d{1,2}-\d{1,2}", code) or re.fullmatch(r"\d{4}/\d{1,2}/\d{1,2}", code))
 
 
-def validate_payload(payload: dict, recent_codes: set[str]) -> tuple[dict, list[dict], dict, dict]:
+def validate_payload(payload: dict, recent_codes: set[str]) -> tuple[dict, list[dict], list[dict], dict, dict]:
     today = datetime.now(TZ).date()
     raw_counts = {"auction": 0, "filing": 0, "board": 0}
     filtered_counts = {"auction": 0, "filing": 0, "board": 0}
     removed: list[dict] = []
+    auction_audit: list[dict] = []
     output_sections = []
 
     for section in payload.get("sections", []):
@@ -347,6 +357,28 @@ def validate_payload(payload: dict, recent_codes: set[str]) -> tuple[dict, list[
             elif section_id == "auction" and listing_date and listing_date <= today:
                 reason = "已到掛牌日"
                 validation_status = "stale_removed"
+
+            if section_id == "auction":
+                auction_audit.append(
+                    {
+                        "fetchedAt": now_iso(),
+                        "sourceType": row.get("sourceType") or "",
+                        "sourceUrl": row.get("sourceUrl") or row.get("officialSourceUrl") or "",
+                        "rawTitle": section.get("title") or "",
+                        "rawCompanyName": name,
+                        "rawBondName": name,
+                        "rawBondCode": code,
+                        "auctionType": row.get("詢圈 / 競拍") or get_by_contains(row, "詢圈", "競拍"),
+                        "periodStart": "",
+                        "periodEnd": "",
+                        "openDate": "",
+                        "listingDate": listing_date.isoformat() if listing_date else "",
+                        "detectedStatus": row.get("status") or "",
+                        "keepOrRemove": "remove" if reason else "keep",
+                        "removeReason": reason,
+                        "evidenceText": row.get("officialEvidenceText") or row.get("詢圈 / 競拍") or get_by_contains(row, "詢圈", "競拍"),
+                    }
+                )
 
             if reason:
                 removed.append(
@@ -376,7 +408,7 @@ def validate_payload(payload: dict, recent_codes: set[str]) -> tuple[dict, list[
 
     next_payload = dict(payload)
     next_payload["sections"] = output_sections
-    return next_payload, removed, raw_counts, filtered_counts
+    return next_payload, removed, auction_audit, raw_counts, filtered_counts
 
 
 def load_previous_payload() -> dict | None:
@@ -462,6 +494,31 @@ def write_removed_log(removed: list[dict]) -> None:
         writer.writerows(removed)
 
 
+def write_auction_audit_log(rows: list[dict]) -> None:
+    with AUCTION_AUDIT_LOG_PATH.open("w", encoding="utf-8-sig", newline="") as handle:
+        fields = [
+            "fetchedAt",
+            "sourceType",
+            "sourceUrl",
+            "rawTitle",
+            "rawCompanyName",
+            "rawBondName",
+            "rawBondCode",
+            "auctionType",
+            "periodStart",
+            "periodEnd",
+            "openDate",
+            "listingDate",
+            "detectedStatus",
+            "keepOrRemove",
+            "removeReason",
+            "evidenceText",
+        ]
+        writer = csv.DictWriter(handle, fieldnames=fields)
+        writer.writeheader()
+        writer.writerows(rows)
+
+
 def resolve_workbook(args) -> tuple[Path, str, str, str]:
     if args.input:
         path = Path(args.input)
@@ -505,10 +562,11 @@ def main() -> int:
         payload["sourceType"] = source_type
         payload["sourceUrl"] = source_url
         payload["fetchedAt"] = now_iso()
-        payload, removed, raw_counts, filtered_counts = validate_payload(payload, recent_codes)
+        payload, removed, auction_audit, raw_counts, filtered_counts = validate_payload(payload, recent_codes)
         write_payload(payload)
         write_update_log(source_type, source_url, raw_counts, filtered_counts, removed, "success", "")
         write_removed_log(removed)
+        write_auction_audit_log(auction_audit)
         print(
             "updated primary market: "
             f"auction={filtered_counts['auction']} filing={filtered_counts['filing']} "
@@ -518,14 +576,16 @@ def main() -> int:
     except Exception as error:
         if previous:
             fallback = mark_fallback_previous(previous)
-            fallback, removed, raw_counts, filtered_counts = validate_payload(fallback, recent_codes)
+            fallback, removed, auction_audit, raw_counts, filtered_counts = validate_payload(fallback, recent_codes)
             write_payload(fallback)
             write_update_log("fallback_previous", "", raw_counts, filtered_counts, removed, "fallback_previous", f"{type(error).__name__}: {error}")
             write_removed_log(removed)
+            write_auction_audit_log(auction_audit)
             print(f"primary market fallback_previous: {type(error).__name__}: {error}")
             return 0
         write_update_log("", "", {"auction": 0, "filing": 0, "board": 0}, {"auction": 0, "filing": 0, "board": 0}, [], "failed", f"{type(error).__name__}: {error}")
         write_removed_log([])
+        write_auction_audit_log([])
         raise
 
 

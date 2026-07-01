@@ -1,0 +1,45 @@
+﻿fetchedAt,sourceType,sourceUrl,rawTitle,rawCompanyName,rawBondName,rawBondCode,auctionType,periodStart,periodEnd,openDate,listingDate,detectedStatus,keepOrRemove,removeReason,evidenceText
+2026-07-01T19:36:03.683795+08:00,fallback_reference,,詢圈/競拍 標的,長興二,長興二,17172,"最高145
+最低127.23
+平均130.28",,,,2026-06-08,bookbuilding_auction,remove,已在存續 CB 清單,"最高145
+最低127.23
+平均130.28"
+2026-07-01T19:36:03.683838+08:00,fallback_reference,,詢圈/競拍 標的,昇達科三,昇達科三,34913,"最高159
+最低142.68
+平均144.93",,,,2026-06-09,bookbuilding_auction,remove,已在存續 CB 清單,"最高159
+最低142.68
+平均144.93"
+2026-07-01T19:36:03.683861+08:00,fallback_reference,,詢圈/競拍 標的,正基二,正基二,65462,"5/27~5/28詢圈
+100.5%發行",,,,2026-06-09,bookbuilding_auction,remove,已在存續 CB 清單,"5/27~5/28詢圈
+100.5%發行"
+2026-07-01T19:36:03.683879+08:00,fallback_reference,,詢圈/競拍 標的,岳豐十,岳豐十,622010,"最高130
+最低108.89
+平均112.14",,,,2026-06-10,bookbuilding_auction,remove,已在存續 CB 清單,"最高130
+最低108.89
+平均112.14"
+2026-07-01T19:36:03.683897+08:00,fallback_reference,,詢圈/競拍 標的,旺矽六,旺矽六,62236,"6/1~6/3詢圈
+100.5%發行",,,,2026-06-15,bookbuilding_auction,remove,已在存續 CB 清單,"6/1~6/3詢圈
+100.5%發行"
+2026-07-01T19:36:03.683913+08:00,fallback_reference,,詢圈/競拍 標的,英濟三,英濟三,32943,"最高135.39
+最低110
+平均117.71",,,,2026-06-18,bookbuilding_auction,remove,已在存續 CB 清單,"最高135.39
+最低110
+平均117.71"
+2026-07-01T19:36:03.683930+08:00,fallback_reference,,詢圈/競拍 標的,至上十一,至上十一,811211,"6/9~6/10詢圈
+100.2%發行",,,,2026-06-23,bookbuilding_auction,remove,已在存續 CB 清單,"6/9~6/10詢圈
+100.2%發行"
+2026-07-01T19:36:03.683945+08:00,fallback_reference,,詢圈/競拍 標的,正基三,正基三,65463,"6/12~6/16競拍
+6/18開標
+底標105%",,,,2026-06-30,bookbuilding_auction,remove,已在存續 CB 清單,"6/12~6/16競拍
+6/18開標
+底標105%"
+2026-07-01T19:36:03.683962+08:00,fallback_reference,,詢圈/競拍 標的,佐登四KY,佐登四KY,41904,"6/12~6/16競拍
+6/18開標
+底標100%",,,,2026-06-30,bookbuilding_auction,remove,已在存續 CB 清單,"6/12~6/16競拍
+6/18開標
+底標100%"
+2026-07-01T19:36:03.683979+08:00,fallback_reference,,詢圈/競拍 標的,宜鼎二,宜鼎二,52892,"6/15~6/17競拍
+6/22開標
+底標102%",,,,2026-07-01,bookbuilding_auction,remove,已到掛牌日,"6/15~6/17競拍
+6/22開標
+底標102%"
