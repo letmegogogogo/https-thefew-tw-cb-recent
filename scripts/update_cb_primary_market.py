@@ -6,9 +6,8 @@ import html
 import json
 import os
 import re
-import shutil
 import tempfile
-from datetime import datetime, timedelta, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import quote_plus, unquote, urlparse
 from urllib.request import Request, urlopen
@@ -18,8 +17,11 @@ import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_PATH = ROOT / "outputs" / "cb-primary-market-data.js"
-LOG_PATH = ROOT / "outputs" / "cb-primary-market-update-log.csv"
-PREFIX = "window.CB_PRIMARY_MARKET_DATA = "
+RECENT_CB_DATA_PATH = ROOT / "outputs" / "recent-cb-data.js"
+UPDATE_LOG_PATH = ROOT / "outputs" / "cb-primary-market-update-log.csv"
+REMOVED_LOG_PATH = ROOT / "outputs" / "cb-primary-market-removed-log.csv"
+PRIMARY_PREFIX = "window.CB_PRIMARY_MARKET_DATA = "
+RECENT_PREFIX = "window.RECENT_CB_DATA = "
 TZ = timezone(timedelta(hours=8))
 NS = {"a": "http://schemas.openxmlformats.org/spreadsheetml/2006/main"}
 HEADERS = {
@@ -33,11 +35,11 @@ SECTION_META = {
     "送件": {"id": "filing", "status": "filing", "title": "送件標的"},
     "董事會通過": {"id": "board", "status": "board_approved", "title": "董事會通過發行標的"},
 }
-
-SEARCH_QUERIES = [
-    "富邦證券 CB初級市場資訊 xlsx",
-    "CB初級市場資訊 xlsx 富邦證券",
-    "CB初級市場資訊 轉換公司債 xlsx",
+OFFICIAL_DOMAINS = ("mops.twse.com.tw", "twse.com.tw", "www.twse.com.tw", "tpex.org.tw", "www.tpex.org.tw")
+OFFICIAL_SEARCH_QUERIES = [
+    "site:mops.twse.com.tw 可轉換公司債 申報生效 xlsx",
+    "site:tpex.org.tw 可轉換公司債 詢圈 競拍 xlsx",
+    "site:twse.com.tw 可轉換公司債 承銷公告 xlsx",
 ]
 
 
@@ -73,6 +75,16 @@ def normalize_cell(value: str) -> str:
     return text
 
 
+def parse_date(value: str) -> date | None:
+    text = str(value or "").strip()
+    for pattern in ("%Y-%m-%d", "%Y/%m/%d"):
+        try:
+            return datetime.strptime(text, pattern).date()
+        except ValueError:
+            pass
+    return None
+
+
 def fetch_bytes(url: str, timeout: int) -> bytes:
     request = Request(url, headers=HEADERS)
     with urlopen(request, timeout=timeout) as response:
@@ -89,64 +101,76 @@ def fetch_text(url: str, timeout: int) -> str:
     return raw.decode("utf-8", errors="ignore")
 
 
+def is_official_url(url: str) -> bool:
+    host = urlparse(url).netloc.lower()
+    return any(host == domain or host.endswith("." + domain) for domain in OFFICIAL_DOMAINS)
+
+
+def official_source_type(url: str) -> str:
+    host = urlparse(url).netloc.lower()
+    if "mops" in host:
+        return "official_mops"
+    if "tpex" in host:
+        return "official_tpex"
+    if "twse" in host:
+        return "official_twse"
+    return "official_underwriting"
+
+
 def extract_search_urls(page: str) -> list[str]:
     urls: list[str] = []
     for match in re.finditer(r'href=["\']([^"\']+)["\']', page):
         href = html.unescape(match.group(1))
         if "uddg=" in href:
-            href = unquote(re.search(r"uddg=([^&]+)", href).group(1)) if re.search(r"uddg=([^&]+)", href) else href
+            uddg = re.search(r"uddg=([^&]+)", href)
+            href = unquote(uddg.group(1)) if uddg else href
         if href.startswith("//"):
             href = "https:" + href
-        if not href.startswith("http"):
-            continue
-        if any(skip in href for skip in ("duckduckgo.com", "google.com/search", "bing.com/search")):
-            continue
-        if href not in urls:
+        if href.startswith("http") and href not in urls:
             urls.append(href)
     return urls
 
 
-def candidate_urls(timeout: int) -> list[str]:
+def official_candidate_urls(timeout: int) -> list[str]:
     urls: list[str] = []
-    env_urls = os.environ.get("CB_PRIMARY_MARKET_URLS") or os.environ.get("CB_PRIMARY_MARKET_URL") or ""
+    env_urls = os.environ.get("CB_PRIMARY_MARKET_OFFICIAL_URLS") or os.environ.get("CB_PRIMARY_MARKET_URLS") or ""
     for item in re.split(r"[\s,]+", env_urls):
-        if item.strip():
+        if item.strip() and is_official_url(item.strip()):
             urls.append(item.strip())
-    for query in SEARCH_QUERIES:
+    for query in OFFICIAL_SEARCH_QUERIES:
         try:
             page = fetch_text(f"https://duckduckgo.com/html/?q={quote_plus(query)}", timeout=timeout)
         except Exception:
             continue
         for url in extract_search_urls(page):
-            if url not in urls:
+            if is_official_url(url) and url not in urls:
                 urls.append(url)
     return urls
 
 
-def download_candidate_workbook(timeout: int) -> tuple[Path | None, str, str]:
-    temp_dir = Path(tempfile.mkdtemp(prefix="cb-primary-market-"))
-    for url in candidate_urls(timeout):
+def try_download_official_workbook(timeout: int) -> tuple[Path | None, str, str]:
+    temp_dir = Path(tempfile.mkdtemp(prefix="cb-primary-official-"))
+    for url in official_candidate_urls(timeout):
         try:
-            raw = fetch_bytes(url, timeout=timeout)
+            raw = fetch_bytes(url, timeout)
         except Exception:
             continue
         if not raw.startswith(b"PK"):
             continue
-        out = temp_dir / "cb-primary-market.xlsx"
+        out = temp_dir / "official-primary-market.xlsx"
         out.write_bytes(raw)
         try:
             with ZipFile(out):
                 pass
         except BadZipFile:
             continue
-        return out, "公開來源/搜尋", url
+        return out, official_source_type(url), url
     return None, "", ""
 
 
 def latest_local_workbook(download_dir: Path) -> Path | None:
-    patterns = ["*CB初級市場資訊*.xlsx", "*CB*市場*.xlsx"]
     candidates: list[Path] = []
-    for pattern in patterns:
+    for pattern in ("*CB初級市場資訊*.xlsx", "*CB*市場*.xlsx"):
         candidates.extend(download_dir.glob(pattern))
     candidates = [path for path in candidates if path.is_file()]
     return max(candidates, key=lambda path: path.stat().st_mtime) if candidates else None
@@ -168,9 +192,9 @@ def cell_col_index(cell_ref: str) -> int:
 
 
 def cell_text(cell: ET.Element, shared: list[str]) -> str:
-    value = cell.find("a:v", NS)
     if cell.attrib.get("t") == "inlineStr":
         return "".join(t.text or "" for t in cell.iterfind(".//a:t", NS))
+    value = cell.find("a:v", NS)
     if value is None or value.text is None:
         return ""
     if cell.attrib.get("t") == "s":
@@ -205,49 +229,55 @@ def detect_section(text: str) -> dict | None:
     return None
 
 
-def find_updated_at(rows: list[list[str]]) -> str | None:
+def find_updated_at(rows: list[list[str]]) -> str:
     for row in rows[:5]:
         for cell in row:
             if is_probable_excel_date(cell):
-                return excel_serial_to_date(cell)
+                return excel_serial_to_date(cell) or datetime.now(TZ).date().isoformat()
             if re.fullmatch(r"\d{4}-\d{1,2}-\d{1,2}", str(cell or "").strip()):
                 return str(cell).strip()
-    return None
+    return datetime.now(TZ).date().isoformat()
 
 
-def normalize_row(item: dict, status: str, source: str, source_url: str, updated_at: str) -> dict:
-    def get(*names: str) -> str:
-        for name in names:
-            for key, value in item.items():
-                if name in key:
-                    return value
-        return ""
+def get_by_contains(item: dict, *names: str) -> str:
+    for name in names:
+        for key, value in item.items():
+            if name in key:
+                return value
+    return ""
 
+
+def normalize_row(item: dict, status: str, source_type: str, source: str, source_url: str, updated_at: str) -> dict:
     normalized = dict(item)
     normalized.update(
         {
-            "CB代碼": get("CB代碼"),
-            "標的名稱": get("標的名稱"),
-            "發行期間年": get("發行期間"),
-            "發行金額億": get("發行金額"),
-            "公告日期": get("公告日期", "掛牌日", "送件日"),
-            "主辦承銷商": get("主辦承銷商"),
-            "信用等級 / 擔保行": get("信用等級", "擔保行"),
-            "詢圈 / 競拍": get("詢圈", "競拍"),
-            "產業別": get("產業別"),
-            "資本額億": get("資本額"),
+            "CB代碼": get_by_contains(item, "CB代碼"),
+            "標的名稱": get_by_contains(item, "標的名稱"),
+            "發行期間年": get_by_contains(item, "發行期間"),
+            "發行金額億": get_by_contains(item, "發行金額"),
+            "公告日期": get_by_contains(item, "公告日期", "掛牌日", "送件日"),
+            "主辦承銷商": get_by_contains(item, "主辦承銷商"),
+            "信用等級 / 擔保行": get_by_contains(item, "信用等級", "擔保行"),
+            "詢圈 / 競拍": get_by_contains(item, "詢圈", "競拍"),
+            "產業別": get_by_contains(item, "產業別"),
+            "資本額億": get_by_contains(item, "資本額"),
             "status": status,
+            "sourceType": source_type,
             "source": source,
             "sourceUrl": source_url,
             "updatedAt": updated_at,
+            "validationStatus": "valid",
+            "staleReason": "",
+            "officialSourceUrl": source_url if source_type.startswith("official_") else "",
+            "officialEvidenceText": "",
         }
     )
     return normalized
 
 
-def parse_sections(rows: list[list[str]], source: str, source_url: str) -> dict:
-    sheet_title = compact(rows[0])[0] if rows and compact(rows[0]) else "富邦證券CB初級市場資訊"
-    updated_at = find_updated_at(rows) or datetime.now(TZ).date().isoformat()
+def parse_sections(rows: list[list[str]], source_type: str, source: str, source_url: str) -> dict:
+    sheet_title = compact(rows[0])[0] if rows and compact(rows[0]) else "CB初級市場資訊"
+    updated_at = find_updated_at(rows)
     sections: list[dict] = []
     i = 0
     while i < len(rows):
@@ -256,8 +286,7 @@ def parse_sections(rows: list[list[str]], source: str, source_url: str) -> dict:
         if not meta:
             i += 1
             continue
-        header_row = rows[i + 1] if i + 1 < len(rows) else []
-        headers = [h.strip() for h in header_row if h and h.strip()]
+        headers = [h.strip() for h in (rows[i + 1] if i + 1 < len(rows) else []) if h and h.strip()]
         body: list[dict] = []
         j = i + 2
         while j < len(rows):
@@ -270,86 +299,193 @@ def parse_sections(rows: list[list[str]], source: str, source_url: str) -> dict:
                     header: normalize_cell(values[index] if index < len(values) else "")
                     for index, header in enumerate(headers)
                 }
-                body.append(normalize_row(item, meta["status"], source, source_url, updated_at))
+                body.append(normalize_row(item, meta["status"], source_type, source, source_url, updated_at))
             j += 1
         sections.append({"id": meta["id"], "title": meta["title"], "headers": headers, "rows": body})
         i = j
-    return {
-        "sheetTitle": sheet_title,
-        "updatedAt": updated_at,
-        "sections": sections,
-    }
+    return {"sheetTitle": sheet_title, "updatedAt": updated_at, "sections": sections}
 
 
-def section_counts(payload: dict) -> dict[str, int]:
-    counts = {"auction": 0, "filing": 0, "board": 0}
+def load_recent_codes() -> set[str]:
+    if not RECENT_CB_DATA_PATH.exists():
+        return set()
+    text = RECENT_CB_DATA_PATH.read_text(encoding="utf-8").strip()
+    if not text.startswith(RECENT_PREFIX):
+        return set()
+    payload = json.loads(text[len(RECENT_PREFIX) :].rstrip(";"))
+    return {str(row.get("bondCode") or "").strip() for row in payload.get("rows", []) if row.get("bondCode")}
+
+
+def is_date_like_code(code: str) -> bool:
+    return bool(re.fullmatch(r"\d{4}-\d{1,2}-\d{1,2}", code) or re.fullmatch(r"\d{4}/\d{1,2}/\d{1,2}", code))
+
+
+def validate_payload(payload: dict, recent_codes: set[str]) -> tuple[dict, list[dict], dict, dict]:
+    today = datetime.now(TZ).date()
+    raw_counts = {"auction": 0, "filing": 0, "board": 0}
+    filtered_counts = {"auction": 0, "filing": 0, "board": 0}
+    removed: list[dict] = []
+    output_sections = []
+
     for section in payload.get("sections", []):
-        if section.get("id") in counts:
-            counts[section["id"]] = len(section.get("rows", []))
-    return counts
+        section_id = section.get("id")
+        rows = section.get("rows", [])
+        raw_counts[section_id] = len(rows)
+        kept = []
+        for row in rows:
+            code = str(row.get("CB代碼") or "").strip()
+            name = row.get("標的名稱") or ""
+            listing_date = parse_date(get_by_contains(row, "掛牌日"))
+            reason = ""
+            validation_status = "valid"
+            if is_date_like_code(code):
+                reason = "CB代碼格式像日期"
+                validation_status = "parse_failed"
+            elif code and code in recent_codes:
+                reason = "已在存續 CB 清單"
+                validation_status = "stale_removed"
+            elif section_id == "auction" and listing_date and listing_date <= today:
+                reason = "已到掛牌日"
+                validation_status = "stale_removed"
+
+            if reason:
+                removed.append(
+                    {
+                        "CB代碼": code,
+                        "標的名稱": name,
+                        "原狀態": row.get("status") or "",
+                        "移除原因": reason,
+                        "掛牌日": listing_date.isoformat() if listing_date else "",
+                        "是否已在 recent-cb-data.js": "yes" if code in recent_codes else "no",
+                        "sourceType": row.get("sourceType") or "",
+                        "sourceUrl": row.get("sourceUrl") or row.get("officialSourceUrl") or "",
+                    }
+                )
+                continue
+            if not code:
+                row["validationStatus"] = "needs_review"
+                row["staleReason"] = "尚無 CB 代碼"
+            else:
+                row["validationStatus"] = validation_status
+                row["staleReason"] = ""
+            kept.append(row)
+        filtered_counts[section_id] = len(kept)
+        next_section = dict(section)
+        next_section["rows"] = kept
+        output_sections.append(next_section)
+
+    next_payload = dict(payload)
+    next_payload["sections"] = output_sections
+    return next_payload, removed, raw_counts, filtered_counts
 
 
 def load_previous_payload() -> dict | None:
     if not OUTPUT_PATH.exists():
         return None
     text = OUTPUT_PATH.read_text(encoding="utf-8").strip()
-    if not text.startswith(PREFIX):
+    if not text.startswith(PRIMARY_PREFIX):
         return None
-    return json.loads(text[len(PREFIX) :].rstrip(";"))
+    return json.loads(text[len(PRIMARY_PREFIX) :].rstrip(";"))
+
+
+def mark_fallback_previous(payload: dict) -> dict:
+    next_payload = dict(payload)
+    sections = []
+    for section in payload.get("sections", []):
+        next_section = dict(section)
+        next_rows = []
+        for row in section.get("rows", []):
+            next_row = dict(row)
+            next_row["sourceType"] = "fallback_previous"
+            next_row["source"] = "上一版資料"
+            next_row["sourceUrl"] = ""
+            next_row["validationStatus"] = next_row.get("validationStatus") or "needs_review"
+            next_rows.append(next_row)
+        next_section["rows"] = next_rows
+        sections.append(next_section)
+    next_payload["sections"] = sections
+    next_payload["fetchedAt"] = now_iso()
+    return next_payload
 
 
 def write_payload(payload: dict) -> None:
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    OUTPUT_PATH.write_text(PREFIX + json.dumps(payload, ensure_ascii=False, indent=2) + ";\n", encoding="utf-8")
+    OUTPUT_PATH.write_text(PRIMARY_PREFIX + json.dumps(payload, ensure_ascii=False, indent=2) + ";\n", encoding="utf-8")
 
 
-def write_log(source_url: str, counts: dict[str, int], status: str, reason: str) -> None:
-    LOG_PATH.parent.mkdir(parents=True, exist_ok=True)
-    exists = LOG_PATH.exists()
-    with LOG_PATH.open("a", encoding="utf-8-sig", newline="") as handle:
+def write_update_log(source_type: str, source_url: str, raw: dict, filtered: dict, removed: list[dict], status: str, reason: str) -> None:
+    parse_failed = sum(1 for row in removed if row.get("移除原因") == "CB代碼格式像日期")
+    with UPDATE_LOG_PATH.open("w", encoding="utf-8-sig", newline="") as handle:
         writer = csv.DictWriter(
             handle,
             fieldnames=[
                 "fetchedAt",
+                "sourceType",
                 "sourceUrl",
-                "auctionCount",
-                "filingCount",
-                "boardApprovedCount",
+                "rawAuctionCount",
+                "filteredAuctionCount",
+                "rawFilingCount",
+                "filteredFilingCount",
+                "rawBoardApprovedCount",
+                "filteredBoardApprovedCount",
+                "removedCount",
+                "parseFailedCount",
                 "status",
                 "reason",
             ],
         )
-        if not exists:
-            writer.writeheader()
+        writer.writeheader()
         writer.writerow(
             {
                 "fetchedAt": now_iso(),
+                "sourceType": source_type,
                 "sourceUrl": source_url,
-                "auctionCount": counts.get("auction", 0),
-                "filingCount": counts.get("filing", 0),
-                "boardApprovedCount": counts.get("board", 0),
+                "rawAuctionCount": raw.get("auction", 0),
+                "filteredAuctionCount": filtered.get("auction", 0),
+                "rawFilingCount": raw.get("filing", 0),
+                "filteredFilingCount": filtered.get("filing", 0),
+                "rawBoardApprovedCount": raw.get("board", 0),
+                "filteredBoardApprovedCount": filtered.get("board", 0),
+                "removedCount": len(removed),
+                "parseFailedCount": parse_failed,
                 "status": status,
                 "reason": reason,
             }
         )
 
 
-def resolve_workbook(args) -> tuple[Path, str, str]:
+def write_removed_log(removed: list[dict]) -> None:
+    with REMOVED_LOG_PATH.open("w", encoding="utf-8-sig", newline="") as handle:
+        fields = ["CB代碼", "標的名稱", "原狀態", "移除原因", "掛牌日", "是否已在 recent-cb-data.js", "sourceType", "sourceUrl"]
+        writer = csv.DictWriter(handle, fieldnames=fields)
+        writer.writeheader()
+        writer.writerows(removed)
+
+
+def resolve_workbook(args) -> tuple[Path, str, str, str]:
     if args.input:
         path = Path(args.input)
         if not path.exists():
             raise FileNotFoundError(str(path))
-        return path, "指定檔案", str(path)
+        return path, "fallback_reference", "指定Excel備援參考", ""
 
-    downloaded, source, source_url = download_candidate_workbook(timeout=args.timeout)
-    if downloaded:
-        return downloaded, source, source_url
+    official, source_type, source_url = try_download_official_workbook(args.timeout)
+    if official:
+        return official, source_type, "官方公開資訊", source_url
 
     local = latest_local_workbook(Path(args.download_dir))
     if local:
-        return local, "本機最新富邦CB初級市場資訊", ""
+        return local, "fallback_reference", "富邦Excel備援參考", ""
 
-    raise FileNotFoundError("找不到可用的 CB 初級市場資訊 Excel")
+    raise FileNotFoundError("找不到官方來源或備援 Excel")
+
+
+def section_counts(payload: dict) -> dict:
+    counts = {"auction": 0, "filing": 0, "board": 0}
+    for section in payload.get("sections", []):
+        if section.get("id") in counts:
+            counts[section["id"]] = len(section.get("rows", []))
+    return counts
 
 
 def main() -> int:
@@ -359,28 +495,37 @@ def main() -> int:
     parser.add_argument("--timeout", type=int, default=12)
     args = parser.parse_args()
 
+    recent_codes = load_recent_codes()
     previous = load_previous_payload()
     try:
-        workbook, source, source_url = resolve_workbook(args)
+        workbook, source_type, source, source_url = resolve_workbook(args)
         rows = parse_sheet_rows(workbook)
-        payload = parse_sections(rows, source=source, source_url=source_url)
-        counts = section_counts(payload)
-        if not payload.get("sections") or not any(counts.values()):
-            raise ValueError("解析結果沒有三個頁面資料")
-        payload["sourceFile"] = workbook.name if source == "本機最新富邦CB初級市場資訊" else urlparse(source_url).path.rsplit("/", 1)[-1]
+        payload = parse_sections(rows, source_type, source, source_url)
+        payload["sourceFile"] = workbook.name if source_type == "fallback_reference" else urlparse(source_url).path.rsplit("/", 1)[-1]
+        payload["sourceType"] = source_type
         payload["sourceUrl"] = source_url
         payload["fetchedAt"] = now_iso()
+        payload, removed, raw_counts, filtered_counts = validate_payload(payload, recent_codes)
         write_payload(payload)
-        write_log(source_url, counts, "success", "")
-        print(f"updated primary market: auction={counts['auction']} filing={counts['filing']} board={counts['board']}")
+        write_update_log(source_type, source_url, raw_counts, filtered_counts, removed, "success", "")
+        write_removed_log(removed)
+        print(
+            "updated primary market: "
+            f"auction={filtered_counts['auction']} filing={filtered_counts['filing']} "
+            f"board={filtered_counts['board']} removed={len(removed)} sourceType={source_type}"
+        )
         return 0
     except Exception as error:
         if previous:
-            counts = section_counts(previous)
-            write_log(previous.get("sourceUrl") or previous.get("sourceFile") or "", counts, "fallback_previous", f"{type(error).__name__}: {error}")
+            fallback = mark_fallback_previous(previous)
+            fallback, removed, raw_counts, filtered_counts = validate_payload(fallback, recent_codes)
+            write_payload(fallback)
+            write_update_log("fallback_previous", "", raw_counts, filtered_counts, removed, "fallback_previous", f"{type(error).__name__}: {error}")
+            write_removed_log(removed)
             print(f"primary market fallback_previous: {type(error).__name__}: {error}")
             return 0
-        write_log("", {"auction": 0, "filing": 0, "board": 0}, "failed", f"{type(error).__name__}: {error}")
+        write_update_log("", "", {"auction": 0, "filing": 0, "board": 0}, {"auction": 0, "filing": 0, "board": 0}, [], "failed", f"{type(error).__name__}: {error}")
+        write_removed_log([])
         raise
 
 

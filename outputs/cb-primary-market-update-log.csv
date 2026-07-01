@@ -1,2 +1,2 @@
-﻿fetchedAt,sourceUrl,auctionCount,filingCount,boardApprovedCount,status,reason
-2026-07-01T06:50:45.305531+08:00,,10,23,30,success,
+﻿fetchedAt,sourceType,sourceUrl,rawAuctionCount,filteredAuctionCount,rawFilingCount,filteredFilingCount,rawBoardApprovedCount,filteredBoardApprovedCount,removedCount,parseFailedCount,status,reason
+2026-07-01T19:28:12.760665+08:00,fallback_reference,,10,0,23,19,30,20,24,15,success,
