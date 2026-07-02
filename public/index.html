@@ -953,6 +953,20 @@
       end.setDate(start.getDate() + 7);
       return date >= start && date < end;
     };
+    const taipeiTodayStart = () => {
+      const todayText = new Intl.DateTimeFormat('en-CA', {
+        timeZone: 'Asia/Taipei',
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit'
+      }).format(new Date());
+      return new Date(`${todayText}T00:00:00+08:00`);
+    };
+    const isUpcomingIssueDate = (value) => {
+      const date = toDate(value);
+      if (!date) return false;
+      return date.getTime() >= taipeiTodayStart().getTime();
+    };
 
     const sorted = (Array.isArray(raw.rows) ? raw.rows : [])
       .slice()
@@ -1048,7 +1062,7 @@
     };
 
     const renderRow = (row) => {
-      const issueThisWeek = isDateThisWeek(row.issueDate || row.listedDateROC);
+      const issueUpcoming = isUpcomingIssueDate(row.issueDate || row.listedDateROC);
       const cbRecordHigh = isCbRecordHigh(row);
       const stockRecordHigh = isStockRecordHigh(row);
       const companyInsight = window.CB_COMPANY_INSIGHTS?.[String(row.issuerCode || '')] || {};
@@ -1115,7 +1129,7 @@
           <td class="num">${revenueGrowth}</td>
           <td class="num">${revenueMomentum}</td>
           <td class="num">${grossMargin}</td>
-          <td class="${issueThisWeek ? 'issue-date-this-week' : ''}">${fmtDate(row.issueDate || row.listedDateROC)}</td>
+          <td class="${issueUpcoming ? 'issue-date-this-week' : ''}">${fmtDate(row.issueDate || row.listedDateROC)}</td>
           <td class="redemption-cell">${redemptionAlert}</td>
           <td class="purpose-cell">${issuancePurpose}</td>
           <td>${fmtDate(row.maturityDate)}</td>

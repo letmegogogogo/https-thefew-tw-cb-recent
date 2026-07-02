@@ -590,6 +590,7 @@
     .eps-disclaimer { margin-top: 22px; color: #858585; font-size: 12px; line-height: 1.5; }
     .industry-cell { line-height: 1.2; }
     .identity-industry { color: #66778a; font-size: 14px; font-weight: 700; }
+    .identity-verified { margin-top: 2px; color: #8a99aa; font-size: 11px; line-height: 1.35; }
     .tag-groups { display: grid; gap: 3px; margin-top: 4px; }
     .tag-row { display: flex; flex-wrap: wrap; align-items: center; gap: 3px; color: #718197; font-size: 11px; }
     .tag-label { font-weight: 700; }
@@ -952,6 +953,20 @@
       end.setDate(start.getDate() + 7);
       return date >= start && date < end;
     };
+    const taipeiTodayStart = () => {
+      const todayText = new Intl.DateTimeFormat('en-CA', {
+        timeZone: 'Asia/Taipei',
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit'
+      }).format(new Date());
+      return new Date(`${todayText}T00:00:00+08:00`);
+    };
+    const isUpcomingIssueDate = (value) => {
+      const date = toDate(value);
+      if (!date) return false;
+      return date.getTime() >= taipeiTodayStart().getTime();
+    };
 
     const sorted = (Array.isArray(raw.rows) ? raw.rows : [])
       .slice()
@@ -1047,7 +1062,7 @@
     };
 
     const renderRow = (row) => {
-      const issueThisWeek = isDateThisWeek(row.issueDate || row.listedDateROC);
+      const issueUpcoming = isUpcomingIssueDate(row.issueDate || row.listedDateROC);
       const cbRecordHigh = isCbRecordHigh(row);
       const stockRecordHigh = isStockRecordHigh(row);
       const companyInsight = window.CB_COMPANY_INSIGHTS?.[String(row.issuerCode || '')] || {};
@@ -1062,6 +1077,12 @@
       const stockMove = row.stockClose == null ? '' : `<div class="subline">${row.stockMarket || ''}</div>${stockDailyMove}${stockWeeklyMove}${weeklyTop30}${stockRecordHigh ? '<div class="subline"><span class="record-label">新高</span></div>' : ''}`;
       const industryAlert = row.industryTrendAlert
         ? `<div class="industry-alert ${row.industryWeeklyAveragePct >= 0 ? 'up' : 'down'}">${escapeHtml(row.industryTrendAlert)} ${row.industryWeeklyAveragePct >= 0 ? '+' : ''}${fmtPct(row.industryWeeklyAveragePct, 1)}</div>`
+        : '';
+      const primaryProducts = companyInsight.primaryProductsServices
+        ? `<div class="product-line"><strong>主要產品／服務：</strong>${escapeHtml(companyInsight.primaryProductsServices)}</div>`
+        : '';
+      const verifiedLine = companyInsight.primaryProductsVerifiedAt || companyInsight.verifiedAt
+        ? `<div class="identity-verified">資料確認日期：${escapeHtml(companyInsight.primaryProductsVerifiedAt || companyInsight.verifiedAt)}</div>`
         : '';
       const tagGroups = [
         renderTagRow('細產業', row.fineIndustryTags),
@@ -1098,7 +1119,9 @@
                 ${name}
                 ${detailLine ? `<div class="subline">${detailLine}</div>` : ''}
               </div>
-              <div class="identity-industry">官方產業：${escapeHtml(row.industryCategory || '-')}</div>
+              <div class="identity-industry">產業類別：官方產業 ${escapeHtml(row.industryCategory || '-')}</div>
+              ${primaryProducts}
+              ${verifiedLine}
               ${tagGroups ? `<div class="tag-groups">${tagGroups}</div>` : ''}
               ${industryAlert}
             </div>
@@ -1106,7 +1129,7 @@
           <td class="num">${revenueGrowth}</td>
           <td class="num">${revenueMomentum}</td>
           <td class="num">${grossMargin}</td>
-          <td class="${issueThisWeek ? 'issue-date-this-week' : ''}">${fmtDate(row.issueDate || row.listedDateROC)}</td>
+          <td class="${issueUpcoming ? 'issue-date-this-week' : ''}">${fmtDate(row.issueDate || row.listedDateROC)}</td>
           <td class="redemption-cell">${redemptionAlert}</td>
           <td class="purpose-cell">${issuancePurpose}</td>
           <td>${fmtDate(row.maturityDate)}</td>
@@ -1127,6 +1150,7 @@
     const renderMobileCard = (row) => {
       const cbRecordHigh = isCbRecordHigh(row);
       const stockRecordHigh = isStockRecordHigh(row);
+      const companyInsight = window.CB_COMPANY_INSIGHTS?.[String(row.issuerCode || '')] || {};
       const shortName = row.bondShortName || row.issuerName || '-';
       const stockDailyMove = row.stockChangePct == null ? '' : `<div class="subline">今日 <span class="${row.stockChangePct >= 0 ? 'pos' : 'neg'}">${row.stockChangePct >= 0 ? '+' : ''}${fmtPct(row.stockChangePct, 1)}</span></div>`;
       const stockWeeklyMove = row.stockWeeklyChangePct == null ? '' : `<div class="subline">本週 <span class="${row.stockWeeklyChangePct >= 0 ? 'pos' : 'neg'}">${row.stockWeeklyChangePct >= 0 ? '+' : ''}${fmtPct(row.stockWeeklyChangePct, 1)}</span></div>`;
@@ -1153,6 +1177,12 @@
         ...fineTags.map((tag) => `<span class="mobile-card-tag">${escapeHtml(tag)}</span>`),
         ...productTags.map((tag) => `<span class="mobile-card-tag product">${escapeHtml(tag)}</span>`)
       ].join('');
+      const primaryProducts = companyInsight.primaryProductsServices
+        ? `<div class="product-line"><strong>主要產品／服務：</strong>${escapeHtml(companyInsight.primaryProductsServices)}</div>`
+        : '';
+      const verifiedLine = companyInsight.primaryProductsVerifiedAt || companyInsight.verifiedAt
+        ? `<div class="identity-verified">資料確認日期：${escapeHtml(companyInsight.primaryProductsVerifiedAt || companyInsight.verifiedAt)}</div>`
+        : '';
       const issuancePurpose = renderIssuancePurpose(row);
       const redemptionAlert = renderRedemptionAlert(row);
       return `
@@ -1166,6 +1196,9 @@
                 </div>
                 <div class="mobile-card-date">發行 ${fmtDate(row.issueDate || row.listedDateROC)}</div>
               </div>
+              <div class="identity-industry">產業類別：官方產業 ${escapeHtml(row.industryCategory || '-')}</div>
+              ${primaryProducts}
+              ${verifiedLine}
               ${tagLine ? `<div class="mobile-card-tags">${tagLine}</div>` : ''}
               <div class="mobile-card-metric wide"><div class="mobile-card-label">贖回警示</div><div class="mobile-card-value">${redemptionAlert}</div></div>
               <div class="mobile-card-metric wide"><div class="mobile-card-label">發債原因</div><div class="mobile-card-value">${issuancePurpose}</div></div>
@@ -1477,14 +1510,18 @@
     };
     const renderCompanyCatalysts = (row) => {
       const insight = window.CB_COMPANY_INSIGHTS?.[String(row?.issuerCode || '')] || {};
+      const catalysts = Array.isArray(insight.catalysts) ? insight.catalysts : [];
       const reasons = Array.isArray(insight.conferenceGrowthReasons) ? insight.conferenceGrowthReasons : [];
+      const catalystItems = catalysts.length
+        ? catalysts.map((item) => `<li>${escapeHtml(item)}</li>`).join('')
+        : '<li class="catalyst-empty">Yahoo Finance 目前未提供可核對的法人共識成長數字。</li>';
       const reasonItems = reasons.length
         ? reasons.map((item) => `<li>${escapeHtml(item)}</li>`).join('')
         : '<li class="catalyst-empty">最新法說會簡報未明確揭露可核對的未來成長原因。</li>';
       const sourceLink = insight.conferenceSourceUrl
         ? `<a href="${escapeHtml(insight.conferenceSourceUrl)}" target="_blank" rel="noreferrer noopener">公開資訊觀測站法說會資料${insight.conferenceFileName ? `｜${escapeHtml(insight.conferenceFileName)}` : ''}</a>`
         : '尚未取得法說會公開資料';
-      return `<div class="catalyst-head"><span>未來營收／獲利成長原因重點</span><span class="catalyst-date">法說日期：${escapeHtml(insight.conferenceDate || '尚未確認')}｜每月更新</span></div><div><div class="catalyst-title">公司法說會公開資訊整理</div><ul class="catalyst-list">${reasonItems}</ul><div class="catalyst-title" style="margin-top:8px">資料來源：${sourceLink}</div></div>`;
+      return `<div class="catalyst-head"><span>成長原因／題材</span><span class="catalyst-date">資料確認日期：${escapeHtml(insight.verifiedAt || '尚未確認')}｜法說日期：${escapeHtml(insight.conferenceDate || '尚未確認')}</span></div><div class="catalyst-grid"><div><div class="catalyst-title">法人共識數字</div><ul class="catalyst-list">${catalystItems}</ul></div><div><div class="catalyst-title">公司法說會公開資訊整理</div><ul class="catalyst-list">${reasonItems}</ul><div class="catalyst-title" style="margin-top:8px">資料來源：${sourceLink}</div></div></div>`;
     };
     const drawHistoryChart = (host, payload, range) => {
       const points = filterChartRange(payload.points || [], range);
