@@ -127,21 +127,16 @@
     }
     .header { margin-bottom: 8px; }
     .title {
-      font-size: 1.02rem;
-      font-weight: 700;
-      color: #395b85;
+      font-size: 24px;
+      font-weight: 800;
+      color: #0f376b;
       margin: 0 0 6px;
-      letter-spacing: 0.01em;
+      letter-spacing: 0.06em;
+      text-align: center;
+      width: 100%;
     }
     .title::before {
-      content: "";
-      display: inline-block;
-      width: 4px;
-      height: 1em;
-      margin-right: 8px;
-      border-radius: 999px;
-      vertical-align: -2px;
-      background: linear-gradient(180deg, #4f76a8, #8eaccd);
+      content: none;
     }
     .desc {
       margin: 0;
@@ -811,7 +806,7 @@
       <section class="content" aria-labelledby="page-title">
         <button class="sidebar-toggle" type="button" id="sidebar-toggle" aria-expanded="false">功能選單</button>
         <div class="header">
-          <h1 class="title" id="page-title">近期新發行可轉債列表</h1>
+          <h1 class="title site-title" id="page-title">賣漁仔專用可轉債</h1>
           <p class="desc">所有發行三個月內、或即將發行的可轉債。</p>
         </div>
 
@@ -872,6 +867,7 @@
     const metaEl = document.getElementById('meta');
     const titleEl = document.getElementById('page-title');
     const descEl = document.querySelector('.desc');
+    const SITE_TITLE = '賣漁仔專用可轉債';
     const buttons = Array.from(document.querySelectorAll('[data-view]'));
     const searchPanelEl = document.getElementById('search-panel');
     const searchInputEl = document.getElementById('search-input');
@@ -1579,7 +1575,7 @@
       tableEl.style.minWidth = mobile ? '' : tableEl.style.minWidth;
       searchPanelEl.hidden = false;
       renderWeeklyTop30Ranking();
-      titleEl.textContent = '存續可轉債列表';
+      titleEl.textContent = SITE_TITLE;
       descEl.textContent = '所有已掛牌、尚未下市且仍有發行餘額的可轉債。';
       headEl.innerHTML = mobile ? '' : `<tr>${recentHeaders.map((h, index) => {
         const active = sortState.index === index;
@@ -1610,7 +1606,7 @@
       weeklyRankPanelEl.hidden = true;
       tableEl.className = 'primary-table';
       tableEl.style.minWidth = '';
-      titleEl.textContent = section.title;
+      titleEl.textContent = SITE_TITLE;
       descEl.textContent = 'CB 初級市場最新進度與發行條件。';
       headEl.innerHTML = `<tr>${section.headers.map((h) => `<th>${escapeHtml(cleanHeader(h))}</th>`).join('')}</tr>`;
       rowsEl.innerHTML = section.rows.length
