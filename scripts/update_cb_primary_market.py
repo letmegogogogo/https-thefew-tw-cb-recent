@@ -27,7 +27,7 @@ from datetime import date, datetime, timedelta, timezone
 from html.parser import HTMLParser
 from pathlib import Path
 from typing import Dict, Iterable, List, Optional, Tuple
-from urllib.parse import parse_qs, quote_plus, unquote, urljoin, urlparse
+from urllib.parse import parse_qs, quote_plus, unquote, urlencode, urljoin, urlparse
 from urllib.request import Request, urlopen
 
 try:
@@ -515,6 +515,179 @@ def fetch_twsa_underwriting_announcements(year: int, timeout: int) -> Tuple[List
         }, []
 
 
+def build_candidate_from_official_notice(
+    *,
+    status: str,
+    source_type: str,
+    source: str,
+    source_url: str,
+    company_code: str,
+    company_name: str,
+    subject: str,
+    announcement_date: str,
+    evidence: str,
+) -> Candidate:
+    row = {header: "" for header in OUTPUT_HEADERS}
+    row[OUTPUT_HEADERS[1]] = company_name
+    row[OUTPUT_HEADERS[2]] = company_code
+    row[OUTPUT_HEADERS[3]] = company_name
+    row[OUTPUT_HEADERS[4]] = subject or company_name
+    row[OUTPUT_HEADERS[7]] = announcement_date
+    if status == "board_approved":
+        row[OUTPUT_HEADERS[8]] = announcement_date
+        row["boardDate"] = announcement_date
+    elif status == "filing":
+        row[OUTPUT_HEADERS[9]] = announcement_date
+        row["filingDate"] = announcement_date
+    row["companyCode"] = company_code
+    row["companyName"] = company_name
+    row["bondName"] = subject or company_name
+    row["announcementDate"] = announcement_date
+    row["issueType"] = "國內可轉換公司債"
+    row["status"] = status
+    row["sourceType"] = source_type
+    row["source"] = source
+    row["sourceUrl"] = source_url
+    row["officialSourceUrl"] = source_url
+    row["officialEvidenceText"] = evidence[:320]
+    row["updatedAt"] = NOW.isoformat()
+    row["validationStatus"] = "needs_review"
+    row["staleReason"] = "官方公告未提供CB代碼，保留待確認"
+    return Candidate(
+        source_type=source_type,
+        source=source,
+        source_url=source_url,
+        title=subject,
+        text=evidence,
+        status=status,
+        evidence=evidence[:320],
+        row=row,
+        validation_status="needs_review",
+        stale_reason="官方公告未提供CB代碼，保留待確認",
+    )
+
+
+def parse_mops_notice_candidates(html_text: str, status: str, source_url: str, keyword: str) -> List[Candidate]:
+    if "FOR SECURITY REASONS" in html_text or "安全性考量" in html_text:
+        return []
+    parser = SimpleTableParser()
+    parser.feed(html_text)
+    candidates: List[Candidate] = []
+    for cells in parser.rows:
+        joined = " ".join(cells)
+        if not contains_any(joined, CB_KEYWORDS):
+            continue
+        if keyword and keyword not in joined and not contains_any(joined, BOARD_KEYWORDS + FILING_KEYWORDS):
+            continue
+        company_code = ""
+        company_name = ""
+        announcement_date = ""
+        for cell in cells:
+            if not company_code:
+                m = re.search(r"(?<!\d)(\d{4})(?!\d)", cell)
+                if m:
+                    company_code = m.group(1)
+            if not announcement_date:
+                announcement_date = normalize_date(cell)
+        for cell in cells:
+            if re.search(r"[\u4e00-\u9fff]{2,}", cell) and not contains_any(cell, ALL_DETECT_KEYWORDS):
+                company_name = cell.strip()
+                break
+        subject = next((cell for cell in cells if contains_any(cell, ALL_DETECT_KEYWORDS)), joined[:80])
+        candidates.append(build_candidate_from_official_notice(
+            status=status,
+            source_type="official_mops",
+            source="公開資訊觀測站重大訊息",
+            source_url=source_url,
+            company_code=company_code,
+            company_name=company_name,
+            subject=subject,
+            announcement_date=announcement_date,
+            evidence=joined,
+        ))
+    return candidates
+
+
+def fetch_mops_material_information(kind: str, keyword: str, status: str, timeout: int) -> Tuple[List[Candidate], Dict[str, str]]:
+    source_url = "https://mops.twse.com.tw/mops/web/ajax_t05st01"
+    roc_year = NOW.year - 1911
+    body = {
+        "encodeURIComponent": "1",
+        "step": "1",
+        "firstin": "1",
+        "off": "1",
+        "keyword4": keyword,
+        "code1": "",
+        "TYPEK2": "",
+        "checkbtn": "",
+        "queryName": "co_id",
+        "inpuType": "co_id",
+        "TYPEK": "all",
+        "co_id": "",
+        "year": str(roc_year),
+        "month": f"{NOW.month:02d}",
+        "b_date": f"{roc_year}/01/01",
+        "e_date": f"{roc_year}/{NOW.month:02d}/{NOW.day:02d}",
+    }
+    data = urlencode(body).encode("utf-8")
+    try:
+        req = Request(
+            source_url,
+            data=data,
+            headers={
+                "User-Agent": USER_AGENT,
+                "Content-Type": "application/x-www-form-urlencoded",
+                "Referer": "https://mops.twse.com.tw/mops/web/t05st01",
+            },
+        )
+        contexts = []
+        if certifi:
+            contexts.append(ssl.create_default_context(cafile=certifi.where()))
+        contexts.append(None)
+        raw = b""
+        http_status = ""
+        content_type = ""
+        last_error: Optional[Exception] = None
+        for context in contexts:
+            try:
+                with urlopen(req, timeout=timeout, context=context) as resp:
+                    raw = resp.read()
+                    http_status = str(getattr(resp, "status", "200"))
+                    content_type = resp.headers.get("content-type", "")
+                break
+            except ssl.SSLError as exc:
+                last_error = exc
+                continue
+        if not raw and last_error:
+            raise last_error
+        text = decode_bytes(raw, content_type)
+        candidates = parse_mops_notice_candidates(text, status, source_url, keyword)
+        blocked = "FOR SECURITY REASONS" in text or "安全性考量" in text
+        fetch_status = "success" if candidates else ("official_fetch_failed" if blocked else "official_parse_failed")
+        error = "mops_security_blocked" if blocked else ""
+        return candidates, {
+            "fetchedAt": NOW.isoformat(),
+            "sourceType": "official_mops",
+            "sourceUrl": source_url,
+            "fetchStatus": fetch_status,
+            "httpStatus": http_status,
+            "rawCount": "1" if text else "0",
+            "parsedCount": str(len(candidates)),
+            "error": f"{kind}:{error}".strip(":"),
+        }
+    except Exception as exc:  # noqa: BLE001
+        return [], {
+            "fetchedAt": NOW.isoformat(),
+            "sourceType": "official_mops",
+            "sourceUrl": source_url,
+            "fetchStatus": "official_fetch_failed",
+            "httpStatus": "",
+            "rawCount": "0",
+            "parsedCount": "0",
+            "error": f"{kind}:{str(exc)[:220]}",
+        }
+
+
 def official_source_type_for_url(url: str, default: str) -> Optional[str]:
     host = urlparse(url).netloc.lower()
     if "mops.twse.com.tw" in host:
@@ -919,6 +1092,22 @@ def fetch_official_sources(args: argparse.Namespace) -> Tuple[List[Candidate], L
         f"raw={twsa_log.get('rawCount')} parsed={twsa_log.get('parsedCount')} "
         f"title=115年－承銷公告 url={twsa_log.get('sourceUrl')} reason=twsa_underwriting_table"
     )
+
+    for kind, keyword, status in [
+        ("mops_board_approved", "董事會決議發行國內可轉換公司債", "board_approved"),
+        ("mops_filing", "申報生效 國內可轉換公司債", "filing"),
+    ]:
+        mops_candidates, mops_log = fetch_mops_material_information(kind, keyword, status, args.timeout)
+        fetch_logs.append(mops_log)
+        candidates.extend(mops_candidates)
+        official_raw_count += int(mops_log.get("rawCount") or 0)
+        if mops_log.get("fetchStatus") != "official_fetch_failed":
+            official_pages_success += 1
+        debug_lines.append(
+            f"[official_mops] {mops_log.get('httpStatus') or '-'} "
+            f"raw={mops_log.get('rawCount')} parsed={mops_log.get('parsedCount')} "
+            f"kind={kind} status={mops_log.get('fetchStatus')} reason={mops_log.get('error')}"
+        )
 
     for item in DIRECT_OFFICIAL_URLS + load_optional_direct_sources():
         inspect_url(item["sourceType"], item["source"], item["url"])
