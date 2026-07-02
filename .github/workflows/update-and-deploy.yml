@@ -39,6 +39,12 @@ jobs:
       - name: Update CB data
         run: python scripts/update_cb_quotes.py
 
+      - name: Enrich new CB company tags
+        run: python scripts/enrich_new_cb_company_tags.py --limit 20
+
+      - name: Refresh CB data with enriched tags
+        run: python scripts/update_cb_quotes.py
+
       - name: Fetch analyst target prices
         run: python scripts/fetch_analyst_targets_from_web.py --limit 50 || true
 
