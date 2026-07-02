@@ -37,6 +37,22 @@ REDEMPTION_KEYWORDS = [
     "收回",
 ]
 
+CONFIRMED_REDEMPTION_PHRASES = [
+    ("發行公司行使債券贖回權", "終止櫃檯買賣"),
+    ("行使債券贖回權", "終止櫃檯買賣"),
+    ("行使債券贖回權暨訂於", "終止櫃檯買賣"),
+    ("債券贖回權", "終止櫃檯買賣等相關事宜"),
+]
+
+OFFICIAL_REDEMPTION_KEYWORDS = [
+    "發行公司行使債券贖回權",
+    "行使債券贖回權",
+    "行使債券贖回權暨訂於",
+    "債券贖回權",
+    "終止櫃檯買賣",
+    "終止買賣",
+]
+
 TRUSTED_DOMAINS = (
     "tw.stock.yahoo.com",
     "mops.twse.com.tw",
@@ -189,6 +205,15 @@ def has_identity(text: str, row: dict) -> bool:
 
 
 def extract_evidence(text: str) -> str:
+    phrase_positions = [
+        text.find(keyword)
+        for keyword in OFFICIAL_REDEMPTION_KEYWORDS
+        if text.find(keyword) >= 0
+    ]
+    if phrase_positions:
+        start = max(0, min(phrase_positions) - 120)
+        end = min(len(text), max(phrase_positions) + 260)
+        return text[start:end].strip()
     for keyword in REDEMPTION_KEYWORDS:
         idx = text.find(keyword)
         if idx >= 0:
@@ -196,6 +221,12 @@ def extract_evidence(text: str) -> str:
             end = min(len(text), idx + 220)
             return text[start:end].strip()
     return ""
+
+
+def is_confirmed_redemption_notice(text: str, row: dict) -> bool:
+    if not any(first in text and second in text for first, second in CONFIRMED_REDEMPTION_PHRASES):
+        return False
+    return has_identity(text, row)
 
 
 def extract_date_after(labels: list[str], text: str) -> str:
@@ -233,16 +264,19 @@ def make_summary(evidence: str) -> str:
     return "已公告贖回相關事項。"
 
 
-def parse_alert(row: dict, url: str, page: str) -> dict | None:
+def parse_alert_with_reason(row: dict, url: str, page: str) -> tuple[dict | None, str]:
     text = clean_text(page)
-    if not any(keyword in text for keyword in REDEMPTION_KEYWORDS):
-        return None
-    evidence = extract_evidence(text)
-    if not evidence:
-        return None
     title = extract_title(page)
-    if not has_identity(f"{title} {evidence}", row):
-        return None
+    full_text = f"{title} {text}"
+    if not has_identity(full_text, row):
+        return None, "identity_not_matched"
+    if not any(keyword in full_text for keyword in OFFICIAL_REDEMPTION_KEYWORDS):
+        return None, "no_required_official_phrase"
+    evidence = extract_evidence(full_text)
+    if not evidence:
+        return None, "no_required_official_phrase"
+    if not is_confirmed_redemption_notice(evidence, row):
+        return None, "not_confirmed_redemption_notice"
     return {
         "bondCode": str(row.get("bondCode") or "").strip(),
         "bondName": row.get("bondShortName") or "",
@@ -258,7 +292,12 @@ def parse_alert(row: dict, url: str, page: str) -> dict | None:
         "sourceUrl": url,
         "evidenceText": evidence,
         "updatedAt": datetime.now(TZ).date().isoformat(),
-    }
+    }, "found_confirmed_redemption_notice"
+
+
+def parse_alert(row: dict, url: str, page: str) -> dict | None:
+    alert, _reason = parse_alert_with_reason(row, url, page)
+    return alert
 
 
 def find_alert_for_row(row: dict, timeout: int, max_candidates: int) -> tuple[dict | None, list[dict]]:
@@ -271,14 +310,14 @@ def find_alert_for_row(row: dict, timeout: int, max_candidates: int) -> tuple[di
         for url in urls:
             try:
                 page = fetch_text(url, timeout=timeout)
-                alert = parse_alert(row, url, page)
+                alert, reason = parse_alert_with_reason(row, url, page)
             except Exception as error:
                 logs.append(log_row(row, query, url, "error", type(error).__name__))
                 continue
             if alert:
-                logs.append(log_row(row, query, url, "found", alert["summary"]))
+                logs.append(log_row(row, query, url, "found", reason))
                 return alert, logs
-            logs.append(log_row(row, query, url, "not_matched", "未找到同一檔 CB 的贖回關鍵文字"))
+            logs.append(log_row(row, query, url, "not_matched", reason))
             time.sleep(0.2)
     return None, logs
 
@@ -306,11 +345,13 @@ def find_alerts_from_broad_search(rows: list[dict], timeout: int, max_candidates
             code = str(row.get("bondCode") or "").strip()
             if code in alerts:
                 continue
-            alert = parse_alert(row, url, page)
+            alert, reason = parse_alert_with_reason(row, url, page)
             if alert:
                 alerts[code] = alert
                 matched += 1
-                logs.append(log_row(row, query, url, "found", alert["summary"]))
+                logs.append(log_row(row, query, url, "found", reason))
+            elif code:
+                logs.append(log_row(row, query, url, "not_matched", reason))
         if matched == 0:
             logs.append(log_row({}, query, url, "not_matched", "候選頁未對應目前存續 CB 贖回公告"))
         time.sleep(0.2)
