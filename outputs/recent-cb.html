@@ -1121,17 +1121,41 @@
       { label: '發行餘額', value: (row) => row.remainingAmount, numeric: true }
     ];
     let sortState = { index: 4, direction: 'desc' };
+    const hasRedemptionWarning = (row) => {
+      const status = String(row.redemptionStatus || 'normal').trim();
+      return status && status !== 'normal';
+    };
+    const redemptionSortValue = (row) => {
+      const candidates = [
+        row.redemptionDelistDate,
+        row.redemptionEndDate,
+        row.redemptionStartDate,
+        row.maturityDate
+      ];
+      for (const value of candidates) {
+        const date = toDate(value);
+        if (date) return date.getTime();
+      }
+      return Number.MAX_SAFE_INTEGER;
+    };
     const sortRows = (rows) => {
-      if (sortState.index == null) return rows;
-      const column = recentColumns[sortState.index];
-      const direction = sortState.direction === 'asc' ? 1 : -1;
-      return rows.slice().sort((a, b) => {
-        const av = column.value(a), bv = column.value(b);
-        if (av == null || av === '') return bv == null || bv === '' ? 0 : 1;
-        if (bv == null || bv === '') return -1;
-        if (typeof av === 'number' && typeof bv === 'number') return (av - bv) * direction;
-        return String(av).localeCompare(String(bv), 'zh-TW', { numeric: true }) * direction;
-      });
+      const baseSorted = (() => {
+        if (sortState.index == null) return rows.slice();
+        const column = recentColumns[sortState.index];
+        const direction = sortState.direction === 'asc' ? 1 : -1;
+        return rows.slice().sort((a, b) => {
+          const av = column.value(a), bv = column.value(b);
+          if (av == null || av === '') return bv == null || bv === '' ? 0 : 1;
+          if (bv == null || bv === '') return -1;
+          if (typeof av === 'number' && typeof bv === 'number') return (av - bv) * direction;
+          return String(av).localeCompare(String(bv), 'zh-TW', { numeric: true }) * direction;
+        });
+      })();
+      const alertRows = baseSorted
+        .filter(hasRedemptionWarning)
+        .sort((a, b) => redemptionSortValue(a) - redemptionSortValue(b) || String(a.bondCode || '').localeCompare(String(b.bondCode || ''), 'zh-TW', { numeric: true }));
+      const normalRows = baseSorted.filter((row) => !hasRedemptionWarning(row));
+      return [...alertRows, ...normalRows];
     };
 
     const filteredRows = () => {
