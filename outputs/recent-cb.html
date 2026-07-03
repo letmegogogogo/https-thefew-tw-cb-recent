@@ -964,7 +964,71 @@
       return date.getTime() >= taipeiTodayStart().getTime();
     };
 
-    const sorted = (Array.isArray(raw.rows) ? raw.rows : [])
+    const isRecentOrUpcomingIssue = (row) => {
+      const date = toDate(row.issueDate || row.listedDateROC);
+      if (!date) return false;
+      const start = taipeiTodayStart();
+      start.setDate(start.getDate() - 90);
+      return date.getTime() >= start.getTime();
+    };
+
+    const primaryRowValue = (row, keys) => {
+      for (const key of keys) {
+        const value = row?.[key];
+        if (value != null && String(value).trim() !== '') return String(value).trim();
+      }
+      return '';
+    };
+
+    const primaryMarketRowsForRecentView = (primaryData) => {
+      const sections = Array.isArray(primaryData?.sections) ? primaryData.sections : [];
+      return sections.flatMap((section) => Array.isArray(section.rows)
+        ? section.rows.map((row) => ({ ...row, status: row.status || section.id }))
+        : []);
+    };
+
+    const toRecentRowFromPrimary = (row) => {
+      const bondCode = primaryRowValue(row, ['CB代碼', 'bondCode']);
+      const issueDate = primaryRowValue(row, ['掛牌日', 'listingDate', 'issueDate', '發行日', '公告日期']);
+      if (!bondCode || !issueDate) return null;
+      const bondShortName = primaryRowValue(row, ['標的名稱', '債券名稱', 'bondName', 'companyName', '公司名稱']);
+      const issuerName = primaryRowValue(row, ['companyName', '公司名稱', '標的名稱']);
+      return {
+        bondCode,
+        bondShortName,
+        issuerCode: primaryRowValue(row, ['公司代號', 'issuerCode']),
+        issuerName,
+        issueDate,
+        listedDateROC: issueDate,
+        industryCategory: primaryRowValue(row, ['產業別', 'officialIndustry']),
+        redemptionStatus: 'normal',
+        redemptionSummary: '',
+        redemptionAlertLevel: '',
+        issuancePurpose: '',
+        issuancePurposeTags: [],
+        sourceType: row.sourceType || '',
+        sourceUrl: row.sourceUrl || row.officialSourceUrl || '',
+        primaryMarketStatus: row.status || '',
+        stockMarket: '尚未掛牌'
+      };
+    };
+
+    const mergeRecentAndPrimaryRows = (baseRows, primaryData) => {
+      const rows = Array.isArray(baseRows) ? baseRows.slice() : [];
+      const existingCodes = new Set(rows.map((row) => String(row.bondCode || '').trim()).filter(Boolean));
+      primaryMarketRowsForRecentView(primaryData).forEach((primaryRow) => {
+        const recentRow = toRecentRowFromPrimary(primaryRow);
+        if (!recentRow || existingCodes.has(recentRow.bondCode)) return;
+        if (!isRecentOrUpcomingIssue(recentRow)) return;
+        rows.push(recentRow);
+        existingCodes.add(recentRow.bondCode);
+      });
+      return rows;
+    };
+
+    const recentBaseRows = Array.isArray(raw.rows) ? raw.rows : [];
+    const recentCombinedRows = mergeRecentAndPrimaryRows(recentBaseRows, primary);
+    const sorted = recentCombinedRows
       .slice()
       .sort((a, b) => (toDate(b.issueDate || b.listedDateROC)?.getTime() || 0) - (toDate(a.issueDate || a.listedDateROC)?.getTime() || 0));
 
