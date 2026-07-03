@@ -612,6 +612,13 @@
       line-height: 1.3;
       white-space: normal;
     }
+    .metric-period {
+      margin-top: 4px;
+      font-size: 11px;
+      color: #7a8ca5;
+      font-weight: 600;
+      white-space: nowrap;
+    }
     .num { text-align: right; font-size: 16px; font-variant-numeric: tabular-nums; }
     .recent-table .num {
       font-size: 16px;
@@ -932,6 +939,39 @@
       return `${fmtPrice(value, digits)}%`;
     };
 
+    const pickFirst = (...values) => values.find((value) => value != null && String(value).trim() !== '') || '';
+
+    const formatPeriodLabel = (value) => {
+      if (!value) return '';
+      const text = String(value).trim();
+      const yyyymm = text.match(/^(\d{4})(\d{2})$/);
+      if (yyyymm) return `${yyyymm[1]}-${yyyymm[2]}`;
+      const ym = text.match(/^(\d{4})[/-](\d{1,2})$/);
+      if (ym) return `${ym[1]}-${String(ym[2]).padStart(2, '0')}`;
+      const rocYm = text.match(/^(\d{2,3})[/-](\d{1,2})$/);
+      if (rocYm) return `${Number(rocYm[1]) + 1911}-${String(rocYm[2]).padStart(2, '0')}`;
+      return text;
+    };
+
+    const revenuePeriodLabel = (row) => formatPeriodLabel(pickFirst(
+      row.revenueYearMonth,
+      row.revenueMonth,
+      row.revenueDate,
+      row.revenuePeriod,
+      row.latestRevenueMonth,
+      row.monthlyRevenueDate
+    ));
+
+    const marginPeriodLabel = (row) => formatPeriodLabel(pickFirst(
+      row.grossMarginQuarter,
+      row.grossMarginPeriod,
+      row.latestFinancialQuarter,
+      row.financialQuarter,
+      row.marginQuarter
+    ));
+
+    const renderMetricPeriod = (label) => label ? `<div class="metric-period">${escapeHtml(label)}</div>` : '';
+
     const statusForRow = (row) => {
       const d = toDate(row.issueDate || row.listedDateROC);
       if (!d) return '近期發行';
@@ -1169,6 +1209,8 @@
         ? ''
         : `<div class="subline">${cbChangeLabel} <span class="${row.cbChangePct >= 0 ? 'pos' : 'neg'}">${row.cbChangePct >= 0 ? '+' : ''}${fmtPct(row.cbChangePct, 1)}</span></div>${cbLiquidityNote}`;
       const convertedPct = row.convertedPct == null ? '-' : fmtPct(row.convertedPct, 1);
+      const revenuePeriod = revenuePeriodLabel(row);
+      const marginPeriod = marginPeriodLabel(row);
       const revenueGrowth = row.revenueYoY == null ? '-' : `<span class="${row.revenueYoY >= 0 ? 'pos' : 'neg'}">${row.revenueYoY >= 0 ? '+' : ''}${fmtPct(row.revenueYoY, 1)}</span>`;
       const revenueMomentum = row.revenueMoM == null ? '-' : `<span class="${row.revenueMoM >= 0 ? 'pos' : 'neg'}">${row.revenueMoM >= 0 ? '+' : ''}${fmtPct(row.revenueMoM, 1)}</span>`;
       const grossMargin = row.grossMargin == null ? '-' : `<span class="${row.grossMarginIsRecordHigh ? 'record-high' : ''}" title="${row.grossMarginIsRecordHigh ? '毛利率突破已累積季度紀錄新高' : '最新季度毛利率'}">${fmtPct(row.grossMargin, 1)}</span>${row.grossMarginIsRecordHigh ? '<div class="subline record-label">新高</div>' : ''}`;
@@ -1190,9 +1232,9 @@
               ${industryAlert}
             </div>
           </td>
-          <td class="num">${revenueGrowth}</td>
-          <td class="num">${revenueMomentum}</td>
-          <td class="num">${grossMargin}</td>
+          <td class="num">${revenueGrowth}${renderMetricPeriod(revenuePeriod)}</td>
+          <td class="num">${revenueMomentum}${renderMetricPeriod(revenuePeriod)}</td>
+          <td class="num">${grossMargin}${renderMetricPeriod(marginPeriod)}</td>
           <td class="${issueUpcoming ? 'issue-date-this-week' : ''}">${fmtDate(row.issueDate || row.listedDateROC)}</td>
           <td class="redemption-cell">${redemptionAlert}</td>
           <td class="purpose-cell">${issuancePurpose}</td>
@@ -1232,6 +1274,8 @@
         : null;
       const premiumClass = premiumValue > 40 ? 'premium-high' : premiumValue >= 10 ? 'premium-mid' : 'premium-low';
       const conversionPremium = premiumValue == null ? '<span class="premium-badge premium-low">無</span>' : `<span class="premium-badge ${premiumClass}">${fmtPct(premiumValue, 1)}</span>`;
+      const revenuePeriod = revenuePeriodLabel(row);
+      const marginPeriod = marginPeriodLabel(row);
       const revenueGrowth = row.revenueYoY == null ? '-' : `<span class="${row.revenueYoY >= 0 ? 'pos' : 'neg'}">${row.revenueYoY >= 0 ? '+' : ''}${fmtPct(row.revenueYoY, 1)}</span>`;
       const revenueMomentum = row.revenueMoM == null ? '-' : `<span class="${row.revenueMoM >= 0 ? 'pos' : 'neg'}">${row.revenueMoM >= 0 ? '+' : ''}${fmtPct(row.revenueMoM, 1)}</span>`;
       const grossMargin = row.grossMargin == null ? '-' : `<span class="${row.grossMarginIsRecordHigh ? 'record-high' : ''}">${fmtPct(row.grossMargin, 1)}</span>${row.grossMarginIsRecordHigh ? '<div class="subline"><span class="record-label">新高</span></div>' : ''}`;
@@ -1273,9 +1317,9 @@
                 <div class="mobile-card-metric"><div class="mobile-card-label">溢價率</div><div class="mobile-card-value">${conversionPremium}</div></div>
               </div>
               <div class="mobile-card-footer">
-                <div class="mobile-card-metric"><div class="mobile-card-label">營收年增</div><div class="mobile-card-value">${revenueGrowth}</div></div>
-                <div class="mobile-card-metric"><div class="mobile-card-label">營收月增</div><div class="mobile-card-value">${revenueMomentum}</div></div>
-                <div class="mobile-card-metric"><div class="mobile-card-label">毛利率</div><div class="mobile-card-value">${grossMargin}</div></div>
+                <div class="mobile-card-metric"><div class="mobile-card-label">營收年增</div><div class="mobile-card-value">${revenueGrowth}${renderMetricPeriod(revenuePeriod)}</div></div>
+                <div class="mobile-card-metric"><div class="mobile-card-label">營收月增</div><div class="mobile-card-value">${revenueMomentum}${renderMetricPeriod(revenuePeriod)}</div></div>
+                <div class="mobile-card-metric"><div class="mobile-card-label">毛利率</div><div class="mobile-card-value">${grossMargin}${renderMetricPeriod(marginPeriod)}</div></div>
               </div>
             </article>
           </td>
