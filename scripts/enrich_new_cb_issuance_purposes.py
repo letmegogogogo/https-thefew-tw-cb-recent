@@ -40,20 +40,35 @@ OFFICIAL_DOMAINS = (
 PURPOSE_KEYWORDS = [
     "募得價款之用途及運用計畫",
     "募集資金用途",
+    "募集資金運用計畫",
     "資金運用計畫",
     "發行目的",
+    "發債原因",
+    "本次發行轉換公司債之資金用途",
+    "計畫項目",
     "充實營運資金",
     "營運週轉金",
+    "充實營運週轉",
     "償還銀行借款",
     "償還金融機構借款",
+    "償還借款",
     "購置機器設備",
     "購置設備",
+    "取得設備",
     "興建廠房",
+    "擴建廠房",
     "擴充產能",
     "擴建",
+    "擴廠",
     "轉投資",
+    "轉投資子公司",
     "研發",
+    "研發支出",
+    "原物料採購",
 ]
+PENDING_SUMMARIES = {"", "公開資料未整理", "未整理", "公開來源未能確認發債原因", "待查：尚未成功抓取官方資金用途文件"}
+PENDING_SOURCES = {"", "pending", "needs_review", "search_pending", "legacy_excel_needs_recheck"}
+LEGACY_EXCEL_SOURCES = {"excel", "old_excel", "imported_excel", "手動Excel", "舊整理檔"}
 
 
 def now_iso() -> str:
@@ -193,13 +208,18 @@ def should_process(code: str, existing: dict, force: bool) -> bool:
     source = str(existing.get("source") or "").strip()
     summary = str(existing.get("summary") or "").strip()
     purposes = existing.get("purposes") if isinstance(existing.get("purposes"), list) else []
-    has_evidence = bool(existing.get("sourceUrl") or existing.get("evidenceText"))
+    evidence = str(existing.get("evidenceText") or "")
+    has_evidence = bool(existing.get("sourceUrl") or evidence)
+    has_purpose_keyword = any(keyword in evidence or keyword in summary for keyword in PURPOSE_KEYWORDS)
+    if source in LEGACY_EXCEL_SOURCES or "excel" in source.lower() or "Excel" in source:
+        return True
     if (
         source
-        and source not in {"pending", "needs_review"}
-        and summary not in {"", "公開資料未整理", "未整理", "公開來源未能確認發債原因"}
+        and source not in PENDING_SOURCES
+        and summary not in PENDING_SUMMARIES
         and has_evidence
-        and (purposes or summary)
+        and has_purpose_keyword
+        and purposes
     ):
         return False
     return True
@@ -255,23 +275,34 @@ def make_summary(evidence: str) -> str:
 def build_queries(row: dict) -> list[str]:
     code = row.get("bondCode") or ""
     name = row.get("bondName") or ""
+    issuer_code = row.get("issuerCode") or ""
     issuer = row.get("issuerName") or ""
     return [
-        f"{code} {name} 募得價款之用途及運用計畫 site:mops.twse.com.tw OR site:tpex.org.tw OR site:twse.com.tw",
-        f"{issuer} {name} 可轉換公司債 募集資金用途 site:mops.twse.com.tw OR site:tpex.org.tw OR site:twse.com.tw",
-        f"{issuer} 發行 國內 轉換公司債 募得價款 官方公告",
+        f"{code} {name} 募得價款之用途及運用計畫",
+        f"{code} {name} 資金運用計畫",
+        f"{code} 公開說明書 資金運用計畫",
+        f"{issuer_code} {issuer} 可轉換公司債 公開說明書",
+        f"{issuer} 轉換公司債 資金運用計畫",
+        f"{issuer} 轉換公司債 募集資金用途",
+        f"{issuer} 轉換公司債 發行辦法",
+        f"{issuer} 轉換公司債 承銷公告",
+        f"{issuer} 發行 國內 轉換公司債 募得價款",
         f"{code} {issuer} 發行辦法 公開說明書 募集資金用途",
     ]
 
 
 def find_official_purpose(row: dict, timeout: int, max_candidates: int) -> tuple[dict | None, str, list[str]]:
     checked_urls: list[str] = []
+    pdf_found = False
     for query in build_queries(row):
         urls = search_official_urls(query, timeout=timeout, max_candidates=max_candidates)
         for url in urls:
             if url in checked_urls:
                 continue
             checked_urls.append(url)
+            if urlparse(url).path.lower().endswith(".pdf"):
+                pdf_found = True
+                continue
             try:
                 page = fetch_text(url, timeout=timeout)
             except Exception:
@@ -297,7 +328,7 @@ def find_official_purpose(row: dict, timeout: int, max_candidates: int) -> tuple
                 "updatedAt": today_text(),
             }, "matched_official_source", checked_urls
             time.sleep(0.2)
-    return None, "no_confirmed_official_source", checked_urls
+    return None, "official_pdf_found_but_not_parsed" if pdf_found else "official_document_not_yet_fetched", checked_urls
 
 
 def log_row(row: dict, action: str, record: dict | None, reason: str) -> dict:
@@ -319,12 +350,13 @@ def log_row(row: dict, action: str, record: dict | None, reason: str) -> dict:
         "sourceUrl": record.get("sourceUrl") or "",
         "evidenceText": record.get("evidenceText") or "",
         "reason": reason,
+        "retry": record.get("retry", False),
     }
 
 
 def write_log(rows: list[dict]) -> None:
     LOG_PATH.parent.mkdir(parents=True, exist_ok=True)
-    fields = ["checkedAt", "bondCode", "bondName", "issuerCode", "issuerName", "foundInRecentData", "foundInPrimaryMarketData", "existingPurposeStatus", "action", "purposes", "summary", "source", "sourceUrl", "evidenceText", "reason"]
+    fields = ["checkedAt", "bondCode", "bondName", "issuerCode", "issuerName", "foundInRecentData", "foundInPrimaryMarketData", "existingPurposeStatus", "action", "purposes", "summary", "source", "sourceUrl", "evidenceText", "reason", "retry"]
     with LOG_PATH.open("w", encoding="utf-8-sig", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=fields)
         writer.writeheader()
@@ -342,7 +374,7 @@ def main() -> int:
 
     purposes = load_purposes()
     logs: list[dict] = []
-    processed = enriched = needs_review = 0
+    processed = enriched = search_pending = legacy_recheck = 0
     candidates = {row["bondCode"]: row for row in load_candidates()}
     requested_codes = {code.strip() for code in args.codes.split(",") if code.strip()} if args.codes else set()
     for code in requested_codes:
@@ -370,6 +402,17 @@ def main() -> int:
         if processed >= args.limit:
             logs.append(log_row(row, "skipped_existing", existing, "limit_reached"))
             continue
+        existing_source = str(existing.get("source") or "").strip()
+        if existing_source in LEGACY_EXCEL_SOURCES or "excel" in existing_source.lower() or "Excel" in existing_source:
+            existing = {
+                **existing,
+                "source": "legacy_excel_needs_recheck",
+                "retry": True,
+                "updatedAt": today_text(),
+            }
+            purposes[code] = existing
+            legacy_recheck += 1
+            logs.append(log_row(row, "legacy_excel_needs_recheck", existing, "legacy_excel_source_requires_official_recheck"))
         record, reason, _urls = find_official_purpose(row, timeout=args.timeout, max_candidates=args.max_candidates)
         processed += 1
         if record and record.get("sourceUrl") and record.get("evidenceText"):
@@ -377,25 +420,26 @@ def main() -> int:
             enriched += 1
             logs.append(log_row(row, "enriched", record, reason))
         else:
-            review_record = {
+            pending_record = {
                 "bondCode": code,
                 "issuerCode": row.get("issuerCode") or "",
                 "issuerName": row.get("issuerName") or "",
                 "purposes": [],
-                "summary": "公開來源未能確認發債原因",
-                "source": "needs_review",
+                "summary": "待查：尚未成功抓取官方資金用途文件",
+                "source": "search_pending",
                 "sourceUrl": "",
                 "evidenceText": "",
+                "retry": True,
                 "updatedAt": today_text(),
             }
-            purposes[code] = review_record
-            needs_review += 1
-            logs.append(log_row(row, "needs_review", review_record, reason))
+            purposes[code] = pending_record
+            search_pending += 1
+            logs.append(log_row(row, "search_pending", pending_record, reason))
 
     if processed:
         save_purposes(purposes)
     write_log(logs)
-    print(f"processed={processed} enriched={enriched} needs_review={needs_review} log={LOG_PATH}")
+    print(f"processed={processed} enriched={enriched} search_pending={search_pending} legacy_recheck={legacy_recheck} log={LOG_PATH}")
     return 0
 
 

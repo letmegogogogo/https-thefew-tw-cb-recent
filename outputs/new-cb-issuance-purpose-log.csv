@@ -1,3 +1,6 @@
-﻿checkedAt,bondCode,bondName,issuerCode,issuerName,foundInRecentData,foundInPrimaryMarketData,existingPurposeStatus,action,purposes,summary,source,sourceUrl,evidenceText,reason
-2026-07-04T05:17:53.642252+08:00,36054,,,,False,False,missing,needs_review,,公開來源未能確認發債原因,needs_review,,,no_confirmed_official_source
-2026-07-04T05:17:58.377366+08:00,65843,,,,False,False,missing,needs_review,,公開來源未能確認發債原因,needs_review,,,no_confirmed_official_source
+﻿checkedAt,bondCode,bondName,issuerCode,issuerName,foundInRecentData,foundInPrimaryMarketData,existingPurposeStatus,action,purposes,summary,source,sourceUrl,evidenceText,reason,retry
+2026-07-04T05:31:35.996694+08:00,80963,證券名稱擎亞三,,證券名稱擎亞三,False,True,needs_review,search_pending,,待查：尚未成功抓取官方資金用途文件,search_pending,,,official_document_not_yet_fetched,True
+2026-07-04T05:31:48.116227+08:00,56086,,,,False,False,needs_review,search_pending,,待查：尚未成功抓取官方資金用途文件,search_pending,,,official_document_not_yet_fetched,True
+2026-07-04T05:31:58.732917+08:00,65843,,,,False,False,needs_review,search_pending,,待查：尚未成功抓取官方資金用途文件,search_pending,,,official_document_not_yet_fetched,True
+2026-07-04T05:32:09.296755+08:00,35871,,,,False,False,needs_review,search_pending,,待查：尚未成功抓取官方資金用途文件,search_pending,,,official_document_not_yet_fetched,True
+2026-07-04T05:32:19.164320+08:00,36054,,,,False,False,needs_review,search_pending,,待查：尚未成功抓取官方資金用途文件,search_pending,,,official_document_not_yet_fetched,True

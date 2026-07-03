@@ -2109,12 +2109,13 @@
   "35871": {
     "bondCode": "35871",
     "evidenceText": "",
-    "issuerCode": "3587",
-    "issuerName": "閎康科技股份有限公司",
+    "issuerCode": "",
+    "issuerName": "",
     "purposes": [],
-    "source": "needs_review",
+    "retry": true,
+    "source": "search_pending",
     "sourceUrl": "",
-    "summary": "公開來源未能確認發債原因",
+    "summary": "待查：尚未成功抓取官方資金用途文件",
     "updatedAt": "2026-07-04"
   },
   "35872": {
@@ -2164,9 +2165,10 @@
     "issuerCode": "",
     "issuerName": "",
     "purposes": [],
-    "source": "needs_review",
+    "retry": true,
+    "source": "search_pending",
     "sourceUrl": "",
-    "summary": "公開來源未能確認發債原因",
+    "summary": "待查：尚未成功抓取官方資金用途文件",
     "updatedAt": "2026-07-04"
   },
   "36172": {
@@ -3466,12 +3468,13 @@
   "56086": {
     "bondCode": "56086",
     "evidenceText": "",
-    "issuerCode": "5608",
-    "issuerName": "四維航業股份有限公司",
+    "issuerCode": "",
+    "issuerName": "",
     "purposes": [],
-    "source": "needs_review",
+    "retry": true,
+    "source": "search_pending",
     "sourceUrl": "",
-    "summary": "公開來源未能確認發債原因",
+    "summary": "待查：尚未成功抓取官方資金用途文件",
     "updatedAt": "2026-07-04"
   },
   "56087": {
@@ -4579,9 +4582,10 @@
     "issuerCode": "",
     "issuerName": "",
     "purposes": [],
-    "source": "needs_review",
+    "retry": true,
+    "source": "search_pending",
     "sourceUrl": "",
-    "summary": "公開來源未能確認發債原因",
+    "summary": "待查：尚未成功抓取官方資金用途文件",
     "updatedAt": "2026-07-04"
   },
   "65851": {
@@ -5426,9 +5430,10 @@
     "issuerCode": "",
     "issuerName": "證券名稱擎亞三",
     "purposes": [],
-    "source": "needs_review",
+    "retry": true,
+    "source": "search_pending",
     "sourceUrl": "",
-    "summary": "公開來源未能確認發債原因",
+    "summary": "待查：尚未成功抓取官方資金用途文件",
     "updatedAt": "2026-07-04"
   },
   "81042": {
