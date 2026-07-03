@@ -980,54 +980,58 @@
       return '';
     };
 
-    const primaryMarketRowsForRecentView = (primaryData) => {
-      const sections = Array.isArray(primaryData?.sections) ? primaryData.sections : [];
-      return sections.flatMap((section) => Array.isArray(section.rows)
-        ? section.rows.map((row) => ({ ...row, status: row.status || section.id }))
-        : []);
+    const pickPrimaryDate = (row) => {
+      return primaryRowValue(row, ['掛牌日', 'listingDate', 'issueDate', '發行日', '公告日期', 'announcementDate']);
     };
 
-    const toRecentRowFromPrimary = (row) => {
+    const normalizePrimaryRecentRow = (row) => {
       const bondCode = primaryRowValue(row, ['CB代碼', 'bondCode']);
-      const issueDate = primaryRowValue(row, ['掛牌日', 'listingDate', 'issueDate', '發行日', '公告日期']);
-      if (!bondCode || !issueDate) return null;
-      const bondShortName = primaryRowValue(row, ['標的名稱', '債券名稱', 'bondName', 'companyName', '公司名稱']);
-      const issuerName = primaryRowValue(row, ['companyName', '公司名稱', '標的名稱']);
+      const name = primaryRowValue(row, ['標的名稱', '債券名稱', 'bondName', 'companyName', '公司名稱']);
+      const issueDate = pickPrimaryDate(row);
       return {
+        ...row,
         bondCode,
-        bondShortName,
+        bondShortName: name,
         issuerCode: primaryRowValue(row, ['公司代號', 'issuerCode']),
-        issuerName,
+        issuerName: primaryRowValue(row, ['companyName', '公司名稱', '標的名稱']) || name,
         issueDate,
         listedDateROC: issueDate,
         industryCategory: primaryRowValue(row, ['產業別', 'officialIndustry']),
-        redemptionStatus: 'normal',
-        redemptionSummary: '',
-        redemptionAlertLevel: '',
-        issuancePurpose: '',
-        issuancePurposeTags: [],
+        redemptionStatus: row.redemptionStatus || 'normal',
+        issuancePurpose: row.issuancePurpose || '',
         sourceType: row.sourceType || '',
         sourceUrl: row.sourceUrl || row.officialSourceUrl || '',
         primaryMarketStatus: row.status || '',
-        stockMarket: '尚未掛牌'
+        stockMarket: row.stockMarket || '尚未掛牌',
+        isPrimaryMarketSupplement: true
       };
     };
 
-    const mergeRecentAndPrimaryRows = (baseRows, primaryData) => {
-      const rows = Array.isArray(baseRows) ? baseRows.slice() : [];
-      const existingCodes = new Set(rows.map((row) => String(row.bondCode || '').trim()).filter(Boolean));
-      primaryMarketRowsForRecentView(primaryData).forEach((primaryRow) => {
-        const recentRow = toRecentRowFromPrimary(primaryRow);
-        if (!recentRow || existingCodes.has(recentRow.bondCode)) return;
-        if (!isRecentOrUpcomingIssue(recentRow)) return;
-        rows.push(recentRow);
-        existingCodes.add(recentRow.bondCode);
+    const primaryMarketRowsForRecentView = () => {
+      const sections = Array.isArray(primary.sections) ? primary.sections : [];
+      return sections
+        .flatMap((section) => Array.isArray(section.rows)
+          ? section.rows.map((row) => ({ ...row, status: row.status || section.id }))
+          : [])
+        .map(normalizePrimaryRecentRow)
+        .filter((row) => row.bondCode)
+        .filter((row) => row.bondShortName || row.issuerName)
+        .filter((row) => isRecentOrUpcomingIssue(row));
+    };
+
+    const mergeRecentAndPrimaryRows = (baseRows) => {
+      const rows = Array.isArray(baseRows) ? baseRows : [];
+      const seen = new Set(rows.map((row) => String(row.bondCode || '').trim()).filter(Boolean));
+      const supplements = primaryMarketRowsForRecentView().filter((row) => {
+        if (!row.bondCode || seen.has(row.bondCode)) return false;
+        seen.add(row.bondCode);
+        return true;
       });
-      return rows;
+      return [...rows, ...supplements];
     };
 
     const recentBaseRows = Array.isArray(raw.rows) ? raw.rows : [];
-    const recentCombinedRows = mergeRecentAndPrimaryRows(recentBaseRows, primary);
+    const recentCombinedRows = mergeRecentAndPrimaryRows(recentBaseRows);
     const sorted = recentCombinedRows
       .slice()
       .sort((a, b) => (toDate(b.issueDate || b.listedDateROC)?.getTime() || 0) - (toDate(a.issueDate || a.listedDateROC)?.getTime() || 0));
