@@ -386,16 +386,26 @@
       display: inline-flex;
       align-items: center;
       gap: 5px;
+      border: 1px solid #f3d3a1;
       padding: 4px 8px;
       border-radius: 999px;
       background: #fff7e8;
       color: #8a5a13;
       font-size: 12px;
       font-weight: 800;
+      cursor: pointer;
+    }
+    .weekly-product-chip.active {
+      background: #1d4ed8;
+      color: #fff;
+      border-color: #1d4ed8;
     }
     .weekly-product-chip strong {
       color: #c45d15;
       font-size: 13px;
+    }
+    .weekly-product-chip.active strong {
+      color: #fff;
     }
     .weekly-rank-count {
       margin-top: 6px;
@@ -890,6 +900,7 @@
     const weeklyProductSummaryEl = document.getElementById('weekly-product-summary');
     let currentView = 'recent';
     let weeklyRankExpanded = false;
+    let selectedWeeklyProductTag = '';
 
     const toDate = (value) => {
       if (!value) return null;
@@ -1370,24 +1381,34 @@
           productTagsByCode.set(code, Array.isArray(row.productTags) ? row.productTags : []);
         }
       });
+      const getProductTagsForWeeklyItem = (item) => [...new Set(productTagsByCode.get(String(item.stockCode || '')) || item.productTags || [])];
       const productCounts = new Map();
       ranking.slice(0, 30).forEach((item) => {
-        const tags = [...new Set(productTagsByCode.get(String(item.stockCode || '')) || item.productTags || [])];
+        const tags = getProductTagsForWeeklyItem(item);
         tags.forEach((tag) => productCounts.set(tag, (productCounts.get(tag) || 0) + 1));
       });
       const productTop10 = [...productCounts.entries()]
         .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'zh-TW'))
         .slice(0, 10);
+      if (selectedWeeklyProductTag && !productCounts.has(selectedWeeklyProductTag)) {
+        selectedWeeklyProductTag = '';
+      }
+      const baseRanking = ranking.slice(0, 30);
+      const visibleRanking = selectedWeeklyProductTag
+        ? baseRanking.filter((item) => getProductTagsForWeeklyItem(item).includes(selectedWeeklyProductTag))
+        : ranking.slice(0, weeklyRankExpanded ? 30 : 10);
       weeklyProductSummaryEl.innerHTML = productTop10.length
-        ? productTop10.map(([tag, count]) => `<span class="weekly-product-chip">${escapeHtml(tag)} <strong>${escapeHtml(count)}</strong></span>`).join('')
+        ? productTop10.map(([tag, count]) => `<button class="weekly-product-chip ${tag === selectedWeeklyProductTag ? 'active' : ''}" type="button" data-weekly-product-tag="${escapeHtml(tag)}">${escapeHtml(tag)} <strong>${escapeHtml(count)}</strong></button>`).join('')
         : '';
       weeklyRankPanelEl.hidden = false;
-      weeklyRankToggleEl.hidden = ranking.length <= 10;
+      weeklyRankToggleEl.hidden = Boolean(selectedWeeklyProductTag) || ranking.length <= 10;
       weeklyRankToggleEl.textContent = weeklyRankExpanded ? '收合至前 10 名' : '展開 11–30 名';
-      weeklyRankNoteEl.textContent = `統計週別：${tracker.currentWeek ? fmtDate(tracker.currentWeek).replaceAll('-', '/') : '-'}｜同週只計一次｜${weeklyRankExpanded ? '顯示前 30 名' : '顯示前 10 名'}`;
-      weeklyRankListEl.innerHTML = ranking.slice(0, weeklyRankExpanded ? 30 : 10).map((item) => {
+      weeklyRankNoteEl.textContent = selectedWeeklyProductTag
+        ? `統計週別：${tracker.currentWeek ? fmtDate(tracker.currentWeek).replaceAll('-', '/') : '-'}｜已篩選產品標籤：${selectedWeeklyProductTag}｜顯示 ${visibleRanking.length} 檔`
+        : `統計週別：${tracker.currentWeek ? fmtDate(tracker.currentWeek).replaceAll('-', '/') : '-'}｜同週只計一次｜${weeklyRankExpanded ? '顯示前 30 名' : '顯示前 10 名'}`;
+      weeklyRankListEl.innerHTML = visibleRanking.map((item) => {
         const change = item.latestWeeklyChangePct == null ? '-' : `${item.latestWeeklyChangePct >= 0 ? '+' : ''}${fmtPct(item.latestWeeklyChangePct, 1)}`;
-        const tags = (productTagsByCode.get(String(item.stockCode || '')) || item.productTags || []).slice(0, 3);
+        const tags = getProductTagsForWeeklyItem(item).slice(0, 3);
         const tagLine = tags.length ? `<span class="weekly-rank-tags">${tags.map((tag) => `<span class="weekly-rank-tag">${escapeHtml(tag)}</span>`).join('')}</span>` : '';
         return `
           <div class="weekly-rank-item" title="${escapeHtml(tags.join('、'))}">
@@ -1774,6 +1795,13 @@
     });
     weeklyRankToggleEl.addEventListener('click', () => {
       weeklyRankExpanded = !weeklyRankExpanded;
+      renderWeeklyTop30Ranking();
+    });
+    weeklyProductSummaryEl.addEventListener('click', (event) => {
+      const button = event.target.closest('[data-weekly-product-tag]');
+      if (!button) return;
+      const tag = button.dataset.weeklyProductTag || '';
+      selectedWeeklyProductTag = selectedWeeklyProductTag === tag ? '' : tag;
       renderWeeklyTop30Ranking();
     });
     [searchInputEl, highFilterEl].forEach((control) => control.addEventListener('input', () => {
