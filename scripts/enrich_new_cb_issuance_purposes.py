@@ -8,7 +8,7 @@ import re
 import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from urllib.parse import quote_plus, unquote, urlparse, parse_qs
+from urllib.parse import quote_plus, unquote, urlparse, parse_qs, urljoin
 from urllib.request import Request, urlopen
 
 
@@ -37,6 +37,10 @@ OFFICIAL_DOMAINS = (
     "twsa.org.tw",
     "www.twsa.org.tw",
 )
+YAHOO_DOMAINS = (
+    "tw.stock.yahoo.com",
+)
+TWSA_UNDERWRITING_URL = "https://web.twsa.org.tw/Edoc2/Default.aspx?Year={year}"
 PURPOSE_KEYWORDS = [
     "募得價款之用途及運用計畫",
     "募集資金用途",
@@ -103,7 +107,12 @@ def is_official_url(url: str) -> bool:
     return any(host == domain or host.endswith("." + domain) for domain in OFFICIAL_DOMAINS)
 
 
-def extract_search_urls(page: str) -> list[str]:
+def is_yahoo_url(url: str) -> bool:
+    host = urlparse(url).netloc.lower()
+    return any(host == domain or host.endswith("." + domain) for domain in YAHOO_DOMAINS)
+
+
+def extract_search_urls(page: str, predicate=is_official_url) -> list[str]:
     urls: list[str] = []
     for match in re.finditer(r'href=["\']([^"\']+)["\']', page):
         href = html.unescape(match.group(1))
@@ -113,7 +122,7 @@ def extract_search_urls(page: str) -> list[str]:
             href = unquote(href.split("/RU=", 1)[1].split("/RK=", 1)[0])
         if href.startswith("//"):
             href = "https:" + href
-        if href.startswith("http") and is_official_url(href) and href not in urls:
+        if href.startswith("http") and predicate(href) and href not in urls:
             urls.append(href)
     return urls
 
@@ -127,6 +136,24 @@ def search_official_urls(query: str, timeout: int, max_candidates: int) -> list[
     for url in search_urls:
         try:
             urls.extend(extract_search_urls(fetch_text(url, timeout=timeout)))
+        except Exception:
+            continue
+    unique: list[str] = []
+    for url in urls:
+        if url not in unique:
+            unique.append(url)
+    return unique[:max_candidates]
+
+
+def search_yahoo_urls(query: str, timeout: int, max_candidates: int) -> list[str]:
+    urls: list[str] = []
+    search_urls = [
+        f"https://duckduckgo.com/html/?q={quote_plus('site:tw.stock.yahoo.com/news ' + query)}",
+        f"https://tw.search.yahoo.com/search?p={quote_plus('site:tw.stock.yahoo.com/news ' + query)}",
+    ]
+    for url in search_urls:
+        try:
+            urls.extend(extract_search_urls(fetch_text(url, timeout=timeout), predicate=is_yahoo_url))
         except Exception:
             continue
     unique: list[str] = []
@@ -173,14 +200,14 @@ def load_candidates() -> list[dict]:
         code = str(row.get("bondCode") or "").strip()
         if not code:
             continue
-            candidates.setdefault(code, {
-                "bondCode": code,
-                "bondName": row.get("bondShortName") or row.get("bondName") or "",
-                "issuerCode": str(row.get("issuerCode") or "").strip(),
-                "issuerName": row.get("issuerName") or "",
-                "foundInRecentData": True,
-                "foundInPrimaryMarketData": False,
-            })
+        candidates.setdefault(code, {
+            "bondCode": code,
+            "bondName": row.get("bondShortName") or row.get("bondName") or "",
+            "issuerCode": str(row.get("issuerCode") or "").strip(),
+            "issuerName": row.get("issuerName") or "",
+            "foundInRecentData": True,
+            "foundInPrimaryMarketData": False,
+        })
 
     primary = parse_js_data(PRIMARY_DATA_PATH, PRIMARY_PREFIX)
     for section in primary.get("sections", []):
@@ -236,25 +263,81 @@ def identity_matched(text: str, row: dict) -> bool:
     )
 
 
-def extract_evidence(text: str) -> str:
+def extract_links(page: str, base_url: str) -> list[str]:
+    links: list[str] = []
+    for match in re.finditer(r'href=["\']([^"\']+)["\']', page):
+        href = html.unescape(match.group(1)).strip()
+        if not href or href.startswith("#") or href.lower().startswith("javascript:"):
+            continue
+        url = urljoin(base_url, href)
+        if url not in links:
+            links.append(url)
+    return links
+
+
+def fetch_twsa_underwriting_documents(year: int, row: dict, timeout: int) -> list[str]:
+    entry_url = TWSA_UNDERWRITING_URL.format(year=year)
+    try:
+        page = fetch_text(entry_url, timeout=timeout)
+    except Exception:
+        return []
+    documents: list[str] = []
+    for tr in re.findall(r"(?is)<tr[^>]*>(.*?)</tr>", page):
+        text = clean_text(tr)
+        if not identity_matched(text, row):
+            continue
+        if "轉換公司債" not in text and "可轉換公司債" not in text:
+            continue
+        for link in extract_links(tr, entry_url):
+            if link not in documents:
+                documents.append(link)
+    return documents
+
+
+def current_twsa_years() -> list[int]:
+    year = datetime.now(TZ).year
+    return list(dict.fromkeys([year, year - 1911, year - 1, year - 1912]))
+
+
+def fetch_document_text(url: str, timeout: int) -> tuple[str, str]:
+    if urlparse(url).path.lower().endswith(".pdf"):
+        return "", "official_pdf_found_but_not_parsed"
+    try:
+        return clean_text(fetch_text(url, timeout=timeout)), ""
+    except TimeoutError:
+        return "", "official_source_timeout"
+    except Exception:
+        return "", "official_source_format_changed"
+
+
+def extract_use_of_proceeds(text: str) -> tuple[str, str, list[str]]:
     for keyword in PURPOSE_KEYWORDS:
         idx = text.find(keyword)
         if idx >= 0:
             start = max(0, idx - 60)
             end = min(len(text), idx + 260)
-            return text[start:end].strip()
-    return ""
+            evidence = text[start:end].strip()
+            purposes = classify_purposes(evidence)
+            if not purposes and any(label in evidence for label in ["資金運用計畫", "募集資金用途", "發行目的", "計畫項目"]):
+                purposes = ["其他"]
+            return evidence, make_summary(evidence), purposes
+    return "", "", []
+
+
+def extract_evidence(text: str) -> str:
+    evidence, _summary, _purposes = extract_use_of_proceeds(text)
+    return evidence
 
 
 def classify_purposes(text: str) -> list[str]:
     rules = [
         ("償還借款", ["償還銀行借款", "償還金融機構借款", "償還借款"]),
-        ("充實營運資金", ["充實營運資金", "營運週轉金", "營運資金"]),
-        ("購置設備", ["購置機器設備", "購置設備", "機器設備"]),
-        ("建置廠房", ["興建廠房", "建置廠房", "購置廠房"]),
-        ("擴廠", ["擴充產能", "產能擴充", "擴建", "擴廠"]),
+        ("充實營運資金", ["充實營運資金", "營運週轉金", "充實營運週轉", "營運資金"]),
+        ("購置設備", ["購置機器設備", "購置設備", "取得設備", "機器設備"]),
+        ("建置廠房", ["興建廠房", "建置廠房", "擴建廠房", "購置廠房"]),
+        ("擴廠", ["擴充產能", "產能擴充", "擴建", "擴廠", "擴產"]),
         ("轉投資", ["轉投資子公司", "增加投資", "轉投資", "投資子公司"]),
-        ("研發支出", ["研發支出", "研發", "技術開發"]),
+        ("研發支出", ["研發設備", "研發支出", "產品開發", "研發", "技術開發"]),
         ("原物料採購", ["原物料採購", "購買原料", "採購原料"]),
     ]
     purposes: list[str] = []
@@ -291,43 +374,118 @@ def build_queries(row: dict) -> list[str]:
     ]
 
 
+def build_yahoo_queries(row: dict) -> list[str]:
+    code = row.get("bondCode") or ""
+    name = row.get("bondName") or ""
+    issuer = row.get("issuerName") or ""
+    return [
+        f"{issuer} 轉換公司債 資金用途",
+        f"{issuer} CB 資金用途",
+        f"{issuer} 可轉債 償還借款",
+        f"{issuer} 可轉債 充實營運資金",
+        f"{issuer} 轉換公司債 公開說明書",
+        f"{name} 資金用途",
+        f"{code} 資金用途",
+    ]
+
+
+def source_from_url(url: str, yahoo: bool = False) -> str:
+    if yahoo:
+        return "yahoo_news_with_explicit_use_of_proceeds"
+    host = urlparse(url).netloc.lower()
+    if "twsa.org.tw" in host:
+        return "official_twsa"
+    if "mops" in host:
+        return "official_mops"
+    if "tpex" in host:
+        return "official_tpex"
+    if "twse" in host:
+        return "official_twse"
+    return "official_public_document"
+
+
+def discover_official_document_urls(row: dict, timeout: int, max_candidates: int) -> list[str]:
+    urls: list[str] = []
+    for year in current_twsa_years():
+        urls.extend(fetch_twsa_underwriting_documents(year, row, timeout=timeout))
+    for query in build_queries(row):
+        urls.extend(search_official_urls(query, timeout=timeout, max_candidates=max_candidates))
+    unique: list[str] = []
+    for url in urls:
+        if url not in unique:
+            unique.append(url)
+    return unique
+
+
+def discover_yahoo_news_urls(row: dict, timeout: int, max_candidates: int) -> list[str]:
+    urls: list[str] = []
+    for query in build_yahoo_queries(row):
+        urls.extend(search_yahoo_urls(query, timeout=timeout, max_candidates=max_candidates))
+    unique: list[str] = []
+    for url in urls:
+        if url not in unique:
+            unique.append(url)
+    return unique
+
+
 def find_official_purpose(row: dict, timeout: int, max_candidates: int) -> tuple[dict | None, str, list[str]]:
     checked_urls: list[str] = []
+    row["_searchedOfficialUrls"] = []
+    row["_searchedYahooUrls"] = []
+    row["_foundDocumentUrls"] = []
     pdf_found = False
-    for query in build_queries(row):
-        urls = search_official_urls(query, timeout=timeout, max_candidates=max_candidates)
-        for url in urls:
-            if url in checked_urls:
-                continue
-            checked_urls.append(url)
-            if urlparse(url).path.lower().endswith(".pdf"):
-                pdf_found = True
-                continue
-            try:
-                page = fetch_text(url, timeout=timeout)
-            except Exception:
-                continue
-            text = clean_text(page)
-            if not identity_matched(text, row):
-                continue
-            evidence = extract_evidence(text)
-            if not evidence:
-                continue
-            purposes = classify_purposes(evidence)
-            if not purposes:
-                continue
+    official_urls = discover_official_document_urls(row, timeout=timeout, max_candidates=max_candidates)
+    row["_searchedOfficialUrls"] = official_urls
+    for url in official_urls:
+        if url in checked_urls:
+            continue
+        checked_urls.append(url)
+        row["_foundDocumentUrls"].append(url)
+        text, fetch_reason = fetch_document_text(url, timeout=timeout)
+        if fetch_reason == "official_pdf_found_but_not_parsed":
+            pdf_found = True
+            continue
+        if not text or not identity_matched(text, row):
+            continue
+        evidence, summary, purposes = extract_use_of_proceeds(text)
+        if evidence and purposes:
             return {
                 "bondCode": row["bondCode"],
                 "issuerCode": row.get("issuerCode") or "",
                 "issuerName": row.get("issuerName") or "",
                 "purposes": purposes,
-                "summary": make_summary(evidence),
-                "source": "官方公開資料",
+                "summary": summary,
+                "source": source_from_url(url),
                 "sourceUrl": url,
                 "evidenceText": evidence,
+                "retry": False,
                 "updatedAt": today_text(),
             }, "matched_official_source", checked_urls
-            time.sleep(0.2)
+
+    yahoo_urls = discover_yahoo_news_urls(row, timeout=timeout, max_candidates=max_candidates)
+    row["_searchedYahooUrls"] = yahoo_urls
+    for url in yahoo_urls:
+        if url in checked_urls:
+            continue
+        checked_urls.append(url)
+        text, _fetch_reason = fetch_document_text(url, timeout=timeout)
+        if not text or not identity_matched(text, row):
+            continue
+        evidence, summary, purposes = extract_use_of_proceeds(text)
+        if evidence and purposes:
+            return {
+                "bondCode": row["bondCode"],
+                "issuerCode": row.get("issuerCode") or "",
+                "issuerName": row.get("issuerName") or "",
+                "purposes": purposes,
+                "summary": summary,
+                "source": "yahoo_news_with_explicit_use_of_proceeds",
+                "sourceUrl": url,
+                "evidenceText": evidence,
+                "retry": False,
+                "updatedAt": today_text(),
+            }, "matched_yahoo_explicit_use_of_proceeds", checked_urls
+        time.sleep(0.2)
     return None, "official_pdf_found_but_not_parsed" if pdf_found else "official_document_not_yet_fetched", checked_urls
 
 
@@ -343,6 +501,9 @@ def log_row(row: dict, action: str, record: dict | None, reason: str) -> dict:
         "foundInRecentData": row.get("foundInRecentData", False),
         "foundInPrimaryMarketData": row.get("foundInPrimaryMarketData", False),
         "existingPurposeStatus": existing_status,
+        "searchedOfficialUrls": " | ".join(row.get("_searchedOfficialUrls") or []),
+        "searchedYahooUrls": " | ".join(row.get("_searchedYahooUrls") or []),
+        "foundDocumentUrls": " | ".join(row.get("_foundDocumentUrls") or []),
         "action": action,
         "purposes": "、".join(record.get("purposes") or []),
         "summary": record.get("summary") or "",
@@ -356,7 +517,7 @@ def log_row(row: dict, action: str, record: dict | None, reason: str) -> dict:
 
 def write_log(rows: list[dict]) -> None:
     LOG_PATH.parent.mkdir(parents=True, exist_ok=True)
-    fields = ["checkedAt", "bondCode", "bondName", "issuerCode", "issuerName", "foundInRecentData", "foundInPrimaryMarketData", "existingPurposeStatus", "action", "purposes", "summary", "source", "sourceUrl", "evidenceText", "reason", "retry"]
+    fields = ["checkedAt", "bondCode", "bondName", "issuerCode", "issuerName", "foundInRecentData", "foundInPrimaryMarketData", "existingPurposeStatus", "searchedOfficialUrls", "searchedYahooUrls", "foundDocumentUrls", "sourceUrl", "action", "purposes", "summary", "source", "evidenceText", "reason", "retry"]
     with LOG_PATH.open("w", encoding="utf-8-sig", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=fields)
         writer.writeheader()
@@ -420,14 +581,15 @@ def main() -> int:
             enriched += 1
             logs.append(log_row(row, "enriched", record, reason))
         else:
+            pending_source_url = (row.get("_foundDocumentUrls") or [""])[0] if reason == "official_pdf_found_but_not_parsed" else ""
             pending_record = {
                 "bondCode": code,
                 "issuerCode": row.get("issuerCode") or "",
                 "issuerName": row.get("issuerName") or "",
                 "purposes": [],
-                "summary": "待查：尚未成功抓取官方資金用途文件",
+                "summary": "待查：已找到官方文件但尚未成功解析資金用途" if reason == "official_pdf_found_but_not_parsed" else "待查：尚未成功抓取官方資金用途文件",
                 "source": "search_pending",
-                "sourceUrl": "",
+                "sourceUrl": pending_source_url,
                 "evidenceText": "",
                 "retry": True,
                 "updatedAt": today_text(),
