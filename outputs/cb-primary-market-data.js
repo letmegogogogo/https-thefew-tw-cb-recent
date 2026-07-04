@@ -1,7 +1,7 @@
 window.CB_PRIMARY_MARKET_DATA = {
   "sheetTitle": "CB初級市場官方公開資訊",
-  "updatedAt": "2026/07/02",
-  "fetchedAt": "2026-07-02T18:15:06+08:00",
+  "updatedAt": "2026/07/04",
+  "fetchedAt": "2026-07-04T10:56:54+08:00",
   "source": "官方公開資訊",
   "sourceType": "success",
   "sourceUrl": "",
@@ -9,7 +9,7 @@ window.CB_PRIMARY_MARKET_DATA = {
   "sections": [
     {
       "id": "auction",
-      "title": "詢圈 / 競拍",
+      "title": "?? / ??",
       "status": "bookbuilding_auction",
       "headers": [
         "CB代碼",
@@ -47,39 +47,6 @@ window.CB_PRIMARY_MARKET_DATA = {
       "rows": [
         {
           "CB代碼": "",
-          "標的名稱": "新盛力科技股份有限公司",
-          "公司代號": "",
-          "公司名稱": "新盛力科技股份有限公司",
-          "債券名稱": "新盛力科技股份有限公司",
-          "發行期間年": "",
-          "發行金額億": "",
-          "公告日期": "2026-05-18",
-          "董事會日期": "",
-          "送件日": "",
-          "生效日": "",
-          "詢圈起日": "",
-          "詢圈迄日": "",
-          "競拍起日": "",
-          "競拍迄日": "",
-          "開標日": "",
-          "掛牌日": "",
-          "主辦承銷商": "台新綜合證券股份有限公司",
-          "信用等級 / 擔保行": "",
-          "詢圈 / 競拍": "競價拍賣",
-          "產業別": "",
-          "資本額億": "",
-          "status": "bookbuilding_auction",
-          "sourceType": "official_underwriting",
-          "source": "證券商公會承銷公告",
-          "sourceUrl": "https://web.twsa.org.tw/Edoc2/Default.aspx?Year=2026",
-          "officialSourceUrl": "https://web.twsa.org.tw/Edoc2/Default.aspx?Year=2026",
-          "officialEvidenceText": "115196 2026/05/18 台新綜合證券股份有限公司 新盛力科技股份有限公司 包銷 公司債 無擔保轉換公司債 競價拍賣 正常",
-          "updatedAt": "2026-07-02T18:15:06+08:00",
-          "validationStatus": "needs_review",
-          "staleReason": "官方公告未提供完整CB代碼"
-        },
-        {
-          "CB代碼": "",
           "標的名稱": "長興材料工業股份有限公司",
           "公司代號": "",
           "公司名稱": "長興材料工業股份有限公司",
@@ -107,7 +74,7 @@ window.CB_PRIMARY_MARKET_DATA = {
           "sourceUrl": "https://web.twsa.org.tw/Edoc2/Default.aspx?Year=2026",
           "officialSourceUrl": "https://web.twsa.org.tw/Edoc2/Default.aspx?Year=2026",
           "officialEvidenceText": "115207 2026/05/26 台新綜合證券股份有限公司 長興材料工業股份有限公司 包銷 公司債 無擔保轉換公司債 競價拍賣 正常",
-          "updatedAt": "2026-07-02T18:15:06+08:00",
+          "updatedAt": "2026-07-04T10:56:54+08:00",
           "validationStatus": "needs_review",
           "staleReason": "官方公告未提供完整CB代碼"
         },
@@ -140,7 +107,7 @@ window.CB_PRIMARY_MARKET_DATA = {
           "sourceUrl": "https://web.twsa.org.tw/Edoc2/Default.aspx?Year=2026",
           "officialSourceUrl": "https://web.twsa.org.tw/Edoc2/Default.aspx?Year=2026",
           "officialEvidenceText": "115208 2026/05/20 凱基證券股份有限公司 昇達科技股份有限公司 包銷 公司債 無擔保轉換公司債 競價拍賣 正常",
-          "updatedAt": "2026-07-02T18:15:06+08:00",
+          "updatedAt": "2026-07-04T10:56:54+08:00",
           "validationStatus": "needs_review",
           "staleReason": "官方公告未提供完整CB代碼"
         },
@@ -173,7 +140,7 @@ window.CB_PRIMARY_MARKET_DATA = {
           "sourceUrl": "https://web.twsa.org.tw/Edoc2/Default.aspx?Year=2026",
           "officialSourceUrl": "https://web.twsa.org.tw/Edoc2/Default.aspx?Year=2026",
           "officialEvidenceText": "115209 2026/05/26 凱基證券股份有限公司 正基科技股份有限公司 包銷 公司債 無擔保轉換公司債 詢價圈購 正常",
-          "updatedAt": "2026-07-02T18:15:06+08:00",
+          "updatedAt": "2026-07-04T10:56:54+08:00",
           "validationStatus": "needs_review",
           "staleReason": "官方公告未提供完整CB代碼"
         },
@@ -206,7 +173,7 @@ window.CB_PRIMARY_MARKET_DATA = {
           "sourceUrl": "https://web.twsa.org.tw/Edoc2/Default.aspx?Year=2026",
           "officialSourceUrl": "https://web.twsa.org.tw/Edoc2/Default.aspx?Year=2026",
           "officialEvidenceText": "115210 2026/05/21 凱基證券股份有限公司 岳豐科技股份有限公司 包銷 公司債 有擔保轉換公司債 競價拍賣 正常",
-          "updatedAt": "2026-07-02T18:15:06+08:00",
+          "updatedAt": "2026-07-04T10:56:54+08:00",
           "validationStatus": "needs_review",
           "staleReason": "官方公告未提供完整CB代碼"
         },
@@ -239,7 +206,7 @@ window.CB_PRIMARY_MARKET_DATA = {
           "sourceUrl": "https://web.twsa.org.tw/Edoc2/Default.aspx?Year=2026",
           "officialSourceUrl": "https://web.twsa.org.tw/Edoc2/Default.aspx?Year=2026",
           "officialEvidenceText": "115218 2026/05/29 凱基證券股份有限公司 旺矽科技股份有限公司 包銷 公司債 無擔保轉換公司債 詢價圈購 正常",
-          "updatedAt": "2026-07-02T18:15:06+08:00",
+          "updatedAt": "2026-07-04T10:56:54+08:00",
           "validationStatus": "needs_review",
           "staleReason": "官方公告未提供完整CB代碼"
         },
@@ -272,7 +239,7 @@ window.CB_PRIMARY_MARKET_DATA = {
           "sourceUrl": "https://web.twsa.org.tw/Edoc2/Default.aspx?Year=2026",
           "officialSourceUrl": "https://web.twsa.org.tw/Edoc2/Default.aspx?Year=2026",
           "officialEvidenceText": "115224 2026/06/05 台新綜合證券股份有限公司 英濟股份有限公司 包銷 公司債 有擔保轉換公司債 競價拍賣 正常",
-          "updatedAt": "2026-07-02T18:15:06+08:00",
+          "updatedAt": "2026-07-04T10:56:54+08:00",
           "validationStatus": "needs_review",
           "staleReason": "官方公告未提供完整CB代碼"
         },
@@ -305,7 +272,7 @@ window.CB_PRIMARY_MARKET_DATA = {
           "sourceUrl": "https://web.twsa.org.tw/Edoc2/Default.aspx?Year=2026",
           "officialSourceUrl": "https://web.twsa.org.tw/Edoc2/Default.aspx?Year=2026",
           "officialEvidenceText": "115227 2026/06/08 凱基證券股份有限公司 至上電子股份有限公司 包銷 公司債 無擔保轉換公司債 詢價圈購 正常",
-          "updatedAt": "2026-07-02T18:15:06+08:00",
+          "updatedAt": "2026-07-04T10:56:54+08:00",
           "validationStatus": "needs_review",
           "staleReason": "官方公告未提供完整CB代碼"
         },
@@ -338,7 +305,7 @@ window.CB_PRIMARY_MARKET_DATA = {
           "sourceUrl": "https://web.twsa.org.tw/Edoc2/Default.aspx?Year=2026",
           "officialSourceUrl": "https://web.twsa.org.tw/Edoc2/Default.aspx?Year=2026",
           "officialEvidenceText": "115236 2026/06/09 凱基證券股份有限公司 正基科技股份有限公司 包銷 公司債 無擔保轉換公司債 競價拍賣 正常",
-          "updatedAt": "2026-07-02T18:15:06+08:00",
+          "updatedAt": "2026-07-04T10:56:54+08:00",
           "validationStatus": "needs_review",
           "staleReason": "官方公告未提供完整CB代碼"
         },
@@ -371,7 +338,7 @@ window.CB_PRIMARY_MARKET_DATA = {
           "sourceUrl": "https://web.twsa.org.tw/Edoc2/Default.aspx?Year=2026",
           "officialSourceUrl": "https://web.twsa.org.tw/Edoc2/Default.aspx?Year=2026",
           "officialEvidenceText": "115239 2026/06/10 凱基證券股份有限公司 宜鼎國際股份有限公司 包銷 公司債 無擔保轉換公司債 競價拍賣 正常",
-          "updatedAt": "2026-07-02T18:15:06+08:00",
+          "updatedAt": "2026-07-04T10:56:54+08:00",
           "validationStatus": "needs_review",
           "staleReason": "官方公告未提供完整CB代碼"
         },
@@ -404,7 +371,7 @@ window.CB_PRIMARY_MARKET_DATA = {
           "sourceUrl": "https://web.twsa.org.tw/Edoc2/Default.aspx?Year=2026",
           "officialSourceUrl": "https://web.twsa.org.tw/Edoc2/Default.aspx?Year=2026",
           "officialEvidenceText": "115240 2026/06/16 華南永昌綜合證券股份有限公司 佐登妮絲集團股份有限公司 包銷 公司債 有擔保轉換公司債 競價拍賣 正常",
-          "updatedAt": "2026-07-02T18:15:06+08:00",
+          "updatedAt": "2026-07-04T10:56:54+08:00",
           "validationStatus": "needs_review",
           "staleReason": "官方公告未提供完整CB代碼"
         },
@@ -437,7 +404,7 @@ window.CB_PRIMARY_MARKET_DATA = {
           "sourceUrl": "https://web.twsa.org.tw/Edoc2/Default.aspx?Year=2026",
           "officialSourceUrl": "https://web.twsa.org.tw/Edoc2/Default.aspx?Year=2026",
           "officialEvidenceText": "115242 2026/06/18 統一綜合證券股份有限公司 擎亞電子股份有限公司 包銷 公司債 無擔保轉換公司債 詢價圈購 正常",
-          "updatedAt": "2026-07-02T18:15:06+08:00",
+          "updatedAt": "2026-07-04T10:56:54+08:00",
           "validationStatus": "needs_review",
           "staleReason": "官方公告未提供完整CB代碼"
         },
@@ -470,7 +437,7 @@ window.CB_PRIMARY_MARKET_DATA = {
           "sourceUrl": "https://web.twsa.org.tw/Edoc2/Default.aspx?Year=2026",
           "officialSourceUrl": "https://web.twsa.org.tw/Edoc2/Default.aspx?Year=2026",
           "officialEvidenceText": "115244 2026/06/18 元大證券股份有限公司 萬潤科技股份有限公司 包銷 公司債 無擔保轉換公司債 競價拍賣 正常",
-          "updatedAt": "2026-07-02T18:15:06+08:00",
+          "updatedAt": "2026-07-04T10:56:54+08:00",
           "validationStatus": "needs_review",
           "staleReason": "官方公告未提供完整CB代碼"
         },
@@ -503,7 +470,7 @@ window.CB_PRIMARY_MARKET_DATA = {
           "sourceUrl": "https://web.twsa.org.tw/Edoc2/Default.aspx?Year=2026",
           "officialSourceUrl": "https://web.twsa.org.tw/Edoc2/Default.aspx?Year=2026",
           "officialEvidenceText": "115245 2026/06/17 凱基證券股份有限公司 南俊國際股份有限公司 包銷 公司債 無擔保轉換公司債 詢價圈購 正常",
-          "updatedAt": "2026-07-02T18:15:06+08:00",
+          "updatedAt": "2026-07-04T10:56:54+08:00",
           "validationStatus": "needs_review",
           "staleReason": "官方公告未提供完整CB代碼"
         },
@@ -536,7 +503,7 @@ window.CB_PRIMARY_MARKET_DATA = {
           "sourceUrl": "https://web.twsa.org.tw/Edoc2/Default.aspx?Year=2026",
           "officialSourceUrl": "https://web.twsa.org.tw/Edoc2/Default.aspx?Year=2026",
           "officialEvidenceText": "115248 2026/06/22 凱基證券股份有限公司 宏致電子股份有限公司 包銷 公司債 無擔保轉換公司債 詢價圈購 正常",
-          "updatedAt": "2026-07-02T18:15:06+08:00",
+          "updatedAt": "2026-07-04T10:56:54+08:00",
           "validationStatus": "needs_review",
           "staleReason": "官方公告未提供完整CB代碼"
         },
@@ -548,7 +515,7 @@ window.CB_PRIMARY_MARKET_DATA = {
           "債券名稱": "證券名稱擎亞三",
           "發行期間年": "",
           "發行金額億": "",
-          "公告日期": "2026-07-03",
+          "公告日期": "",
           "董事會日期": "",
           "送件日": "",
           "生效日": "",
@@ -556,7 +523,7 @@ window.CB_PRIMARY_MARKET_DATA = {
           "詢圈迄日": "",
           "競拍起日": "",
           "競拍迄日": "",
-          "開標日": "2026-07-08",
+          "開標日": "",
           "掛牌日": "",
           "主辦承銷商": "",
           "信用等級 / 擔保行": "",
@@ -568,8 +535,8 @@ window.CB_PRIMARY_MARKET_DATA = {
           "source": "證交所 IPO/SPO 資訊揭露專區 / 更多競拍公告",
           "sourceUrl": "https://mopsov.twse.com.tw/server-java/t39sb01?type0=2&type2_2=15",
           "officialSourceUrl": "https://mopsov.twse.com.tw/server-java/t39sb01?type0=2&type2_2=15",
-          "officialEvidenceText": "本日公告 一週內公告 一月內公告 公告類別： 異常事故公告 例行作業公告 假日測試公告 交易系統(異常事故公告及假日測試公告) 上下市櫃、停止及暫停交易 盤後各項交易 除權除息 競價拍賣 申購 鉅額交易 信用交易—標借、議借、標購 信用交易—停資停券 信用交易—其它 當日沖銷交易 交易-匯率 交易-其他 股票 權證 上市-其他 注意有價證券 處置有價證券 監視-其他 債券 其他 定義說明查詢 關鍵字搜尋： 等級 類別 部門 內容 公告日期 截止日期 建檔日期 建檔時間 一般 競價拍賣 交易部 證券名稱擎亞三 (代號：80963)無擔保可轉換公司債 競價拍賣案件,合格累計投標數量共12838張, 將由證交所於2026/07/03辦理開",
-          "updatedAt": "2026-07-02T18:15:06+08:00",
+          "officialEvidenceText": "臺灣證券交易所 & 證券櫃檯買賣中心 公告 #1 競價拍賣 交易部 證券名稱擎亞三 (代號：80963)無擔保可轉換公司債",
+          "updatedAt": "2026-07-04T10:56:54+08:00",
           "validationStatus": "valid",
           "staleReason": ""
         }
@@ -577,7 +544,7 @@ window.CB_PRIMARY_MARKET_DATA = {
     },
     {
       "id": "filing",
-      "title": "送件中",
+      "title": "???",
       "status": "filing",
       "headers": [
         "CB代碼",
@@ -616,8 +583,47 @@ window.CB_PRIMARY_MARKET_DATA = {
     },
     {
       "id": "board",
-      "title": "董事會通過",
+      "title": "?????",
       "status": "board_approved",
+      "headers": [
+        "CB代碼",
+        "標的名稱",
+        "公司代號",
+        "公司名稱",
+        "債券名稱",
+        "發行期間年",
+        "發行金額億",
+        "公告日期",
+        "董事會日期",
+        "送件日",
+        "生效日",
+        "詢圈起日",
+        "詢圈迄日",
+        "競拍起日",
+        "競拍迄日",
+        "開標日",
+        "掛牌日",
+        "主辦承銷商",
+        "信用等級 / 擔保行",
+        "詢圈 / 競拍",
+        "產業別",
+        "資本額億",
+        "status",
+        "sourceType",
+        "source",
+        "sourceUrl",
+        "officialSourceUrl",
+        "officialEvidenceText",
+        "updatedAt",
+        "validationStatus",
+        "staleReason"
+      ],
+      "rows": []
+    },
+    {
+      "id": "upcoming_listing",
+      "title": "???? / ????",
+      "status": "upcoming_listing",
       "headers": [
         "CB代碼",
         "標的名稱",

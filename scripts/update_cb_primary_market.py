@@ -60,12 +60,14 @@ STATUS_PRIORITY = {
     "board_approved": 1,
     "filing": 2,
     "bookbuilding_auction": 3,
+    "upcoming_listing": 4,
 }
 
 SECTION_META = {
-    "bookbuilding_auction": ("auction", "詢圈 / 競拍"),
-    "filing": ("filing", "送件中"),
-    "board_approved": ("board", "董事會通過"),
+    "bookbuilding_auction": ("auction", "?? / ??"),
+    "filing": ("filing", "???"),
+    "board_approved": ("board", "?????"),
+    "upcoming_listing": ("upcoming_listing", "???? / ????"),
 }
 
 OUTPUT_HEADERS = [
@@ -1451,7 +1453,7 @@ def main() -> int:
         removed_logs,
     )
 
-    counts = {"bookbuilding_auction": 0, "filing": 0, "board_approved": 0}
+    counts = {"bookbuilding_auction": 0, "filing": 0, "board_approved": 0, "upcoming_listing": 0}
     needs_review = 0
     for row in rows:
         if row.get("status") in counts:
@@ -1469,6 +1471,7 @@ def main() -> int:
             "auctionCount",
             "filingCount",
             "boardApprovedCount",
+            "upcomingListingCount",
             "needsReviewCount",
             "removedCount",
             "status",
@@ -1482,6 +1485,7 @@ def main() -> int:
             "auctionCount": str(counts["bookbuilding_auction"]),
             "filingCount": str(counts["filing"]),
             "boardApprovedCount": str(counts["board_approved"]),
+            "upcomingListingCount": str(counts["upcoming_listing"]),
             "needsReviewCount": str(needs_review),
             "removedCount": str(len(removed_logs)),
             "status": status,
@@ -1499,7 +1503,7 @@ def main() -> int:
         f"status={status} rawUrls={official_url_count} parsed={official_parsed_count} "
         f"valid={official_valid_count} auction={counts['bookbuilding_auction']} "
         f"filing={counts['filing']} board={counts['board_approved']} "
-        f"needsReview={needs_review} removed={len(removed_logs)}"
+        f"upcoming={counts['upcoming_listing']} needsReview={needs_review} removed={len(removed_logs)}"
     )
     if args.allow_fubon_reference:
         console_print("notice: --allow-fubon-reference is diagnostic only; Fubon Excel was not written.")

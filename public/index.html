@@ -1032,50 +1032,67 @@
     };
 
     const pickPrimaryDate = (row) => {
-      return primaryRowValue(row, ['掛牌日', 'listingDate', 'issueDate', '發行日', '公告日期', 'announcementDate']);
+      return primaryRowValue(row, ['掛牌日', 'listingDate', 'issueDate', '發行日', '開標日', '競拍起日', '詢圈起日', '公告日期', 'announcementDate', '送件日', '生效日', 'updatedAt']);
     };
 
     const normalizePrimaryRecentRow = (row) => {
-      const bondCode = primaryRowValue(row, ['CB代碼', 'bondCode']);
-      const name = primaryRowValue(row, ['標的名稱', '債券名稱', 'bondName', 'companyName', '公司名稱']);
+      const bondCode = primaryRowValue(row, ['CB??', 'bondCode']);
+      const name = primaryRowValue(row, ['????', '????', 'bondName', 'companyName', '????']);
       const issueDate = pickPrimaryDate(row);
       return {
         ...row,
         bondCode,
         bondShortName: name,
-        issuerCode: primaryRowValue(row, ['公司代號', 'issuerCode']),
-        issuerName: primaryRowValue(row, ['companyName', '公司名稱', '標的名稱']) || name,
+        issuerCode: primaryRowValue(row, ['????', 'issuerCode']),
+        issuerName: primaryRowValue(row, ['companyName', '????', '????']) || name,
         issueDate,
         listedDateROC: issueDate,
-        industryCategory: primaryRowValue(row, ['產業別', 'officialIndustry']),
+        industryCategory: primaryRowValue(row, ['???', 'officialIndustry']),
         redemptionStatus: row.redemptionStatus || 'normal',
         issuancePurpose: row.issuancePurpose || '',
         sourceType: row.sourceType || '',
         sourceUrl: row.sourceUrl || row.officialSourceUrl || '',
         primaryMarketStatus: row.status || '',
-        stockMarket: row.stockMarket || '尚未掛牌',
+        stockMarket: row.stockMarket || '????',
         isPrimaryMarketSupplement: true
       };
+    };
+
+    const primaryRecentKey = (row) => {
+      const bondCode = String(row.bondCode || '').trim();
+      if (bondCode) return `bond:${bondCode}`;
+      const issuerCode = String(row.issuerCode || '').trim();
+      const issuerName = String(row.issuerName || '').trim();
+      const bondName = String(row.bondShortName || row.bondName || '').trim();
+      const date = String(row.issueDate || row.listedDateROC || '').trim();
+      if ((issuerCode || issuerName) && bondName && date) return `primary:${issuerCode || issuerName}:${bondName}:${date}`;
+      if (bondName && date) return `primary-name:${bondName}:${date}`;
+      return '';
     };
 
     const primaryMarketRowsForRecentView = () => {
       const sections = Array.isArray(primary.sections) ? primary.sections : [];
       return sections
         .flatMap((section) => Array.isArray(section.rows)
-          ? section.rows.map((row) => ({ ...row, status: row.status || section.id }))
+          ? section.rows.map((row) => ({ ...row, status: row.status || section.status || section.id }))
           : [])
         .map(normalizePrimaryRecentRow)
-        .filter((row) => row.bondCode)
         .filter((row) => row.bondShortName || row.issuerName)
+        .filter((row) => row.issueDate || row.listedDateROC)
         .filter((row) => isRecentOrUpcomingIssue(row));
     };
 
     const mergeRecentAndPrimaryRows = (baseRows) => {
       const rows = Array.isArray(baseRows) ? baseRows : [];
-      const seen = new Set(rows.map((row) => String(row.bondCode || '').trim()).filter(Boolean));
+      const seen = new Set(rows.map(primaryRecentKey).filter(Boolean));
+      rows.forEach((row) => {
+        const bondCode = String(row.bondCode || '').trim();
+        if (bondCode) seen.add(`bond:${bondCode}`);
+      });
       const supplements = primaryMarketRowsForRecentView().filter((row) => {
-        if (!row.bondCode || seen.has(row.bondCode)) return false;
-        seen.add(row.bondCode);
+        const key = primaryRecentKey(row);
+        if (!key || seen.has(key)) return false;
+        seen.add(key);
         return true;
       });
       return [...rows, ...supplements];
@@ -1154,8 +1171,12 @@
       const alertRows = baseSorted
         .filter(hasRedemptionWarning)
         .sort((a, b) => redemptionSortValue(a) - redemptionSortValue(b) || String(a.bondCode || '').localeCompare(String(b.bondCode || ''), 'zh-TW', { numeric: true }));
-      const normalRows = baseSorted.filter((row) => !hasRedemptionWarning(row));
-      return [...alertRows, ...normalRows];
+      const nonAlertRows = baseSorted.filter((row) => !hasRedemptionWarning(row));
+      const upcomingRows = nonAlertRows
+        .filter((row) => row.isPrimaryMarketSupplement && isUpcomingIssueDate(row.issueDate || row.listedDateROC))
+        .sort((a, b) => (toDate(a.issueDate || a.listedDateROC)?.getTime() || 0) - (toDate(b.issueDate || b.listedDateROC)?.getTime() || 0));
+      const normalRows = nonAlertRows.filter((row) => !(row.isPrimaryMarketSupplement && isUpcomingIssueDate(row.issueDate || row.listedDateROC)));
+      return [...alertRows, ...upcomingRows, ...normalRows];
     };
 
     const filteredRows = () => {

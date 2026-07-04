@@ -1,29 +1,29 @@
 ﻿fetchedAt,sourceType,sourceUrl,fetchStatus,httpStatus,rawCount,parsedCount,error
-2026-07-02T18:15:06+08:00,official_underwriting,https://web.twsa.org.tw/Edoc2/Default.aspx?Year=2026,success,200,252,73,
-2026-07-02T18:15:06+08:00,official_mops,https://mops.twse.com.tw/mops/web/ajax_t05st01,official_fetch_failed,200,1,0,mops_board_approved:mops_security_blocked
-2026-07-02T18:15:06+08:00,official_mops,https://mops.twse.com.tw/mops/web/ajax_t05st01,official_fetch_failed,200,1,0,mops_filing:mops_security_blocked
-2026-07-02T18:15:06+08:00,official_twse,https://mopsov.twse.com.tw/ipospoinform,official_parse_failed,200,1,0,followLinks=4
-2026-07-02T18:15:06+08:00,official_underwriting,http://web2.twsa.org.tw/tib/,official_parse_failed,200,1,0,
-2026-07-02T18:15:06+08:00,official_underwriting,http://web2.twsa.org.tw/BB/,official_parse_failed,200,1,0,
-2026-07-02T18:15:06+08:00,official_twse,https://mopsov.twse.com.tw/server-java/t39sb01?type0=2&type2_2=16,official_parse_failed,200,1,0,
-2026-07-02T18:15:06+08:00,official_twse,https://mopsov.twse.com.tw/server-java/t39sb01?type0=2&type2_2=15,success,200,1,1,
-2026-07-02T18:15:06+08:00,official_twse,https://www.twse.com.tw/zh/announcement/publicForm,official_parse_failed,200,1,0,
-2026-07-02T18:15:06+08:00,official_twse,https://www.twse.com.tw/zh/announcement/notice,official_parse_failed,200,1,0,
-2026-07-02T18:15:06+08:00,official_tpex,https://www.tpex.org.tw/,official_parse_failed,200,1,0,
-2026-07-02T18:15:06+08:00,official_mops,https://mops.twse.com.tw/mops/web/index,official_parse_failed,200,1,0,
-2026-07-02T18:15:06+08:00,official_underwriting,https://www.twsa.org.tw/,official_parse_failed,200,1,0,followLinks=2
-2026-07-02T18:15:06+08:00,official_underwriting,https://www.twsa.org.tw/E01/E014.html,official_parse_failed,200,1,0,
-2026-07-02T18:15:06+08:00,official_underwriting,https://www.twsa.org.tw/E01/E019.html,official_parse_failed,200,1,0,
-2026-07-02T18:15:06+08:00,official_underwriting,https://web2.twsa.org.tw/,official_fetch_failed,,0,0,<urlopen error timed out>
-2026-07-02T18:15:06+08:00,official_csa,search:site:twsa.org.tw 可轉換公司債 詢價圈購,search_success,202,0,0,
-2026-07-02T18:15:06+08:00,official_csa,search:site:web2.twsa.org.tw 可轉換公司債 詢價圈購,search_success,202,0,0,
-2026-07-02T18:15:06+08:00,official_csa,search:site:csa.org.tw 可轉換公司債 詢價圈購,search_success,202,0,0,
-2026-07-02T18:15:06+08:00,official_twse,search:site:twse.com.tw 可轉換公司債 競價拍賣 公開申購,search_success,202,0,0,
-2026-07-02T18:15:06+08:00,official_twse,search:site:twse.com.tw 轉換公司債 詢價圈購 承銷公告,search_success,202,0,0,
-2026-07-02T18:15:06+08:00,official_twse,search:site:twse.com.tw IPO SPO 可轉換公司債 競價拍賣,search_success,202,0,0,
-2026-07-02T18:15:06+08:00,official_tpex,search:site:tpex.org.tw 可轉換公司債 競價拍賣 詢價圈購,search_success,202,0,0,
-2026-07-02T18:15:06+08:00,official_tpex,search:site:tpex.org.tw 可轉換公司債 公開申購 承銷公告,search_success,202,0,0,
-2026-07-02T18:15:06+08:00,official_tpex,search:site:tpex.org.tw 國內可轉換公司債 申報生效,search_success,202,0,0,
-2026-07-02T18:15:06+08:00,official_mops,search:site:mops.twse.com.tw 董事會決議發行國內可轉換公司債,search_success,202,0,0,
-2026-07-02T18:15:06+08:00,official_mops,search:site:mops.twse.com.tw 國內無擔保轉換公司債 申報生效,search_success,202,0,0,
-2026-07-02T18:15:06+08:00,official_mops,search:site:mops.twse.com.tw 募集與發行有價證券 國內可轉換公司債,search_success,202,0,0,
+2026-07-04T10:56:54+08:00,official_underwriting,https://web.twsa.org.tw/Edoc2/Default.aspx?Year=2026,success,200,254,73,
+2026-07-04T10:56:54+08:00,official_mops,https://mops.twse.com.tw/mops/web/ajax_t05st01,official_fetch_failed,200,1,0,mops_board_approved:mops_security_blocked
+2026-07-04T10:56:54+08:00,official_mops,https://mops.twse.com.tw/mops/web/ajax_t05st01,official_fetch_failed,200,1,0,mops_filing:mops_security_blocked
+2026-07-04T10:56:54+08:00,official_twse,https://mopsov.twse.com.tw/ipospoinform,official_parse_failed,200,1,0,followLinks=4
+2026-07-04T10:56:54+08:00,official_underwriting,http://web2.twsa.org.tw/tib/,official_parse_failed,200,1,0,
+2026-07-04T10:56:54+08:00,official_underwriting,http://web2.twsa.org.tw/BB/,official_parse_failed,200,1,0,
+2026-07-04T10:56:54+08:00,official_twse,https://mopsov.twse.com.tw/server-java/t39sb01?type0=2&type2_2=16,official_parse_failed,200,1,0,
+2026-07-04T10:56:54+08:00,official_twse,https://mopsov.twse.com.tw/server-java/t39sb01?type0=2&type2_2=15,success,200,1,1,
+2026-07-04T10:56:54+08:00,official_twse,https://www.twse.com.tw/zh/announcement/publicForm,official_parse_failed,200,1,0,
+2026-07-04T10:56:54+08:00,official_twse,https://www.twse.com.tw/zh/announcement/notice,official_parse_failed,200,1,0,
+2026-07-04T10:56:54+08:00,official_tpex,https://www.tpex.org.tw/,official_fetch_failed,,0,0,<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl.c:1082)>
+2026-07-04T10:56:54+08:00,official_mops,https://mops.twse.com.tw/mops/web/index,official_parse_failed,200,1,0,
+2026-07-04T10:56:54+08:00,official_underwriting,https://www.twsa.org.tw/,official_parse_failed,200,1,0,followLinks=2
+2026-07-04T10:56:54+08:00,official_underwriting,https://www.twsa.org.tw/E01/E014.html,official_parse_failed,200,1,0,
+2026-07-04T10:56:54+08:00,official_underwriting,https://www.twsa.org.tw/E01/E019.html,official_parse_failed,200,1,0,
+2026-07-04T10:56:54+08:00,official_underwriting,https://web2.twsa.org.tw/,official_fetch_failed,,0,0,<urlopen error timed out>
+2026-07-04T10:56:54+08:00,official_csa,search:site:twsa.org.tw 可轉換公司債 詢價圈購,search_success,202,0,0,
+2026-07-04T10:56:54+08:00,official_csa,search:site:web2.twsa.org.tw 可轉換公司債 詢價圈購,search_success,202,0,0,
+2026-07-04T10:56:54+08:00,official_csa,search:site:csa.org.tw 可轉換公司債 詢價圈購,search_success,202,0,0,
+2026-07-04T10:56:54+08:00,official_twse,search:site:twse.com.tw 可轉換公司債 競價拍賣 公開申購,search_success,202,0,0,
+2026-07-04T10:56:54+08:00,official_twse,search:site:twse.com.tw 轉換公司債 詢價圈購 承銷公告,search_success,202,0,0,
+2026-07-04T10:56:54+08:00,official_twse,search:site:twse.com.tw IPO SPO 可轉換公司債 競價拍賣,search_success,202,0,0,
+2026-07-04T10:56:54+08:00,official_tpex,search:site:tpex.org.tw 可轉換公司債 競價拍賣 詢價圈購,search_success,202,0,0,
+2026-07-04T10:56:54+08:00,official_tpex,search:site:tpex.org.tw 可轉換公司債 公開申購 承銷公告,search_success,202,0,0,
+2026-07-04T10:56:54+08:00,official_tpex,search:site:tpex.org.tw 國內可轉換公司債 申報生效,search_success,202,0,0,
+2026-07-04T10:56:54+08:00,official_mops,search:site:mops.twse.com.tw 董事會決議發行國內可轉換公司債,search_success,202,0,0,
+2026-07-04T10:56:54+08:00,official_mops,search:site:mops.twse.com.tw 國內無擔保轉換公司債 申報生效,search_success,202,0,0,
+2026-07-04T10:56:54+08:00,official_mops,search:site:mops.twse.com.tw 募集與發行有價證券 國內可轉換公司債,search_success,202,0,0,
