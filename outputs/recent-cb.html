@@ -606,7 +606,6 @@
     .industry-alert { display: inline-block; margin-top: 4px; padding: 2px 5px; border-radius: 999px; font-size: 0.66rem; font-weight: 800; }
     .industry-alert.up { color: #c92e2e; background: #fff0f0; }
     .industry-alert.down { color: #087f48; background: #eaf8f1; }
-    .catalyst-panel { margin-top: 12px; padding: 12px 14px; border: 1px solid #dbe5ef; border-radius: 10px; background: #fbfcfe; text-align: left; }
     .catalyst-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 8px; color: #294968; font-size: 0.84rem; font-weight: 700; }
     .catalyst-date { color: #8797aa; font-size: 0.68rem; font-weight: 400; }
     .catalyst-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
@@ -1631,29 +1630,8 @@
       const years = [currentYear, currentYear + 1, currentYear + 2];
       const maxAnalysts = Math.max(0, ...years.map((year) => Number(forecast?.years?.[String(year)]?.analysts) || 0));
       const calendarIcon = '<svg class="eps-calendar" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3v3M17 3v3M4 9h16M5 5h14a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
-      const yahooTargetValue = chartNumber(forecast?.targetPrice?.mean);
-      const yahooTargetText = yahooTargetValue == null
-        ? 'Yahoo Finance 目前分析師平均目標價：— / 公開來源未提供'
-        : `Yahoo Finance 目前分析師平均目標價：${fmtPrice(yahooTargetValue, 2)}（非年度目標價）`;
-      const renderTargetSources = (targetInfo) => {
-        const sources = Array.isArray(targetInfo?.sources) ? targetInfo.sources : [];
-        if (!sources.length) return '';
-        const items = sources.slice(0, 6).map((source) => {
-          const title = source.sourceTitle || source.sourceName || source.sourceUrl || '公開來源';
-          const dateText = source.reportDate ? `${escapeHtml(source.reportDate)}｜` : '';
-          const ratingText = source.rating ? `｜${escapeHtml(source.rating)}` : '';
-          const epsText = source.eps != null ? `｜EPS ${fmtPrice(chartNumber(source.eps), 2)}` : '';
-          const peText = source.valuationMultiple != null ? `｜${fmtPrice(chartNumber(source.valuationMultiple), 1)} 倍` : '';
-          const link = source.sourceUrl
-            ? `<a href="${escapeHtml(source.sourceUrl)}" target="_blank" rel="noreferrer noopener">${escapeHtml(title)}</a>`
-            : escapeHtml(title);
-          return `<li>${dateText}${link}｜目標價 ${fmtPrice(chartNumber(source.targetPrice), 2)}${ratingText}${epsText}${peText}</li>`;
-        }).join('');
-        return `<details class="eps-sources"><summary>查看來源明細</summary><ul class="eps-source-list">${items}</ul></details>`;
-      };
       const cards = years.map((year) => {
         const existingItem = forecast?.years?.[String(year)] || {};
-        const targetInfo = forecast?.analystReportTargetsByYear?.[String(year)] || {};
         const epsCandidate = forecast?.analystEpsByYear?.[String(year)]
           ?? forecast?.annualEpsByYear?.[String(year)]
           ?? existingItem.eps;
@@ -1664,39 +1642,18 @@
             : epsCandidate
         );
         const range = chartNumber(item.low) != null && chartNumber(item.high) != null
-          ? `${fmtPrice(chartNumber(item.low), 2)}～${fmtPrice(chartNumber(item.high), 2)}` : '來源未提供區間';
+          ? `${fmtPrice(chartNumber(item.low), 2)}?${fmtPrice(chartNumber(item.high), 2)}` : '???????';
         const analysts = Number(item.analysts) || 0;
         const isFocus = year === currentYear + 1;
-        const focusBadge = isFocus && analysts > 0 && analysts === maxAnalysts ? '<span class="eps-focus-badge">最多分析師</span>' : '';
+        const focusBadge = isFocus && analysts > 0 && analysts === maxAnalysts ? '<span class="eps-focus-badge">?????</span>' : '';
         const epsStats = value == null
-          ? '<div class="eps-stat missing"><span>資料來源</span><strong>公開來源未提供</strong></div>'
-          : `<div class="eps-stat"><span>分析師人數</span><strong>${analysts} 位</strong></div><div class="eps-stat"><span>預估區間</span><strong>${range}</strong></div>`;
-        const targetMean = chartNumber(targetInfo.mean);
-        const targetRange = chartNumber(targetInfo.low) != null && chartNumber(targetInfo.high) != null
-          ? `${fmtPrice(chartNumber(targetInfo.low), 2)}～${fmtPrice(chartNumber(targetInfo.high), 2)}`
-          : '公開來源未提供';
-        const targetCount = Number(targetInfo.count) || 0;
-        const targetDisplay = targetMean == null ? '— / 公開來源未提供' : fmtPrice(targetMean, 2);
-        const targetStats = `<div class="eps-stat${targetMean == null ? ' missing' : ''}"><span>${year} 年目標價均值</span><strong>${targetDisplay}</strong></div><div class="eps-stat${targetMean == null ? ' missing' : ''}"><span>目標價區間</span><strong>${targetRange}</strong></div><div class="eps-stat"><span>目標價來源數</span><strong>${targetCount} 筆</strong></div>${renderTargetSources(targetInfo)}`;
-        return `<div class="eps-card${isFocus ? ' focus' : ''}${value == null ? ' no-data' : ''}"><div class="eps-card-head">${calendarIcon}<span class="eps-year">${year} 年</span>${focusBadge}</div><div class="eps-value">${value == null ? '—' : fmtPrice(value, 2)}</div><div class="eps-divider"></div><div class="eps-stats">${epsStats}${targetStats}</div></div>`;
+          ? '<div class="eps-stat missing"><span>????</span><strong>???????</strong></div>'
+          : `<div class="eps-stat"><span>?????</span><strong>${analysts} ?</strong></div><div class="eps-stat"><span>????</span><strong>${range}</strong></div>`;
+        return `<div class="eps-card${isFocus ? ' focus' : ''}${value == null ? ' no-data' : ''}"><div class="eps-card-head">${calendarIcon}<span class="eps-year">${year} ?</span>${focusBadge}</div><div class="eps-value">${value == null ? '?' : fmtPrice(value, 2)}</div><div class="eps-divider"></div><div class="eps-stats">${epsStats}</div></div>`;
       }).join('');
-      return `<div class="eps-head">法人預估 EPS（分析師共識）與年度目標價</div><div class="eps-grid">${cards}</div><div class="eps-yahoo-target">${escapeHtml(yahooTargetText)}</div><div class="eps-disclaimer">EPS 為分析師年度共識預估；年度目標價僅採公開來源明確可歸屬估值年度的法人／分析師目標價。若無法判斷年度，列為未分類目標價，不會套用到 2026／2027／2028 年卡片；非財務建議。</div>`;
+      return `<div class="eps-head">???? EPS???????</div><div class="eps-grid">${cards}</div>`;
     };
-    const renderCompanyCatalysts = (row) => {
-      const insight = window.CB_COMPANY_INSIGHTS?.[String(row?.issuerCode || '')] || {};
-      const catalysts = Array.isArray(insight.catalysts) ? insight.catalysts : [];
-      const reasons = Array.isArray(insight.conferenceGrowthReasons) ? insight.conferenceGrowthReasons : [];
-      const catalystItems = catalysts.length
-        ? catalysts.map((item) => `<li>${escapeHtml(item)}</li>`).join('')
-        : '<li class="catalyst-empty">Yahoo Finance 目前未提供可核對的法人共識成長數字。</li>';
-      const reasonItems = reasons.length
-        ? reasons.map((item) => `<li>${escapeHtml(item)}</li>`).join('')
-        : '<li class="catalyst-empty">最新法說會簡報未明確揭露可核對的未來成長原因。</li>';
-      const sourceLink = insight.conferenceSourceUrl
-        ? `<a href="${escapeHtml(insight.conferenceSourceUrl)}" target="_blank" rel="noreferrer noopener">公開資訊觀測站法說會資料${insight.conferenceFileName ? `｜${escapeHtml(insight.conferenceFileName)}` : ''}</a>`
-        : '尚未取得法說會公開資料';
-      return `<div class="catalyst-head"><span>成長原因／題材</span><span class="catalyst-date">資料確認日期：${escapeHtml(insight.verifiedAt || '尚未確認')}｜法說日期：${escapeHtml(insight.conferenceDate || '尚未確認')}</span></div><div class="catalyst-grid"><div><div class="catalyst-title">法人共識數字</div><ul class="catalyst-list">${catalystItems}</ul></div><div><div class="catalyst-title">公司法說會公開資訊整理</div><ul class="catalyst-list">${reasonItems}</ul><div class="catalyst-title" style="margin-top:8px">資料來源：${sourceLink}</div></div></div>`;
-    };
+    const renderCompanyCatalysts = () => '';
     const drawHistoryChart = (host, payload, range) => {
       const points = filterChartRange(payload.points || [], range);
       const first = payload.points?.[0]?.date || '-';
@@ -1708,7 +1665,6 @@
         : (payload.error || '尚未取得真實歷史行情');
       host.querySelector('.history-chart').innerHTML = renderChartSvg(points);
       host.querySelector('.eps-panel').innerHTML = renderEpsForecast(chartRowByCode(payload.bondCode));
-      host.querySelector('.catalyst-panel').innerHTML = renderCompanyCatalysts(chartRowByCode(payload.bondCode));
       host.querySelectorAll('[data-range]').forEach((button) => button.classList.toggle('active', button.dataset.range === range));
     };
     const openHistoryChart = async (sourceButton) => {
@@ -1722,7 +1678,7 @@
       const row = chartRowByCode(code);
       const chartRow = document.createElement('tr');
       chartRow.className = 'chart-row';
-      chartRow.innerHTML = `<td colspan="${visibleColumnCount()}"><div class="chart-card"><div class="chart-head"><div><div class="chart-title">${escapeHtml(row?.bondCode || '')} ${escapeHtml(row?.bondShortName || '')}｜發行日起歷史走勢</div><div class="chart-meta">載入中…</div></div><div class="range-tabs"><button data-range="1m">1M</button><button data-range="3m">3M</button><button data-range="6m">6M</button><button class="active" data-range="all">全部</button></div></div><div class="history-chart"><div class="chart-empty">載入歷史資料中…</div></div><div class="eps-panel"><div class="chart-empty">載入法人 EPS 共識中…</div></div><div class="catalyst-panel"><div class="chart-empty">載入成長題材中…</div></div></div></td>`;
+      chartRow.innerHTML = `<td colspan="${visibleColumnCount()}"><div class="chart-card"><div class="chart-head"><div><div class="chart-title">${escapeHtml(row?.bondCode || '')} ${escapeHtml(row?.bondShortName || '')}｜發行日起歷史走勢</div><div class="chart-meta">載入中…</div></div><div class="range-tabs"><button data-range="1m">1M</button><button data-range="3m">3M</button><button data-range="6m">6M</button><button class="active" data-range="all">全部</button></div></div><div class="history-chart"><div class="chart-empty">載入歷史資料中…</div></div><div class="eps-panel"><div class="chart-empty">載入法人 EPS 共識中…</div></div></div></td>`;
       mainRow.after(chartRow);
       const payload = await loadChartData(row);
       if (openChartCode !== code || !chartRow.isConnected) return;

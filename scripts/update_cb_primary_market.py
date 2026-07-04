@@ -44,6 +44,7 @@ FETCH_LOG_PATH = OUTPUT_DIR / "cb-primary-market-official-fetch-log.csv"
 CLASSIFY_LOG_PATH = OUTPUT_DIR / "cb-primary-market-classify-log.csv"
 REMOVED_LOG_PATH = OUTPUT_DIR / "cb-primary-market-removed-log.csv"
 UPDATE_LOG_PATH = OUTPUT_DIR / "cb-primary-market-update-log.csv"
+TARGET_SEARCH_LOG_PATH = OUTPUT_DIR / "cb-primary-market-target-search-log.csv"
 OPTIONAL_SOURCES_PATH = ROOT / "data" / "cb-primary-market-official-sources.json"
 TWSA_UNDERWRITING_URL = "https://web.twsa.org.tw/Edoc2/Default.aspx?Year={year}"
 
@@ -64,10 +65,10 @@ STATUS_PRIORITY = {
 }
 
 SECTION_META = {
-    "bookbuilding_auction": ("auction", "?? / ??"),
-    "filing": ("filing", "???"),
-    "board_approved": ("board", "?????"),
-    "upcoming_listing": ("upcoming_listing", "???? / ????"),
+    "bookbuilding_auction": ("auction", "詢圈 / 競拍"),
+    "filing": ("filing", "送件中"),
+    "board_approved": ("board", "董事會通過"),
+    "upcoming_listing": ("upcoming_listing", "即將掛牌 / 即將發行"),
 }
 
 OUTPUT_HEADERS = [
@@ -112,7 +113,7 @@ OFFICIAL_SOURCE_TYPES = {
     "official_underwriting",
 }
 
-ALLOWED_SOURCE_TYPES = OFFICIAL_SOURCE_TYPES | {"needs_review"}
+ALLOWED_SOURCE_TYPES = OFFICIAL_SOURCE_TYPES | {"needs_review", "news_verified_candidate"}
 
 OFFICIAL_SEARCHES = [
     {
@@ -246,6 +247,66 @@ FOLLOW_LINK_KEYWORDS = [
     "申報生效",
     "董事會決議",
 ]
+
+TARGET_DISCOVERY_KEYWORDS = [
+    "36054",
+    "宏致四",
+    "宏致",
+    "65843",
+    "南俊國際三",
+    "南俊國際",
+    "61876",
+    "萬潤六",
+    "萬潤",
+]
+
+TARGET_DISCOVERY_CASES = [
+    {
+        "bondCode": "36054",
+        "bondName": "???",
+        "issuerName": "??",
+        "queries": ["36054 ???", "??? ???", "?? ?????", "?? CB"],
+    },
+    {
+        "bondCode": "65843",
+        "bondName": "?????",
+        "issuerName": "????",
+        "queries": ["65843 ?????", "????? ???", "???? ?????", "???? CB"],
+    },
+    {
+        "bondCode": "61876",
+        "bondName": "???",
+        "issuerName": "??",
+        "queries": ["61876 ???", "??? ???", "?? ?????", "?? CB"],
+    },
+]
+
+NEWS_SEARCH_SOURCES = [
+    ("Yahoo????", "site:tw.stock.yahoo.com/news"),
+    ("MoneyDJ", "site:moneydj.com"),
+    ("????", "site:ctee.com.tw"),
+    ("????", "site:money.udn.com"),
+    ("???", "site:news.cnyes.com"),
+]
+
+NEWS_DETAIL_KEYWORDS = [
+    "???",
+    "???",
+    "???",
+    "???",
+    "?????",
+    "??",
+    "????",
+    "????",
+    "????",
+    "????",
+    "????",
+    "?????",
+    "?????",
+    "???",
+    "CB",
+]
+
 
 
 @dataclass
@@ -754,25 +815,269 @@ def candidate_segments(text: str) -> List[str]:
 
 
 def duckduckgo_urls(query: str, limit: int, timeout: int) -> Tuple[List[str], str]:
-    url = f"https://duckduckgo.com/html/?q={quote_plus(query)}"
-    raw, http_status, content_type = fetch_url(url, timeout)
-    text = decode_bytes(raw, content_type)
-    urls: List[str] = []
-    for href in re.findall(r'href="([^"]+)"', text):
-        href = html.unescape(href)
-        if "uddg=" in href:
-            qs = parse_qs(urlparse(href).query)
-            href = unquote(qs.get("uddg", [""])[0])
-        if not href.startswith("http"):
+    search_pages = [("duckduckgo", f"https://duckduckgo.com/html/?q={quote_plus(query)}")]
+    if any(domain in query for _name, domain in NEWS_SEARCH_SOURCES):
+        search_pages.append(("bing", f"https://www.bing.com/search?q={quote_plus(query)}"))
+    last_error = ""
+    for engine, url in search_pages:
+        try:
+            raw, http_status, content_type = fetch_url(url, min(timeout, 3))
+        except Exception as exc:  # noqa: BLE001
+            last_error = f"{engine}:{str(exc)[:120]}"
             continue
-        if "duckduckgo.com" in urlparse(href).netloc.lower():
-            continue
-        if href not in urls:
-            urls.append(href)
-        if len(urls) >= limit:
-            break
-    return urls, http_status
+        text = decode_bytes(raw, content_type)
+        urls: List[str] = []
+        for href in re.findall(r'href=["\']([^"\']+)["\']', text):
+            href = html.unescape(href)
+            if "uddg=" in href:
+                qs = parse_qs(urlparse(href).query)
+                href = unquote(qs.get("uddg", [""])[0])
+            if not href.startswith("http"):
+                continue
+            host = urlparse(href).netloc.lower()
+            if any(blocked in host for blocked in ("duckduckgo.com", "bing.com", "microsoft.com")):
+                continue
+            if href not in urls:
+                urls.append(href)
+            if len(urls) >= limit:
+                break
+        if urls or engine == "bing":
+            return urls, f"{engine}:{http_status}"
+    raise RuntimeError(last_error or "search_failed")
 
+
+
+def source_name_for_news_url(url: str) -> str:
+    host = urlparse(url).netloc.lower()
+    if "tw.stock.yahoo.com" in host:
+        return "Yahoo????"
+    if "moneydj.com" in host:
+        return "MoneyDJ"
+    if "ctee.com.tw" in host:
+        return "????"
+    if "money.udn.com" in host or "udn.com" in host:
+        return "????"
+    if "cnyes.com" in host:
+        return "???"
+    return host or "????"
+
+
+def target_identity_matched(text: str, target: Dict[str, str]) -> bool:
+    compact = re.sub(r"\s+", "", text)
+    return any(
+        value and re.sub(r"\s+", "", value) in compact
+        for value in (target.get("bondCode", ""), target.get("bondName", ""), target.get("issuerName", ""))
+    )
+
+
+def target_detail_matched(text: str) -> bool:
+    return contains_any(text, CB_KEYWORDS) and contains_any(text, NEWS_DETAIL_KEYWORDS)
+
+
+def snippet_for_target(text: str, target: Dict[str, str]) -> str:
+    keys = [target.get("bondCode", ""), target.get("bondName", ""), target.get("issuerName", "")] + NEWS_DETAIL_KEYWORDS
+    positions = [text.find(k) for k in keys if k and text.find(k) >= 0]
+    if not positions:
+        return text[:260].strip()
+    pos = min(positions)
+    return text[max(0, pos - 90): min(len(text), pos + 360)].strip()
+
+
+def make_news_candidate(target: Dict[str, str], source_name: str, url: str, title: str, text: str) -> Candidate:
+    evidence = snippet_for_target(f"{title} {text}", target)[:320]
+    row = {
+        "CB??": target.get("bondCode", ""),
+        "????": target.get("bondName", "") or target.get("issuerName", ""),
+        "????": "",
+        "????": target.get("issuerName", ""),
+        "????": target.get("bondName", ""),
+        "?????": number_near(text, ["????", "????"]),
+        "?????": number_near(text, ["????", "????", "?????"]),
+        "????": date_near(text, ["????", "????", "??"]),
+        "?????": "",
+        "???": "",
+        "???": "",
+        "????": date_near(text, ["??????", "????", "????"]),
+        "????": "",
+        "????": date_near(text, ["??????", "????", "????"]),
+        "????": "",
+        "???": date_near(text, ["???", "??"]),
+        "???": date_near(text, ["???", "???", "???", "?????", "???"]),
+        "?????": "",
+        "???? / ???": "",
+        "?? / ??": "",
+        "???": "",
+        "????": "",
+        "status": "upcoming_listing",
+        "sourceType": "news_verified_candidate",
+        "source": f"{source_name}????????????",
+        "sourceUrl": url,
+        "officialSourceUrl": "",
+        "officialEvidenceText": evidence,
+        "updatedAt": NOW.isoformat(),
+        "validationStatus": "needs_review",
+        "staleReason": "??????CB????????????URL??????",
+    }
+    return Candidate(
+        source_type="news_verified_candidate",
+        source=row["source"],
+        source_url=url,
+        title=title,
+        text=text,
+        status="upcoming_listing",
+        evidence=evidence,
+        row=row,
+        validation_status="needs_review",
+        stale_reason=row["staleReason"],
+    )
+
+
+def discover_target_news_clues(args, inspect_url_func) -> Tuple[List[Candidate], List[Dict[str, str]], List[str]]:
+    candidates: List[Candidate] = []
+    logs: List[Dict[str, str]] = []
+    debug_lines: List[str] = []
+    seen_news_urls = set()
+    started_at = datetime.now(TZ)
+    max_news_seconds = 45
+    for target in TARGET_DISCOVERY_CASES:
+        for base_query in target["queries"][:1]:
+            for source_name, domain_query in NEWS_SEARCH_SOURCES:
+                if (datetime.now(TZ) - started_at).total_seconds() > max_news_seconds:
+                    logs.append({
+                        "checkedAt": NOW.isoformat(),
+                        "targetKeyword": base_query,
+                        "sourceName": source_name,
+                        "sourceUrl": f"news-search:{domain_query} {base_query}",
+                        "matchedTitle": "",
+                        "matchedText": "",
+                        "matchedBondCode": target.get("bondCode", ""),
+                        "matchedBondName": target.get("bondName", ""),
+                        "matchedIssuerName": target.get("issuerName", ""),
+                        "candidateAction": "no_match",
+                        "reason": "news_search_time_budget_exceeded",
+                    })
+                    continue
+                query = f"{domain_query} {base_query}"
+                try:
+                    urls, http_status = duckduckgo_urls(query, args.search_limit, args.timeout)
+                except Exception as exc:  # noqa: BLE001
+                    logs.append({
+                        "checkedAt": NOW.isoformat(),
+                        "targetKeyword": base_query,
+                        "sourceName": source_name,
+                        "sourceUrl": f"news-search:{query}",
+                        "matchedTitle": "",
+                        "matchedText": "",
+                        "matchedBondCode": target.get("bondCode", ""),
+                        "matchedBondName": target.get("bondName", ""),
+                        "matchedIssuerName": target.get("issuerName", ""),
+                        "candidateAction": "no_match",
+                        "reason": f"search_failed:{str(exc)[:180]}",
+                    })
+                    continue
+                matched_any = False
+                for url in urls:
+                    if url in seen_news_urls:
+                        continue
+                    seen_news_urls.add(url)
+                    try:
+                        raw, page_status, content_type = fetch_url(url, args.timeout)
+                        title, page_text = clean_document(raw, content_type, url)
+                        combined = f"{title} {page_text}"
+                        if not target_identity_matched(combined, target):
+                            logs.append({
+                                "checkedAt": NOW.isoformat(),
+                                "targetKeyword": base_query,
+                                "sourceName": source_name_for_news_url(url) or source_name,
+                                "sourceUrl": url,
+                                "matchedTitle": title[:120],
+                                "matchedText": snippet_for_target(combined, target)[:220],
+                                "matchedBondCode": "",
+                                "matchedBondName": "",
+                                "matchedIssuerName": "",
+                                "candidateAction": "no_match",
+                                "reason": "identity_not_matched",
+                            })
+                            continue
+                        official_links = [child for child, _label in extract_follow_links(decode_bytes(raw, content_type), url, args.follow_link_limit) if official_source_type_for_url(child)]
+                        if official_links:
+                            matched_any = True
+                            for official_url in official_links[:3]:
+                                logs.append({
+                                    "checkedAt": NOW.isoformat(),
+                                    "targetKeyword": base_query,
+                                    "sourceName": source_name_for_news_url(url) or source_name,
+                                    "sourceUrl": url,
+                                    "matchedTitle": title[:120],
+                                    "matchedText": snippet_for_target(combined, target)[:220],
+                                    "matchedBondCode": target.get("bondCode", ""),
+                                    "matchedBondName": target.get("bondName", ""),
+                                    "matchedIssuerName": target.get("issuerName", ""),
+                                    "candidateAction": "official_url_found",
+                                    "reason": official_url,
+                                })
+                                inspect_url_func(official_source_type_for_url(official_url) or "official_mops", f"???????? / {base_query}", official_url)
+                            continue
+                        if target_detail_matched(combined):
+                            matched_any = True
+                            candidates.append(make_news_candidate(target, source_name_for_news_url(url) or source_name, url, title, page_text))
+                            logs.append({
+                                "checkedAt": NOW.isoformat(),
+                                "targetKeyword": base_query,
+                                "sourceName": source_name_for_news_url(url) or source_name,
+                                "sourceUrl": url,
+                                "matchedTitle": title[:120],
+                                "matchedText": snippet_for_target(combined, target)[:220],
+                                "matchedBondCode": target.get("bondCode", ""),
+                                "matchedBondName": target.get("bondName", ""),
+                                "matchedIssuerName": target.get("issuerName", ""),
+                                "candidateAction": "news_verified_candidate",
+                                "reason": "news_contains_identity_and_cb_details_no_official_url",
+                            })
+                        else:
+                            logs.append({
+                                "checkedAt": NOW.isoformat(),
+                                "targetKeyword": base_query,
+                                "sourceName": source_name_for_news_url(url) or source_name,
+                                "sourceUrl": url,
+                                "matchedTitle": title[:120],
+                                "matchedText": snippet_for_target(combined, target)[:220],
+                                "matchedBondCode": target.get("bondCode", ""),
+                                "matchedBondName": target.get("bondName", ""),
+                                "matchedIssuerName": target.get("issuerName", ""),
+                                "candidateAction": "needs_review",
+                                "reason": "identity_matched_but_no_explicit_cb_detail",
+                            })
+                    except Exception as exc:  # noqa: BLE001
+                        logs.append({
+                            "checkedAt": NOW.isoformat(),
+                            "targetKeyword": base_query,
+                            "sourceName": source_name,
+                            "sourceUrl": url,
+                            "matchedTitle": "",
+                            "matchedText": "",
+                            "matchedBondCode": target.get("bondCode", ""),
+                            "matchedBondName": target.get("bondName", ""),
+                            "matchedIssuerName": target.get("issuerName", ""),
+                            "candidateAction": "no_match",
+                            "reason": f"fetch_failed:{str(exc)[:180]}",
+                        })
+                if not matched_any:
+                    logs.append({
+                        "checkedAt": NOW.isoformat(),
+                        "targetKeyword": base_query,
+                        "sourceName": source_name,
+                        "sourceUrl": f"news-search:{query}",
+                        "matchedTitle": "",
+                        "matchedText": "",
+                        "matchedBondCode": target.get("bondCode", ""),
+                        "matchedBondName": target.get("bondName", ""),
+                        "matchedIssuerName": target.get("issuerName", ""),
+                        "candidateAction": "no_match",
+                        "reason": f"search_http={http_status}; no_verified_news_clue",
+                    })
+                debug_lines.append(f"[news-clue] {source_name} query={base_query} urls={len(urls)} matched={matched_any}")
+    return candidates, logs, debug_lines
 
 def contains_any(text: str, keywords: Iterable[str]) -> bool:
     return any(k in text for k in keywords)
@@ -1017,6 +1322,7 @@ def debug_line(result: FetchResult, parsed_count: int, reason: str) -> str:
 
 def fetch_official_sources(args: argparse.Namespace) -> Tuple[List[Candidate], List[Dict[str, str]], List[str], int, int]:
     fetch_logs: List[Dict[str, str]] = []
+    target_search_logs: List[Dict[str, str]] = []
     candidates: List[Candidate] = []
     debug_lines: List[str] = []
     seen_urls = set()
@@ -1153,7 +1459,55 @@ def fetch_official_sources(args: argparse.Namespace) -> Tuple[List[Candidate], L
             for url in official_urls:
                 inspect_url(source_group["sourceType"], source_group["source"], url)
 
-    return candidates, fetch_logs, debug_lines, official_pages_success, official_raw_count + len(seen_urls)
+    target_domains = [
+        ("official_underwriting", "證券商公會承銷公告", "site:web.twsa.org.tw OR site:twsa.org.tw"),
+        ("official_twse", "證交所 / MOPS IPO SPO 公告", "site:mopsov.twse.com.tw OR site:twse.com.tw"),
+        ("official_tpex", "櫃買中心承銷與掛牌公告", "site:tpex.org.tw"),
+        ("official_mops", "公開資訊觀測站公告", "site:mops.twse.com.tw OR site:mopsov.twse.com.tw"),
+    ]
+    for keyword in TARGET_DISCOVERY_KEYWORDS:
+        for source_type, source, domain_query in target_domains:
+            query = f"{domain_query} {keyword} 轉換公司債 可轉換公司債"
+            search_url = f"target-search:{query}"
+            try:
+                urls, http_status = duckduckgo_urls(query, args.search_limit, args.timeout)
+                official_urls = [
+                    u for u in urls if official_source_type_for_url(u, source_type)
+                ]
+                fetch_logs.append({
+                    "fetchedAt": NOW.isoformat(),
+                    "sourceType": source_type,
+                    "sourceUrl": search_url,
+                    "fetchStatus": "search_success",
+                    "httpStatus": http_status,
+                    "rawCount": str(len(official_urls)),
+                    "parsedCount": "0",
+                    "error": f"keyword={keyword}",
+                })
+                debug_lines.append(
+                    f"[{source_type}] target-search {http_status} officialUrls={len(official_urls)} keyword={keyword}"
+                )
+            except Exception as exc:  # noqa: BLE001
+                fetch_logs.append({
+                    "fetchedAt": NOW.isoformat(),
+                    "sourceType": source_type,
+                    "sourceUrl": search_url,
+                    "fetchStatus": "official_fetch_failed",
+                    "httpStatus": "",
+                    "rawCount": "0",
+                    "parsedCount": "0",
+                    "error": f"keyword={keyword}:{str(exc)[:220]}",
+                })
+                continue
+            for url in official_urls:
+                inspect_url(source_type, f"{source} / {keyword}", url)
+
+    news_candidates, news_logs, news_debug = discover_target_news_clues(args, inspect_url)
+    candidates.extend(news_candidates)
+    target_search_logs.extend(news_logs)
+    debug_lines.extend(news_debug)
+
+    return candidates, fetch_logs, target_search_logs, debug_lines, official_pages_success, official_raw_count + len(seen_urls)
 
 
 def load_recent_cb_codes() -> set:
@@ -1229,11 +1583,21 @@ def validate_and_filter(candidates: List[Candidate], recent_codes: set) -> Tuple
         exists_in_recent = bool(row.get("CB代碼") and row["CB代碼"] in recent_codes)
         listing_date = parse_date(row.get("掛牌日", ""))
 
+        case_status = row.get("caseStatus", "") or row.get("案件狀態", "")
+        canceled = any(word in case_status for word in ("撤銷", "終止", "取消"))
+
         if exists_in_recent:
             cand.remove_reason = "已出現在存續CB清單"
         elif listing_date and listing_date <= TODAY:
             cand.remove_reason = "掛牌日已到或已過"
+        elif canceled:
+            cand.remove_reason = "案件狀態已撤銷/終止/取消"
         else:
+            if listing_date and listing_date > TODAY:
+                cand.status = "upcoming_listing"
+                row["status"] = "upcoming_listing"
+                cand.validation_status = cand.validation_status or "needs_review"
+                cand.stale_reason = cand.stale_reason or "已有未來掛牌日，尚未進入存續CB清單"
             if not row.get("CB代碼"):
                 cand.validation_status = "needs_review"
                 cand.stale_reason = "官方公告未提供完整CB代碼"
@@ -1252,11 +1616,12 @@ def validate_and_filter(candidates: List[Candidate], recent_codes: set) -> Tuple
                     cand.stale_reason = "詢圈或競拍已結束但尚未找到掛牌資料"
                 elif not end_date:
                     announcement = parse_date(row.get("announcementDate", "")) or parse_date(row.get(OUTPUT_HEADERS[7], ""))
-                    if announcement and (TODAY - announcement).days > 45:
-                        cand.remove_reason = "公告日期超過45天且未找到後續承銷/掛牌/存續資料"
+                    if announcement and (TODAY - announcement).days > 180:
+                        cand.validation_status = "needs_review"
+                        cand.stale_reason = cand.stale_reason or "公告日期超過180天且未找到後續承銷/掛牌/存續資料"
                     elif announcement:
                         cand.validation_status = "needs_review"
-                        cand.stale_reason = cand.stale_reason or "官方承銷公告未提供詢圈/競拍期間，公告仍在45天內"
+                        cand.stale_reason = cand.stale_reason or "官方承銷公告未提供詢圈/競拍期間，保留待確認"
             elif cand.status == "board_approved":
                 base = parse_date(row.get("董事會日期", "")) or parse_date(row.get("公告日期", ""))
                 if base and (TODAY - base).days > 180:
@@ -1396,7 +1761,7 @@ def main() -> int:
     args = parser.parse_args()
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    candidates, fetch_logs, debug_lines, official_pages_success, official_url_count = fetch_official_sources(args)
+    candidates, fetch_logs, target_search_logs, debug_lines, official_pages_success, official_url_count = fetch_official_sources(args)
     merged = merge_candidates(candidates)
     rows, classify_logs, removed_logs = validate_and_filter(merged, load_recent_cb_codes())
 
@@ -1415,6 +1780,23 @@ def main() -> int:
         FETCH_LOG_PATH,
         ["fetchedAt", "sourceType", "sourceUrl", "fetchStatus", "httpStatus", "rawCount", "parsedCount", "error"],
         fetch_logs,
+    )
+    write_csv(
+        TARGET_SEARCH_LOG_PATH,
+        [
+            "checkedAt",
+            "targetKeyword",
+            "sourceName",
+            "sourceUrl",
+            "matchedTitle",
+            "matchedText",
+            "matchedBondCode",
+            "matchedBondName",
+            "matchedIssuerName",
+            "candidateAction",
+            "reason",
+        ],
+        target_search_logs,
     )
     write_csv(
         CLASSIFY_LOG_PATH,

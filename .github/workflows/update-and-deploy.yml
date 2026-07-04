@@ -4,6 +4,15 @@ on:
   schedule:
     - cron: "10 9 * * 1-5"
   workflow_dispatch:
+    inputs:
+      mode:
+        description: "Update mode: fast for daily deploy, full for enrichment"
+        required: false
+        default: fast
+        type: choice
+        options:
+          - fast
+          - full
 
 permissions:
   contents: read
@@ -31,25 +40,26 @@ jobs:
           python-version: "3.12"
 
       - name: Fetch CB redemption alerts
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.mode == 'full' }}
         run: python scripts/fetch_cb_redemption_alerts.py --max-seconds 480
 
       - name: Update CB primary market data
-        run: python scripts/update_cb_primary_market.py
+        run: python scripts/update_cb_primary_market.py --queries-per-source 1 --search-limit 3 --follow-link-limit 8 --timeout 8
 
       - name: Update CB data
         run: python scripts/update_cb_quotes.py
 
       - name: Enrich new CB company tags
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.mode == 'full' }}
         run: python scripts/enrich_new_cb_company_tags.py --limit 20
 
       - name: Enrich new CB issuance purposes
-        run: python scripts/enrich_new_cb_issuance_purposes.py --limit 20
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.mode == 'full' }}
+        run: python scripts/enrich_new_cb_issuance_purposes.py --limit 5 --max-candidates 2 --timeout 8
 
       - name: Refresh CB data with enriched tags and purposes
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.mode == 'full' }}
         run: python scripts/update_cb_quotes.py
-
-      - name: Fetch analyst target prices
-        run: python scripts/fetch_analyst_targets_from_web.py --limit 50 || true
 
       - name: Build public site
         run: python scripts/build_public_site.py
