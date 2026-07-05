@@ -39,9 +39,13 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Fetch CB redemption alerts
+      - name: Fast fetch CB redemption alerts
+        if: ${{ github.event_name != 'workflow_dispatch' || inputs.mode != 'full' }}
+        run: python scripts/fetch_cb_redemption_alerts.py --max-seconds 480 --timeout 8 --max-candidates 1
+
+      - name: Full fetch CB redemption alerts
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.mode == 'full' }}
-        run: python scripts/fetch_cb_redemption_alerts.py --max-seconds 480
+        run: python scripts/fetch_cb_redemption_alerts.py --scan-all --max-seconds 480
 
       - name: Update CB primary market data
         run: python scripts/update_cb_primary_market.py --queries-per-source 1 --search-limit 3 --follow-link-limit 8 --timeout 8

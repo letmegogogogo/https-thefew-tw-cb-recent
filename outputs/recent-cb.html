@@ -1035,24 +1035,24 @@
     };
 
     const normalizePrimaryRecentRow = (row) => {
-      const bondCode = primaryRowValue(row, ['CB??', 'bondCode']);
-      const name = primaryRowValue(row, ['????', '????', 'bondName', 'companyName', '????']);
+      const bondCode = primaryRowValue(row, ['CB代碼', 'bondCode']);
+      const name = primaryRowValue(row, ['標的名稱', '債券名稱', 'bondName', 'companyName', '公司名稱']);
       const issueDate = pickPrimaryDate(row);
       return {
         ...row,
         bondCode,
         bondShortName: name,
-        issuerCode: primaryRowValue(row, ['????', 'issuerCode']),
-        issuerName: primaryRowValue(row, ['companyName', '????', '????']) || name,
+        issuerCode: primaryRowValue(row, ['公司代號', 'issuerCode']),
+        issuerName: primaryRowValue(row, ['companyName', '公司名稱', '標的名稱']) || name,
         issueDate,
         listedDateROC: issueDate,
-        industryCategory: primaryRowValue(row, ['???', 'officialIndustry']),
+        industryCategory: primaryRowValue(row, ['產業別', 'officialIndustry']),
         redemptionStatus: row.redemptionStatus || 'normal',
         issuancePurpose: row.issuancePurpose || '',
         sourceType: row.sourceType || '',
         sourceUrl: row.sourceUrl || row.officialSourceUrl || '',
         primaryMarketStatus: row.status || '',
-        stockMarket: row.stockMarket || '????',
+        stockMarket: row.stockMarket || '未掛牌',
         isPrimaryMarketSupplement: true
       };
     };
@@ -1642,16 +1642,16 @@
             : epsCandidate
         );
         const range = chartNumber(item.low) != null && chartNumber(item.high) != null
-          ? `${fmtPrice(chartNumber(item.low), 2)}?${fmtPrice(chartNumber(item.high), 2)}` : '???????';
+          ? `${fmtPrice(chartNumber(item.low), 2)}～${fmtPrice(chartNumber(item.high), 2)}` : '來源未提供區間';
         const analysts = Number(item.analysts) || 0;
         const isFocus = year === currentYear + 1;
-        const focusBadge = isFocus && analysts > 0 && analysts === maxAnalysts ? '<span class="eps-focus-badge">?????</span>' : '';
+        const focusBadge = isFocus && analysts > 0 && analysts === maxAnalysts ? '<span class="eps-focus-badge">最多分析師</span>' : '';
         const epsStats = value == null
-          ? '<div class="eps-stat missing"><span>????</span><strong>???????</strong></div>'
-          : `<div class="eps-stat"><span>?????</span><strong>${analysts} ?</strong></div><div class="eps-stat"><span>????</span><strong>${range}</strong></div>`;
-        return `<div class="eps-card${isFocus ? ' focus' : ''}${value == null ? ' no-data' : ''}"><div class="eps-card-head">${calendarIcon}<span class="eps-year">${year} ?</span>${focusBadge}</div><div class="eps-value">${value == null ? '?' : fmtPrice(value, 2)}</div><div class="eps-divider"></div><div class="eps-stats">${epsStats}</div></div>`;
+          ? '<div class="eps-stat missing"><span>資料來源</span><strong>公開來源未提供</strong></div>'
+          : `<div class="eps-stat"><span>分析師人數</span><strong>${analysts} 位</strong></div><div class="eps-stat"><span>預估區間</span><strong>${range}</strong></div>`;
+        return `<div class="eps-card${isFocus ? ' focus' : ''}${value == null ? ' no-data' : ''}"><div class="eps-card-head">${calendarIcon}<span class="eps-year">${year} 年</span>${focusBadge}</div><div class="eps-value">${value == null ? '—' : fmtPrice(value, 2)}</div><div class="eps-divider"></div><div class="eps-stats">${epsStats}</div></div>`;
       }).join('');
-      return `<div class="eps-head">???? EPS???????</div><div class="eps-grid">${cards}</div>`;
+      return `<div class="eps-head">法人預估 EPS（分析師共識）</div><div class="eps-grid">${cards}</div>`;
     };
     const renderCompanyCatalysts = () => '';
     const drawHistoryChart = (host, payload, range) => {

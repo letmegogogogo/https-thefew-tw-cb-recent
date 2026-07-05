@@ -54,12 +54,16 @@ OFFICIAL_REDEMPTION_KEYWORDS = [
 ]
 
 TRUSTED_DOMAINS = (
-    "tw.stock.yahoo.com",
     "mops.twse.com.tw",
+    "mopsov.twse.com.tw",
     "tpex.org.tw",
     "www.tpex.org.tw",
     "twse.com.tw",
     "www.twse.com.tw",
+    "tw.stock.yahoo.com",
+    "twsa.org.tw",
+    "web.twsa.org.tw",
+    "web2.twsa.org.tw",
 )
 
 
@@ -177,11 +181,11 @@ def search_web(query: str, timeout: int = 12) -> list[str]:
 
 def build_broad_queries() -> list[str]:
     return [
-        "site:tw.stock.yahoo.com/news 行使贖回權 轉換公司債",
-        "site:tw.stock.yahoo.com/news 終止櫃檯買賣 轉換公司債",
-        "site:tw.stock.yahoo.com/news 停止受理轉換 可轉換公司債",
-        "site:tw.stock.yahoo.com/news 債券收回 可轉換公司債",
-        "site:tw.stock.yahoo.com/news 強制贖回 可轉換公司債",
+        "site:mops.twse.com.tw 行使債券贖回權 轉換公司債 終止櫃檯買賣",
+        "site:tpex.org.tw 行使債券贖回權 轉換公司債 終止櫃檯買賣",
+        "site:twse.com.tw 行使債券贖回權 轉換公司債 終止買賣",
+        "site:tw.stock.yahoo.com/news 行使債券贖回權 轉換公司債 終止櫃檯買賣",
+        "site:tw.stock.yahoo.com/news 債券收回基準日 轉換公司債 終止櫃檯買賣日期",
     ]
 
 
@@ -189,10 +193,12 @@ def build_queries(row: dict) -> list[str]:
     bond_code = str(row.get("bondCode") or "").strip()
     bond_name = str(row.get("bondShortName") or "").strip()
     issuer = str(row.get("issuerName") or "").replace("股份有限公司", "").strip()
+    identity = " ".join(part for part in (bond_code, bond_name, issuer) if part)
     base = [
-        f"site:tw.stock.yahoo.com/news {bond_code} {bond_name} 行使贖回權",
-        f"site:tw.stock.yahoo.com/news {bond_name} 終止櫃檯買賣",
-        f"site:tw.stock.yahoo.com/news {issuer} 可轉換公司債 行使贖回權",
+        f"site:mops.twse.com.tw {identity} 行使債券贖回權 終止櫃檯買賣",
+        f"site:tpex.org.tw {identity} 債券收回基準日 終止櫃檯買賣日期",
+        f"site:twse.com.tw {identity} 停止受理轉換 收回 轉換公司債",
+        f"site:tw.stock.yahoo.com/news {identity} 行使債券贖回權 終止櫃檯買賣",
     ]
     return [query for query in base if query.strip()]
 
@@ -224,9 +230,22 @@ def extract_evidence(text: str) -> str:
 
 
 def is_confirmed_redemption_notice(text: str, row: dict) -> bool:
-    if not any(first in text and second in text for first, second in CONFIRMED_REDEMPTION_PHRASES):
+    if not has_identity(text, row):
         return False
-    return has_identity(text, row)
+    bond_code = str(row.get("bondCode") or "").strip()
+    bond_name = str(row.get("bondShortName") or "").strip()
+    issuer = str(row.get("issuerName") or "").replace("股份有限公司", "").strip()
+    bond_identity = bool((bond_code and bond_code in text) or (bond_name and bond_name in text))
+    has_issuer_cb = bool(issuer and issuer in text and ("本公司國內" in text or "國內第" in text) and "轉換公司債" in text)
+    if bond_identity and "行使債券贖回權" in text and ("終止櫃檯買賣" in text or "終止買賣" in text):
+        return True
+    if bond_identity and "債券收回基準日" in text and "終止櫃檯買賣日期" in text:
+        return True
+    if bond_identity and "停止受理轉換" in text and ("收回" in text or "贖回權" in text):
+        return True
+    if has_issuer_cb and "行使債券贖回權" in text and "終止櫃檯買賣" in text:
+        return True
+    return False
 
 
 def extract_date_after(labels: list[str], text: str) -> str:
@@ -264,6 +283,21 @@ def make_summary(evidence: str) -> str:
     return "已公告贖回相關事項。"
 
 
+def source_label(url: str) -> str:
+    host = urlparse(url).netloc.lower()
+    if "mops" in host:
+        return "MOPS official announcement"
+    if "tpex" in host:
+        return "TPEx official redemption schedule"
+    if "twse" in host:
+        return "TWSE official announcement"
+    if "yahoo" in host:
+        return "yahoo_news_confirmed_redemption"
+    if "twsa" in host:
+        return "TWSA official announcement"
+    return "public announcement"
+
+
 def parse_alert_with_reason(row: dict, url: str, page: str) -> tuple[dict | None, str]:
     text = clean_text(page)
     title = extract_title(page)
@@ -285,13 +319,15 @@ def parse_alert_with_reason(row: dict, url: str, page: str) -> tuple[dict | None
         "status": "已公告收回",
         "alertLevel": "warning",
         "summary": make_summary(evidence),
-        "redemptionStartDate": extract_date_after(["收回期間", "贖回期間", "債券收回基準日"], text),
-        "redemptionEndDate": extract_date_after(["停止受理轉換", "最後申請轉換日", "收回終止日"], text),
-        "delistDate": extract_date_after(["終止櫃檯買賣日", "終止買賣日", "停止交易日"], text),
-        "source": "公開公告",
+        "redemptionStartDate": extract_date_after(["收回期間", "贖回期間", "開始受理", "債券收回基準日"], text),
+        "redemptionEndDate": extract_date_after(["停止受理轉換", "最後申請轉換日", "收回終止日", "收回期間"], text),
+        "redemptionBaseDate": extract_date_after(["債券收回基準日", "收回基準日"], text),
+        "delistDate": extract_date_after(["終止櫃檯買賣日期", "終止櫃檯買賣日", "終止買賣日", "停止交易日"], text),
+        "source": source_label(url),
         "sourceUrl": url,
         "evidenceText": evidence,
         "updatedAt": datetime.now(TZ).date().isoformat(),
+        "lastCheckedAt": datetime.now(TZ).date().isoformat(),
     }, "found_confirmed_redemption_notice"
 
 
@@ -315,7 +351,7 @@ def find_alert_for_row(row: dict, timeout: int, max_candidates: int) -> tuple[di
                 logs.append(log_row(row, query, url, "error", type(error).__name__))
                 continue
             if alert:
-                logs.append(log_row(row, query, url, "found", reason))
+                logs.append(log_row(row, query, url, "found", reason, alert.get("evidenceText", "")))
                 return alert, logs
             logs.append(log_row(row, query, url, "not_matched", reason))
             time.sleep(0.2)
@@ -349,7 +385,7 @@ def find_alerts_from_broad_search(rows: list[dict], timeout: int, max_candidates
             if alert:
                 alerts[code] = alert
                 matched += 1
-                logs.append(log_row(row, query, url, "found", reason))
+                logs.append(log_row(row, query, url, "found", reason, alert.get("evidenceText", "")))
             elif code:
                 logs.append(log_row(row, query, url, "not_matched", reason))
         if matched == 0:
@@ -358,23 +394,45 @@ def find_alerts_from_broad_search(rows: list[dict], timeout: int, max_candidates
     return alerts, logs
 
 
-def log_row(row: dict, query: str, url: str, status: str, reason: str) -> dict:
+def action_from_status(status: str) -> str:
     return {
+        "found": "found_confirmed_redemption",
+        "kept_existing": "kept_existing_alert",
+        "not_found": "no_redemption_notice_found",
+        "not_matched": "no_redemption_notice_found",
+        "skipped": "skipped_by_time_budget",
+        "preserved_previous_alerts": "kept_existing_alert",
+        "removed": "removed_after_delist_grace_period",
+    }.get(status, "source_timeout" if status == "error" else status)
+
+
+def log_row(row: dict, query: str, url: str, status: str, reason: str, evidence: str = "") -> dict:
+    return {
+        "checkedAt": datetime.now(TZ).isoformat(),
         "bondCode": row.get("bondCode") or "",
-        "bondName": row.get("bondShortName") or "",
+        "bondName": row.get("bondShortName") or row.get("bondName") or "",
         "issuerCode": row.get("issuerCode") or "",
         "issuerName": row.get("issuerName") or "",
+        "searchedSources": query,
+        "matchedSource": source_label(url) if url else "",
+        "matchedUrl": url,
+        "action": action_from_status(status),
+        "reason": reason,
+        "evidenceText": evidence,
+        # Backward-compatible columns.
         "query": query,
         "sourceUrl": url,
         "status": status,
-        "reason": reason,
-        "checkedAt": datetime.now(TZ).isoformat(),
     }
 
 
 def write_log(rows: list[dict]) -> None:
     LOG_PATH.parent.mkdir(parents=True, exist_ok=True)
-    fields = ["bondCode", "bondName", "issuerCode", "issuerName", "query", "sourceUrl", "status", "reason", "checkedAt"]
+    fields = [
+        "checkedAt", "bondCode", "bondName", "issuerCode", "issuerName",
+        "searchedSources", "matchedSource", "matchedUrl", "action", "reason", "evidenceText",
+        "query", "sourceUrl", "status",
+    ]
     with LOG_PATH.open("w", encoding="utf-8-sig", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=fields)
         writer.writeheader()
@@ -388,35 +446,79 @@ def main() -> int:
     parser.add_argument("--timeout", type=int, default=10)
     parser.add_argument("--max-candidates", type=int, default=2)
     parser.add_argument("--max-seconds", type=int, default=480, help="整體最多執行秒數，避免自動部署卡住")
+    parser.add_argument("--scan-all", action="store_true", help="scan every active CB row from recent-cb-data.js")
     args = parser.parse_args()
 
     codes = {item.strip() for item in args.codes.split(",")} if args.codes else None
     rows = active_cb_rows(load_recent_rows(), codes=codes, limit=args.limit)
+    existing_alerts = load_alerts()
     alerts: dict[str, dict] = {}
     logs: list[dict] = []
     found = 0
     started_at = time.monotonic()
-    broad_alerts, broad_logs = find_alerts_from_broad_search(rows, timeout=args.timeout, max_candidates=max(args.max_candidates * 5, 10))
+    broad_alerts, broad_logs = find_alerts_from_broad_search(rows, timeout=args.timeout, max_candidates=max(args.max_candidates * 3, 3))
     logs.extend(broad_logs)
     for code, alert in broad_alerts.items():
         if alert.get("sourceUrl") and alert.get("evidenceText"):
             alerts[code] = alert
             found += 1
 
-    should_run_row_search = bool(codes) or (args.limit is not None and args.limit <= 30)
-    if should_run_row_search:
-        for index, row in enumerate(rows):
-            if str(row.get("bondCode") or "").strip() in alerts:
-                continue
-            if args.max_seconds and time.monotonic() - started_at >= args.max_seconds:
-                for skipped in rows[index:]:
-                    logs.append(log_row(skipped, "", "", "skipped", "達到整體執行時間上限，留待下次排程檢查"))
-                break
-            alert, row_logs = find_alert_for_row(row, timeout=args.timeout, max_candidates=args.max_candidates)
-            logs.extend(row_logs)
-            if alert and alert.get("sourceUrl") and alert.get("evidenceText"):
-                alerts[alert["bondCode"]] = alert
-                found += 1
+    scanned_codes = set(alerts)
+    for index, row in enumerate(rows):
+        code = str(row.get("bondCode") or "").strip()
+        if code in alerts:
+            continue
+        if args.max_seconds and time.monotonic() - started_at >= args.max_seconds:
+            for skipped in rows[index:]:
+                logs.append(log_row(skipped, "", "", "skipped", "skipped_by_time_budget"))
+            break
+        alert, row_logs = find_alert_for_row(row, timeout=args.timeout, max_candidates=args.max_candidates)
+        scanned_codes.add(code)
+        logs.extend(row_logs)
+        if alert and alert.get("sourceUrl") and alert.get("evidenceText"):
+            alerts[alert["bondCode"]] = alert
+            found += 1
+
+    today_text = datetime.now(TZ).date().isoformat()
+    active_codes = {str(row.get("bondCode") or "").strip() for row in rows}
+    for code, existing in existing_alerts.items():
+        if code in alerts:
+            continue
+        if code in active_codes:
+            kept = dict(existing)
+            kept["lastCheckedAt"] = today_text
+            alerts[code] = kept
+            logs.append(log_row({"bondCode": code, "bondShortName": kept.get("bondName", ""), "issuerCode": kept.get("issuerCode", ""), "issuerName": kept.get("issuerName", "")}, "existing_alert_preserved", kept.get("sourceUrl", ""), "kept_existing", "kept_existing_alert_not_removed_without_official_cancellation", kept.get("evidenceText", "")))
+            continue
+        delist = existing.get("delistDate") or existing.get("redemptionBaseDate") or ""
+        try:
+            delist_dt = datetime.strptime(delist, "%Y-%m-%d").date() if delist else None
+        except ValueError:
+            delist_dt = None
+        if delist_dt and (datetime.now(TZ).date() - delist_dt).days > 7:
+            logs.append(log_row({"bondCode": code, "bondShortName": existing.get("bondName", ""), "issuerCode": existing.get("issuerCode", ""), "issuerName": existing.get("issuerName", "")}, "existing_alert_removed", existing.get("sourceUrl", ""), "removed", "removed_after_delist_grace_period", existing.get("evidenceText", "")))
+        else:
+            kept = dict(existing)
+            kept["lastCheckedAt"] = today_text
+            alerts[code] = kept
+            logs.append(log_row({"bondCode": code, "bondShortName": kept.get("bondName", ""), "issuerCode": kept.get("issuerCode", ""), "issuerName": kept.get("issuerName", "")}, "existing_alert_preserved", kept.get("sourceUrl", ""), "kept_existing", "kept_existing_alert_until_delist_grace_period", kept.get("evidenceText", "")))
+
+    if not alerts and not codes:
+        logs.append({
+            "bondCode": "",
+            "bondName": "",
+            "issuerCode": "",
+            "issuerName": "",
+            "query": "",
+            "sourceUrl": "",
+            "status": "preserved_previous_alerts",
+            "reason": "\u5168\u91cf\u67e5\u8a62\u672a\u627e\u5230\u8d16\u56de\u8b66\u793a\uff0c\u4fdd\u7559\u65e2\u6709 data/cb-redemption-alerts.json\uff0c\u907f\u514d\u7db2\u7ad9\u8b66\u793a\u88ab\u6e05\u7a7a",
+            "checkedAt": datetime.now(TZ).isoformat(),
+        })
+        write_log(logs)
+        print(f"checked={len(rows)} found={found} alerts=0 preserved_existing_alerts log={LOG_PATH}")
+        return 0
+
     save_alerts(alerts)
     write_log(logs)
     print(f"checked={len(rows)} found={found} alerts={len(alerts)} log={LOG_PATH}")
