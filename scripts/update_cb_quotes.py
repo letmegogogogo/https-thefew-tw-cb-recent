@@ -256,6 +256,40 @@ def iso_date(value: str | None) -> str | None:
     return None
 
 
+def parse_iso_date(value) -> date | None:
+    text = str(value or "").strip()
+    if not text:
+        return None
+    try:
+        return datetime.strptime(text[:10], "%Y-%m-%d").date()
+    except ValueError:
+        return None
+
+
+def is_recent_or_upcoming_preserved_row(row: dict) -> bool:
+    status_text = " ".join(
+        str(row.get(key) or "")
+        for key in ("sourceType", "source", "status", "primaryMarketStatus", "validationStatus")
+    ).lower()
+    if any(
+        marker in status_text
+        for marker in ("upcoming", "bookbuilding_auction", "filing", "board_approved", "pending")
+    ):
+        return True
+    if not (row.get("listingDate") or row.get("listedDateROC")):
+        return True
+    row_date = parse_iso_date(
+        row.get("issueDate")
+        or row.get("listingDate")
+        or row.get("listedDateROC")
+        or row.get("announcementDate")
+    )
+    if not row_date:
+        return False
+    today = datetime.now(TZ).date()
+    return today - timedelta(days=90) <= row_date <= today + timedelta(days=90)
+
+
 def sync_active_rows(data: dict) -> list[dict]:
     issues = fetch_json("https://www.tpex.org.tw/openapi/v1/bond_ISSBD5_data")
     twse = fetch_json("https://openapi.twse.com.tw/v1/opendata/t187ap03_L")
@@ -299,7 +333,8 @@ def sync_active_rows(data: dict) -> list[dict]:
         for row in margin_rows
     }
 
-    rows = []
+    active_rows = []
+    active_codes: set[str] = set()
     for item in issues:
         bond_code = str(item.get("BondCode") or "").strip()
         issue_amount = number(item.get("IssueAmount"))
@@ -365,9 +400,18 @@ def sync_active_rows(data: dict) -> list[dict]:
                 "officialDataDate": iso_date(item.get("Date")),
             }
         )
-        rows.append(row)
+        active_rows.append(row)
+        active_codes.add(bond_code)
 
-    rows.sort(key=lambda row: row.get("issueDate") or "", reverse=True)
+    preserved_rows = []
+    for bond_code, previous in existing.items():
+        if not bond_code or bond_code in active_codes:
+            continue
+        if is_recent_or_upcoming_preserved_row(previous):
+            preserved_rows.append(previous)
+
+    rows = active_rows + preserved_rows
+    rows.sort(key=lambda row: row.get("issueDate") or row.get("listingDate") or "", reverse=True)
     data["officialDataDate"] = iso_date(issues[0].get("Date")) if issues else None
     data["scope"] = "All listed convertible bonds with outstanding balance"
     return rows
