@@ -1073,6 +1073,7 @@
           ? section.rows.map((row) => ({ ...row, status: row.status || section.status || section.id }))
           : [])
         .map(normalizePrimaryRecentRow)
+        .filter((row) => row.bondCode)
         .filter((row) => row.bondShortName || row.issuerName)
         .filter((row) => row.issueDate || row.listedDateROC)
         .filter((row) => isRecentOrUpcomingIssue(row));
