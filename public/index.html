@@ -813,9 +813,6 @@
         <p class="side-title">可轉債資訊</p>
         <nav class="menu" aria-label="可轉債篩選">
           <button type="button" data-view="recent" aria-pressed="true">即將/近期發行</button>
-          <button type="button" data-view="auction" aria-pressed="false">詢圈／競拍</button>
-          <button type="button" data-view="filing" aria-pressed="false">送件中</button>
-          <button type="button" data-view="board" aria-pressed="false">董事會通過</button>
         </nav>
       </aside>
 
@@ -1759,7 +1756,7 @@
     const sectionFromHash = () => {
       const params = new URLSearchParams((window.location.hash || '').replace(/^#/, ''));
       const section = params.get('section');
-      return ['recent', 'auction', 'filing', 'board'].includes(section) ? section : null;
+      return section === 'recent' ? section : null;
     };
     const setHistoryState = (view, replace = false) => {
       const state = view === 'home' ? { page: 'home' } : { page: 'section', section: view };
@@ -1768,6 +1765,7 @@
       else history.pushState(state, '', url);
     };
     const showView = (view, options = {}) => {
+      if (view !== 'recent') view = 'recent';
       currentView = view;
       buttons.forEach((button) => button.setAttribute('aria-pressed', String(button.dataset.view === view)));
       if (view === 'recent') renderRecent();
@@ -1778,9 +1776,15 @@
 
     buttons.forEach((button) => button.addEventListener('click', () => {
       const view = button.dataset.view;
-      setHistoryState(view);
       document.body.classList.remove('sidebar-menu-open');
-      showView(view, { collapseSidebar: true });
+      if (view === 'recent') {
+        setHistoryState('home');
+        showView('recent');
+        setSidebarCollapsed(false);
+      } else {
+        setHistoryState(view);
+        showView(view, { collapseSidebar: true });
+      }
     }));
     sidebarToggleEl?.addEventListener('click', () => {
       const opened = document.body.classList.toggle('sidebar-menu-open');
