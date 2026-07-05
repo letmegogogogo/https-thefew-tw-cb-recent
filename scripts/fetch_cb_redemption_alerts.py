@@ -248,27 +248,64 @@ def is_confirmed_redemption_notice(text: str, row: dict) -> bool:
     return False
 
 
+DATE_PATTERN = r"(\d{2,4}(?:年\d{1,2}月\d{1,2}日|[./-]\d{1,2}[./-]\d{1,2}))"
+
+
 def extract_date_after(labels: list[str], text: str) -> str:
-    date_pattern = r"(\d{3,4}[./-]\d{1,2}[./-]\d{1,2})"
     for label in labels:
         idx = text.find(label)
         if idx < 0:
             continue
         snippet = text[idx : idx + 120]
-        match = re.search(date_pattern, snippet)
+        match = re.search(DATE_PATTERN, snippet)
         if match:
             return normalize_date(match.group(1))
     return ""
 
 
+def extract_date_near_label(labels: list[str], text: str) -> str:
+    for label in labels:
+        idx = text.find(label)
+        if idx < 0:
+            continue
+        snippet = text[max(0, idx - 80) : idx + len(label) + 120]
+        matches = list(re.finditer(DATE_PATTERN, snippet))
+        if matches:
+            return normalize_date(matches[-1].group(1))
+    return ""
+
+
+def extract_delist_date(text: str) -> str:
+    match = re.search(rf"訂於\s*{DATE_PATTERN}\s*終止(?:櫃檯)?買賣", text)
+    if match:
+        return normalize_date(match.group(1))
+    return extract_date_near_label(["終止櫃檯買賣日期", "終止櫃檯買賣日", "終止買賣日", "停止交易日", "終止櫃檯買賣"], text)
+
+
 def normalize_date(value: str) -> str:
-    parts = re.split(r"[./-]", value)
+    value = str(value or "").strip()
+    match = re.match(r"^(\d{2,4})年(\d{1,2})月(\d{1,2})日$", value)
+    if match:
+        parts = match.groups()
+    else:
+        parts = re.split(r"[./-]", value)
     if len(parts) != 3:
         return value
     year = int(parts[0])
     if year < 1911:
         year += 1911
     return f"{year:04d}-{int(parts[1]):02d}-{int(parts[2]):02d}"
+
+
+def assert_date_parsing_examples() -> None:
+    examples = [
+        ("訂於115年07月15日終止櫃檯買賣", "2026-07-15"),
+        ("訂於115年08月28日終止櫃檯買賣", "2026-08-28"),
+        ("訂於115年08月10日終止櫃檯買賣", "2026-08-10"),
+    ]
+    for text, expected in examples:
+        actual = extract_delist_date(text)
+        assert actual == expected, f"delist date parse failed: {text} -> {actual}, expected {expected}"
 
 
 def make_summary(evidence: str) -> str:
@@ -281,6 +318,18 @@ def make_summary(evidence: str) -> str:
     if "債券收回" in evidence or "強制贖回" in evidence or "收回" in evidence:
         return "已公告債券收回相關事項。"
     return "已公告贖回相關事項。"
+
+
+def refresh_alert_dates_from_evidence(alert: dict) -> dict:
+    evidence = str(alert.get("evidenceText") or "")
+    if not evidence:
+        return alert
+    refreshed = dict(alert)
+    refreshed["redemptionStartDate"] = extract_date_near_label(["收回期間", "贖回期間", "開始受理", "債券收回基準日"], evidence)
+    refreshed["redemptionEndDate"] = extract_date_near_label(["停止受理轉換", "最後申請轉換日"], evidence)
+    refreshed["redemptionBaseDate"] = extract_date_near_label(["債券收回基準日", "收回基準日"], evidence)
+    refreshed["delistDate"] = extract_delist_date(evidence)
+    return refreshed
 
 
 def source_label(url: str) -> str:
@@ -311,6 +360,7 @@ def parse_alert_with_reason(row: dict, url: str, page: str) -> tuple[dict | None
         return None, "no_required_official_phrase"
     if not is_confirmed_redemption_notice(evidence, row):
         return None, "not_confirmed_redemption_notice"
+    date_text = evidence
     return {
         "bondCode": str(row.get("bondCode") or "").strip(),
         "bondName": row.get("bondShortName") or "",
@@ -319,10 +369,10 @@ def parse_alert_with_reason(row: dict, url: str, page: str) -> tuple[dict | None
         "status": "已公告收回",
         "alertLevel": "warning",
         "summary": make_summary(evidence),
-        "redemptionStartDate": extract_date_after(["收回期間", "贖回期間", "開始受理", "債券收回基準日"], text),
-        "redemptionEndDate": extract_date_after(["停止受理轉換", "最後申請轉換日", "收回終止日", "收回期間"], text),
-        "redemptionBaseDate": extract_date_after(["債券收回基準日", "收回基準日"], text),
-        "delistDate": extract_date_after(["終止櫃檯買賣日期", "終止櫃檯買賣日", "終止買賣日", "停止交易日"], text),
+        "redemptionStartDate": extract_date_near_label(["收回期間", "贖回期間", "開始受理", "債券收回基準日"], date_text),
+        "redemptionEndDate": extract_date_near_label(["停止受理轉換", "最後申請轉換日"], date_text),
+        "redemptionBaseDate": extract_date_near_label(["債券收回基準日", "收回基準日"], date_text),
+        "delistDate": extract_delist_date(date_text),
         "source": source_label(url),
         "sourceUrl": url,
         "evidenceText": evidence,
@@ -440,6 +490,7 @@ def write_log(rows: list[dict]) -> None:
 
 
 def main() -> int:
+    assert_date_parsing_examples()
     parser = argparse.ArgumentParser()
     parser.add_argument("--codes", help="逗號分隔的 CB 代碼，例如 62236,81551")
     parser.add_argument("--limit", type=int, help="最多檢查幾檔 CB；預設檢查全部")
@@ -519,6 +570,7 @@ def main() -> int:
         print(f"checked={len(rows)} found={found} alerts=0 preserved_existing_alerts log={LOG_PATH}")
         return 0
 
+    alerts = {code: refresh_alert_dates_from_evidence(alert) for code, alert in alerts.items()}
     save_alerts(alerts)
     write_log(logs)
     print(f"checked={len(rows)} found={found} alerts={len(alerts)} log={LOG_PATH}")
