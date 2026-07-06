@@ -1,11 +1,15 @@
 {
   "1101": {
-    "stockName": "台泥",
-    "officialIndustry": "水泥工業",
+    "confidence": 90,
     "fineIndustries": [
       "水泥",
       "低碳建材與儲能"
     ],
+    "groupTags": [
+      "水泥",
+      "低碳建材"
+    ],
+    "officialIndustry": "水泥工業",
     "productTags": [
       "水泥",
       "預拌混凝土",
@@ -13,866 +17,866 @@
       "儲能",
       "電池材料"
     ],
+    "source": "manual",
+    "stockName": "台泥",
     "themeTags": [
       "低碳水泥",
       "儲能",
       "循環經濟"
     ],
-    "groupTags": [
-      "水泥",
-      "低碳建材"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "1256": {
-    "stockName": "鮮活果汁-KY",
-    "officialIndustry": "食品工業",
+    "confidence": 60,
     "fineIndustries": [
       "食品飲料"
     ],
+    "groupTags": [
+      "食品"
+    ],
+    "officialIndustry": "食品工業",
     "productTags": [
       "食品",
       "飲料",
       "通路",
       "原物料"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "鮮活果汁-KY",
     "themeTags": [
       "內需消費",
       "原物料成本"
     ],
-    "groupTags": [
-      "食品"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "1316": {
-    "stockName": "上曜",
-    "officialIndustry": "建材營造",
+    "confidence": 60,
     "fineIndustries": [
       "建設營造"
     ],
+    "groupTags": [
+      "營建"
+    ],
+    "officialIndustry": "建材營造",
     "productTags": [
       "建設",
       "營造",
       "土地資產",
       "工程"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "上曜",
     "themeTags": [
       "房市",
       "都更",
       "公共工程"
     ],
-    "groupTags": [
-      "營建"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "1338": {
-    "stockName": "廣華-KY",
-    "officialIndustry": "汽車工業",
+    "confidence": 60,
     "fineIndustries": [
       "汽車零組件",
       "整車"
     ],
+    "groupTags": [
+      "汽車"
+    ],
+    "officialIndustry": "汽車工業",
     "productTags": [
       "汽車零組件",
       "車用電子",
       "AM市場",
       "整車"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "廣華-KY",
     "themeTags": [
       "電動車",
       "車用電子"
     ],
-    "groupTags": [
-      "汽車"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "1402": {
-    "stockName": "遠東新",
-    "officialIndustry": "紡織纖維",
+    "confidence": 60,
     "fineIndustries": [
       "紡織成衣",
       "機能布"
     ],
+    "groupTags": [
+      "紡織"
+    ],
+    "officialIndustry": "紡織纖維",
     "productTags": [
       "紡織",
       "成衣",
       "機能布",
       "鞋材"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "遠東新",
     "themeTags": [
       "運動休閒",
       "品牌庫存循環"
     ],
-    "groupTags": [
-      "紡織"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "1436": {
-    "stockName": "華友聯",
-    "officialIndustry": "建材營造",
+    "confidence": 60,
     "fineIndustries": [
       "建設營造"
     ],
+    "groupTags": [
+      "營建"
+    ],
+    "officialIndustry": "建材營造",
     "productTags": [
       "建設",
       "營造",
       "土地資產",
       "工程"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "華友聯",
     "themeTags": [
       "房市",
       "都更",
       "公共工程"
     ],
-    "groupTags": [
-      "營建"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "1438": {
-    "stockName": "三地開發",
-    "officialIndustry": "建材營造",
+    "confidence": 60,
     "fineIndustries": [
       "建設營造"
     ],
+    "groupTags": [
+      "營建"
+    ],
+    "officialIndustry": "建材營造",
     "productTags": [
       "建設",
       "營造",
       "土地資產",
       "工程"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "三地開發",
     "themeTags": [
       "房市",
       "都更",
       "公共工程"
     ],
-    "groupTags": [
-      "營建"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "1466": {
-    "stockName": "聚隆",
-    "officialIndustry": "紡織纖維",
+    "confidence": 60,
     "fineIndustries": [
       "紡織成衣",
       "機能布"
     ],
+    "groupTags": [
+      "紡織"
+    ],
+    "officialIndustry": "紡織纖維",
     "productTags": [
       "紡織",
       "成衣",
       "機能布",
       "鞋材"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "聚隆",
     "themeTags": [
       "運動休閒",
       "品牌庫存循環"
     ],
-    "groupTags": [
-      "紡織"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "1472": {
-    "stockName": "三洋實業",
-    "officialIndustry": "建材營造",
+    "confidence": 60,
     "fineIndustries": [
       "建設營造"
     ],
+    "groupTags": [
+      "營建"
+    ],
+    "officialIndustry": "建材營造",
     "productTags": [
       "建設",
       "營造",
       "土地資產",
       "工程"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "三洋實業",
     "themeTags": [
       "房市",
       "都更",
       "公共工程"
     ],
-    "groupTags": [
-      "營建"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "1474": {
-    "stockName": "弘裕",
-    "officialIndustry": "紡織纖維",
+    "confidence": 60,
     "fineIndustries": [
       "紡織成衣",
       "機能布"
     ],
+    "groupTags": [
+      "紡織"
+    ],
+    "officialIndustry": "紡織纖維",
     "productTags": [
       "紡織",
       "成衣",
       "機能布",
       "鞋材"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "弘裕",
     "themeTags": [
       "運動休閒",
       "品牌庫存循環"
     ],
-    "groupTags": [
-      "紡織"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "1514": {
-    "stockName": "亞力",
-    "officialIndustry": "電機機械",
+    "confidence": 90,
     "fineIndustries": [
       "重電",
       "電力設備"
     ],
+    "groupTags": [
+      "重電",
+      "電力"
+    ],
+    "officialIndustry": "電機機械",
     "productTags": [
       "變壓器",
       "開關設備",
       "電線電纜",
       "電網工程"
     ],
+    "source": "manual",
+    "stockName": "亞力",
     "themeTags": [
       "AI資料中心用電",
       "台電強韌電網",
       "儲能"
     ],
-    "groupTags": [
-      "重電",
-      "電力"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "1526": {
-    "stockName": "日馳",
-    "officialIndustry": "電機機械",
+    "confidence": 60,
     "fineIndustries": [
       "機械",
-      "自動化"
-    ],
-    "productTags": [
-      "機械設備",
-      "自動化",
-      "零組件"
-    ],
-    "themeTags": [
-      "智慧製造",
       "自動化"
     ],
     "groupTags": [
       "機械"
     ],
-    "confidence": 60,
+    "officialIndustry": "電機機械",
+    "productTags": [
+      "機械設備",
+      "自動化",
+      "零組件"
+    ],
     "source": "officialIndustryOnly",
+    "stockName": "日馳",
+    "themeTags": [
+      "智慧製造",
+      "自動化"
+    ],
     "updatedAt": "2026-06-23"
   },
   "1536": {
-    "stockName": "和大",
-    "officialIndustry": "汽車工業",
+    "confidence": 60,
     "fineIndustries": [
       "汽車零組件",
       "整車"
     ],
+    "groupTags": [
+      "汽車"
+    ],
+    "officialIndustry": "汽車工業",
     "productTags": [
       "汽車零組件",
       "車用電子",
       "AM市場",
       "整車"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "和大",
     "themeTags": [
       "電動車",
       "車用電子"
     ],
-    "groupTags": [
-      "汽車"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "1560": {
-    "stockName": "中砂",
-    "officialIndustry": "電機機械",
+    "confidence": 90,
     "fineIndustries": [
       "半導體設備零組件",
       "再生晶圓"
     ],
+    "groupTags": [
+      "半導體材料",
+      "耗材"
+    ],
+    "officialIndustry": "電機機械",
     "productTags": [
       "再生晶圓",
       "鑽石碟",
       "CMP耗材",
       "半導體材料"
     ],
+    "source": "manual",
+    "stockName": "中砂",
     "themeTags": [
       "先進製程",
       "CoWoS",
       "晶圓代工供應鏈"
     ],
-    "groupTags": [
-      "半導體材料",
-      "耗材"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "1586": {
-    "stockName": "和勤",
-    "officialIndustry": "電機機械",
+    "confidence": 60,
     "fineIndustries": [
       "機械",
-      "自動化"
-    ],
-    "productTags": [
-      "機械設備",
-      "自動化",
-      "零組件"
-    ],
-    "themeTags": [
-      "智慧製造",
       "自動化"
     ],
     "groupTags": [
       "機械"
     ],
-    "confidence": 60,
+    "officialIndustry": "電機機械",
+    "productTags": [
+      "機械設備",
+      "自動化",
+      "零組件"
+    ],
     "source": "officialIndustryOnly",
+    "stockName": "和勤",
+    "themeTags": [
+      "智慧製造",
+      "自動化"
+    ],
     "updatedAt": "2026-06-23"
   },
   "1589": {
-    "stockName": "永冠-KY",
-    "officialIndustry": "電機機械",
+    "confidence": 60,
     "fineIndustries": [
       "機械",
-      "自動化"
-    ],
-    "productTags": [
-      "機械設備",
-      "自動化",
-      "零組件"
-    ],
-    "themeTags": [
-      "智慧製造",
       "自動化"
     ],
     "groupTags": [
       "機械"
     ],
-    "confidence": 60,
+    "officialIndustry": "電機機械",
+    "productTags": [
+      "機械設備",
+      "自動化",
+      "零組件"
+    ],
     "source": "officialIndustryOnly",
+    "stockName": "永冠-KY",
+    "themeTags": [
+      "智慧製造",
+      "自動化"
+    ],
     "updatedAt": "2026-06-23"
   },
   "1595": {
-    "stockName": "川寶",
-    "officialIndustry": "半導體業",
+    "confidence": 60,
     "fineIndustries": [
       "半導體"
     ],
+    "groupTags": [
+      "半導體"
+    ],
+    "officialIndustry": "半導體業",
     "productTags": [
       "IC設計",
       "晶圓代工",
       "封測",
       "設備材料"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "川寶",
     "themeTags": [
       "AI晶片",
       "HPC",
       "半導體循環"
     ],
-    "groupTags": [
-      "半導體"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "1598": {
-    "stockName": "岱宇",
-    "officialIndustry": "運動休閒",
+    "confidence": 60,
     "fineIndustries": [
       "其他",
       "待細分"
     ],
+    "groupTags": [
+      "待確認"
+    ],
+    "officialIndustry": "運動休閒",
     "productTags": [
       "主要產品需由官網",
       "年報補齊"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "岱宇",
     "themeTags": [
       "待確認"
     ],
-    "groupTags": [
-      "待確認"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "1609": {
-    "stockName": "大亞",
-    "officialIndustry": "電器電纜",
+    "confidence": 90,
     "fineIndustries": [
       "重電",
       "電力設備"
     ],
+    "groupTags": [
+      "重電",
+      "電力"
+    ],
+    "officialIndustry": "電器電纜",
     "productTags": [
       "變壓器",
       "開關設備",
       "電線電纜",
       "電網工程"
     ],
+    "source": "manual",
+    "stockName": "大亞",
     "themeTags": [
       "AI資料中心用電",
       "台電強韌電網",
       "儲能"
     ],
-    "groupTags": [
-      "重電",
-      "電力"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "1717": {
-    "stockName": "長興",
-    "officialIndustry": "化學工業",
+    "confidence": 60,
     "fineIndustries": [
       "化工材料"
     ],
+    "groupTags": [
+      "化工"
+    ],
+    "officialIndustry": "化學工業",
     "productTags": [
       "化學品",
       "樹脂",
       "特用材料"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "長興",
     "themeTags": [
       "材料國產化",
       "景氣循環"
     ],
-    "groupTags": [
-      "化工"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "1781": {
-    "stockName": "合世",
-    "officialIndustry": "生技醫療",
+    "confidence": 60,
     "fineIndustries": [
       "生技醫療"
     ],
+    "groupTags": [
+      "生技"
+    ],
+    "officialIndustry": "生技醫療",
     "productTags": [
       "藥品",
       "醫材",
       "檢測",
       "保健"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "合世",
     "themeTags": [
       "新藥",
       "CDMO",
       "醫材"
     ],
-    "groupTags": [
-      "生技"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "1786": {
-    "stockName": "科妍",
-    "officialIndustry": "生技醫療",
+    "confidence": 60,
     "fineIndustries": [
       "生技醫療"
     ],
+    "groupTags": [
+      "生技"
+    ],
+    "officialIndustry": "生技醫療",
     "productTags": [
       "藥品",
       "醫材",
       "檢測",
       "保健"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "科妍",
     "themeTags": [
       "新藥",
       "CDMO",
       "醫材"
     ],
-    "groupTags": [
-      "生技"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "1909": {
-    "stockName": "榮成",
-    "officialIndustry": "造紙工業",
+    "confidence": 60,
     "fineIndustries": [
       "其他",
       "待細分"
     ],
+    "groupTags": [
+      "待確認"
+    ],
+    "officialIndustry": "造紙工業",
     "productTags": [
       "主要產品需由官網",
       "年報補齊"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "榮成",
     "themeTags": [
       "待確認"
     ],
-    "groupTags": [
-      "待確認"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "2034": {
-    "stockName": "允強",
-    "officialIndustry": "鋼鐵工業",
+    "confidence": 60,
     "fineIndustries": [
       "鋼鐵材料"
     ],
+    "groupTags": [
+      "鋼鐵"
+    ],
+    "officialIndustry": "鋼鐵工業",
     "productTags": [
       "鋼材",
       "不鏽鋼",
       "特殊鋼",
       "加工"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "允強",
     "themeTags": [
       "基建",
       "原物料",
       "風電"
     ],
-    "groupTags": [
-      "鋼鐵"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "2066": {
-    "stockName": "世德",
-    "officialIndustry": "電機機械",
+    "confidence": 60,
     "fineIndustries": [
       "機械",
-      "自動化"
-    ],
-    "productTags": [
-      "機械設備",
-      "自動化",
-      "零組件"
-    ],
-    "themeTags": [
-      "智慧製造",
       "自動化"
     ],
     "groupTags": [
       "機械"
     ],
-    "confidence": 60,
+    "officialIndustry": "電機機械",
+    "productTags": [
+      "機械設備",
+      "自動化",
+      "零組件"
+    ],
     "source": "officialIndustryOnly",
+    "stockName": "世德",
+    "themeTags": [
+      "智慧製造",
+      "自動化"
+    ],
     "updatedAt": "2026-06-23"
   },
   "2104": {
-    "stockName": "國際中橡",
-    "officialIndustry": "橡膠工業",
+    "confidence": 60,
     "fineIndustries": [
       "輪胎",
       "橡膠製品"
     ],
+    "groupTags": [
+      "橡膠"
+    ],
+    "officialIndustry": "橡膠工業",
     "productTags": [
       "輪胎",
       "橡膠材料",
       "工業橡膠"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "國際中橡",
     "themeTags": [
       "車市",
       "原料成本"
     ],
-    "groupTags": [
-      "橡膠"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "2201": {
-    "stockName": "裕隆",
-    "officialIndustry": "汽車工業",
+    "confidence": 60,
     "fineIndustries": [
       "汽車零組件",
       "整車"
     ],
+    "groupTags": [
+      "汽車"
+    ],
+    "officialIndustry": "汽車工業",
     "productTags": [
       "汽車零組件",
       "車用電子",
       "AM市場",
       "整車"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "裕隆",
     "themeTags": [
       "電動車",
       "車用電子"
     ],
-    "groupTags": [
-      "汽車"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "2228": {
-    "stockName": "劍麟",
-    "officialIndustry": "汽車工業",
+    "confidence": 60,
     "fineIndustries": [
       "汽車零組件",
       "整車"
     ],
+    "groupTags": [
+      "汽車"
+    ],
+    "officialIndustry": "汽車工業",
     "productTags": [
       "汽車零組件",
       "車用電子",
       "AM市場",
       "整車"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "劍麟",
     "themeTags": [
       "電動車",
       "車用電子"
     ],
-    "groupTags": [
-      "汽車"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "2233": {
-    "stockName": "宇隆",
-    "officialIndustry": "汽車工業",
+    "confidence": 60,
     "fineIndustries": [
       "汽車零組件",
       "整車"
     ],
+    "groupTags": [
+      "汽車"
+    ],
+    "officialIndustry": "汽車工業",
     "productTags": [
       "汽車零組件",
       "車用電子",
       "AM市場",
       "整車"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "宇隆",
     "themeTags": [
       "電動車",
       "車用電子"
     ],
-    "groupTags": [
-      "汽車"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "2236": {
-    "stockName": "百達-KY",
-    "officialIndustry": "汽車工業",
+    "confidence": 90,
     "fineIndustries": [
       "車用鋁合金",
       "精密壓鑄件"
     ],
+    "groupTags": [
+      "車用精密零組件"
+    ],
+    "officialIndustry": "汽車工業",
     "productTags": [
       "車用鋁合金壓鑄件",
       "精密加工件",
       "汽車零組件",
       "輕量化零件"
     ],
+    "source": "manual",
+    "stockName": "百達-KY",
     "themeTags": [
       "電動車",
       "車用輕量化",
       "汽車零組件"
     ],
-    "groupTags": [
-      "車用精密零組件"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "2247": {
-    "stockName": "汎德永業",
-    "officialIndustry": "汽車工業",
+    "confidence": 90,
     "fineIndustries": [
       "豪華車經銷",
       "售後服務"
     ],
+    "groupTags": [
+      "汽車通路"
+    ],
+    "officialIndustry": "汽車工業",
     "productTags": [
       "BMW代理",
       "豪華車經銷",
       "汽車售後服務",
       "車輛銷售"
     ],
+    "source": "manual",
+    "stockName": "汎德永業",
     "themeTags": [
       "豪華車",
       "內需消費",
       "汽車通路"
     ],
-    "groupTags": [
-      "汽車通路"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "2329": {
-    "stockName": "華泰",
-    "officialIndustry": "半導體業",
+    "confidence": 90,
     "fineIndustries": [
       "記憶體封測",
       "半導體封裝"
     ],
+    "groupTags": [
+      "半導體封測"
+    ],
+    "officialIndustry": "半導體業",
     "productTags": [
       "記憶體封裝",
       "IC測試",
       "半導體封測",
       "模組封裝"
     ],
+    "source": "manual",
+    "stockName": "華泰",
     "themeTags": [
       "AI記憶體",
       "封測",
       "先進封裝"
     ],
-    "groupTags": [
-      "半導體封測"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "2337": {
-    "stockName": "旺宏",
-    "officialIndustry": "半導體業",
+    "confidence": 90,
     "fineIndustries": [
       "NOR Flash",
       "記憶體IDM"
     ],
+    "groupTags": [
+      "記憶體IC"
+    ],
+    "officialIndustry": "半導體業",
     "productTags": [
       "NOR Flash",
       "NAND Flash",
       "ROM",
       "記憶體晶片"
     ],
+    "source": "manual",
+    "stockName": "旺宏",
     "themeTags": [
       "車用記憶體",
       "工控記憶體",
       "AI邊緣儲存"
     ],
-    "groupTags": [
-      "記憶體IC"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "2338": {
-    "stockName": "光罩",
-    "officialIndustry": "半導體業",
+    "confidence": 90,
     "fineIndustries": [
       "半導體光罩",
       "Photomask"
     ],
+    "groupTags": [
+      "半導體光罩"
+    ],
+    "officialIndustry": "半導體業",
     "productTags": [
       "光罩",
       "Photomask",
       "半導體製程材料",
       "晶圓製造耗材"
     ],
+    "source": "manual",
+    "stockName": "光罩",
     "themeTags": [
       "先進製程",
       "成熟製程",
       "半導體材料"
     ],
-    "groupTags": [
-      "半導體光罩"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "2351": {
-    "stockName": "順德",
-    "officialIndustry": "半導體業",
+    "confidence": 90,
     "fineIndustries": [
       "半導體導線架",
       "功率元件框架"
     ],
+    "groupTags": [
+      "導線架",
+      "封裝材料"
+    ],
+    "officialIndustry": "半導體業",
     "productTags": [
       "導線架",
       "功率半導體導線架",
       "半導體金屬框架",
       "車用導線架"
     ],
+    "source": "manual",
+    "stockName": "順德",
     "themeTags": [
       "功率元件",
       "車用半導體",
       "封裝材料"
     ],
-    "groupTags": [
-      "導線架",
-      "封裝材料"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "2368": {
-    "stockName": "金像電",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "高階PCB",
       "AI伺服器板"
     ],
+    "groupTags": [
+      "高階PCB"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "伺服器PCB",
       "AI加速卡板",
       "高多層板",
       "網通板"
     ],
+    "source": "manual",
+    "stockName": "金像電",
     "themeTags": [
       "AI伺服器",
       "PCB升級",
       "資料中心"
     ],
-    "groupTags": [
-      "高階PCB"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "2374": {
-    "stockName": "佳能",
-    "officialIndustry": "光電業",
+    "confidence": 90,
     "fineIndustries": [
       "光學鏡頭",
       "影像模組"
     ],
+    "groupTags": [
+      "光學鏡頭",
+      "車用影像"
+    ],
+    "officialIndustry": "光電業",
     "productTags": [
       "光學鏡頭",
       "相機模組",
@@ -880,52 +884,52 @@
       "安防影像",
       "數位影像模組"
     ],
+    "source": "manual",
+    "stockName": "佳能",
     "themeTags": [
       "車用鏡頭",
       "AI影像",
       "安防監控"
     ],
-    "groupTags": [
-      "光學鏡頭",
-      "車用影像"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "2402": {
-    "stockName": "毅嘉",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "軟板",
       "車用機構整合"
     ],
+    "groupTags": [
+      "軟板",
+      "車用電子"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "FPC軟板",
       "薄膜按鍵",
       "車用內飾模組",
       "整合機構件"
     ],
+    "source": "manual",
+    "stockName": "毅嘉",
     "themeTags": [
       "車用電子",
       "軟板",
       "內裝電子化"
     ],
-    "groupTags": [
-      "軟板",
-      "車用電子"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "2427": {
-    "stockName": "三商電",
-    "officialIndustry": "資訊服務業",
+    "confidence": 90,
     "fineIndustries": [
       "系統整合",
       "金融資訊服務"
     ],
+    "groupTags": [
+      "資訊服務",
+      "SI"
+    ],
+    "officialIndustry": "資訊服務業",
     "productTags": [
       "系統整合",
       "金融資訊系統",
@@ -933,52 +937,51 @@
       "ATM",
       "自動化服務"
     ],
+    "source": "manual",
+    "stockName": "三商電",
     "themeTags": [
       "金融科技",
       "資安",
       "系統整合"
     ],
-    "groupTags": [
-      "資訊服務",
-      "SI"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "2436": {
-    "stockName": "偉詮電",
-    "officialIndustry": "半導體業",
+    "confidence": 90,
     "fineIndustries": [
       "電源管理IC",
       "USB PD控制IC"
     ],
+    "groupTags": [
+      "IC設計",
+      "電源控制"
+    ],
+    "officialIndustry": "半導體業",
     "productTags": [
       "電源管理IC",
       "USB PD控制IC",
       "MCU",
       "馬達控制IC"
     ],
+    "source": "manual",
+    "stockName": "偉詮電",
     "themeTags": [
       "Type-C",
       "USB PD",
       "電源管理"
     ],
-    "groupTags": [
-      "IC設計",
-      "電源控制"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "2439": {
-    "stockName": "美律",
-    "officialIndustry": "通信網路業",
+    "confidence": 90,
     "fineIndustries": [
       "電聲元件",
       "耳機揚聲器"
     ],
+    "groupTags": [
+      "電聲元件"
+    ],
+    "officialIndustry": "通信網路業",
     "productTags": [
       "耳機",
       "揚聲器",
@@ -986,576 +989,576 @@
       "電聲元件",
       "穿戴音訊"
     ],
+    "source": "manual",
+    "stockName": "美律",
     "themeTags": [
       "TWS耳機",
       "AI語音",
       "穿戴裝置"
     ],
-    "groupTags": [
-      "電聲元件"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "2442": {
-    "stockName": "新美齊",
-    "officialIndustry": "建材營造",
+    "confidence": 90,
     "fineIndustries": [
       "建設開發",
       "住宅推案"
     ],
+    "groupTags": [
+      "建設開發"
+    ],
+    "officialIndustry": "建材營造",
     "productTags": [
       "住宅建案",
       "商辦開發",
       "土地開發",
       "不動產銷售"
     ],
+    "source": "manual",
+    "stockName": "新美齊",
     "themeTags": [
       "房市循環",
       "都更",
       "建案入帳"
     ],
-    "groupTags": [
-      "建設開發"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "2455": {
-    "stockName": "全新",
-    "officialIndustry": "通信網路業",
+    "confidence": 90,
     "fineIndustries": [
       "砷化鎵磊晶",
       "RF元件材料"
     ],
+    "groupTags": [
+      "GaAs",
+      "RF磊晶"
+    ],
+    "officialIndustry": "通信網路業",
     "productTags": [
       "砷化鎵磊晶",
       "射頻元件",
       "光電磊晶",
       "化合物半導體"
     ],
+    "source": "manual",
+    "stockName": "全新",
     "themeTags": [
       "5G RF",
       "衛星通訊",
       "化合物半導體"
     ],
-    "groupTags": [
-      "GaAs",
-      "RF磊晶"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "2462": {
-    "stockName": "良得電",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "電源線",
       "線束連接線"
     ],
+    "groupTags": [
+      "線束",
+      "電源線"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "電源線",
       "訊號線",
       "連接線組",
       "充電線材"
     ],
+    "source": "manual",
+    "stockName": "良得電",
     "themeTags": [
       "Type-C",
       "充電線材",
       "消費電子"
     ],
-    "groupTags": [
-      "線束",
-      "電源線"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "2464": {
-    "stockName": "盟立",
-    "officialIndustry": "其他電子業",
+    "confidence": 90,
     "fineIndustries": [
       "自動化系統",
       "智慧物流設備"
     ],
+    "groupTags": [
+      "自動化設備"
+    ],
+    "officialIndustry": "其他電子業",
     "productTags": [
       "自動化設備",
       "智慧物流系統",
       "倉儲自動化",
       "機器人整合"
     ],
+    "source": "manual",
+    "stockName": "盟立",
     "themeTags": [
       "智慧製造",
       "物流自動化",
       "機器人"
     ],
-    "groupTags": [
-      "自動化設備"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "2467": {
-    "stockName": "志聖",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "PCB",
       "半導體製程設備"
     ],
+    "groupTags": [
+      "電子製程設備"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "烘烤設備",
       "塗佈設備",
       "PCB設備",
       "半導體製程設備"
     ],
+    "source": "manual",
+    "stockName": "志聖",
     "themeTags": [
       "先進封裝",
       "PCB設備",
       "半導體設備"
     ],
-    "groupTags": [
-      "電子製程設備"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "2476": {
-    "stockName": "鉅祥",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "精密沖壓件",
       "端子模具"
     ],
+    "groupTags": [
+      "精密沖壓件"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "精密沖壓件",
       "連接器端子",
       "模具",
       "金屬機構件"
     ],
+    "source": "manual",
+    "stockName": "鉅祥",
     "themeTags": [
       "車用零件",
       "連接器",
       "精密金屬件"
     ],
-    "groupTags": [
-      "精密沖壓件"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "2486": {
-    "stockName": "一詮",
-    "officialIndustry": "光電業",
+    "confidence": 90,
     "fineIndustries": [
       "LED導線架",
       "散熱金屬件"
     ],
+    "groupTags": [
+      "LED材料",
+      "散熱金屬件"
+    ],
+    "officialIndustry": "光電業",
     "productTags": [
       "LED導線架",
       "沖壓件",
       "散熱金屬件",
       "光電零組件"
     ],
+    "source": "manual",
+    "stockName": "一詮",
     "themeTags": [
       "LED",
       "散熱",
       "Mini LED材料"
     ],
-    "groupTags": [
-      "LED材料",
-      "散熱金屬件"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "2528": {
-    "stockName": "皇普",
-    "officialIndustry": "建材營造",
+    "confidence": 90,
     "fineIndustries": [
       "建設開發",
       "住宅推案"
     ],
+    "groupTags": [
+      "建設開發"
+    ],
+    "officialIndustry": "建材營造",
     "productTags": [
       "住宅建案",
       "商辦開發",
       "土地開發",
       "不動產銷售"
     ],
+    "source": "manual",
+    "stockName": "皇普",
     "themeTags": [
       "房市循環",
       "都更",
       "建案入帳"
     ],
-    "groupTags": [
-      "建設開發"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "2530": {
-    "stockName": "華建",
-    "officialIndustry": "建材營造",
+    "confidence": 90,
     "fineIndustries": [
       "建設開發",
       "住宅推案"
     ],
+    "groupTags": [
+      "建設開發"
+    ],
+    "officialIndustry": "建材營造",
     "productTags": [
       "住宅建案",
       "商辦開發",
       "土地開發",
       "不動產銷售"
     ],
+    "source": "manual",
+    "stockName": "華建",
     "themeTags": [
       "房市循環",
       "都更",
       "建案入帳"
     ],
-    "groupTags": [
-      "建設開發"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "2548": {
-    "stockName": "華固",
-    "officialIndustry": "建材營造",
+    "confidence": 90,
     "fineIndustries": [
       "建設開發",
       "住宅推案"
     ],
+    "groupTags": [
+      "建設開發"
+    ],
+    "officialIndustry": "建材營造",
     "productTags": [
       "住宅建案",
       "商辦開發",
       "土地開發",
       "不動產銷售"
     ],
+    "source": "manual",
+    "stockName": "華固",
     "themeTags": [
       "房市循環",
       "都更",
       "建案入帳"
     ],
-    "groupTags": [
-      "建設開發"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "2641": {
-    "stockName": "正德",
-    "officialIndustry": "航運業",
+    "confidence": 90,
     "fineIndustries": [
       "散裝航運",
       "船隊營運"
     ],
+    "groupTags": [
+      "散裝航運"
+    ],
+    "officialIndustry": "航運業",
     "productTags": [
       "散裝船",
       "船舶營運",
       "航運服務",
       "乾散貨運輸"
     ],
+    "source": "manual",
+    "stockName": "正德",
     "themeTags": [
       "BDI",
       "散裝航運",
       "景氣循環"
     ],
-    "groupTags": [
-      "散裝航運"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "2727": {
-    "stockName": "王品",
-    "officialIndustry": "觀光餐旅",
+    "confidence": 90,
     "fineIndustries": [
       "連鎖餐飲",
       "餐飲品牌集團"
     ],
+    "groupTags": [
+      "連鎖餐飲"
+    ],
+    "officialIndustry": "觀光餐旅",
     "productTags": [
       "連鎖餐飲",
       "餐廳品牌",
       "內需消費",
       "餐飲服務"
     ],
+    "source": "manual",
+    "stockName": "王品",
     "themeTags": [
       "內需消費",
       "餐飲展店",
       "通膨轉嫁"
     ],
-    "groupTags": [
-      "連鎖餐飲"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "2732": {
-    "stockName": "六角",
-    "officialIndustry": "觀光餐旅",
+    "confidence": 90,
     "fineIndustries": [
       "連鎖手搖飲",
       "餐飲品牌"
     ],
+    "groupTags": [
+      "手搖飲",
+      "餐飲"
+    ],
+    "officialIndustry": "觀光餐旅",
     "productTags": [
       "手搖飲",
       "連鎖餐飲",
       "品牌授權",
       "海外展店"
     ],
+    "source": "manual",
+    "stockName": "六角",
     "themeTags": [
       "手搖飲",
       "餐飲展店",
       "內需消費"
     ],
-    "groupTags": [
-      "手搖飲",
-      "餐飲"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "2743": {
-    "stockName": "山富",
-    "officialIndustry": "觀光餐旅",
+    "confidence": 90,
     "fineIndustries": [
       "旅行社",
       "旅遊服務"
     ],
+    "groupTags": [
+      "旅行社"
+    ],
+    "officialIndustry": "觀光餐旅",
     "productTags": [
       "旅行社",
       "團體旅遊",
       "機票飯店",
       "旅遊服務"
     ],
+    "source": "manual",
+    "stockName": "山富",
     "themeTags": [
       "出境旅遊",
       "觀光復甦",
       "航空旅遊"
     ],
-    "groupTags": [
-      "旅行社"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "2745": {
-    "stockName": "五福",
-    "officialIndustry": "觀光餐旅",
+    "confidence": 90,
     "fineIndustries": [
       "旅行社",
       "團體旅遊"
     ],
+    "groupTags": [
+      "旅行社"
+    ],
+    "officialIndustry": "觀光餐旅",
     "productTags": [
       "旅行社",
       "團體旅遊",
       "機票旅遊",
       "自由行服務"
     ],
+    "source": "manual",
+    "stockName": "五福",
     "themeTags": [
       "出境旅遊",
       "觀光復甦"
     ],
-    "groupTags": [
-      "旅行社"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "2753": {
-    "stockName": "八方雲集",
-    "officialIndustry": "觀光餐旅",
+    "confidence": 90,
     "fineIndustries": [
       "連鎖餐飲",
       "鍋貼水餃"
     ],
+    "groupTags": [
+      "連鎖餐飲"
+    ],
+    "officialIndustry": "觀光餐旅",
     "productTags": [
       "鍋貼",
       "水餃",
       "連鎖餐飲",
       "食品加工"
     ],
+    "source": "manual",
+    "stockName": "八方雲集",
     "themeTags": [
       "內需消費",
       "餐飲展店",
       "食品通路"
     ],
-    "groupTags": [
-      "連鎖餐飲"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "2755": {
-    "stockName": "揚秦",
-    "officialIndustry": "觀光餐旅",
+    "confidence": 90,
     "fineIndustries": [
       "連鎖餐飲",
       "早午餐品牌"
     ],
+    "groupTags": [
+      "連鎖餐飲"
+    ],
+    "officialIndustry": "觀光餐旅",
     "productTags": [
       "連鎖餐飲",
       "早午餐",
       "炸雞品牌",
       "餐飲加盟"
     ],
+    "source": "manual",
+    "stockName": "揚秦",
     "themeTags": [
       "內需消費",
       "餐飲展店"
     ],
-    "groupTags": [
-      "連鎖餐飲"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "2756": {
-    "stockName": "聯發國際",
-    "officialIndustry": "觀光餐旅",
+    "confidence": 90,
     "fineIndustries": [
       "連鎖飲料",
       "餐飲品牌"
     ],
+    "groupTags": [
+      "手搖飲"
+    ],
+    "officialIndustry": "觀光餐旅",
     "productTags": [
       "手搖飲",
       "連鎖飲料",
       "品牌授權",
       "餐飲加盟"
     ],
+    "source": "manual",
+    "stockName": "聯發國際",
     "themeTags": [
       "手搖飲",
       "餐飲展店",
       "海外展店"
     ],
-    "groupTags": [
-      "手搖飲"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "2906": {
-    "stockName": "高林",
-    "officialIndustry": "貿易百貨",
+    "confidence": 90,
     "fineIndustries": [
       "服飾通路",
       "品牌代理"
     ],
+    "groupTags": [
+      "服飾通路"
+    ],
+    "officialIndustry": "貿易百貨",
     "productTags": [
       "服飾代理",
       "零售通路",
       "品牌代理",
       "百貨通路"
     ],
+    "source": "manual",
+    "stockName": "高林",
     "themeTags": [
       "內需消費",
       "服飾零售",
       "通路"
     ],
-    "groupTags": [
-      "服飾通路"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3011": {
-    "stockName": "今皓",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "連接線組",
       "線束"
     ],
+    "groupTags": [
+      "線束",
+      "連接線"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "連接線",
       "訊號線",
       "線束",
       "電源線"
     ],
+    "source": "manual",
+    "stockName": "今皓",
     "themeTags": [
       "PC周邊",
       "車用線束",
       "Type-C"
     ],
-    "groupTags": [
-      "線束",
-      "連接線"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3013": {
-    "stockName": "晟銘電",
-    "officialIndustry": "電腦及週邊設備業",
+    "confidence": 90,
     "fineIndustries": [
       "AI伺服器機殼",
       "機櫃"
     ],
+    "groupTags": [
+      "伺服器機殼"
+    ],
+    "officialIndustry": "電腦及週邊設備業",
     "productTags": [
       "伺服器機殼",
       "機櫃",
       "機箱",
       "金屬機構件"
     ],
+    "source": "manual",
+    "stockName": "晟銘電",
     "themeTags": [
       "AI伺服器",
       "資料中心",
       "機櫃"
     ],
-    "groupTags": [
-      "伺服器機殼"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3016": {
-    "stockName": "嘉晶",
-    "officialIndustry": "半導體業",
+    "confidence": 60,
     "fineIndustries": [
       "半導體"
     ],
+    "groupTags": [
+      "半導體"
+    ],
+    "officialIndustry": "半導體業",
     "productTags": [
       "IC設計",
       "晶圓代工",
       "封測",
       "設備材料"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "嘉晶",
     "themeTags": [
       "AI晶片",
       "HPC",
       "半導體循環"
     ],
-    "groupTags": [
-      "半導體"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "3032": {
-    "stockName": "偉訓",
-    "officialIndustry": "電子零組件業",
+    "confidence": 60,
     "fineIndustries": [
       "電子零組件"
     ],
+    "groupTags": [
+      "電子零組件"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "PCB",
       "被動元件",
@@ -1563,147 +1566,147 @@
       "散熱",
       "功率元件"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "偉訓",
     "themeTags": [
       "AI伺服器",
       "車用電子"
     ],
-    "groupTags": [
-      "電子零組件"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "3033": {
-    "stockName": "威健",
-    "officialIndustry": "電子通路業",
+    "confidence": 90,
     "fineIndustries": [
       "IC通路",
       "電子零件代理"
     ],
+    "groupTags": [
+      "IC通路"
+    ],
+    "officialIndustry": "電子通路業",
     "productTags": [
       "IC代理",
       "電子零件通路",
       "系統解決方案",
       "半導體代理"
     ],
+    "source": "manual",
+    "stockName": "威健",
     "themeTags": [
       "AI硬體通路",
       "半導體通路",
       "記憶體通路"
     ],
-    "groupTags": [
-      "IC通路"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3037": {
-    "stockName": "欣興",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "高階PCB",
       "載板"
     ],
+    "groupTags": [
+      "PCB",
+      "載板"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "HDI",
       "ABF載板",
       "IC載板",
       "伺服器PCB"
     ],
+    "source": "manual",
+    "stockName": "欣興",
     "themeTags": [
       "AI伺服器",
       "先進封裝",
       "載板"
     ],
-    "groupTags": [
-      "PCB",
-      "載板"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3040": {
-    "stockName": "遠見",
-    "officialIndustry": "其他業",
+    "confidence": 60,
     "fineIndustries": [
       "多角化",
       "其他"
     ],
+    "groupTags": [
+      "其他"
+    ],
+    "officialIndustry": "其他業",
     "productTags": [
       "多角化經營",
       "租賃",
       "服務",
       "控股"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "遠見",
     "themeTags": [
       "內需",
       "資產題材"
     ],
-    "groupTags": [
-      "其他"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "3045": {
-    "stockName": "台灣大",
-    "officialIndustry": "通信網路業",
+    "confidence": 60,
     "fineIndustries": [
       "通訊網路"
     ],
+    "groupTags": [
+      "通訊網路"
+    ],
+    "officialIndustry": "通信網路業",
     "productTags": [
       "網通設備",
       "光通訊",
       "無線通訊",
       "天線"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "台灣大",
     "themeTags": [
       "AI資料中心",
       "5G",
       "衛星",
       "WiFi 7"
     ],
-    "groupTags": [
-      "通訊網路"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "3088": {
-    "stockName": "艾訊",
-    "officialIndustry": "電腦及週邊設備業",
+    "confidence": 90,
     "fineIndustries": [
       "工業電腦",
       "嵌入式系統"
     ],
+    "groupTags": [
+      "工業電腦"
+    ],
+    "officialIndustry": "電腦及週邊設備業",
     "productTags": [
       "IPC",
       "嵌入式電腦",
       "人機介面",
       "工控平台"
     ],
+    "source": "manual",
+    "stockName": "艾訊",
     "themeTags": [
       "邊緣AI",
       "工業4.0"
     ],
-    "groupTags": [
-      "工業電腦"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3092": {
-    "stockName": "鴻碩",
-    "officialIndustry": "電子零組件業",
+    "confidence": 60,
     "fineIndustries": [
       "電子零組件"
     ],
+    "groupTags": [
+      "電子零組件"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "PCB",
       "被動元件",
@@ -1711,216 +1714,216 @@
       "散熱",
       "功率元件"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "鴻碩",
     "themeTags": [
       "AI伺服器",
       "車用電子"
     ],
-    "groupTags": [
-      "電子零組件"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "3095": {
-    "stockName": "及成",
-    "officialIndustry": "通信網路業",
+    "confidence": 60,
     "fineIndustries": [
       "通訊網路"
     ],
+    "groupTags": [
+      "通訊網路"
+    ],
+    "officialIndustry": "通信網路業",
     "productTags": [
       "網通設備",
       "光通訊",
       "無線通訊",
       "天線"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "及成",
     "themeTags": [
       "AI資料中心",
       "5G",
       "衛星",
       "WiFi 7"
     ],
-    "groupTags": [
-      "通訊網路"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "3122": {
-    "stockName": "笙泉",
-    "officialIndustry": "半導體業",
+    "confidence": 90,
     "fineIndustries": [
       "IC設計"
     ],
+    "groupTags": [
+      "IC設計"
+    ],
+    "officialIndustry": "半導體業",
     "productTags": [
       "通訊IC",
       "MCU",
       "驅動IC",
       "控制IC"
     ],
+    "source": "manual",
+    "stockName": "笙泉",
     "themeTags": [
       "AIoT",
       "邊緣AI",
       "消費電子復甦"
     ],
-    "groupTags": [
-      "IC設計"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3128": {
-    "stockName": "昇銳",
-    "officialIndustry": "光電業",
+    "confidence": 60,
     "fineIndustries": [
       "光電",
       "顯示"
     ],
+    "groupTags": [
+      "光電"
+    ],
+    "officialIndustry": "光電業",
     "productTags": [
       "面板",
       "光學",
       "LED",
       "光電材料"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "昇銳",
     "themeTags": [
       "車載顯示",
       "光學升級"
     ],
-    "groupTags": [
-      "光電"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "3131": {
-    "stockName": "弘塑",
-    "officialIndustry": "半導體業",
+    "confidence": 90,
     "fineIndustries": [
       "半導體濕製程設備"
     ],
+    "groupTags": [
+      "半導體設備"
+    ],
+    "officialIndustry": "半導體業",
     "productTags": [
       "濕製程設備",
       "清洗設備",
       "蝕刻設備",
       "晶圓級封裝設備"
     ],
+    "source": "manual",
+    "stockName": "弘塑",
     "themeTags": [
       "先進封裝",
       "CoWoS",
       "半導體設備"
     ],
-    "groupTags": [
-      "半導體設備"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3135": {
-    "stockName": "凌航",
-    "officialIndustry": "半導體業",
+    "confidence": 60,
     "fineIndustries": [
       "半導體"
     ],
+    "groupTags": [
+      "半導體"
+    ],
+    "officialIndustry": "半導體業",
     "productTags": [
       "IC設計",
       "晶圓代工",
       "封測",
       "設備材料"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "凌航",
     "themeTags": [
       "AI晶片",
       "HPC",
       "半導體循環"
     ],
-    "groupTags": [
-      "半導體"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "3141": {
-    "stockName": "晶宏",
-    "officialIndustry": "半導體業",
+    "confidence": 90,
     "fineIndustries": [
       "IC設計"
     ],
+    "groupTags": [
+      "IC設計"
+    ],
+    "officialIndustry": "半導體業",
     "productTags": [
       "通訊IC",
       "MCU",
       "驅動IC",
       "控制IC"
     ],
+    "source": "manual",
+    "stockName": "晶宏",
     "themeTags": [
       "AIoT",
       "邊緣AI",
       "消費電子復甦"
     ],
-    "groupTags": [
-      "IC設計"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3167": {
-    "stockName": "大量",
-    "officialIndustry": "電機機械",
+    "confidence": 90,
     "fineIndustries": [
       "半導體",
       "PCB設備"
     ],
+    "groupTags": [
+      "設備"
+    ],
+    "officialIndustry": "電機機械",
     "productTags": [
       "製程設備",
       "自動化設備",
       "檢測設備"
     ],
+    "source": "manual",
+    "stockName": "大量",
     "themeTags": [
       "CoWoS",
       "先進封裝",
       "PCB擴產"
     ],
-    "groupTags": [
-      "設備"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3188": {
-    "stockName": "鑫龍騰",
-    "officialIndustry": "建材營造",
+    "confidence": 60,
     "fineIndustries": [
       "建設營造"
     ],
+    "groupTags": [
+      "營建"
+    ],
+    "officialIndustry": "建材營造",
     "productTags": [
       "建設",
       "營造",
       "土地資產",
       "工程"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "鑫龍騰",
     "themeTags": [
       "房市",
       "都更",
       "公共工程"
     ],
-    "groupTags": [
-      "營建"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "3207": {
-    "stockName": "耀勝",
-    "officialIndustry": "電子零組件業",
+    "confidence": 60,
     "fineIndustries": [
       "電子零組件"
     ],
+    "groupTags": [
+      "電子零組件"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "PCB",
       "被動元件",
@@ -1928,23 +1931,23 @@
       "散熱",
       "功率元件"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "耀勝",
     "themeTags": [
       "AI伺服器",
       "車用電子"
     ],
-    "groupTags": [
-      "電子零組件"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "3257": {
-    "stockName": "虹冠電",
-    "officialIndustry": "半導體業",
+    "confidence": 90,
     "fineIndustries": [
       "功率元件"
     ],
+    "groupTags": [
+      "功率元件"
+    ],
+    "officialIndustry": "半導體業",
     "productTags": [
       "MOSFET",
       "二極體",
@@ -1952,48 +1955,48 @@
       "功率IC",
       "車用功率元件"
     ],
+    "source": "manual",
+    "stockName": "虹冠電",
     "themeTags": [
       "AI電源",
       "車用電子",
       "電源管理"
     ],
-    "groupTags": [
-      "功率元件"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3260": {
-    "stockName": "威剛",
-    "officialIndustry": "半導體業",
+    "confidence": 90,
     "fineIndustries": [
       "記憶體模組",
       "SSD"
     ],
+    "groupTags": [
+      "記憶體模組"
+    ],
+    "officialIndustry": "半導體業",
     "productTags": [
       "DRAM模組",
       "SSD",
       "NAND Flash模組"
     ],
+    "source": "manual",
+    "stockName": "威剛",
     "themeTags": [
       "AI邊緣儲存",
       "記憶體循環"
     ],
-    "groupTags": [
-      "記憶體模組"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3272": {
-    "stockName": "東碩",
-    "officialIndustry": "電腦及週邊設備業",
+    "confidence": 60,
     "fineIndustries": [
       "電腦週邊",
       "系統"
     ],
+    "groupTags": [
+      "電腦週邊"
+    ],
+    "officialIndustry": "電腦及週邊設備業",
     "productTags": [
       "PC",
       "NB",
@@ -2001,47 +2004,47 @@
       "週邊",
       "工業電腦"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "東碩",
     "themeTags": [
       "AI伺服器",
       "AI PC"
     ],
-    "groupTags": [
-      "電腦週邊"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "3284": {
-    "stockName": "太普高",
-    "officialIndustry": "其他業",
+    "confidence": 60,
     "fineIndustries": [
       "多角化",
       "其他"
     ],
+    "groupTags": [
+      "其他"
+    ],
+    "officialIndustry": "其他業",
     "productTags": [
       "多角化經營",
       "租賃",
       "服務",
       "控股"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "太普高",
     "themeTags": [
       "內需",
       "資產題材"
     ],
-    "groupTags": [
-      "其他"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "3294": {
-    "stockName": "英濟",
-    "officialIndustry": "電子零組件業",
+    "confidence": 60,
     "fineIndustries": [
       "電子零組件"
     ],
+    "groupTags": [
+      "電子零組件"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "PCB",
       "被動元件",
@@ -2049,48 +2052,49 @@
       "散熱",
       "功率元件"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "英濟",
     "themeTags": [
       "AI伺服器",
       "車用電子"
     ],
-    "groupTags": [
-      "電子零組件"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "3303": {
-    "stockName": "岱稜",
-    "officialIndustry": "其他電子業",
+    "confidence": 60,
     "fineIndustries": [
       "電子製造服務",
       "設備"
     ],
+    "groupTags": [
+      "其他電子"
+    ],
+    "officialIndustry": "其他電子業",
     "productTags": [
       "EMS",
       "設備",
       "材料",
       "精密零組件"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "岱稜",
     "themeTags": [
       "AI伺服器",
       "半導體設備"
     ],
-    "groupTags": [
-      "其他電子"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "3305": {
-    "stockName": "昇貿",
-    "officialIndustry": "其他電子業",
+    "confidence": 90,
     "fineIndustries": [
       "焊錫材料",
       "電子接合材料"
     ],
+    "groupTags": [
+      "焊錫",
+      "電子材料"
+    ],
+    "officialIndustry": "其他電子業",
     "productTags": [
       "焊錫絲",
       "錫膏",
@@ -2098,102 +2102,102 @@
       "電子接合材料",
       "助焊劑"
     ],
+    "source": "manual",
+    "stockName": "昇貿",
     "themeTags": [
       "電子材料",
       "半導體封裝材料",
       "AI硬體材料"
     ],
-    "groupTags": [
-      "焊錫",
-      "電子材料"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3312": {
-    "stockName": "弘憶股",
-    "officialIndustry": "電子通路業",
+    "confidence": 90,
     "fineIndustries": [
       "半導體通路",
       "電子零組件代理"
     ],
+    "groupTags": [
+      "電子通路"
+    ],
+    "officialIndustry": "電子通路業",
     "productTags": [
       "IC代理",
       "電子零組件通路",
       "通訊元件代理",
       "系統整合"
     ],
+    "source": "manual",
+    "stockName": "弘憶股",
     "themeTags": [
       "半導體通路",
       "AIoT",
       "網通元件"
     ],
-    "groupTags": [
-      "電子通路"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3313": {
-    "stockName": "斐成",
-    "officialIndustry": "建材營造",
+    "confidence": 90,
     "fineIndustries": [
       "建設開發",
       "資產活化"
     ],
+    "groupTags": [
+      "建設",
+      "資產"
+    ],
+    "officialIndustry": "建材營造",
     "productTags": [
       "住宅開發",
       "不動產開發",
       "土地資產",
       "商用不動產"
     ],
+    "source": "manual",
+    "stockName": "斐成",
     "themeTags": [
       "都更",
       "資產活化",
       "建案入帳"
     ],
-    "groupTags": [
-      "建設",
-      "資產"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3322": {
-    "stockName": "建舜電",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "音訊",
       "網通連接器"
     ],
+    "groupTags": [
+      "連接器"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "連接器",
       "耳機插座",
       "RJ連接器",
       "線束元件"
     ],
+    "source": "manual",
+    "stockName": "建舜電",
     "themeTags": [
       "網通",
       "消費電子",
       "音訊連接器"
     ],
-    "groupTags": [
-      "連接器"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3324": {
-    "stockName": "雙鴻",
-    "officialIndustry": "其他電子業",
+    "confidence": 90,
     "fineIndustries": [
       "散熱模組",
       "水冷熱管理"
     ],
+    "groupTags": [
+      "散熱",
+      "液冷"
+    ],
+    "officialIndustry": "其他電子業",
     "productTags": [
       "熱管",
       "均熱板",
@@ -2201,275 +2205,275 @@
       "水冷板",
       "伺服器散熱"
     ],
+    "source": "manual",
+    "stockName": "雙鴻",
     "themeTags": [
       "AI伺服器",
       "液冷散熱",
       "散熱升級"
     ],
-    "groupTags": [
-      "散熱",
-      "液冷"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3346": {
-    "stockName": "麗清",
-    "officialIndustry": "汽車工業",
+    "confidence": 90,
     "fineIndustries": [
       "車用LED照明模組"
     ],
+    "groupTags": [
+      "車用照明"
+    ],
+    "officialIndustry": "汽車工業",
     "productTags": [
       "車燈模組",
       "LED車燈",
       "車用照明",
       "汽車電子零件"
     ],
+    "source": "manual",
+    "stockName": "麗清",
     "themeTags": [
       "電動車",
       "車用LED",
       "智慧車燈"
     ],
-    "groupTags": [
-      "車用照明"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3357": {
-    "stockName": "臺慶科",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "功率電感",
       "磁性元件"
     ],
+    "groupTags": [
+      "功率電感"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "功率電感",
       "磁珠",
       "變壓器",
       "磁性元件"
     ],
+    "source": "manual",
+    "stockName": "臺慶科",
     "themeTags": [
       "AI伺服器電源",
       "車用電子",
       "被動元件"
     ],
-    "groupTags": [
-      "功率電感"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3362": {
-    "stockName": "先進光",
-    "officialIndustry": "光電業",
+    "confidence": 90,
     "fineIndustries": [
       "光學鏡頭",
       "車載鏡頭"
     ],
+    "groupTags": [
+      "光學鏡頭"
+    ],
+    "officialIndustry": "光電業",
     "productTags": [
       "光學鏡頭",
       "手機鏡頭",
       "車載鏡頭",
       "影像模組"
     ],
+    "source": "manual",
+    "stockName": "先進光",
     "themeTags": [
       "車用鏡頭",
       "AI影像",
       "光學升級"
     ],
-    "groupTags": [
-      "光學鏡頭"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3376": {
-    "stockName": "新日興",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "轉軸",
       "精密機構件"
     ],
+    "groupTags": [
+      "轉軸",
+      "機構件"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "筆電轉軸",
       "折疊機構",
       "精密機構件",
       "軸承零組件"
     ],
+    "source": "manual",
+    "stockName": "新日興",
     "themeTags": [
       "摺疊手機",
       "AI PC",
       "精密機構"
     ],
-    "groupTags": [
-      "轉軸",
-      "機構件"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3388": {
-    "stockName": "崇越電",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "電子材料",
       "玻纖布材料"
     ],
+    "groupTags": [
+      "PCB上游材料"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "玻璃纖維布",
       "電子材料",
       "PCB上游材料",
       "絕緣材料"
     ],
+    "source": "manual",
+    "stockName": "崇越電",
     "themeTags": [
       "PCB材料",
       "AI伺服器材料",
       "電子材料"
     ],
-    "groupTags": [
-      "PCB上游材料"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3390": {
-    "stockName": "旭軟",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "軟性印刷電路板FPC"
     ],
+    "groupTags": [
+      "FPC軟板"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "軟板",
       "FPC",
       "柔性電路板",
       "薄膜開關"
     ],
+    "source": "manual",
+    "stockName": "旭軟",
     "themeTags": [
       "穿戴裝置",
       "車用電子",
       "軟板"
     ],
-    "groupTags": [
-      "FPC軟板"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3416": {
-    "stockName": "融程電",
-    "officialIndustry": "電腦及週邊設備業",
+    "confidence": 90,
     "fineIndustries": [
       "強固型工業電腦",
       "車載電腦"
     ],
+    "groupTags": [
+      "工業電腦"
+    ],
+    "officialIndustry": "電腦及週邊設備業",
     "productTags": [
       "強固型電腦",
       "工業平板",
       "車載電腦",
       "軍工電腦"
     ],
+    "source": "manual",
+    "stockName": "融程電",
     "themeTags": [
       "邊緣AI",
       "車載電腦",
       "工業電腦"
     ],
-    "groupTags": [
-      "工業電腦"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3479": {
-    "stockName": "安勤",
-    "officialIndustry": "電腦及週邊設備業",
+    "confidence": 90,
     "fineIndustries": [
       "嵌入式工業電腦",
       "邊緣AI"
     ],
+    "groupTags": [
+      "工業電腦"
+    ],
+    "officialIndustry": "電腦及週邊設備業",
     "productTags": [
       "嵌入式電腦",
       "工業電腦",
       "邊緣運算平台",
       "醫療電腦"
     ],
+    "source": "manual",
+    "stockName": "安勤",
     "themeTags": [
       "邊緣AI",
       "工業電腦",
       "醫療電腦"
     ],
-    "groupTags": [
-      "工業電腦"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3483": {
-    "stockName": "力致",
-    "officialIndustry": "電腦及週邊設備業",
+    "confidence": 90,
     "fineIndustries": [
       "散熱模組",
       "筆電熱管理"
     ],
+    "groupTags": [
+      "散熱"
+    ],
+    "officialIndustry": "電腦及週邊設備業",
     "productTags": [
       "散熱模組",
       "散熱風扇",
       "熱管",
       "筆電散熱"
     ],
+    "source": "manual",
+    "stockName": "力致",
     "themeTags": [
       "AI PC",
       "伺服器散熱",
       "熱管理"
     ],
-    "groupTags": [
-      "散熱"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3484": {
-    "stockName": "崧騰",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "開關",
       "連接器模組"
     ],
+    "groupTags": [
+      "開關",
+      "連接器"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "開關",
       "連接器",
       "電源開關",
       "感測開關模組"
     ],
+    "source": "manual",
+    "stockName": "崧騰",
     "themeTags": [
       "車用電子",
       "工控開關",
       "連接器"
     ],
-    "groupTags": [
-      "開關",
-      "連接器"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3491": {
-    "stockName": "昇達科",
-    "officialIndustry": "通信網路業",
+    "confidence": 90,
     "fineIndustries": [
       "微波毫米波通訊元件"
     ],
+    "groupTags": [
+      "高頻通訊",
+      "衛星通訊"
+    ],
+    "officialIndustry": "通信網路業",
     "productTags": [
       "高頻被動元件",
       "微波元件",
@@ -2477,508 +2481,507 @@
       "天線",
       "無線回傳"
     ],
+    "source": "manual",
+    "stockName": "昇達科",
     "themeTags": [
       "衛星通訊",
       "5G基地台",
       "低軌衛星"
     ],
-    "groupTags": [
-      "高頻通訊",
-      "衛星通訊"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3516": {
-    "stockName": "亞帝歐",
-    "officialIndustry": "光電業",
+    "confidence": 90,
     "fineIndustries": [
       "LED照明",
       "光電模組"
     ],
+    "groupTags": [
+      "LED照明"
+    ],
+    "officialIndustry": "光電業",
     "productTags": [
       "LED照明",
       "LED模組",
       "照明燈具",
       "光電應用產品"
     ],
+    "source": "manual",
+    "stockName": "亞帝歐",
     "themeTags": [
       "LED照明",
       "節能照明"
     ],
-    "groupTags": [
-      "LED照明"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3518": {
-    "stockName": "柏騰",
-    "officialIndustry": "其他電子業",
+    "confidence": 90,
     "fineIndustries": [
       "功能性鍍膜",
       "表面處理"
     ],
+    "groupTags": [
+      "功能性鍍膜"
+    ],
+    "officialIndustry": "其他電子業",
     "productTags": [
       "真空鍍膜",
       "功能性薄膜",
       "表面處理",
       "光電鍍膜"
     ],
+    "source": "manual",
+    "stockName": "柏騰",
     "themeTags": [
       "功能材料",
       "光電鍍膜",
       "車用表面處理"
     ],
-    "groupTags": [
-      "功能性鍍膜"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3522": {
-    "stockName": "御嵿",
-    "officialIndustry": "觀光餐旅",
+    "confidence": 90,
     "fineIndustries": [
       "餐飲宴會",
       "觀光餐旅"
     ],
+    "groupTags": [
+      "餐飲宴會"
+    ],
+    "officialIndustry": "觀光餐旅",
     "productTags": [
       "餐飲服務",
       "宴會場地",
       "觀光餐旅",
       "餐廳營運"
     ],
+    "source": "manual",
+    "stockName": "御嵿",
     "themeTags": [
       "內需消費",
       "宴會復甦",
       "觀光餐旅"
     ],
-    "groupTags": [
-      "餐飲宴會"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3526": {
-    "stockName": "凡甲",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "高速連接器",
       "伺服器連接器"
     ],
+    "groupTags": [
+      "高速連接器"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "高速連接器",
       "伺服器連接器",
       "CPU Socket",
       "車用連接器"
     ],
+    "source": "manual",
+    "stockName": "凡甲",
     "themeTags": [
       "AI伺服器",
       "PCIe高速傳輸",
       "車用電子"
     ],
-    "groupTags": [
-      "高速連接器"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3543": {
-    "stockName": "州巧",
-    "officialIndustry": "光電業",
+    "confidence": 90,
     "fineIndustries": [
       "顯示器背光",
       "光電機構件"
     ],
+    "groupTags": [
+      "背光",
+      "顯示零組件"
+    ],
+    "officialIndustry": "光電業",
     "productTags": [
       "背光模組零組件",
       "光電機構件",
       "沖壓件",
       "顯示器零組件"
     ],
+    "source": "manual",
+    "stockName": "州巧",
     "themeTags": [
       "面板供應鏈",
       "顯示器",
       "背光模組"
     ],
-    "groupTags": [
-      "背光",
-      "顯示零組件"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3548": {
-    "stockName": "兆利",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "轉軸",
       "精密機構件"
     ],
+    "groupTags": [
+      "轉軸",
+      "機構件"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "筆電轉軸",
       "折疊機構",
       "精密沖壓件",
       "機構模組"
     ],
+    "source": "manual",
+    "stockName": "兆利",
     "themeTags": [
       "摺疊手機",
       "AI PC",
       "精密機構"
     ],
-    "groupTags": [
-      "轉軸",
-      "機構件"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3551": {
-    "stockName": "世禾",
-    "officialIndustry": "綠能環保",
+    "confidence": 90,
     "fineIndustries": [
       "半導體設備清洗",
       "零組件再生"
     ],
+    "groupTags": [
+      "半導體清洗再生"
+    ],
+    "officialIndustry": "綠能環保",
     "productTags": [
       "半導體設備零組件清洗",
       "再生",
       "表面處理",
       "精密清洗"
     ],
+    "source": "manual",
+    "stockName": "世禾",
     "themeTags": [
       "先進製程",
       "半導體耗材",
       "綠色製程"
     ],
-    "groupTags": [
-      "半導體清洗再生"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3564": {
-    "stockName": "其陽",
-    "officialIndustry": "通信網路業",
+    "confidence": 90,
     "fineIndustries": [
       "工業網安",
       "網通設備"
     ],
+    "groupTags": [
+      "工業網通",
+      "資安"
+    ],
+    "officialIndustry": "通信網路業",
     "productTags": [
       "工業網安設備",
       "網路安全設備",
       "嵌入式網通平台",
       "工控通訊"
     ],
+    "source": "manual",
+    "stockName": "其陽",
     "themeTags": [
       "資安",
       "工業物聯網",
       "邊緣AI"
     ],
-    "groupTags": [
-      "工業網通",
-      "資安"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3583": {
-    "stockName": "辛耘",
-    "officialIndustry": "半導體業",
+    "confidence": 90,
     "fineIndustries": [
       "半導體設備",
       "濕製程設備"
     ],
+    "groupTags": [
+      "半導體設備"
+    ],
+    "officialIndustry": "半導體業",
     "productTags": [
       "濕製程設備",
       "再生晶圓設備",
       "半導體設備",
       "自動化設備"
     ],
+    "source": "manual",
+    "stockName": "辛耘",
     "themeTags": [
       "CoWoS擴產",
       "半導體設備",
       "先進封裝"
     ],
-    "groupTags": [
-      "半導體設備"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3587": {
-    "stockName": "閎康",
-    "officialIndustry": "其他電子業",
+    "confidence": 90,
     "fineIndustries": [
       "半導體材料分析",
       "故障分析"
     ],
+    "groupTags": [
+      "半導體檢測分析"
+    ],
+    "officialIndustry": "其他電子業",
     "productTags": [
       "材料分析",
       "故障分析",
       "可靠度分析",
       "半導體檢測服務"
     ],
+    "source": "manual",
+    "stockName": "閎康",
     "themeTags": [
       "先進製程",
       "先進封裝",
       "半導體檢測"
     ],
-    "groupTags": [
-      "半導體檢測分析"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3591": {
-    "stockName": "艾笛森",
-    "officialIndustry": "光電業",
+    "confidence": 90,
     "fineIndustries": [
       "LED封裝",
       "照明模組"
     ],
+    "groupTags": [
+      "LED封裝",
+      "照明"
+    ],
+    "officialIndustry": "光電業",
     "productTags": [
       "LED封裝",
       "LED照明模組",
       "車用照明",
       "植物照明"
     ],
+    "source": "manual",
+    "stockName": "艾笛森",
     "themeTags": [
       "LED照明",
       "車用LED",
       "植物照明"
     ],
-    "groupTags": [
-      "LED封裝",
-      "照明"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3605": {
-    "stockName": "宏致",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "高速連接器",
       "線束"
     ],
+    "groupTags": [
+      "連接器",
+      "線束"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "高速連接器",
       "線束",
       "車用連接器",
       "伺服器連接器"
     ],
+    "source": "manual",
+    "stockName": "宏致",
     "themeTags": [
       "AI伺服器",
       "車用電子",
       "高速傳輸"
     ],
-    "groupTags": [
-      "連接器",
-      "線束"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3617": {
-    "stockName": "碩天",
-    "officialIndustry": "其他電子業",
+    "confidence": 90,
     "fineIndustries": [
       "UPS不斷電系統",
       "電源管理"
     ],
+    "groupTags": [
+      "UPS",
+      "電源系統"
+    ],
+    "officialIndustry": "其他電子業",
     "productTags": [
       "UPS不斷電系統",
       "電源管理",
       "機房電力保護",
       "儲能備援"
     ],
+    "source": "manual",
+    "stockName": "碩天",
     "themeTags": [
       "AI資料中心",
       "電力備援",
       "儲能"
     ],
-    "groupTags": [
-      "UPS",
-      "電源系統"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3680": {
-    "stockName": "家登",
-    "officialIndustry": "半導體業",
+    "confidence": 90,
     "fineIndustries": [
       "EUV光罩盒",
       "晶圓載具"
     ],
+    "groupTags": [
+      "半導體載具"
+    ],
+    "officialIndustry": "半導體業",
     "productTags": [
       "EUV光罩盒",
       "晶圓傳載盒",
       "先進製程載具",
       "半導體耗材"
     ],
+    "source": "manual",
+    "stockName": "家登",
     "themeTags": [
       "EUV",
       "先進製程",
       "台積電供應鏈"
     ],
-    "groupTags": [
-      "半導體載具"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3684": {
-    "stockName": "榮昌",
-    "officialIndustry": "通信網路業",
+    "confidence": 90,
     "fineIndustries": [
       "通訊線纜",
       "光纖被動元件"
     ],
+    "groupTags": [
+      "通訊線纜"
+    ],
+    "officialIndustry": "通信網路業",
     "productTags": [
       "光纖線纜",
       "通訊線材",
       "連接線",
       "網通配線材料"
     ],
+    "source": "manual",
+    "stockName": "榮昌",
     "themeTags": [
       "資料中心布線",
       "光纖通訊",
       "網通升級"
     ],
-    "groupTags": [
-      "通訊線纜"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3687": {
-    "stockName": "歐買尬",
-    "officialIndustry": "數位雲端",
+    "confidence": 90,
     "fineIndustries": [
       "線上遊戲",
       "數位金流服務"
     ],
+    "groupTags": [
+      "遊戲",
+      "數位金流"
+    ],
+    "officialIndustry": "數位雲端",
     "productTags": [
       "線上遊戲",
       "數位娛樂",
       "第三方支付",
       "遊戲平台"
     ],
+    "source": "manual",
+    "stockName": "歐買尬",
     "themeTags": [
       "數位娛樂",
       "遊戲",
       "電子支付"
     ],
-    "groupTags": [
-      "遊戲",
-      "數位金流"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3689": {
-    "stockName": "湧德",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "網路變壓器",
       "連接器"
     ],
+    "groupTags": [
+      "網通連接器",
+      "磁性元件"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "網路變壓器",
       "RJ連接器",
       "磁性元件",
       "網通元件"
     ],
+    "source": "manual",
+    "stockName": "湧德",
     "themeTags": [
       "AI資料中心網路",
       "PoE",
       "網通升級"
     ],
-    "groupTags": [
-      "網通連接器",
-      "磁性元件"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3691": {
-    "stockName": "碩禾",
-    "officialIndustry": "光電業",
+    "confidence": 90,
     "fineIndustries": [
       "太陽能導電漿",
       "光伏材料"
     ],
+    "groupTags": [
+      "太陽能材料"
+    ],
+    "officialIndustry": "光電業",
     "productTags": [
       "太陽能導電漿",
       "銀漿",
       "光伏材料",
       "電子材料"
     ],
+    "source": "manual",
+    "stockName": "碩禾",
     "themeTags": [
       "太陽能",
       "光伏材料",
       "綠能材料"
     ],
-    "groupTags": [
-      "太陽能材料"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3702": {
-    "stockName": "大聯大",
-    "officialIndustry": "電子通路業",
+    "confidence": 90,
     "fineIndustries": [
       "大型IC通路",
       "半導體代理"
     ],
+    "groupTags": [
+      "大型IC通路"
+    ],
+    "officialIndustry": "電子通路業",
     "productTags": [
       "IC通路",
       "半導體代理",
       "電子零組件供應鏈",
       "加值服務"
     ],
+    "source": "manual",
+    "stockName": "大聯大",
     "themeTags": [
       "AI硬體供應鏈",
       "半導體通路",
       "車用電子"
     ],
-    "groupTags": [
-      "大型IC通路"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3707": {
-    "stockName": "漢磊",
-    "officialIndustry": "半導體業",
+    "confidence": 90,
     "fineIndustries": [
       "化合物半導體",
       "功率元件晶圓"
     ],
+    "groupTags": [
+      "功率半導體"
+    ],
+    "officialIndustry": "半導體業",
     "productTags": [
       "SiC",
       "GaN磊晶",
@@ -2986,423 +2989,423 @@
       "晶圓代工",
       "化合物半導體"
     ],
+    "source": "manual",
+    "stockName": "漢磊",
     "themeTags": [
       "車用功率元件",
       "SiC",
       "GaN",
       "AI電源"
     ],
-    "groupTags": [
-      "功率半導體"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3708": {
-    "stockName": "上緯投控",
-    "officialIndustry": "綠能環保",
+    "confidence": 90,
     "fineIndustries": [
       "風電材料",
       "環保樹脂"
     ],
+    "groupTags": [
+      "風電材料"
+    ],
+    "officialIndustry": "綠能環保",
     "productTags": [
       "風電樹脂",
       "環保樹脂",
       "複合材料",
       "特用化學材料"
     ],
+    "source": "manual",
+    "stockName": "上緯投控",
     "themeTags": [
       "離岸風電",
       "綠能材料",
       "環保材料"
     ],
-    "groupTags": [
-      "風電材料"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3715": {
-    "stockName": "定穎投控",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "車用",
       "高頻PCB"
     ],
+    "groupTags": [
+      "PCB"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "車用PCB",
       "高頻高速板",
       "多層PCB",
       "HDI板"
     ],
+    "source": "manual",
+    "stockName": "定穎投控",
     "themeTags": [
       "車用電子",
       "AI伺服器PCB",
       "電動車"
     ],
-    "groupTags": [
-      "PCB"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "3717": {
-    "stockName": "聯嘉投控",
-    "officialIndustry": "汽車工業",
+    "confidence": 90,
     "fineIndustries": [
       "車用LED照明",
       "車燈模組"
     ],
+    "groupTags": [
+      "車用照明"
+    ],
+    "officialIndustry": "汽車工業",
     "productTags": [
       "LED車燈",
       "車用照明模組",
       "汽車電子",
       "車燈控制模組"
     ],
+    "source": "manual",
+    "stockName": "聯嘉投控",
     "themeTags": [
       "電動車",
       "智慧車燈",
       "車用LED"
     ],
-    "groupTags": [
-      "車用照明"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "4113": {
-    "stockName": "聯上",
-    "officialIndustry": "建材營造",
+    "confidence": 90,
     "fineIndustries": [
       "建設開發",
       "住宅推案"
     ],
+    "groupTags": [
+      "建設開發"
+    ],
+    "officialIndustry": "建材營造",
     "productTags": [
       "住宅建案",
       "商辦開發",
       "土地開發",
       "不動產銷售"
     ],
+    "source": "manual",
+    "stockName": "聯上",
     "themeTags": [
       "房市循環",
       "都更",
       "建案入帳"
     ],
-    "groupTags": [
-      "建設開發"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "4123": {
-    "stockName": "晟德",
-    "officialIndustry": "生技醫療",
+    "confidence": 90,
     "fineIndustries": [
       "生技控股",
       "新藥投資平台"
     ],
+    "groupTags": [
+      "生技控股"
+    ],
+    "officialIndustry": "生技醫療",
     "productTags": [
       "新藥投資",
       "生技控股",
       "CDMO投資",
       "醫藥事業投資"
     ],
+    "source": "manual",
+    "stockName": "晟德",
     "themeTags": [
       "新藥",
       "CDMO",
       "生技投資"
     ],
-    "groupTags": [
-      "生技控股"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "4129": {
-    "stockName": "聯合",
-    "officialIndustry": "生技醫療",
+    "confidence": 90,
     "fineIndustries": [
       "骨科",
       "牙科醫材"
     ],
+    "groupTags": [
+      "醫材"
+    ],
+    "officialIndustry": "生技醫療",
     "productTags": [
       "人工關節",
       "骨科植入物",
       "牙科醫材",
       "手術器械"
     ],
+    "source": "manual",
+    "stockName": "聯合",
     "themeTags": [
       "高齡化",
       "醫材",
       "骨科耗材"
     ],
-    "groupTags": [
-      "醫材"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "4137": {
-    "stockName": "麗豐-KY",
-    "officialIndustry": "生技醫療",
+    "confidence": 90,
     "fineIndustries": [
       "醫美保養",
       "美容通路"
     ],
+    "groupTags": [
+      "醫美保養通路"
+    ],
+    "officialIndustry": "生技醫療",
     "productTags": [
       "美容保養品",
       "醫美保養",
       "加盟通路",
       "美容服務"
     ],
+    "source": "manual",
+    "stockName": "麗豐-KY",
     "themeTags": [
       "醫美",
       "保養品",
       "內需消費"
     ],
-    "groupTags": [
-      "醫美保養通路"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "4164": {
-    "stockName": "承業醫",
-    "officialIndustry": "生技醫療",
+    "confidence": 90,
     "fineIndustries": [
       "醫療設備代理",
       "放射治療服務"
     ],
+    "groupTags": [
+      "醫療設備服務"
+    ],
+    "officialIndustry": "生技醫療",
     "productTags": [
       "放射治療設備",
       "醫療設備代理",
       "醫療院所服務",
       "設備維護"
     ],
+    "source": "manual",
+    "stockName": "承業醫",
     "themeTags": [
       "精準醫療",
       "癌症治療",
       "醫療設備"
     ],
-    "groupTags": [
-      "醫療設備服務"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "4168": {
-    "stockName": "醣聯",
-    "officialIndustry": "生技醫療",
+    "confidence": 90,
     "fineIndustries": [
       "醣分子抗體新藥"
     ],
+    "groupTags": [
+      "新藥研發"
+    ],
+    "officialIndustry": "生技醫療",
     "productTags": [
       "抗體新藥",
       "醣分子技術",
       "癌症免疫治療",
       "生物藥"
     ],
+    "source": "manual",
+    "stockName": "醣聯",
     "themeTags": [
       "新藥研發",
       "免疫治療",
       "癌症治療"
     ],
-    "groupTags": [
-      "新藥研發"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "4190": {
-    "stockName": "佐登-KY",
-    "officialIndustry": "生技醫療",
+    "confidence": 90,
     "fineIndustries": [
       "美容保養",
       "連鎖通路"
     ],
+    "groupTags": [
+      "美容通路"
+    ],
+    "officialIndustry": "生技醫療",
     "productTags": [
       "美容保養品",
       "美容SPA",
       "連鎖通路",
       "醫美保養"
     ],
+    "source": "manual",
+    "stockName": "佐登-KY",
     "themeTags": [
       "醫美",
       "保養品",
       "內需消費"
     ],
-    "groupTags": [
-      "美容通路"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "4416": {
-    "stockName": "三圓",
-    "officialIndustry": "建材營造",
+    "confidence": 90,
     "fineIndustries": [
       "建設開發",
       "住宅推案"
     ],
+    "groupTags": [
+      "建設開發"
+    ],
+    "officialIndustry": "建材營造",
     "productTags": [
       "住宅建案",
       "商辦開發",
       "土地開發",
       "不動產銷售"
     ],
+    "source": "manual",
+    "stockName": "三圓",
     "themeTags": [
       "房市循環",
       "都更",
       "建案入帳"
     ],
-    "groupTags": [
-      "建設開發"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "4438": {
-    "stockName": "廣越",
-    "officialIndustry": "紡織纖維",
+    "confidence": 90,
     "fineIndustries": [
       "機能羽絨服",
       "戶外服飾代工"
     ],
+    "groupTags": [
+      "機能服飾代工"
+    ],
+    "officialIndustry": "紡織纖維",
     "productTags": [
       "羽絨外套",
       "機能外套",
       "戶外服飾",
       "品牌服飾代工"
     ],
+    "source": "manual",
+    "stockName": "廣越",
     "themeTags": [
       "戶外服飾",
       "品牌代工",
       "寒冬概念"
     ],
-    "groupTags": [
-      "機能服飾代工"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "4439": {
-    "stockName": "冠星-KY",
-    "officialIndustry": "紡織纖維",
+    "confidence": 90,
     "fineIndustries": [
       "成衣代工",
       "機能服飾"
     ],
+    "groupTags": [
+      "成衣代工"
+    ],
+    "officialIndustry": "紡織纖維",
     "productTags": [
       "成衣代工",
       "針織服飾",
       "運動休閒服",
       "品牌代工"
     ],
+    "source": "manual",
+    "stockName": "冠星-KY",
     "themeTags": [
       "運動休閒服飾",
       "品牌代工",
       "紡織景氣"
     ],
-    "groupTags": [
-      "成衣代工"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "4442": {
-    "stockName": "竣邦-KY",
-    "officialIndustry": "紡織纖維",
+    "confidence": 90,
     "fineIndustries": [
       "機能布",
       "運動服飾設計代工"
     ],
+    "groupTags": [
+      "機能服飾"
+    ],
+    "officialIndustry": "紡織纖維",
     "productTags": [
       "機能布",
       "運動服飾",
       "成衣設計",
       "品牌代工"
     ],
+    "source": "manual",
+    "stockName": "竣邦-KY",
     "themeTags": [
       "運動服飾",
       "機能布",
       "品牌代工"
     ],
-    "groupTags": [
-      "機能服飾"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "4503": {
-    "stockName": "金雨",
-    "officialIndustry": "電機機械",
+    "confidence": 90,
     "fineIndustries": [
       "自動販賣機",
       "智慧零售設備"
     ],
+    "groupTags": [
+      "智慧零售設備"
+    ],
+    "officialIndustry": "電機機械",
     "productTags": [
       "自動販賣機",
       "智慧販售設備",
       "零售自動化",
       "機械設備"
     ],
+    "source": "manual",
+    "stockName": "金雨",
     "themeTags": [
       "智慧零售",
       "自動化設備"
     ],
-    "groupTags": [
-      "智慧零售設備"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "4510": {
-    "stockName": "高鋒",
-    "officialIndustry": "電機機械",
+    "confidence": 90,
     "fineIndustries": [
       "工具機",
       "CNC加工設備"
     ],
+    "groupTags": [
+      "工具機"
+    ],
+    "officialIndustry": "電機機械",
     "productTags": [
       "CNC工具機",
       "加工中心機",
       "切削設備",
       "機械加工設備"
     ],
+    "source": "manual",
+    "stockName": "高鋒",
     "themeTags": [
       "工具機",
       "自動化",
       "製造業復甦"
     ],
-    "groupTags": [
-      "工具機"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "4542": {
-    "stockName": "科嶠",
-    "officialIndustry": "電子零組件業",
+    "confidence": 60,
     "fineIndustries": [
       "電子零組件"
     ],
+    "groupTags": [
+      "電子零組件"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "PCB",
       "被動元件",
@@ -3410,346 +3413,346 @@
       "散熱",
       "功率元件"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "科嶠",
     "themeTags": [
       "AI伺服器",
       "車用電子"
     ],
-    "groupTags": [
-      "電子零組件"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "4549": {
-    "stockName": "桓達",
-    "officialIndustry": "電機機械",
+    "confidence": 60,
     "fineIndustries": [
       "機械",
-      "自動化"
-    ],
-    "productTags": [
-      "機械設備",
-      "自動化",
-      "零組件"
-    ],
-    "themeTags": [
-      "智慧製造",
       "自動化"
     ],
     "groupTags": [
       "機械"
     ],
-    "confidence": 60,
+    "officialIndustry": "電機機械",
+    "productTags": [
+      "機械設備",
+      "自動化",
+      "零組件"
+    ],
     "source": "officialIndustryOnly",
+    "stockName": "桓達",
+    "themeTags": [
+      "智慧製造",
+      "自動化"
+    ],
     "updatedAt": "2026-06-23"
   },
   "4555": {
-    "stockName": "氣立",
-    "officialIndustry": "電機機械",
+    "confidence": 60,
     "fineIndustries": [
       "機械",
-      "自動化"
-    ],
-    "productTags": [
-      "機械設備",
-      "自動化",
-      "零組件"
-    ],
-    "themeTags": [
-      "智慧製造",
       "自動化"
     ],
     "groupTags": [
       "機械"
     ],
-    "confidence": 60,
+    "officialIndustry": "電機機械",
+    "productTags": [
+      "機械設備",
+      "自動化",
+      "零組件"
+    ],
     "source": "officialIndustryOnly",
+    "stockName": "氣立",
+    "themeTags": [
+      "智慧製造",
+      "自動化"
+    ],
     "updatedAt": "2026-06-23"
   },
   "4558": {
-    "stockName": "寶緯",
-    "officialIndustry": "電機機械",
+    "confidence": 60,
     "fineIndustries": [
       "機械",
-      "自動化"
-    ],
-    "productTags": [
-      "機械設備",
-      "自動化",
-      "零組件"
-    ],
-    "themeTags": [
-      "智慧製造",
       "自動化"
     ],
     "groupTags": [
       "機械"
     ],
-    "confidence": 60,
+    "officialIndustry": "電機機械",
+    "productTags": [
+      "機械設備",
+      "自動化",
+      "零組件"
+    ],
     "source": "officialIndustryOnly",
+    "stockName": "寶緯",
+    "themeTags": [
+      "智慧製造",
+      "自動化"
+    ],
     "updatedAt": "2026-06-23"
   },
   "4564": {
-    "stockName": "元翎",
-    "officialIndustry": "電機機械",
+    "confidence": 60,
     "fineIndustries": [
       "機械",
-      "自動化"
-    ],
-    "productTags": [
-      "機械設備",
-      "自動化",
-      "零組件"
-    ],
-    "themeTags": [
-      "智慧製造",
       "自動化"
     ],
     "groupTags": [
       "機械"
     ],
-    "confidence": 60,
+    "officialIndustry": "電機機械",
+    "productTags": [
+      "機械設備",
+      "自動化",
+      "零組件"
+    ],
     "source": "officialIndustryOnly",
+    "stockName": "元翎",
+    "themeTags": [
+      "智慧製造",
+      "自動化"
+    ],
     "updatedAt": "2026-06-23"
   },
   "4566": {
-    "stockName": "時碩工業",
-    "officialIndustry": "電機機械",
+    "confidence": 60,
     "fineIndustries": [
       "機械",
-      "自動化"
-    ],
-    "productTags": [
-      "機械設備",
-      "自動化",
-      "零組件"
-    ],
-    "themeTags": [
-      "智慧製造",
       "自動化"
     ],
     "groupTags": [
       "機械"
     ],
-    "confidence": 60,
+    "officialIndustry": "電機機械",
+    "productTags": [
+      "機械設備",
+      "自動化",
+      "零組件"
+    ],
     "source": "officialIndustryOnly",
+    "stockName": "時碩工業",
+    "themeTags": [
+      "智慧製造",
+      "自動化"
+    ],
     "updatedAt": "2026-06-23"
   },
   "4569": {
-    "stockName": "六方科-KY",
-    "officialIndustry": "汽車工業",
+    "confidence": 60,
     "fineIndustries": [
       "汽車零組件",
       "整車"
     ],
+    "groupTags": [
+      "汽車"
+    ],
+    "officialIndustry": "汽車工業",
     "productTags": [
       "汽車零組件",
       "車用電子",
       "AM市場",
       "整車"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "六方科-KY",
     "themeTags": [
       "電動車",
       "車用電子"
     ],
-    "groupTags": [
-      "汽車"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "4572": {
-    "stockName": "駐龍",
-    "officialIndustry": "電機機械",
+    "confidence": 60,
     "fineIndustries": [
       "機械",
-      "自動化"
-    ],
-    "productTags": [
-      "機械設備",
-      "自動化",
-      "零組件"
-    ],
-    "themeTags": [
-      "智慧製造",
       "自動化"
     ],
     "groupTags": [
       "機械"
     ],
-    "confidence": 60,
+    "officialIndustry": "電機機械",
+    "productTags": [
+      "機械設備",
+      "自動化",
+      "零組件"
+    ],
     "source": "officialIndustryOnly",
+    "stockName": "駐龍",
+    "themeTags": [
+      "智慧製造",
+      "自動化"
+    ],
     "updatedAt": "2026-06-23"
   },
   "4581": {
-    "stockName": "光隆精密-KY",
-    "officialIndustry": "汽車工業",
+    "confidence": 60,
     "fineIndustries": [
       "汽車零組件",
       "整車"
     ],
+    "groupTags": [
+      "汽車"
+    ],
+    "officialIndustry": "汽車工業",
     "productTags": [
       "汽車零組件",
       "車用電子",
       "AM市場",
       "整車"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "光隆精密-KY",
     "themeTags": [
       "電動車",
       "車用電子"
     ],
-    "groupTags": [
-      "汽車"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "4714": {
-    "stockName": "永捷",
-    "officialIndustry": "化學工業",
+    "confidence": 60,
     "fineIndustries": [
       "化工材料"
     ],
+    "groupTags": [
+      "化工"
+    ],
+    "officialIndustry": "化學工業",
     "productTags": [
       "化學品",
       "樹脂",
       "特用材料"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "永捷",
     "themeTags": [
       "材料國產化",
       "景氣循環"
     ],
-    "groupTags": [
-      "化工"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "4722": {
-    "stockName": "國精化",
-    "officialIndustry": "化學工業",
+    "confidence": 60,
     "fineIndustries": [
       "化工材料"
     ],
+    "groupTags": [
+      "化工"
+    ],
+    "officialIndustry": "化學工業",
     "productTags": [
       "化學品",
       "樹脂",
       "特用材料"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "國精化",
     "themeTags": [
       "材料國產化",
       "景氣循環"
     ],
-    "groupTags": [
-      "化工"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "4739": {
-    "stockName": "康普",
-    "officialIndustry": "化學工業",
+    "confidence": 60,
     "fineIndustries": [
       "化工材料"
     ],
+    "groupTags": [
+      "化工"
+    ],
+    "officialIndustry": "化學工業",
     "productTags": [
       "化學品",
       "樹脂",
       "特用材料"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "康普",
     "themeTags": [
       "材料國產化",
       "景氣循環"
     ],
-    "groupTags": [
-      "化工"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "4749": {
-    "stockName": "新應材",
-    "officialIndustry": "半導體業",
+    "confidence": 90,
     "fineIndustries": [
       "半導體特用化學材料"
     ],
+    "groupTags": [
+      "半導體材料"
+    ],
+    "officialIndustry": "半導體業",
     "productTags": [
       "半導體材料",
       "顯影",
       "洗淨材料",
       "特殊化學品"
     ],
+    "source": "manual",
+    "stockName": "新應材",
     "themeTags": [
       "先進製程",
       "半導體材料國產化"
     ],
-    "groupTags": [
-      "半導體材料"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "4760": {
-    "stockName": "勤凱科技",
-    "officialIndustry": "其他電子業",
+    "confidence": 90,
     "fineIndustries": [
       "導電材料",
       "電子漿料"
     ],
+    "groupTags": [
+      "電子材料"
+    ],
+    "officialIndustry": "其他電子業",
     "productTags": [
       "導電漿",
       "電極材料",
       "被動元件材料",
       "厚膜材料"
     ],
+    "source": "manual",
+    "stockName": "勤凱科技",
     "themeTags": [
       "AI電源",
       "被動元件",
       "車用電子"
     ],
-    "groupTags": [
-      "電子材料"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "4772": {
-    "stockName": "台特化",
-    "officialIndustry": "化學工業",
+    "confidence": 90,
     "fineIndustries": [
       "半導體特用氣體",
       "化學材料"
     ],
+    "groupTags": [
+      "半導體材料"
+    ],
+    "officialIndustry": "化學工業",
     "productTags": [
       "特用化學品",
       "電子級材料",
       "半導體材料"
     ],
+    "source": "manual",
+    "stockName": "台特化",
     "themeTags": [
       "先進製程",
       "材料國產化"
     ],
-    "groupTags": [
-      "半導體材料"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "4923": {
-    "stockName": "力士",
-    "officialIndustry": "半導體業",
+    "confidence": 90,
     "fineIndustries": [
       "功率元件"
     ],
+    "groupTags": [
+      "功率元件"
+    ],
+    "officialIndustry": "半導體業",
     "productTags": [
       "MOSFET",
       "二極體",
@@ -3757,25 +3760,25 @@
       "功率IC",
       "車用功率元件"
     ],
+    "source": "manual",
+    "stockName": "力士",
     "themeTags": [
       "AI電源",
       "車用電子",
       "電源管理"
     ],
-    "groupTags": [
-      "功率元件"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "4931": {
-    "stockName": "新盛力",
-    "officialIndustry": "電腦及週邊設備業",
+    "confidence": 60,
     "fineIndustries": [
       "電腦週邊",
       "系統"
     ],
+    "groupTags": [
+      "電腦週邊"
+    ],
+    "officialIndustry": "電腦及週邊設備業",
     "productTags": [
       "PC",
       "NB",
@@ -3783,372 +3786,403 @@
       "週邊",
       "工業電腦"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "新盛力",
     "themeTags": [
       "AI伺服器",
       "AI PC"
     ],
-    "groupTags": [
-      "電腦週邊"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "4967": {
-    "stockName": "十銓",
-    "officialIndustry": "半導體業",
+    "confidence": 90,
     "fineIndustries": [
       "記憶體模組",
       "SSD"
     ],
+    "groupTags": [
+      "記憶體模組"
+    ],
+    "officialIndustry": "半導體業",
     "productTags": [
       "DRAM模組",
       "SSD",
       "電競記憶體"
     ],
+    "source": "manual",
+    "stockName": "十銓",
     "themeTags": [
       "AI PC",
       "記憶體循環"
     ],
-    "groupTags": [
-      "記憶體模組"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "4979": {
-    "stockName": "華星光",
-    "officialIndustry": "通信網路業",
+    "confidence": 90,
     "fineIndustries": [
       "光通訊元件"
     ],
+    "groupTags": [
+      "光通訊"
+    ],
+    "officialIndustry": "通信網路業",
     "productTags": [
       "光收發模組",
       "光主動",
       "被動元件"
     ],
+    "source": "manual",
+    "stockName": "華星光",
     "themeTags": [
       "AI資料中心",
       "800G",
       "光通訊"
     ],
-    "groupTags": [
-      "光通訊"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "5009": {
-    "stockName": "榮剛",
-    "officialIndustry": "鋼鐵工業",
+    "confidence": 90,
     "fineIndustries": [
       "特殊鋼",
       "航太與能源鋼材"
     ],
+    "groupTags": [
+      "特殊鋼"
+    ],
+    "officialIndustry": "鋼鐵工業",
     "productTags": [
       "特殊鋼",
       "合金鋼",
       "航太鋼材",
       "能源鋼材"
     ],
+    "source": "manual",
+    "stockName": "榮剛",
     "themeTags": [
       "航太",
       "軍工",
       "能源設備",
       "特殊鋼"
     ],
-    "groupTags": [
-      "特殊鋼"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "5201": {
-    "stockName": "凱衛",
-    "officialIndustry": "資訊服務業",
+    "confidence": 90,
     "fineIndustries": [
       "ERP",
       "企業管理軟體"
     ],
+    "groupTags": [
+      "企業軟體"
+    ],
+    "officialIndustry": "資訊服務業",
     "productTags": [
       "ERP",
       "企業管理軟體",
       "雲端系統",
       "客製化軟體"
     ],
+    "source": "manual",
+    "stockName": "凱衛",
     "themeTags": [
       "企業數位轉型",
       "SaaS",
       "雲端ERP"
     ],
-    "groupTags": [
-      "企業軟體"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "5209": {
-    "stockName": "新鼎",
-    "officialIndustry": "其他業",
+    "confidence": 90,
     "fineIndustries": [
       "工程資訊",
       "系統整合服務"
     ],
+    "groupTags": [
+      "工程系統整合"
+    ],
+    "officialIndustry": "其他業",
     "productTags": [
       "工程資訊系統",
       "工業自動化",
       "系統整合",
       "維運服務"
     ],
+    "source": "manual",
+    "stockName": "新鼎",
     "themeTags": [
       "智慧工程",
       "工業數位化",
       "資訊服務"
     ],
-    "groupTags": [
-      "工程系統整合"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "5212": {
-    "stockName": "凌網",
-    "officialIndustry": "資訊服務業",
+    "confidence": 90,
     "fineIndustries": [
       "電子化政府",
       "圖書館資訊系統"
     ],
+    "groupTags": [
+      "電子化政府",
+      "SI"
+    ],
+    "officialIndustry": "資訊服務業",
     "productTags": [
       "電子化政府",
       "圖書館自動化",
       "資訊系統整合",
       "雲端服務"
     ],
+    "source": "manual",
+    "stockName": "凌網",
     "themeTags": [
       "智慧政府",
       "數位轉型",
       "資訊服務"
     ],
-    "groupTags": [
-      "電子化政府",
-      "SI"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "5230": {
-    "stockName": "雷笛克光學",
-    "officialIndustry": "光電業",
+    "confidence": 90,
     "fineIndustries": [
       "LED二次光學透鏡"
     ],
+    "groupTags": [
+      "LED光學元件"
+    ],
+    "officialIndustry": "光電業",
     "productTags": [
       "LED二次光學透鏡",
       "光學透鏡",
       "車燈透鏡",
       "照明光學元件"
     ],
+    "source": "manual",
+    "stockName": "雷笛克光學",
     "themeTags": [
       "車用照明",
       "LED光學",
       "Mini LED"
     ],
-    "groupTags": [
-      "LED光學元件"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "5244": {
-    "stockName": "弘凱",
-    "officialIndustry": "光電業",
+    "confidence": 90,
     "fineIndustries": [
       "LED封裝",
       "車用照明"
     ],
+    "groupTags": [
+      "LED封裝"
+    ],
+    "officialIndustry": "光電業",
     "productTags": [
       "LED封裝",
       "LED元件",
       "車用LED",
       "照明模組"
     ],
+    "source": "manual",
+    "stockName": "弘凱",
     "themeTags": [
       "車用LED",
       "LED照明"
     ],
-    "groupTags": [
-      "LED封裝"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "5245": {
-    "stockName": "智晶",
-    "officialIndustry": "光電業",
+    "confidence": 90,
     "fineIndustries": [
       "OLED",
       "PMOLED顯示模組"
     ],
+    "groupTags": [
+      "OLED顯示模組"
+    ],
+    "officialIndustry": "光電業",
     "productTags": [
       "PMOLED",
       "OLED顯示模組",
       "小尺寸顯示器",
       "穿戴顯示"
     ],
+    "source": "manual",
+    "stockName": "智晶",
     "themeTags": [
       "OLED",
       "穿戴裝置",
       "工控顯示"
     ],
-    "groupTags": [
-      "OLED顯示模組"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "5263": {
-    "stockName": "智崴",
-    "officialIndustry": "文化創意業",
+    "confidence": 90,
     "fineIndustries": [
       "體感娛樂設備",
       "主題樂園設備"
     ],
+    "groupTags": [
+      "體感娛樂"
+    ],
+    "officialIndustry": "文化創意業",
     "productTags": [
       "飛行劇院",
       "體感娛樂設備",
       "主題樂園設備",
       "沉浸式娛樂"
     ],
+    "source": "manual",
+    "stockName": "智崴",
     "themeTags": [
       "觀光娛樂",
       "沉浸式體驗",
       "文創科技"
     ],
-    "groupTags": [
-      "體感娛樂"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "5284": {
-    "stockName": "jpp-KY",
-    "officialIndustry": "其他業",
+    "confidence": 90,
     "fineIndustries": [
       "航太",
       "伺服器金屬機構件"
     ],
+    "groupTags": [
+      "航太",
+      "伺服器機構件"
+    ],
+    "officialIndustry": "其他業",
     "productTags": [
       "航太金屬件",
       "機櫃機構件",
       "精密鈑金",
       "伺服器機構件"
     ],
+    "source": "manual",
+    "stockName": "jpp-KY",
     "themeTags": [
       "AI伺服器",
       "航太",
       "資料中心機櫃"
     ],
-    "groupTags": [
-      "航太",
-      "伺服器機構件"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
+  "5289": {
+    "accuracy": "high",
+    "companyName": "宜鼎國際",
+    "confidence": 85,
+    "fineIndustries": [
+      "工業電腦",
+      "記憶體模組"
+    ],
+    "groupTags": [
+      "工業電腦",
+      "記憶體模組"
+    ],
+    "officialIndustry": "電腦及週邊設備業",
+    "productTags": [
+      "工業用記憶體",
+      "SSD",
+      "記憶體模組",
+      "嵌入式儲存"
+    ],
+    "source": "keyword",
+    "sourceNote": "依 CB 公司名稱與工業記憶體/嵌入式儲存公開產品分類規則補標。",
+    "sourceUrls": [],
+    "stockId": "5289",
+    "stockName": "宜鼎國際",
+    "themeTags": [
+      "工業電腦",
+      "邊緣運算",
+      "AIoT"
+    ],
+    "updatedAt": "2026-07-07"
+  },
   "5306": {
-    "stockName": "桂盟",
-    "officialIndustry": "運動休閒",
+    "confidence": 90,
     "fineIndustries": [
       "自行車鏈條",
       "傳動零件"
     ],
+    "groupTags": [
+      "自行車零件"
+    ],
+    "officialIndustry": "運動休閒",
     "productTags": [
       "自行車鏈條",
       "電動自行車鏈條",
       "傳動零件",
       "工業鏈條"
     ],
+    "source": "manual",
+    "stockName": "桂盟",
     "themeTags": [
       "自行車",
       "電動自行車",
       "運動休閒"
     ],
-    "groupTags": [
-      "自行車零件"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "5309": {
-    "stockName": "系統電",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "電池模組",
       "車用電子系統"
     ],
+    "groupTags": [
+      "電池模組",
+      "車用電子"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "電池模組",
       "車用電子",
       "工業電腦",
       "儲能系統"
     ],
+    "source": "manual",
+    "stockName": "系統電",
     "themeTags": [
       "儲能",
       "車用電子",
       "工控電源"
     ],
-    "groupTags": [
-      "電池模組",
-      "車用電子"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "5321": {
-    "stockName": "美而快",
-    "officialIndustry": "數位雲端",
+    "confidence": 90,
     "fineIndustries": [
       "社群電商",
       "服飾電商平台"
     ],
+    "groupTags": [
+      "電商平台"
+    ],
+    "officialIndustry": "數位雲端",
     "productTags": [
       "服飾電商",
       "直播電商",
       "社群銷售",
       "品牌電商"
     ],
+    "source": "manual",
+    "stockName": "美而快",
     "themeTags": [
       "電商",
       "社群商務",
       "內需消費"
     ],
-    "groupTags": [
-      "電商平台"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "5388": {
-    "stockName": "中磊",
-    "officialIndustry": "通信網路業",
+    "confidence": 90,
     "fineIndustries": [
       "寬頻網通設備",
       "電信終端"
     ],
+    "groupTags": [
+      "網通設備"
+    ],
+    "officialIndustry": "通信網路業",
     "productTags": [
       "Cable Modem",
       "路由器",
@@ -4156,502 +4190,503 @@
       "寬頻終端",
       "物聯網設備"
     ],
+    "source": "manual",
+    "stockName": "中磊",
     "themeTags": [
       "5G FWA",
       "Wi-Fi 7",
       "寬頻升級"
     ],
-    "groupTags": [
-      "網通設備"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "5434": {
-    "stockName": "崇越",
-    "officialIndustry": "電子通路業",
+    "confidence": 90,
     "fineIndustries": [
       "半導體材料",
       "設備通路"
     ],
+    "groupTags": [
+      "半導體材料通路"
+    ],
+    "officialIndustry": "電子通路業",
     "productTags": [
       "半導體材料",
       "設備代理",
       "矽晶圓材料",
       "化學材料"
     ],
+    "source": "manual",
+    "stockName": "崇越",
     "themeTags": [
       "半導體材料",
       "先進製程",
       "設備代理"
     ],
-    "groupTags": [
-      "半導體材料通路"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "5439": {
-    "stockName": "高技",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "高階PCB",
       "網通板"
     ],
+    "groupTags": [
+      "高階PCB"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "高多層PCB",
       "網通板",
       "伺服器PCB",
       "工控板"
     ],
+    "source": "manual",
+    "stockName": "高技",
     "themeTags": [
       "AI伺服器PCB",
       "網通升級",
       "資料中心"
     ],
-    "groupTags": [
-      "高階PCB"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "5450": {
-    "stockName": "南良",
-    "officialIndustry": "其他業",
+    "confidence": 90,
     "fineIndustries": [
       "機能材料",
       "防護紡織材料"
     ],
+    "groupTags": [
+      "機能材料"
+    ],
+    "officialIndustry": "其他業",
     "productTags": [
       "機能性材料",
       "橡塑膠材料",
       "防護材料",
       "貼合材料"
     ],
+    "source": "manual",
+    "stockName": "南良",
     "themeTags": [
       "防護材料",
       "醫療材料",
       "機能紡織"
     ],
-    "groupTags": [
-      "機能材料"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "5457": {
-    "stockName": "宣德",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "連接器",
       "線束模組"
     ],
+    "groupTags": [
+      "連接器",
+      "線束"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "連接器",
       "線束",
       "車用連接器",
       "消費電子連接器"
     ],
+    "source": "manual",
+    "stockName": "宣德",
     "themeTags": [
       "車用電子",
       "AI伺服器",
       "Type-C"
     ],
-    "groupTags": [
-      "連接器",
-      "線束"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "5464": {
-    "stockName": "霖宏",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "PCB印刷電路板"
     ],
+    "groupTags": [
+      "PCB"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "PCB",
       "多層板",
       "車用板",
       "工控板"
     ],
+    "source": "manual",
+    "stockName": "霖宏",
     "themeTags": [
       "車用電子",
       "工控PCB",
       "PCB景氣"
     ],
-    "groupTags": [
-      "PCB"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "5534": {
-    "stockName": "長虹",
-    "officialIndustry": "建材營造",
+    "confidence": 90,
     "fineIndustries": [
       "建設開發",
       "住宅推案"
     ],
+    "groupTags": [
+      "建設開發"
+    ],
+    "officialIndustry": "建材營造",
     "productTags": [
       "住宅建案",
       "商辦開發",
       "土地開發",
       "不動產銷售"
     ],
+    "source": "manual",
+    "stockName": "長虹",
     "themeTags": [
       "房市循環",
       "都更",
       "建案入帳"
     ],
-    "groupTags": [
-      "建設開發"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "5608": {
-    "stockName": "四維航",
-    "officialIndustry": "航運業",
+    "confidence": 90,
     "fineIndustries": [
       "散裝航運",
       "船隊營運"
     ],
+    "groupTags": [
+      "散裝航運"
+    ],
+    "officialIndustry": "航運業",
     "productTags": [
       "散裝船",
       "乾散貨運輸",
       "船隊營運",
       "航運服務"
     ],
+    "source": "manual",
+    "stockName": "四維航",
     "themeTags": [
       "BDI",
       "散裝航運",
       "原物料運輸"
     ],
-    "groupTags": [
-      "散裝航運"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6015": {
-    "stockName": "宏遠證",
-    "officialIndustry": "金融保險",
+    "confidence": 90,
     "fineIndustries": [
       "證券經紀",
       "金融服務"
     ],
+    "groupTags": [
+      "證券"
+    ],
+    "officialIndustry": "金融保險",
     "productTags": [
       "證券經紀",
       "自營",
       "承銷",
       "金融服務"
     ],
+    "source": "manual",
+    "stockName": "宏遠證",
     "themeTags": [
       "股市成交量",
       "證券",
       "金融股"
     ],
-    "groupTags": [
-      "證券"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6101": {
-    "stockName": "寬魚國際",
-    "officialIndustry": "文化創意業",
+    "confidence": 90,
     "fineIndustries": [
       "演藝經紀",
       "文創娛樂"
     ],
+    "groupTags": [
+      "文創娛樂"
+    ],
+    "officialIndustry": "文化創意業",
     "productTags": [
       "藝人經紀",
       "演唱會",
       "文創娛樂",
       "內容IP"
     ],
+    "source": "manual",
+    "stockName": "寬魚國際",
     "themeTags": [
       "演唱會經濟",
       "文創娛樂",
       "內容IP"
     ],
-    "groupTags": [
-      "文創娛樂"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6104": {
-    "stockName": "創惟",
-    "officialIndustry": "半導體業",
+    "confidence": 90,
     "fineIndustries": [
       "USB高速傳輸控制IC"
     ],
+    "groupTags": [
+      "高速傳輸IC"
+    ],
+    "officialIndustry": "半導體業",
     "productTags": [
       "USB控制IC",
       "USB Hub",
       "Type-C控制晶片",
       "高速傳輸IC"
     ],
+    "source": "manual",
+    "stockName": "創惟",
     "themeTags": [
       "USB4",
       "Type-C",
       "PC周邊高速傳輸"
     ],
-    "groupTags": [
-      "高速傳輸IC"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6111": {
-    "stockName": "光聚晶電",
-    "officialIndustry": "文化創意業",
+    "confidence": 90,
     "fineIndustries": [
       "光電材料",
       "文創轉型資產"
     ],
+    "groupTags": [
+      "光電材料",
+      "轉型"
+    ],
+    "officialIndustry": "文化創意業",
     "productTags": [
       "光電材料",
       "LED相關",
       "投資轉型",
       "資產題材"
     ],
+    "source": "manual",
+    "stockName": "光聚晶電",
     "themeTags": [
       "轉型題材",
       "光電",
       "資產活化"
     ],
-    "groupTags": [
-      "光電材料",
-      "轉型"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6117": {
-    "stockName": "迎廣",
-    "officialIndustry": "電腦及週邊設備業",
+    "confidence": 90,
     "fineIndustries": [
       "PC",
       "伺服器機殼與電源"
     ],
+    "groupTags": [
+      "機殼",
+      "電源"
+    ],
+    "officialIndustry": "電腦及週邊設備業",
     "productTags": [
       "PC機殼",
       "伺服器機殼",
       "電源供應器",
       "散熱產品"
     ],
+    "source": "manual",
+    "stockName": "迎廣",
     "themeTags": [
       "AI伺服器機殼",
       "PC DIY",
       "電源"
     ],
-    "groupTags": [
-      "機殼",
-      "電源"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6125": {
-    "stockName": "廣運",
-    "officialIndustry": "電機機械",
+    "confidence": 90,
     "fineIndustries": [
       "自動化物流",
       "半導體搬運設備"
     ],
+    "groupTags": [
+      "自動化設備"
+    ],
+    "officialIndustry": "電機機械",
     "productTags": [
       "自動化設備",
       "物流系統",
       "倉儲搬運",
       "半導體自動化"
     ],
+    "source": "manual",
+    "stockName": "廣運",
     "themeTags": [
       "智慧物流",
       "半導體設備",
       "自動化"
     ],
-    "groupTags": [
-      "自動化設備"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6126": {
-    "stockName": "信音",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "電源連接器",
       "訊號連接器"
     ],
+    "groupTags": [
+      "連接器"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "電源連接器",
       "訊號連接器",
       "線束",
       "插座"
     ],
+    "source": "manual",
+    "stockName": "信音",
     "themeTags": [
       "車用電子",
       "PC周邊",
       "連接器"
     ],
-    "groupTags": [
-      "連接器"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6150": {
-    "stockName": "撼訊",
-    "officialIndustry": "電腦及週邊設備業",
+    "confidence": 90,
     "fineIndustries": [
       "顯示卡",
       "PC零組件"
     ],
+    "groupTags": [
+      "顯示卡",
+      "PC零組件"
+    ],
+    "officialIndustry": "電腦及週邊設備業",
     "productTags": [
       "顯示卡",
       "電競硬體",
       "PC零組件",
       "GPU周邊"
     ],
+    "source": "manual",
+    "stockName": "撼訊",
     "themeTags": [
       "AI PC",
       "GPU",
       "電競硬體"
     ],
-    "groupTags": [
-      "顯示卡",
-      "PC零組件"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6156": {
-    "stockName": "松上",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "光電膜材",
       "電子材料加工"
     ],
+    "groupTags": [
+      "光電",
+      "電子材料"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "保護膜",
       "光學膜",
       "電子材料加工",
       "顯示器材料"
     ],
+    "source": "manual",
+    "stockName": "松上",
     "themeTags": [
       "光電材料",
       "面板材料",
       "電子材料"
     ],
-    "groupTags": [
-      "光電",
-      "電子材料"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6163": {
-    "stockName": "華電網",
-    "officialIndustry": "資訊服務業",
+    "confidence": 90,
     "fineIndustries": [
       "網路系統整合",
       "資安服務"
     ],
+    "groupTags": [
+      "網路系統整合"
+    ],
+    "officialIndustry": "資訊服務業",
     "productTags": [
       "網路系統整合",
       "資安服務",
       "通訊系統",
       "維運服務"
     ],
+    "source": "manual",
+    "stockName": "華電網",
     "themeTags": [
       "資安",
       "網路建置",
       "AI資料中心網路"
     ],
-    "groupTags": [
-      "網路系統整合"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6177": {
-    "stockName": "達麗",
-    "officialIndustry": "建材營造",
+    "confidence": 90,
     "fineIndustries": [
       "建設開發",
       "住宅推案"
     ],
+    "groupTags": [
+      "建設開發"
+    ],
+    "officialIndustry": "建材營造",
     "productTags": [
       "住宅建案",
       "商辦開發",
       "土地開發",
       "不動產銷售"
     ],
+    "source": "manual",
+    "stockName": "達麗",
     "themeTags": [
       "房市循環",
       "都更",
       "建案入帳"
     ],
-    "groupTags": [
-      "建設開發"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6179": {
-    "stockName": "亞通",
-    "officialIndustry": "其他業",
+    "confidence": 90,
     "fineIndustries": [
       "太陽能工程",
       "綠能系統"
     ],
+    "groupTags": [
+      "綠能工程"
+    ],
+    "officialIndustry": "其他業",
     "productTags": [
       "太陽能工程",
       "綠能系統整合",
       "機電工程",
       "能源服務"
     ],
+    "source": "manual",
+    "stockName": "亞通",
     "themeTags": [
       "太陽能",
       "綠能工程",
       "儲能"
     ],
-    "groupTags": [
-      "綠能工程"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6182": {
-    "stockName": "合晶",
-    "officialIndustry": "半導體業",
+    "confidence": 90,
     "fineIndustries": [
       "半導體矽晶圓材料"
     ],
+    "groupTags": [
+      "矽晶圓",
+      "半導體材料"
+    ],
+    "officialIndustry": "半導體業",
     "productTags": [
       "拋光矽晶圓",
       "磊晶晶圓",
@@ -4659,101 +4694,130 @@
       "客製化晶圓",
       "矽晶圓材料"
     ],
+    "source": "manual",
+    "stockName": "合晶",
     "themeTags": [
       "半導體材料",
       "功率半導體",
       "AI先進封裝材料"
     ],
-    "groupTags": [
-      "矽晶圓",
-      "半導體材料"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6184": {
-    "stockName": "大豐電",
-    "officialIndustry": "其他業",
+    "confidence": 90,
     "fineIndustries": [
       "有線電視",
       "寬頻網路服務"
     ],
+    "groupTags": [
+      "有線電視",
+      "寬頻"
+    ],
+    "officialIndustry": "其他業",
     "productTags": [
       "有線電視",
       "寬頻上網",
       "數位內容",
       "寬頻網路服務"
     ],
+    "source": "manual",
+    "stockName": "大豐電",
     "themeTags": [
       "寬頻升級",
       "數位內容",
       "電信服務"
     ],
-    "groupTags": [
-      "有線電視",
-      "寬頻"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
+  "6187": {
+    "accuracy": "medium",
+    "companyName": "萬潤科技",
+    "confidence": 80,
+    "fineIndustries": [
+      "半導體設備",
+      "自動化設備"
+    ],
+    "groupTags": [
+      "半導體設備"
+    ],
+    "officialIndustry": "半導體業",
+    "productTags": [
+      "自動化設備",
+      "半導體設備",
+      "檢測設備",
+      "封裝設備"
+    ],
+    "source": "keyword",
+    "sourceNote": "依 CB 公司名稱與半導體設備常見公開產品分類規則初步補標，需定期人工複核。",
+    "sourceUrls": [],
+    "stockId": "6187",
+    "stockName": "萬潤科技",
+    "themeTags": [
+      "先進封裝",
+      "半導體設備",
+      "自動化"
+    ],
+    "updatedAt": "2026-07-07"
+  },
   "6189": {
-    "stockName": "豐藝",
-    "officialIndustry": "電子通路業",
+    "confidence": 90,
     "fineIndustries": [
       "資訊產品",
       "電子零組件通路"
     ],
+    "groupTags": [
+      "電子通路"
+    ],
+    "officialIndustry": "電子通路業",
     "productTags": [
       "電子零組件通路",
       "資訊產品代理",
       "工業電腦代理",
       "系統整合"
     ],
+    "source": "manual",
+    "stockName": "豐藝",
     "themeTags": [
       "AI PC",
       "工業電腦",
       "電子通路"
     ],
-    "groupTags": [
-      "電子通路"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6190": {
-    "stockName": "萬泰科",
-    "officialIndustry": "通信網路業",
+    "confidence": 90,
     "fineIndustries": [
       "網路線纜",
       "通訊佈線"
     ],
+    "groupTags": [
+      "通訊線纜"
+    ],
+    "officialIndustry": "通信網路業",
     "productTags": [
       "網路線",
       "通訊線纜",
       "光纖線纜",
       "佈線系統"
     ],
+    "source": "manual",
+    "stockName": "萬泰科",
     "themeTags": [
       "資料中心布線",
       "網通升級"
     ],
-    "groupTags": [
-      "通訊線纜"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6197": {
-    "stockName": "佳必琪",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "高速連接器",
       "Type-C線材"
     ],
+    "groupTags": [
+      "高速連接器"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "USB Type-C",
       "連接器",
@@ -4761,400 +4825,400 @@
       "Docking",
       "高速傳輸線"
     ],
+    "source": "manual",
+    "stockName": "佳必琪",
     "themeTags": [
       "USB4",
       "Type-C",
       "AI PC周邊"
     ],
-    "groupTags": [
-      "高速連接器"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6199": {
-    "stockName": "天品",
-    "officialIndustry": "其他業",
+    "confidence": 90,
     "fineIndustries": [
       "資產開發",
       "營建服務"
     ],
+    "groupTags": [
+      "資產開發"
+    ],
+    "officialIndustry": "其他業",
     "productTags": [
       "不動產資產",
       "營建工程",
       "土地開發",
       "投資事業"
     ],
+    "source": "manual",
+    "stockName": "天品",
     "themeTags": [
       "資產活化",
       "營建",
       "轉型題材"
     ],
-    "groupTags": [
-      "資產開發"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6207": {
-    "stockName": "雷科",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "雷射設備",
       "電子材料"
     ],
+    "groupTags": [
+      "雷射設備",
+      "電子材料"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "雷射加工設備",
       "電子材料",
       "膠帶材料",
       "SMT材料"
     ],
+    "source": "manual",
+    "stockName": "雷科",
     "themeTags": [
       "PCB設備",
       "先進封裝材料",
       "電子材料"
     ],
-    "groupTags": [
-      "雷射設備",
-      "電子材料"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6209": {
-    "stockName": "今國光",
-    "officialIndustry": "光電業",
+    "confidence": 90,
     "fineIndustries": [
       "光學鏡片",
       "鏡頭模組"
     ],
+    "groupTags": [
+      "光學鏡頭"
+    ],
+    "officialIndustry": "光電業",
     "productTags": [
       "光學鏡片",
       "鏡頭模組",
       "車載鏡頭",
       "影像光學元件"
     ],
+    "source": "manual",
+    "stockName": "今國光",
     "themeTags": [
       "車用鏡頭",
       "光學升級",
       "安防影像"
     ],
-    "groupTags": [
-      "光學鏡頭"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6219": {
-    "stockName": "富旺",
-    "officialIndustry": "建材營造",
+    "confidence": 90,
     "fineIndustries": [
       "建設開發",
       "住宅推案"
     ],
+    "groupTags": [
+      "建設開發"
+    ],
+    "officialIndustry": "建材營造",
     "productTags": [
       "住宅建案",
       "商辦開發",
       "土地開發",
       "不動產銷售"
     ],
+    "source": "manual",
+    "stockName": "富旺",
     "themeTags": [
       "房市循環",
       "都更",
       "建案入帳"
     ],
-    "groupTags": [
-      "建設開發"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6220": {
-    "stockName": "岳豐",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "線纜",
       "電源線"
     ],
+    "groupTags": [
+      "線纜",
+      "電源線"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "電源線",
       "網路線",
       "連接線",
       "線纜組件"
     ],
+    "source": "manual",
+    "stockName": "岳豐",
     "themeTags": [
       "資料中心布線",
       "充電線材",
       "網通線材"
     ],
-    "groupTags": [
-      "線纜",
-      "電源線"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6223": {
-    "stockName": "旺矽",
-    "officialIndustry": "半導體業",
+    "confidence": 90,
     "fineIndustries": [
       "探針卡",
       "半導體測試介面"
     ],
+    "groupTags": [
+      "探針卡",
+      "測試介面"
+    ],
+    "officialIndustry": "半導體業",
     "productTags": [
       "探針卡",
       "測試座",
       "半導體測試介面",
       "MEMS探針"
     ],
+    "source": "manual",
+    "stockName": "旺矽",
     "themeTags": [
       "AI晶片測試",
       "先進封裝測試",
       "半導體測試"
     ],
-    "groupTags": [
-      "探針卡",
-      "測試介面"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6243": {
-    "stockName": "迅杰",
-    "officialIndustry": "半導體業",
+    "confidence": 90,
     "fineIndustries": [
       "微控制器",
       "消費性IC設計"
     ],
+    "groupTags": [
+      "IC設計",
+      "MCU"
+    ],
+    "officialIndustry": "半導體業",
     "productTags": [
       "MCU",
       "微控制器",
       "電源管理IC",
       "消費性IC"
     ],
+    "source": "manual",
+    "stockName": "迅杰",
     "themeTags": [
       "MCU",
       "邊緣控制",
       "IC設計"
     ],
-    "groupTags": [
-      "IC設計",
-      "MCU"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6269": {
-    "stockName": "台郡",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "軟性印刷電路板FPC"
     ],
+    "groupTags": [
+      "FPC軟板"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "FPC軟板",
       "軟硬結合板",
       "天線軟板",
       "手機軟板"
     ],
+    "source": "manual",
+    "stockName": "台郡",
     "themeTags": [
       "AI手機",
       "穿戴裝置",
       "車用軟板"
     ],
-    "groupTags": [
-      "FPC軟板"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6274": {
-    "stockName": "台燿",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "高頻高速銅箔基板CCL"
     ],
+    "groupTags": [
+      "高階CCL"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "高頻高速CCL",
       "低損耗材料",
       "伺服器材料",
       "網通材料"
     ],
+    "source": "manual",
+    "stockName": "台燿",
     "themeTags": [
       "AI伺服器",
       "800G交換器",
       "PCB材料"
     ],
-    "groupTags": [
-      "高階CCL"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6275": {
-    "stockName": "元山",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "散熱風扇",
       "車用風扇"
     ],
+    "groupTags": [
+      "散熱風扇"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "散熱風扇",
       "車用風扇",
       "伺服器風扇",
       "家電風扇"
     ],
+    "source": "manual",
+    "stockName": "元山",
     "themeTags": [
       "AI伺服器散熱",
       "車用熱管理",
       "散熱風扇"
     ],
-    "groupTags": [
-      "散熱風扇"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6282": {
-    "stockName": "康舒",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "電源供應器",
       "能源系統"
     ],
+    "groupTags": [
+      "電源供應器"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "電源供應器",
       "伺服器電源",
       "電動車充電",
       "能源系統"
     ],
+    "source": "manual",
+    "stockName": "康舒",
     "themeTags": [
       "AI伺服器電源",
       "EV充電",
       "儲能"
     ],
-    "groupTags": [
-      "電源供應器"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6284": {
-    "stockName": "佳邦",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "保護元件",
       "EMI濾波元件"
     ],
+    "groupTags": [
+      "保護元件"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "保護元件",
       "EMI濾波",
       "天線元件",
       "被動元件"
     ],
+    "source": "manual",
+    "stockName": "佳邦",
     "themeTags": [
       "車用電子",
       "5G通訊",
       "被動元件"
     ],
-    "groupTags": [
-      "保護元件"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6290": {
-    "stockName": "良維",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "連接線",
       "電源線束"
     ],
+    "groupTags": [
+      "線束",
+      "電源線"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "電源線",
       "訊號線",
       "連接線",
       "充電線材"
     ],
+    "source": "manual",
+    "stockName": "良維",
     "themeTags": [
       "Type-C",
       "AI PC周邊",
       "線束"
     ],
-    "groupTags": [
-      "線束",
-      "電源線"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6414": {
-    "stockName": "樺漢",
-    "officialIndustry": "電腦及週邊設備業",
+    "confidence": 90,
     "fineIndustries": [
       "工業電腦",
       "嵌入式系統"
     ],
+    "groupTags": [
+      "工業電腦"
+    ],
+    "officialIndustry": "電腦及週邊設備業",
     "productTags": [
       "IPC",
       "嵌入式電腦",
       "工控系統",
       "IoT閘道器"
     ],
+    "source": "manual",
+    "stockName": "樺漢",
     "themeTags": [
       "邊緣AI",
       "工業4.0",
       "智慧製造"
     ],
-    "groupTags": [
-      "工業電腦"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6425": {
-    "stockName": "易發",
-    "officialIndustry": "電機機械",
+    "confidence": 60,
     "fineIndustries": [
       "機械",
-      "自動化"
-    ],
-    "productTags": [
-      "機械設備",
-      "自動化",
-      "零組件"
-    ],
-    "themeTags": [
-      "智慧製造",
       "自動化"
     ],
     "groupTags": [
       "機械"
     ],
-    "confidence": 60,
+    "officialIndustry": "電機機械",
+    "productTags": [
+      "機械設備",
+      "自動化",
+      "零組件"
+    ],
     "source": "officialIndustryOnly",
+    "stockName": "易發",
+    "themeTags": [
+      "智慧製造",
+      "自動化"
+    ],
     "updatedAt": "2026-06-23"
   },
   "6432": {
-    "stockName": "今展科",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "被動元件"
     ],
+    "groupTags": [
+      "被動元件"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "MLCC",
       "電阻",
@@ -5162,240 +5226,240 @@
       "電容",
       "保護元件"
     ],
+    "source": "manual",
+    "stockName": "今展科",
     "themeTags": [
       "車用電子",
       "AI電源",
       "庫存循環"
     ],
-    "groupTags": [
-      "被動元件"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6442": {
-    "stockName": "光聖",
-    "officialIndustry": "通信網路業",
+    "confidence": 90,
     "fineIndustries": [
       "光通訊元件",
       "矽光供應鏈"
     ],
+    "groupTags": [
+      "光通訊"
+    ],
+    "officialIndustry": "通信網路業",
     "productTags": [
       "光收發模組",
       "光通訊元件",
       "資料中心光連接"
     ],
+    "source": "manual",
+    "stockName": "光聖",
     "themeTags": [
       "AI資料中心",
       "800G",
       "1.6T",
       "矽光子"
     ],
-    "groupTags": [
-      "光通訊"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6451": {
-    "stockName": "訊芯-KY",
-    "officialIndustry": "半導體業",
+    "confidence": 60,
     "fineIndustries": [
       "半導體"
     ],
+    "groupTags": [
+      "半導體"
+    ],
+    "officialIndustry": "半導體業",
     "productTags": [
       "IC設計",
       "晶圓代工",
       "封測",
       "設備材料"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "訊芯-KY",
     "themeTags": [
       "AI晶片",
       "HPC",
       "半導體循環"
     ],
-    "groupTags": [
-      "半導體"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "6469": {
-    "stockName": "大樹",
-    "officialIndustry": "生技醫療",
+    "confidence": 60,
     "fineIndustries": [
       "生技醫療"
     ],
+    "groupTags": [
+      "生技"
+    ],
+    "officialIndustry": "生技醫療",
     "productTags": [
       "藥品",
       "醫材",
       "檢測",
       "保健"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "大樹",
     "themeTags": [
       "新藥",
       "CDMO",
       "醫材"
     ],
-    "groupTags": [
-      "生技"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "6472": {
-    "stockName": "保瑞",
-    "officialIndustry": "生技醫療",
+    "confidence": 90,
     "fineIndustries": [
       "學名藥",
       "CDMO"
     ],
+    "groupTags": [
+      "生技製藥"
+    ],
+    "officialIndustry": "生技醫療",
     "productTags": [
       "學名藥",
       "藥品代工",
       "CDMO",
       "併購整合"
     ],
+    "source": "manual",
+    "stockName": "保瑞",
     "themeTags": [
       "生技併購",
       "CDMO",
       "藥品通路"
     ],
-    "groupTags": [
-      "生技製藥"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6477": {
-    "stockName": "安集",
-    "officialIndustry": "光電業",
+    "confidence": 60,
     "fineIndustries": [
       "光電",
       "顯示"
     ],
+    "groupTags": [
+      "光電"
+    ],
+    "officialIndustry": "光電業",
     "productTags": [
       "面板",
       "光學",
       "LED",
       "光電材料"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "安集",
     "themeTags": [
       "車載顯示",
       "光學升級"
     ],
-    "groupTags": [
-      "光電"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "6509": {
-    "stockName": "聚和",
-    "officialIndustry": "化學工業",
+    "confidence": 60,
     "fineIndustries": [
       "化工材料"
     ],
+    "groupTags": [
+      "化工"
+    ],
+    "officialIndustry": "化學工業",
     "productTags": [
       "化學品",
       "樹脂",
       "特用材料"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "聚和",
     "themeTags": [
       "材料國產化",
       "景氣循環"
     ],
-    "groupTags": [
-      "化工"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "6510": {
-    "stockName": "精測",
-    "officialIndustry": "半導體業",
+    "confidence": 90,
     "fineIndustries": [
       "半導體測試介面"
     ],
+    "groupTags": [
+      "半導體測試"
+    ],
+    "officialIndustry": "半導體業",
     "productTags": [
       "探針卡",
       "測試介面",
       "晶圓測試"
     ],
+    "source": "manual",
+    "stockName": "精測",
     "themeTags": [
       "AI晶片",
       "HPC",
       "半導體測試"
     ],
-    "groupTags": [
-      "半導體測試"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6515": {
-    "stockName": "穎崴",
-    "officialIndustry": "半導體業",
+    "confidence": 90,
     "fineIndustries": [
       "IC測試介面",
       "測試座"
     ],
+    "groupTags": [
+      "半導體測試"
+    ],
+    "officialIndustry": "半導體業",
     "productTags": [
       "測試座",
       "探針座",
       "老化測試",
       "IC測試耗材"
     ],
+    "source": "manual",
+    "stockName": "穎崴",
     "themeTags": [
       "AI晶片",
       "HPC",
       "先進封裝測試"
     ],
-    "groupTags": [
-      "半導體測試"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6533": {
-    "stockName": "晶心科",
-    "officialIndustry": "半導體業",
+    "confidence": 90,
     "fineIndustries": [
       "RISC-V處理器IP"
-    ],
-    "productTags": [
-      "RISC-V CPU IP",
-      "處理器核心",
-      "SoC設計IP"
-    ],
-    "themeTags": [
-      "AIoT",
-      "邊緣AI",
-      "RISC-V"
     ],
     "groupTags": [
       "IC設計",
       "IP"
     ],
-    "confidence": 90,
+    "officialIndustry": "半導體業",
+    "productTags": [
+      "RISC-V CPU IP",
+      "處理器核心",
+      "SoC設計IP"
+    ],
     "source": "manual",
+    "stockName": "晶心科",
+    "themeTags": [
+      "AIoT",
+      "邊緣AI",
+      "RISC-V"
+    ],
     "updatedAt": "2026-06-23"
   },
   "6538": {
-    "stockName": "倉和",
-    "officialIndustry": "電子零組件業",
+    "confidence": 60,
     "fineIndustries": [
       "電子零組件"
     ],
+    "groupTags": [
+      "電子零組件"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "PCB",
       "被動元件",
@@ -5403,694 +5467,694 @@
       "散熱",
       "功率元件"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "倉和",
     "themeTags": [
       "AI伺服器",
       "車用電子"
     ],
-    "groupTags": [
-      "電子零組件"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "6546": {
-    "stockName": "正基",
-    "officialIndustry": "通信網路業",
+    "confidence": 90,
     "fineIndustries": [
       "無線通訊模組"
     ],
+    "groupTags": [
+      "無線通訊"
+    ],
+    "officialIndustry": "通信網路業",
     "productTags": [
       "WiFi",
       "Bluetooth模組",
       "無線模組",
       "網通模組"
     ],
+    "source": "manual",
+    "stockName": "正基",
     "themeTags": [
       "WiFi 7",
       "AIoT",
       "車用通訊"
     ],
-    "groupTags": [
-      "無線通訊"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6547": {
-    "stockName": "高端疫苗",
-    "officialIndustry": "生技醫療",
+    "confidence": 60,
     "fineIndustries": [
       "生技醫療"
     ],
+    "groupTags": [
+      "生技"
+    ],
+    "officialIndustry": "生技醫療",
     "productTags": [
       "藥品",
       "醫材",
       "檢測",
       "保健"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "高端疫苗",
     "themeTags": [
       "新藥",
       "CDMO",
       "醫材"
     ],
-    "groupTags": [
-      "生技"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "6552": {
-    "stockName": "易華電",
-    "officialIndustry": "半導體業",
+    "confidence": 60,
     "fineIndustries": [
       "半導體"
     ],
+    "groupTags": [
+      "半導體"
+    ],
+    "officialIndustry": "半導體業",
     "productTags": [
       "IC設計",
       "晶圓代工",
       "封測",
       "設備材料"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "易華電",
     "themeTags": [
       "AI晶片",
       "HPC",
       "半導體循環"
     ],
-    "groupTags": [
-      "半導體"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "6576": {
-    "stockName": "逸達",
-    "officialIndustry": "生技醫療",
+    "confidence": 60,
     "fineIndustries": [
       "生技醫療"
     ],
+    "groupTags": [
+      "生技"
+    ],
+    "officialIndustry": "生技醫療",
     "productTags": [
       "藥品",
       "醫材",
       "檢測",
       "保健"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "逸達",
     "themeTags": [
       "新藥",
       "CDMO",
       "醫材"
     ],
-    "groupTags": [
-      "生技"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "6584": {
-    "stockName": "南俊國際",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "伺服器滑軌",
       "精密機構件"
     ],
+    "groupTags": [
+      "伺服器機構件"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "伺服器滑軌",
       "工業滑軌",
       "精密機構件",
       "機櫃零組件"
     ],
+    "source": "manual",
+    "stockName": "南俊國際",
     "themeTags": [
       "AI伺服器",
       "機櫃",
       "資料中心"
     ],
-    "groupTags": [
-      "伺服器機構件"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6585": {
-    "stockName": "鼎基",
-    "officialIndustry": "其他業",
+    "confidence": 90,
     "fineIndustries": [
       "TPU薄膜",
       "高分子材料"
     ],
+    "groupTags": [
+      "高分子材料"
+    ],
+    "officialIndustry": "其他業",
     "productTags": [
       "TPU薄膜",
       "機能薄膜",
       "醫療材料",
       "工業材料"
     ],
+    "source": "manual",
+    "stockName": "鼎基",
     "themeTags": [
       "醫材材料",
       "機能材料",
       "車用材料"
     ],
-    "groupTags": [
-      "高分子材料"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6591": {
-    "stockName": "動力-KY",
-    "officialIndustry": "電腦及週邊設備業",
+    "confidence": 90,
     "fineIndustries": [
       "散熱風扇",
       "GPU風扇"
     ],
+    "groupTags": [
+      "散熱風扇"
+    ],
+    "officialIndustry": "電腦及週邊設備業",
     "productTags": [
       "散熱風扇",
       "顯卡風扇",
       "PC散熱",
       "伺服器風扇"
     ],
+    "source": "manual",
+    "stockName": "動力-KY",
     "themeTags": [
       "AI伺服器散熱",
       "GPU散熱",
       "熱管理"
     ],
-    "groupTags": [
-      "散熱風扇"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6603": {
-    "stockName": "富強鑫",
-    "officialIndustry": "電機機械",
+    "confidence": 90,
     "fineIndustries": [
       "塑膠射出成型機"
     ],
+    "groupTags": [
+      "塑膠射出機"
+    ],
+    "officialIndustry": "電機機械",
     "productTags": [
       "射出成型機",
       "塑膠加工設備",
       "智能製造設備",
       "機械設備"
     ],
+    "source": "manual",
+    "stockName": "富強鑫",
     "themeTags": [
       "電動車輕量化",
       "塑膠成型",
       "自動化"
     ],
-    "groupTags": [
-      "塑膠射出機"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6616": {
-    "stockName": "特昇-KY",
-    "officialIndustry": "居家生活",
+    "confidence": 90,
     "fineIndustries": [
       "地板材料",
       "居家建材"
     ],
+    "groupTags": [
+      "居家建材"
+    ],
+    "officialIndustry": "居家生活",
     "productTags": [
       "地板材料",
       "塑木建材",
       "居家裝修材料",
       "建材外銷"
     ],
+    "source": "manual",
+    "stockName": "特昇-KY",
     "themeTags": [
       "居家裝修",
       "美國房市",
       "建材"
     ],
-    "groupTags": [
-      "居家建材"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6624": {
-    "stockName": "萬年清",
-    "officialIndustry": "綠能環保",
+    "confidence": 90,
     "fineIndustries": [
       "水處理",
       "廢水工程"
     ],
+    "groupTags": [
+      "水處理"
+    ],
+    "officialIndustry": "綠能環保",
     "productTags": [
       "廢水處理",
       "水處理工程",
       "環保設備",
       "工業水處理"
     ],
+    "source": "manual",
+    "stockName": "萬年清",
     "themeTags": [
       "水資源",
       "環保工程",
       "ESG"
     ],
-    "groupTags": [
-      "水處理"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6629": {
-    "stockName": "泰金-KY",
-    "officialIndustry": "居家生活",
+    "confidence": 90,
     "fineIndustries": [
       "金屬生活用品",
       "五金代工"
     ],
+    "groupTags": [
+      "居家五金"
+    ],
+    "officialIndustry": "居家生活",
     "productTags": [
       "金屬生活用品",
       "居家五金",
       "廚衛配件",
       "外銷代工"
     ],
+    "source": "manual",
+    "stockName": "泰金-KY",
     "themeTags": [
       "居家生活",
       "五金用品",
       "外銷消費"
     ],
-    "groupTags": [
-      "居家五金"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6645": {
-    "stockName": "金萬林-創",
-    "officialIndustry": "生技醫療",
+    "confidence": 90,
     "fineIndustries": [
       "基因檢測",
       "精準醫療服務"
     ],
+    "groupTags": [
+      "檢測服務"
+    ],
+    "officialIndustry": "生技醫療",
     "productTags": [
       "基因檢測",
       "分子診斷",
       "精準醫療",
       "檢測服務"
     ],
+    "source": "manual",
+    "stockName": "金萬林-創",
     "themeTags": [
       "精準醫療",
       "基因檢測",
       "分子診斷"
     ],
-    "groupTags": [
-      "檢測服務"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6664": {
-    "stockName": "群翊",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "PCB",
       "半導體乾燥製程設備"
     ],
+    "groupTags": [
+      "電子製程設備"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "真空壓合設備",
       "烘烤設備",
       "PCB設備",
       "半導體封裝設備"
     ],
+    "source": "manual",
+    "stockName": "群翊",
     "themeTags": [
       "先進封裝",
       "PCB設備",
       "ABF載板"
     ],
-    "groupTags": [
-      "電子製程設備"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6670": {
-    "stockName": "復盛應用",
-    "officialIndustry": "運動休閒",
+    "confidence": 90,
     "fineIndustries": [
       "高爾夫球桿頭",
       "運動用品代工"
     ],
+    "groupTags": [
+      "高爾夫球具"
+    ],
+    "officialIndustry": "運動休閒",
     "productTags": [
       "高爾夫球桿頭",
       "複合材料球具",
       "運動用品代工",
       "碳纖維應用"
     ],
+    "source": "manual",
+    "stockName": "復盛應用",
     "themeTags": [
       "高爾夫",
       "運動用品",
       "碳纖維"
     ],
-    "groupTags": [
-      "高爾夫球具"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6672": {
-    "stockName": "騰輝電子-KY",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "高頻",
       "特殊銅箔基板材料"
     ],
+    "groupTags": [
+      "特殊CCL"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "特殊CCL",
       "高頻基板",
       "散熱基板",
       "車用板材料"
     ],
+    "source": "manual",
+    "stockName": "騰輝電子-KY",
     "themeTags": [
       "高頻高速",
       "車用電子",
       "AI伺服器材料"
     ],
-    "groupTags": [
-      "特殊CCL"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6680": {
-    "stockName": "鑫創電子",
-    "officialIndustry": "電腦及週邊設備業",
+    "confidence": 90,
     "fineIndustries": [
       "嵌入式電腦",
       "工控主機板"
     ],
+    "groupTags": [
+      "工業電腦"
+    ],
+    "officialIndustry": "電腦及週邊設備業",
     "productTags": [
       "嵌入式電腦",
       "工控主機板",
       "工業電腦",
       "邊緣運算平台"
     ],
+    "source": "manual",
+    "stockName": "鑫創電子",
     "themeTags": [
       "邊緣AI",
       "工業電腦",
       "AIoT"
     ],
-    "groupTags": [
-      "工業電腦"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6706": {
-    "stockName": "惠特",
-    "officialIndustry": "光電業",
+    "confidence": 90,
     "fineIndustries": [
       "LED",
       "半導體檢測設備"
     ],
+    "groupTags": [
+      "光電",
+      "半導體設備"
+    ],
+    "officialIndustry": "光電業",
     "productTags": [
       "LED測試設備",
       "雷射加工",
       "半導體檢測設備",
       "Micro LED設備"
     ],
+    "source": "manual",
+    "stockName": "惠特",
     "themeTags": [
       "Micro LED",
       "Mini LED",
       "半導體設備"
     ],
-    "groupTags": [
-      "光電",
-      "半導體設備"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6753": {
-    "stockName": "龍德造船",
-    "officialIndustry": "航運業",
+    "confidence": 90,
     "fineIndustries": [
       "高速船艇",
       "軍工造船"
     ],
+    "groupTags": [
+      "軍工造船"
+    ],
+    "officialIndustry": "航運業",
     "productTags": [
       "高速船艇",
       "巡防艇",
       "軍用船舶",
       "複合材料船艇"
     ],
+    "source": "manual",
+    "stockName": "龍德造船",
     "themeTags": [
       "軍工",
       "國艦國造",
       "船舶製造"
     ],
-    "groupTags": [
-      "軍工造船"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6768": {
-    "stockName": "志強-KY",
-    "officialIndustry": "運動休閒",
+    "confidence": 90,
     "fineIndustries": [
       "運動鞋",
       "機能鞋代工"
     ],
+    "groupTags": [
+      "運動鞋代工"
+    ],
+    "officialIndustry": "運動休閒",
     "productTags": [
       "運動鞋",
       "足球鞋",
       "機能鞋",
       "鞋類代工"
     ],
+    "source": "manual",
+    "stockName": "志強-KY",
     "themeTags": [
       "運動用品",
       "品牌代工",
       "世足題材"
     ],
-    "groupTags": [
-      "運動鞋代工"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6771": {
-    "stockName": "平和環保-創",
-    "officialIndustry": "綠能環保",
+    "confidence": 90,
     "fineIndustries": [
       "工業廢水處理",
       "資源化"
     ],
+    "groupTags": [
+      "廢水處理"
+    ],
+    "officialIndustry": "綠能環保",
     "productTags": [
       "廢水處理",
       "污泥處理",
       "資源化服務",
       "環保工程"
     ],
+    "source": "manual",
+    "stockName": "平和環保-創",
     "themeTags": [
       "循環經濟",
       "環保處理",
       "ESG"
     ],
-    "groupTags": [
-      "廢水處理"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6796": {
-    "stockName": "晉弘",
-    "officialIndustry": "生技醫療",
+    "confidence": 90,
     "fineIndustries": [
       "醫療影像",
       "眼科檢測設備"
     ],
+    "groupTags": [
+      "醫療設備"
+    ],
+    "officialIndustry": "生技醫療",
     "productTags": [
       "眼科檢測設備",
       "醫療影像",
       "智慧醫療裝置",
       "數位醫療"
     ],
+    "source": "manual",
+    "stockName": "晉弘",
     "themeTags": [
       "智慧醫療",
       "眼科設備",
       "醫材"
     ],
-    "groupTags": [
-      "醫療設備"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6803": {
-    "stockName": "崑鼎",
-    "officialIndustry": "綠能環保",
+    "confidence": 90,
     "fineIndustries": [
       "焚化營運",
       "環保工程"
     ],
+    "groupTags": [
+      "廢棄物處理"
+    ],
+    "officialIndustry": "綠能環保",
     "productTags": [
       "焚化爐營運",
       "環保工程",
       "廢棄物處理",
       "能源回收"
     ],
+    "source": "manual",
+    "stockName": "崑鼎",
     "themeTags": [
       "循環經濟",
       "廢棄物處理",
       "綠電"
     ],
-    "groupTags": [
-      "廢棄物處理"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6806": {
-    "stockName": "森崴能源",
-    "officialIndustry": "綠能環保",
+    "confidence": 90,
     "fineIndustries": [
       "再生能源EPC",
       "綠電服務"
     ],
+    "groupTags": [
+      "再生能源EPC"
+    ],
+    "officialIndustry": "綠能環保",
     "productTags": [
       "太陽能EPC",
       "風電工程",
       "綠電交易",
       "能源服務"
     ],
+    "source": "manual",
+    "stockName": "森崴能源",
     "themeTags": [
       "綠電",
       "再生能源",
       "儲能"
     ],
-    "groupTags": [
-      "再生能源EPC"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6821": {
-    "stockName": "聯寶",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "磁性元件",
       "電源變壓器"
     ],
+    "groupTags": [
+      "磁性元件"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "變壓器",
       "電感",
       "電源磁性元件",
       "通訊磁性元件"
     ],
+    "source": "manual",
+    "stockName": "聯寶",
     "themeTags": [
       "AI伺服器電源",
       "車用電子",
       "磁性元件"
     ],
-    "groupTags": [
-      "磁性元件"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6830": {
-    "stockName": "汎銓",
-    "officialIndustry": "其他電子業",
+    "confidence": 90,
     "fineIndustries": [
       "半導體材料分析",
       "失效分析"
     ],
+    "groupTags": [
+      "半導體檢測分析"
+    ],
+    "officialIndustry": "其他電子業",
     "productTags": [
       "材料分析",
       "TEM分析",
       "失效分析",
       "半導體檢測服務"
     ],
+    "source": "manual",
+    "stockName": "汎銓",
     "themeTags": [
       "先進製程",
       "先進封裝",
       "半導體檢測"
     ],
-    "groupTags": [
-      "半導體檢測分析"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6835": {
-    "stockName": "圓裕",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "PCB印刷電路板"
     ],
+    "groupTags": [
+      "PCB"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "PCB",
       "多層板",
       "工控板",
       "車用板"
     ],
+    "source": "manual",
+    "stockName": "圓裕",
     "themeTags": [
       "工控PCB",
       "車用電子",
       "PCB景氣"
     ],
-    "groupTags": [
-      "PCB"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6840": {
-    "stockName": "東研信超",
-    "officialIndustry": "其他電子業",
+    "confidence": 90,
     "fineIndustries": [
       "EMC",
       "RF檢測認證"
     ],
+    "groupTags": [
+      "檢測認證"
+    ],
+    "officialIndustry": "其他電子業",
     "productTags": [
       "電磁相容檢測",
       "RF測試",
       "產品認證",
       "無線通訊測試"
     ],
+    "source": "manual",
+    "stockName": "東研信超",
     "themeTags": [
       "AIoT",
       "車用電子",
       "通訊認證"
     ],
-    "groupTags": [
-      "檢測認證"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6843": {
-    "stockName": "進典",
-    "officialIndustry": "電機機械",
+    "confidence": 90,
     "fineIndustries": [
       "工業閥門",
       "流體控制"
     ],
+    "groupTags": [
+      "工業閥門"
+    ],
+    "officialIndustry": "電機機械",
     "productTags": [
       "工業閥門",
       "控制閥",
@@ -6098,25 +6162,25 @@
       "石化",
       "能源閥件"
     ],
+    "source": "manual",
+    "stockName": "進典",
     "themeTags": [
       "半導體廠務",
       "能源工程",
       "工業設備"
     ],
-    "groupTags": [
-      "工業閥門"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6846": {
-    "stockName": "綠茵",
-    "officialIndustry": "食品工業",
+    "confidence": 90,
     "fineIndustries": [
       "保健食品原料",
       "機能食品"
     ],
+    "groupTags": [
+      "保健食品原料"
+    ],
+    "officialIndustry": "食品工業",
     "productTags": [
       "機能食品原料",
       "保健食品",
@@ -6124,727 +6188,755 @@
       "植萃原料",
       "食品配方"
     ],
+    "source": "manual",
+    "stockName": "綠茵",
     "themeTags": [
       "保健食品",
       "銀髮健康",
       "機能食品"
     ],
-    "groupTags": [
-      "保健食品原料"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6854": {
-    "stockName": "錼創科技-KY創",
-    "officialIndustry": "半導體業",
+    "confidence": 90,
     "fineIndustries": [
       "Micro LED顯示晶片",
       "巨量轉移"
     ],
+    "groupTags": [
+      "Micro LED"
+    ],
+    "officialIndustry": "半導體業",
     "productTags": [
       "Micro LED晶片",
       "巨量轉移",
       "顯示模組",
       "微型顯示技術"
     ],
+    "source": "manual",
+    "stockName": "錼創科技-KY創",
     "themeTags": [
       "Micro LED",
       "AR",
       "VR顯示",
       "先進顯示"
     ],
-    "groupTags": [
-      "Micro LED"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6862": {
-    "stockName": "三集瑞-KY",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "功率電感",
       "磁性元件"
     ],
+    "groupTags": [
+      "功率電感"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "功率電感",
       "變壓器",
       "磁性元件",
       "車用電感"
     ],
+    "source": "manual",
+    "stockName": "三集瑞-KY",
     "themeTags": [
       "AI伺服器電源",
       "車用電子",
       "被動元件"
     ],
-    "groupTags": [
-      "功率電感"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6863": {
-    "stockName": "永道-KY",
-    "officialIndustry": "通信網路業",
+    "confidence": 90,
     "fineIndustries": [
       "RFID電子標籤",
       "物聯網識別"
     ],
+    "groupTags": [
+      "RFID",
+      "物聯網"
+    ],
+    "officialIndustry": "通信網路業",
     "productTags": [
       "RFID標籤",
       "電子標籤",
       "NFC應用",
       "物聯網識別"
     ],
+    "source": "manual",
+    "stockName": "永道-KY",
     "themeTags": [
       "物聯網",
       "零售科技",
       "智慧物流"
     ],
-    "groupTags": [
-      "RFID",
-      "物聯網"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6870": {
-    "stockName": "騰雲",
-    "officialIndustry": "數位雲端",
+    "confidence": 90,
     "fineIndustries": [
       "雲端SaaS",
       "數位轉型服務"
     ],
+    "groupTags": [
+      "雲端SaaS"
+    ],
+    "officialIndustry": "數位雲端",
     "productTags": [
       "雲端服務",
       "SaaS",
       "企業數位轉型",
       "資料應用服務"
     ],
+    "source": "manual",
+    "stockName": "騰雲",
     "themeTags": [
       "雲端服務",
       "AI應用",
       "企業軟體"
     ],
-    "groupTags": [
-      "雲端SaaS"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6873": {
-    "stockName": "泓德能源",
-    "officialIndustry": "綠能環保",
+    "confidence": 90,
     "fineIndustries": [
       "綠電售電",
       "儲能整合"
     ],
+    "groupTags": [
+      "綠電服務"
+    ],
+    "officialIndustry": "綠能環保",
     "productTags": [
       "綠電售電",
       "儲能系統",
       "能源管理",
       "太陽能電廠"
     ],
+    "source": "manual",
+    "stockName": "泓德能源",
     "themeTags": [
       "綠電",
       "儲能",
       "企業購電"
     ],
-    "groupTags": [
-      "綠電服務"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6874": {
-    "stockName": "倍力",
-    "officialIndustry": "資訊服務業",
+    "confidence": 90,
     "fineIndustries": [
       "資料庫",
       "企業應用軟體服務"
     ],
+    "groupTags": [
+      "資料庫",
+      "企業軟體"
+    ],
+    "officialIndustry": "資訊服務業",
     "productTags": [
       "資料庫管理",
       "企業軟體",
       "資料整合",
       "維運服務"
     ],
+    "source": "manual",
+    "stockName": "倍力",
     "themeTags": [
       "資料治理",
       "AI資料應用",
       "企業軟體"
     ],
-    "groupTags": [
-      "資料庫",
-      "企業軟體"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6890": {
-    "stockName": "來億-KY",
-    "officialIndustry": "運動休閒",
+    "confidence": 90,
     "fineIndustries": [
       "運動鞋",
       "休閒鞋代工"
     ],
+    "groupTags": [
+      "運動鞋代工"
+    ],
+    "officialIndustry": "運動休閒",
     "productTags": [
       "運動鞋",
       "休閒鞋",
       "功能鞋",
       "品牌鞋代工"
     ],
+    "source": "manual",
+    "stockName": "來億-KY",
     "themeTags": [
       "運動用品",
       "品牌代工",
       "鞋業景氣"
     ],
-    "groupTags": [
-      "運動鞋代工"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6894": {
-    "stockName": "衛司特",
-    "officialIndustry": "綠能環保",
+    "confidence": 90,
     "fineIndustries": [
       "廢液處理",
       "資源回收"
     ],
+    "groupTags": [
+      "廢液處理"
+    ],
+    "officialIndustry": "綠能環保",
     "productTags": [
       "廢液處理",
       "化學品回收",
       "資源化服務",
       "環保處理"
     ],
+    "source": "manual",
+    "stockName": "衛司特",
     "themeTags": [
       "循環經濟",
       "半導體廢液",
       "ESG"
     ],
-    "groupTags": [
-      "廢液處理"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6904": {
-    "stockName": "伯鑫",
-    "officialIndustry": "其他業",
+    "confidence": 90,
     "fineIndustries": [
       "精密鈑金",
       "金屬機構件"
     ],
+    "groupTags": [
+      "金屬機構件"
+    ],
+    "officialIndustry": "其他業",
     "productTags": [
       "精密鈑金",
       "金屬加工",
       "機構件",
       "設備外殼"
     ],
+    "source": "manual",
+    "stockName": "伯鑫",
     "themeTags": [
       "AI伺服器機構件",
       "工業設備",
       "精密金屬"
     ],
-    "groupTags": [
-      "金屬機構件"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6913": {
-    "stockName": "鴻呈",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "線束",
       "連接器組件"
     ],
+    "groupTags": [
+      "線束",
+      "連接器"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "線束",
       "連接線",
       "連接器",
       "車用線束"
     ],
+    "source": "manual",
+    "stockName": "鴻呈",
     "themeTags": [
       "車用電子",
       "AI伺服器",
       "線束"
     ],
-    "groupTags": [
-      "線束",
-      "連接器"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6957": {
-    "stockName": "裕慶-KY",
-    "officialIndustry": "其他業",
+    "confidence": 90,
     "fineIndustries": [
       "居家收納",
       "生活用品代工"
     ],
+    "groupTags": [
+      "居家用品"
+    ],
+    "officialIndustry": "其他業",
     "productTags": [
       "收納用品",
       "居家用品",
       "五金塑膠用品",
       "零售通路產品"
     ],
+    "source": "manual",
+    "stockName": "裕慶-KY",
     "themeTags": [
       "居家生活",
       "外銷消費",
       "生活用品"
     ],
-    "groupTags": [
-      "居家用品"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "6982": {
-    "stockName": "大井泵浦",
-    "officialIndustry": "電機機械",
+    "confidence": 90,
     "fineIndustries": [
       "泵浦",
       "流體輸送設備"
     ],
+    "groupTags": [
+      "泵浦"
+    ],
+    "officialIndustry": "電機機械",
     "productTags": [
       "水泵浦",
       "加壓泵",
       "流體輸送設備",
       "節能泵浦"
     ],
+    "source": "manual",
+    "stockName": "大井泵浦",
     "themeTags": [
       "水資源",
       "節能設備",
       "建築設備"
     ],
-    "groupTags": [
-      "泵浦"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "7402": {
-    "stockName": "邑錡",
-    "officialIndustry": "光電業",
+    "confidence": 90,
     "fineIndustries": [
       "影像攝錄",
       "執法記錄設備"
     ],
+    "groupTags": [
+      "影像攝錄設備"
+    ],
+    "officialIndustry": "光電業",
     "productTags": [
       "行車記錄器",
       "執法記錄器",
       "影像紀錄設備",
       "車用攝錄產品"
     ],
+    "source": "manual",
+    "stockName": "邑錡",
     "themeTags": [
       "車用影像",
       "安防監控",
       "執法科技"
     ],
-    "groupTags": [
-      "影像攝錄設備"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "7556": {
-    "stockName": "意德士科技",
-    "officialIndustry": "半導體業",
+    "confidence": 90,
     "fineIndustries": [
       "半導體設備零組件",
       "耗材"
     ],
+    "groupTags": [
+      "半導體設備零組件"
+    ],
+    "officialIndustry": "半導體業",
     "productTags": [
       "半導體設備零組件",
       "製程耗材",
       "精密零件",
       "設備維護耗材"
     ],
+    "source": "manual",
+    "stockName": "意德士科技",
     "themeTags": [
       "半導體設備",
       "先進製程",
       "在地供應鏈"
     ],
-    "groupTags": [
-      "半導體設備零組件"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "7610": {
-    "stockName": "聯友金屬-創",
-    "officialIndustry": "綠能環保",
+    "confidence": 90,
     "fineIndustries": [
       "電池回收",
       "金屬資源化"
     ],
+    "groupTags": [
+      "金屬資源回收"
+    ],
+    "officialIndustry": "綠能環保",
     "productTags": [
       "電池回收",
       "金屬回收",
       "資源再生",
       "環保處理"
     ],
+    "source": "manual",
+    "stockName": "聯友金屬-創",
     "themeTags": [
       "電池回收",
       "循環經濟",
       "綠能材料"
     ],
-    "groupTags": [
-      "金屬資源回收"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "7713": {
-    "stockName": "威力德生醫",
-    "officialIndustry": "生技醫療",
+    "confidence": 90,
     "fineIndustries": [
       "體外診斷",
       "醫檢試劑"
     ],
+    "groupTags": [
+      "醫檢試劑"
+    ],
+    "officialIndustry": "生技醫療",
     "productTags": [
       "體外診斷試劑",
       "醫檢試劑",
       "檢測儀器",
       "分子診斷"
     ],
+    "source": "manual",
+    "stockName": "威力德生醫",
     "themeTags": [
       "IVD",
       "精準醫療",
       "檢測試劑"
     ],
-    "groupTags": [
-      "醫檢試劑"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "8021": {
-    "stockName": "尖點",
-    "officialIndustry": "其他電子業",
+    "confidence": 90,
     "fineIndustries": [
       "PCB鑽針",
       "鑽孔服務"
     ],
+    "groupTags": [
+      "PCB鑽針",
+      "加工"
+    ],
+    "officialIndustry": "其他電子業",
     "productTags": [
       "PCB鑽針",
       "鑽孔加工",
       "精密鑽針",
       "載板鑽孔服務"
     ],
+    "source": "manual",
+    "stockName": "尖點",
     "themeTags": [
       "AI伺服器PCB",
       "IC載板",
       "PCB耗材"
     ],
-    "groupTags": [
-      "PCB鑽針",
-      "加工"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "8027": {
-    "stockName": "鈦昇",
-    "officialIndustry": "電機機械",
+    "confidence": 90,
     "fineIndustries": [
       "半導體",
       "PCB自動化設備"
     ],
+    "groupTags": [
+      "電子製程設備"
+    ],
+    "officialIndustry": "電機機械",
     "productTags": [
       "雷射設備",
       "自動化設備",
       "半導體設備",
       "PCB設備"
     ],
+    "source": "manual",
+    "stockName": "鈦昇",
     "themeTags": [
       "先進封裝",
       "PCB設備",
       "半導體設備"
     ],
-    "groupTags": [
-      "電子製程設備"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "8028": {
-    "stockName": "昇陽半導體",
-    "officialIndustry": "半導體業",
+    "confidence": 90,
     "fineIndustries": [
       "再生晶圓",
       "晶圓薄化服務"
     ],
+    "groupTags": [
+      "再生晶圓"
+    ],
+    "officialIndustry": "半導體業",
     "productTags": [
       "再生晶圓",
       "晶圓薄化",
       "晶圓研磨",
       "測試晶圓"
     ],
+    "source": "manual",
+    "stockName": "昇陽半導體",
     "themeTags": [
       "先進製程",
       "半導體耗材",
       "晶圓再生"
     ],
-    "groupTags": [
-      "再生晶圓"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "8042": {
-    "stockName": "金山電",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "鋁質電解電容",
-      "被動元件"
-    ],
-    "productTags": [
-      "鋁質電解電容",
-      "固態電容",
-      "被動元件",
-      "電源電容"
-    ],
-    "themeTags": [
-      "電源供應器",
-      "車用電子",
       "被動元件"
     ],
     "groupTags": [
       "電容",
       "被動元件"
     ],
-    "confidence": 90,
+    "officialIndustry": "電子零組件業",
+    "productTags": [
+      "鋁質電解電容",
+      "固態電容",
+      "被動元件",
+      "電源電容"
+    ],
     "source": "manual",
+    "stockName": "金山電",
+    "themeTags": [
+      "電源供應器",
+      "車用電子",
+      "被動元件"
+    ],
     "updatedAt": "2026-06-23"
   },
   "8050": {
-    "stockName": "廣積",
-    "officialIndustry": "電腦及週邊設備業",
+    "confidence": 90,
     "fineIndustries": [
       "工業電腦",
       "嵌入式平台"
     ],
+    "groupTags": [
+      "工業電腦"
+    ],
+    "officialIndustry": "電腦及週邊設備業",
     "productTags": [
       "工業電腦",
       "嵌入式主機板",
       "網安平台",
       "邊緣運算"
     ],
+    "source": "manual",
+    "stockName": "廣積",
     "themeTags": [
       "邊緣AI",
       "工控",
       "網安設備"
     ],
-    "groupTags": [
-      "工業電腦"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "8074": {
-    "stockName": "鉅橡",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "PCB鑽孔墊板",
       "絕緣材料"
     ],
+    "groupTags": [
+      "PCB材料"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "PCB鑽孔墊板",
       "絕緣材料",
       "覆銅板輔材",
       "電子材料"
     ],
+    "source": "manual",
+    "stockName": "鉅橡",
     "themeTags": [
       "PCB材料",
       "AI伺服器板",
       "載板材料"
     ],
-    "groupTags": [
-      "PCB材料"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "8087": {
-    "stockName": "麗升能源",
-    "officialIndustry": "綠能環保",
+    "confidence": 90,
     "fineIndustries": [
       "太陽能電廠",
       "綠能開發"
     ],
+    "groupTags": [
+      "太陽能電廠"
+    ],
+    "officialIndustry": "綠能環保",
     "productTags": [
       "太陽能電廠",
       "再生能源開發",
       "售電服務",
       "能源工程"
     ],
+    "source": "manual",
+    "stockName": "麗升能源",
     "themeTags": [
       "太陽能",
       "綠電",
       "再生能源"
     ],
-    "groupTags": [
-      "太陽能電廠"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "8091": {
-    "stockName": "翔名",
-    "officialIndustry": "半導體業",
+    "confidence": 60,
     "fineIndustries": [
       "半導體"
     ],
+    "groupTags": [
+      "半導體"
+    ],
+    "officialIndustry": "半導體業",
     "productTags": [
       "IC設計",
       "晶圓代工",
       "封測",
       "設備材料"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "翔名",
     "themeTags": [
       "AI晶片",
       "HPC",
       "半導體循環"
     ],
-    "groupTags": [
-      "半導體"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "8092": {
-    "stockName": "建暐",
-    "officialIndustry": "其他電子業",
+    "confidence": 60,
     "fineIndustries": [
       "電子製造服務",
       "設備"
     ],
+    "groupTags": [
+      "其他電子"
+    ],
+    "officialIndustry": "其他電子業",
     "productTags": [
       "EMS",
       "設備",
       "材料",
       "精密零組件"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "建暐",
     "themeTags": [
       "AI伺服器",
       "半導體設備"
     ],
-    "groupTags": [
-      "其他電子"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
+  "8096": {
+    "accuracy": "medium",
+    "companyName": "擎亞電子",
+    "confidence": 75,
+    "fineIndustries": [
+      "電子通路",
+      "IC通路"
+    ],
+    "groupTags": [
+      "電子通路"
+    ],
+    "officialIndustry": "電子通路業",
+    "productTags": [
+      "IC通路",
+      "電子零組件代理",
+      "半導體通路"
+    ],
+    "source": "keyword",
+    "sourceNote": "依 CB 公司名稱與電子通路產業分類規則初步補標，需定期人工複核。",
+    "sourceUrls": [],
+    "stockId": "8096",
+    "stockName": "擎亞電子",
+    "themeTags": [
+      "電子通路",
+      "半導體供應鏈"
+    ],
+    "updatedAt": "2026-07-07"
+  },
   "8104": {
-    "stockName": "錸寶",
-    "officialIndustry": "光電業",
+    "confidence": 60,
     "fineIndustries": [
       "光電",
       "顯示"
     ],
+    "groupTags": [
+      "光電"
+    ],
+    "officialIndustry": "光電業",
     "productTags": [
       "面板",
       "光學",
       "LED",
       "光電材料"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "錸寶",
     "themeTags": [
       "車載顯示",
       "光學升級"
     ],
-    "groupTags": [
-      "光電"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "8111": {
-    "stockName": "立碁",
-    "officialIndustry": "光電業",
+    "confidence": 60,
     "fineIndustries": [
       "光電",
       "顯示"
     ],
+    "groupTags": [
+      "光電"
+    ],
+    "officialIndustry": "光電業",
     "productTags": [
       "面板",
       "光學",
       "LED",
       "光電材料"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "立碁",
     "themeTags": [
       "車載顯示",
       "光學升級"
     ],
-    "groupTags": [
-      "光電"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "8112": {
-    "stockName": "至上",
-    "officialIndustry": "電子通路業",
+    "confidence": 90,
     "fineIndustries": [
       "記憶體",
       "IC通路"
     ],
+    "groupTags": [
+      "記憶體通路"
+    ],
+    "officialIndustry": "電子通路業",
     "productTags": [
       "記憶體代理",
       "IC通路",
       "面板零組件",
       "電子材料代理"
     ],
+    "source": "manual",
+    "stockName": "至上",
     "themeTags": [
       "記憶體循環",
       "AI伺服器供應鏈",
       "電子通路"
     ],
-    "groupTags": [
-      "記憶體通路"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "8147": {
-    "stockName": "正淩",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "連接器",
       "線束"
     ],
+    "groupTags": [
+      "連接器"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "連接器",
       "線束",
@@ -6853,612 +6945,612 @@
       "車用",
       "伺服器連接"
     ],
+    "source": "manual",
+    "stockName": "正淩",
     "themeTags": [
       "AI伺服器",
       "車用",
       "USB4",
       "Type-C"
     ],
-    "groupTags": [
-      "連接器"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "8155": {
-    "stockName": "博智",
-    "officialIndustry": "電子零組件業",
+    "confidence": 90,
     "fineIndustries": [
       "高階PCB",
       "伺服器板"
     ],
+    "groupTags": [
+      "PCB",
+      "AI伺服器"
+    ],
+    "officialIndustry": "電子零組件業",
     "productTags": [
       "高層數PCB",
       "伺服器板",
       "網通板",
       "AI伺服器板"
     ],
+    "source": "manual",
+    "stockName": "博智",
     "themeTags": [
       "AI伺服器",
       "800G交換器",
       "PCB升級"
     ],
-    "groupTags": [
-      "PCB",
-      "AI伺服器"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "8171": {
-    "stockName": "天宇",
-    "officialIndustry": "綠能環保",
+    "confidence": 60,
     "fineIndustries": [
       "綠能環保"
     ],
+    "groupTags": [
+      "綠能環保"
+    ],
+    "officialIndustry": "綠能環保",
     "productTags": [
       "太陽能",
       "儲能",
       "環保工程",
       "資源回收"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "天宇",
     "themeTags": [
       "綠電",
       "儲能",
       "碳權"
     ],
-    "groupTags": [
-      "綠能環保"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "8210": {
-    "stockName": "勤誠",
-    "officialIndustry": "電腦及週邊設備業",
+    "confidence": 90,
     "fineIndustries": [
       "伺服器機殼",
       "機櫃"
     ],
+    "groupTags": [
+      "AI伺服器機構件"
+    ],
+    "officialIndustry": "電腦及週邊設備業",
     "productTags": [
       "伺服器機殼",
       "機櫃",
       "滑軌",
       "沖壓件"
     ],
+    "source": "manual",
+    "stockName": "勤誠",
     "themeTags": [
       "AI伺服器",
       "資料中心",
       "機構件"
     ],
-    "groupTags": [
-      "AI伺服器機構件"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "8255": {
-    "stockName": "朋程",
-    "officialIndustry": "電機機械",
+    "confidence": 90,
     "fineIndustries": [
       "車用功率元件"
     ],
+    "groupTags": [
+      "功率元件"
+    ],
+    "officialIndustry": "電機機械",
     "productTags": [
       "車用整流器",
       "二極體",
       "發電機調節器",
       "功率模組"
     ],
+    "source": "manual",
+    "stockName": "朋程",
     "themeTags": [
       "車用電子",
       "電動車",
       "AI電源"
     ],
-    "groupTags": [
-      "功率元件"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "8271": {
-    "stockName": "宇瞻",
-    "officialIndustry": "半導體業",
+    "confidence": 90,
     "fineIndustries": [
       "記憶體模組",
       "SSD"
     ],
+    "groupTags": [
+      "記憶體模組"
+    ],
+    "officialIndustry": "半導體業",
     "productTags": [
       "DRAM模組",
       "SSD",
       "工控儲存"
     ],
+    "source": "manual",
+    "stockName": "宇瞻",
     "themeTags": [
       "工控",
       "AI邊緣儲存"
     ],
-    "groupTags": [
-      "記憶體模組"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "8299": {
-    "stockName": "群聯",
-    "officialIndustry": "半導體業",
+    "confidence": 90,
     "fineIndustries": [
       "NAND Flash控制IC"
-    ],
-    "productTags": [
-      "NAND控制IC",
-      "SSD控制晶片",
-      "儲存解決方案"
-    ],
-    "themeTags": [
-      "AI PC",
-      "企業級SSD",
-      "NAND循環"
     ],
     "groupTags": [
       "IC設計",
       "儲存"
     ],
-    "confidence": 90,
+    "officialIndustry": "半導體業",
+    "productTags": [
+      "NAND控制IC",
+      "SSD控制晶片",
+      "儲存解決方案"
+    ],
     "source": "manual",
+    "stockName": "群聯",
+    "themeTags": [
+      "AI PC",
+      "企業級SSD",
+      "NAND循環"
+    ],
     "updatedAt": "2026-06-23"
   },
   "8374": {
-    "stockName": "羅昇",
-    "officialIndustry": "電機機械",
+    "confidence": 60,
     "fineIndustries": [
       "機械",
-      "自動化"
-    ],
-    "productTags": [
-      "機械設備",
-      "自動化",
-      "零組件"
-    ],
-    "themeTags": [
-      "智慧製造",
       "自動化"
     ],
     "groupTags": [
       "機械"
     ],
-    "confidence": 60,
+    "officialIndustry": "電機機械",
+    "productTags": [
+      "機械設備",
+      "自動化",
+      "零組件"
+    ],
     "source": "officialIndustryOnly",
+    "stockName": "羅昇",
+    "themeTags": [
+      "智慧製造",
+      "自動化"
+    ],
     "updatedAt": "2026-06-23"
   },
   "8404": {
-    "stockName": "百和興業-KY",
-    "officialIndustry": "其他業",
+    "confidence": 60,
     "fineIndustries": [
       "多角化",
       "其他"
     ],
+    "groupTags": [
+      "其他"
+    ],
+    "officialIndustry": "其他業",
     "productTags": [
       "多角化經營",
       "租賃",
       "服務",
       "控股"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "百和興業-KY",
     "themeTags": [
       "內需",
       "資產題材"
     ],
-    "groupTags": [
-      "其他"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "8411": {
-    "stockName": "福貞-KY",
-    "officialIndustry": "其他業",
+    "confidence": 60,
     "fineIndustries": [
       "多角化",
       "其他"
     ],
+    "groupTags": [
+      "其他"
+    ],
+    "officialIndustry": "其他業",
     "productTags": [
       "多角化經營",
       "租賃",
       "服務",
       "控股"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "福貞-KY",
     "themeTags": [
       "內需",
       "資產題材"
     ],
-    "groupTags": [
-      "其他"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "8422": {
-    "stockName": "可寧衛*",
-    "officialIndustry": "綠能環保",
+    "confidence": 60,
     "fineIndustries": [
       "綠能環保"
     ],
+    "groupTags": [
+      "綠能環保"
+    ],
+    "officialIndustry": "綠能環保",
     "productTags": [
       "太陽能",
       "儲能",
       "環保工程",
       "資源回收"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "可寧衛*",
     "themeTags": [
       "綠電",
       "儲能",
       "碳權"
     ],
-    "groupTags": [
-      "綠能環保"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "8431": {
-    "stockName": "匯鑽科",
-    "officialIndustry": "其他電子業",
+    "confidence": 60,
     "fineIndustries": [
       "電子製造服務",
       "設備"
     ],
+    "groupTags": [
+      "其他電子"
+    ],
+    "officialIndustry": "其他電子業",
     "productTags": [
       "EMS",
       "設備",
       "材料",
       "精密零組件"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "匯鑽科",
     "themeTags": [
       "AI伺服器",
       "半導體設備"
     ],
-    "groupTags": [
-      "其他電子"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "8433": {
-    "stockName": "弘帆",
-    "officialIndustry": "居家生活",
+    "confidence": 60,
     "fineIndustries": [
       "其他",
       "待細分"
     ],
+    "groupTags": [
+      "待確認"
+    ],
+    "officialIndustry": "居家生活",
     "productTags": [
       "主要產品需由官網",
       "年報補齊"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "弘帆",
     "themeTags": [
       "待確認"
     ],
-    "groupTags": [
-      "待確認"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "8442": {
-    "stockName": "威宏-KY",
-    "officialIndustry": "其他業",
+    "confidence": 60,
     "fineIndustries": [
       "多角化",
       "其他"
     ],
+    "groupTags": [
+      "其他"
+    ],
+    "officialIndustry": "其他業",
     "productTags": [
       "多角化經營",
       "租賃",
       "服務",
       "控股"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "威宏-KY",
     "themeTags": [
       "內需",
       "資產題材"
     ],
-    "groupTags": [
-      "其他"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "8462": {
-    "stockName": "柏文",
-    "officialIndustry": "運動休閒",
+    "confidence": 60,
     "fineIndustries": [
       "其他",
       "待細分"
     ],
+    "groupTags": [
+      "待確認"
+    ],
+    "officialIndustry": "運動休閒",
     "productTags": [
       "主要產品需由官網",
       "年報補齊"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "柏文",
     "themeTags": [
       "待確認"
     ],
-    "groupTags": [
-      "待確認"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "8466": {
-    "stockName": "美吉吉-KY",
-    "officialIndustry": "其他業",
+    "confidence": 60,
     "fineIndustries": [
       "多角化",
       "其他"
     ],
+    "groupTags": [
+      "其他"
+    ],
+    "officialIndustry": "其他業",
     "productTags": [
       "多角化經營",
       "租賃",
       "服務",
       "控股"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "美吉吉-KY",
     "themeTags": [
       "內需",
       "資產題材"
     ],
-    "groupTags": [
-      "其他"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "8467": {
-    "stockName": "波力-KY",
-    "officialIndustry": "運動休閒",
+    "confidence": 60,
     "fineIndustries": [
       "其他",
       "待細分"
     ],
+    "groupTags": [
+      "待確認"
+    ],
+    "officialIndustry": "運動休閒",
     "productTags": [
       "主要產品需由官網",
       "年報補齊"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "波力-KY",
     "themeTags": [
       "待確認"
     ],
-    "groupTags": [
-      "待確認"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "8473": {
-    "stockName": "山林水",
-    "officialIndustry": "綠能環保",
+    "confidence": 60,
     "fineIndustries": [
       "綠能環保"
     ],
+    "groupTags": [
+      "綠能環保"
+    ],
+    "officialIndustry": "綠能環保",
     "productTags": [
       "太陽能",
       "儲能",
       "環保工程",
       "資源回收"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "山林水",
     "themeTags": [
       "綠電",
       "儲能",
       "碳權"
     ],
-    "groupTags": [
-      "綠能環保"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "8476": {
-    "stockName": "台境*",
-    "officialIndustry": "綠能環保",
+    "confidence": 60,
     "fineIndustries": [
       "綠能環保"
     ],
+    "groupTags": [
+      "綠能環保"
+    ],
+    "officialIndustry": "綠能環保",
     "productTags": [
       "太陽能",
       "儲能",
       "環保工程",
       "資源回收"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "台境*",
     "themeTags": [
       "綠電",
       "儲能",
       "碳權"
     ],
-    "groupTags": [
-      "綠能環保"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "8478": {
-    "stockName": "東哥遊艇",
-    "officialIndustry": "運動休閒",
+    "confidence": 60,
     "fineIndustries": [
       "其他",
       "待細分"
     ],
+    "groupTags": [
+      "待確認"
+    ],
+    "officialIndustry": "運動休閒",
     "productTags": [
       "主要產品需由官網",
       "年報補齊"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "東哥遊艇",
     "themeTags": [
       "待確認"
     ],
-    "groupTags": [
-      "待確認"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "8488": {
-    "stockName": "吉源-KY",
-    "officialIndustry": "其他業",
+    "confidence": 60,
     "fineIndustries": [
       "多角化",
       "其他"
     ],
+    "groupTags": [
+      "其他"
+    ],
+    "officialIndustry": "其他業",
     "productTags": [
       "多角化經營",
       "租賃",
       "服務",
       "控股"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "吉源-KY",
     "themeTags": [
       "內需",
       "資產題材"
     ],
-    "groupTags": [
-      "其他"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "8489": {
-    "stockName": "三貝德",
-    "officialIndustry": "其他業",
+    "confidence": 60,
     "fineIndustries": [
       "多角化",
       "其他"
     ],
+    "groupTags": [
+      "其他"
+    ],
+    "officialIndustry": "其他業",
     "productTags": [
       "多角化經營",
       "租賃",
       "服務",
       "控股"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "三貝德",
     "themeTags": [
       "內需",
       "資產題材"
     ],
-    "groupTags": [
-      "其他"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "8927": {
-    "stockName": "北基",
-    "officialIndustry": "油電燃氣業",
+    "confidence": 60,
     "fineIndustries": [
       "其他",
       "待細分"
     ],
+    "groupTags": [
+      "待確認"
+    ],
+    "officialIndustry": "油電燃氣業",
     "productTags": [
       "主要產品需由官網",
       "年報補齊"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "北基",
     "themeTags": [
       "待確認"
     ],
-    "groupTags": [
-      "待確認"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "8996": {
-    "stockName": "高力",
-    "officialIndustry": "電機機械",
+    "confidence": 90,
     "fineIndustries": [
       "熱能",
       "散熱零組件"
     ],
+    "groupTags": [
+      "散熱",
+      "熱管理"
+    ],
+    "officialIndustry": "電機機械",
     "productTags": [
       "熱交換器",
       "板式熱交換器",
       "燃料電池",
       "熱管理"
     ],
+    "source": "manual",
+    "stockName": "高力",
     "themeTags": [
       "AI伺服器水冷",
       "熱管理",
       "節能"
     ],
-    "groupTags": [
-      "散熱",
-      "熱管理"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "9802": {
-    "stockName": "鈺齊-KY",
-    "officialIndustry": "運動休閒",
+    "confidence": 60,
     "fineIndustries": [
       "其他",
       "待細分"
     ],
+    "groupTags": [
+      "待確認"
+    ],
+    "officialIndustry": "運動休閒",
     "productTags": [
       "主要產品需由官網",
       "年報補齊"
     ],
+    "source": "officialIndustryOnly",
+    "stockName": "鈺齊-KY",
     "themeTags": [
       "待確認"
     ],
-    "groupTags": [
-      "待確認"
-    ],
-    "confidence": 60,
-    "source": "officialIndustryOnly",
     "updatedAt": "2026-06-23"
   },
   "9906": {
-    "stockName": "欣巴巴",
-    "officialIndustry": "建材營造",
+    "confidence": 90,
     "fineIndustries": [
       "建設開發",
       "住宅推案"
     ],
+    "groupTags": [
+      "建設開發"
+    ],
+    "officialIndustry": "建材營造",
     "productTags": [
       "住宅建案",
       "商辦開發",
       "土地開發",
       "不動產銷售"
     ],
+    "source": "manual",
+    "stockName": "欣巴巴",
     "themeTags": [
       "房市循環",
       "都更",
       "建案入帳"
     ],
-    "groupTags": [
-      "建設開發"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "9933": {
-    "stockName": "中鼎",
-    "officialIndustry": "其他業",
+    "confidence": 90,
     "fineIndustries": [
       "工程統包EPC",
       "環境工程"
     ],
+    "groupTags": [
+      "工程EPC"
+    ],
+    "officialIndustry": "其他業",
     "productTags": [
       "工程統包",
       "石化工程",
@@ -7466,50 +7558,51 @@
       "環境工程",
       "專案管理"
     ],
+    "source": "manual",
+    "stockName": "中鼎",
     "themeTags": [
       "能源工程",
       "環境工程",
       "海外工程"
     ],
-    "groupTags": [
-      "工程EPC"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "9935": {
-    "stockName": "慶豐富",
-    "officialIndustry": "居家生活",
+    "confidence": 90,
     "fineIndustries": [
       "窗簾",
       "居家飾材"
     ],
+    "groupTags": [
+      "居家飾材"
+    ],
+    "officialIndustry": "居家生活",
     "productTags": [
       "窗簾",
       "百葉窗",
       "遮陽產品",
       "居家飾材"
     ],
+    "source": "manual",
+    "stockName": "慶豐富",
     "themeTags": [
       "居家裝修",
       "美國房市",
       "外銷消費"
     ],
-    "groupTags": [
-      "居家飾材"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "9939": {
-    "stockName": "宏全",
-    "officialIndustry": "其他業",
+    "confidence": 90,
     "fineIndustries": [
       "飲料包材",
       "飲料代工"
     ],
+    "groupTags": [
+      "包材",
+      "飲料代工"
+    ],
+    "officialIndustry": "其他業",
     "productTags": [
       "瓶蓋",
       "PET瓶",
@@ -7517,67 +7610,63 @@
       "飲料代工",
       "包材整合"
     ],
+    "source": "manual",
+    "stockName": "宏全",
     "themeTags": [
       "飲料包材",
       "東南亞內需",
       "食品包裝"
     ],
-    "groupTags": [
-      "包材",
-      "飲料代工"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "9941": {
-    "stockName": "裕融",
-    "officialIndustry": "其他業",
+    "confidence": 90,
     "fineIndustries": [
       "汽車金融",
       "租賃服務"
     ],
+    "groupTags": [
+      "汽車金融"
+    ],
+    "officialIndustry": "其他業",
     "productTags": [
       "汽車貸款",
       "租賃",
       "分期付款",
       "融資服務"
     ],
+    "source": "manual",
+    "stockName": "裕融",
     "themeTags": [
       "汽車金融",
       "租賃",
       "金融服務"
     ],
-    "groupTags": [
-      "汽車金融"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   },
   "9958": {
-    "stockName": "世紀鋼",
-    "officialIndustry": "鋼鐵工業",
+    "confidence": 90,
     "fineIndustries": [
       "離岸風電鋼構",
       "重型鋼構"
     ],
+    "groupTags": [
+      "風電鋼構"
+    ],
+    "officialIndustry": "鋼鐵工業",
     "productTags": [
       "離岸風電水下基礎",
       "鋼構工程",
       "重型鋼構",
       "能源鋼構"
     ],
+    "source": "manual",
+    "stockName": "世紀鋼",
     "themeTags": [
       "離岸風電",
       "重電工程",
       "綠能基建"
     ],
-    "groupTags": [
-      "風電鋼構"
-    ],
-    "confidence": 90,
-    "source": "manual",
     "updatedAt": "2026-06-23"
   }
 }

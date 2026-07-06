@@ -292,10 +292,22 @@ def is_recent_or_upcoming_preserved_row(row: dict) -> bool:
 
 def sync_active_rows(data: dict) -> list[dict]:
     issues = fetch_json("https://www.tpex.org.tw/openapi/v1/bond_ISSBD5_data")
-    twse = fetch_json("https://openapi.twse.com.tw/v1/opendata/t187ap03_L")
-    tpex = fetch_json("https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap03_O")
-    twse_industry = fetch_json("https://openapi.twse.com.tw/v1/opendata/t187ap14_L")
-    tpex_industry = fetch_json("https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap14_O")
+    try:
+        twse = fetch_json("https://openapi.twse.com.tw/v1/opendata/t187ap03_L")
+    except Exception:
+        twse = []
+    try:
+        tpex = fetch_json("https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap03_O")
+    except Exception:
+        tpex = []
+    try:
+        twse_industry = fetch_json("https://openapi.twse.com.tw/v1/opendata/t187ap14_L")
+    except Exception:
+        twse_industry = []
+    try:
+        tpex_industry = fetch_json("https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap14_O")
+    except Exception:
+        tpex_industry = []
     try:
         revenue_rows = fetch_json("https://openapi.twse.com.tw/v1/opendata/t187ap05_L")
         revenue_rows += fetch_json("https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap05_O")
