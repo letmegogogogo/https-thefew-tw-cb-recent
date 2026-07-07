@@ -953,6 +953,8 @@
       const text = String(value).trim();
       const yyyymm = text.match(/^(\d{4})(\d{2})$/);
       if (yyyymm) return `${yyyymm[1]}-${yyyymm[2]}`;
+      const rocCompactYm = text.match(/^(\d{2,3})(\d{2})$/);
+      if (rocCompactYm) return `${Number(rocCompactYm[1]) + 1911}-${rocCompactYm[2]}`;
       const ym = text.match(/^(\d{4})[/-](\d{1,2})$/);
       if (ym) return `${ym[1]}-${String(ym[2]).padStart(2, '0')}`;
       const rocYm = text.match(/^(\d{2,3})[/-](\d{1,2})$/);

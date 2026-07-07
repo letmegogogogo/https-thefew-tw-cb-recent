@@ -4,6 +4,7 @@ import csv
 import io
 import json
 import re
+import ssl
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import quote
@@ -27,8 +28,15 @@ HEADERS = {
 
 def fetch_json(url: str):
     request = Request(url, headers=HEADERS)
-    with urlopen(request, timeout=30) as response:
-        return json.loads(response.read().decode("utf-8"))
+    try:
+        with urlopen(request, timeout=30) as response:
+            return json.loads(response.read().decode("utf-8"))
+    except Exception:
+        if "openapi.twse.com.tw" not in url:
+            raise
+        context = ssl._create_unverified_context()
+        with urlopen(request, timeout=30, context=context) as response:
+            return json.loads(response.read().decode("utf-8"))
 
 
 def number(value):
@@ -290,6 +298,33 @@ def is_recent_or_upcoming_preserved_row(row: dict) -> bool:
     return today - timedelta(days=90) <= row_date <= today + timedelta(days=90)
 
 
+def financial_quarter_label(row: dict) -> str:
+    year_text = str(
+        row.get("Year")
+        or row.get("年度")
+        or row.get("年")
+        or row.get("資料年度")
+        or ""
+    ).strip()
+    quarter_text = str(
+        row.get("季別")
+        or row.get("Quarter")
+        or row.get("季度")
+        or row.get("資料季別")
+        or ""
+    ).strip()
+    if not year_text:
+        return ""
+    try:
+        year = int(float(year_text))
+        if year < 1911:
+            year += 1911
+    except ValueError:
+        return ""
+    quarter_digits = re.sub(r"\D", "", quarter_text)
+    return f"{year}Q{quarter_digits}" if quarter_digits else str(year)
+
+
 def sync_active_rows(data: dict) -> list[dict]:
     issues = fetch_json("https://www.tpex.org.tw/openapi/v1/bond_ISSBD5_data")
     try:
@@ -308,16 +343,24 @@ def sync_active_rows(data: dict) -> list[dict]:
         tpex_industry = fetch_json("https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap14_O")
     except Exception:
         tpex_industry = []
-    try:
-        revenue_rows = fetch_json("https://openapi.twse.com.tw/v1/opendata/t187ap05_L")
-        revenue_rows += fetch_json("https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap05_O")
-    except Exception:
-        revenue_rows = []
-    try:
-        margin_rows = fetch_json("https://openapi.twse.com.tw/v1/opendata/t187ap17_L")
-        margin_rows += fetch_json("https://www.tpex.org.tw/openapi/v1/mopsfin_187ap17_O")
-    except Exception:
-        margin_rows = []
+    revenue_rows = []
+    for url in (
+        "https://openapi.twse.com.tw/v1/opendata/t187ap05_L",
+        "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap05_O",
+    ):
+        try:
+            revenue_rows += fetch_json(url)
+        except Exception:
+            pass
+    margin_rows = []
+    for url in (
+        "https://openapi.twse.com.tw/v1/opendata/t187ap17_L",
+        "https://www.tpex.org.tw/openapi/v1/mopsfin_187ap17_O",
+    ):
+        try:
+            margin_rows += fetch_json(url)
+        except Exception:
+            pass
 
     existing = {str(row.get("bondCode")): row for row in data.get("rows", [])}
     twse_company = {str(row.get("公司代號")): row for row in twse}
@@ -338,10 +381,24 @@ def sync_active_rows(data: dict) -> list[dict]:
         )
         for row in revenue_rows
     }
+    revenue_periods = {
+        str(row.get("公司代號") or row.get("SecuritiesCompanyCode")): (
+            row.get("資料年月")
+            or row.get("DataYearMonth")
+            or row.get("YearMonth")
+            or row.get("年月")
+            or row.get("出表日期")
+        )
+        for row in revenue_rows
+    }
     margins = {
         str(row.get("公司代號") or row.get("SecuritiesCompanyCode")): number(
             row.get("毛利率(%)(營業毛利)/(營業收入)") or row.get("毛利率")
         )
+        for row in margin_rows
+    }
+    margin_periods = {
+        str(row.get("公司代號") or row.get("SecuritiesCompanyCode")): financial_quarter_label(row)
         for row in margin_rows
     }
 
@@ -365,8 +422,12 @@ def sync_active_rows(data: dict) -> list[dict]:
         conversion_end = iso_date(item.get("Conversion/ExchangePeriodEndDate"))
 
         row = dict(previous)
-        gross_margin = margins.get(issuer_code)
         previous_margin_record = number(previous.get("grossMarginRecord"))
+        revenue_yoy = revenues.get(issuer_code) if issuer_code in revenues else previous.get("revenueYoY")
+        revenue_mom_value = revenue_mom.get(issuer_code) if issuer_code in revenue_mom else previous.get("revenueMoM")
+        revenue_period = revenue_periods.get(issuer_code) if issuer_code in revenue_periods else previous.get("revenueYearMonth")
+        gross_margin = margins.get(issuer_code) if issuer_code in margins else previous.get("grossMargin")
+        margin_period = margin_periods.get(issuer_code) if issuer_code in margin_periods else previous.get("grossMarginQuarter")
         row.update(
             {
                 "issuerCode": issuer_code,
@@ -395,9 +456,13 @@ def sync_active_rows(data: dict) -> list[dict]:
                 "industryCategory": industries.get(issuer_code)
                 or previous.get("industryCategory")
                 or "-",
-                "revenueYoY": revenues.get(issuer_code),
-                "revenueMoM": revenue_mom.get(issuer_code),
+                "revenueYoY": revenue_yoy,
+                "revenueMoM": revenue_mom_value,
+                "revenueYearMonth": revenue_period,
+                "revenuePeriod": revenue_period,
                 "grossMargin": gross_margin,
+                "grossMarginQuarter": margin_period,
+                "grossMarginPeriod": margin_period,
                 "grossMarginIsRecordHigh": (
                     gross_margin is not None
                     and previous_margin_record is not None
