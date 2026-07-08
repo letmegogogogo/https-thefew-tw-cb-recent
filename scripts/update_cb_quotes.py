@@ -1,13 +1,14 @@
 from __future__ import annotations
 
 import csv
+import html
 import io
 import json
 import re
 import ssl
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
-from urllib.parse import quote
+from urllib.parse import quote, unquote
 from urllib.request import Request, urlopen
 
 
@@ -325,6 +326,203 @@ def financial_quarter_label(row: dict) -> str:
     return f"{year}Q{quarter_digits}" if quarter_digits else str(year)
 
 
+CHINESE_BOND_ORDINALS = "一二三四五六七八九十"
+
+
+def compact_period(year: int, month: int) -> str:
+    return f"{year}{month:02d}"
+
+
+def period_sort_value(value) -> int:
+    text = str(value or "").strip()
+    if not text:
+        return 0
+    match = re.match(r"^(\d{4})(\d{2})$", text)
+    if match:
+        return int(match.group(1)) * 100 + int(match.group(2))
+    match = re.match(r"^(\d{2,3})(\d{2})$", text)
+    if match:
+        return (int(match.group(1)) + 1911) * 100 + int(match.group(2))
+    match = re.match(r"^(\d{4})[/-](\d{1,2})$", text)
+    if match:
+        return int(match.group(1)) * 100 + int(match.group(2))
+    match = re.match(r"^(\d{2,3})[/-](\d{1,2})$", text)
+    if match:
+        return (int(match.group(1)) + 1911) * 100 + int(match.group(2))
+    return 0
+
+
+def fetch_text(url: str, timeout: int = 8) -> str:
+    request = Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    with urlopen(request, timeout=timeout) as response:
+        return response.read().decode("utf-8", "ignore")
+
+
+def html_to_plain_text(text: str) -> str:
+    plain = re.sub(r"<script\b[^>]*>.*?</script>", " ", text, flags=re.S | re.I)
+    plain = re.sub(r"<style\b[^>]*>.*?</style>", " ", plain, flags=re.S | re.I)
+    plain = re.sub(r"<[^>]+>", " ", plain)
+    plain = html.unescape(plain)
+    return re.sub(r"\s+", " ", plain).strip()
+
+
+def stock_short_names(row: dict) -> list[str]:
+    names: list[str] = []
+    for value in (
+        row.get("issuerName"),
+        row.get("bondShortName"),
+        row.get("bondName"),
+    ):
+        text = str(value or "").strip()
+        if not text:
+            continue
+        cleaned = re.sub(r"(股份)?有限公司$", "", text)
+        cleaned = re.sub(rf"[{CHINESE_BOND_ORDINALS}]+$", "", cleaned)
+        for suffix in ("興業", "國際", "科技", "電子", "工業"):
+            if cleaned.endswith(suffix) and len(cleaned) > len(suffix) + 1:
+                names.append(cleaned[: -len(suffix)])
+        names.extend([cleaned, text])
+    deduped: list[str] = []
+    for name in names:
+        name = name.strip()
+        if len(name) >= 2 and name not in deduped:
+            deduped.append(name)
+    return deduped
+
+
+def parse_yahoo_revenue_article(url: str, expected_names: list[str]) -> dict | None:
+    try:
+        text = fetch_text(url)
+    except Exception:
+        return None
+    plain = html_to_plain_text(text)
+    if "合併營收" not in plain or "本月" not in plain or "去年同期" not in plain:
+        return None
+    if expected_names and not any(name in plain[:2000] for name in expected_names):
+        return None
+    title_match = re.search(r"(\d{4})年(\d{1,2})月合併營收", plain)
+    if not title_match:
+        return None
+    month_match = re.search(
+        r"本月\s*([\d,]+).*?去年同期\s*([\d,]+).*?增減金額\s*[-\d,]+.*?增減百分比\s*(-?\d+(?:\.\d+)?)",
+        plain,
+    )
+    if not month_match:
+        return None
+    year = int(title_match.group(1))
+    month = int(title_match.group(2))
+    current_revenue = number(month_match.group(1))
+    last_year_revenue = number(month_match.group(2))
+    yoy = number(month_match.group(3))
+    if current_revenue is None or last_year_revenue in (None, 0) or yoy is None:
+        return None
+    return {
+        "period": compact_period(year, month),
+        "year": year,
+        "month": month,
+        "currentRevenue": current_revenue,
+        "lastYearRevenue": last_year_revenue,
+        "revenueYoY": yoy,
+        "sourceUrl": url,
+    }
+
+
+def parse_yahoo_revenue_items_from_text(plain: str, expected_names: list[str], source_url: str) -> list[dict]:
+    items: list[dict] = []
+    if "合併營收" not in plain or "本月" not in plain:
+        return items
+    chunks = re.split(r"(?=【公告】)", plain)
+    for chunk in chunks:
+        if "合併營收" not in chunk or "本月" not in chunk or "去年同期" not in chunk:
+            continue
+        if expected_names and not any(name in chunk[:300] for name in expected_names):
+            continue
+        title_match = re.search(r"(\d{4})年(\d{1,2})月合併營收", chunk)
+        month_match = re.search(
+            r"本月\s*([\d,]+).*?去年同期\s*([\d,]+).*?增減金額\s*[-\d,]+.*?增減百分比\s*(-?\d+(?:\.\d+)?)",
+            chunk,
+        )
+        if not title_match or not month_match:
+            continue
+        current_revenue = number(month_match.group(1))
+        last_year_revenue = number(month_match.group(2))
+        yoy = number(month_match.group(3))
+        if current_revenue is None or last_year_revenue in (None, 0) or yoy is None:
+            continue
+        year = int(title_match.group(1))
+        month = int(title_match.group(2))
+        items.append(
+            {
+                "period": compact_period(year, month),
+                "year": year,
+                "month": month,
+                "currentRevenue": current_revenue,
+                "lastYearRevenue": last_year_revenue,
+                "revenueYoY": yoy,
+                "sourceUrl": source_url,
+            }
+        )
+    return items
+
+
+def yahoo_revenue_fallback(row: dict) -> dict | None:
+    issuer_code = str(row.get("issuerCode") or "").strip()
+    if not issuer_code:
+        return None
+    names = stock_short_names(row)
+    urls: list[str] = []
+    parsed: list[dict] = []
+    for suffix in ("TW", "TWO"):
+        news_url = f"https://tw.stock.yahoo.com/quote/{issuer_code}.{suffix}/news"
+        try:
+            page = fetch_text(news_url)
+        except Exception:
+            continue
+        parsed_from_page = parse_yahoo_revenue_items_from_text(
+            html_to_plain_text(page),
+            names,
+            news_url,
+        )
+        if parsed_from_page:
+            parsed = parsed_from_page
+            break
+        for raw_url in re.findall(r"https://tw\.stock\.yahoo\.com/news/[^\"\\\s<>]+", page):
+            clean_url = html.unescape(raw_url).split("?")[0]
+            decoded = unquote(clean_url)
+            if "合併營收" not in decoded:
+                continue
+            if names and not any(name in decoded for name in names):
+                continue
+            if clean_url not in urls:
+                urls.append(clean_url)
+        if urls:
+            break
+    if not parsed:
+        parsed = [item for url in urls[:4] if (item := parse_yahoo_revenue_article(url, names))]
+    if not parsed:
+        return None
+    parsed.sort(key=lambda item: period_sort_value(item["period"]), reverse=True)
+    latest = parsed[0]
+    previous_month = latest["month"] - 1
+    previous_year = latest["year"]
+    if previous_month == 0:
+        previous_month = 12
+        previous_year -= 1
+    previous_period = compact_period(previous_year, previous_month)
+    previous = next((item for item in parsed if item["period"] == previous_period), None)
+    mom = None
+    if previous and previous.get("currentRevenue") not in (None, 0):
+        mom = (latest["currentRevenue"] / previous["currentRevenue"] - 1) * 100
+    return {
+        "revenueYoY": latest["revenueYoY"],
+        "revenueMoM": mom,
+        "revenueYearMonth": latest["period"],
+        "revenuePeriod": latest["period"],
+        "revenueSource": "yahoo_news_with_explicit_revenue",
+        "revenueSourceUrl": latest["sourceUrl"],
+    }
+
+
 def sync_active_rows(data: dict) -> list[dict]:
     issues = fetch_json("https://www.tpex.org.tw/openapi/v1/bond_ISSBD5_data")
     try:
@@ -404,6 +602,7 @@ def sync_active_rows(data: dict) -> list[dict]:
 
     active_rows = []
     active_codes: set[str] = set()
+    yahoo_revenue_cache: dict[str, dict | None] = {}
     for item in issues:
         bond_code = str(item.get("BondCode") or "").strip()
         issue_amount = number(item.get("IssueAmount"))
@@ -428,6 +627,34 @@ def sync_active_rows(data: dict) -> list[dict]:
         revenue_period = revenue_periods.get(issuer_code) if issuer_code in revenue_periods else previous.get("revenueYearMonth")
         gross_margin = margins.get(issuer_code) if issuer_code in margins else previous.get("grossMargin")
         margin_period = margin_periods.get(issuer_code) if issuer_code in margin_periods else previous.get("grossMarginQuarter")
+        revenue_source = previous.get("revenueSource")
+        revenue_source_url = previous.get("revenueSourceUrl")
+        if not revenue_period or period_sort_value(revenue_period) < int(datetime.now(TZ).strftime("%Y%m")) - 1:
+            fallback_row = dict(previous)
+            fallback_row.update(
+                {
+                    "issuerCode": issuer_code,
+                    "issuerName": company or previous.get("issuerName") or item.get("IssuerName"),
+                    "bondShortName": item.get("ShortName") or previous.get("bondShortName"),
+                    "bondName": previous.get("bondName") or item.get("ShortName"),
+                }
+            )
+            if issuer_code not in yahoo_revenue_cache:
+                try:
+                    yahoo_revenue_cache[issuer_code] = yahoo_revenue_fallback(fallback_row)
+                except Exception:
+                    yahoo_revenue_cache[issuer_code] = None
+            yahoo_revenue = yahoo_revenue_cache.get(issuer_code)
+            if yahoo_revenue and period_sort_value(yahoo_revenue.get("revenuePeriod")) >= period_sort_value(revenue_period):
+                revenue_yoy = yahoo_revenue.get("revenueYoY")
+                revenue_mom_value = (
+                    yahoo_revenue.get("revenueMoM")
+                    if yahoo_revenue.get("revenueMoM") is not None
+                    else revenue_mom_value
+                )
+                revenue_period = yahoo_revenue.get("revenuePeriod")
+                revenue_source = yahoo_revenue.get("revenueSource")
+                revenue_source_url = yahoo_revenue.get("revenueSourceUrl")
         row.update(
             {
                 "issuerCode": issuer_code,
@@ -460,6 +687,8 @@ def sync_active_rows(data: dict) -> list[dict]:
                 "revenueMoM": revenue_mom_value,
                 "revenueYearMonth": revenue_period,
                 "revenuePeriod": revenue_period,
+                "revenueSource": revenue_source,
+                "revenueSourceUrl": revenue_source_url,
                 "grossMargin": gross_margin,
                 "grossMarginQuarter": margin_period,
                 "grossMarginPeriod": margin_period,
