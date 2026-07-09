@@ -1,6 +1,9 @@
 name: Update CB data and deploy
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     - cron: "10 9 * * 1-5"
     # Revenue announcement season: Taiwan time 15:10, 18:10, 21:10 on the 1st-10th of every month.
