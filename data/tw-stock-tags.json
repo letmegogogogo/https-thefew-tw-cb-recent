@@ -457,6 +457,26 @@
     ],
     "updatedAt": "2026-06-23"
   },
+  "1623": {
+    "accuracy": "needs_review",
+    "companyName": "大東電業廠",
+    "confidence": 30,
+    "fineIndustries": [
+      "其他"
+    ],
+    "groupTags": [
+      "其他"
+    ],
+    "officialIndustry": "電器電纜",
+    "productTags": [],
+    "source": "fallback",
+    "sourceNote": "recent-cb-data.js 可用資料不足，暫列其他並待人工複核。",
+    "sourceUrls": [],
+    "stockId": "1623",
+    "stockName": "大東電業廠",
+    "themeTags": [],
+    "updatedAt": "2026-07-09"
+  },
   "1717": {
     "confidence": 60,
     "fineIndustries": [
@@ -4549,6 +4569,30 @@
       "連接器"
     ],
     "updatedAt": "2026-06-23"
+  },
+  "6134": {
+    "accuracy": "needs_review",
+    "companyName": "萬旭電業",
+    "confidence": 50,
+    "fineIndustries": [
+      "電子零組件"
+    ],
+    "groupTags": [
+      "電子零組件"
+    ],
+    "officialIndustry": "電子零組件業",
+    "productTags": [
+      "電子零組件"
+    ],
+    "source": "officialIndustryOnly",
+    "sourceNote": "僅依官方產業保守補標；尚未取得明確產品線資料，需人工複核。",
+    "sourceUrls": [],
+    "stockId": "6134",
+    "stockName": "萬旭電業",
+    "themeTags": [
+      "電子供應鏈"
+    ],
+    "updatedAt": "2026-07-09"
   },
   "6150": {
     "confidence": 90,

@@ -1054,16 +1054,31 @@
       return primaryRowValue(row, ['掛牌日', 'listingDate', 'issueDate', '發行日', '開標日', '競拍起日', '詢圈起日', '公告日期', 'announcementDate', '送件日', '生效日', 'updatedAt']);
     };
 
+    const cleanPrimaryName = (value) => String(value || '')
+      .replace(/^(?:證券名稱|債券名稱|公告辦理|公告|辦理|案件名稱)[:：\s]*/u, '')
+      .replace(/(?:股份有限公司|有限公司)$/u, '')
+      .trim();
+
+    const issuerNameFromBondName = (value) => cleanPrimaryName(value)
+      .replace(/(?:十一|十二|十三|十四|十五|十|一|二|三|四|五|六|七|八|九)$/u, '')
+      .trim();
+
     const normalizePrimaryRecentRow = (row) => {
       const bondCode = primaryRowValue(row, ['CB代碼', 'bondCode']);
-      const name = primaryRowValue(row, ['標的名稱', '債券名稱', 'bondName', 'companyName', '公司名稱']);
+      const rawName = primaryRowValue(row, ['債券名稱', 'bondName', '標的名稱', 'companyName', '公司名稱']);
+      const name = cleanPrimaryName(rawName);
+      const issuerCode = primaryRowValue(row, ['公司代號', 'issuerCode'])
+        || (/^\d{5,6}$/.test(bondCode) ? bondCode.slice(0, 4) : '');
+      const issuerName = cleanPrimaryName(primaryRowValue(row, ['companyName', '公司名稱']))
+        || issuerNameFromBondName(name);
       const issueDate = pickPrimaryDate(row);
       return {
         ...row,
         bondCode,
         bondShortName: name,
-        issuerCode: primaryRowValue(row, ['公司代號', 'issuerCode']),
-        issuerName: primaryRowValue(row, ['companyName', '公司名稱', '標的名稱']) || name,
+        bondName: name,
+        issuerCode,
+        issuerName,
         issueDate,
         listedDateROC: issueDate,
         industryCategory: primaryRowValue(row, ['產業別', 'officialIndustry']),
@@ -1075,6 +1090,55 @@
         stockMarket: row.stockMarket || '未掛牌',
         isPrimaryMarketSupplement: true
       };
+    };
+
+    const isPublishReadyPrimaryRow = (row) => {
+      const bondCode = String(row.bondCode || '').trim();
+      const issuerCode = String(row.issuerCode || '').trim();
+      const bondName = String(row.bondShortName || row.bondName || '').trim();
+      const issuerName = String(row.issuerName || '').trim();
+      const industry = String(row.industryCategory || '').trim();
+      const hasIdentity = /^\d{5,6}$/.test(bondCode)
+        && /^\d{4}$/.test(issuerCode)
+        && bondName
+        && issuerName
+        && !/^(?:證券名稱|債券名稱|公告辦理|公告|辦理|案件名稱)/u.test(bondName);
+      const hasCompanyData = industry && industry !== '-'
+        && row.revenueYoY != null
+        && row.revenueMoM != null
+        && row.grossMargin != null
+        && row.stockClose != null;
+      const hasBondData = row.conversionPrice != null
+        && Array.isArray(row.issuancePurposeTags)
+        && row.issuancePurposeTags.length > 0;
+      return Boolean(hasIdentity && hasCompanyData && hasBondData);
+    };
+
+    const isNewCbPublishReady = (row) => {
+      const issueDate = toDate(row.issueDate || row.listingDate || row.listedDateROC);
+      if (!issueDate) return true;
+      const ageDays = Math.floor((taipeiTodayStart().getTime() - issueDate.getTime()) / 86400000);
+      if (ageDays > 30) return true;
+      const industry = String(row.industryCategory || '').trim();
+      return Boolean(
+        /^\d{5,6}$/.test(String(row.bondCode || '').trim())
+        && /^\d{4}$/.test(String(row.issuerCode || '').trim())
+        && String(row.bondShortName || row.bondName || '').trim()
+        && String(row.issuerName || '').trim()
+        && industry
+        && industry !== '-'
+        && row.revenueYoY != null
+        && row.revenueMoM != null
+        && row.grossMargin != null
+        && row.stockClose != null
+        && row.conversionPrice != null
+        && Array.isArray(row.fineIndustryTags)
+        && row.fineIndustryTags.length > 0
+        && Array.isArray(row.productTags)
+        && row.productTags.length > 0
+        && Array.isArray(row.issuancePurposeTags)
+        && row.issuancePurposeTags.length > 0
+      );
     };
 
     const primaryRecentKey = (row) => {
@@ -1099,6 +1163,7 @@
         .filter((row) => row.bondCode)
         .filter((row) => row.bondShortName || row.issuerName)
         .filter((row) => row.issueDate || row.listedDateROC)
+        .filter((row) => isPublishReadyPrimaryRow(row))
         .filter((row) => isRecentOrUpcomingIssue(row));
     };
 
@@ -1202,6 +1267,7 @@
     const filteredRows = () => {
       const query = searchInputEl.value.trim().toLocaleLowerCase('zh-TW');
       return sortRows(sorted.filter((row) => {
+        if (!isNewCbPublishReady(row)) return false;
         if (query && !searchText(row).includes(query)) return false;
         if (highFilterEl.value === 'cb' && !isCbRecordHigh(row)) return false;
         if (highFilterEl.value === 'stock' && !isStockRecordHigh(row)) return false;

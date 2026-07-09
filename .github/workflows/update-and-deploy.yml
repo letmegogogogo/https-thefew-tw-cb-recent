@@ -58,15 +58,12 @@ jobs:
         run: python scripts/update_cb_quotes.py
 
       - name: Enrich new CB company tags
-        if: ${{ github.event_name == 'workflow_dispatch' && inputs.mode == 'full' }}
-        run: python scripts/enrich_new_cb_company_tags.py --limit 20
+        run: python scripts/enrich_new_cb_company_tags.py --limit 5
 
       - name: Enrich new CB issuance purposes
-        if: ${{ github.event_name == 'workflow_dispatch' && inputs.mode == 'full' }}
         run: python scripts/enrich_new_cb_issuance_purposes.py --limit 5 --max-candidates 2 --timeout 8
 
       - name: Refresh CB data with enriched tags and purposes
-        if: ${{ github.event_name == 'workflow_dispatch' && inputs.mode == 'full' }}
         run: python scripts/update_cb_quotes.py
 
       - name: Build public site

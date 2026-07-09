@@ -1186,7 +1186,11 @@ def extract_bond_name(title: str, text: str) -> str:
     for src in (title, text[:800]):
         m = re.search(r"([一-龥A-Za-z0-9\-]{2,12}(?:一|二|三|四|五|六|七|八|九|十|十一|十二|[0-9]+))", src)
         if m:
-            name = m.group(1)
+            name = re.sub(
+                r"^(?:證券名稱|債券名稱|公告辦理|公告|辦理|案件名稱)[:：\s]*",
+                "",
+                m.group(1),
+            ).strip()
             if name.isdigit() or re.fullmatch(r"\d{2,4}年?", name):
                 continue
             return name
