@@ -685,7 +685,7 @@
       line-height: 1.55;
     }
     .legal-notice {
-      margin-top: 12px;
+      margin: 12px 0;
       padding: 12px 14px;
       border: 1px solid #d7e2ef;
       border-radius: 10px;
@@ -696,6 +696,12 @@
     }
     .legal-notice strong { color: #173f70; }
     .legal-notice a { color: #1d5fa7; }
+    .legal-update-frequency {
+      display: block;
+      margin-top: 5px;
+      color: #627993;
+      font-weight: 600;
+    }
     .empty {
       padding: 40px 20px;
       text-align: center;
@@ -866,6 +872,16 @@
           <div class="weekly-rank-list" id="weekly-rank-list"></div>
         </section>
 
+        <aside class="legal-notice" aria-label="使用與風險聲明">
+          <strong>非官方網站｜僅供資料整理與研究參考，不構成投資建議、招攬、推薦或交易依據。</strong>
+          可轉換公司債及股票具有價格、流動性、信用、轉換與贖回等風險；資料可能延遲、缺漏或解析錯誤，交易前請自行查閱
+          <a href="https://mops.twse.com.tw/" target="_blank" rel="noopener noreferrer">公開資訊觀測站（MOPS）</a>、
+          <a href="https://www.tpex.org.tw/" target="_blank" rel="noopener noreferrer">櫃買中心（TPEx）</a>及
+          <a href="https://www.twse.com.tw/" target="_blank" rel="noopener noreferrer">臺灣證券交易所（TWSE）</a>
+          的最新公告並獨立判斷。
+          <span class="legal-update-frequency">資料更新頻率：平日約 15:10、17:10 更新；每月 1–10 日另於約 18:10、21:10 補更新營收公告資料（台灣時間）。</span>
+        </aside>
+
         <div class="table-wrap">
           <table id="data-table" aria-describedby="page-title">
             <thead id="head"></thead>
@@ -877,15 +893,6 @@
           <div id="count">0 筆資料</div>
           <div id="updated">更新時間：-</div>
         </div>
-        <aside class="legal-notice" aria-label="使用與風險聲明">
-          <strong>非官方網站｜僅供資料整理與研究參考，不構成投資建議、招攬、推薦或交易依據。</strong>
-          可轉換公司債及股票具有價格、流動性、信用、轉換與贖回等風險；資料可能延遲、缺漏或解析錯誤，使用者在交易前應自行查閱
-          <a href="https://mops.twse.com.tw/" target="_blank" rel="noopener noreferrer">公開資訊觀測站</a>、
-          <a href="https://www.tpex.org.tw/" target="_blank" rel="noopener noreferrer">櫃買中心</a>及
-          <a href="https://www.twse.com.tw/" target="_blank" rel="noopener noreferrer">臺灣證券交易所</a>
-          的最新公告並獨立判斷。本網站部分數值由公開資料計算，部分資訊來自第三方公開頁面；原始內容、名稱及商標權利歸各權利人所有。
-          本網站不代替專業財務、法律或稅務意見，亦不保證資料即時、完整或適合特定用途。
-        </aside>
       </section>
     </div>
   </main>
