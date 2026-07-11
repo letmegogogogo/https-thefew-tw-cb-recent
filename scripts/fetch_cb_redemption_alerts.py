@@ -64,6 +64,9 @@ TRUSTED_DOMAINS = (
     "twsa.org.tw",
     "web.twsa.org.tw",
     "web2.twsa.org.tw",
+    "moneydj.com",
+    "www.moneydj.com",
+    "m.moneydj.com",
 )
 
 
@@ -195,12 +198,45 @@ def build_queries(row: dict) -> list[str]:
     issuer = str(row.get("issuerName") or "").replace("股份有限公司", "").strip()
     identity = " ".join(part for part in (bond_code, bond_name, issuer) if part)
     base = [
+        f'"{bond_code}" "{bond_name}" "\u7d42\u6b62\u6ac3\u6aaf\u8cb7\u8ce3"',
+        f'site:moneydj.com "{bond_code}" "{bond_name}" "\u884c\u4f7f\u50b5\u5238\u8d16\u56de\u6b0a"',
+        f'site:tw.stock.yahoo.com/news "{bond_code}" "{bond_name}" "\u7d42\u6b62\u6ac3\u6aaf\u8cb7\u8ce3"',
         f"site:mops.twse.com.tw {identity} 行使債券贖回權 終止櫃檯買賣",
         f"site:tpex.org.tw {identity} 債券收回基準日 終止櫃檯買賣日期",
         f"site:twse.com.tw {identity} 停止受理轉換 收回 轉換公司債",
         f"site:tw.stock.yahoo.com/news {identity} 行使債券贖回權 終止櫃檯買賣",
     ]
-    return [query for query in base if query.strip()]
+    unique: list[str] = []
+    for query in base:
+        if query.strip() and query not in unique:
+            unique.append(query)
+    return unique
+
+
+def previously_skipped_codes() -> set[str]:
+    """Resume rows skipped by the previous time budget before starting over."""
+    if not LOG_PATH.exists():
+        return set()
+    try:
+        with LOG_PATH.open("r", encoding="utf-8-sig", newline="") as handle:
+            return {
+                str(row.get("bondCode") or "").strip()
+                for row in csv.DictReader(handle)
+                if row.get("action") == "skipped_by_time_budget" and row.get("bondCode")
+            }
+    except (OSError, csv.Error):
+        return set()
+
+
+def prioritize_scan_rows(rows: list[dict], existing_alerts: dict) -> list[dict]:
+    skipped = previously_skipped_codes()
+    return sorted(
+        rows,
+        key=lambda row: (
+            0 if str(row.get("bondCode") or "").strip() in skipped else 1,
+            1 if str(row.get("bondCode") or "").strip() in existing_alerts else 0,
+        ),
+    )
 
 
 def has_identity(text: str, row: dict) -> bool:
@@ -503,6 +539,7 @@ def main() -> int:
     codes = {item.strip() for item in args.codes.split(",")} if args.codes else None
     rows = active_cb_rows(load_recent_rows(), codes=codes, limit=args.limit)
     existing_alerts = load_alerts()
+    rows = prioritize_scan_rows(rows, existing_alerts)
     alerts: dict[str, dict] = {}
     logs: list[dict] = []
     found = 0
