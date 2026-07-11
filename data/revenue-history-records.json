@@ -1,0 +1,2165 @@
+{
+  "1101": {
+    "isRecordHigh": false,
+    "latestRevenue": 13382706000.0,
+    "period": "202606",
+    "recordRevenue": 16543379000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1104": {
+    "isRecordHigh": false,
+    "latestRevenue": 655816.0,
+    "period": "202605",
+    "recordRevenue": 779128000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1201": {
+    "isRecordHigh": false,
+    "latestRevenue": 1825679000.0,
+    "period": "202606",
+    "recordRevenue": 2831715000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1213": {
+    "isRecordHigh": false,
+    "latestRevenue": 25270000.0,
+    "period": "202606",
+    "recordRevenue": 105371000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1215": {
+    "isRecordHigh": false,
+    "latestRevenue": 2419781000.0,
+    "period": "202606",
+    "recordRevenue": 2749915000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1216": {
+    "isRecordHigh": false,
+    "latestRevenue": 58301112000.0,
+    "period": "202606",
+    "recordRevenue": 66104462000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1220": {
+    "isRecordHigh": false,
+    "latestRevenue": 273600000.0,
+    "period": "202606",
+    "recordRevenue": 498218000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1227": {
+    "isRecordHigh": false,
+    "latestRevenue": 2282197.0,
+    "period": "202605",
+    "recordRevenue": 4585987000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1231": {
+    "isRecordHigh": false,
+    "latestRevenue": 1030161000.0,
+    "period": "202606",
+    "recordRevenue": 1396819000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1232": {
+    "isRecordHigh": false,
+    "latestRevenue": 1866048000.0,
+    "period": "202606",
+    "recordRevenue": 2531262000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1233": {
+    "isRecordHigh": false,
+    "latestRevenue": 195470000.0,
+    "period": "202606",
+    "recordRevenue": 254082000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1236": {
+    "isRecordHigh": false,
+    "latestRevenue": 110212000.0,
+    "period": "202606",
+    "recordRevenue": 420437000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1240": {
+    "isRecordHigh": false,
+    "latestRevenue": 270176000.0,
+    "period": "202606",
+    "recordRevenue": 312492000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1256": {
+    "isRecordHigh": false,
+    "latestRevenue": 575547000.0,
+    "period": "202606",
+    "recordRevenue": 584754000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1294": {
+    "isRecordHigh": false,
+    "latestRevenue": 82336000.0,
+    "period": "202606",
+    "recordRevenue": 90427000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1295": {
+    "isRecordHigh": false,
+    "latestRevenue": 111446000.0,
+    "period": "202606",
+    "recordRevenue": 116307000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1303": {
+    "isRecordHigh": false,
+    "latestRevenue": 27134592000.0,
+    "period": "202606",
+    "recordRevenue": 37452644000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1308": {
+    "isRecordHigh": false,
+    "latestRevenue": 516682000.0,
+    "period": "202606",
+    "recordRevenue": 1082981000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1315": {
+    "isRecordHigh": false,
+    "latestRevenue": 204130000.0,
+    "period": "202606",
+    "recordRevenue": 539920000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1316": {
+    "isRecordHigh": false,
+    "latestRevenue": 677646000.0,
+    "period": "202606",
+    "recordRevenue": 910391000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1321": {
+    "isRecordHigh": false,
+    "latestRevenue": 306226000.0,
+    "period": "202606",
+    "recordRevenue": 674298000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1323": {
+    "isRecordHigh": false,
+    "latestRevenue": 181453000.0,
+    "period": "202606",
+    "recordRevenue": 371815000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1324": {
+    "isRecordHigh": false,
+    "latestRevenue": 55838000.0,
+    "period": "202606",
+    "recordRevenue": 161679000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1326": {
+    "isRecordHigh": false,
+    "latestRevenue": 27666322000.0,
+    "period": "202606",
+    "recordRevenue": 38044886000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1339": {
+    "isRecordHigh": false,
+    "latestRevenue": 123393000.0,
+    "period": "202606",
+    "recordRevenue": 290446000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1402": {
+    "isRecordHigh": false,
+    "latestRevenue": 23426660.0,
+    "period": "202605",
+    "recordRevenue": 25020907000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1409": {
+    "isRecordHigh": false,
+    "latestRevenue": 3554062000.0,
+    "period": "202606",
+    "recordRevenue": 5476026000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1416": {
+    "isRecordHigh": false,
+    "latestRevenue": 40522.0,
+    "period": "202605",
+    "recordRevenue": 1413184000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1418": {
+    "isRecordHigh": false,
+    "latestRevenue": 1173000.0,
+    "period": "202606",
+    "recordRevenue": 431538000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1423": {
+    "isRecordHigh": false,
+    "latestRevenue": 2884000.0,
+    "period": "202606",
+    "recordRevenue": 302393000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1436": {
+    "isRecordHigh": false,
+    "latestRevenue": 245835000.0,
+    "period": "202606",
+    "recordRevenue": 1524020000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1437": {
+    "isRecordHigh": false,
+    "latestRevenue": 117312000.0,
+    "period": "202606",
+    "recordRevenue": 214984000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1442": {
+    "isRecordHigh": false,
+    "latestRevenue": 256823000.0,
+    "period": "202606",
+    "recordRevenue": 3014153000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1444": {
+    "isRecordHigh": false,
+    "latestRevenue": 659642000.0,
+    "period": "202606",
+    "recordRevenue": 3042495000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1447": {
+    "isRecordHigh": false,
+    "latestRevenue": 3121865000.0,
+    "period": "202606",
+    "recordRevenue": 4719844000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1449": {
+    "isRecordHigh": false,
+    "latestRevenue": 388010000.0,
+    "period": "202606",
+    "recordRevenue": 582241000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1451": {
+    "isRecordHigh": false,
+    "latestRevenue": 640948000.0,
+    "period": "202606",
+    "recordRevenue": 1330486000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1452": {
+    "isRecordHigh": false,
+    "latestRevenue": 127293000.0,
+    "period": "202606",
+    "recordRevenue": 238247000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1453": {
+    "isRecordHigh": false,
+    "latestRevenue": 126000.0,
+    "period": "202606",
+    "recordRevenue": 296956000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1454": {
+    "isRecordHigh": false,
+    "latestRevenue": 96895000.0,
+    "period": "202606",
+    "recordRevenue": 290355000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1463": {
+    "isRecordHigh": false,
+    "latestRevenue": 15921000.0,
+    "period": "202606",
+    "recordRevenue": 1660028000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1466": {
+    "isRecordHigh": false,
+    "latestRevenue": 184437000.0,
+    "period": "202606",
+    "recordRevenue": 612654000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1470": {
+    "isRecordHigh": false,
+    "latestRevenue": 74110000.0,
+    "period": "202606",
+    "recordRevenue": 130233000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1472": {
+    "isRecordHigh": false,
+    "latestRevenue": 334945000.0,
+    "period": "202606",
+    "recordRevenue": 354164000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1475": {
+    "isRecordHigh": false,
+    "latestRevenue": 125099000.0,
+    "period": "202606",
+    "recordRevenue": 182370000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1476": {
+    "isRecordHigh": false,
+    "latestRevenue": 3762594000.0,
+    "period": "202606",
+    "recordRevenue": 4187881000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1477": {
+    "isRecordHigh": false,
+    "latestRevenue": 2851147000.0,
+    "period": "202606",
+    "recordRevenue": 4110109000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1504": {
+    "isRecordHigh": false,
+    "latestRevenue": 5277164000.0,
+    "period": "202606",
+    "recordRevenue": 5685648000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1506": {
+    "isRecordHigh": false,
+    "latestRevenue": 117501000.0,
+    "period": "202606",
+    "recordRevenue": 164985000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1513": {
+    "isRecordHigh": false,
+    "latestRevenue": 2833330000.0,
+    "period": "202606",
+    "recordRevenue": 3196653000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1514": {
+    "isRecordHigh": false,
+    "latestRevenue": 1177480000.0,
+    "period": "202606",
+    "recordRevenue": 1251523000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1515": {
+    "isRecordHigh": false,
+    "latestRevenue": 424480000.0,
+    "period": "202606",
+    "recordRevenue": 2014978000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1516": {
+    "isRecordHigh": false,
+    "latestRevenue": 11413000.0,
+    "period": "202606",
+    "recordRevenue": 220001000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1517": {
+    "isRecordHigh": false,
+    "latestRevenue": 189428000.0,
+    "period": "202606",
+    "recordRevenue": 582796000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1522": {
+    "isRecordHigh": false,
+    "latestRevenue": 2320836000.0,
+    "period": "202606",
+    "recordRevenue": 2800356000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1525": {
+    "isRecordHigh": false,
+    "latestRevenue": 119243.0,
+    "period": "202605",
+    "recordRevenue": 283630000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1527": {
+    "isRecordHigh": false,
+    "latestRevenue": 260526000.0,
+    "period": "202606",
+    "recordRevenue": 482050000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1529": {
+    "isRecordHigh": false,
+    "latestRevenue": 37321000.0,
+    "period": "202606",
+    "recordRevenue": 340232000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1531": {
+    "isRecordHigh": false,
+    "latestRevenue": 176746000.0,
+    "period": "202606",
+    "recordRevenue": 505419000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1532": {
+    "isRecordHigh": false,
+    "latestRevenue": 1305359000.0,
+    "period": "202606",
+    "recordRevenue": 3277282000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1533": {
+    "isRecordHigh": false,
+    "latestRevenue": 458717000.0,
+    "period": "202606",
+    "recordRevenue": 610751000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1537": {
+    "isRecordHigh": false,
+    "latestRevenue": 570579000.0,
+    "period": "202606",
+    "recordRevenue": 772132000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1560": {
+    "isRecordHigh": true,
+    "latestRevenue": 832959000.0,
+    "period": "202606",
+    "recordRevenue": 832959000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1563": {
+    "isRecordHigh": true,
+    "latestRevenue": 749164000.0,
+    "period": "202606",
+    "recordRevenue": 749164000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1568": {
+    "isRecordHigh": false,
+    "latestRevenue": 101779000.0,
+    "period": "202606",
+    "recordRevenue": 307659000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1580": {
+    "isRecordHigh": false,
+    "latestRevenue": 393900000.0,
+    "period": "202606",
+    "recordRevenue": 528196000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1586": {
+    "isRecordHigh": false,
+    "latestRevenue": 216845000.0,
+    "period": "202606",
+    "recordRevenue": 272472000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1587": {
+    "isRecordHigh": false,
+    "latestRevenue": 185923000.0,
+    "period": "202606",
+    "recordRevenue": 292309000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1590": {
+    "isRecordHigh": false,
+    "latestRevenue": 3912577000.0,
+    "period": "202606",
+    "recordRevenue": 4342337000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1591": {
+    "isRecordHigh": false,
+    "latestRevenue": 36786000.0,
+    "period": "202606",
+    "recordRevenue": 90497000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1593": {
+    "isRecordHigh": false,
+    "latestRevenue": 115466000.0,
+    "period": "202606",
+    "recordRevenue": 136164000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1595": {
+    "isRecordHigh": false,
+    "latestRevenue": 97936000.0,
+    "period": "202606",
+    "recordRevenue": 253639000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1598": {
+    "isRecordHigh": false,
+    "latestRevenue": 420998000.0,
+    "period": "202606",
+    "recordRevenue": 2005978000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1603": {
+    "isRecordHigh": false,
+    "latestRevenue": 483897000.0,
+    "period": "202606",
+    "recordRevenue": 621451000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1604": {
+    "isRecordHigh": false,
+    "latestRevenue": 828708000.0,
+    "period": "202606",
+    "recordRevenue": 2040304000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1605": {
+    "isRecordHigh": false,
+    "latestRevenue": 16719950000.0,
+    "period": "202606",
+    "recordRevenue": 24364725000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1608": {
+    "isRecordHigh": false,
+    "latestRevenue": 1102958000.0,
+    "period": "202606",
+    "recordRevenue": 1583956000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1609": {
+    "isRecordHigh": true,
+    "latestRevenue": 3369481000.0,
+    "period": "202606",
+    "recordRevenue": 3369481000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1615": {
+    "isRecordHigh": false,
+    "latestRevenue": 633108000.0,
+    "period": "202606",
+    "recordRevenue": 885445000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1616": {
+    "isRecordHigh": false,
+    "latestRevenue": 572015000.0,
+    "period": "202606",
+    "recordRevenue": 740598000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1617": {
+    "isRecordHigh": false,
+    "latestRevenue": 376197000.0,
+    "period": "202606",
+    "recordRevenue": 747260000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1618": {
+    "isRecordHigh": false,
+    "latestRevenue": 323809000.0,
+    "period": "202606",
+    "recordRevenue": 820458000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1623": {
+    "isRecordHigh": false,
+    "latestRevenue": 602591000.0,
+    "period": "202606",
+    "recordRevenue": 646394000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1709": {
+    "isRecordHigh": false,
+    "latestRevenue": 1030724000.0,
+    "period": "202606",
+    "recordRevenue": 1383861000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1713": {
+    "isRecordHigh": false,
+    "latestRevenue": 26893000.0,
+    "period": "202606",
+    "recordRevenue": 150626000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1714": {
+    "isRecordHigh": false,
+    "latestRevenue": 3074967000.0,
+    "period": "202606",
+    "recordRevenue": 6027540000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1718": {
+    "isRecordHigh": false,
+    "latestRevenue": 4113665000.0,
+    "period": "202606",
+    "recordRevenue": 4872746000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1720": {
+    "isRecordHigh": false,
+    "latestRevenue": 615012000.0,
+    "period": "202606",
+    "recordRevenue": 677305000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1721": {
+    "isRecordHigh": false,
+    "latestRevenue": 141052000.0,
+    "period": "202606",
+    "recordRevenue": 846104000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1723": {
+    "isRecordHigh": false,
+    "latestRevenue": 674339000.0,
+    "period": "202606",
+    "recordRevenue": 1258776000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1727": {
+    "isRecordHigh": false,
+    "latestRevenue": 224411000.0,
+    "period": "202606",
+    "recordRevenue": 259061000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1730": {
+    "isRecordHigh": false,
+    "latestRevenue": 217888000.0,
+    "period": "202606",
+    "recordRevenue": 469327000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1731": {
+    "isRecordHigh": false,
+    "latestRevenue": 131865000.0,
+    "period": "202606",
+    "recordRevenue": 595012000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1732": {
+    "isRecordHigh": false,
+    "latestRevenue": 65934000.0,
+    "period": "202606",
+    "recordRevenue": 115517000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1733": {
+    "isRecordHigh": false,
+    "latestRevenue": 173952000.0,
+    "period": "202606",
+    "recordRevenue": 283608000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1734": {
+    "isRecordHigh": false,
+    "latestRevenue": 300796.0,
+    "period": "202605",
+    "recordRevenue": 329968000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1736": {
+    "isRecordHigh": false,
+    "latestRevenue": 5196509000.0,
+    "period": "202606",
+    "recordRevenue": 8803819000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1760": {
+    "isRecordHigh": false,
+    "latestRevenue": 132734000.0,
+    "period": "202606",
+    "recordRevenue": 388449000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1773": {
+    "isRecordHigh": true,
+    "latestRevenue": 1250360000.0,
+    "period": "202606",
+    "recordRevenue": 1250360000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1777": {
+    "isRecordHigh": false,
+    "latestRevenue": 125864000.0,
+    "period": "202606",
+    "recordRevenue": 135248000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1783": {
+    "isRecordHigh": false,
+    "latestRevenue": 86139000.0,
+    "period": "202606",
+    "recordRevenue": 92879000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1786": {
+    "isRecordHigh": false,
+    "latestRevenue": 74440000.0,
+    "period": "202606",
+    "recordRevenue": 94213000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1788": {
+    "isRecordHigh": false,
+    "latestRevenue": 392788000.0,
+    "period": "202606",
+    "recordRevenue": 981653000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1796": {
+    "isRecordHigh": false,
+    "latestRevenue": 70607000.0,
+    "period": "202606",
+    "recordRevenue": 80432000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1799": {
+    "isRecordHigh": false,
+    "latestRevenue": 81254000.0,
+    "period": "202606",
+    "recordRevenue": 100120000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1802": {
+    "isRecordHigh": false,
+    "latestRevenue": 4207055000.0,
+    "period": "202606",
+    "recordRevenue": 5311638000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1805": {
+    "isRecordHigh": false,
+    "latestRevenue": 114000.0,
+    "period": "202606",
+    "recordRevenue": 2235672000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1808": {
+    "isRecordHigh": false,
+    "latestRevenue": 3067339000.0,
+    "period": "202606",
+    "recordRevenue": 7714736000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1809": {
+    "isRecordHigh": false,
+    "latestRevenue": 202891000.0,
+    "period": "202606",
+    "recordRevenue": 357724000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1817": {
+    "isRecordHigh": false,
+    "latestRevenue": 228982000.0,
+    "period": "202606",
+    "recordRevenue": 297708000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1906": {
+    "isRecordHigh": false,
+    "latestRevenue": 286819000.0,
+    "period": "202606",
+    "recordRevenue": 536695000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "1909": {
+    "isRecordHigh": false,
+    "latestRevenue": 4709421000.0,
+    "period": "202606",
+    "recordRevenue": 5441764000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2006": {
+    "isRecordHigh": false,
+    "latestRevenue": 5474143000.0,
+    "period": "202606",
+    "recordRevenue": 6094900000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2008": {
+    "isRecordHigh": false,
+    "latestRevenue": 164518000.0,
+    "period": "202606",
+    "recordRevenue": 1481889000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2009": {
+    "isRecordHigh": false,
+    "latestRevenue": 307040000.0,
+    "period": "202606",
+    "recordRevenue": 850506000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2017": {
+    "isRecordHigh": false,
+    "latestRevenue": 249737000.0,
+    "period": "202606",
+    "recordRevenue": 700273000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2020": {
+    "isRecordHigh": false,
+    "latestRevenue": 311582000.0,
+    "period": "202606",
+    "recordRevenue": 1503084000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2025": {
+    "isRecordHigh": false,
+    "latestRevenue": 85486000.0,
+    "period": "202606",
+    "recordRevenue": 1363090000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2027": {
+    "isRecordHigh": false,
+    "latestRevenue": 11907806000.0,
+    "period": "202606",
+    "recordRevenue": 12404843000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2028": {
+    "isRecordHigh": false,
+    "latestRevenue": 776510000.0,
+    "period": "202606",
+    "recordRevenue": 1767071000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2029": {
+    "isRecordHigh": false,
+    "latestRevenue": 1237439000.0,
+    "period": "202606",
+    "recordRevenue": 2447259000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2030": {
+    "isRecordHigh": false,
+    "latestRevenue": 986869000.0,
+    "period": "202606",
+    "recordRevenue": 1931397000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2031": {
+    "isRecordHigh": false,
+    "latestRevenue": 1566966000.0,
+    "period": "202606",
+    "recordRevenue": 2069133000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2034": {
+    "isRecordHigh": false,
+    "latestRevenue": 1224695000.0,
+    "period": "202606",
+    "recordRevenue": 2988484000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2049": {
+    "isRecordHigh": false,
+    "latestRevenue": 2554057000.0,
+    "period": "202606",
+    "recordRevenue": 2811145000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2059": {
+    "isRecordHigh": true,
+    "latestRevenue": 4442581000.0,
+    "period": "202606",
+    "recordRevenue": 4442581000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2061": {
+    "isRecordHigh": false,
+    "latestRevenue": 121620000.0,
+    "period": "202606",
+    "recordRevenue": 296736000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2062": {
+    "isRecordHigh": false,
+    "latestRevenue": 642373000.0,
+    "period": "202606",
+    "recordRevenue": 1015858000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2066": {
+    "isRecordHigh": false,
+    "latestRevenue": 256676000.0,
+    "period": "202606",
+    "recordRevenue": 263804000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2069": {
+    "isRecordHigh": false,
+    "latestRevenue": 921026000.0,
+    "period": "202606",
+    "recordRevenue": 1563560000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2070": {
+    "isRecordHigh": false,
+    "latestRevenue": 67296000.0,
+    "period": "202606",
+    "recordRevenue": 143899000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2072": {
+    "isRecordHigh": true,
+    "latestRevenue": 1718369000.0,
+    "period": "202606",
+    "recordRevenue": 1718369000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2073": {
+    "isRecordHigh": true,
+    "latestRevenue": 102918000.0,
+    "period": "202606",
+    "recordRevenue": 102918000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2101": {
+    "isRecordHigh": false,
+    "latestRevenue": 3414007000.0,
+    "period": "202606",
+    "recordRevenue": 7027665000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2103": {
+    "isRecordHigh": false,
+    "latestRevenue": 3913317000.0,
+    "period": "202606",
+    "recordRevenue": 4060755000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2105": {
+    "isRecordHigh": false,
+    "latestRevenue": 8570989000.0,
+    "period": "202606",
+    "recordRevenue": 12454001000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2106": {
+    "isRecordHigh": false,
+    "latestRevenue": 3109402000.0,
+    "period": "202606",
+    "recordRevenue": 5885009000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2107": {
+    "isRecordHigh": false,
+    "latestRevenue": 205165000.0,
+    "period": "202606",
+    "recordRevenue": 1032312000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2109": {
+    "isRecordHigh": false,
+    "latestRevenue": 347217000.0,
+    "period": "202606",
+    "recordRevenue": 705764000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2114": {
+    "isRecordHigh": false,
+    "latestRevenue": 140477000.0,
+    "period": "202606",
+    "recordRevenue": 248215000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2204": {
+    "isRecordHigh": false,
+    "latestRevenue": 3042427000.0,
+    "period": "202606",
+    "recordRevenue": 8912919000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2208": {
+    "isRecordHigh": false,
+    "latestRevenue": 1489333000.0,
+    "period": "202606",
+    "recordRevenue": 7796751000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2211": {
+    "isRecordHigh": false,
+    "latestRevenue": 1636457000.0,
+    "period": "202606",
+    "recordRevenue": 1682835000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2221": {
+    "isRecordHigh": false,
+    "latestRevenue": 149053000.0,
+    "period": "202606",
+    "recordRevenue": 222965000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2233": {
+    "isRecordHigh": false,
+    "latestRevenue": 284710000.0,
+    "period": "202606",
+    "recordRevenue": 351333000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2236": {
+    "isRecordHigh": false,
+    "latestRevenue": 927824000.0,
+    "period": "202606",
+    "recordRevenue": 1067368000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2241": {
+    "isRecordHigh": false,
+    "latestRevenue": 96393000.0,
+    "period": "202606",
+    "recordRevenue": 117484000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2258": {
+    "isRecordHigh": false,
+    "latestRevenue": 454732000.0,
+    "period": "202606",
+    "recordRevenue": 1316729000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2301": {
+    "isRecordHigh": false,
+    "latestRevenue": 18655552000.0,
+    "period": "202606",
+    "recordRevenue": 22257257000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2303": {
+    "isRecordHigh": false,
+    "latestRevenue": 23124962000.0,
+    "period": "202606",
+    "recordRevenue": 25346076000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2305": {
+    "isRecordHigh": false,
+    "latestRevenue": 149910000.0,
+    "period": "202606",
+    "recordRevenue": 743608000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2308": {
+    "isRecordHigh": true,
+    "latestRevenue": 65602611000.0,
+    "period": "202606",
+    "recordRevenue": 65602611000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2312": {
+    "isRecordHigh": false,
+    "latestRevenue": 14855388000.0,
+    "period": "202606",
+    "recordRevenue": 19558025000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2313": {
+    "isRecordHigh": false,
+    "latestRevenue": 6915025000.0,
+    "period": "202606",
+    "recordRevenue": 7838118000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2314": {
+    "isRecordHigh": false,
+    "latestRevenue": 140280000.0,
+    "period": "202606",
+    "recordRevenue": 908736000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2317": {
+    "isRecordHigh": false,
+    "latestRevenue": 821762936000.0,
+    "period": "202606",
+    "recordRevenue": 895708525000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2321": {
+    "isRecordHigh": false,
+    "latestRevenue": 80209000.0,
+    "period": "202606",
+    "recordRevenue": 1239458000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2323": {
+    "isRecordHigh": false,
+    "latestRevenue": 639920.0,
+    "period": "202605",
+    "recordRevenue": 3119216000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2324": {
+    "isRecordHigh": false,
+    "latestRevenue": 95853605000.0,
+    "period": "202606",
+    "recordRevenue": 127709100000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2327": {
+    "isRecordHigh": true,
+    "latestRevenue": 15359009000.0,
+    "period": "202606",
+    "recordRevenue": 15359009000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2329": {
+    "isRecordHigh": false,
+    "latestRevenue": 1822186000.0,
+    "period": "202606",
+    "recordRevenue": 1857900000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2330": {
+    "isRecordHigh": false,
+    "latestRevenue": 416975163.0,
+    "period": "202605",
+    "recordRevenue": 416975163000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2331": {
+    "isRecordHigh": false,
+    "latestRevenue": 2269289000.0,
+    "period": "202606",
+    "recordRevenue": 8186423000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2332": {
+    "isRecordHigh": false,
+    "latestRevenue": 1292542000.0,
+    "period": "202606",
+    "recordRevenue": 3066501000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2337": {
+    "isRecordHigh": true,
+    "latestRevenue": 6956348000.0,
+    "period": "202606",
+    "recordRevenue": 6956348000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2340": {
+    "isRecordHigh": false,
+    "latestRevenue": 483128000.0,
+    "period": "202606",
+    "recordRevenue": 769055000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2342": {
+    "isRecordHigh": false,
+    "latestRevenue": 176335000.0,
+    "period": "202606",
+    "recordRevenue": 3335558000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2344": {
+    "isRecordHigh": true,
+    "latestRevenue": 20596799000.0,
+    "period": "202606",
+    "recordRevenue": 20596799000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2345": {
+    "isRecordHigh": true,
+    "latestRevenue": 39554529000.0,
+    "period": "202606",
+    "recordRevenue": 39554529000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2347": {
+    "isRecordHigh": true,
+    "latestRevenue": 76417552000.0,
+    "period": "202606",
+    "recordRevenue": 76417552000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2348": {
+    "isRecordHigh": false,
+    "latestRevenue": 1498327000.0,
+    "period": "202606",
+    "recordRevenue": 3040452000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2351": {
+    "isRecordHigh": true,
+    "latestRevenue": 1213743000.0,
+    "period": "202606",
+    "recordRevenue": 1213743000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2354": {
+    "isRecordHigh": false,
+    "latestRevenue": 15054892000.0,
+    "period": "202606",
+    "recordRevenue": 21247144000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2355": {
+    "isRecordHigh": false,
+    "latestRevenue": 1365750000.0,
+    "period": "202606",
+    "recordRevenue": 2226635000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2356": {
+    "isRecordHigh": true,
+    "latestRevenue": 102262391000.0,
+    "period": "202606",
+    "recordRevenue": 102262391000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2357": {
+    "isRecordHigh": true,
+    "latestRevenue": 106723044000.0,
+    "period": "202606",
+    "recordRevenue": 106723044000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2359": {
+    "isRecordHigh": false,
+    "latestRevenue": 580287000.0,
+    "period": "202606",
+    "recordRevenue": 790237000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2362": {
+    "isRecordHigh": false,
+    "latestRevenue": 2231200000.0,
+    "period": "202606",
+    "recordRevenue": 3506098000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2363": {
+    "isRecordHigh": false,
+    "latestRevenue": 466594000.0,
+    "period": "202606",
+    "recordRevenue": 1816401000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2364": {
+    "isRecordHigh": false,
+    "latestRevenue": 182557000.0,
+    "period": "202606",
+    "recordRevenue": 1062846000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2367": {
+    "isRecordHigh": false,
+    "latestRevenue": 1375316000.0,
+    "period": "202606",
+    "recordRevenue": 2166827000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2368": {
+    "isRecordHigh": false,
+    "latestRevenue": 8255188000.0,
+    "period": "202606",
+    "recordRevenue": 8773229000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2369": {
+    "isRecordHigh": false,
+    "latestRevenue": 631125000.0,
+    "period": "202606",
+    "recordRevenue": 713962000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2371": {
+    "isRecordHigh": false,
+    "latestRevenue": 5292568000.0,
+    "period": "202606",
+    "recordRevenue": 11650179000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2374": {
+    "isRecordHigh": false,
+    "latestRevenue": 1048813000.0,
+    "period": "202606",
+    "recordRevenue": 5700022000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2375": {
+    "isRecordHigh": false,
+    "latestRevenue": 543117000.0,
+    "period": "202606",
+    "recordRevenue": 740111000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2380": {
+    "isRecordHigh": false,
+    "latestRevenue": 222021000.0,
+    "period": "202606",
+    "recordRevenue": 623509000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2382": {
+    "isRecordHigh": true,
+    "latestRevenue": 385190820000.0,
+    "period": "202606",
+    "recordRevenue": 385190820000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2383": {
+    "isRecordHigh": true,
+    "latestRevenue": 17732956000.0,
+    "period": "202606",
+    "recordRevenue": 17732956000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2390": {
+    "isRecordHigh": false,
+    "latestRevenue": 59823000.0,
+    "period": "202606",
+    "recordRevenue": 203022000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2393": {
+    "isRecordHigh": false,
+    "latestRevenue": 1830701000.0,
+    "period": "202606",
+    "recordRevenue": 3045822000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2395": {
+    "isRecordHigh": true,
+    "latestRevenue": 10122989000.0,
+    "period": "202606",
+    "recordRevenue": 10122989000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2397": {
+    "isRecordHigh": false,
+    "latestRevenue": 1284742000.0,
+    "period": "202606",
+    "recordRevenue": 1499864000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2399": {
+    "isRecordHigh": false,
+    "latestRevenue": 158673000.0,
+    "period": "202606",
+    "recordRevenue": 958887000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2401": {
+    "isRecordHigh": false,
+    "latestRevenue": 724384.0,
+    "period": "202605",
+    "recordRevenue": 1898705000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2402": {
+    "isRecordHigh": true,
+    "latestRevenue": 1134829000.0,
+    "period": "202606",
+    "recordRevenue": 1134829000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2404": {
+    "isRecordHigh": false,
+    "latestRevenue": 9217814.0,
+    "period": "202605",
+    "recordRevenue": 9605328000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2405": {
+    "isRecordHigh": false,
+    "latestRevenue": 164735000.0,
+    "period": "202606",
+    "recordRevenue": 1977961000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2408": {
+    "isRecordHigh": true,
+    "latestRevenue": 29388309000.0,
+    "period": "202606",
+    "recordRevenue": 29388309000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2409": {
+    "isRecordHigh": false,
+    "latestRevenue": 24952469000.0,
+    "period": "202606",
+    "recordRevenue": 53671544000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2413": {
+    "isRecordHigh": false,
+    "latestRevenue": 332034000.0,
+    "period": "202606",
+    "recordRevenue": 491061000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2414": {
+    "isRecordHigh": true,
+    "latestRevenue": 5092378000.0,
+    "period": "202606",
+    "recordRevenue": 5092378000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2415": {
+    "isRecordHigh": false,
+    "latestRevenue": 211964000.0,
+    "period": "202606",
+    "recordRevenue": 310455000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2417": {
+    "isRecordHigh": false,
+    "latestRevenue": 343214000.0,
+    "period": "202606",
+    "recordRevenue": 1229481000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2420": {
+    "isRecordHigh": false,
+    "latestRevenue": 210736000.0,
+    "period": "202606",
+    "recordRevenue": 365014000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2421": {
+    "isRecordHigh": false,
+    "latestRevenue": 1855096000.0,
+    "period": "202606",
+    "recordRevenue": 1917719000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2423": {
+    "isRecordHigh": false,
+    "latestRevenue": 330769000.0,
+    "period": "202606",
+    "recordRevenue": 368687000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2424": {
+    "isRecordHigh": false,
+    "latestRevenue": 29231000.0,
+    "period": "202606",
+    "recordRevenue": 240182000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2425": {
+    "isRecordHigh": false,
+    "latestRevenue": 1777915.0,
+    "period": "202605",
+    "recordRevenue": 1777915000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2426": {
+    "isRecordHigh": false,
+    "latestRevenue": 249133000.0,
+    "period": "202606",
+    "recordRevenue": 549084000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2428": {
+    "isRecordHigh": true,
+    "latestRevenue": 973436000.0,
+    "period": "202606",
+    "recordRevenue": 973436000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2429": {
+    "isRecordHigh": false,
+    "latestRevenue": 21247000.0,
+    "period": "202606",
+    "recordRevenue": 117956000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2432": {
+    "isRecordHigh": false,
+    "latestRevenue": 435143000.0,
+    "period": "202606",
+    "recordRevenue": 452941000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2433": {
+    "isRecordHigh": false,
+    "latestRevenue": 232373.0,
+    "period": "202605",
+    "recordRevenue": 373491000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2434": {
+    "isRecordHigh": false,
+    "latestRevenue": 7508000.0,
+    "period": "202606",
+    "recordRevenue": 82553000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2436": {
+    "isRecordHigh": false,
+    "latestRevenue": 372126000.0,
+    "period": "202606",
+    "recordRevenue": 414463000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2438": {
+    "isRecordHigh": false,
+    "latestRevenue": 39768000.0,
+    "period": "202606",
+    "recordRevenue": 1165212000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2439": {
+    "isRecordHigh": false,
+    "latestRevenue": 3459919000.0,
+    "period": "202606",
+    "recordRevenue": 4990360000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2440": {
+    "isRecordHigh": false,
+    "latestRevenue": 403667000.0,
+    "period": "202606",
+    "recordRevenue": 437178000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2441": {
+    "isRecordHigh": true,
+    "latestRevenue": 1874548000.0,
+    "period": "202606",
+    "recordRevenue": 1874548000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2449": {
+    "isRecordHigh": false,
+    "latestRevenue": 3621671000.0,
+    "period": "202606",
+    "recordRevenue": 3776927000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2450": {
+    "isRecordHigh": false,
+    "latestRevenue": 2882213000.0,
+    "period": "202606",
+    "recordRevenue": 4233101000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2453": {
+    "isRecordHigh": false,
+    "latestRevenue": 639912000.0,
+    "period": "202606",
+    "recordRevenue": 994190000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2454": {
+    "isRecordHigh": false,
+    "latestRevenue": 58011756000.0,
+    "period": "202606",
+    "recordRevenue": 63219184000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2455": {
+    "isRecordHigh": false,
+    "latestRevenue": 325993000.0,
+    "period": "202606",
+    "recordRevenue": 355173000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2458": {
+    "isRecordHigh": false,
+    "latestRevenue": 1059324000.0,
+    "period": "202606",
+    "recordRevenue": 1717919000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2459": {
+    "isRecordHigh": false,
+    "latestRevenue": 449445000.0,
+    "period": "202606",
+    "recordRevenue": 1440822000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2462": {
+    "isRecordHigh": false,
+    "latestRevenue": 343791000.0,
+    "period": "202606",
+    "recordRevenue": 495771000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2464": {
+    "isRecordHigh": false,
+    "latestRevenue": 701693.0,
+    "period": "202605",
+    "recordRevenue": 1386811000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2465": {
+    "isRecordHigh": false,
+    "latestRevenue": 937969000.0,
+    "period": "202606",
+    "recordRevenue": 1426276000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2466": {
+    "isRecordHigh": false,
+    "latestRevenue": 119211000.0,
+    "period": "202606",
+    "recordRevenue": 334909000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2467": {
+    "isRecordHigh": false,
+    "latestRevenue": 869119000.0,
+    "period": "202606",
+    "recordRevenue": 1022228000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2468": {
+    "isRecordHigh": false,
+    "latestRevenue": 298468000.0,
+    "period": "202606",
+    "recordRevenue": 434337000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2471": {
+    "isRecordHigh": false,
+    "latestRevenue": 79910.0,
+    "period": "202605",
+    "recordRevenue": 145837000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2472": {
+    "isRecordHigh": true,
+    "latestRevenue": 1276360000.0,
+    "period": "202606",
+    "recordRevenue": 1276360000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2476": {
+    "isRecordHigh": true,
+    "latestRevenue": 915039000.0,
+    "period": "202606",
+    "recordRevenue": 915039000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2478": {
+    "isRecordHigh": false,
+    "latestRevenue": 624098000.0,
+    "period": "202606",
+    "recordRevenue": 735237000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2480": {
+    "isRecordHigh": true,
+    "latestRevenue": 966718000.0,
+    "period": "202606",
+    "recordRevenue": 966718000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2481": {
+    "isRecordHigh": false,
+    "latestRevenue": 1388856000.0,
+    "period": "202606",
+    "recordRevenue": 1652168000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2482": {
+    "isRecordHigh": false,
+    "latestRevenue": 47535000.0,
+    "period": "202606",
+    "recordRevenue": 181795000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2483": {
+    "isRecordHigh": false,
+    "latestRevenue": 197699000.0,
+    "period": "202606",
+    "recordRevenue": 223802000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2485": {
+    "isRecordHigh": false,
+    "latestRevenue": 274653000.0,
+    "period": "202606",
+    "recordRevenue": 1713741000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2486": {
+    "isRecordHigh": true,
+    "latestRevenue": 701021000.0,
+    "period": "202606",
+    "recordRevenue": 701021000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2488": {
+    "isRecordHigh": false,
+    "latestRevenue": 356840000.0,
+    "period": "202606",
+    "recordRevenue": 388035000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2489": {
+    "isRecordHigh": false,
+    "latestRevenue": 2509581000.0,
+    "period": "202606",
+    "recordRevenue": 8559318000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2492": {
+    "isRecordHigh": false,
+    "latestRevenue": 3960936000.0,
+    "period": "202606",
+    "recordRevenue": 6293725000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2493": {
+    "isRecordHigh": true,
+    "latestRevenue": 406283000.0,
+    "period": "202606",
+    "recordRevenue": 406283000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2497": {
+    "isRecordHigh": true,
+    "latestRevenue": 512275000.0,
+    "period": "202606",
+    "recordRevenue": 512275000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2511": {
+    "isRecordHigh": false,
+    "latestRevenue": 1179723000.0,
+    "period": "202606",
+    "recordRevenue": 7687350000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2527": {
+    "isRecordHigh": false,
+    "latestRevenue": 132649000.0,
+    "period": "202606",
+    "recordRevenue": 5466657000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2535": {
+    "isRecordHigh": false,
+    "latestRevenue": 2217213000.0,
+    "period": "202606",
+    "recordRevenue": 3233435000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2537": {
+    "isRecordHigh": false,
+    "latestRevenue": 152161000.0,
+    "period": "202606",
+    "recordRevenue": 1886407000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2542": {
+    "isRecordHigh": false,
+    "latestRevenue": 5160129000.0,
+    "period": "202606",
+    "recordRevenue": 13585606000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2543": {
+    "isRecordHigh": true,
+    "latestRevenue": 1954215000.0,
+    "period": "202606",
+    "recordRevenue": 1954215000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2547": {
+    "isRecordHigh": false,
+    "latestRevenue": 1163144000.0,
+    "period": "202606",
+    "recordRevenue": 17656476000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2597": {
+    "isRecordHigh": false,
+    "latestRevenue": 3106651000.0,
+    "period": "202606",
+    "recordRevenue": 3493204000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2603": {
+    "isRecordHigh": false,
+    "latestRevenue": 39141253000.0,
+    "period": "202606",
+    "recordRevenue": 62799441000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2606": {
+    "isRecordHigh": false,
+    "latestRevenue": 1714892000.0,
+    "period": "202606",
+    "recordRevenue": 1839307000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2607": {
+    "isRecordHigh": false,
+    "latestRevenue": 1846632000.0,
+    "period": "202606",
+    "recordRevenue": 2229330000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2609": {
+    "isRecordHigh": false,
+    "latestRevenue": 16591195000.0,
+    "period": "202606",
+    "recordRevenue": 38710538000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2610": {
+    "isRecordHigh": true,
+    "latestRevenue": 21761004000.0,
+    "period": "202606",
+    "recordRevenue": 21761004000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2611": {
+    "isRecordHigh": false,
+    "latestRevenue": 86055000.0,
+    "period": "202606",
+    "recordRevenue": 2445197000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2614": {
+    "isRecordHigh": false,
+    "latestRevenue": 456582000.0,
+    "period": "202606",
+    "recordRevenue": 2051418000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2615": {
+    "isRecordHigh": false,
+    "latestRevenue": 16165884000.0,
+    "period": "202606",
+    "recordRevenue": 32510990000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2618": {
+    "isRecordHigh": true,
+    "latestRevenue": 23472175000.0,
+    "period": "202606",
+    "recordRevenue": 23472175000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2636": {
+    "isRecordHigh": false,
+    "latestRevenue": 2586500000.0,
+    "period": "202606",
+    "recordRevenue": 4099402000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2637": {
+    "isRecordHigh": false,
+    "latestRevenue": 1877838000.0,
+    "period": "202606",
+    "recordRevenue": 2641291000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2640": {
+    "isRecordHigh": true,
+    "latestRevenue": 293100000.0,
+    "period": "202606",
+    "recordRevenue": 293100000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2643": {
+    "isRecordHigh": false,
+    "latestRevenue": 696781000.0,
+    "period": "202606",
+    "recordRevenue": 800760000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2702": {
+    "isRecordHigh": false,
+    "latestRevenue": 136717000.0,
+    "period": "202606",
+    "recordRevenue": 156869000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2704": {
+    "isRecordHigh": false,
+    "latestRevenue": 117520000.0,
+    "period": "202606",
+    "recordRevenue": 340370000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2705": {
+    "isRecordHigh": false,
+    "latestRevenue": 180903000.0,
+    "period": "202606",
+    "recordRevenue": 395025000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2712": {
+    "isRecordHigh": false,
+    "latestRevenue": 49651000.0,
+    "period": "202606",
+    "recordRevenue": 152868000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2732": {
+    "isRecordHigh": false,
+    "latestRevenue": 445894000.0,
+    "period": "202606",
+    "recordRevenue": 480400000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2734": {
+    "isRecordHigh": false,
+    "latestRevenue": 165917000.0,
+    "period": "202606",
+    "recordRevenue": 245593000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2751": {
+    "isRecordHigh": false,
+    "latestRevenue": 177705000.0,
+    "period": "202606",
+    "recordRevenue": 193932000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2754": {
+    "isRecordHigh": true,
+    "latestRevenue": 551321000.0,
+    "period": "202606",
+    "recordRevenue": 551321000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2756": {
+    "isRecordHigh": false,
+    "latestRevenue": 110366000.0,
+    "period": "202606",
+    "recordRevenue": 119153000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2801": {
+    "isRecordHigh": false,
+    "latestRevenue": 4815653000.0,
+    "period": "202606",
+    "recordRevenue": 5813473000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2836": {
+    "isRecordHigh": false,
+    "latestRevenue": 566136000.0,
+    "period": "202606",
+    "recordRevenue": 957584000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2845": {
+    "isRecordHigh": false,
+    "latestRevenue": 1308624000.0,
+    "period": "202606",
+    "recordRevenue": 1925156000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2849": {
+    "isRecordHigh": false,
+    "latestRevenue": 623998000.0,
+    "period": "202606",
+    "recordRevenue": 1977112000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2884": {
+    "isRecordHigh": false,
+    "latestRevenue": 9363120000.0,
+    "period": "202606",
+    "recordRevenue": 10046680000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2889": {
+    "isRecordHigh": true,
+    "latestRevenue": 1660239000.0,
+    "period": "202606",
+    "recordRevenue": 1660239000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2901": {
+    "isRecordHigh": false,
+    "latestRevenue": 11290000.0,
+    "period": "202606",
+    "recordRevenue": 84891000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2906": {
+    "isRecordHigh": false,
+    "latestRevenue": 734448000.0,
+    "period": "202606",
+    "recordRevenue": 1292000000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2908": {
+    "isRecordHigh": false,
+    "latestRevenue": 2859065000.0,
+    "period": "202606",
+    "recordRevenue": 4363669000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2910": {
+    "isRecordHigh": false,
+    "latestRevenue": 55031000.0,
+    "period": "202606",
+    "recordRevenue": 389816000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "2948": {
+    "isRecordHigh": true,
+    "latestRevenue": 196666000.0,
+    "period": "202606",
+    "recordRevenue": 196666000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "3003": {
+    "isRecordHigh": true,
+    "latestRevenue": 599370000.0,
+    "period": "202606",
+    "recordRevenue": 599370000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "3004": {
+    "isRecordHigh": true,
+    "latestRevenue": 497531000.0,
+    "period": "202606",
+    "recordRevenue": 497531000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "3005": {
+    "isRecordHigh": false,
+    "latestRevenue": 4253713000.0,
+    "period": "202606",
+    "recordRevenue": 4650406000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "3006": {
+    "isRecordHigh": true,
+    "latestRevenue": 4845479000.0,
+    "period": "202606",
+    "recordRevenue": 4845479000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "3016": {
+    "isRecordHigh": false,
+    "latestRevenue": 433764000.0,
+    "period": "202605",
+    "recordRevenue": 521284000.0,
+    "source": "FinMind TaiwanStockMonthRevenue"
+  },
+  "3017": {
+    "isRecordHigh": false,
+    "latestRevenue": 17618119000.0,
+    "period": "202606",
+    "recordRevenue": 18017169000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "3018": {
+    "isRecordHigh": false,
+    "latestRevenue": 37768000.0,
+    "period": "202606",
+    "recordRevenue": 1099202000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "3019": {
+    "isRecordHigh": true,
+    "latestRevenue": 2914024000.0,
+    "period": "202606",
+    "recordRevenue": 2914024000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "3022": {
+    "isRecordHigh": false,
+    "latestRevenue": 962672000.0,
+    "period": "202606",
+    "recordRevenue": 984162000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "3023": {
+    "isRecordHigh": true,
+    "latestRevenue": 3092706000.0,
+    "period": "202606",
+    "recordRevenue": 3092706000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "3026": {
+    "isRecordHigh": false,
+    "latestRevenue": 1378433000.0,
+    "period": "202606",
+    "recordRevenue": 1719674000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "3029": {
+    "isRecordHigh": false,
+    "latestRevenue": 2536904000.0,
+    "period": "202606",
+    "recordRevenue": 2817324000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "3032": {
+    "isRecordHigh": false,
+    "latestRevenue": 1004264000.0,
+    "period": "202606",
+    "recordRevenue": 1185249000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "3033": {
+    "isRecordHigh": true,
+    "latestRevenue": 14527778000.0,
+    "period": "202606",
+    "recordRevenue": 14527778000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "3034": {
+    "isRecordHigh": false,
+    "latestRevenue": 10022596000.0,
+    "period": "202606",
+    "recordRevenue": 12931679000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "3035": {
+    "isRecordHigh": false,
+    "latestRevenue": 1416828000.0,
+    "period": "202606",
+    "recordRevenue": 3482593000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "3037": {
+    "isRecordHigh": true,
+    "latestRevenue": 14897030000.0,
+    "period": "202606",
+    "recordRevenue": 14897030000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "3043": {
+    "isRecordHigh": false,
+    "latestRevenue": 90675000.0,
+    "period": "202606",
+    "recordRevenue": 738193000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  },
+  "3045": {
+    "isRecordHigh": false,
+    "latestRevenue": 16440683000.0,
+    "period": "202605",
+    "recordRevenue": 23112130000.0,
+    "source": "FinMind TaiwanStockMonthRevenue"
+  },
+  "3046": {
+    "isRecordHigh": false,
+    "latestRevenue": 972062000.0,
+    "period": "202606",
+    "recordRevenue": 1802575000.0,
+    "source": "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+  }
+}

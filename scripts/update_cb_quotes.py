@@ -9,7 +9,7 @@ import ssl
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
-from urllib.parse import quote, unquote, urlencode
+from urllib.parse import quote, unquote, urlencode, urlparse
 from urllib.request import Request, urlopen
 
 
@@ -21,6 +21,7 @@ ISSUANCE_PURPOSE_PATH = ROOT / "data" / "cb-issuance-purpose.json"
 REDEMPTION_ALERTS_PATH = ROOT / "data" / "cb-redemption-alerts.json"
 WEEKLY_TOP30_TRACKER_PATH = ROOT / "data" / "weekly-stock-top30-tracker.json"
 REVENUE_HISTORY_RECORDS_PATH = ROOT / "data" / "revenue-history-records.json"
+REVENUE_HISTORY_CACHE_PATH = ROOT / ".cache" / "revenue-history-records.json"
 PREFIX = "window.RECENT_CB_DATA = "
 TZ = timezone(timedelta(hours=8))
 HEADERS = {
@@ -35,7 +36,13 @@ def fetch_json(url: str):
         with urlopen(request, timeout=30) as response:
             return json.loads(response.read().decode("utf-8"))
     except Exception:
-        if "openapi.twse.com.tw" not in url:
+        host = (urlparse(url).hostname or "").lower()
+        ssl_compat_hosts = {
+            "openapi.twse.com.tw",
+            "www.tpex.org.tw",
+            "tpex.org.tw",
+        }
+        if host not in ssl_compat_hosts:
             raise
         context = ssl._create_unverified_context()
         with urlopen(request, timeout=30, context=context) as response:
@@ -97,19 +104,22 @@ def load_weekly_top30_tracker() -> dict:
 
 
 def load_revenue_history_records() -> dict:
-    try:
-        payload = json.loads(REVENUE_HISTORY_RECORDS_PATH.read_text(encoding="utf-8"))
-        return payload if isinstance(payload, dict) else {}
-    except (OSError, ValueError):
-        return {}
+    records: dict = {}
+    for path in (REVENUE_HISTORY_RECORDS_PATH, REVENUE_HISTORY_CACHE_PATH):
+        try:
+            payload = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            continue
+        if isinstance(payload, dict):
+            records.update(payload)
+    return records
 
 
 def save_revenue_history_records(records: dict) -> None:
-    REVENUE_HISTORY_RECORDS_PATH.parent.mkdir(parents=True, exist_ok=True)
-    REVENUE_HISTORY_RECORDS_PATH.write_text(
-        json.dumps(records, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
-        encoding="utf-8",
-    )
+    content = json.dumps(records, ensure_ascii=False, indent=2, sort_keys=True) + "\n"
+    for path in (REVENUE_HISTORY_RECORDS_PATH, REVENUE_HISTORY_CACHE_PATH):
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(content, encoding="utf-8")
 
 
 def update_weekly_top30_tracker(rows: list[dict], updated_at: str) -> dict:
@@ -575,7 +585,7 @@ def fetch_historical_revenue_record(issuer_code: str) -> dict | None:
     }
 
 
-def fetch_historical_revenue_records(issuer_codes: set[str], limit: int = 40) -> dict[str, dict]:
+def fetch_historical_revenue_records(issuer_codes: set[str], limit: int = 80) -> dict[str, dict]:
     records: dict[str, dict] = {}
     selected_codes = sorted(issuer_codes)[:limit]
     if not selected_codes:
@@ -681,9 +691,19 @@ def sync_active_rows(data: dict) -> list[dict]:
         and number(row.get("revenueMoM")) is not None and number(row.get("revenueMoM")) > 0
     )
     historical_revenue_records = load_revenue_history_records()
+    expected_revenue_periods: dict[str, int] = {}
+    for row in existing.values():
+        code = str(row.get("issuerCode") or "").strip()
+        period = period_sort_value(row.get("revenuePeriod") or row.get("revenueYearMonth"))
+        if code and period:
+            expected_revenue_periods[code] = max(expected_revenue_periods.get(code, 0), period)
     missing_revenue_records = {
         code for code in revenue_record_candidates
-        if code and code not in historical_revenue_records
+        if code and (
+            code not in historical_revenue_records
+            or period_sort_value(historical_revenue_records[code].get("period"))
+            < expected_revenue_periods.get(code, 0)
+        )
     }
     historical_revenue_records.update(
         fetch_historical_revenue_records(missing_revenue_records)
@@ -693,11 +713,16 @@ def sync_active_rows(data: dict) -> list[dict]:
         period = revenue_periods.get(code)
         if not record or current_revenue is None or not period:
             continue
+        current_period = period_sort_value(period)
+        if current_period < period_sort_value(record.get("period")):
+            continue
+        # TWSE/TPEx monthly revenue OpenAPI uses NT$ thousands; history uses NT dollars.
+        current_revenue_ntd = current_revenue * 1000
         previous_record = number(record.get("recordRevenue"))
-        record["period"] = str(period_sort_value(period))
-        record["latestRevenue"] = current_revenue
-        record["recordRevenue"] = max(current_revenue, previous_record or current_revenue)
-        record["isRecordHigh"] = previous_record is None or current_revenue >= previous_record
+        record["period"] = str(current_period)
+        record["latestRevenue"] = current_revenue_ntd
+        record["recordRevenue"] = max(current_revenue_ntd, previous_record or current_revenue_ntd)
+        record["isRecordHigh"] = previous_record is None or current_revenue_ntd >= previous_record
         record["source"] = "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
     save_revenue_history_records(historical_revenue_records)
     margins = {
@@ -775,18 +800,28 @@ def sync_active_rows(data: dict) -> list[dict]:
             period_sort_value(previous.get("revenuePeriod") or previous.get("revenueYearMonth"))
             == period_sort_value(revenue_period)
         )
-        revenue_is_historical_high = (
-            bool(revenue_record.get("isRecordHigh"))
-            if revenue_record_period_matches
-            else bool(previous.get("revenueIsHistoricalHigh"))
-            if previous_revenue_period_matches
-            else False
+        can_be_historical_high = bool(
+            number(revenue_yoy) is not None and number(revenue_yoy) > 0
+            and number(revenue_mom_value) is not None and number(revenue_mom_value) > 0
         )
+        previous_history_verified = bool(
+            previous_revenue_period_matches
+            and previous.get("revenueHistoricalRecord") is not None
+            and previous.get("revenueHistoricalSource")
+        )
+        if not can_be_historical_high:
+            revenue_is_historical_high = False
+        elif revenue_record_period_matches:
+            revenue_is_historical_high = bool(revenue_record.get("isRecordHigh"))
+        elif previous_history_verified:
+            revenue_is_historical_high = bool(previous.get("revenueIsHistoricalHigh"))
+        else:
+            revenue_is_historical_high = None
         revenue_historical_record = (
             revenue_record.get("recordRevenue")
             if revenue_record_period_matches
             else previous.get("revenueHistoricalRecord")
-            if previous_revenue_period_matches
+            if previous_history_verified
             else None
         )
         row.update(
@@ -829,7 +864,7 @@ def sync_active_rows(data: dict) -> list[dict]:
                     revenue_record.get("source")
                     if revenue_record_period_matches
                     else previous.get("revenueHistoricalSource", "")
-                    if previous_revenue_period_matches
+                    if previous_history_verified
                     else ""
                 ),
                 "grossMargin": gross_margin,

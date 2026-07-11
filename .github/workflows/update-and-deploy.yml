@@ -53,7 +53,7 @@ jobs:
       - name: Restore monthly revenue history cache
         uses: actions/cache@v4
         with:
-          path: data/revenue-history-records.json
+          path: .cache/revenue-history-records.json
           key: revenue-history-${{ runner.os }}-${{ github.run_id }}
           restore-keys: |
             revenue-history-${{ runner.os }}-
