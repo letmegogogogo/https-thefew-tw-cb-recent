@@ -818,7 +818,7 @@
 </head>
 <body>
   <script>
-    const dataVersion = Date.now();
+    const dataVersion = "9e89b0ed2196";
     document.write(`<script src="recent-cb-data.js?v=${dataVersion}"><\/script>`);
     document.write(`<script src="cb-primary-market-data.js?v=${dataVersion}"><\/script>`);
     document.write(`<script src="eps-forecast-data.js?v=${dataVersion}"><\/script>`);
@@ -1648,24 +1648,9 @@
         points
       }, row);
     };
-    const loadLocalChartScript = (code) => new Promise((resolve, reject) => {
-      const script = document.createElement('script');
-      script.src = `cb-history/${encodeURIComponent(code)}.js?v=${encodeURIComponent(raw.fetchedAt || '')}`;
-      script.onload = () => { script.remove(); resolve(window.CB_HISTORY_DATA?.[code]); };
-      script.onerror = () => { script.remove(); reject(new Error('local history unavailable')); };
-      document.head.appendChild(script);
-    });
     const loadChartData = async (row) => {
       const code = String(row.bondCode);
       if (chartDataCache.has(code)) return chartDataCache.get(code);
-      let embeddedPayload = window.CB_HISTORY_DATA?.[code];
-      if (!embeddedPayload) {
-        try { embeddedPayload = await loadLocalChartScript(code); } catch (_) { embeddedPayload = null; }
-      }
-      if (embeddedPayload) {
-        chartDataCache.set(code, verifyChartPayload(structuredClone(embeddedPayload), row));
-        return chartDataCache.get(code);
-      }
       try {
         const response = await fetch(`cb-history/${encodeURIComponent(code)}.json?v=${encodeURIComponent(raw.fetchedAt || '')}`);
         if (!response.ok) throw new Error('history unavailable');

@@ -12,6 +12,8 @@ on:
     # Revenue announcement season: Taiwan time 18:10, 21:10 on the 1st-10th of every month.
     - cron: "10 10 1-10 * *"
     - cron: "10 13 1-10 * *"
+    # Full enrichment refresh: Taiwan time 21:40, Monday-Friday.
+    - cron: "40 13 * * 1-5"
   workflow_dispatch:
     inputs:
       mode:
@@ -49,11 +51,11 @@ jobs:
           python-version: "3.12"
 
       - name: Fast fetch CB redemption alerts
-        if: ${{ github.event_name != 'workflow_dispatch' || inputs.mode != 'full' }}
-        run: python scripts/fetch_cb_redemption_alerts.py --max-seconds 480 --timeout 8 --max-candidates 1
+        if: ${{ !((github.event_name == 'workflow_dispatch' && inputs.mode == 'full') || (github.event_name == 'schedule' && github.event.schedule == '40 13 * * 1-5')) }}
+        run: python scripts/fetch_cb_redemption_alerts.py --max-seconds 120 --timeout 8 --max-candidates 1
 
       - name: Full fetch CB redemption alerts
-        if: ${{ github.event_name == 'workflow_dispatch' && inputs.mode == 'full' }}
+        if: ${{ (github.event_name == 'workflow_dispatch' && inputs.mode == 'full') || (github.event_name == 'schedule' && github.event.schedule == '40 13 * * 1-5') }}
         run: python scripts/fetch_cb_redemption_alerts.py --scan-all --max-seconds 480
 
       - name: Update CB primary market data
@@ -63,12 +65,15 @@ jobs:
         run: python scripts/update_cb_quotes.py
 
       - name: Enrich new CB company tags
+        if: ${{ (github.event_name == 'workflow_dispatch' && inputs.mode == 'full') || (github.event_name == 'schedule' && github.event.schedule == '40 13 * * 1-5') }}
         run: python scripts/enrich_new_cb_company_tags.py --limit 5
 
       - name: Enrich new CB issuance purposes
+        if: ${{ (github.event_name == 'workflow_dispatch' && inputs.mode == 'full') || (github.event_name == 'schedule' && github.event.schedule == '40 13 * * 1-5') }}
         run: python scripts/enrich_new_cb_issuance_purposes.py --limit 5 --max-candidates 2 --timeout 8
 
       - name: Refresh CB data with enriched tags and purposes
+        if: ${{ (github.event_name == 'workflow_dispatch' && inputs.mode == 'full') || (github.event_name == 'schedule' && github.event.schedule == '40 13 * * 1-5') }}
         run: python scripts/update_cb_quotes.py
 
       - name: Build public site
