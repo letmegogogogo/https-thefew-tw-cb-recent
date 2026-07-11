@@ -290,7 +290,8 @@
       justify-content: flex-end;
     }
     .weekly-rank-note { color: #718197; font-size: 12px; font-weight: 500; }
-    .weekly-rank-toggle {
+    .weekly-rank-toggle,
+    .weekly-rank-collapse {
       border: 1px solid #c8d7e8;
       border-radius: 999px;
       padding: 5px 10px;
@@ -301,7 +302,8 @@
       font-weight: 800;
       cursor: pointer;
     }
-    .weekly-rank-toggle[hidden] { display: none; }
+    .weekly-rank-toggle[hidden],
+    .weekly-rank-collapse[hidden] { display: none; }
     .weekly-rank-list {
       display: grid;
       grid-template-columns: repeat(5, minmax(150px, 1fr));
@@ -429,6 +431,7 @@
     .table-wrap {
       border: 1px solid var(--line);
       overflow: auto;
+      max-height: 75vh;
       border-radius: 12px;
       background: #fff;
       box-shadow: 0 4px 16px rgba(48, 73, 109, 0.06), inset 0 1px 0 #fff;
@@ -457,6 +460,10 @@
       font-size: 14px;
       line-height: 1.25;
     }
+    .recent-table thead th:first-child {
+      left: 0;
+      z-index: 4;
+    }
     tbody td {
       border-bottom: 1px solid #edf0f3;
       padding: 8px 9px;
@@ -474,6 +481,33 @@
     }
     .recent-table tbody tr:not(.chart-row):nth-child(odd) { background: #ffffff; }
     .recent-table tbody tr:not(.chart-row):nth-child(even) { background: #f8fbff; }
+    .recent-table tbody tr:not(.chart-row) > td:first-child {
+      position: sticky;
+      left: 0;
+      z-index: 2;
+      box-shadow: 1px 0 0 #e2e8f0;
+    }
+    .recent-table tbody tr:not(.chart-row):nth-child(odd) > td:first-child { background: #ffffff; }
+    .recent-table tbody tr:not(.chart-row):nth-child(even) > td:first-child { background: #f8fbff; }
+    .load-more-wrap {
+      display: flex;
+      justify-content: center;
+      padding: 12px 0 4px;
+    }
+    .load-more-button {
+      min-width: 180px;
+      min-height: 42px;
+      padding: 8px 18px;
+      border: 1px solid #bfd0e3;
+      border-radius: 999px;
+      background: #fff;
+      color: #315f97;
+      font: inherit;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .load-more-button:hover { background: #eef5fd; }
+    .load-more-button[hidden] { display: none; }
     tbody tr:hover { background: #f4f8fc; }
     .recent-table tbody tr:not(.chart-row):hover { background: #eef6ff; }
     .issue-date-this-week {
@@ -769,13 +803,14 @@
       .search-count { text-align: left; }
       .weekly-rank-panel { padding: 0 10px 10px; }
       .weekly-rank-list { grid-template-columns: 1fr; }
-      .table-wrap { overflow: visible; border: 0; background: transparent; box-shadow: none; }
+      .table-wrap { overflow: visible; max-height: none; border: 0; background: transparent; box-shadow: none; }
       .mobile-card-table { display: block; width: 100%; min-width: 0 !important; }
       .mobile-card-table thead { display: none; }
       .mobile-card-table tbody { display: grid; gap: 10px; }
       .mobile-card-table tr,
       .mobile-card-table td { display: block; width: 100%; }
       .mobile-card-table td { padding: 0; border: 0; }
+      .recent-table tbody tr:not(.chart-row) > td:first-child { position: static; box-shadow: none; }
       .mobile-card-row { background: transparent !important; }
       .mobile-cb-card {
         padding: 14px;
@@ -865,6 +900,7 @@
             </div>
             <div class="weekly-rank-actions">
               <span class="weekly-rank-note" id="weekly-rank-note"></span>
+              <button class="weekly-rank-collapse" id="weekly-rank-collapse" type="button" hidden>展開排行</button>
               <button class="weekly-rank-toggle" id="weekly-rank-toggle" type="button" hidden>展開 11–30 名</button>
             </div>
           </div>
@@ -887,6 +923,10 @@
             <thead id="head"></thead>
             <tbody id="rows"></tbody>
           </table>
+        </div>
+
+        <div class="load-more-wrap">
+          <button class="load-more-button" id="load-more-button" type="button" hidden>載入更多</button>
         </div>
 
         <div class="footer">
@@ -921,10 +961,14 @@
     const weeklyRankListEl = document.getElementById('weekly-rank-list');
     const weeklyRankNoteEl = document.getElementById('weekly-rank-note');
     const weeklyRankToggleEl = document.getElementById('weekly-rank-toggle');
+    const weeklyRankCollapseEl = document.getElementById('weekly-rank-collapse');
     const weeklyProductSummaryEl = document.getElementById('weekly-product-summary');
+    const loadMoreButtonEl = document.getElementById('load-more-button');
     let currentView = 'recent';
     let weeklyRankExpanded = false;
+    let weeklyRankCollapsed = window.matchMedia('(max-width: 767px)').matches;
     let selectedWeeklyProductTag = '';
+    let recentRenderLimit = 0;
 
     const toDate = (value) => {
       if (!value) return null;
@@ -1503,13 +1547,33 @@
 
     const renderWeeklyTop30Ranking = () => {
       const tracker = raw.weeklyStockTop30Tracker || {};
-      const ranking = Array.isArray(tracker.ranking) ? tracker.ranking.slice(0, 30) : [];
+      const cumulativeRanking = Array.isArray(tracker.ranking) ? tracker.ranking : [];
+      const cumulativeByCode = new Map(cumulativeRanking.map((item) => [String(item.stockCode || ''), item]));
+      const currentSnapshot = tracker.weeklySnapshots?.[tracker.currentWeek];
+      const currentTop30 = Array.isArray(currentSnapshot?.top30) ? currentSnapshot.top30 : [];
+      const ranking = (currentTop30.length
+        ? currentTop30.map((item) => {
+            const cumulative = cumulativeByCode.get(String(item.stockCode || '')) || {};
+            return {
+              ...cumulative,
+              ...item,
+              count: cumulative.count || 1,
+              latestWeeklyChangePct: item.weeklyChangePct,
+              lastEnteredWeek: tracker.currentWeek
+            };
+          })
+        : cumulativeRanking.filter((item) => !tracker.currentWeek || item.lastEnteredWeek === tracker.currentWeek)
+      )
+        .sort((a, b) => Number(b.latestWeeklyChangePct ?? b.weeklyChangePct ?? -Infinity) - Number(a.latestWeeklyChangePct ?? a.weeklyChangePct ?? -Infinity))
+        .slice(0, 30)
+        .map((item, index) => ({ ...item, rank: index + 1 }));
       if (!ranking.length) {
         weeklyRankPanelEl.hidden = true;
         weeklyRankListEl.innerHTML = '';
         weeklyProductSummaryEl.innerHTML = '';
         weeklyRankNoteEl.textContent = '';
         weeklyRankToggleEl.hidden = true;
+        weeklyRankCollapseEl.hidden = true;
         return;
       }
       const productTagsByCode = new Map();
@@ -1539,7 +1603,12 @@
         ? productTop10.map(([tag, count]) => `<button class="weekly-product-chip ${tag === selectedWeeklyProductTag ? 'active' : ''}" type="button" data-weekly-product-tag="${escapeHtml(tag)}">${escapeHtml(tag)} <strong>${escapeHtml(count)}</strong></button>`).join('')
         : '';
       weeklyRankPanelEl.hidden = false;
-      weeklyRankToggleEl.hidden = Boolean(selectedWeeklyProductTag) || ranking.length <= 10;
+      const mobile = isMobileLayout();
+      weeklyRankCollapseEl.hidden = !mobile;
+      weeklyRankCollapseEl.textContent = weeklyRankCollapsed ? '展開排行' : '收合排行';
+      weeklyProductSummaryEl.hidden = mobile && weeklyRankCollapsed;
+      weeklyRankListEl.hidden = mobile && weeklyRankCollapsed;
+      weeklyRankToggleEl.hidden = (mobile && weeklyRankCollapsed) || Boolean(selectedWeeklyProductTag) || ranking.length <= 10;
       weeklyRankToggleEl.textContent = weeklyRankExpanded ? '收合至前 10 名' : '展開 11–30 名';
       weeklyRankNoteEl.textContent = selectedWeeklyProductTag
         ? `統計週別：${tracker.currentWeek ? fmtDate(tracker.currentWeek).replaceAll('-', '/') : '-'}｜已篩選產品標籤：${selectedWeeklyProductTag}｜顯示 ${visibleRanking.length} 檔`
@@ -1784,12 +1853,14 @@
 
     const renderRecent = () => {
       const mobile = isMobileLayout();
+      const batchSize = mobile ? 20 : 50;
+      if (recentRenderLimit <= 0) recentRenderLimit = batchSize;
       tableEl.className = mobile ? 'recent-table mobile-card-table' : 'recent-table';
       tableEl.style.minWidth = mobile ? '' : tableEl.style.minWidth;
       searchPanelEl.hidden = false;
       renderWeeklyTop30Ranking();
       titleEl.textContent = SITE_TITLE;
-      descEl.textContent = '所有已掛牌、尚未下市且仍有發行餘額的可轉債。';
+      descEl.textContent = '存續可轉債及近期／即將發行資料；報價與財務資料日期依各欄位標示。';
       headEl.innerHTML = mobile ? '' : `<tr>${recentHeaders.map((h, index) => {
         const active = sortState.index === index;
         const icon = active ? (sortState.direction === 'desc' ? '▼' : '▲') : '↕';
@@ -1798,18 +1869,22 @@
         return `<th data-col="${index}" class="${classes}"><button class="sort-button" type="button" data-sort-index="${index}" aria-label="排列${escapeHtml(h)}${directionText}"><span>${escapeHtml(h)}</span><span class="sort-icon">${icon}</span></button></th>`;
       }).join('')}</tr>`;
       const visibleRows = filteredRows();
+      const renderedRows = visibleRows.slice(0, recentRenderLimit);
       openChartCode = null;
-      rowsEl.innerHTML = visibleRows.length
-        ? visibleRows.map(mobile ? renderMobileCard : renderRow).join('')
+      rowsEl.innerHTML = renderedRows.length
+        ? renderedRows.map(mobile ? renderMobileCard : renderRow).join('')
         : `<tr><td colspan="${visibleColumnCount()}"><div class="empty">找不到符合篩選條件的可轉債。</div></td></tr>`;
       if (!mobile) {
         rowsEl.querySelectorAll('tr').forEach((tr) => Array.from(tr.children).forEach((cell, index) => cell.dataset.col = index));
         applyColumnVisibility();
       }
-      countEl.textContent = `${visibleRows.length} / ${sorted.length} 筆資料`;
-      searchCountEl.textContent = `找到 ${visibleRows.length} 筆`;
-      updatedEl.textContent = `更新時間：${raw.fetchedAt ? fmtDate(raw.fetchedAt).replaceAll('-', '/') : '-'}`;
-      metaEl.textContent = '資料來源：官方與第三方公開資訊整理；交易前請核對原始公告';
+      const countText = `已顯示 ${renderedRows.length} / 符合 ${visibleRows.length} 筆（總資料 ${sorted.length} 筆）`;
+      countEl.textContent = countText;
+      searchCountEl.textContent = countText;
+      loadMoreButtonEl.hidden = renderedRows.length >= visibleRows.length;
+      loadMoreButtonEl.textContent = `載入更多（尚有 ${Math.max(0, visibleRows.length - renderedRows.length)} 筆）`;
+      updatedEl.textContent = `資料更新：${raw.fetchedAt ? fmtDate(raw.fetchedAt).replaceAll('-', '/') : '-'}｜各欄位資料日期可能不同`;
+      metaEl.textContent = '資料來源：官方與第三方公開資訊整理；報價、營收與財報日期以欄位標示為準';
     };
 
     const renderPrimary = (view) => {
@@ -1817,6 +1892,7 @@
       if (!section) return;
       searchPanelEl.hidden = true;
       weeklyRankPanelEl.hidden = true;
+      loadMoreButtonEl.hidden = true;
       tableEl.className = 'primary-table';
       tableEl.style.minWidth = '';
       titleEl.textContent = SITE_TITLE;
@@ -1850,7 +1926,10 @@
       if (view !== 'recent') view = 'recent';
       currentView = view;
       buttons.forEach((button) => button.setAttribute('aria-pressed', String(button.dataset.view === view)));
-      if (view === 'recent') renderRecent();
+      if (view === 'recent') {
+        recentRenderLimit = 0;
+        renderRecent();
+      }
       else renderPrimary(view);
       document.querySelector('.table-wrap').scrollLeft = 0;
       if (options.collapseSidebar) setSidebarCollapsed(true);
@@ -1884,6 +1963,10 @@
       weeklyRankExpanded = !weeklyRankExpanded;
       renderWeeklyTop30Ranking();
     });
+    weeklyRankCollapseEl.addEventListener('click', () => {
+      weeklyRankCollapsed = !weeklyRankCollapsed;
+      renderWeeklyTop30Ranking();
+    });
     weeklyProductSummaryEl.addEventListener('click', (event) => {
       const button = event.target.closest('[data-weekly-product-tag]');
       if (!button) return;
@@ -1892,7 +1975,10 @@
       renderWeeklyTop30Ranking();
     });
     [searchInputEl, highFilterEl].forEach((control) => control.addEventListener('input', () => {
-      if (currentView === 'recent') renderRecent();
+      if (currentView === 'recent') {
+        recentRenderLimit = 0;
+        renderRecent();
+      }
     }));
     columnOptionsEl.addEventListener('change', (event) => {
       const input = event.target.closest('[data-column]');
@@ -1909,6 +1995,11 @@
       if (sortState.index !== index) sortState = { index, direction: 'desc' };
       else if (sortState.direction === 'desc') sortState = { index, direction: 'asc' };
       else sortState = { index: null, direction: null };
+      recentRenderLimit = 0;
+      renderRecent();
+    });
+    loadMoreButtonEl.addEventListener('click', () => {
+      recentRenderLimit += isMobileLayout() ? 20 : 50;
       renderRecent();
     });
     document.addEventListener('click', (event) => {
