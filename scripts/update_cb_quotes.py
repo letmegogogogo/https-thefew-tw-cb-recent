@@ -6,9 +6,10 @@ import io
 import json
 import re
 import ssl
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
-from urllib.parse import quote, unquote
+from urllib.parse import quote, unquote, urlencode
 from urllib.request import Request, urlopen
 
 
@@ -19,6 +20,7 @@ STOCK_TAGS_PATH = ROOT / "data" / "tw-stock-tags.json"
 ISSUANCE_PURPOSE_PATH = ROOT / "data" / "cb-issuance-purpose.json"
 REDEMPTION_ALERTS_PATH = ROOT / "data" / "cb-redemption-alerts.json"
 WEEKLY_TOP30_TRACKER_PATH = ROOT / "data" / "weekly-stock-top30-tracker.json"
+REVENUE_HISTORY_RECORDS_PATH = ROOT / "data" / "revenue-history-records.json"
 PREFIX = "window.RECENT_CB_DATA = "
 TZ = timezone(timedelta(hours=8))
 HEADERS = {
@@ -92,6 +94,22 @@ def load_weekly_top30_tracker() -> dict:
         return payload if isinstance(payload, dict) else {}
     except (OSError, ValueError):
         return {}
+
+
+def load_revenue_history_records() -> dict:
+    try:
+        payload = json.loads(REVENUE_HISTORY_RECORDS_PATH.read_text(encoding="utf-8"))
+        return payload if isinstance(payload, dict) else {}
+    except (OSError, ValueError):
+        return {}
+
+
+def save_revenue_history_records(records: dict) -> None:
+    REVENUE_HISTORY_RECORDS_PATH.parent.mkdir(parents=True, exist_ok=True)
+    REVENUE_HISTORY_RECORDS_PATH.write_text(
+        json.dumps(records, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
 
 
 def update_weekly_top30_tracker(rows: list[dict], updated_at: str) -> dict:
@@ -523,6 +541,61 @@ def yahoo_revenue_fallback(row: dict) -> dict | None:
     }
 
 
+def fetch_historical_revenue_record(issuer_code: str) -> dict | None:
+    """Return the latest monthly revenue and the all-time maximum in public history."""
+    query = urlencode(
+        {
+            "dataset": "TaiwanStockMonthRevenue",
+            "data_id": issuer_code,
+            # This public dataset rejects earlier dates; 2000 is its earliest reliable query boundary.
+            "start_date": "2000-01-01",
+        }
+    )
+    payload = fetch_json(f"https://api.finmindtrade.com/api/v4/data?{query}")
+    items = payload.get("data", []) if isinstance(payload, dict) else []
+    valid = []
+    for item in items:
+        revenue = number(item.get("revenue"))
+        year = item.get("revenue_year")
+        month = item.get("revenue_month")
+        if revenue is None or year is None or month is None:
+            continue
+        valid.append((int(year) * 100 + int(month), revenue))
+    if not valid:
+        return None
+    valid.sort(key=lambda item: item[0])
+    latest_period, latest_revenue = valid[-1]
+    record_revenue = max(item[1] for item in valid)
+    return {
+        "period": str(latest_period),
+        "latestRevenue": latest_revenue,
+        "recordRevenue": record_revenue,
+        "isRecordHigh": latest_revenue >= record_revenue,
+        "source": "FinMind TaiwanStockMonthRevenue",
+    }
+
+
+def fetch_historical_revenue_records(issuer_codes: set[str], limit: int = 40) -> dict[str, dict]:
+    records: dict[str, dict] = {}
+    selected_codes = sorted(issuer_codes)[:limit]
+    if not selected_codes:
+        return records
+    with ThreadPoolExecutor(max_workers=min(8, len(selected_codes))) as executor:
+        futures = {
+            executor.submit(fetch_historical_revenue_record, code): code
+            for code in selected_codes
+        }
+        for future in as_completed(futures):
+            code = futures[future]
+            try:
+                record = future.result()
+            except Exception:
+                record = None
+            if record:
+                records[code] = record
+    return records
+
+
 def sync_active_rows(data: dict) -> list[dict]:
     issues = fetch_json("https://www.tpex.org.tw/openapi/v1/bond_ISSBD5_data")
     try:
@@ -573,6 +646,12 @@ def sync_active_rows(data: dict) -> list[dict]:
         )
         for row in revenue_rows
     }
+    current_revenues = {
+        str(row.get("公司代號") or row.get("SecuritiesCompanyCode")): number(
+            row.get("營業收入-當月營收") or row.get("CurrentMonthRevenue")
+        )
+        for row in revenue_rows
+    }
     revenue_mom = {
         str(row.get("公司代號") or row.get("SecuritiesCompanyCode")): number(
             row.get("營業收入-上月比較增減(%)")
@@ -589,6 +668,38 @@ def sync_active_rows(data: dict) -> list[dict]:
         )
         for row in revenue_rows
     }
+    revenue_record_candidates = {
+        code
+        for code in revenues
+        if code and number(revenues.get(code)) is not None and number(revenues.get(code)) > 0
+        and number(revenue_mom.get(code)) is not None and number(revenue_mom.get(code)) > 0
+    }
+    revenue_record_candidates.update(
+        str(row.get("issuerCode") or "").strip()
+        for row in existing.values()
+        if number(row.get("revenueYoY")) is not None and number(row.get("revenueYoY")) > 0
+        and number(row.get("revenueMoM")) is not None and number(row.get("revenueMoM")) > 0
+    )
+    historical_revenue_records = load_revenue_history_records()
+    missing_revenue_records = {
+        code for code in revenue_record_candidates
+        if code and code not in historical_revenue_records
+    }
+    historical_revenue_records.update(
+        fetch_historical_revenue_records(missing_revenue_records)
+    )
+    for code, current_revenue in current_revenues.items():
+        record = historical_revenue_records.get(code)
+        period = revenue_periods.get(code)
+        if not record or current_revenue is None or not period:
+            continue
+        previous_record = number(record.get("recordRevenue"))
+        record["period"] = str(period_sort_value(period))
+        record["latestRevenue"] = current_revenue
+        record["recordRevenue"] = max(current_revenue, previous_record or current_revenue)
+        record["isRecordHigh"] = previous_record is None or current_revenue >= previous_record
+        record["source"] = "TWSE/TPEx monthly revenue OpenAPI + historical baseline"
+    save_revenue_history_records(historical_revenue_records)
     margins = {
         str(row.get("公司代號") or row.get("SecuritiesCompanyCode")): number(
             row.get("毛利率(%)(營業毛利)/(營業收入)") or row.get("毛利率")
@@ -655,6 +766,29 @@ def sync_active_rows(data: dict) -> list[dict]:
                 revenue_period = yahoo_revenue.get("revenuePeriod")
                 revenue_source = yahoo_revenue.get("revenueSource")
                 revenue_source_url = yahoo_revenue.get("revenueSourceUrl")
+        revenue_record = historical_revenue_records.get(issuer_code)
+        revenue_record_period_matches = bool(
+            revenue_record
+            and period_sort_value(revenue_record.get("period")) == period_sort_value(revenue_period)
+        )
+        previous_revenue_period_matches = bool(
+            period_sort_value(previous.get("revenuePeriod") or previous.get("revenueYearMonth"))
+            == period_sort_value(revenue_period)
+        )
+        revenue_is_historical_high = (
+            bool(revenue_record.get("isRecordHigh"))
+            if revenue_record_period_matches
+            else bool(previous.get("revenueIsHistoricalHigh"))
+            if previous_revenue_period_matches
+            else False
+        )
+        revenue_historical_record = (
+            revenue_record.get("recordRevenue")
+            if revenue_record_period_matches
+            else previous.get("revenueHistoricalRecord")
+            if previous_revenue_period_matches
+            else None
+        )
         row.update(
             {
                 "issuerCode": issuer_code,
@@ -689,6 +823,15 @@ def sync_active_rows(data: dict) -> list[dict]:
                 "revenuePeriod": revenue_period,
                 "revenueSource": revenue_source,
                 "revenueSourceUrl": revenue_source_url,
+                "revenueIsHistoricalHigh": revenue_is_historical_high,
+                "revenueHistoricalRecord": revenue_historical_record,
+                "revenueHistoricalSource": (
+                    revenue_record.get("source")
+                    if revenue_record_period_matches
+                    else previous.get("revenueHistoricalSource", "")
+                    if previous_revenue_period_matches
+                    else ""
+                ),
                 "grossMargin": gross_margin,
                 "grossMarginQuarter": margin_period,
                 "grossMarginPeriod": margin_period,

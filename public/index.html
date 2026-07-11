@@ -662,6 +662,15 @@
       font-weight: 600;
       white-space: nowrap;
     }
+    .revenue-history-high {
+      display: block;
+      margin-top: 4px;
+      color: #d60000;
+      font-size: 15px;
+      font-weight: 900;
+      line-height: 1.1;
+      white-space: nowrap;
+    }
     .num { text-align: right; font-size: 16px; font-variant-numeric: tabular-nums; }
     .recent-table .num {
       font-size: 16px;
@@ -853,7 +862,7 @@
 </head>
 <body>
   <script>
-    const dataVersion = "b2977e5e027a";
+    const dataVersion = "62b2d73adec8";
     document.write(`<script src="recent-cb-data.js?v=${dataVersion}"><\/script>`);
     document.write(`<script src="cb-primary-market-data.js?v=${dataVersion}"><\/script>`);
     document.write(`<script src="eps-forecast-data.js?v=${dataVersion}"><\/script>`);
@@ -1052,6 +1061,9 @@
     ));
 
     const renderMetricPeriod = (label) => label ? `<div class="metric-period">${escapeHtml(label)}</div>` : '';
+    const renderRevenueHistoricalHigh = (row) => row.revenueIsHistoricalHigh === true
+      ? '<span class="revenue-history-high">歷史新高</span>'
+      : '';
 
     const statusForRow = (row) => {
       const d = toDate(row.issueDate || row.listedDateROC);
@@ -1162,7 +1174,8 @@
       const hasBondData = row.conversionPrice != null
         && Array.isArray(row.issuancePurposeTags)
         && row.issuancePurposeTags.length > 0;
-      return Boolean(hasIdentity && hasCompanyData && hasBondData);
+      const isUpcoming = isUpcomingIssueDate(row.issueDate || row.listedDateROC);
+      return Boolean(hasIdentity && (isUpcoming || (hasCompanyData && hasBondData)));
     };
 
     const isNewCbPublishReady = (row) => {
@@ -1171,6 +1184,18 @@
       const ageDays = Math.floor((taipeiTodayStart().getTime() - issueDate.getTime()) / 86400000);
       if (ageDays > 30) return true;
       const industry = String(row.industryCategory || '').trim();
+      if (ageDays < 0) {
+        return Boolean(
+          /^\d{5,6}$/.test(String(row.bondCode || '').trim())
+          && /^\d{4}$/.test(String(row.issuerCode || '').trim())
+          && String(row.bondShortName || row.bondName || '').trim()
+          && String(row.issuerName || '').trim()
+          && industry
+          && industry !== '-'
+          && row.stockClose != null
+          && row.conversionPrice != null
+        );
+      }
       return Boolean(
         /^\d{5,6}$/.test(String(row.bondCode || '').trim())
         && /^\d{4}$/.test(String(row.issuerCode || '').trim())
@@ -1426,7 +1451,7 @@
             </div>
           </td>
           <td class="num">${revenueGrowth}${renderMetricPeriod(revenuePeriod)}</td>
-          <td class="num">${revenueMomentum}${renderMetricPeriod(revenuePeriod)}</td>
+          <td class="num">${revenueMomentum}${renderMetricPeriod(revenuePeriod)}${renderRevenueHistoricalHigh(row)}</td>
           <td class="num">${grossMargin}${renderMetricPeriod(marginPeriod)}</td>
           <td class="${issueUpcoming ? 'issue-date-this-week' : ''}">${fmtDate(row.issueDate || row.listedDateROC)}</td>
           <td class="redemption-cell">${redemptionAlert}</td>
@@ -1511,7 +1536,7 @@
               </div>
               <div class="mobile-card-footer">
                 <div class="mobile-card-metric"><div class="mobile-card-label">營收年增</div><div class="mobile-card-value">${revenueGrowth}${renderMetricPeriod(revenuePeriod)}</div></div>
-                <div class="mobile-card-metric"><div class="mobile-card-label">營收月增</div><div class="mobile-card-value">${revenueMomentum}${renderMetricPeriod(revenuePeriod)}</div></div>
+                <div class="mobile-card-metric"><div class="mobile-card-label">營收月增</div><div class="mobile-card-value">${revenueMomentum}${renderMetricPeriod(revenuePeriod)}${renderRevenueHistoricalHigh(row)}</div></div>
                 <div class="mobile-card-metric"><div class="mobile-card-label">毛利率</div><div class="mobile-card-value">${grossMargin}${renderMetricPeriod(marginPeriod)}</div></div>
               </div>
             </article>

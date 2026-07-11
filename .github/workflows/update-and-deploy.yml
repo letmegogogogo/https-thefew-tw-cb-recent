@@ -50,6 +50,14 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Restore monthly revenue history cache
+        uses: actions/cache@v4
+        with:
+          path: data/revenue-history-records.json
+          key: revenue-history-${{ runner.os }}-${{ github.run_id }}
+          restore-keys: |
+            revenue-history-${{ runner.os }}-
+
       - name: Fast fetch CB redemption alerts
         if: ${{ !((github.event_name == 'workflow_dispatch' && inputs.mode == 'full') || (github.event_name == 'schedule' && github.event.schedule == '40 13 * * 1-5')) }}
         run: python scripts/fetch_cb_redemption_alerts.py --max-seconds 120 --timeout 8 --max-candidates 1

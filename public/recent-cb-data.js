@@ -1,6 +1,6 @@
 window.RECENT_CB_DATA = {
   "source": "TPEx active convertible bond issuance + MOPS details + TWSE MIS/Yahoo market quotes + TWSE/TPEx industry, monthly revenue and quarterly margin data",
-  "fetchedAt": "2026-07-11T16:33:21.786787+08:00",
+  "fetchedAt": "2026-07-11T20:12:42.804644+08:00",
   "rows": [
     {
       "issuerCode": "6134",
@@ -78,7 +78,7 @@ window.RECENT_CB_DATA = {
       "cbLatestTradeDate": null,
       "cbDaysFromPrevTrade": null,
       "cbChangeBasis": "daily",
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "cbHistoryHigh": null,
       "cbHistoryStart": null,
       "cbHistoryCount": 0,
@@ -90,7 +90,10 @@ window.RECENT_CB_DATA = {
       "industryWeeklyAveragePct": -6.080793055731367,
       "industryTrendAlert": null,
       "weeklyTop30Rank": null,
-      "weeklyTop30Count": 0
+      "weeklyTop30Count": 0,
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "1623",
@@ -160,7 +163,7 @@ window.RECENT_CB_DATA = {
       "cbLatestTradeDate": null,
       "cbDaysFromPrevTrade": null,
       "cbChangeBasis": "daily",
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "cbHistoryHigh": null,
       "cbHistoryStart": null,
       "cbHistoryCount": 0,
@@ -172,7 +175,10 @@ window.RECENT_CB_DATA = {
       "industryWeeklyAveragePct": 2.0411627874148017,
       "industryTrendAlert": null,
       "weeklyTop30Rank": 11,
-      "weeklyTop30Count": 1
+      "weeklyTop30Count": 1,
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8096",
@@ -244,7 +250,7 @@ window.RECENT_CB_DATA = {
       "cbLatestTradeDate": null,
       "cbDaysFromPrevTrade": null,
       "cbChangeBasis": "daily",
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "cbHistoryHigh": null,
       "cbHistoryStart": null,
       "cbHistoryCount": 0,
@@ -262,7 +268,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8096.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8096.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3605",
@@ -328,7 +337,7 @@ window.RECENT_CB_DATA = {
       "cbLatestTradeDate": "2026-07-09",
       "cbDaysFromPrevTrade": 1,
       "cbChangeBasis": "daily",
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "cbHistoryHigh": 125.1,
       "cbHistoryStart": "2026-07-06",
       "cbHistoryCount": 3,
@@ -355,7 +364,10 @@ window.RECENT_CB_DATA = {
       "stockHistoryCount": 4232,
       "stockHistoryValid": true,
       "stockWeeklyChangePct": 3.4013606619062164,
-      "stockIsRecordHigh": false
+      "stockIsRecordHigh": false,
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6187",
@@ -431,7 +443,7 @@ window.RECENT_CB_DATA = {
       "cbLatestTradeDate": "2026-07-09",
       "cbDaysFromPrevTrade": 1,
       "cbChangeBasis": "daily",
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "cbHistoryHigh": 139.95,
       "cbHistoryStart": "2026-07-03",
       "cbHistoryCount": 4,
@@ -449,7 +461,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6187.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6187.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6584",
@@ -526,7 +541,7 @@ window.RECENT_CB_DATA = {
       "cbLatestTradeDate": "2026-07-09",
       "cbDaysFromPrevTrade": 1,
       "cbChangeBasis": "daily",
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "cbHistoryHigh": 146.4,
       "cbHistoryStart": "2026-07-03",
       "cbHistoryCount": 4,
@@ -544,7 +559,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6584.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6584.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8096",
@@ -618,7 +636,7 @@ window.RECENT_CB_DATA = {
       "cbLatestTradeDate": "2026-07-09",
       "cbDaysFromPrevTrade": 1,
       "cbChangeBasis": "daily",
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "cbHistoryHigh": 125.0,
       "cbHistoryStart": "2026-07-03",
       "cbHistoryCount": 4,
@@ -636,7 +654,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8096.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8096.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "5289",
@@ -714,7 +735,7 @@ window.RECENT_CB_DATA = {
       "cbLatestTradeDate": "2026-07-09",
       "cbDaysFromPrevTrade": 1,
       "cbChangeBasis": "daily",
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "cbHistoryHigh": 121.3,
       "cbHistoryStart": "2026-07-03",
       "cbHistoryCount": 4,
@@ -732,7 +753,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/5289.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/5289.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "4190",
@@ -761,7 +785,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 96.99247833481408,
       "conversionPremium": 6.709305481113925,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 1.7606500157354161,
       "grossMargin": 65.46,
       "grossMarginRecord": 67.49834879698065,
@@ -828,7 +852,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": null,
-      "revenueSourceUrl": null
+      "revenueSourceUrl": null,
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6546",
@@ -857,7 +884,7 @@ window.RECENT_CB_DATA = {
       "cbPrevClose": 106.8,
       "cbChangePct": 0.655430711610494,
       "cbQuoteDate": "20260709",
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "listingStatus": "2",
       "listingDate": "2026-06-30",
       "officialDataDate": "2026-07-11",
@@ -927,7 +954,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6546.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6546.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8112",
@@ -956,7 +986,7 @@ window.RECENT_CB_DATA = {
       "cbPrevClose": 110.95,
       "cbChangePct": -0.49571879224875603,
       "cbQuoteDate": "20260709",
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "listingStatus": "2",
       "listingDate": "2026-06-23",
       "officialDataDate": "2026-07-11",
@@ -1026,7 +1056,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8112.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8112.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3294",
@@ -1055,7 +1088,7 @@ window.RECENT_CB_DATA = {
       "cbPrevClose": 127.5,
       "cbChangePct": -0.588235294117645,
       "cbQuoteDate": "20260708",
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "listingStatus": "2",
       "listingDate": "2026-06-18",
       "officialDataDate": "2026-07-11",
@@ -1124,7 +1157,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3294.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3294.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6223",
@@ -1153,7 +1189,7 @@ window.RECENT_CB_DATA = {
       "cbPrevClose": 150.0,
       "cbChangePct": 1.333333333333342,
       "cbQuoteDate": "20260709",
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "listingStatus": "2",
       "listingDate": "2026-06-15",
       "officialDataDate": "2026-07-11",
@@ -1225,7 +1261,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6223.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6223.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6220",
@@ -1254,7 +1293,7 @@ window.RECENT_CB_DATA = {
       "cbPrevClose": 121.95,
       "cbChangePct": 0.8610086100860892,
       "cbQuoteDate": "20260709",
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "listingStatus": "2",
       "listingDate": "2026-06-10",
       "officialDataDate": "2026-07-11",
@@ -1325,7 +1364,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": null,
-      "revenueSourceUrl": null
+      "revenueSourceUrl": null,
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3491",
@@ -1354,7 +1396,7 @@ window.RECENT_CB_DATA = {
       "cbPrevClose": 134.5,
       "cbChangePct": -3.2342007434944198,
       "cbQuoteDate": "20260709",
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "listingStatus": "2",
       "listingDate": "2026-06-09",
       "officialDataDate": "2026-07-11",
@@ -1426,7 +1468,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3491.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3491.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6546",
@@ -1455,7 +1500,7 @@ window.RECENT_CB_DATA = {
       "cbPrevClose": 104.5,
       "cbChangePct": 0.4784688995215225,
       "cbQuoteDate": "20260709",
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "listingStatus": "2",
       "listingDate": "2026-06-09",
       "officialDataDate": "2026-07-11",
@@ -1525,7 +1570,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6546.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6546.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "1717",
@@ -1554,7 +1602,7 @@ window.RECENT_CB_DATA = {
       "cbPrevClose": 139.0,
       "cbChangePct": -1.151079136690647,
       "cbQuoteDate": "20260709",
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "listingStatus": "2",
       "listingDate": "2026-06-08",
       "officialDataDate": "2026-07-11",
@@ -1621,7 +1669,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/1717.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/1717.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "4931",
@@ -1650,7 +1701,7 @@ window.RECENT_CB_DATA = {
       "cbPrevClose": 188.0,
       "cbChangePct": -1.5957446808510634,
       "cbQuoteDate": "20260709",
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "listingStatus": "2",
       "listingDate": "2026-05-29",
       "officialDataDate": "2026-07-11",
@@ -1720,7 +1771,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4931.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4931.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "4749",
@@ -1749,7 +1803,7 @@ window.RECENT_CB_DATA = {
       "cbPrevClose": 145.95,
       "cbChangePct": -1.6786570743405171,
       "cbQuoteDate": "20260709",
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "listingStatus": "2",
       "listingDate": "2026-05-28",
       "officialDataDate": "2026-07-11",
@@ -1817,7 +1871,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4749.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4749.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "4722",
@@ -1846,7 +1903,7 @@ window.RECENT_CB_DATA = {
       "cbPrevClose": 129.95,
       "cbChangePct": 0.03847633705271747,
       "cbQuoteDate": "20260709",
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "listingStatus": "2",
       "listingDate": "2026-05-26",
       "officialDataDate": "2026-07-11",
@@ -1914,7 +1971,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4722.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4722.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "5464",
@@ -1943,7 +2003,7 @@ window.RECENT_CB_DATA = {
       "cbPrevClose": 258.0,
       "cbChangePct": 0.7751937984496138,
       "cbQuoteDate": "20260709",
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "listingStatus": "2",
       "listingDate": "2026-05-25",
       "officialDataDate": "2026-07-11",
@@ -2012,7 +2072,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/5464.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/5464.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "4760",
@@ -2041,7 +2104,7 @@ window.RECENT_CB_DATA = {
       "cbPrevClose": 143.04999999999998,
       "cbChangePct": -3.390422929045789,
       "cbQuoteDate": "20260709",
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "listingStatus": "2",
       "listingDate": "2026-05-22",
       "officialDataDate": "2026-07-11",
@@ -2111,7 +2174,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4760.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4760.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3680",
@@ -2140,7 +2206,7 @@ window.RECENT_CB_DATA = {
       "cbPrevClose": 142.5,
       "cbChangePct": -1.403508771929829,
       "cbQuoteDate": "20260709",
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "listingStatus": "2",
       "listingDate": "2026-05-21",
       "officialDataDate": "2026-07-11",
@@ -2210,7 +2276,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3680.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3680.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6803",
@@ -2239,7 +2308,7 @@ window.RECENT_CB_DATA = {
       "cbPrevClose": 92.55,
       "cbChangePct": -0.10804970286331095,
       "cbQuoteDate": "20260709",
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "listingStatus": "2",
       "listingDate": "2026-05-21",
       "officialDataDate": "2026-07-11",
@@ -2310,7 +2379,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6803.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6803.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "7610",
@@ -2339,7 +2411,7 @@ window.RECENT_CB_DATA = {
       "cbPrevClose": 268.0,
       "cbChangePct": 9.701492537313428,
       "cbQuoteDate": "20260709",
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "listingStatus": "2",
       "listingDate": "2026-05-20",
       "officialDataDate": "2026-07-11",
@@ -2411,7 +2483,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/7610.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/7610.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "4123",
@@ -2440,7 +2515,7 @@ window.RECENT_CB_DATA = {
       "cbPrevClose": 96.8,
       "cbChangePct": -1.0330546985973021,
       "cbQuoteDate": "20260708",
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "listingStatus": "2",
       "listingDate": "2026-05-14",
       "officialDataDate": "2026-07-11",
@@ -2511,7 +2586,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4123.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4123.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8074",
@@ -2540,7 +2618,7 @@ window.RECENT_CB_DATA = {
       "cbPrevClose": 125.0,
       "cbChangePct": 0.40000000000000036,
       "cbQuoteDate": "20260709",
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "listingStatus": "2",
       "listingDate": "2026-05-14",
       "officialDataDate": "2026-07-11",
@@ -2612,7 +2690,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8074.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8074.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "4503",
@@ -2641,7 +2722,7 @@ window.RECENT_CB_DATA = {
       "cbPrevClose": 120.0,
       "cbChangePct": 0.0,
       "cbQuoteDate": "20260708",
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "listingStatus": "2",
       "listingDate": "2026-05-13",
       "officialDataDate": "2026-07-11",
@@ -2711,7 +2792,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": null,
-      "revenueSourceUrl": null
+      "revenueSourceUrl": null,
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "5284",
@@ -2740,7 +2824,7 @@ window.RECENT_CB_DATA = {
       "cbPrevClose": 125.0,
       "cbChangePct": -0.7600000000000051,
       "cbQuoteDate": "20260709",
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "listingStatus": "2",
       "listingDate": "2026-05-11",
       "officialDataDate": "2026-07-11",
@@ -2812,7 +2896,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": null,
-      "revenueSourceUrl": null
+      "revenueSourceUrl": null,
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3680",
@@ -2841,7 +2928,7 @@ window.RECENT_CB_DATA = {
       "cbPrevClose": null,
       "cbChangePct": null,
       "cbQuoteDate": "20260709",
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "listingStatus": "2",
       "listingDate": "2026-05-08",
       "officialDataDate": "2026-07-11",
@@ -2911,7 +2998,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3680.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3680.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8462",
@@ -2940,7 +3030,7 @@ window.RECENT_CB_DATA = {
       "cbPrevClose": null,
       "cbChangePct": null,
       "cbQuoteDate": "20260709",
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "listingStatus": "2",
       "listingDate": "2026-05-08",
       "officialDataDate": "2026-07-11",
@@ -3007,7 +3097,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8462.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8462.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3135",
@@ -3036,7 +3129,7 @@ window.RECENT_CB_DATA = {
       "cbPrevClose": 132.95,
       "cbChangePct": -0.7145543437382385,
       "cbQuoteDate": "20260709",
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "listingStatus": "2",
       "listingDate": "2026-05-05",
       "officialDataDate": "2026-07-11",
@@ -3105,7 +3198,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3135.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3135.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "5284",
@@ -3134,7 +3230,7 @@ window.RECENT_CB_DATA = {
       "cbPrevClose": 118.0,
       "cbChangePct": -2.5423728813559365,
       "cbQuoteDate": "20260709",
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "listingStatus": "2",
       "listingDate": "2026-05-05",
       "officialDataDate": "2026-07-11",
@@ -3206,7 +3302,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": null,
-      "revenueSourceUrl": null
+      "revenueSourceUrl": null,
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8271",
@@ -3235,7 +3334,7 @@ window.RECENT_CB_DATA = {
       "cbPrevClose": 132.05,
       "cbChangePct": 0.34078000757287175,
       "cbQuoteDate": "20260709",
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "listingStatus": "2",
       "listingDate": "2026-05-05",
       "officialDataDate": "2026-07-11",
@@ -3303,7 +3402,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8271.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8271.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "4123",
@@ -3332,7 +3434,7 @@ window.RECENT_CB_DATA = {
       "cbPrevClose": 93.60000000000001,
       "cbChangePct": -0.21367521367521292,
       "cbQuoteDate": "20260709",
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "listingStatus": "2",
       "listingDate": "2026-05-04",
       "officialDataDate": "2026-07-11",
@@ -3403,7 +3505,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4123.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4123.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "4714",
@@ -3432,7 +3537,7 @@ window.RECENT_CB_DATA = {
       "cbPrevClose": 113.0,
       "cbChangePct": 1.327433628318575,
       "cbQuoteDate": "20260706",
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "listingStatus": "2",
       "listingDate": "2026-05-04",
       "officialDataDate": "2026-07-11",
@@ -3500,7 +3605,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4714.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4714.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6603",
@@ -3529,7 +3637,7 @@ window.RECENT_CB_DATA = {
       "cbPrevClose": 113.80000000000001,
       "cbChangePct": 0.08787346221441616,
       "cbQuoteDate": "20260709",
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "listingStatus": "2",
       "listingDate": "2026-05-04",
       "officialDataDate": "2026-07-11",
@@ -3598,7 +3706,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6603.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6603.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8111",
@@ -3627,7 +3738,7 @@ window.RECENT_CB_DATA = {
       "cbPrevClose": 115.0,
       "cbChangePct": -0.8695652173912993,
       "cbQuoteDate": "20260709",
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "listingStatus": "2",
       "listingDate": "2026-04-28",
       "officialDataDate": "2026-07-11",
@@ -3696,7 +3807,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8111.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8111.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8476",
@@ -3725,7 +3839,7 @@ window.RECENT_CB_DATA = {
       "cbPrevClose": null,
       "cbChangePct": null,
       "cbQuoteDate": "20260709",
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "listingStatus": "2",
       "listingDate": "2026-04-21",
       "officialDataDate": "2026-07-11",
@@ -3794,7 +3908,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8476.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8476.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6472",
@@ -3823,7 +3940,7 @@ window.RECENT_CB_DATA = {
       "cbPrevClose": 107.2,
       "cbChangePct": -0.4664207572367629,
       "cbQuoteDate": "20260707",
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "listingStatus": "2",
       "listingDate": "2026-04-15",
       "officialDataDate": "2026-07-11",
@@ -3893,7 +4010,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6472.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6472.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6472",
@@ -3922,7 +4042,7 @@ window.RECENT_CB_DATA = {
       "cbPrevClose": 106.25,
       "cbChangePct": 1.5999971277573577,
       "cbQuoteDate": "20260703",
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "listingStatus": "2",
       "listingDate": "2026-04-01",
       "officialDataDate": "2026-07-11",
@@ -3992,7 +4112,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6472.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6472.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3011",
@@ -4021,7 +4144,7 @@ window.RECENT_CB_DATA = {
       "cbPrevClose": 117.5,
       "cbChangePct": -1.3617021276595698,
       "cbQuoteDate": "20260709",
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "listingStatus": "2",
       "listingDate": "2026-03-26",
       "officialDataDate": "2026-07-11",
@@ -4092,7 +4215,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3011.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3011.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6576",
@@ -4121,7 +4247,7 @@ window.RECENT_CB_DATA = {
       "cbPrevClose": 119.0,
       "cbChangePct": 0.2521034048384996,
       "cbQuoteDate": "20260708",
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "listingStatus": "2",
       "listingDate": "2026-03-25",
       "officialDataDate": "2026-07-11",
@@ -4191,7 +4317,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6576.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6576.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3715",
@@ -4220,7 +4349,7 @@ window.RECENT_CB_DATA = {
       "cbPrevClose": 134.7,
       "cbChangePct": -0.5196733481811378,
       "cbQuoteDate": "20260709",
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "listingStatus": "2",
       "listingDate": "2026-03-24",
       "officialDataDate": "2026-07-11",
@@ -4291,7 +4420,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3715.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3715.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "4113",
@@ -4320,7 +4452,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 73.59413296202867,
       "conversionPremium": 19.302992667987205,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 620.9486166007905,
       "grossMargin": 44.51,
       "grossMarginRecord": 48.30200224360064,
@@ -4388,7 +4520,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4113.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4113.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6547",
@@ -4417,7 +4552,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 128.10811223210516,
       "conversionPremium": 1.2816423092083973,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -25.04,
       "grossMargin": 74.74,
       "grossMarginRecord": 74.74,
@@ -4483,7 +4618,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6547.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6547.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6913",
@@ -4512,7 +4650,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 1.195219123505975,
       "conversionValue": 100.79365079365078,
       "conversionPremium": 28.87715929887427,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 61.075558901645856,
       "grossMargin": 29.19,
       "grossMarginRecord": 29.19,
@@ -4581,7 +4719,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6913.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6913.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2329",
@@ -4610,7 +4751,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 100.19493474830196,
       "conversionPremium": 21.76264229970726,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 3.62,
       "grossMargin": 12.79,
       "grossMarginRecord": 15.354538559610523,
@@ -4678,7 +4819,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2329.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2329.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3324",
@@ -4707,7 +4851,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 83.2579185520362,
       "conversionPremium": 54.33967391304346,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 62.130201162932195,
       "grossMargin": 29.66,
       "grossMarginRecord": 29.66,
@@ -4777,7 +4921,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3324.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3324.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6862",
@@ -4806,7 +4953,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 92.13197969543148,
       "conversionPremium": 22.650137741046827,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -35.00214098644706,
       "grossMargin": 32.55,
       "grossMarginRecord": 43.36878629460317,
@@ -4875,7 +5022,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": null,
-      "revenueSourceUrl": null
+      "revenueSourceUrl": null,
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "5534",
@@ -4904,7 +5054,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 98.99999618530273,
       "conversionPremium": 33.33333847097295,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 452.59,
       "grossMargin": 25.17,
       "grossMarginRecord": 53.8563599192188,
@@ -4971,7 +5121,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/5534.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/5534.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6894",
@@ -5000,7 +5153,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 136.0518292682927,
       "conversionPremium": 13.92717086834734,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 44.54040542343367,
       "grossMargin": 35.82,
       "grossMarginRecord": 41.644453557514865,
@@ -5067,7 +5220,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6894.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6894.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3324",
@@ -5096,7 +5252,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 81.85053380782918,
       "conversionPremium": 60.04782608695653,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 62.130201162932195,
       "grossMargin": 29.66,
       "grossMarginRecord": 29.66,
@@ -5166,7 +5322,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3324.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3324.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2236",
@@ -5195,7 +5354,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 149.02624894157495,
       "conversionPremium": -2.668153409090912,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 27.344137746726226,
       "grossMargin": 13.57,
       "grossMarginRecord": 13.721505539469616,
@@ -5263,7 +5422,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": null,
-      "revenueSourceUrl": null
+      "revenueSourceUrl": null,
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8299",
@@ -5292,7 +5454,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 89.22829581993568,
       "conversionPremium": 53.818918918918946,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 301.0014716799628,
       "grossMargin": 61.31,
       "grossMarginRecord": 61.31,
@@ -5358,7 +5520,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8299.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8299.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6515",
@@ -5387,7 +5552,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 219.32549994350921,
       "conversionPremium": 0.3075338055376742,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 287.9,
       "grossMargin": 43.01,
       "grossMarginRecord": 48.97499752018178,
@@ -5454,7 +5619,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6515.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6515.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3587",
@@ -5483,7 +5651,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 146.46464646464648,
       "conversionPremium": 11.28965517241378,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 11.005887989058916,
       "grossMargin": 30.89,
       "grossMarginRecord": 31.34574228911631,
@@ -5551,7 +5719,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3587.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3587.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6672",
@@ -5580,7 +5751,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 320.4301075268817,
       "conversionPremium": 3.922818791946314,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 34.98597700330342,
       "grossMargin": 34.02,
       "grossMarginRecord": 34.107772693750036,
@@ -5649,7 +5820,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": null,
-      "revenueSourceUrl": null
+      "revenueSourceUrl": null,
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8210",
@@ -5678,7 +5852,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 119.25301938495889,
       "conversionPremium": 26.621531914893627,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 98.03,
       "grossMargin": 32.83,
       "grossMarginRecord": 32.83,
@@ -5746,7 +5920,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8210.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8210.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2374",
@@ -5775,7 +5952,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 86.40552995391705,
       "conversionPremium": 40.095203531901035,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 18.97,
       "grossMargin": 24.32,
       "grossMarginRecord": 29.312574632016414,
@@ -5844,7 +6021,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2374.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2374.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6101",
@@ -5873,7 +6053,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 105.39845758354755,
       "conversionPremium": 13.853658536585378,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -65.58707870747354,
       "grossMargin": 20.12,
       "grossMarginRecord": 20.203104536573846,
@@ -5940,7 +6120,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6101.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6101.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "4923",
@@ -5969,7 +6152,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 182.63127304402929,
       "conversionPremium": 4.582307737598246,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 32.51522372253111,
       "grossMargin": 27.67,
       "grossMarginRecord": 27.67,
@@ -6037,7 +6220,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4923.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4923.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6101",
@@ -6066,7 +6252,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 111.11111111111111,
       "conversionPremium": 6.109999999999993,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -65.58707870747354,
       "grossMargin": 20.12,
       "grossMarginRecord": 20.203104536573846,
@@ -6133,7 +6319,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6101.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6101.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2455",
@@ -6162,7 +6351,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 215.30944625407167,
       "conversionPremium": 2.178517397881996,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 23.55,
       "grossMargin": 38.09,
       "grossMarginRecord": 41.02255422607841,
@@ -6231,7 +6420,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2455.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2455.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8210",
@@ -6260,7 +6452,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 116.66004765687052,
       "conversionPremium": 26.00714893617022,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 98.03,
       "grossMargin": 32.83,
       "grossMarginRecord": 32.83,
@@ -6328,7 +6520,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8210.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8210.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2233",
@@ -6357,7 +6552,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 101.0,
       "conversionPremium": 27.722772277227726,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 7.58,
       "grossMargin": 27.59,
       "grossMarginRecord": 37.460640078601806,
@@ -6424,7 +6619,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2233.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2233.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2455",
@@ -6453,7 +6651,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 202.88520564763658,
       "conversionPremium": 2.521028744326781,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 23.55,
       "grossMargin": 38.09,
       "grossMarginRecord": 41.02255422607841,
@@ -6522,7 +6720,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2455.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2455.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2467",
@@ -6551,7 +6752,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 225.46634225466343,
       "conversionPremium": 3.7848920863309266,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 94.08,
       "grossMargin": 49.47,
       "grossMarginRecord": 49.47,
@@ -6618,7 +6819,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2467.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2467.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6672",
@@ -6647,7 +6851,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 310.41666666666663,
       "conversionPremium": 3.087248322147662,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 34.98597700330342,
       "grossMargin": 34.02,
       "grossMarginRecord": 34.107772693750036,
@@ -6716,7 +6920,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": null,
-      "revenueSourceUrl": null
+      "revenueSourceUrl": null,
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3715",
@@ -6745,7 +6952,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 107.85714285714285,
       "conversionPremium": 27.06622516556294,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 45.48,
       "grossMargin": 16.12,
       "grossMarginRecord": 23.834163824293977,
@@ -6813,7 +7020,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3715.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3715.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3717",
@@ -6842,8 +7052,8 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 145.42857578822546,
       "conversionPremium": -3.732812316150713,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
-      "revenueYoY": 2.16,
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
+      "revenueYoY": 76.33,
       "grossMargin": 17.27,
       "grossMarginRecord": 19.338490369640375,
       "grossMarginIsRecordHigh": false,
@@ -6911,7 +7121,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%81%AF%E5%98%89%E6%8A%95%E6%8E%A7-2026%E5%B9%B46%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B65-52%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E999999-061232870.html"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%81%AF%E5%98%89%E6%8A%95%E6%8E%A7-2026%E5%B9%B46%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B65-52%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E999999-061232870.html",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6199",
@@ -6940,7 +7153,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 91.89895470383276,
       "conversionPremium": 7.6726066350710775,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 724.1009386809703,
       "grossMargin": 54.29,
       "grossMarginRecord": 81.81358115568642,
@@ -7007,7 +7220,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": null,
-      "revenueSourceUrl": null
+      "revenueSourceUrl": null,
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6199",
@@ -7036,7 +7252,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 100.86042065009562,
       "conversionPremium": 15.060003025723834,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 724.1009386809703,
       "grossMargin": 54.29,
       "grossMarginRecord": 81.81358115568642,
@@ -7103,7 +7319,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": null,
-      "revenueSourceUrl": null
+      "revenueSourceUrl": null,
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8021",
@@ -7132,7 +7351,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 256.019656019656,
       "conversionPremium": -1.9606525911708195,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 90.11,
       "grossMargin": 36.59,
       "grossMarginRecord": 36.59,
@@ -7202,7 +7421,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8021.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8021.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "4967",
@@ -7231,7 +7453,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 158.50340136054422,
       "conversionPremium": -0.3175965665236036,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 35.0,
       "grossMargin": 38.01,
       "grossMarginRecord": 38.01,
@@ -7297,7 +7519,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4967.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4967.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3702",
@@ -7326,7 +7551,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 66.23134328358209,
       "conversionPremium": 103.83098591549293,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 131.85,
       "grossMargin": 4.49,
       "grossMarginRecord": 4.49,
@@ -7393,7 +7618,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3702.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3702.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2467",
@@ -7422,7 +7650,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 221.86751795690344,
       "conversionPremium": 0.9611510791366795,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 94.08,
       "grossMargin": 49.47,
       "grossMarginRecord": 49.47,
@@ -7489,7 +7717,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2467.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2467.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2745",
@@ -7518,7 +7749,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 95.23809523809524,
       "conversionPremium": 17.599999999999994,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 5.979834214101961,
       "grossMargin": 14.83,
       "grossMarginRecord": 14.83,
@@ -7584,7 +7815,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2745.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2745.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6510",
@@ -7613,7 +7847,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 141.56088853629512,
       "conversionPremium": 13.025569176882668,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 40.19151145038168,
       "grossMargin": 56.77,
       "grossMarginRecord": 56.77,
@@ -7678,7 +7912,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6510.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6510.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8431",
@@ -7707,7 +7944,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 72.57352716782513,
       "conversionPremium": 27.594735454794627,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -21.02843315184513,
       "grossMargin": 9.27,
       "grossMarginRecord": 34.12496801213354,
@@ -7774,7 +8011,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8431.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8431.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3543",
@@ -7803,7 +8043,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 72.13823223731946,
       "conversionPremium": 59.83203285664847,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 2.77,
       "grossMargin": 9.41,
       "grossMarginRecord": 14.727525903291156,
@@ -7872,7 +8112,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3543.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3543.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6670",
@@ -7901,7 +8144,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 96.85185185185186,
       "conversionPremium": 24.984703632887182,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 7.85,
       "grossMargin": 24.0,
       "grossMarginRecord": 27.813450382901394,
@@ -7968,7 +8211,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6670.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6670.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6904",
@@ -7997,7 +8243,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 98.46153846153847,
       "conversionPremium": 3.085937499999991,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 78.74961324257426,
       "grossMargin": 29.49,
       "grossMarginRecord": 34.976173168564735,
@@ -8065,7 +8311,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6904.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6904.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6796",
@@ -8094,7 +8343,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 58.26771728635774,
       "conversionPremium": 55.66080880473356,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -7.05,
       "grossMargin": 36.54,
       "grossMarginRecord": 48.104836296163285,
@@ -8161,7 +8410,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6796.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6796.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "4739",
@@ -8190,7 +8442,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 139.43661971830986,
       "conversionPremium": 7.575757575757569,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 113.79,
       "grossMargin": 17.93,
       "grossMarginRecord": 19.09442242570574,
@@ -8255,7 +8507,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4739.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4739.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8042",
@@ -8284,7 +8539,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 296.6666666666667,
       "conversionPremium": 16.292134831460658,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 51.2987932743962,
       "grossMargin": 21.97,
       "grossMarginRecord": 23.659911644064373,
@@ -8352,7 +8607,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8042.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8042.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "5309",
@@ -8381,7 +8639,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 114.72726995294744,
       "conversionPremium": 4.421555615446104,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 4.191338797523751,
       "grossMargin": 24.86,
       "grossMarginRecord": 25.688248697448028,
@@ -8450,7 +8708,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/5309.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/5309.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "5309",
@@ -8479,7 +8740,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 99.37007633719858,
       "conversionPremium": 14.722665214784382,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 4.191338797523751,
       "grossMargin": 24.86,
       "grossMarginRecord": 25.688248697448028,
@@ -8548,7 +8809,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/5309.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/5309.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6890",
@@ -8577,7 +8841,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 84.01305057096249,
       "conversionPremium": 17.838834951456285,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -16.77,
       "grossMargin": 11.65,
       "grossMarginRecord": 18.57225583419695,
@@ -8645,7 +8909,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6890.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6890.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2732",
@@ -8674,7 +8941,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 87.34858886390163,
       "conversionPremium": 15.628656757545013,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 25.860273176074088,
       "grossMargin": 49.67,
       "grossMarginRecord": 53.18979436375654,
@@ -8742,7 +9009,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2732.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2732.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6890",
@@ -8771,7 +9041,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 83.6038961038961,
       "conversionPremium": 13.391844660194163,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -16.77,
       "grossMargin": 11.65,
       "grossMarginRecord": 18.57225583419695,
@@ -8839,7 +9109,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6890.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6890.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "4772",
@@ -8868,7 +9141,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 83.53922174181592,
       "conversionPremium": 49.39090573012941,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 272.72885097095804,
       "grossMargin": 50.96,
       "grossMarginRecord": 58.665538803779896,
@@ -8933,7 +9206,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4772.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4772.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3032",
@@ -8962,7 +9238,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 79.88223898516085,
       "conversionPremium": 25.68500992899134,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 45.35,
       "grossMargin": 23.16,
       "grossMarginRecord": 25.092159109907914,
@@ -9028,7 +9304,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3032.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3032.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2368",
@@ -9057,7 +9336,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 238.88888888888889,
       "conversionPremium": 0.46511627906977715,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 78.22,
       "grossMargin": 34.81,
       "grossMarginRecord": 35.563210816787965,
@@ -9127,7 +9406,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2368.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2368.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2402",
@@ -9156,7 +9438,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 117.09091186523438,
       "conversionPremium": 16.06366184628738,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 21.7,
       "grossMargin": 12.82,
       "grossMarginRecord": 19.941227074970296,
@@ -9224,7 +9506,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2402.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2402.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3032",
@@ -9253,7 +9538,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 76.8649683908205,
       "conversionPremium": 30.03322852070074,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 45.35,
       "grossMargin": 23.16,
       "grossMarginRecord": 25.092159109907914,
@@ -9319,7 +9604,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3032.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3032.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6190",
@@ -9348,7 +9636,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 196.88249034561412,
       "conversionPremium": -1.9719835617675652,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 28.784451474890982,
       "grossMargin": 15.21,
       "grossMarginRecord": 18.833165070848615,
@@ -9415,7 +9703,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6190.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6190.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3037",
@@ -9444,7 +9735,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 529.0205562273277,
       "conversionPremium": 3.020571428571439,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 36.31,
       "grossMargin": 17.96,
       "grossMarginRecord": 17.96,
@@ -9513,7 +9804,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3037.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3037.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3551",
@@ -9542,7 +9836,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 117.6300578034682,
       "conversionPremium": 16.466830466830462,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 26.06320332178503,
       "grossMargin": 37.44,
       "grossMarginRecord": 39.04489389423649,
@@ -9610,7 +9904,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3551.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3551.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3684",
@@ -9639,7 +9936,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 100.98619479869714,
       "conversionPremium": 25.759763751033503,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 21.15,
       "grossMargin": 35.11,
       "grossMarginRecord": 35.11,
@@ -9707,7 +10004,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3684.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3684.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "4113",
@@ -9736,7 +10036,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 57.22433532598807,
       "conversionPremium": 76.58571738074271,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 620.9486166007905,
       "grossMargin": 44.51,
       "grossMarginRecord": 48.30200224360064,
@@ -9804,7 +10104,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4113.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4113.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6209",
@@ -9833,7 +10136,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 209.32643277657465,
       "conversionPremium": -1.5891126277994383,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 73.31,
       "grossMargin": 30.93,
       "grossMarginRecord": 30.93,
@@ -9901,7 +10204,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6209.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6209.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2753",
@@ -9930,7 +10236,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 83.80952380952381,
       "conversionPremium": 30.05681818181818,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 10.85,
       "grossMargin": 36.45,
       "grossMarginRecord": 36.45,
@@ -9998,7 +10304,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2753.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2753.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "7713",
@@ -10027,7 +10336,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 95.5345040245211,
       "conversionPremium": 8.128475786343659,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 15.2365489283052,
       "grossMargin": 34.51,
       "grossMarginRecord": 34.64480504082116,
@@ -10095,7 +10404,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/7713.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/7713.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6163",
@@ -10124,7 +10436,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 184.65228122677638,
       "conversionPremium": 41.88830934519072,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 61.380755990320054,
       "grossMargin": 15.75,
       "grossMarginRecord": 24.94058552879258,
@@ -10191,7 +10503,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6163.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6163.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6219",
@@ -10220,7 +10535,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 60.69910430547816,
       "conversionPremium": 71.00747076821321,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 20426.339285714286,
       "grossMargin": 24.63,
       "grossMarginRecord": 54.78977741137675,
@@ -10287,7 +10602,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6219.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6219.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "5201",
@@ -10316,7 +10634,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 66.01941932752294,
       "conversionPremium": 63.588230705591364,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -23.57279773314443,
       "grossMargin": 31.77,
       "grossMarginRecord": 52.813396221943066,
@@ -10384,7 +10702,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/5201.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/5201.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2753",
@@ -10413,7 +10734,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 83.01886792452831,
       "conversionPremium": 31.295454545454525,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 10.85,
       "grossMargin": 36.45,
       "grossMarginRecord": 36.45,
@@ -10481,7 +10802,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2753.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2753.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6477",
@@ -10510,7 +10834,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 89.9548498287158,
       "conversionPremium": 8.443291479832627,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -10.45,
       "grossMargin": 24.77,
       "grossMarginRecord": 43.7112053389687,
@@ -10576,7 +10900,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6477.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6477.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "1256",
@@ -10605,7 +10932,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 103.94736842105263,
       "conversionPremium": 7.74683544303798,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 23.65197002269354,
       "grossMargin": 30.39,
       "grossMarginRecord": 30.550927944565352,
@@ -10672,7 +10999,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": null,
-      "revenueSourceUrl": null
+      "revenueSourceUrl": null,
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3687",
@@ -10701,7 +11031,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 96.75405742821474,
       "conversionPremium": 4.595096774193541,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 15.548913835836128,
       "grossMargin": 40.71,
       "grossMarginRecord": 40.926379008588135,
@@ -10769,7 +11099,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3687.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3687.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8404",
@@ -10798,7 +11131,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 62.6865643173901,
       "conversionPremium": 63.27262646232905,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 5.13730430211043,
       "grossMargin": 33.86,
       "grossMarginRecord": 41.50890212990498,
@@ -10864,7 +11197,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": null,
-      "revenueSourceUrl": null
+      "revenueSourceUrl": null,
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3687",
@@ -10893,7 +11229,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 102.10803689064558,
       "conversionPremium": 1.363225806451629,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 15.548913835836128,
       "grossMargin": 40.71,
       "grossMarginRecord": 40.926379008588135,
@@ -10961,7 +11297,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3687.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3687.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6957",
@@ -10990,7 +11329,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 110.26315789473684,
       "conversionPremium": -1.7350835322195723,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 21.157196683080528,
       "grossMargin": 30.22,
       "grossMarginRecord": 53.19825282577082,
@@ -11058,7 +11397,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": null,
-      "revenueSourceUrl": null
+      "revenueSourceUrl": null,
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "4722",
@@ -11087,7 +11429,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 181.52866242038215,
       "conversionPremium": 1.3614035087719412,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 26.94,
       "grossMargin": 14.15,
       "grossMarginRecord": 18.72276193934992,
@@ -11152,7 +11494,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4722.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4722.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "4438",
@@ -11181,7 +11526,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 80.92105263157895,
       "conversionPremium": 29.014634146341468,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 7.15,
       "grossMargin": 11.91,
       "grossMarginRecord": 16.760774886436366,
@@ -11248,7 +11593,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4438.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4438.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "4168",
@@ -11277,7 +11625,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 105.00000317891438,
       "conversionPremium": 5.7142825137461495,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -100.0,
       "grossMargin": 45.25,
       "grossMarginRecord": 86.4912668582799,
@@ -11343,7 +11691,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%86%A3%E8%81%AF-2026%E5%B9%B45%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B6%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E-100-090740017.html"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%86%A3%E8%81%AF-2026%E5%B9%B45%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B6%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E-100-090740017.html",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3284",
@@ -11372,7 +11723,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 118.56963773094824,
       "conversionPremium": 0.7846547285257577,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 13.114871135860641,
       "grossMargin": 27.73,
       "grossMarginRecord": 35.84645031463702,
@@ -11438,7 +11789,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3284.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3284.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "5439",
@@ -11467,7 +11821,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 108.5,
       "conversionPremium": 27.142854330177137,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 22.13050680059702,
       "grossMargin": 20.33,
       "grossMarginRecord": 25.088799592757333,
@@ -11535,7 +11889,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/5439.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/5439.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6533",
@@ -11564,7 +11921,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 62.175324675324674,
       "conversionPremium": 44.751958224543074,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 247.04,
       "grossMargin": 99.89,
       "grossMarginRecord": 99.96870538910348,
@@ -11630,7 +11987,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6533.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6533.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6207",
@@ -11659,7 +12019,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 284.5849802371541,
       "conversionPremium": 14.20138888888889,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -2.511423329800932,
       "grossMargin": 32.04,
       "grossMarginRecord": 34.47651552904144,
@@ -11727,7 +12087,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6207.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6207.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "7402",
@@ -11756,7 +12119,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 134.22131147540986,
       "conversionPremium": 11.755725190839673,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -17.782929909856914,
       "grossMargin": 25.71,
       "grossMarginRecord": 38.75365915743922,
@@ -11823,7 +12186,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/7402.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/7402.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2743",
@@ -11852,7 +12218,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 48.59259146231192,
       "conversionPremium": 109.90854146791182,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -11.232371613384583,
       "grossMargin": 12.37,
       "grossMarginRecord": 18.192762709585374,
@@ -11919,7 +12285,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2743.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2743.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "4558",
@@ -11948,7 +12317,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 61.57718248815345,
       "conversionPremium": 64.75258017490437,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 32.35737496231282,
       "grossMargin": 11.17,
       "grossMarginRecord": 11.77584835746808,
@@ -12013,7 +12382,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4558.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4558.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6591",
@@ -12042,7 +12414,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 67.78265851520158,
       "conversionPremium": 39.48995970784053,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -48.64,
       "grossMargin": 24.42,
       "grossMarginRecord": 37.48542605024484,
@@ -12110,7 +12482,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6591.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6591.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6207",
@@ -12139,7 +12514,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 276.39155470249517,
       "conversionPremium": 5.285416666666687,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -2.511423329800932,
       "grossMargin": 32.04,
       "grossMarginRecord": 34.47651552904144,
@@ -12207,7 +12582,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6207.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6207.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3707",
@@ -12236,7 +12614,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 198.25436408977555,
       "conversionPremium": 5.924528301886789,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 27.97,
       "grossMargin": 5.06,
       "grossMarginRecord": 5.06,
@@ -12305,7 +12683,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3707.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3707.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "4581",
@@ -12334,7 +12715,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 94.5692883895131,
       "conversionPremium": 1.089900990099002,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 8.199670214360665,
       "grossMargin": 33.23,
       "grossMarginRecord": 35.53201078830456,
@@ -12401,7 +12782,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": null,
-      "revenueSourceUrl": null
+      "revenueSourceUrl": null,
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6821",
@@ -12430,7 +12814,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 119.83278791017437,
       "conversionPremium": 20.334342097033797,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 2.1828358208955225,
       "grossMargin": 36.42,
       "grossMarginRecord": 38.66111063188837,
@@ -12497,7 +12881,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6821.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6821.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "7556",
@@ -12526,7 +12913,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 145.65826330532212,
       "conversionPremium": 5.726923076923085,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 8.775664460795657,
       "grossMargin": 39.22,
       "grossMarginRecord": 41.08343609669839,
@@ -12594,7 +12981,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/7556.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/7556.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "7556",
@@ -12623,7 +13013,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 142.85714285714286,
       "conversionPremium": 15.500000000000004,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 8.775664460795657,
       "grossMargin": 39.22,
       "grossMarginRecord": 41.08343609669839,
@@ -12691,7 +13081,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/7556.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/7556.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2641",
@@ -12720,7 +13113,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 93.00518530020442,
       "conversionPremium": 13.972140002571475,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 4.728910346555229,
       "grossMargin": 39.91,
       "grossMarginRecord": 44.082071539280015,
@@ -12788,7 +13181,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2641.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2641.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3167",
@@ -12817,7 +13213,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 455.88235294117646,
       "conversionPremium": 5.070967741935495,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 139.66,
       "grossMargin": 42.34,
       "grossMarginRecord": 42.34,
@@ -12884,7 +13280,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3167.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3167.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3131",
@@ -12913,7 +13312,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 203.18455674412888,
       "conversionPremium": 4.338638426626318,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 15.21416051997371,
       "grossMargin": 33.78,
       "grossMarginRecord": 46.02889076390873,
@@ -12980,7 +13379,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3131.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3131.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6843",
@@ -13009,7 +13411,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 65.39088196397216,
       "conversionPremium": 54.6087114342672,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -5.9804918464956875,
       "grossMargin": 39.5,
       "grossMarginRecord": 42.18902240987333,
@@ -13078,7 +13480,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": null,
-      "revenueSourceUrl": null
+      "revenueSourceUrl": null,
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6982",
@@ -13107,7 +13512,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 85.27508214067872,
       "conversionPremium": 16.094874979632646,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 29.761525585682048,
       "grossMargin": 24.08,
       "grossMarginRecord": 28.190792001508974,
@@ -13175,7 +13580,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6982.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6982.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "1786",
@@ -13204,7 +13612,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 48.06866952789699,
       "conversionPremium": 111.36428571428571,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 1.05,
       "grossMargin": 70.72,
       "grossMarginRecord": 75.3220096264768,
@@ -13270,7 +13678,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/1786.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/1786.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8411",
@@ -13299,7 +13710,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 93.23307983857349,
       "conversionPremium": 8.54516462957211,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 11.76778006282628,
       "grossMargin": 8.82,
       "grossMarginRecord": 9.807779731457156,
@@ -13365,7 +13776,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": null,
-      "revenueSourceUrl": null
+      "revenueSourceUrl": null,
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3131",
@@ -13394,7 +13808,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 187.54965384178868,
       "conversionPremium": 1.306505295007554,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 15.21416051997371,
       "grossMargin": 33.78,
       "grossMarginRecord": 46.02889076390873,
@@ -13461,7 +13875,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3131.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3131.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "4442",
@@ -13490,7 +13907,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 102.2448948451451,
       "conversionPremium": 10.518965441887374,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 36.198184100282,
       "grossMargin": 27.15,
       "grossMarginRecord": 29.18203370140103,
@@ -13559,7 +13976,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": null,
-      "revenueSourceUrl": null
+      "revenueSourceUrl": null,
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6469",
@@ -13588,7 +14008,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 52.09028983571523,
       "conversionPremium": 93.8941025641026,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -4.896801143504941,
       "grossMargin": 28.1,
       "grossMarginRecord": 29.2819366178552,
@@ -13655,7 +14075,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6469.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6469.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3526",
@@ -13684,7 +14107,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 115.91246290801188,
       "conversionPremium": 18.235776000000016,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 29.721548677475077,
       "grossMargin": 50.38,
       "grossMarginRecord": 53.37092143733737,
@@ -13751,7 +14174,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3526.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3526.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6982",
@@ -13780,7 +14206,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 82.86163641971612,
       "conversionPremium": 17.78671556235043,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 29.761525585682048,
       "grossMargin": 24.08,
       "grossMarginRecord": 28.190792001508974,
@@ -13848,7 +14274,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6982.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6982.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2247",
@@ -13877,7 +14306,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 78.24042981867024,
       "conversionPremium": 36.31060085836913,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -6.99,
       "grossMargin": 11.96,
       "grossMarginRecord": 11.96,
@@ -13944,7 +14373,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2247.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2247.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2530",
@@ -13973,7 +14405,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 60.76923076923077,
       "conversionPremium": 53.36708860759496,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -96.97,
       "grossMargin": 19.68,
       "grossMarginRecord": 43.28009909626712,
@@ -14040,7 +14472,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2530.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2530.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3040",
@@ -14069,7 +14504,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 77.63975155279503,
       "conversionPremium": 28.800000000000004,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 8.72,
       "grossMargin": 58.12,
       "grossMarginRecord": 64.93608963231813,
@@ -14135,7 +14570,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3040.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3040.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2247",
@@ -14164,7 +14602,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 75.74772431729518,
       "conversionPremium": 37.9579399141631,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -6.99,
       "grossMargin": 11.96,
       "grossMarginRecord": 11.96,
@@ -14231,7 +14669,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2247.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2247.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6538",
@@ -14260,7 +14701,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 130.26819923371647,
       "conversionPremium": 2.864705882352947,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 46.498191047032776,
       "grossMargin": 38.53,
       "grossMarginRecord": 38.53,
@@ -14326,7 +14767,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6538.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6538.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6156",
@@ -14355,7 +14799,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 89.5348862556128,
       "conversionPremium": 22.857139379125833,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 55.51257497419903,
       "grossMargin": 15.76,
       "grossMarginRecord": 20.16370939041131,
@@ -14424,7 +14868,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6156.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6156.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6177",
@@ -14453,7 +14900,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 86.61567731751539,
       "conversionPremium": 27.113247173945055,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 1322.16,
       "grossMargin": 50.06,
       "grossMarginRecord": 50.06,
@@ -14521,7 +14968,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6177.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6177.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2530",
@@ -14550,7 +15000,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 56.9164265129683,
       "conversionPremium": 64.9787341772152,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -96.97,
       "grossMargin": 19.68,
       "grossMarginRecord": 43.28009909626712,
@@ -14617,7 +15067,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2530.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2530.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "1466",
@@ -14646,7 +15099,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 89.62766160356237,
       "conversionPremium": 28.866465925302354,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -25.76,
       "grossMargin": 12.64,
       "grossMarginRecord": 12.64,
@@ -14712,7 +15165,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/1466.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/1466.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3188",
@@ -14741,7 +15197,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 75.15923688366155,
       "conversionPremium": 28.726692834519653,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 228.9666328516985,
       "grossMargin": 39.65,
       "grossMarginRecord": 52.43009727721562,
@@ -14807,7 +15263,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3188.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3188.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "4164",
@@ -14836,7 +15295,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 59.917355371900825,
       "conversionPremium": 66.81310344827587,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 80.21,
       "grossMargin": 23.13,
       "grossMarginRecord": 31.60890458756255,
@@ -14903,7 +15362,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4164.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4164.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "1472",
@@ -14932,7 +15394,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 84.28571428571429,
       "conversionPremium": 18.762711864406768,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 13.0,
       "grossMargin": 14.67,
       "grossMarginRecord": 15.90395697272378,
@@ -14999,7 +15461,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/1472.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/1472.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2351",
@@ -15028,7 +15493,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 266.66666666666663,
       "conversionPremium": 6.125000000000025,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 51.72,
       "grossMargin": 19.12,
       "grossMarginRecord": 19.12,
@@ -15096,7 +15561,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2351.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2351.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3617",
@@ -15125,7 +15593,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 79.34426229508198,
       "conversionPremium": 45.31611570247931,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 25.6,
       "grossMargin": 53.86,
       "grossMarginRecord": 55.49013819058014,
@@ -15193,7 +15661,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3617.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3617.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "4555",
@@ -15222,7 +15693,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 110.68181991577148,
       "conversionPremium": 12.936343199926249,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 24.67,
       "grossMargin": 30.13,
       "grossMarginRecord": 32.080970738977655,
@@ -15288,7 +15759,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4555.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4555.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "1472",
@@ -15317,7 +15791,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 86.76470588235294,
       "conversionPremium": 24.474576271186432,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 13.0,
       "grossMargin": 14.67,
       "grossMarginRecord": 15.90395697272378,
@@ -15384,7 +15858,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/1472.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/1472.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "4129",
@@ -15413,7 +15890,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 83.97085332262495,
       "conversionPremium": 36.95228219029498,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 17.083904703229923,
       "grossMargin": 79.52,
       "grossMarginRecord": 80.64335338721465,
@@ -15480,7 +15957,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4129.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4129.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6873",
@@ -15509,7 +15989,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 35.20325141224435,
       "conversionPremium": 130.6605121473442,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 42.53,
       "grossMargin": 31.95,
       "grossMarginRecord": 31.95,
@@ -15577,7 +16057,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6873.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6873.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6117",
@@ -15606,7 +16089,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 91.29886699354213,
       "conversionPremium": 15.006903653499881,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -11.35,
       "grossMargin": 37.56,
       "grossMarginRecord": 37.56,
@@ -15674,7 +16157,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6117.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6117.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6290",
@@ -15703,7 +16189,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 372.65917602996257,
       "conversionPremium": 26.12060301507537,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -2.315079284641538,
       "grossMargin": 31.19,
       "grossMarginRecord": 34.78719724153922,
@@ -15772,7 +16258,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6290.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6290.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6771",
@@ -15801,7 +16290,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 72.36363497647372,
       "conversionPremium": 42.75125901785346,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -13.15,
       "grossMargin": 46.82,
       "grossMarginRecord": 51.11202007313753,
@@ -15868,7 +16357,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6771.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6771.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8087",
@@ -15897,7 +16389,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 77.97029702970298,
       "conversionPremium": 22.48253968253968,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 80.95842014675242,
       "grossMargin": 19.31,
       "grossMarginRecord": 21.50589122990307,
@@ -15964,7 +16456,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8087.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8087.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8422",
@@ -15993,7 +16488,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 13.5,
       "conversionPremium": 990.370347764757,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 50.34,
       "grossMargin": 48.21,
       "grossMarginRecord": 59.614388734179514,
@@ -16059,7 +16554,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8422.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8422.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "1474",
@@ -16088,7 +16586,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 72.41379310344827,
       "conversionPremium": 29.947619047619046,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -6.0,
       "grossMargin": 10.9,
       "grossMarginRecord": 13.351717087475281,
@@ -16154,7 +16652,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/1474.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/1474.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6846",
@@ -16183,7 +16684,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 82.2878247550786,
       "conversionPremium": 15.448427860084891,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 5.666107754120662,
       "grossMargin": 48.69,
       "grossMarginRecord": 49.50786428997985,
@@ -16252,7 +16753,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6846.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6846.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2337",
@@ -16281,7 +16785,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 623.9130434782609,
       "conversionPremium": 11.714285714285722,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 216.09,
       "grossMargin": 40.8,
       "grossMarginRecord": 40.8,
@@ -16348,7 +16852,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2337.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2337.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "1436",
@@ -16377,7 +16884,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 32.00285212108261,
       "conversionPremium": 200.44197197242616,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -79.41,
       "grossMargin": 49.22,
       "grossMarginRecord": 64.77732923646555,
@@ -16443,7 +16950,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/1436.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/1436.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6846",
@@ -16472,7 +16982,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 79.83293738171707,
       "conversionPremium": 23.32002708263934,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 5.666107754120662,
       "grossMargin": 48.69,
       "grossMarginRecord": 49.50786428997985,
@@ -16541,7 +17051,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6846.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6846.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "1598",
@@ -16570,7 +17083,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 56.84523923056466,
       "conversionPremium": 69.31936834606216,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 16.56,
       "grossMargin": 42.12,
       "grossMarginRecord": 43.72233932714572,
@@ -16633,7 +17146,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/1598.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/1598.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "4439",
@@ -16662,7 +17178,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 98.05825242718447,
       "conversionPremium": 3.254950495049491,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 15.559062052768706,
       "grossMargin": 19.37,
       "grossMarginRecord": 20.747288046477927,
@@ -16729,7 +17245,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": null,
-      "revenueSourceUrl": null
+      "revenueSourceUrl": null,
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6451",
@@ -16758,7 +17277,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 214.75953565505804,
       "conversionPremium": -1.7505791505791568,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 4.891403908887854,
       "grossMargin": 11.96,
       "grossMarginRecord": 23.878636206715754,
@@ -16825,7 +17344,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": null,
-      "revenueSourceUrl": null
+      "revenueSourceUrl": null,
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6854",
@@ -16854,7 +17376,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 45.2371462734157,
       "conversionPremium": 136.97339207048458,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 5.083444855545934,
       "grossMargin": -27.03,
       "grossMarginRecord": 54.5511946616919,
@@ -16923,7 +17445,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": null,
-      "revenueSourceUrl": null
+      "revenueSourceUrl": null,
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "9906",
@@ -16952,7 +17477,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 36.22540250447227,
       "conversionPremium": 168.59604938271607,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -33.86,
       "grossMargin": 37.52,
       "grossMarginRecord": 38.97675641384671,
@@ -17019,7 +17544,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/9906.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/9906.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "4510",
@@ -17048,7 +17576,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 86.48373828670842,
       "conversionPremium": 17.94124770815586,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 2.6206101738323144,
       "grossMargin": 18.25,
       "grossMarginRecord": 22.20045161518275,
@@ -17115,7 +17643,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4510.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4510.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3045",
@@ -17144,7 +17675,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 93.69602763385147,
       "conversionPremium": 13.345253456221196,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 3.9034933380656756,
       "grossMargin": 21.56,
       "grossMarginRecord": 21.56,
@@ -17211,7 +17742,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": null,
-      "revenueSourceUrl": null
+      "revenueSourceUrl": null,
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3095",
@@ -17240,7 +17774,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 92.82238814082459,
       "conversionPremium": 23.89252453355204,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 29.668411867364746,
       "grossMargin": 23.04,
       "grossMarginRecord": 23.04,
@@ -17307,7 +17841,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3095.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3095.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3548",
@@ -17336,7 +17873,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 48.64705702837775,
       "conversionPremium": 111.72914928834446,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 7.064940499400171,
       "grossMargin": 8.1,
       "grossMarginRecord": 15.398251969949905,
@@ -17405,7 +17942,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3548.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3548.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3045",
@@ -17434,7 +17974,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 88.21138211382113,
       "conversionPremium": 15.63133640552996,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 3.9034933380656756,
       "grossMargin": 21.56,
       "grossMarginRecord": 21.56,
@@ -17501,7 +18041,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": null,
-      "revenueSourceUrl": null
+      "revenueSourceUrl": null,
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3390",
@@ -17530,7 +18073,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 102.29007342389522,
       "conversionPremium": 31.977615697422745,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 40.18643031784841,
       "grossMargin": 16.14,
       "grossMarginRecord": 19.6547665751275,
@@ -17597,7 +18140,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3390.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3390.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8028",
@@ -17626,7 +18172,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 222.73699215965786,
       "conversionPremium": 5.954560000000009,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 33.62,
       "grossMargin": 37.58,
       "grossMarginRecord": 37.58,
@@ -17694,7 +18240,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8028.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8028.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2528",
@@ -17723,7 +18272,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 49.8888905843099,
       "conversionPremium": 83.40756615016176,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -5.37,
       "grossMargin": 7.92,
       "grossMarginRecord": 41.388126456338306,
@@ -17790,7 +18339,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2528.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2528.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2755",
@@ -17819,7 +18371,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 130.18867924528303,
       "conversionPremium": 22.898550724637666,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 18.33946693431471,
       "grossMargin": 27.31,
       "grossMarginRecord": 27.529174947765377,
@@ -17886,7 +18438,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2755.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2755.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "4569",
@@ -17915,7 +18470,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 79.24528301886792,
       "conversionPremium": 48.02142857142857,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 10.89,
       "grossMargin": 28.11,
       "grossMarginRecord": 28.11,
@@ -17982,7 +18537,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4569.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4569.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "1514",
@@ -18011,7 +18569,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 108.2155477031802,
       "conversionPremium": 21.285714285714285,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 39.69,
       "grossMargin": 17.57,
       "grossMarginRecord": 20.060410058066182,
@@ -18079,7 +18637,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/1514.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/1514.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8155",
@@ -18108,7 +18669,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 276.813880126183,
       "conversionPremium": 6.931054131054126,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 31.89771461447125,
       "grossMargin": 24.05,
       "grossMarginRecord": 24.135706150917088,
@@ -18178,7 +18739,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8155.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8155.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2528",
@@ -18207,7 +18771,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 48.38362233392124,
       "conversionPremium": 111.43518212417627,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -5.37,
       "grossMargin": 7.92,
       "grossMarginRecord": 41.388126456338306,
@@ -18274,7 +18838,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2528.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2528.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "1316",
@@ -18303,7 +18870,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 58.146069558818695,
       "conversionPremium": 75.42028338961084,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 101.97,
       "grossMargin": 32.15,
       "grossMarginRecord": 54.60332556544859,
@@ -18369,7 +18936,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/1316.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/1316.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2442",
@@ -18398,7 +18968,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 72.91666666666667,
       "conversionPremium": 33.714285714285694,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 220.09,
       "grossMargin": 28.85,
       "grossMarginRecord": 59.28075481342647,
@@ -18466,7 +19036,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2442.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2442.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "4979",
@@ -18495,7 +19068,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 209.9514563106796,
       "conversionPremium": 55.750289017341046,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 27.683817134007082,
       "grossMargin": 25.42,
       "grossMarginRecord": 25.42,
@@ -18562,7 +19135,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4979.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4979.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "1438",
@@ -18591,7 +19167,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 38.173914370329484,
       "conversionPremium": 213.56490937444005,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": null,
       "grossMargin": 39.56,
       "grossMarginRecord": 42.522699386503064,
@@ -18658,7 +19234,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B8%89%E5%9C%B0%E9%96%8B%E7%99%BC-2026%E5%B9%B45%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B6111-7%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E999999-032403796.html"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B8%89%E5%9C%B0%E9%96%8B%E7%99%BC-2026%E5%B9%B45%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B6111-7%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E999999-032403796.html",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "5245",
@@ -18687,7 +19266,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 73.57142857142858,
       "conversionPremium": 26.74757281553395,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -9.126897420407953,
       "grossMargin": 2.13,
       "grossMarginRecord": 8.373542749902889,
@@ -18755,7 +19334,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/5245.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/5245.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "5608",
@@ -18784,7 +19366,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 75.64767037030946,
       "conversionPremium": 42.76711955744288,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 21.83,
       "grossMargin": 11.52,
       "grossMarginRecord": 16.385266742867806,
@@ -18852,7 +19434,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/5608.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/5608.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "1101",
@@ -18881,7 +19466,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 62.191782912162886,
       "conversionPremium": 60.79294613765276,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -0.059289218784111405,
       "grossMargin": 18.72,
       "grossMarginRecord": 23.28955052490694,
@@ -18951,7 +19536,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": null,
-      "revenueSourceUrl": null
+      "revenueSourceUrl": null,
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "4979",
@@ -18980,7 +19568,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 242.97752808988764,
       "conversionPremium": 7.0057803468208,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 27.683817134007082,
       "grossMargin": 25.42,
       "grossMarginRecord": 25.42,
@@ -19047,7 +19635,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4979.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4979.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8489",
@@ -19076,7 +19667,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 75.34722487131754,
       "conversionPremium": 52.626722744472445,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 71.11426130184869,
       "grossMargin": 54.59,
       "grossMarginRecord": 54.59,
@@ -19143,7 +19734,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8489.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8489.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6870",
@@ -19172,7 +19766,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 116.29778672032194,
       "conversionPremium": 2.323529411764702,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 54.549156683747924,
       "grossMargin": 66.29,
       "grossMarginRecord": 73.34430078153977,
@@ -19241,7 +19835,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6870.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6870.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6870",
@@ -19270,7 +19867,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 122.14708368554523,
       "conversionPremium": -0.12041522491349488,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 54.549156683747924,
       "grossMargin": 66.29,
       "grossMarginRecord": 73.34430078153977,
@@ -19339,7 +19936,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6870.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6870.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6645",
@@ -19368,7 +19968,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 55.81066828235558,
       "conversionPremium": 84.46294081117,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 40.123568962384155,
       "grossMargin": 11.65,
       "grossMarginRecord": 16.860849656575937,
@@ -19436,7 +20036,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": null,
-      "revenueSourceUrl": null
+      "revenueSourceUrl": null,
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2442",
@@ -19465,7 +20068,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 73.75478927203065,
       "conversionPremium": 32.53376623376625,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 220.09,
       "grossMargin": 28.85,
       "grossMarginRecord": 59.28075481342647,
@@ -19533,7 +20136,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2442.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2442.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3313",
@@ -19562,7 +20168,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 71.51515267112039,
       "conversionPremium": 48.0805060810072,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 12204.166666666666,
       "grossMargin": -44.42,
       "grossMarginRecord": 14.178980574464553,
@@ -19632,7 +20238,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3313.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3313.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3346",
@@ -19661,7 +20270,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 67.91237211719002,
       "conversionPremium": 44.45085179872383,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -29.48,
       "grossMargin": 8.89,
       "grossMarginRecord": 14.719983753581516,
@@ -19727,7 +20336,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3346.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3346.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3303",
@@ -19756,7 +20368,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 95.48387219828945,
       "conversionPremium": 16.459457958589276,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 48.97202883493948,
       "grossMargin": 34.29,
       "grossMarginRecord": 41.614861647531875,
@@ -19824,7 +20436,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3303.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3303.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3591",
@@ -19853,7 +20468,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 100.19607543945312,
       "conversionPremium": 24.75538532997281,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 34.83,
       "grossMargin": 22.25,
       "grossMarginRecord": 24.444790023622804,
@@ -19922,7 +20537,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3591.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3591.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3702",
@@ -19951,7 +20569,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 136.53846153846155,
       "conversionPremium": 5.098591549295772,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 131.85,
       "grossMargin": 4.49,
       "grossMarginRecord": 4.49,
@@ -20018,7 +20636,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3702.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3702.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6664",
@@ -20047,7 +20668,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 122.05882352941177,
       "conversionPremium": 16.665060240963857,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 19.32041386890965,
       "grossMargin": 48.23,
       "grossMarginRecord": 67.88714844020416,
@@ -20114,7 +20735,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6664.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6664.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8374",
@@ -20143,7 +20767,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 64.4628122101862,
       "conversionPremium": 67.53845557940798,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 39.81,
       "grossMargin": 24.97,
       "grossMarginRecord": 26.571934493034338,
@@ -20209,7 +20833,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8374.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8374.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "9802",
@@ -20238,7 +20865,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 66.43046944198406,
       "conversionPremium": 57.6084,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 15.45,
       "grossMargin": 15.85,
       "grossMarginRecord": 20.383075405009375,
@@ -20302,7 +20929,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/9802.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/9802.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8171",
@@ -20331,7 +20961,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 57.10306406685237,
       "conversionPremium": 59.36097560975608,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 294.46343638525565,
       "grossMargin": 1.8,
       "grossMarginRecord": 29.933528933976493,
@@ -20398,7 +21028,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8171.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8171.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8171",
@@ -20427,7 +21060,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 60.65088757396451,
       "conversionPremium": 70.23658536585361,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 294.46343638525565,
       "grossMargin": 1.8,
       "grossMarginRecord": 29.933528933976493,
@@ -20494,7 +21127,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8171.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8171.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3702",
@@ -20523,7 +21159,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 132.29813664596273,
       "conversionPremium": 4.763380281690144,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 131.85,
       "grossMargin": 4.49,
       "grossMarginRecord": 4.49,
@@ -20590,7 +21226,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3702.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3702.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "9958",
@@ -20619,7 +21258,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 49.159663865546214,
       "conversionPremium": 100.26581196581196,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 64.09,
       "grossMargin": 33.19,
       "grossMarginRecord": 34.25576869922062,
@@ -20686,7 +21325,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/9958.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/9958.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "4549",
@@ -20715,7 +21357,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 60.24096385542169,
       "conversionPremium": 80.10999999999999,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 3.6075574168626776,
       "grossMargin": 62.38,
       "grossMarginRecord": 62.38,
@@ -20781,7 +21423,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4549.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4549.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6874",
@@ -20810,7 +21455,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 77.49999717429831,
       "conversionPremium": 31.612908024500854,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -23.167097999989416,
       "grossMargin": 9.56,
       "grossMarginRecord": 26.975571472387106,
@@ -20878,7 +21523,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6874.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6874.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3257",
@@ -20907,7 +21555,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 85.59999593098958,
       "conversionPremium": 41.9392590835552,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -42.5,
       "grossMargin": 44.98,
       "grossMarginRecord": 53.58302033150976,
@@ -20974,7 +21622,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3257.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3257.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6835",
@@ -21003,7 +21654,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 67.61810723252184,
       "conversionPremium": 44.93159304652288,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 1.57,
       "grossMargin": 16.58,
       "grossMarginRecord": 28.96111674559379,
@@ -21069,7 +21720,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6835.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6835.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6768",
@@ -21098,7 +21752,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 70.4950464834081,
       "conversionPremium": 47.66995014961972,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -1.9562123841563979,
       "grossMargin": 16.54,
       "grossMarginRecord": 22.153947040051825,
@@ -21166,7 +21820,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": null,
-      "revenueSourceUrl": null
+      "revenueSourceUrl": null,
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6584",
@@ -21195,7 +21852,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 343.5233160621762,
       "conversionPremium": 7.9984917043740555,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 40.64234150174336,
       "grossMargin": 41.55,
       "grossMarginRecord": 41.55,
@@ -21262,7 +21919,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6584.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6584.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6584",
@@ -21291,7 +21951,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 370.8053691275167,
       "conversionPremium": 1.6705882352941348,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 40.64234150174336,
       "grossMargin": 41.55,
       "grossMarginRecord": 41.55,
@@ -21358,7 +22018,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6584.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6584.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "9939",
@@ -21387,7 +22050,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 72.74346793349167,
       "conversionPremium": 44.96146938775514,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 12.13,
       "grossMargin": 22.34,
       "grossMarginRecord": 24.120725152090802,
@@ -21456,7 +22119,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/9939.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/9939.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "9958",
@@ -21485,7 +22151,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 47.368421052631575,
       "conversionPremium": 108.47222222222226,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 64.09,
       "grossMargin": 33.19,
       "grossMarginRecord": 34.25576869922062,
@@ -21553,7 +22219,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/9958.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/9958.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6706",
@@ -21582,7 +22251,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 77.74049217002236,
       "conversionPremium": 28.633093525179866,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -26.07,
       "grossMargin": -2.01,
       "grossMarginRecord": 36.89500841486194,
@@ -21651,7 +22320,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6706.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6706.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2548",
@@ -21680,7 +22352,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 74.10124724871606,
       "conversionPremium": 41.6980198019802,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -88.82,
       "grossMargin": 26.0,
       "grossMarginRecord": 135.15233404524255,
@@ -21748,7 +22420,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2548.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2548.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3013",
@@ -21777,7 +22452,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 70.58823529411765,
       "conversionPremium": 77.08333333333333,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 26.51,
       "grossMargin": 21.15,
       "grossMarginRecord": 21.200019246499544,
@@ -21845,7 +22520,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3013.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3013.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3516",
@@ -21874,7 +22552,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 98.87640306565646,
       "conversionPremium": 21.363638117293693,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 18.49147812219675,
       "grossMargin": 16.93,
       "grossMarginRecord": 16.93,
@@ -21941,7 +22619,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3516.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3516.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "5212",
@@ -21970,7 +22651,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 71.80451127819549,
       "conversionPremium": 35.22827225130889,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 2.442501018155317,
       "grossMargin": 46.75,
       "grossMarginRecord": 53.974602061789966,
@@ -22040,7 +22721,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/5212.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/5212.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6197",
@@ -22069,7 +22753,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 224.0625,
       "conversionPremium": 7.112970711297062,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 45.21,
       "grossMargin": 35.77,
       "grossMarginRecord": 36.93049465653312,
@@ -22140,7 +22824,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6197.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6197.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6425",
@@ -22169,7 +22856,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 115.57377049180329,
       "conversionPremium": 50.55319148936168,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 25.871529291501933,
       "grossMargin": 27.72,
       "grossMarginRecord": 34.09541256963398,
@@ -22235,7 +22922,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6425.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6425.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6863",
@@ -22264,7 +22954,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 30.376433077498465,
       "conversionPremium": 207.1460028304395,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 73.79305305207775,
       "grossMargin": 19.32,
       "grossMarginRecord": 29.497839074115962,
@@ -22333,7 +23023,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": null,
-      "revenueSourceUrl": null
+      "revenueSourceUrl": null,
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "9935",
@@ -22362,7 +23055,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 52.43552789988696,
       "conversionPremium": 88.04044499800403,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 17.01,
       "grossMargin": 27.29,
       "grossMarginRecord": 27.293389789257468,
@@ -22429,7 +23122,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/9935.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/9935.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8147",
@@ -22458,7 +23154,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 110.32689450222884,
       "conversionPremium": 21.09468013468012,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 14.906972915123076,
       "grossMargin": 40.28,
       "grossMarginRecord": 40.71685592784709,
@@ -22529,7 +23225,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8147.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8147.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2034",
@@ -22558,7 +23257,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 80.27343451976776,
       "conversionPremium": 33.29440884163326,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 22.48,
       "grossMargin": 8.41,
       "grossMarginRecord": 13.333509506612968,
@@ -22624,7 +23323,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2034.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2034.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2548",
@@ -22653,7 +23355,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 73.18840579710145,
       "conversionPremium": 38.47821782178216,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -88.82,
       "grossMargin": 26.0,
       "grossMarginRecord": 135.15233404524255,
@@ -22721,7 +23423,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2548.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2548.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "1609",
@@ -22750,7 +23455,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 73.63464872715836,
       "conversionPremium": 43.546552916487414,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 22.67,
       "grossMargin": 18.91,
       "grossMarginRecord": 18.91,
@@ -22819,7 +23524,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/1609.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/1609.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6182",
@@ -22848,7 +23556,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 510.3550295857989,
       "conversionPremium": 2.281739130434768,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 14.108955904198915,
       "grossMargin": 19.03,
       "grossMarginRecord": 28.753381058505216,
@@ -22918,7 +23626,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6182.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6182.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "5244",
@@ -22947,7 +23658,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 74.13043146548064,
       "conversionPremium": 33.27859833920825,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 3.22,
       "grossMargin": 24.15,
       "grossMarginRecord": 45.89228003837163,
@@ -23014,7 +23725,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/5244.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/5244.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "1781",
@@ -23043,7 +23757,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 66.38888782925076,
       "conversionPremium": 54.01673885994658,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 35.98708339977675,
       "grossMargin": 12.52,
       "grossMarginRecord": 27.370645523274383,
@@ -23110,7 +23824,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/1781.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/1781.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2464",
@@ -23139,7 +23856,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 201.87499999999997,
       "conversionPremium": 2.0433436532507843,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 30.83,
       "grossMargin": 18.79,
       "grossMarginRecord": 20.778195132536453,
@@ -23206,7 +23923,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2464.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2464.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6629",
@@ -23235,7 +23955,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 80.0,
       "conversionPremium": 26.875000000000004,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 109.42041912837249,
       "grossMargin": 21.59,
       "grossMarginRecord": 33.97556589631277,
@@ -23303,7 +24023,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": null,
-      "revenueSourceUrl": null
+      "revenueSourceUrl": null,
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3033",
@@ -23332,7 +24055,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 135.26042670881125,
       "conversionPremium": 6.424327870778979,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 54.45,
       "grossMargin": 6.18,
       "grossMarginRecord": 6.18,
@@ -23399,7 +24122,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3033.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3033.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6111",
@@ -23428,7 +24154,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 62.61194143722306,
       "conversionPremium": 58.75565861451837,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 253.96,
       "grossMargin": 26.38,
       "grossMarginRecord": 39.28428140466732,
@@ -23498,7 +24224,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6111.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6111.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "4542",
@@ -23527,7 +24256,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 421.08294930875576,
       "conversionPremium": 32.9904240766074,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 102.04566933934942,
       "grossMargin": 39.18,
       "grossMarginRecord": 39.18,
@@ -23594,7 +24323,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4542.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4542.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3564",
@@ -23623,7 +24355,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 63.64705702837776,
       "conversionPremium": 47.92514280435962,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 30.325462106655056,
       "grossMargin": 22.26,
       "grossMarginRecord": 26.795638030843698,
@@ -23692,7 +24424,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3564.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3564.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "1595",
@@ -23721,7 +24456,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 185.378590078329,
       "conversionPremium": 10.58450704225351,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 27.897197482174107,
       "grossMargin": 14.17,
       "grossMarginRecord": 35.1343990849424,
@@ -23790,7 +24525,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/1595.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/1595.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3322",
@@ -23819,7 +24557,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 56.77039529015979,
       "conversionPremium": 72.62518518518522,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -9.94,
       "grossMargin": 10.16,
       "grossMarginRecord": 14.818135581667269,
@@ -23886,7 +24624,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3322.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3322.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6680",
@@ -23915,7 +24656,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 64.76377752509329,
       "conversionPremium": 43.753195934143264,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 6.992099759894663,
       "grossMargin": 32.39,
       "grossMarginRecord": 36.23622192888792,
@@ -23983,7 +24724,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6680.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6680.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3691",
@@ -24012,7 +24756,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 120.33898305084745,
       "conversionPremium": 8.360563380281704,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 131.17,
       "grossMargin": 18.28,
       "grossMarginRecord": 18.28,
@@ -24080,7 +24824,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3691.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3691.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2228",
@@ -24109,7 +24856,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 89.41472256923767,
       "conversionPremium": 28.61416632026179,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 2.04,
       "grossMargin": 22.39,
       "grossMarginRecord": 24.985511903638365,
@@ -24176,7 +24923,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2228.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2228.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6179",
@@ -24205,7 +24955,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 92.54967140046176,
       "conversionPremium": 13.236490647850218,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 229.21779232726794,
       "grossMargin": 8.75,
       "grossMarginRecord": 10.933158098215277,
@@ -24272,7 +25022,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6179.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6179.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "1436",
@@ -24301,7 +25054,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 24.602740562125426,
       "conversionPremium": 312.352435875281,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -79.41,
       "grossMargin": 49.22,
       "grossMarginRecord": 64.77732923646555,
@@ -24367,7 +25120,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/1436.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/1436.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3376",
@@ -24396,7 +25152,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 96.03960396039604,
       "conversionPremium": 43.170103092783506,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -4.76,
       "grossMargin": 14.28,
       "grossMarginRecord": 16.464768504798595,
@@ -24465,7 +25221,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3376.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3376.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8927",
@@ -24494,7 +25253,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 35.06982642628233,
       "conversionPremium": 187.4265722754122,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 84.75282052915277,
       "grossMargin": 16.24,
       "grossMarginRecord": 21.721868996999934,
@@ -24557,7 +25316,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8927.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8927.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6432",
@@ -24586,7 +25348,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 223.40425081005048,
       "conversionPremium": 10.561906993440239,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 18.868506609079475,
       "grossMargin": 21.77,
       "grossMarginRecord": 23.51453943931743,
@@ -24654,7 +25416,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6432.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6432.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8927",
@@ -24683,7 +25448,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 32.73765985274605,
       "conversionPremium": 205.45860776182496,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 84.75282052915277,
       "grossMargin": 16.24,
       "grossMarginRecord": 21.721868996999934,
@@ -24746,7 +25511,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8927.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8927.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3518",
@@ -24775,7 +25543,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 85.28571537562779,
       "conversionPremium": 38.35845719331448,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -42.36,
       "grossMargin": -13.12,
       "grossMarginRecord": 14.079494001773796,
@@ -24842,7 +25610,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3518.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3518.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6830",
@@ -24871,7 +25642,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 277.6666666666667,
       "conversionPremium": 10.20408163265305,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 10.36,
       "grossMargin": 21.58,
       "grossMarginRecord": 28.579823503784237,
@@ -24939,7 +25710,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6830.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6830.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8091",
@@ -24968,7 +25742,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 216.91176470588235,
       "conversionPremium": 7.877966101694911,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 71.69755125469767,
       "grossMargin": 40.59,
       "grossMarginRecord": 40.59,
@@ -25035,7 +25809,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8091.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8091.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "1536",
@@ -25064,7 +25841,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 76.11403265983945,
       "conversionPremium": 30.659218181818204,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 3.82,
       "grossMargin": 6.52,
       "grossMarginRecord": 7.904533477467739,
@@ -25130,7 +25907,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/1536.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/1536.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "4137",
@@ -25159,7 +25939,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 58.25301020978445,
       "conversionPremium": 72.1799433862615,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 22.6,
       "grossMargin": 79.65,
       "grossMarginRecord": 83.37238955803703,
@@ -25226,7 +26006,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4137.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4137.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "1402",
@@ -25255,7 +26038,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 60.462556746562676,
       "conversionPremium": 68.699448863116,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 19.43789600671313,
       "grossMargin": 21.9,
       "grossMarginRecord": 21.9,
@@ -25322,7 +26105,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": null,
-      "revenueSourceUrl": null
+      "revenueSourceUrl": null,
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "1402",
@@ -25351,7 +26137,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 81.45400819863339,
       "conversionPremium": 23.136972898140073,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 19.43789600671313,
       "grossMargin": 21.9,
       "grossMarginRecord": 21.9,
@@ -25418,7 +26204,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": null,
-      "revenueSourceUrl": null
+      "revenueSourceUrl": null,
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3605",
@@ -25447,7 +26236,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 178.82352342792586,
       "conversionPremium": 2.894740285195474,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 29.81,
       "grossMargin": 24.59,
       "grossMarginRecord": 26.653417801008437,
@@ -25515,7 +26304,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3605.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3605.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6269",
@@ -25544,7 +26336,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 67.20430107526882,
       "conversionPremium": 60.704,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 1.68,
       "grossMargin": -1.38,
       "grossMarginRecord": 2.350487715741064,
@@ -25612,7 +26404,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6269.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6269.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6269",
@@ -25641,7 +26436,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 61.88118811881188,
       "conversionPremium": 71.296,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 1.68,
       "grossMargin": -1.38,
       "grossMarginRecord": 2.350487715741064,
@@ -25709,7 +26504,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6269.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6269.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3324",
@@ -25738,7 +26536,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 122.0159151193634,
       "conversionPremium": 17.279782608695648,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 62.130201162932195,
       "grossMargin": 29.66,
       "grossMarginRecord": 29.66,
@@ -25807,7 +26605,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3324.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3324.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2641",
@@ -25836,7 +26637,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 79.07489322880816,
       "conversionPremium": 28.92840677634718,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 4.728910346555229,
       "grossMargin": 39.91,
       "grossMarginRecord": 44.082071539280015,
@@ -25903,7 +26704,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2641.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2641.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3016",
@@ -25932,7 +26736,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 167.35537190082647,
       "conversionPremium": 13.530864197530846,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 37.28,
       "grossMargin": 17.77,
       "grossMarginRecord": 17.77,
@@ -25998,7 +26802,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3016.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3016.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "9933",
@@ -26027,7 +26834,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 79.34362639791718,
       "conversionPremium": 26.79027234711926,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -16.64,
       "grossMargin": 13.05,
       "grossMarginRecord": 13.05,
@@ -26096,7 +26903,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/9933.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/9933.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2439",
@@ -26125,7 +26935,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 63.95683563012871,
       "conversionPremium": 68.86388911511985,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 11.89,
       "grossMargin": 11.83,
       "grossMarginRecord": 13.861299248159744,
@@ -26194,7 +27004,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2439.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2439.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3362",
@@ -26223,7 +27036,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 70.86614173228347,
       "conversionPremium": 67.21666666666665,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -21.564464962191998,
       "grossMargin": 13.11,
       "grossMarginRecord": 22.114510308685958,
@@ -26291,7 +27104,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3362.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3362.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "4572",
@@ -26320,7 +27136,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 84.28571428571429,
       "conversionPremium": 18.999999999999993,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 16.81,
       "grossMargin": 33.39,
       "grossMarginRecord": 48.54411858815864,
@@ -26386,7 +27202,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4572.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4572.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8478",
@@ -26415,7 +27234,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 39.26568077511474,
       "conversionPremium": 142.32357142857143,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 76.33,
       "grossMargin": 42.63,
       "grossMarginRecord": 42.63,
@@ -26479,7 +27298,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8478.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8478.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "4190",
@@ -26508,7 +27330,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 45.98930345287085,
       "conversionPremium": 118.85523902997272,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 1.7606500157354161,
       "grossMargin": 65.46,
       "grossMarginRecord": 67.49834879698065,
@@ -26575,7 +27397,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": null,
-      "revenueSourceUrl": null
+      "revenueSourceUrl": null,
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2439",
@@ -26604,7 +27429,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 62.1243896057854,
       "conversionPremium": 69.01574513051112,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 11.89,
       "grossMargin": 11.83,
       "grossMarginRecord": 13.861299248159744,
@@ -26673,7 +27498,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2439.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2439.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6624",
@@ -26702,7 +27530,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 96.2085271898604,
       "conversionPremium": 45.51724684831768,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -61.66385096570933,
       "grossMargin": 23.65,
       "grossMarginRecord": 25.926171886117622,
@@ -26770,7 +27598,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6624.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6624.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6509",
@@ -26799,7 +27630,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 125.78313436852879,
       "conversionPremium": 9.712642074634047,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 8.485827665885944,
       "grossMargin": 36.08,
       "grossMarginRecord": 36.08,
@@ -26866,7 +27697,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6509.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6509.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2486",
@@ -26895,7 +27729,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 205.55555555555554,
       "conversionPremium": 0.216216216216214,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 35.04,
       "grossMargin": 21.05,
       "grossMarginRecord": 21.05,
@@ -26964,7 +27798,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2486.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2486.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3312",
@@ -26993,7 +27830,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 72.39583134651184,
       "conversionPremium": 44.345327702400915,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 41.82,
       "grossMargin": 5.33,
       "grossMarginRecord": 6.19360375612257,
@@ -27061,7 +27898,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3312.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3312.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6243",
@@ -27090,7 +27930,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 60.10638181924095,
       "conversionPremium": 56.88849860167953,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -56.18,
       "grossMargin": 59.76,
       "grossMarginRecord": 59.76,
@@ -27159,7 +27999,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6243.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6243.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6753",
@@ -27188,7 +28031,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 118.39999999999999,
       "conversionPremium": 9.797297297297302,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 33.41,
       "grossMargin": 33.1,
       "grossMarginRecord": 33.1,
@@ -27256,7 +28099,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6753.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6753.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "1560",
@@ -27285,7 +28131,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 242.72509414584044,
       "conversionPremium": 5.057122708039508,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 16.39,
       "grossMargin": 35.0,
       "grossMarginRecord": 35.0,
@@ -27353,7 +28199,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/1560.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/1560.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6125",
@@ -27382,7 +28231,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 50.96491094221148,
       "conversionPremium": 93.46644225828508,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 79.2,
       "grossMargin": 25.09,
       "grossMarginRecord": 25.150203942368833,
@@ -27450,7 +28299,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6125.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6125.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6546",
@@ -27479,7 +28331,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 42.56926856052966,
       "conversionPremium": 134.91124790600765,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -0.769042095473638,
       "grossMargin": 27.33,
       "grossMarginRecord": 27.33,
@@ -27546,7 +28398,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6546.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6546.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8467",
@@ -27575,7 +28430,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 48.49639983058026,
       "conversionPremium": 113.72720524017468,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -30.345641137740124,
       "grossMargin": 37.02,
       "grossMarginRecord": 43.961968018561066,
@@ -27638,7 +28493,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": null,
-      "revenueSourceUrl": null
+      "revenueSourceUrl": null,
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2756",
@@ -27667,7 +28525,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 63.0965005302227,
       "conversionPremium": 59.91378151260505,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 4.800068368926323,
       "grossMargin": 49.01,
       "grossMarginRecord": 60.50176953991963,
@@ -27735,7 +28593,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2756.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2756.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8467",
@@ -27764,7 +28625,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 59.142561983471076,
       "conversionPremium": 82.52506550218341,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -30.345641137740124,
       "grossMargin": 37.02,
       "grossMarginRecord": 43.961968018561066,
@@ -27827,7 +28688,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": null,
-      "revenueSourceUrl": null
+      "revenueSourceUrl": null,
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6117",
@@ -27856,7 +28720,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 86.19047800699869,
       "conversionPremium": 16.022097002269753,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -11.35,
       "grossMargin": 37.56,
       "grossMarginRecord": 37.56,
@@ -27924,7 +28788,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6117.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6117.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6840",
@@ -27953,7 +28820,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 89.91825613079018,
       "conversionPremium": 22.33333333333334,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 17.851394527590266,
       "grossMargin": 40.2,
       "grossMarginRecord": 45.296072797334325,
@@ -28022,7 +28889,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6840.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6840.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8433",
@@ -28051,7 +28921,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 49.76437251372342,
       "conversionPremium": 101.54981351837695,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 5.316908404530102,
       "grossMargin": 22.67,
       "grossMarginRecord": 26.70429452917019,
@@ -28114,7 +28984,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8433.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8433.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8112",
@@ -28143,7 +29016,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 102.78113663845222,
       "conversionPremium": 23.27164705882354,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 231.17,
       "grossMargin": 3.85,
       "grossMarginRecord": 4.571569703293085,
@@ -28210,7 +29083,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8112.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8112.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8433",
@@ -28239,7 +29115,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 51.76470513437309,
       "conversionPremium": 92.40909368932742,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 5.316908404530102,
       "grossMargin": 22.67,
       "grossMarginRecord": 26.70429452917019,
@@ -28302,7 +29178,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8433.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8433.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3483",
@@ -28331,7 +29210,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 51.309521993001304,
       "conversionPremium": 110.87703762813975,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -18.47157919425421,
       "grossMargin": 17.08,
       "grossMarginRecord": 21.968675949196438,
@@ -28398,7 +29277,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3483.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3483.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3141",
@@ -28427,7 +29309,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 77.68421373869243,
       "conversionPremium": 32.33061783413282,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 10.846839763406658,
       "grossMargin": 42.51,
       "grossMarginRecord": 43.581966699770064,
@@ -28494,7 +29376,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3141.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3141.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3122",
@@ -28523,7 +29408,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 71.27659484286117,
       "conversionPremium": 46.19104662578635,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -0.9132776520177972,
       "grossMargin": 36.48,
       "grossMarginRecord": 36.48,
@@ -28590,7 +29475,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3122.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3122.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3207",
@@ -28619,7 +29507,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 58.59486037457149,
       "conversionPremium": 72.37006685287903,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -33.43409814566813,
       "grossMargin": 17.63,
       "grossMarginRecord": 19.20342270877117,
@@ -28685,7 +29573,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3207.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3207.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8092",
@@ -28714,7 +29605,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 95.51724401013605,
       "conversionPremium": 34.00721652565368,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -3.961563811704305,
       "grossMargin": 6.56,
       "grossMarginRecord": 22.170352880012132,
@@ -28781,7 +29672,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8092.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8092.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3272",
@@ -28810,7 +29704,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 46.05263157894737,
       "conversionPremium": 93.04,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 39.77166660905037,
       "grossMargin": 7.08,
       "grossMarginRecord": 14.959115659403926,
@@ -28877,7 +29771,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3272.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3272.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6150",
@@ -28906,7 +29803,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 68.2926812351675,
       "conversionPremium": 42.328574954158626,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -30.187011156486555,
       "grossMargin": 13.83,
       "grossMarginRecord": 13.83,
@@ -28974,7 +29871,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6150.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6150.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "5457",
@@ -29003,7 +29903,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 47.985609315282154,
       "conversionPremium": 98.39281267536455,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 2.946095162561902,
       "grossMargin": 12.96,
       "grossMarginRecord": 18.59782260529625,
@@ -29071,7 +29971,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/5457.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/5457.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6184",
@@ -29100,7 +30003,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 77.38738876205306,
       "conversionPremium": 26.506400546758478,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -2.42,
       "grossMargin": 54.22,
       "grossMarginRecord": 54.22,
@@ -29168,7 +30071,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6184.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6184.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3689",
@@ -29197,7 +30103,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 186.45357686453576,
       "conversionPremium": 17.99183673469389,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 72.66011512381877,
       "grossMargin": 30.25,
       "grossMarginRecord": 31.262425412413087,
@@ -29265,7 +30171,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3689.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3689.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "5263",
@@ -29294,7 +30203,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 90.17857142857143,
       "conversionPremium": 28.633663366336638,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 90.23399014778325,
       "grossMargin": 50.65,
       "grossMarginRecord": 57.692902206395914,
@@ -29361,7 +30270,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/5263.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/5263.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "5321",
@@ -29390,7 +30302,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 66.5217399597168,
       "conversionPremium": 50.77777589813213,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -18.35,
       "grossMargin": 48.36,
       "grossMarginRecord": 51.97443492894109,
@@ -29458,7 +30370,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/5321.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/5321.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3526",
@@ -29487,7 +30402,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 140.0089605734767,
       "conversionPremium": 19.992319999999996,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 29.721548677475077,
       "grossMargin": 50.38,
       "grossMarginRecord": 53.37092143733737,
@@ -29554,7 +30469,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3526.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3526.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2476",
@@ -29583,7 +30501,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 178.67036011080333,
       "conversionPremium": 16.415503875968994,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 53.76,
       "grossMargin": 29.92,
       "grossMarginRecord": 33.97600740745515,
@@ -29651,7 +30569,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2476.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2476.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2732",
@@ -29680,7 +30601,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 47.131446278779165,
       "conversionPremium": 113.44560361029052,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 25.860273176074088,
       "grossMargin": 49.67,
       "grossMarginRecord": 53.18979436375654,
@@ -29748,7 +30669,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2732.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2732.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3416",
@@ -29777,7 +30701,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 132.67543859649123,
       "conversionPremium": 10.796694214876034,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 24.3,
       "grossMargin": 36.52,
       "grossMarginRecord": 41.793830935723406,
@@ -29844,7 +30768,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3416.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3416.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3479",
@@ -29873,7 +30800,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 120.16460905349795,
       "conversionPremium": 14.717636986301352,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 27.845642958828563,
       "grossMargin": 28.15,
       "grossMarginRecord": 28.15,
@@ -29940,7 +30867,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3479.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3479.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3548",
@@ -29969,7 +30899,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 41.557787411176975,
       "conversionPremium": 147.84765122576795,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 7.064940499400171,
       "grossMargin": 8.1,
       "grossMarginRecord": 15.398251969949905,
@@ -30039,7 +30969,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3548.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3548.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6015",
@@ -30068,7 +31001,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 161.63003313672414,
       "conversionPremium": 19.408501164347204,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 270.8367148993448,
       "grossMargin": null,
       "grossMarginRecord": null,
@@ -30135,7 +31068,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": null,
       "grossMarginPeriod": null,
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6015.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6015.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3305",
@@ -30164,7 +31100,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 162.8352490421456,
       "conversionPremium": 15.454117647058819,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 76.0,
       "grossMargin": 18.27,
       "grossMarginRecord": 18.27,
@@ -30233,7 +31169,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3305.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3305.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8488",
@@ -30262,7 +31201,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 54.32432535532359,
       "conversionPremium": 82.42288211000958,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 74.87241514201824,
       "grossMargin": 3.81,
       "grossMarginRecord": 5.648062245959702,
@@ -30329,7 +31268,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": null,
-      "revenueSourceUrl": null
+      "revenueSourceUrl": null,
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3522",
@@ -30358,7 +31300,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 62.82051282051282,
       "conversionPremium": 64.75510204081634,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -3.510945345756949,
       "grossMargin": 54.24,
       "grossMarginRecord": 54.24,
@@ -30426,7 +31368,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3522.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3522.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6284",
@@ -30455,7 +31400,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 108.15217391304348,
       "conversionPremium": 24.824120603015064,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 6.576397018747319,
       "grossMargin": 19.98,
       "grossMarginRecord": 27.693240701234643,
@@ -30522,7 +31467,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6284.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6284.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2427",
@@ -30551,7 +31499,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 90.17857142857143,
       "conversionPremium": 11.778217821782167,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -11.68,
       "grossMargin": 18.91,
       "grossMarginRecord": 38.02030852123423,
@@ -30620,7 +31568,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2427.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2427.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "5388",
@@ -30649,7 +31600,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 58.34482653387661,
       "conversionPremium": 84.07801750450076,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 70.83,
       "grossMargin": 13.66,
       "grossMarginRecord": 19.05979066924543,
@@ -30718,7 +31669,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/5388.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/5388.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8996",
@@ -30747,7 +31701,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 512.5,
       "conversionPremium": -1.6585365853658551,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 37.56,
       "grossMargin": 29.02,
       "grossMarginRecord": 30.027804435887546,
@@ -30815,7 +31769,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8996.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8996.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "1338",
@@ -30844,7 +31801,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 42.89340004703116,
       "conversionPremium": 136.98284558590422,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 6.2435419576676106,
       "grossMargin": 25.08,
       "grossMarginRecord": 26.279619874589287,
@@ -30910,7 +31867,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": null,
-      "revenueSourceUrl": null
+      "revenueSourceUrl": null,
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6126",
@@ -30939,7 +31899,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 123.15788938288104,
       "conversionPremium": 5.961543067933994,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 59.018034922219734,
       "grossMargin": 20.74,
       "grossMarginRecord": 25.056765471179904,
@@ -31006,7 +31966,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6126.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6126.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "4566",
@@ -31035,7 +31998,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 119.42307398869441,
       "conversionPremium": 15.555558394908031,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 44.39,
       "grossMargin": 21.89,
       "grossMarginRecord": 24.052320878604927,
@@ -31101,7 +32064,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4566.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4566.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6806",
@@ -31130,7 +32096,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": null,
       "conversionValue": 3.0789473600554884,
       "conversionPremium": 3056.9230855005026,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 8.169963333207905,
       "grossMargin": null,
       "grossMarginRecord": 44.84,
@@ -31198,7 +32164,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": null,
       "grossMarginPeriod": null,
       "revenueSource": null,
-      "revenueSourceUrl": null
+      "revenueSourceUrl": null,
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "9941",
@@ -31227,7 +32196,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 39.58944281524927,
       "conversionPremium": 147.91962962962964,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -4.0,
       "grossMargin": 43.67,
       "grossMarginRecord": 43.67,
@@ -31294,7 +32263,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/9941.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/9941.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6189",
@@ -31323,7 +32295,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 88.96734602979507,
       "conversionPremium": 49.49305102959735,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 4.49,
       "grossMargin": 9.16,
       "grossMarginRecord": 9.307728479356884,
@@ -31390,7 +32362,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6189.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6189.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "5306",
@@ -31419,7 +32394,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 66.28352490421456,
       "conversionPremium": 50.716184971098265,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 31.67,
       "grossMargin": 41.83,
       "grossMarginRecord": 45.336472533950584,
@@ -31487,7 +32462,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/5306.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/5306.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3357",
@@ -31516,7 +32494,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 233.05084745762713,
       "conversionPremium": 8.989090909090901,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 57.442291019249026,
       "grossMargin": 28.81,
       "grossMarginRecord": 28.81,
@@ -31584,7 +32562,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3357.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3357.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6585",
@@ -31613,7 +32594,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 103.23383084577115,
       "conversionPremium": 12.366265060240966,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 91.44,
       "grossMargin": 34.68,
       "grossMarginRecord": 39.276769667099934,
@@ -31681,7 +32662,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6585.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6585.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6585",
@@ -31710,7 +32694,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 102.97766749379653,
       "conversionPremium": 13.665421686746981,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 91.44,
       "grossMargin": 34.68,
       "grossMarginRecord": 39.276769667099934,
@@ -31778,7 +32762,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6585.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6585.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8442",
@@ -31807,7 +32794,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 53.97390272835113,
       "conversionPremium": 84.90417582417582,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 13.386310420896905,
       "grossMargin": 15.61,
       "grossMarginRecord": 21.325117023406698,
@@ -31874,7 +32861,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": null,
-      "revenueSourceUrl": null
+      "revenueSourceUrl": null,
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3680",
@@ -31903,7 +32893,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 132.30194718591625,
       "conversionPremium": 13.37701612903226,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 15.96,
       "grossMargin": 42.63,
       "grossMarginRecord": 43.75279436515535,
@@ -31971,7 +32961,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3680.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3680.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2104",
@@ -32000,7 +32993,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 49.29245193049593,
       "conversionPremium": 100.84210892895618,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -30.82,
       "grossMargin": -16.88,
       "grossMarginRecord": 0.8410737996048331,
@@ -32068,7 +33061,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2104.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2104.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "5209",
@@ -32097,7 +33093,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 89.54802259887006,
       "conversionPremium": 28.981072555205035,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -28.5263770676088,
       "grossMargin": 18.0,
       "grossMarginRecord": 18.0,
@@ -32165,7 +33161,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/5209.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/5209.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6873",
@@ -32194,7 +33193,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 72.16666539510092,
       "conversionPremium": 73.27944878064034,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 42.53,
       "grossMargin": 31.95,
       "grossMarginRecord": 31.95,
@@ -32262,7 +33261,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6873.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6873.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "4564",
@@ -32291,7 +33293,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 71.48147865577981,
       "conversionPremium": 39.05700031565138,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -34.46,
       "grossMargin": -21.44,
       "grossMarginRecord": -4.046951090408638,
@@ -32356,7 +33358,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4564.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4564.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2906",
@@ -32385,7 +33390,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 77.77777777777779,
       "conversionPremium": 33.58571428571429,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 5.23,
       "grossMargin": 29.69,
       "grossMarginRecord": 30.616149847460207,
@@ -32452,7 +33457,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2906.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2906.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6616",
@@ -32481,7 +33489,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 60.67567258267788,
       "conversionPremium": 63.90423998100301,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -19.77103353598745,
       "grossMargin": 6.11,
       "grossMarginRecord": 14.8873263847589,
@@ -32549,7 +33557,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6616.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6616.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "1526",
@@ -32578,7 +33589,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 37.894735838237565,
       "conversionPremium": 159.66667354548437,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -10.43,
       "grossMargin": 12.58,
       "grossMarginRecord": 31.80843744702915,
@@ -32644,7 +33655,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/1526.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/1526.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2436",
@@ -32673,7 +33687,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 109.80391658209507,
       "conversionPremium": 19.758934010048556,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 18.28,
       "grossMargin": 33.54,
       "grossMarginRecord": 33.54,
@@ -32741,7 +33755,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2436.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2436.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "1586",
@@ -32770,7 +33787,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 58.338425111391956,
       "conversionPremium": 71.67072955564471,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 25.159447057804968,
       "grossMargin": 17.74,
       "grossMarginRecord": 17.74,
@@ -32835,7 +33852,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/1586.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/1586.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "1586",
@@ -32864,7 +33884,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 57.202756458429846,
       "conversionPremium": 79.01235244566529,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 25.159447057804968,
       "grossMargin": 17.74,
       "grossMarginRecord": 17.74,
@@ -32929,7 +33949,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/1586.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/1586.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3088",
@@ -32958,7 +33981,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 131.50684931506848,
       "conversionPremium": 25.468750000000018,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 48.37063812295742,
       "grossMargin": 34.03,
       "grossMarginRecord": 36.61705720257861,
@@ -33025,7 +34048,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3088.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3088.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6796",
@@ -33054,7 +34080,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 48.13008192108899,
       "conversionPremium": 105.69256491670656,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -7.05,
       "grossMargin": 36.54,
       "grossMarginRecord": 48.104836296163285,
@@ -33121,7 +34147,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6796.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6796.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6414",
@@ -33150,7 +34179,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 133.5593220338983,
       "conversionPremium": 11.560913705583765,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 56.97,
       "grossMargin": 20.11,
       "grossMarginRecord": 21.686282764151887,
@@ -33217,7 +34246,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6414.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6414.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2462",
@@ -33246,7 +34278,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 68.14792836704362,
       "conversionPremium": 52.60918782425448,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -4.57,
       "grossMargin": 8.7,
       "grossMarginRecord": 15.35422678160187,
@@ -33314,7 +34346,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2462.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2462.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8255",
@@ -33343,7 +34378,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 84.04761904761905,
       "conversionPremium": 19.99150141643058,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 5.776797501832019,
       "grossMargin": 26.94,
       "grossMarginRecord": 29.46459247351906,
@@ -33409,7 +34444,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8255.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8255.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "5309",
@@ -33438,7 +34476,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 158.94206164766018,
       "conversionPremium": 15.136294384850135,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 4.191338797523751,
       "grossMargin": 24.86,
       "grossMarginRecord": 25.688248697448028,
@@ -33506,7 +34544,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/5309.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/5309.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2066",
@@ -33535,7 +34576,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 65.34653465346535,
       "conversionPremium": 52.11212121212121,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 23.533771621634628,
       "grossMargin": 35.94,
       "grossMarginRecord": 35.94,
@@ -33601,7 +34642,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2066.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2066.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "5009",
@@ -33630,7 +34674,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 55.91215958466401,
       "conversionPremium": 80.10393579506938,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 12.929670283120203,
       "grossMargin": 24.38,
       "grossMarginRecord": 25.629899794708074,
@@ -33698,7 +34742,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/5009.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/5009.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8466",
@@ -33727,7 +34774,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 33.04924386920351,
       "conversionPremium": 200.0068636740933,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -17.28,
       "grossMargin": 8.25,
       "grossMarginRecord": 17.125123679165235,
@@ -33793,7 +34840,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8466.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8466.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6179",
@@ -33822,7 +34872,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 74.53333536783853,
       "conversionPremium": 35.24149899173257,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 229.21779232726794,
       "grossMargin": 8.75,
       "grossMarginRecord": 10.933158098215277,
@@ -33889,7 +34939,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6179.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6179.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "5230",
@@ -33918,7 +34971,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 90.13157560114274,
       "conversionPremium": 11.059858137807655,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 19.615675476527507,
       "grossMargin": 25.81,
       "grossMarginRecord": 26.955129252589956,
@@ -33984,7 +35037,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/5230.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/5230.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6282",
@@ -34013,7 +35069,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 115.19999694824219,
       "conversionPremium": 13.41146133771105,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 28.28,
       "grossMargin": 24.39,
       "grossMarginRecord": 26.581004762965076,
@@ -34080,7 +35136,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6282.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6282.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2201",
@@ -34109,7 +35168,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 34.69512288163348,
       "conversionPremium": 185.3426988506431,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -8.06,
       "grossMargin": 32.99,
       "grossMarginRecord": 34.19113251085758,
@@ -34175,7 +35234,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2201.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2201.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "4123",
@@ -34204,7 +35266,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 79.48979747538664,
       "conversionPremium": 26.682924347845937,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 2.925607251611076,
       "grossMargin": 46.58,
       "grossMarginRecord": 47.07482265234509,
@@ -34271,7 +35333,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4123.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4123.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "4123",
@@ -34300,7 +35365,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 81.14583492279053,
       "conversionPremium": 36.29781504526366,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 2.925607251611076,
       "grossMargin": 46.58,
       "grossMarginRecord": 47.07482265234509,
@@ -34367,7 +35432,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4123.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4123.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3484",
@@ -34396,7 +35464,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 109.56341114956227,
       "conversionPremium": 15.093167214248226,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 9.037459413184706,
       "grossMargin": 22.07,
       "grossMarginRecord": 26.259196930012006,
@@ -34465,7 +35533,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3484.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3484.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2727",
@@ -34494,7 +35565,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 81.52542372881356,
       "conversionPremium": 37.99376299376298,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 16.59,
       "grossMargin": 47.64,
       "grossMarginRecord": 47.988168379794274,
@@ -34561,7 +35632,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2727.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2727.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "5450",
@@ -34590,7 +35664,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 78.98936373122196,
       "conversionPremium": 35.52457564319711,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 21.659339129050867,
       "grossMargin": 26.35,
       "grossMarginRecord": 27.151303842521973,
@@ -34657,7 +35731,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/5450.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/5450.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8050",
@@ -34686,7 +35763,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 77.60000101725261,
       "conversionPremium": 48.19587434597115,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 143.60391174364165,
       "grossMargin": 23.3,
       "grossMarginRecord": 24.619096398154745,
@@ -34754,7 +35831,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8050.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8050.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8422",
@@ -34783,7 +35863,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 15.88235294117647,
       "conversionPremium": 1215.925925925926,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 50.34,
       "grossMargin": 48.21,
       "grossMarginRecord": 59.614388734179514,
@@ -34850,7 +35930,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8422.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8422.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3388",
@@ -34879,7 +35962,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 111.00543063619864,
       "conversionPremium": 19.04822966103261,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 18.972618122417853,
       "grossMargin": 19.51,
       "grossMarginRecord": 19.51,
@@ -34947,7 +36030,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3388.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3388.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "4416",
@@ -34976,7 +36062,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 14.135802233660662,
       "conversionPremium": 614.497828496039,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 257.19842724268574,
       "grossMargin": 45.88,
       "grossMarginRecord": 217.2556118754526,
@@ -35043,7 +36129,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4416.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4416.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6104",
@@ -35072,7 +36161,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 77.27272727272727,
       "conversionPremium": 48.82352941176471,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 5.661463437673425,
       "grossMargin": 44.52,
       "grossMarginRecord": 56.47874293409026,
@@ -35138,7 +36227,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6104.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6104.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6477",
@@ -35167,7 +36259,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 73.9332068165512,
       "conversionPremium": 29.576416504841152,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -10.45,
       "grossMargin": 24.77,
       "grossMarginRecord": 43.7112053389687,
@@ -35234,7 +36326,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6477.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6477.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8027",
@@ -35263,7 +36358,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 357.9881656804734,
       "conversionPremium": -2.2314049586776963,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 58.47965230119345,
       "grossMargin": 29.75,
       "grossMarginRecord": 38.14316894213801,
@@ -35331,7 +36426,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8027.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8027.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3033",
@@ -35360,7 +36458,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 144.7329981736828,
       "conversionPremium": 40.25827044389387,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 54.45,
       "grossMargin": 6.18,
       "grossMarginRecord": 6.18,
@@ -35427,7 +36525,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3033.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3033.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3526",
@@ -35456,7 +36557,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 150.74770863482874,
       "conversionPremium": 34.66208000000002,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 29.721548677475077,
       "grossMargin": 50.38,
       "grossMarginRecord": 53.37092143733737,
@@ -35523,7 +36624,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3526.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3526.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8104",
@@ -35552,7 +36656,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 51.11801431786199,
       "conversionPremium": 87.40947057195243,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -53.25,
       "grossMargin": 18.77,
       "grossMarginRecord": 23.70984882121307,
@@ -35618,7 +36722,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8104.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8104.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "1909",
@@ -35647,7 +36754,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 39.3129778272323,
       "conversionPremium": 148.51844199989023,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 44.1,
       "grossMargin": 10.31,
       "grossMarginRecord": 12.46299643130003,
@@ -35710,7 +36817,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/1909.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/1909.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "4739",
@@ -35739,7 +36849,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 90.0,
       "conversionPremium": 25.555555555555554,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 113.79,
       "grossMargin": 17.93,
       "grossMarginRecord": 19.09442242570574,
@@ -35803,7 +36913,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4739.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/4739.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6552",
@@ -35832,7 +36945,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 46.37795395738497,
       "conversionPremium": 117.8836955439026,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -23.48,
       "grossMargin": -8.87,
       "grossMarginRecord": -2.3779871760245674,
@@ -35899,7 +37012,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6552.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6552.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3708",
@@ -35928,7 +37044,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 112.10526315789473,
       "conversionPremium": 32.91079812206574,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 61.7,
       "grossMargin": 16.26,
       "grossMarginRecord": 24.80159358763148,
@@ -35997,7 +37113,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3708.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3708.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "8473",
@@ -36026,7 +37145,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 113.99999618530275,
       "conversionPremium": 18.508775895395612,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 18.1,
       "grossMargin": 32.87,
       "grossMarginRecord": 32.87,
@@ -36093,7 +37212,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8473.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/8473.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "3708",
@@ -36122,7 +37244,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 107.57575757575756,
       "conversionPremium": 21.123943661971857,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 61.7,
       "grossMargin": 16.26,
       "grossMarginRecord": 24.80159358763148,
@@ -36191,7 +37313,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3708.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/3708.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6477",
@@ -36220,7 +37345,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 88.163713438321,
       "conversionPremium": 15.410293001308206,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -10.45,
       "grossMargin": 24.77,
       "grossMarginRecord": 43.7112053389687,
@@ -36287,7 +37412,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6477.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6477.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "2338",
@@ -36316,7 +37444,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 53.71621707538227,
       "conversionPremium": 85.13961968028678,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": -5.14,
       "grossMargin": 17.55,
       "grossMarginRecord": 18.43632831380425,
@@ -36384,7 +37512,10 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2338.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/2338.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     },
     {
       "issuerCode": "6182",
@@ -36413,7 +37544,7 @@ window.RECENT_CB_DATA = {
       "stockChangePct": 0.0,
       "conversionValue": 246.42857142857144,
       "conversionPremium": 14.43478260869564,
-      "cbUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+      "cbUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
       "revenueYoY": 14.108955904198915,
       "grossMargin": 19.03,
       "grossMarginRecord": 28.753381058505216,
@@ -36482,10 +37613,13 @@ window.RECENT_CB_DATA = {
       "grossMarginQuarter": "2026Q1",
       "grossMarginPeriod": "2026Q1",
       "revenueSource": "yahoo_news_with_explicit_revenue",
-      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6182.TW/news"
+      "revenueSourceUrl": "https://tw.stock.yahoo.com/quote/6182.TW/news",
+      "revenueIsHistoricalHigh": false,
+      "revenueHistoricalRecord": null,
+      "revenueHistoricalSource": ""
     }
   ],
-  "cbQuotesUpdatedAt": "2026-07-11T16:33:21.786787+08:00",
+  "cbQuotesUpdatedAt": "2026-07-11T20:12:42.804644+08:00",
   "cbQuoteSource": "TPEx official daily report / TWSE MIS / Yahoo Finance",
   "scope": "All listed convertible bonds with outstanding balance",
   "officialDataDate": "2026-07-11",
@@ -36498,7 +37632,7 @@ window.RECENT_CB_DATA = {
   "stockHistorySource": "Yahoo Finance Taiwan listed/OTC daily close history",
   "stockWeeklyChangeDefinition": "Latest close versus the final trading close before the current week",
   "weeklyStockTop30Tracker": {
-    "updatedAt": "2026-07-11T16:33:21.786787+08:00",
+    "updatedAt": "2026-07-11T20:12:42.804644+08:00",
     "definition": "每週以股票收盤價本週漲幅取前 30 名；同一週快照覆寫且只計一次；連續 30 天未再入榜則累積次數歸零。",
     "currentWeek": "2026-07-06",
     "ranking": [
