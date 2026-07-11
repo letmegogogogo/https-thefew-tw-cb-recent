@@ -1,0 +1,14 @@
+sourceName,entryUrl,discoveredUrl,method,contentType,httpStatus,containsCbKeyword,containsAuctionKeyword,containsFilingKeyword,containsBoardKeyword,sampleTitle,parseSuggestion
+TWSE IPO/SPO入口,https://mopsov.twse.com.tw/ipospoinform,https://mopsov.twse.com.tw/ipospoinform,GET,text/html,200,false,true,false,false,IPO/SPO資訊揭露專區,入口頁；需追蹤頁面連結，不可當案件資料
+TWSE IPO/SPO部分詢圈,https://mopsov.twse.com.tw/ipospoinform,http://web2.twsa.org.tw/tib/,GET,text/html,200,false,false,false,false,IPO詢圈申購公告,券商公會部分詢圈入口；可能需表單或頁面內 AJAX，先作入口追蹤
+TWSE IPO/SPO全數詢圈,https://mopsov.twse.com.tw/ipospoinform,http://web2.twsa.org.tw/BB/,GET,text/html,200,false,false,false,false,詢圈申購公告統計表,券商公會全數詢圈入口；可能需表單或頁面內 AJAX，先作入口追蹤
+TWSE IPO/SPO申購公告,https://mopsov.twse.com.tw/ipospoinform,https://mopsov.twse.com.tw/server-java/t39sb01?type0=2&type2_2=16,GET,text/html; charset=big5,200,false,true,false,false,臺灣證券交易所 & 證券櫃檯買賣中心 公告,HTML公告列表；需 Big5 解碼並篩選可轉換公司債，非 CB 不可輸出
+TWSE IPO/SPO競拍公告,https://mopsov.twse.com.tw/ipospoinform,https://mopsov.twse.com.tw/server-java/t39sb01?type0=2&type2_2=15,GET,text/html; charset=big5,200,true,true,false,false,臺灣證券交易所 & 證券櫃檯買賣中心 公告,HTML公告列表；需逐列解析且公告片段本身需含可轉換公司債/轉換公司債
+TWSE公開申購JSON,https://www.twse.com.tw/zh/announcement/publicForm,https://www.twse.com.tw/rwd/zh/announcement/publicForm?response=json,GET,application/json;charset=UTF-8,200,false,false,false,false,公開申購公告-抽籤日程表,可直接解析 JSON fields/data；適合公開申購/撥券日，不等於 CB 詢圈
+TWSE市場公告JSON,https://www.twse.com.tw/zh/announcement/notice,https://www.twse.com.tw/rwd/zh/announcement/notice?response=json,GET,application/json;charset=UTF-8,200,false,false,false,false,公布注意有價證券資訊,這是注意交易公告 API，非初級市場 CB 資料來源
+券商公會承銷公告,https://www.twsa.org.tw/,https://web.twsa.org.tw/Edoc2/Default.aspx?Year=2026,GET,text/html; charset=utf-8,200,true,true,false,false,115年－承銷公告,最可用；HTML表格含序號/申報日期/承銷商/案件名稱/發行種類/配售方式；可篩無擔保/有擔保轉換公司債與詢價圈購/競價拍賣
+券商公會承銷公告舊網域,https://www.twsa.org.tw/,https://web.csa.org.tw/Edoc2/Default.aspx?Year=2026,GET,text/html; charset=utf-8,untested,true,true,false,false,115年－承銷公告,舊連結仍可作備援；優先用 web.twsa.org.tw
+券商公會詢圈統計,https://www.twsa.org.tw/,https://www.twsa.org.tw/E01/E014.html,GET,text/html,200,false,true,true,false,詢價圈購統計資料,統計入口，不是案件表；可追蹤頁內連結但不直接輸出案件
+券商公會競拍統計,https://www.twsa.org.tw/,https://www.twsa.org.tw/E01/E015.html,GET,text/html,200,false,true,true,false,競價拍賣統計資料,統計入口，不是案件表；可追蹤頁內連結但不直接輸出案件
+MOPS重大訊息AJAX,https://mops.twse.com.tw/mops/web/t05st01,https://mops.twse.com.tw/mops/web/ajax_t05st01,POST,text/html,connection_aborted,unknown,unknown,unknown,unknown,重大訊息查詢,需 POST encodeURIComponent/step/firstin/off/keyword4/TYPEK/year/month/b_date/e_date；本機連線被中止，GitHub Actions 可再測
+TPEX首頁,https://www.tpex.org.tw/,https://www.tpex.org.tw/zh-tw/index.html,GET,text/html,200,false,false,false,false,證券櫃檯買賣中心,入口頁；需另找站內公開申購/競拍/債券公告 API，不可直接當案件來源

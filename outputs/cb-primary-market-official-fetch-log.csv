@@ -1,29 +1,63 @@
 ﻿fetchedAt,sourceType,sourceUrl,fetchStatus,httpStatus,rawCount,parsedCount,error
-2026-07-04T10:56:54+08:00,official_underwriting,https://web.twsa.org.tw/Edoc2/Default.aspx?Year=2026,success,200,254,73,
-2026-07-04T10:56:54+08:00,official_mops,https://mops.twse.com.tw/mops/web/ajax_t05st01,official_fetch_failed,200,1,0,mops_board_approved:mops_security_blocked
-2026-07-04T10:56:54+08:00,official_mops,https://mops.twse.com.tw/mops/web/ajax_t05st01,official_fetch_failed,200,1,0,mops_filing:mops_security_blocked
-2026-07-04T10:56:54+08:00,official_twse,https://mopsov.twse.com.tw/ipospoinform,official_parse_failed,200,1,0,followLinks=4
-2026-07-04T10:56:54+08:00,official_underwriting,http://web2.twsa.org.tw/tib/,official_parse_failed,200,1,0,
-2026-07-04T10:56:54+08:00,official_underwriting,http://web2.twsa.org.tw/BB/,official_parse_failed,200,1,0,
-2026-07-04T10:56:54+08:00,official_twse,https://mopsov.twse.com.tw/server-java/t39sb01?type0=2&type2_2=16,official_parse_failed,200,1,0,
-2026-07-04T10:56:54+08:00,official_twse,https://mopsov.twse.com.tw/server-java/t39sb01?type0=2&type2_2=15,success,200,1,1,
-2026-07-04T10:56:54+08:00,official_twse,https://www.twse.com.tw/zh/announcement/publicForm,official_parse_failed,200,1,0,
-2026-07-04T10:56:54+08:00,official_twse,https://www.twse.com.tw/zh/announcement/notice,official_parse_failed,200,1,0,
-2026-07-04T10:56:54+08:00,official_tpex,https://www.tpex.org.tw/,official_fetch_failed,,0,0,<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl.c:1082)>
-2026-07-04T10:56:54+08:00,official_mops,https://mops.twse.com.tw/mops/web/index,official_parse_failed,200,1,0,
-2026-07-04T10:56:54+08:00,official_underwriting,https://www.twsa.org.tw/,official_parse_failed,200,1,0,followLinks=2
-2026-07-04T10:56:54+08:00,official_underwriting,https://www.twsa.org.tw/E01/E014.html,official_parse_failed,200,1,0,
-2026-07-04T10:56:54+08:00,official_underwriting,https://www.twsa.org.tw/E01/E019.html,official_parse_failed,200,1,0,
-2026-07-04T10:56:54+08:00,official_underwriting,https://web2.twsa.org.tw/,official_fetch_failed,,0,0,<urlopen error timed out>
-2026-07-04T10:56:54+08:00,official_csa,search:site:twsa.org.tw 可轉換公司債 詢價圈購,search_success,202,0,0,
-2026-07-04T10:56:54+08:00,official_csa,search:site:web2.twsa.org.tw 可轉換公司債 詢價圈購,search_success,202,0,0,
-2026-07-04T10:56:54+08:00,official_csa,search:site:csa.org.tw 可轉換公司債 詢價圈購,search_success,202,0,0,
-2026-07-04T10:56:54+08:00,official_twse,search:site:twse.com.tw 可轉換公司債 競價拍賣 公開申購,search_success,202,0,0,
-2026-07-04T10:56:54+08:00,official_twse,search:site:twse.com.tw 轉換公司債 詢價圈購 承銷公告,search_success,202,0,0,
-2026-07-04T10:56:54+08:00,official_twse,search:site:twse.com.tw IPO SPO 可轉換公司債 競價拍賣,search_success,202,0,0,
-2026-07-04T10:56:54+08:00,official_tpex,search:site:tpex.org.tw 可轉換公司債 競價拍賣 詢價圈購,search_success,202,0,0,
-2026-07-04T10:56:54+08:00,official_tpex,search:site:tpex.org.tw 可轉換公司債 公開申購 承銷公告,search_success,202,0,0,
-2026-07-04T10:56:54+08:00,official_tpex,search:site:tpex.org.tw 國內可轉換公司債 申報生效,search_success,202,0,0,
-2026-07-04T10:56:54+08:00,official_mops,search:site:mops.twse.com.tw 董事會決議發行國內可轉換公司債,search_success,202,0,0,
-2026-07-04T10:56:54+08:00,official_mops,search:site:mops.twse.com.tw 國內無擔保轉換公司債 申報生效,search_success,202,0,0,
-2026-07-04T10:56:54+08:00,official_mops,search:site:mops.twse.com.tw 募集與發行有價證券 國內可轉換公司債,search_success,202,0,0,
+2026-07-06T06:37:43+08:00,official_underwriting,https://web.twsa.org.tw/Edoc2/Default.aspx?Year=2026,success,200,255,73,
+2026-07-06T06:37:43+08:00,official_mops,https://mops.twse.com.tw/mops/web/ajax_t05st01,official_fetch_failed,200,1,0,mops_board_approved:mops_security_blocked
+2026-07-06T06:37:43+08:00,official_mops,https://mops.twse.com.tw/mops/web/ajax_t05st01,official_fetch_failed,200,1,0,mops_filing:mops_security_blocked
+2026-07-06T06:37:43+08:00,official_twse,https://mopsov.twse.com.tw/ipospoinform,official_parse_failed,200,1,0,followLinks=4
+2026-07-06T06:37:43+08:00,official_underwriting,http://web2.twsa.org.tw/tib/,official_parse_failed,200,1,0,
+2026-07-06T06:37:43+08:00,official_underwriting,http://web2.twsa.org.tw/BB/,official_parse_failed,200,1,0,
+2026-07-06T06:37:43+08:00,official_twse,https://mopsov.twse.com.tw/server-java/t39sb01?type0=2&type2_2=16,official_parse_failed,200,1,0,
+2026-07-06T06:37:43+08:00,official_twse,https://mopsov.twse.com.tw/server-java/t39sb01?type0=2&type2_2=15,success,200,1,1,
+2026-07-06T06:37:43+08:00,official_twse,https://www.twse.com.tw/zh/announcement/publicForm,official_parse_failed,200,1,0,
+2026-07-06T06:37:43+08:00,official_twse,https://www.twse.com.tw/zh/announcement/notice,official_parse_failed,200,1,0,
+2026-07-06T06:37:43+08:00,official_tpex,https://www.tpex.org.tw/,official_fetch_failed,,0,0,<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl.c:1082)>
+2026-07-06T06:37:43+08:00,official_mops,https://mops.twse.com.tw/mops/web/index,official_parse_failed,200,1,0,
+2026-07-06T06:37:43+08:00,official_underwriting,https://www.twsa.org.tw/,official_parse_failed,200,1,0,followLinks=2
+2026-07-06T06:37:43+08:00,official_underwriting,https://www.twsa.org.tw/E01/E014.html,official_parse_failed,200,1,0,
+2026-07-06T06:37:43+08:00,official_underwriting,https://www.twsa.org.tw/E01/E019.html,official_parse_failed,200,1,0,
+2026-07-06T06:37:43+08:00,official_underwriting,https://web2.twsa.org.tw/,official_fetch_failed,,0,0,<urlopen error timed out>
+2026-07-06T06:37:43+08:00,official_csa,search:site:twsa.org.tw 可轉換公司債 詢價圈購,search_success,duckduckgo:200,3,0,
+2026-07-06T06:37:43+08:00,official_csa,https://www.twsa.org.tw/E01/doc/113詢價圈購案件彙總.pdf,official_fetch_failed,,0,0,'ascii' codec can't encode characters in position 16-23: ordinal not in range(128)
+2026-07-06T06:37:43+08:00,official_csa,https://www.twsa.org.tw/E01/doc/114詢價圈購案件彙總.pdf,official_fetch_failed,,0,0,'ascii' codec can't encode characters in position 16-23: ordinal not in range(128)
+2026-07-06T06:37:43+08:00,official_underwriting,https://www.twsa.org.tw/DOC/1051229.html,success,200,1,1,followLinks=2
+2026-07-06T06:37:43+08:00,official_twse,search:site:twse.com.tw 可轉換公司債 競價拍賣 公開申購,search_success,duckduckgo:200,3,0,
+2026-07-06T06:37:43+08:00,official_twse,https://www.twse.com.tw/zh/announcement/auction.html,official_parse_failed,200,1,0,
+2026-07-06T06:37:43+08:00,official_twse,https://mopsov.twse.com.tw/IPO/imformationhub.html,official_parse_failed,200,1,0,
+2026-07-06T06:37:43+08:00,official_twse,https://accessibility.twse.com.tw/zh/announcement/auction.html,official_parse_failed,200,1,0,
+2026-07-06T06:37:43+08:00,official_tpex,search:site:tpex.org.tw 可轉換公司債 競價拍賣 詢價圈購,official_fetch_failed,,0,0,search_failed
+2026-07-06T06:37:43+08:00,official_mops,search:site:mops.twse.com.tw 董事會決議發行國內可轉換公司債,official_fetch_failed,,0,0,search_failed
+2026-07-06T06:37:43+08:00,official_underwriting,target-search:site:web.twsa.org.tw OR site:twsa.org.tw 36054 轉換公司債 可轉換公司債,official_fetch_failed,,0,0,keyword=36054:search_failed
+2026-07-06T06:37:43+08:00,official_twse,target-search:site:mopsov.twse.com.tw OR site:twse.com.tw 36054 轉換公司債 可轉換公司債,official_fetch_failed,,0,0,keyword=36054:search_failed
+2026-07-06T06:37:43+08:00,official_tpex,target-search:site:tpex.org.tw 36054 轉換公司債 可轉換公司債,official_fetch_failed,,0,0,keyword=36054:search_failed
+2026-07-06T06:37:43+08:00,official_mops,target-search:site:mops.twse.com.tw OR site:mopsov.twse.com.tw 36054 轉換公司債 可轉換公司債,official_fetch_failed,,0,0,keyword=36054:search_failed
+2026-07-06T06:37:43+08:00,official_underwriting,target-search:site:web.twsa.org.tw OR site:twsa.org.tw 宏致四 轉換公司債 可轉換公司債,official_fetch_failed,,0,0,keyword=宏致四:search_failed
+2026-07-06T06:37:43+08:00,official_twse,target-search:site:mopsov.twse.com.tw OR site:twse.com.tw 宏致四 轉換公司債 可轉換公司債,official_fetch_failed,,0,0,keyword=宏致四:search_failed
+2026-07-06T06:37:43+08:00,official_tpex,target-search:site:tpex.org.tw 宏致四 轉換公司債 可轉換公司債,official_fetch_failed,,0,0,keyword=宏致四:search_failed
+2026-07-06T06:37:43+08:00,official_mops,target-search:site:mops.twse.com.tw OR site:mopsov.twse.com.tw 宏致四 轉換公司債 可轉換公司債,official_fetch_failed,,0,0,keyword=宏致四:search_failed
+2026-07-06T06:37:43+08:00,official_underwriting,target-search:site:web.twsa.org.tw OR site:twsa.org.tw 宏致 轉換公司債 可轉換公司債,official_fetch_failed,,0,0,keyword=宏致:search_failed
+2026-07-06T06:37:43+08:00,official_twse,target-search:site:mopsov.twse.com.tw OR site:twse.com.tw 宏致 轉換公司債 可轉換公司債,official_fetch_failed,,0,0,keyword=宏致:search_failed
+2026-07-06T06:37:43+08:00,official_tpex,target-search:site:tpex.org.tw 宏致 轉換公司債 可轉換公司債,official_fetch_failed,,0,0,keyword=宏致:search_failed
+2026-07-06T06:37:43+08:00,official_mops,target-search:site:mops.twse.com.tw OR site:mopsov.twse.com.tw 宏致 轉換公司債 可轉換公司債,official_fetch_failed,,0,0,keyword=宏致:search_failed
+2026-07-06T06:37:43+08:00,official_underwriting,target-search:site:web.twsa.org.tw OR site:twsa.org.tw 65843 轉換公司債 可轉換公司債,official_fetch_failed,,0,0,keyword=65843:search_failed
+2026-07-06T06:37:43+08:00,official_twse,target-search:site:mopsov.twse.com.tw OR site:twse.com.tw 65843 轉換公司債 可轉換公司債,official_fetch_failed,,0,0,keyword=65843:search_failed
+2026-07-06T06:37:43+08:00,official_tpex,target-search:site:tpex.org.tw 65843 轉換公司債 可轉換公司債,official_fetch_failed,,0,0,keyword=65843:search_failed
+2026-07-06T06:37:43+08:00,official_mops,target-search:site:mops.twse.com.tw OR site:mopsov.twse.com.tw 65843 轉換公司債 可轉換公司債,official_fetch_failed,,0,0,keyword=65843:search_failed
+2026-07-06T06:37:43+08:00,official_underwriting,target-search:site:web.twsa.org.tw OR site:twsa.org.tw 南俊國際三 轉換公司債 可轉換公司債,official_fetch_failed,,0,0,keyword=南俊國際三:search_failed
+2026-07-06T06:37:43+08:00,official_twse,target-search:site:mopsov.twse.com.tw OR site:twse.com.tw 南俊國際三 轉換公司債 可轉換公司債,official_fetch_failed,,0,0,keyword=南俊國際三:search_failed
+2026-07-06T06:37:43+08:00,official_tpex,target-search:site:tpex.org.tw 南俊國際三 轉換公司債 可轉換公司債,official_fetch_failed,,0,0,keyword=南俊國際三:search_failed
+2026-07-06T06:37:43+08:00,official_mops,target-search:site:mops.twse.com.tw OR site:mopsov.twse.com.tw 南俊國際三 轉換公司債 可轉換公司債,official_fetch_failed,,0,0,keyword=南俊國際三:search_failed
+2026-07-06T06:37:43+08:00,official_underwriting,target-search:site:web.twsa.org.tw OR site:twsa.org.tw 南俊國際 轉換公司債 可轉換公司債,official_fetch_failed,,0,0,keyword=南俊國際:search_failed
+2026-07-06T06:37:43+08:00,official_twse,target-search:site:mopsov.twse.com.tw OR site:twse.com.tw 南俊國際 轉換公司債 可轉換公司債,official_fetch_failed,,0,0,keyword=南俊國際:search_failed
+2026-07-06T06:37:43+08:00,official_tpex,target-search:site:tpex.org.tw 南俊國際 轉換公司債 可轉換公司債,official_fetch_failed,,0,0,keyword=南俊國際:search_failed
+2026-07-06T06:37:43+08:00,official_mops,target-search:site:mops.twse.com.tw OR site:mopsov.twse.com.tw 南俊國際 轉換公司債 可轉換公司債,official_fetch_failed,,0,0,keyword=南俊國際:search_failed
+2026-07-06T06:37:43+08:00,official_underwriting,target-search:site:web.twsa.org.tw OR site:twsa.org.tw 61876 轉換公司債 可轉換公司債,official_fetch_failed,,0,0,keyword=61876:search_failed
+2026-07-06T06:37:43+08:00,official_twse,target-search:site:mopsov.twse.com.tw OR site:twse.com.tw 61876 轉換公司債 可轉換公司債,official_fetch_failed,,0,0,keyword=61876:search_failed
+2026-07-06T06:37:43+08:00,official_tpex,target-search:site:tpex.org.tw 61876 轉換公司債 可轉換公司債,official_fetch_failed,,0,0,keyword=61876:search_failed
+2026-07-06T06:37:43+08:00,official_mops,target-search:site:mops.twse.com.tw OR site:mopsov.twse.com.tw 61876 轉換公司債 可轉換公司債,official_fetch_failed,,0,0,keyword=61876:search_failed
+2026-07-06T06:37:43+08:00,official_underwriting,target-search:site:web.twsa.org.tw OR site:twsa.org.tw 萬潤六 轉換公司債 可轉換公司債,official_fetch_failed,,0,0,keyword=萬潤六:search_failed
+2026-07-06T06:37:43+08:00,official_twse,target-search:site:mopsov.twse.com.tw OR site:twse.com.tw 萬潤六 轉換公司債 可轉換公司債,official_fetch_failed,,0,0,keyword=萬潤六:search_failed
+2026-07-06T06:37:43+08:00,official_tpex,target-search:site:tpex.org.tw 萬潤六 轉換公司債 可轉換公司債,official_fetch_failed,,0,0,keyword=萬潤六:search_failed
+2026-07-06T06:37:43+08:00,official_mops,target-search:site:mops.twse.com.tw OR site:mopsov.twse.com.tw 萬潤六 轉換公司債 可轉換公司債,official_fetch_failed,,0,0,keyword=萬潤六:search_failed
+2026-07-06T06:37:43+08:00,official_underwriting,target-search:site:web.twsa.org.tw OR site:twsa.org.tw 萬潤 轉換公司債 可轉換公司債,official_fetch_failed,,0,0,keyword=萬潤:search_failed
+2026-07-06T06:37:43+08:00,official_twse,target-search:site:mopsov.twse.com.tw OR site:twse.com.tw 萬潤 轉換公司債 可轉換公司債,official_fetch_failed,,0,0,keyword=萬潤:search_failed
+2026-07-06T06:37:43+08:00,official_tpex,target-search:site:tpex.org.tw 萬潤 轉換公司債 可轉換公司債,official_fetch_failed,,0,0,keyword=萬潤:search_failed
+2026-07-06T06:37:43+08:00,official_mops,target-search:site:mops.twse.com.tw OR site:mopsov.twse.com.tw 萬潤 轉換公司債 可轉換公司債,official_fetch_failed,,0,0,keyword=萬潤:search_failed
