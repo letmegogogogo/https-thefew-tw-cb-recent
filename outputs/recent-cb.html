@@ -896,7 +896,7 @@
           <div class="search-box">
             <input class="search-input" id="search-input" type="search" autocomplete="off" placeholder="搜尋債券代碼、簡稱、公司、產業…" aria-label="搜尋可轉債" />
           </div>
-          <select class="filter-select" id="high-filter" aria-label="創新高"><option value="">創新高</option><option value="cb">CB 收盤價創新高</option><option value="stock">股票收盤價創新高</option><option value="margin">毛利率創新高</option></select>
+          <select class="filter-select" id="high-filter" aria-label="創新高"><option value="">創新高</option><option value="cb">CB 收盤價創新高</option><option value="stock">股票收盤價創新高</option><option value="revenue">營收月增率創歷史新高</option><option value="margin">毛利率創新高</option></select>
           <details class="utility-filter" id="utility-filter"><summary>隱藏功能鍵</summary><div class="utility-options column-options" id="column-options"></div></details>
           <div class="search-count" id="search-count"></div>
         </div>
@@ -1347,6 +1347,7 @@
         if (query && !searchText(row).includes(query)) return false;
         if (highFilterEl.value === 'cb' && !isCbRecordHigh(row)) return false;
         if (highFilterEl.value === 'stock' && !isStockRecordHigh(row)) return false;
+        if (highFilterEl.value === 'revenue' && row.revenueIsHistoricalHigh !== true) return false;
         if (highFilterEl.value === 'margin' && !row.grossMarginIsRecordHigh) return false;
         return true;
       }));
