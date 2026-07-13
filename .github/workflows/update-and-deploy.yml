@@ -73,15 +73,17 @@ jobs:
         run: python scripts/update_cb_quotes.py
 
       - name: Enrich new CB company tags
-        if: ${{ (github.event_name == 'workflow_dispatch' && inputs.mode == 'full') || (github.event_name == 'schedule' && github.event.schedule == '40 13 * * 1-5') }}
-        run: python scripts/enrich_new_cb_company_tags.py --limit 5
+        run: python scripts/enrich_new_cb_company_tags.py --limit 20
 
-      - name: Enrich new CB issuance purposes
+      - name: Fast enrich new CB issuance purposes
+        if: ${{ !((github.event_name == 'workflow_dispatch' && inputs.mode == 'full') || (github.event_name == 'schedule' && github.event.schedule == '40 13 * * 1-5')) }}
+        run: python scripts/enrich_new_cb_issuance_purposes.py --limit 3 --max-candidates 2 --timeout 6
+
+      - name: Full enrich new CB issuance purposes
         if: ${{ (github.event_name == 'workflow_dispatch' && inputs.mode == 'full') || (github.event_name == 'schedule' && github.event.schedule == '40 13 * * 1-5') }}
-        run: python scripts/enrich_new_cb_issuance_purposes.py --limit 5 --max-candidates 2 --timeout 8
+        run: python scripts/enrich_new_cb_issuance_purposes.py --limit 20 --max-candidates 3 --timeout 10
 
       - name: Refresh CB data with enriched tags and purposes
-        if: ${{ (github.event_name == 'workflow_dispatch' && inputs.mode == 'full') || (github.event_name == 'schedule' && github.event.schedule == '40 13 * * 1-5') }}
         run: python scripts/update_cb_quotes.py
 
       - name: Build public site

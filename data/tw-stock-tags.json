@@ -458,24 +458,38 @@
     "updatedAt": "2026-06-23"
   },
   "1623": {
-    "accuracy": "needs_review",
+    "accuracy": "high",
     "companyName": "大東電業廠",
-    "confidence": 30,
+    "confidence": 90,
     "fineIndustries": [
-      "其他"
+      "電線電纜",
+      "高壓電纜"
     ],
     "groupTags": [
-      "其他"
+      "電線電纜"
     ],
     "officialIndustry": "電器電纜",
-    "productTags": [],
-    "source": "fallback",
-    "sourceNote": "recent-cb-data.js 可用資料不足，暫列其他並待人工複核。",
-    "sourceUrls": [],
+    "productTags": [
+      "電力電纜",
+      "高壓電纜",
+      "特高壓電纜",
+      "橡膠電纜"
+    ],
+    "source": "official_web",
+    "sourceNote": "依 TWSE 公司資料、TWSE 新上市公司介紹及公司官網產品資訊整理。",
+    "sourceUrls": [
+      "https://www.twse.com.tw/pdf/ch/1623_ch.pdf",
+      "https://www.twse.com.tw/market_insights/zh/detail/8a8216d69a3d6cf9019bd41f63d0076b",
+      "https://tewc.com.tw/"
+    ],
     "stockId": "1623",
     "stockName": "大東電業廠",
-    "themeTags": [],
-    "updatedAt": "2026-07-09"
+    "themeTags": [
+      "電網韌性",
+      "AI資料中心",
+      "電力基礎建設"
+    ],
+    "updatedAt": "2026-07-13"
   },
   "1717": {
     "confidence": 60,
