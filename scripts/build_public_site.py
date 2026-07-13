@@ -17,6 +17,7 @@ FILES = {
     "cb-primary-market-data.js": "cb-primary-market-data.js",
     "eps-forecast-data.js": "eps-forecast-data.js",
     "company-insights-data.js": "company-insights-data.js",
+    "exchange-rate-data.js": "exchange-rate-data.js",
 }
 
 DATA_VERSION_FILES = tuple(name for name in FILES if name != "recent-cb.html")

@@ -69,6 +69,9 @@ jobs:
       - name: Update CB primary market data
         run: python scripts/update_cb_primary_market.py --queries-per-source 1 --search-limit 3 --follow-link-limit 8 --timeout 8
 
+      - name: Update USD/TWD exchange-rate history
+        run: python scripts/update_exchange_rates.py
+
       - name: Update CB data
         run: python scripts/update_cb_quotes.py
 

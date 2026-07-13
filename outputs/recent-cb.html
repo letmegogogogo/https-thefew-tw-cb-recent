@@ -101,6 +101,53 @@
       color: #30496d;
       border-color: #bfd0e3;
     }
+    .fx-panel {
+      margin-top: 12px;
+      padding: 18px;
+      border: 1px solid #d9e4f0;
+      border-radius: 14px;
+      background: #f8fbff;
+    }
+    .fx-panel[hidden] { display: none; }
+    .fx-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+    .fx-head h2 { margin: 0; color: #173f70; font-size: 1.18rem; }
+    .fx-head p { margin: 4px 0 0; color: #6d7f96; font-size: 0.8rem; }
+    .fx-range-buttons { display: flex; gap: 6px; }
+    .fx-range-button {
+      min-width: 58px;
+      min-height: 38px;
+      border: 1px solid #c6d5e7;
+      border-radius: 9px;
+      background: #fff;
+      color: #45688f;
+      font: inherit;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .fx-range-button.active { background: #1d4ed8; border-color: #1d4ed8; color: #fff; }
+    .fx-chart-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    .fx-chart-card { min-width: 0; padding: 16px; border-radius: 12px; background: #fff; box-shadow: 0 4px 16px rgba(31, 64, 104, 0.07); }
+    .fx-chart-title { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; }
+    .fx-chart-title h3 { margin: 0; color: #203c61; font-size: 1rem; }
+    .fx-chart-title p { margin: 4px 0 0; color: #8190a3; font-size: 0.74rem; }
+    .fx-latest { text-align: right; color: #183c69; font-size: 1.32rem; font-weight: 900; white-space: nowrap; }
+    .fx-change { margin-top: 2px; font-size: 0.78rem; }
+    .fx-change.up { color: #dc2626; }
+    .fx-change.down { color: #008f4c; }
+    .fx-chart-svg { display: block; width: 100%; height: auto; margin-top: 8px; overflow: visible; }
+    .fx-grid-line { stroke: #e8eef5; stroke-width: 1; }
+    .fx-axis-label { fill: #7d8ca0; font-size: 11px; font-family: var(--font); }
+    .fx-line-usd { fill: none; stroke: #2563eb; stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
+    .fx-line-twd { fill: none; stroke: #0f9f6e; stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
+    .fx-source { margin: 14px 0 0; color: #6b7c92; font-size: 0.76rem; line-height: 1.6; }
+    .fx-source a { color: #245fa7; font-weight: 700; }
+    .fx-empty { padding: 60px 16px; text-align: center; color: #78899e; }
     .content {
       padding: 14px 12px 12px;
       min-width: 0;
@@ -795,6 +842,12 @@
       .catalyst-grid { grid-template-columns: 1fr; }
     }
     @media (max-width: 768px) {
+      .fx-panel { padding: 12px; }
+      .fx-head { align-items: stretch; flex-direction: column; }
+      .fx-range-buttons { display: grid; grid-template-columns: repeat(3, 1fr); }
+      .fx-range-button { width: 100%; min-height: 44px; }
+      .fx-chart-grid { grid-template-columns: 1fr; }
+      .fx-chart-card { padding: 12px 10px; }
       body { font-size: 17px; }
       .page { width: min(100% - 8px, 1600px); padding-top: 4px; }
       .shell { grid-template-columns: 1fr; gap: 8px; }
@@ -867,6 +920,7 @@
     document.write(`<script src="cb-primary-market-data.js?v=${dataVersion}"><\/script>`);
     document.write(`<script src="eps-forecast-data.js?v=${dataVersion}"><\/script>`);
     document.write(`<script src="company-insights-data.js?v=${dataVersion}"><\/script>`);
+    document.write(`<script src="exchange-rate-data.js?v=${dataVersion}"><\/script>`);
     window.CB_HISTORY_DATA = window.CB_HISTORY_DATA || {};
   </script>
   <main class="page">
@@ -875,6 +929,7 @@
         <p class="side-title">可轉債資訊</p>
         <nav class="menu" aria-label="可轉債篩選">
           <button type="button" data-view="recent" aria-pressed="true">即將/近期發行</button>
+          <button type="button" data-view="fx" aria-pressed="false">匯率走勢</button>
         </nav>
       </aside>
 
@@ -927,6 +982,22 @@
           <span class="legal-update-frequency">資料更新頻率：平日約 15:10、17:10 更新；每月 1–10 日另於約 18:10、21:10 補更新營收公告資料（台灣時間）。</span>
         </aside>
 
+        <section class="fx-panel" id="fx-panel" aria-label="美元與新台幣匯率走勢" hidden>
+          <div class="fx-head">
+            <div>
+              <h2>美元與新台幣匯率走勢</h2>
+              <p>中央銀行日資料；週末及休市日沿用最近一個有資料的交易日。</p>
+            </div>
+            <div class="fx-range-buttons" aria-label="選擇匯率圖表期間">
+              <button class="fx-range-button active" type="button" data-fx-range="1M">1 個月</button>
+              <button class="fx-range-button" type="button" data-fx-range="6M">6 個月</button>
+              <button class="fx-range-button" type="button" data-fx-range="1Y">1 年</button>
+            </div>
+          </div>
+          <div class="fx-chart-grid" id="fx-chart-grid"></div>
+          <p class="fx-source" id="fx-source"></p>
+        </section>
+
         <div class="table-wrap">
           <table id="data-table" aria-describedby="page-title">
             <thead id="head"></thead>
@@ -949,6 +1020,7 @@
   <script>
     const raw = window.RECENT_CB_DATA || { rows: [], fetchedAt: null, source: '' };
     const primary = window.CB_PRIMARY_MARKET_DATA || { sections: [], updatedAt: null, sourceFile: '' };
+    const fxData = window.FX_RATE_DATA || { points: [], fetchedAt: null, latestDate: null, sourceUrl: '' };
     const tableEl = document.getElementById('data-table');
     const headEl = document.getElementById('head');
     const rowsEl = document.getElementById('rows');
@@ -973,7 +1045,13 @@
     const weeklyRankCollapseEl = document.getElementById('weekly-rank-collapse');
     const weeklyProductSummaryEl = document.getElementById('weekly-product-summary');
     const loadMoreButtonEl = document.getElementById('load-more-button');
+    const fxPanelEl = document.getElementById('fx-panel');
+    const fxChartGridEl = document.getElementById('fx-chart-grid');
+    const fxSourceEl = document.getElementById('fx-source');
+    const tableWrapEl = document.querySelector('.table-wrap');
+    const footerEl = document.querySelector('.footer');
     let currentView = 'recent';
+    let fxRange = '1M';
     let weeklyRankExpanded = false;
     let weeklyRankCollapsed = window.matchMedia('(max-width: 767px)').matches;
     let selectedWeeklyProductTag = '';
@@ -1877,7 +1955,76 @@
       return new Intl.NumberFormat('zh-TW', { maximumFractionDigits: 2 }).format(number);
     };
 
+    const setMainDataVisibility = (visible) => {
+      tableWrapEl.hidden = !visible;
+      footerEl.hidden = !visible;
+      if (!visible) {
+        searchPanelEl.hidden = true;
+        weeklyRankPanelEl.hidden = true;
+        loadMoreButtonEl.hidden = true;
+      }
+    };
+
+    const fxPeriodDays = { '1M': 31, '6M': 183, '1Y': 366 };
+    const filterFxPoints = (points, range) => {
+      if (!points.length) return [];
+      const latest = toDate(points[points.length - 1].date);
+      if (!latest) return points;
+      const cutoff = new Date(latest.getTime() - fxPeriodDays[range] * 86400000);
+      return points.filter((point) => {
+        const day = toDate(point.date);
+        return day && day >= cutoff;
+      });
+    };
+    const fmtFx = (value, digits) => Number(value).toLocaleString('zh-TW', {
+      minimumFractionDigits: digits,
+      maximumFractionDigits: digits
+    });
+    const makeFxChart = ({ title, subtitle, field, lineClass, digits, points }) => {
+      const values = points.map((point) => Number(point[field])).filter(Number.isFinite);
+      if (values.length < 2) return '<div class="fx-chart-card fx-empty">此期間沒有足夠的匯率資料。</div>';
+      const width = 900, height = 330, left = 72, right = 18, top = 24, bottom = 48;
+      let min = Math.min(...values), max = Math.max(...values);
+      const padding = Math.max((max - min) * 0.12, Math.abs(max || 1) * 0.002);
+      min -= padding; max += padding;
+      const x = (index) => left + index * (width - left - right) / Math.max(1, points.length - 1);
+      const y = (value) => top + (max - value) * (height - top - bottom) / Math.max(0.0000001, max - min);
+      const path = points.map((point, index) => `${x(index).toFixed(1)},${y(Number(point[field])).toFixed(1)}`).join(' ');
+      const yTicks = Array.from({ length: 5 }, (_, index) => max - index * (max - min) / 4);
+      const xIndexes = [...new Set([0, Math.round((points.length - 1) / 4), Math.round((points.length - 1) / 2), Math.round((points.length - 1) * 3 / 4), points.length - 1])];
+      const first = values[0], latest = values[values.length - 1];
+      const change = first ? (latest / first - 1) * 100 : 0;
+      const changeClass = change > 0 ? 'up' : change < 0 ? 'down' : '';
+      const grids = yTicks.map((value) => `<line class="fx-grid-line" x1="${left}" x2="${width - right}" y1="${y(value)}" y2="${y(value)}"></line><text class="fx-axis-label" x="${left - 8}" y="${y(value) + 4}" text-anchor="end">${fmtFx(value, digits)}</text>`).join('');
+      const dates = xIndexes.map((index) => `<text class="fx-axis-label" x="${x(index)}" y="${height - 15}" text-anchor="middle">${escapeHtml(points[index].date.slice(5).replace('-', '/'))}</text>`).join('');
+      return `<article class="fx-chart-card">
+        <div class="fx-chart-title"><div><h3>${escapeHtml(title)}</h3><p>${escapeHtml(subtitle)}</p></div>
+          <div class="fx-latest">${fmtFx(latest, digits)}<div class="fx-change ${changeClass}">${change >= 0 ? '+' : ''}${change.toFixed(2)}%</div></div></div>
+        <svg class="fx-chart-svg" viewBox="0 0 ${width} ${height}" role="img" aria-label="${escapeHtml(title)} ${escapeHtml(fxRange)}走勢圖">
+          ${grids}${dates}<polyline class="${lineClass}" points="${path}"></polyline>
+        </svg>
+      </article>`;
+    };
+    const renderFx = () => {
+      setMainDataVisibility(false);
+      fxPanelEl.hidden = false;
+      titleEl.textContent = SITE_TITLE;
+      descEl.textContent = '美元與新台幣匯率走勢；提供近 1 個月、6 個月與 1 年期間切換。';
+      const allPoints = Array.isArray(fxData.points) ? fxData.points : [];
+      const points = filterFxPoints(allPoints, fxRange);
+      fxChartGridEl.innerHTML = points.length
+        ? makeFxChart({ title: '美元兌新台幣', subtitle: '1 美元可兌換的新台幣', field: 'usdTwd', lineClass: 'fx-line-usd', digits: 3, points })
+          + makeFxChart({ title: '新台幣兌美元', subtitle: '1 新台幣可兌換的美元', field: 'twdUsd', lineClass: 'fx-line-twd', digits: 5, points })
+        : '<div class="fx-empty">匯率資料尚未建立，請等待下一次每日更新。</div>';
+      document.querySelectorAll('[data-fx-range]').forEach((button) => button.classList.toggle('active', button.dataset.fxRange === fxRange));
+      const sourceUrl = fxData.sourceUrl || 'https://cpx.cbc.gov.tw/Data/ExportToAPIInfo';
+      fxSourceEl.innerHTML = `最新資料日：${escapeHtml(fxData.latestDate || '-')}｜每日隨網站排程更新｜資料來源：<a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer">中央銀行統計資料庫</a>。匯率為公開市場參考資料，不代表銀行現鈔買賣牌告價。`;
+      metaEl.textContent = `匯率更新：${fxData.fetchedAt ? fmtDate(fxData.fetchedAt).replaceAll('-', '/') : '-'}`;
+    };
+
     const renderRecent = () => {
+      setMainDataVisibility(true);
+      fxPanelEl.hidden = true;
       const mobile = isMobileLayout();
       const batchSize = mobile ? 20 : 50;
       if (recentRenderLimit <= 0) recentRenderLimit = batchSize;
@@ -1940,7 +2087,7 @@
     const sectionFromHash = () => {
       const params = new URLSearchParams((window.location.hash || '').replace(/^#/, ''));
       const section = params.get('section');
-      return section === 'recent' ? section : null;
+      return ['recent', 'fx'].includes(section) ? section : null;
     };
     const setHistoryState = (view, replace = false) => {
       const state = view === 'home' ? { page: 'home' } : { page: 'section', section: view };
@@ -1949,15 +2096,16 @@
       else history.pushState(state, '', url);
     };
     const showView = (view, options = {}) => {
-      if (view !== 'recent') view = 'recent';
+      if (!['recent', 'fx'].includes(view)) view = 'recent';
       currentView = view;
       buttons.forEach((button) => button.setAttribute('aria-pressed', String(button.dataset.view === view)));
       if (view === 'recent') {
         recentRenderLimit = 0;
         renderRecent();
       }
+      else if (view === 'fx') renderFx();
       else renderPrimary(view);
-      document.querySelector('.table-wrap').scrollLeft = 0;
+      tableWrapEl.scrollLeft = 0;
       if (options.collapseSidebar) setSidebarCollapsed(true);
     };
 
@@ -1999,6 +2147,12 @@
       const tag = button.dataset.weeklyProductTag || '';
       selectedWeeklyProductTag = selectedWeeklyProductTag === tag ? '' : tag;
       renderWeeklyTop30Ranking();
+    });
+    fxPanelEl.addEventListener('click', (event) => {
+      const button = event.target.closest('[data-fx-range]');
+      if (!button) return;
+      fxRange = button.dataset.fxRange || '1M';
+      renderFx();
     });
     [searchInputEl, highFilterEl].forEach((control) => control.addEventListener('input', () => {
       if (currentView === 'recent') {
@@ -2044,6 +2198,7 @@
       clearTimeout(resizeTimer);
       resizeTimer = setTimeout(() => {
         if (currentView === 'recent') renderRecent();
+        else if (currentView === 'fx') renderFx();
       }, 150);
     });
     rowsEl.addEventListener('click', (event) => {
