@@ -2181,14 +2181,8 @@
     buttons.forEach((button) => button.addEventListener('click', () => {
       const view = button.dataset.view;
       document.body.classList.remove('sidebar-menu-open');
-      if (view === 'recent') {
-        setHistoryState('home');
-        showView('recent');
-        setSidebarCollapsed(false);
-      } else {
-        setHistoryState(view);
-        showView(view, { collapseSidebar: true });
-      }
+      setHistoryState(view);
+      showView(view, { collapseSidebar: true });
     }));
     sidebarToggleEl?.addEventListener('click', () => {
       const opened = document.body.classList.toggle('sidebar-menu-open');
