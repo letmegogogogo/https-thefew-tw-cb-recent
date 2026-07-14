@@ -149,11 +149,15 @@
     .fx-line-dxy { fill: none; stroke: #f97316; stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
     .fx-line-usd-twd { fill: none; stroke: #2563eb; stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
     .fx-line-treasury { fill: none; stroke: #16a34a; stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
+    .fx-line-margin { fill: none; stroke: #f97316; stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
+    .fx-margin-bar { fill: #a8b0bc; opacity: 0.72; }
     .fx-legend { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 10px; color: #51657d; font-size: 0.78rem; font-weight: 800; }
     .fx-legend-item { display: inline-flex; align-items: center; gap: 6px; }
     .fx-legend-dot { width: 22px; height: 3px; border-radius: 999px; }
     .fx-legend-dot.dxy { background: #f97316; }
     .fx-legend-dot.usd-twd { background: #2563eb; }
+    .fx-legend-dot.margin-ratio { background: #f97316; }
+    .fx-legend-dot.margin-balance { height: 10px; background: #a8b0bc; }
     .fx-source { margin: 14px 0 0; color: #6b7c92; font-size: 0.76rem; line-height: 1.6; }
     .fx-source a { color: #245fa7; font-weight: 700; }
     .fx-empty { padding: 60px 16px; text-align: center; color: #78899e; }
@@ -940,7 +944,7 @@
         <p class="side-title">可轉債資訊</p>
         <nav class="menu" aria-label="可轉債篩選">
           <button type="button" data-view="recent" aria-pressed="true">即將/近期發行</button>
-          <button type="button" data-view="fx" aria-pressed="false">匯率走勢</button>
+          <button type="button" data-view="fx" aria-pressed="false">股市相關走勢數據圖</button>
         </nav>
       </aside>
 
@@ -993,13 +997,13 @@
           <span class="legal-update-frequency">資料更新頻率：平日約 15:10、17:10 更新；每月 1–10 日另於約 18:10、21:10 補更新營收公告資料（台灣時間）。</span>
         </aside>
 
-        <section class="fx-panel" id="fx-panel" aria-label="美元、匯率與美國公債走勢" hidden>
+        <section class="fx-panel" id="fx-panel" aria-label="股市相關走勢數據圖" hidden>
           <div class="fx-head">
             <div>
-              <h2>美元、匯率與美國公債走勢</h2>
-              <p>DXY 與 USD/TWD 同圖比較；下方同步顯示美國10年期公債殖利率。</p>
+              <h2>股市相關走勢數據圖</h2>
+              <p>DXY、USD/TWD、美國10年期公債殖利率與台股上市市場融資維持率估算。</p>
             </div>
-            <div class="fx-range-buttons" aria-label="選擇匯率圖表期間">
+            <div class="fx-range-buttons" aria-label="選擇走勢圖期間">
               <button class="fx-range-button active" type="button" data-fx-range="1M">1 個月</button>
               <button class="fx-range-button" type="button" data-fx-range="6M">6 個月</button>
               <button class="fx-range-button" type="button" data-fx-range="1Y">1 年</button>
@@ -2018,7 +2022,9 @@
           <text class="fx-axis-label" x="${left - 8}" y="${y + 4}" text-anchor="end">${fmtFx(value, 2)}</text>
           <text class="fx-axis-label" x="${width - right + 8}" y="${y + 4}" text-anchor="start">${fmtFx(twdTicks[index], 3)}</text>`;
       }).join('');
-      const dateTicks = Array.from({ length: 5 }, (_, index) => minTime + index * (maxTime - minTime) / 4);
+      const dateTicks = points.length < 5
+        ? [...new Set(points.map((point) => toDate(point.date)?.getTime()).filter(Number.isFinite))]
+        : Array.from({ length: 5 }, (_, index) => minTime + index * (maxTime - minTime) / 4);
       const dates = dateTicks.map((timestamp) => {
         const date = new Date(timestamp);
         const xPosition = left + (timestamp - minTime) * (width - left - right) / Math.max(1, maxTime - minTime);
@@ -2072,23 +2078,77 @@
         </svg>
       </article>`;
     };
+    const makeMarginMaintenanceChart = (points) => {
+      if (points.length < 2) return '<div class="fx-chart-card fx-empty">此期間沒有足夠的台股融資維持率資料。</div>';
+      const width = 1100, height = 390, left = 72, right = 72, top = 28, bottom = 52;
+      const ratioScale = fxSeriesScale(points);
+      const balances = points.map((point) => Number(point.marginBalanceBillion)).filter(Number.isFinite);
+      const balanceScale = { min: 0, max: Math.max(...balances) * 1.08 };
+      const times = points.map((point) => toDate(point.date)?.getTime()).filter(Number.isFinite);
+      const minTime = Math.min(...times), maxTime = Math.max(...times);
+      const chartWidth = width - left - right;
+      const x = (dateText) => left + (toDate(dateText).getTime() - minTime) * chartWidth / Math.max(1, maxTime - minTime);
+      const ratioY = (value) => top + (ratioScale.max - Number(value)) * (height - top - bottom) / Math.max(0.0000001, ratioScale.max - ratioScale.min);
+      const balanceY = (value) => top + (balanceScale.max - Number(value)) * (height - top - bottom) / Math.max(1, balanceScale.max);
+      const ratioPath = points.map((point) => `${x(point.date).toFixed(1)},${ratioY(point.value).toFixed(1)}`).join(' ');
+      const barWidth = Math.max(1.5, Math.min(12, chartWidth / points.length * 0.72));
+      const bars = points.map((point) => {
+        const value = Number(point.marginBalanceBillion);
+        if (!Number.isFinite(value)) return '';
+        const y = balanceY(value);
+        return `<rect class="fx-margin-bar" x="${(x(point.date) - barWidth / 2).toFixed(1)}" y="${y.toFixed(1)}" width="${barWidth.toFixed(1)}" height="${(height - bottom - y).toFixed(1)}"></rect>`;
+      }).join('');
+      const ratioTicks = Array.from({ length: 5 }, (_, index) => ratioScale.max - index * (ratioScale.max - ratioScale.min) / 4);
+      const balanceTicks = Array.from({ length: 5 }, (_, index) => balanceScale.max - index * balanceScale.max / 4);
+      const grids = ratioTicks.map((value, index) => {
+        const y = ratioY(value);
+        return `<line class="fx-grid-line" x1="${left}" x2="${width - right}" y1="${y}" y2="${y}"></line>
+          <text class="fx-axis-label" x="${left - 8}" y="${y + 4}" text-anchor="end">${fmtFx(balanceTicks[index], 0)}</text>
+          <text class="fx-axis-label" x="${width - right + 8}" y="${y + 4}" text-anchor="start">${fmtFx(value, 1)}%</text>`;
+      }).join('');
+      const dateTicks = points.length < 5
+        ? [...new Set(points.map((point) => toDate(point.date)?.getTime()).filter(Number.isFinite))]
+        : Array.from({ length: 5 }, (_, index) => minTime + index * (maxTime - minTime) / 4);
+      const dates = dateTicks.map((timestamp) => {
+        const date = new Date(timestamp);
+        const xPosition = left + (timestamp - minTime) * chartWidth / Math.max(1, maxTime - minTime);
+        return `<text class="fx-axis-label" x="${xPosition}" y="${height - 15}" text-anchor="middle">${String(date.getMonth() + 1).padStart(2, '0')}/${String(date.getDate()).padStart(2, '0')}</text>`;
+      }).join('');
+      const first = ratioScale.values[0], latest = ratioScale.values[ratioScale.values.length - 1];
+      const latestBalance = balances[balances.length - 1];
+      const change = latest - first;
+      const changeClass = change > 0 ? 'up' : change < 0 ? 'down' : '';
+      return `<article class="fx-chart-card">
+        <div class="fx-chart-title"><div><h3>台股上市市場融資維持率走勢</h3><p>左軸：融資金額（億元）｜右軸：融資維持率估算（%）</p></div>
+          <div class="fx-latest-group">
+            <div class="fx-latest"><small>融資金額</small>${fmtFx(latestBalance, 0)} 億</div>
+            <div class="fx-latest"><small>融資維持率估算</small>${fmtFx(latest, 1)}%<div class="fx-change ${changeClass}">${change >= 0 ? '+' : ''}${change.toFixed(1)} 個百分點</div></div>
+          </div></div>
+        <div class="fx-legend"><span class="fx-legend-item"><i class="fx-legend-dot margin-balance"></i>上市市場融資金額</span><span class="fx-legend-item"><i class="fx-legend-dot margin-ratio"></i>融資維持率估算</span></div>
+        <svg class="fx-chart-svg" viewBox="0 0 ${width} ${height}" role="img" aria-label="台股上市市場融資維持率 ${escapeHtml(fxRange)} 走勢圖">
+          ${grids}${dates}${bars}<polyline class="fx-line-margin" points="${ratioPath}"></polyline>
+        </svg>
+      </article>`;
+    };
     const renderFx = () => {
       setMainDataVisibility(false);
       fxPanelEl.hidden = false;
       titleEl.textContent = SITE_TITLE;
-      descEl.textContent = '美元指數、美元兌新台幣與美國10年期公債殖利率；提供近 1 個月、6 個月與 1 年期間切換。';
+      descEl.textContent = '美元指數、美元兌新台幣、美國10年期公債殖利率及台股上市市場融資維持率；提供近 1 個月、6 個月與 1 年期間切換。';
       const legacyUsdTwd = Array.isArray(fxData.points) ? fxData.points.map((point) => ({ date: point.date, value: point.usdTwd })) : [];
       const usdTwdPoints = filterFxPoints(Array.isArray(fxData.usdTwdPoints) ? fxData.usdTwdPoints : legacyUsdTwd, fxRange);
       const dxyPoints = filterFxPoints(Array.isArray(fxData.dxyPoints) ? fxData.dxyPoints : [], fxRange);
       const treasury10yPoints = filterFxPoints(Array.isArray(fxData.treasury10yPoints) ? fxData.treasury10yPoints : [], fxRange);
-      fxChartGridEl.innerHTML = makeCombinedFxChart(dxyPoints, usdTwdPoints) + makeTreasury10yChart(treasury10yPoints);
+      const marginMaintenancePoints = filterFxPoints(Array.isArray(fxData.marginMaintenancePoints) ? fxData.marginMaintenancePoints : [], fxRange);
+      fxChartGridEl.innerHTML = makeCombinedFxChart(dxyPoints, usdTwdPoints) + makeTreasury10yChart(treasury10yPoints) + makeMarginMaintenanceChart(marginMaintenancePoints);
       document.querySelectorAll('[data-fx-range]').forEach((button) => button.classList.toggle('active', button.dataset.fxRange === fxRange));
       const sources = fxData.sources || {};
       const cbcUrl = sources.usdTwd?.url || 'https://data.gov.tw/dataset/7232';
       const dxyUrl = sources.dxy?.url || 'https://finance.yahoo.com/quote/DX-Y.NYB/history/';
       const treasuryUrl = sources.treasury10y?.url || 'https://finance.yahoo.com/quote/%5ETNX/history/';
-      fxSourceEl.innerHTML = `美元指數：${escapeHtml(fxData.dxyLatestDate || '-')}｜USD/TWD：${escapeHtml(fxData.usdTwdLatestDate || '-')}｜美國10年期公債：${escapeHtml(fxData.treasury10yLatestDate || '-')}｜每日隨網站排程更新｜資料來源：<a href="${escapeHtml(dxyUrl)}" target="_blank" rel="noopener noreferrer">Yahoo Finance 美元指數</a>、<a href="${escapeHtml(cbcUrl)}" target="_blank" rel="noopener noreferrer">中央銀行收盤匯率</a>、<a href="${escapeHtml(treasuryUrl)}" target="_blank" rel="noopener noreferrer">Yahoo Finance 美國10年期公債殖利率</a>。資料僅供研究參考。`;
-      metaEl.textContent = `匯率更新：${fxData.fetchedAt ? fmtDate(fxData.fetchedAt).replaceAll('-', '/') : '-'}`;
+      const marginUrl = sources.marginMaintenance?.url || 'https://www.twse.com.tw/zh/trading/margin/mi-margn.html';
+      fxSourceEl.innerHTML = `美元指數：${escapeHtml(fxData.dxyLatestDate || '-')}｜USD/TWD：${escapeHtml(fxData.usdTwdLatestDate || '-')}｜美國10年期公債：${escapeHtml(fxData.treasury10yLatestDate || '-')}｜台股融資維持率：${escapeHtml(fxData.marginMaintenanceLatestDate || '-')}｜每日隨網站排程更新｜資料來源：<a href="${escapeHtml(dxyUrl)}" target="_blank" rel="noopener noreferrer">Yahoo Finance 美元指數</a>、<a href="${escapeHtml(cbcUrl)}" target="_blank" rel="noopener noreferrer">中央銀行收盤匯率</a>、<a href="${escapeHtml(treasuryUrl)}" target="_blank" rel="noopener noreferrer">Yahoo Finance 美國10年期公債殖利率</a>、<a href="${escapeHtml(marginUrl)}" target="_blank" rel="noopener noreferrer">臺灣證券交易所融資融券與收盤行情</a>。融資維持率為「個股融資餘額×收盤價合計÷集中市場融資金額餘額×100」之估算值，非投資人個別帳戶維持率；資料僅供研究參考。`;
+      metaEl.textContent = `走勢資料更新：${fxData.fetchedAt ? fmtDate(fxData.fetchedAt).replaceAll('-', '/') : '-'}`;
     };
 
     const renderRecent = () => {

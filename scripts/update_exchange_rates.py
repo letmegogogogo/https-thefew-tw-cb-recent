@@ -1,9 +1,12 @@
 from __future__ import annotations
 
 import json
+import os
 import ssl
+import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from urllib.parse import urlencode, urlparse
 from urllib.request import Request, urlopen
 
 
@@ -17,6 +20,9 @@ DXY_SOURCE_URL = "https://finance.yahoo.com/quote/DX-Y.NYB/history/"
 TREASURY10Y_API_URL = "https://query2.finance.yahoo.com/v8/finance/chart/%5ETNX?range=18mo&interval=1d"
 TREASURY10Y_FALLBACK_API_URL = "https://query1.finance.yahoo.com/v8/finance/chart/%5ETNX?range=18mo&interval=1d"
 TREASURY10Y_SOURCE_URL = "https://finance.yahoo.com/quote/%5ETNX/history/"
+TWSE_MARGIN_API_URL = "https://www.twse.com.tw/rwd/zh/marginTrading/MI_MARGN"
+TWSE_PRICE_API_URL = "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX"
+TWSE_MARGIN_SOURCE_URL = "https://www.twse.com.tw/zh/trading/margin/mi-margn.html"
 PREFIX = "window.FX_RATE_DATA = "
 TZ = timezone(timedelta(hours=8))
 
@@ -47,13 +53,13 @@ def fetch_json(url: str, timeout: int = 30):
         response = urlopen(request, timeout=timeout)
     except Exception as error:
         # Compatibility retry is restricted to the two hard-coded data URLs.
-        if url not in {
+        if (url not in {
             CBC_API_URL,
             DXY_API_URL,
             DXY_FALLBACK_API_URL,
             TREASURY10Y_API_URL,
             TREASURY10Y_FALLBACK_API_URL,
-        } or not isinstance(
+        } and urlparse(url).hostname not in {"www.twse.com.tw"}) or not isinstance(
             getattr(error, "reason", None), ssl.SSLCertVerificationError
         ):
             raise
@@ -137,6 +143,128 @@ def current_or_previous(label: str, loader, previous_points: list[dict]) -> tupl
         raise
 
 
+def number(value) -> float | None:
+    text = str(value or "").replace(",", "").replace("X", "").strip()
+    if not text or text in {"--", "---", "-"}:
+        return None
+    try:
+        return float(text)
+    except ValueError:
+        return None
+
+
+def table_rows(payload: dict, required_fields: tuple[str, ...]) -> tuple[list[str], list[list]]:
+    for table in payload.get("tables") or []:
+        fields = [str(item) for item in (table.get("fields") or [])]
+        if all(field in fields for field in required_fields):
+            rows = [row for row in (table.get("data") or []) if isinstance(row, list)]
+            return fields, rows
+    return [], []
+
+
+def fetch_twse_margin_day(day) -> dict | None:
+    date_text = day.strftime("%Y%m%d")
+    margin_url = TWSE_MARGIN_API_URL + "?" + urlencode({
+        "date": date_text,
+        "selectType": "ALL",
+        "response": "json",
+    })
+    price_url = TWSE_PRICE_API_URL + "?" + urlencode({
+        "date": date_text,
+        "type": "ALLBUT0999",
+        "response": "json",
+    })
+    last_error: Exception | None = None
+    for attempt in range(2):
+        try:
+            margin_payload = fetch_json(margin_url, timeout=20)
+            price_payload = fetch_json(price_url, timeout=20)
+            if margin_payload.get("stat") != "OK" or price_payload.get("stat") != "OK":
+                return None
+
+            _, summary_rows = table_rows(margin_payload, ("項目", "今日餘額"))
+            margin_money_thousand = next(
+                (number(row[-1]) for row in summary_rows if row and "融資金額" in str(row[0])),
+                None,
+            )
+            margin_fields, margin_rows = table_rows(margin_payload, ("代號", "名稱", "今日餘額"))
+            price_fields, price_rows = table_rows(price_payload, ("證券代號", "證券名稱", "收盤價"))
+            if not margin_money_thousand or not margin_rows or not price_rows:
+                return None
+
+            price_code_index = price_fields.index("證券代號")
+            close_index = price_fields.index("收盤價")
+            prices = {
+                str(row[price_code_index]).strip(): number(row[close_index])
+                for row in price_rows
+                if len(row) > max(price_code_index, close_index)
+            }
+            code_index = margin_fields.index("代號")
+            balance_index = margin_fields.index("今日餘額")
+            collateral_thousand = 0.0
+            matched = 0
+            for row in margin_rows:
+                if len(row) <= max(code_index, balance_index):
+                    continue
+                close = prices.get(str(row[code_index]).strip())
+                balance = number(row[balance_index])
+                if close is None or balance is None or balance <= 0:
+                    continue
+                collateral_thousand += balance * close
+                matched += 1
+            if matched < 50 or collateral_thousand <= 0:
+                return None
+            return {
+                "date": day.isoformat(),
+                "value": round(collateral_thousand / margin_money_thousand * 100, 3),
+                "marginBalanceBillion": round(margin_money_thousand / 100000, 2),
+                "matchedSecurities": matched,
+            }
+        except Exception as error:
+            last_error = error
+            if attempt == 0:
+                time.sleep(0.35)
+    if last_error:
+        print(f"TWSE margin maintenance {day.isoformat()} failed: {type(last_error).__name__}: {last_error}")
+    return None
+
+
+def update_margin_maintenance(previous_points: list[dict]) -> tuple[list[dict], str]:
+    today = datetime.now(TZ).date()
+    valid_previous = [
+        point for point in previous_points
+        if isinstance(point, dict) and point.get("date") and number(point.get("value")) is not None
+    ]
+    existing_dates = {point["date"] for point in valid_previous}
+    missing_days = []
+    cursor = today - timedelta(days=380)
+    while cursor <= today:
+        if cursor.weekday() < 5 and cursor.isoformat() not in existing_dates:
+            missing_days.append(cursor)
+        cursor += timedelta(days=1)
+    # Newest gaps matter most for 1M/6M charts. Small daily batches avoid
+    # triggering TWSE rate limits; repeated scheduled runs gradually fill 1Y.
+    max_days = max(1, int(os.environ.get("TWSE_MARGIN_MAX_DAYS", "15")))
+    days = sorted(missing_days, reverse=True)[:max_days]
+
+    fetched: list[dict] = []
+    if days:
+        for day in days:
+            point = fetch_twse_margin_day(day)
+            if point:
+                fetched.append(point)
+            time.sleep(0.45)
+    merged = {
+        point["date"]: point
+        for point in [*valid_previous, *fetched]
+        if point.get("date") >= (today - timedelta(days=380)).isoformat()
+    }
+    points = sorted(merged.values(), key=lambda point: point["date"])
+    if not points:
+        raise ValueError("No TWSE margin maintenance points available")
+    return points, "updated" if fetched else "kept_previous"
+
+
 def main() -> int:
     previous = load_previous()
     previous_usd_twd = previous.get("usdTwdPoints") or [
@@ -146,6 +274,7 @@ def main() -> int:
     ]
     previous_dxy = previous.get("dxyPoints") or []
     previous_treasury10y = previous.get("treasury10yPoints") or []
+    previous_margin_maintenance = previous.get("marginMaintenancePoints") or []
 
     usd_twd_points, usd_twd_status = current_or_previous(
         "USD/TWD",
@@ -166,19 +295,25 @@ def main() -> int:
         ),
         previous_treasury10y,
     )
+    margin_maintenance_points, margin_maintenance_status = update_margin_maintenance(
+        previous_margin_maintenance
+    )
 
     payload = {
         "source": "中央銀行統計資料庫、Yahoo Finance",
         "fetchedAt": datetime.now(TZ).isoformat(),
         "latestDate": max(
-            usd_twd_points[-1]["date"], dxy_points[-1]["date"], treasury10y_points[-1]["date"]
+            usd_twd_points[-1]["date"], dxy_points[-1]["date"], treasury10y_points[-1]["date"],
+            margin_maintenance_points[-1]["date"]
         ),
         "usdTwdLatestDate": usd_twd_points[-1]["date"],
         "dxyLatestDate": dxy_points[-1]["date"],
         "treasury10yLatestDate": treasury10y_points[-1]["date"],
+        "marginMaintenanceLatestDate": margin_maintenance_points[-1]["date"],
         "usdTwdPoints": usd_twd_points,
         "dxyPoints": dxy_points,
         "treasury10yPoints": treasury10y_points,
+        "marginMaintenancePoints": margin_maintenance_points,
         "sources": {
             "usdTwd": {
                 "name": "中央銀行銀行間市場收盤匯率",
@@ -198,6 +333,13 @@ def main() -> int:
                 "apiUrl": TREASURY10Y_API_URL,
                 "status": treasury10y_status,
             },
+            "marginMaintenance": {
+                "name": "臺灣證券交易所上市市場融資維持率估算",
+                "url": TWSE_MARGIN_SOURCE_URL,
+                "apiUrl": TWSE_MARGIN_API_URL,
+                "status": margin_maintenance_status,
+                "formula": "個股融資餘額×收盤價合計÷集中市場融資金額餘額×100",
+            },
         },
     }
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
@@ -208,7 +350,9 @@ def main() -> int:
         "Updated exchange data: "
         f"USD/TWD={len(usd_twd_points)} ({usd_twd_points[-1]['date']}), "
         f"DXY={len(dxy_points)} ({dxy_points[-1]['date']}), "
-        f"US10Y={len(treasury10y_points)} ({treasury10y_points[-1]['date']})"
+        f"US10Y={len(treasury10y_points)} ({treasury10y_points[-1]['date']}), "
+        f"TWSE margin maintenance={len(margin_maintenance_points)} "
+        f"({margin_maintenance_points[-1]['date']})"
     )
     return 0
 
