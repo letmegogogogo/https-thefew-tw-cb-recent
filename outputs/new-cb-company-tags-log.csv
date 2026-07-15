@@ -1,2 +1,2 @@
 ﻿checkedAt,stockId,companyName,officialIndustry,action,fineIndustryTags,productTags,themeTags,groupTags,accuracy,sourceNote,reason
-2026-07-13T21:18:59.349147+08:00,1623,大東電業廠,電器電纜,enriched,電線電纜、高壓電纜,電力電纜、高壓電纜、特高壓電纜、橡膠電纜,電網韌性、AI資料中心、電力基礎建設,電線電纜,high,依 TWSE 公司資料、TWSE 新上市公司介紹及公司官網產品資訊整理。,verified_company_rule
+2026-07-15T20:15:50.210631+08:00,6134,萬旭電業,電子零組件業,enriched,連接線組、天線,連接線組、線材、天線、連接器,網通、自動化生產、車用電子,連接器線材,high,依萬旭電業官方公司簡介、產品型錄與法說資料整理。,verified_company_rule

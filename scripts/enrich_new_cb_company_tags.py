@@ -21,6 +21,48 @@ INCOMPLETE_SOURCES = {"", "fallback", "unknown", "officialIndustryOnly"}
 # Verified company-specific seeds. These are intentionally small and sourced.
 # Existing manual/high-confidence records are never overwritten.
 COMPANY_RULES = {
+    "8054": {
+        "fineIndustries": ["IC設計", "ASIC設計"],
+        "productTags": ["ASIC", "SoC", "IC設計服務"],
+        "themeTags": ["AI晶片", "資料中心", "邊緣運算"],
+        "groupTags": ["IC設計"],
+        "confidence": 90,
+        "accuracy": "high",
+        "source": "official_web",
+        "sourceNote": "依安國官方網站 ASIC、SoC 設計服務與 AI 晶片解決方案資訊整理。",
+        "sourceUrls": [
+            "https://www.alcormicro.com/zh-tw/",
+            "https://ic.tpex.org.tw/company_chain.php?stk_code=8054",
+        ],
+    },
+    "3028": {
+        "fineIndustries": ["電子通路", "半導體通路"],
+        "productTags": ["半導體元件", "記憶體", "MCU", "通訊元件"],
+        "themeTags": ["物聯網", "資料中心", "電子供應鏈"],
+        "groupTags": ["電子通路"],
+        "confidence": 90,
+        "accuracy": "high",
+        "source": "official_web",
+        "sourceNote": "依增你強官方公司介紹與產品線資訊整理。",
+        "sourceUrls": [
+            "https://www.zenitron.com.tw/tw/about/overview",
+            "https://www.zenitron.com.tw/tw/products",
+        ],
+    },
+    "6134": {
+        "fineIndustries": ["連接線組", "天線"],
+        "productTags": ["連接線組", "線材", "天線", "連接器"],
+        "themeTags": ["網通", "自動化生產", "車用電子"],
+        "groupTags": ["連接器線材"],
+        "confidence": 90,
+        "accuracy": "high",
+        "source": "official_web",
+        "sourceNote": "依萬旭電業官方公司簡介、產品型錄與法說資料整理。",
+        "sourceUrls": [
+            "https://www.wanshih.com.tw/list/company-profile.htm",
+            "https://www.wanshih.com.tw/uploadfiles/973/catalog/2023-wanshih-e-catalogue_zh_views.pdf",
+        ],
+    },
     "1623": {
         "fineIndustries": ["電線電纜", "高壓電纜"],
         "productTags": ["電力電纜", "高壓電纜", "特高壓電纜", "橡膠電纜"],
@@ -221,7 +263,7 @@ def main() -> int:
         if has_refined_tags(existing):
             logs.append(log_row(code, row, "skipped_existing", existing, "existing_verified_tags"))
             continue
-        if not requested and str(existing.get("updatedAt") or "") == today_text():
+        if not requested and code not in COMPANY_RULES and str(existing.get("updatedAt") or "") == today_text():
             logs.append(log_row(code, row, "deferred", existing, "checked_today_retry_next_day"))
             continue
         if processed >= args.limit:

@@ -1,4 +1,69 @@
 {
+  "3028": {
+    "accuracy": "high",
+    "companyName": "增你強",
+    "confidence": 90,
+    "fineIndustries": [
+      "電子通路",
+      "半導體通路"
+    ],
+    "groupTags": [
+      "電子通路"
+    ],
+    "officialIndustry": "電子通路業",
+    "productTags": [
+      "半導體元件",
+      "記憶體",
+      "MCU",
+      "通訊元件"
+    ],
+    "source": "official_web",
+    "sourceNote": "依增你強官方公司介紹與產品線資訊整理。",
+    "sourceUrls": [
+      "https://www.zenitron.com.tw/tw/about/overview",
+      "https://www.zenitron.com.tw/tw/products"
+    ],
+    "stockId": "3028",
+    "stockName": "增你強",
+    "themeTags": [
+      "物聯網",
+      "資料中心",
+      "電子供應鏈"
+    ],
+    "updatedAt": "2026-07-15"
+  },
+  "8054": {
+    "accuracy": "high",
+    "companyName": "安國",
+    "confidence": 90,
+    "fineIndustries": [
+      "IC設計",
+      "ASIC設計"
+    ],
+    "groupTags": [
+      "IC設計"
+    ],
+    "officialIndustry": "半導體業",
+    "productTags": [
+      "ASIC",
+      "SoC",
+      "IC設計服務"
+    ],
+    "source": "official_web",
+    "sourceNote": "依安國官方網站 ASIC、SoC 設計服務與 AI 晶片解決方案資訊整理。",
+    "sourceUrls": [
+      "https://www.alcormicro.com/zh-tw/",
+      "https://ic.tpex.org.tw/company_chain.php?stk_code=8054"
+    ],
+    "stockId": "8054",
+    "stockName": "安國",
+    "themeTags": [
+      "AI晶片",
+      "資料中心",
+      "邊緣運算"
+    ],
+    "updatedAt": "2026-07-15"
+  },
   "1101": {
     "confidence": 90,
     "fineIndustries": [
@@ -4585,28 +4650,37 @@
     "updatedAt": "2026-06-23"
   },
   "6134": {
-    "accuracy": "needs_review",
+    "accuracy": "high",
     "companyName": "萬旭電業",
-    "confidence": 50,
+    "confidence": 90,
     "fineIndustries": [
-      "電子零組件"
+      "連接線組",
+      "天線"
     ],
     "groupTags": [
-      "電子零組件"
+      "連接器線材"
     ],
     "officialIndustry": "電子零組件業",
     "productTags": [
-      "電子零組件"
+      "連接線組",
+      "線材",
+      "天線",
+      "連接器"
     ],
-    "source": "officialIndustryOnly",
-    "sourceNote": "僅依官方產業保守補標；尚未取得明確產品線資料，需人工複核。",
-    "sourceUrls": [],
+    "source": "official_web",
+    "sourceNote": "依萬旭電業官方公司簡介、產品型錄與法說資料整理。",
+    "sourceUrls": [
+      "https://www.wanshih.com.tw/list/company-profile.htm",
+      "https://www.wanshih.com.tw/uploadfiles/973/catalog/2023-wanshih-e-catalogue_zh_views.pdf"
+    ],
     "stockId": "6134",
     "stockName": "萬旭電業",
     "themeTags": [
-      "電子供應鏈"
+      "網通",
+      "自動化生產",
+      "車用電子"
     ],
-    "updatedAt": "2026-07-09"
+    "updatedAt": "2026-07-15"
   },
   "6150": {
     "confidence": 90,

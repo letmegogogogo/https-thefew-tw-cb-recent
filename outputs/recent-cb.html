@@ -1511,8 +1511,9 @@
         ? (row.cbClose / row.conversionValue - 1) * 100
         : null;
       const premiumClass = premiumValue > 40 ? 'premium-high' : premiumValue >= 10 ? 'premium-mid' : 'premium-low';
-      const conversionPremium = premiumValue == null ? '<span class="premium-badge premium-low">無</span>' : `<span class="premium-badge ${premiumClass}">${fmtPct(premiumValue, 1)}</span>`;
-      const cbClose = row.cbClose == null ? '<span class="no-trade">無成交</span>' : `<div class="stock-price-line">${fmtPrice(row.cbClose, 2)}</div>`;
+      const awaitingListing = row.cbClose == null && isUpcomingIssueDate(row.issueDate || row.listingDate);
+      const conversionPremium = premiumValue == null ? `<span class="premium-badge premium-low">${awaitingListing ? '待掛牌' : '無'}</span>` : `<span class="premium-badge ${premiumClass}">${fmtPct(premiumValue, 1)}</span>`;
+      const cbClose = row.cbClose == null ? `<span class="no-trade">${awaitingListing ? '尚未掛牌' : '無成交'}</span>` : `<div class="stock-price-line">${fmtPrice(row.cbClose, 2)}</div>`;
       const cbChangeLabel = row.cbChangeBasis === 'previous_trade' ? '距前次成交' : '漲跌幅';
       const cbLiquidityNote = row.cbChangeBasis === 'previous_trade'
         ? `<div class="subline muted">低流動／${row.cbPrevTradeDate ? fmtDate(row.cbPrevTradeDate) : '前次成交'}</div>`
@@ -1575,7 +1576,8 @@
       const stockValue = row.stockClose == null
         ? '-'
         : `<div>${fmtPrice(row.stockClose, 2)}</div>${stockDailyMove}${stockWeeklyMove}${stockRecordHigh ? '<div class="subline"><span class="record-label">新高</span></div>' : ''}`;
-      const cbClose = row.cbClose == null ? '<span class="no-trade">無成交</span>' : `<div>${fmtPrice(row.cbClose, 2)}</div>`;
+      const awaitingListing = row.cbClose == null && isUpcomingIssueDate(row.issueDate || row.listingDate);
+      const cbClose = row.cbClose == null ? `<span class="no-trade">${awaitingListing ? '尚未掛牌' : '無成交'}</span>` : `<div>${fmtPrice(row.cbClose, 2)}</div>`;
       const cbChangeLabel = row.cbChangeBasis === 'previous_trade' ? '距前次成交' : '漲跌幅';
       const cbChange = row.cbChangePct == null
         ? ''
@@ -1585,7 +1587,7 @@
         ? (row.cbClose / row.conversionValue - 1) * 100
         : null;
       const premiumClass = premiumValue > 40 ? 'premium-high' : premiumValue >= 10 ? 'premium-mid' : 'premium-low';
-      const conversionPremium = premiumValue == null ? '<span class="premium-badge premium-low">無</span>' : `<span class="premium-badge ${premiumClass}">${fmtPct(premiumValue, 1)}</span>`;
+      const conversionPremium = premiumValue == null ? `<span class="premium-badge premium-low">${awaitingListing ? '待掛牌' : '無'}</span>` : `<span class="premium-badge ${premiumClass}">${fmtPct(premiumValue, 1)}</span>`;
       const revenuePeriod = revenuePeriodLabel(row);
       const marginPeriod = marginPeriodLabel(row);
       const revenueGrowth = row.revenueYoY == null ? '-' : `<span class="${row.revenueYoY >= 0 ? 'pos' : 'neg'}">${row.revenueYoY >= 0 ? '+' : ''}${fmtPct(row.revenueYoY, 1)}</span>`;
@@ -2022,8 +2024,9 @@
           <text class="fx-axis-label" x="${left - 8}" y="${y + 4}" text-anchor="end">${fmtFx(value, 2)}</text>
           <text class="fx-axis-label" x="${width - right + 8}" y="${y + 4}" text-anchor="start">${fmtFx(twdTicks[index], 3)}</text>`;
       }).join('');
-      const dateTicks = points.length < 5
-        ? [...new Set(points.map((point) => toDate(point.date)?.getTime()).filter(Number.isFinite))]
+      const chartDates = [...new Set(allDates.map((date) => date.getTime()))].sort((a, b) => a - b);
+      const dateTicks = chartDates.length < 5
+        ? chartDates
         : Array.from({ length: 5 }, (_, index) => minTime + index * (maxTime - minTime) / 4);
       const dates = dateTicks.map((timestamp) => {
         const date = new Date(timestamp);
