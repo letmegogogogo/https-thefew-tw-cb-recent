@@ -149,8 +149,16 @@
     .fx-line-dxy { fill: none; stroke: #f97316; stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
     .fx-line-usd-twd { fill: none; stroke: #2563eb; stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
     .fx-line-treasury { fill: none; stroke: #16a34a; stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
-    .fx-line-margin { fill: none; stroke: #f97316; stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
-    .fx-margin-bar { fill: #a8b0bc; opacity: 0.72; }
+    .fx-margin-bar { fill: #718096; opacity: 0.78; }
+    .fx-margin-segment-up { stroke: #168a5b; stroke-width: 3; stroke-linecap: round; }
+    .fx-margin-segment-down { stroke: #ef5b5b; stroke-width: 3; stroke-linecap: round; }
+    .fx-margin-point { fill: #fff; stroke: #53657a; stroke-width: 1.5; }
+    .fx-margin-panel-title { fill: #40546c; font-size: 12px; font-family: var(--font); font-weight: 800; }
+    .fx-margin-divider { stroke: #d9e3ee; stroke-width: 1; }
+    .fx-margin-annotation-line { stroke: #dc5a5a; stroke-width: 1; stroke-dasharray: 4 4; }
+    .fx-margin-annotation-dot { fill: #fff; stroke: #dc5a5a; stroke-width: 3; }
+    .fx-margin-annotation { fill: #b42318; font-size: 12px; font-family: var(--font); font-weight: 900; }
+    .fx-margin-annotation-note { fill: #7d8ca0; font-size: 10px; font-family: var(--font); font-weight: 700; }
     .fx-legend { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 10px; color: #51657d; font-size: 0.78rem; font-weight: 800; }
     .fx-legend-item { display: inline-flex; align-items: center; gap: 6px; }
     .fx-legend-dot { width: 22px; height: 3px; border-radius: 999px; }
@@ -2082,54 +2090,101 @@
       </article>`;
     };
     const makeMarginMaintenanceChart = (points) => {
-      if (points.length < 2) return '<div class="fx-chart-card fx-empty">此期間沒有足夠的台股融資維持率資料。</div>';
-      const width = 1100, height = 390, left = 72, right = 72, top = 28, bottom = 52;
-      const ratioScale = fxSeriesScale(points);
-      const balances = points.map((point) => Number(point.marginBalanceBillion)).filter(Number.isFinite);
-      const balanceScale = { min: 0, max: Math.max(...balances) * 1.08 };
-      const times = points.map((point) => toDate(point.date)?.getTime()).filter(Number.isFinite);
-      const minTime = Math.min(...times), maxTime = Math.max(...times);
+      const chartPoints = points.filter((point) => (
+        toDate(point.date)
+        && Number.isFinite(Number(point.value))
+        && Number.isFinite(Number(point.marginBalanceBillion))
+      ));
+      if (chartPoints.length < 2) return '<div class="fx-chart-card fx-empty">此期間沒有足夠的台股融資維持率資料。</div>';
+      const width = 1100, height = 570, left = 76, right = 28;
+      const barTop = 44, barBottom = 230, ratioTop = 306, ratioBottom = 500;
       const chartWidth = width - left - right;
-      const x = (dateText) => left + (toDate(dateText).getTime() - minTime) * chartWidth / Math.max(1, maxTime - minTime);
-      const ratioY = (value) => top + (ratioScale.max - Number(value)) * (height - top - bottom) / Math.max(0.0000001, ratioScale.max - ratioScale.min);
-      const balanceY = (value) => top + (balanceScale.max - Number(value)) * (height - top - bottom) / Math.max(1, balanceScale.max);
-      const ratioPath = points.map((point) => `${x(point.date).toFixed(1)},${ratioY(point.value).toFixed(1)}`).join(' ');
-      const barWidth = Math.max(1.5, Math.min(12, chartWidth / points.length * 0.72));
-      const bars = points.map((point) => {
-        const value = Number(point.marginBalanceBillion);
-        if (!Number.isFinite(value)) return '';
-        const y = balanceY(value);
-        return `<rect class="fx-margin-bar" x="${(x(point.date) - barWidth / 2).toFixed(1)}" y="${y.toFixed(1)}" width="${barWidth.toFixed(1)}" height="${(height - bottom - y).toFixed(1)}"></rect>`;
+      const x = (index) => left + index * chartWidth / Math.max(1, chartPoints.length - 1);
+      const balances = chartPoints.map((point) => Number(point.marginBalanceBillion));
+      const ratios = chartPoints.map((point) => Number(point.value));
+
+      const maxBalance = Math.max(...balances);
+      const balanceStep = Math.max(500, Math.ceil(maxBalance / 4 / 500) * 500);
+      const balanceMax = balanceStep * 4;
+      const balanceY = (value) => barBottom - Number(value) * (barBottom - barTop) / balanceMax;
+      const balanceTicks = Array.from({ length: 5 }, (_, index) => index * balanceStep);
+
+      const rawRatioMin = Math.min(...ratios), rawRatioMax = Math.max(...ratios);
+      const rawRatioRange = Math.max(1, rawRatioMax - rawRatioMin);
+      const ratioStep = rawRatioRange <= 20 ? 5 : rawRatioRange <= 40 ? 10 : 20;
+      const ratioMin = Math.floor(rawRatioMin / ratioStep) * ratioStep;
+      const ratioMax = Math.max(ratioMin + ratioStep, Math.ceil(rawRatioMax / ratioStep) * ratioStep);
+      const ratioY = (value) => ratioBottom - (Number(value) - ratioMin) * (ratioBottom - ratioTop) / Math.max(1, ratioMax - ratioMin);
+      const ratioTickCount = Math.round((ratioMax - ratioMin) / ratioStep);
+      const ratioTicks = Array.from({ length: ratioTickCount + 1 }, (_, index) => ratioMin + index * ratioStep);
+
+      const barWidth = Math.max(1.5, Math.min(22, chartWidth / chartPoints.length * 0.72));
+      const bars = chartPoints.map((point, index) => {
+        const y = balanceY(point.marginBalanceBillion);
+        return `<rect class="fx-margin-bar" x="${(x(index) - barWidth / 2).toFixed(1)}" y="${y.toFixed(1)}" width="${barWidth.toFixed(1)}" height="${(barBottom - y).toFixed(1)}"></rect>`;
       }).join('');
-      const ratioTicks = Array.from({ length: 5 }, (_, index) => ratioScale.max - index * (ratioScale.max - ratioScale.min) / 4);
-      const balanceTicks = Array.from({ length: 5 }, (_, index) => balanceScale.max - index * balanceScale.max / 4);
-      const grids = ratioTicks.map((value, index) => {
+      const balanceGrid = balanceTicks.map((value) => {
+        const y = balanceY(value);
+        return `<line class="fx-grid-line" x1="${left}" x2="${width - right}" y1="${y}" y2="${y}"></line>
+          <text class="fx-axis-label" x="${left - 10}" y="${y + 4}" text-anchor="end">${fmtFx(value, 0)}</text>`;
+      }).join('');
+      const ratioGrid = ratioTicks.map((value) => {
         const y = ratioY(value);
         return `<line class="fx-grid-line" x1="${left}" x2="${width - right}" y1="${y}" y2="${y}"></line>
-          <text class="fx-axis-label" x="${left - 8}" y="${y + 4}" text-anchor="end">${fmtFx(balanceTicks[index], 0)}</text>
-          <text class="fx-axis-label" x="${width - right + 8}" y="${y + 4}" text-anchor="start">${fmtFx(value, 1)}%</text>`;
+          <text class="fx-axis-label" x="${left - 10}" y="${y + 4}" text-anchor="end">${fmtFx(value, 0)}%</text>`;
       }).join('');
-      const dateTicks = points.length < 5
-        ? [...new Set(points.map((point) => toDate(point.date)?.getTime()).filter(Number.isFinite))]
-        : Array.from({ length: 5 }, (_, index) => minTime + index * (maxTime - minTime) / 4);
-      const dates = dateTicks.map((timestamp) => {
-        const date = new Date(timestamp);
-        const xPosition = left + (timestamp - minTime) * chartWidth / Math.max(1, maxTime - minTime);
-        return `<text class="fx-axis-label" x="${xPosition}" y="${height - 15}" text-anchor="middle">${String(date.getMonth() + 1).padStart(2, '0')}/${String(date.getDate()).padStart(2, '0')}</text>`;
+      const segments = chartPoints.slice(1).map((point, index) => {
+        const previous = chartPoints[index];
+        const rising = Number(point.value) >= Number(previous.value);
+        return `<line class="${rising ? 'fx-margin-segment-up' : 'fx-margin-segment-down'}" x1="${x(index).toFixed(1)}" y1="${ratioY(previous.value).toFixed(1)}" x2="${x(index + 1).toFixed(1)}" y2="${ratioY(point.value).toFixed(1)}"></line>`;
       }).join('');
-      const first = ratioScale.values[0], latest = ratioScale.values[ratioScale.values.length - 1];
+      const pointDots = chartPoints.map((point, index) => `<circle class="fx-margin-point" cx="${x(index).toFixed(1)}" cy="${ratioY(point.value).toFixed(1)}" r="2.4"></circle>`).join('');
+
+      const dateTickCount = Math.min(6, chartPoints.length);
+      const dateIndexes = [...new Set(Array.from({ length: dateTickCount }, (_, index) => Math.round(index * (chartPoints.length - 1) / Math.max(1, dateTickCount - 1))))];
+      const dates = dateIndexes.map((pointIndex) => {
+        const date = toDate(chartPoints[pointIndex].date);
+        return `<text class="fx-axis-label" x="${x(pointIndex)}" y="${height - 18}" text-anchor="middle">${String(date.getMonth() + 1).padStart(2, '0')}/${String(date.getDate()).padStart(2, '0')}</text>`;
+      }).join('');
+
+      let largestDrop = null;
+      chartPoints.slice(1).forEach((point, index) => {
+        const changeValue = Number(point.value) - Number(chartPoints[index].value);
+        if (changeValue < 0 && (!largestDrop || changeValue < largestDrop.change)) {
+          largestDrop = { index: index + 1, change: changeValue, point };
+        }
+      });
+      const annotation = largestDrop ? (() => {
+        const annotationX = x(largestDrop.index);
+        const annotationY = ratioY(largestDrop.point.value);
+        const labelX = annotationX > width - 340 ? annotationX - 12 : annotationX + 12;
+        const anchor = annotationX > width - 340 ? 'end' : 'start';
+        const date = toDate(largestDrop.point.date);
+        const dateLabel = `${date.getFullYear()}/${String(date.getMonth() + 1).padStart(2, '0')}/${String(date.getDate()).padStart(2, '0')}`;
+        const labelY = Math.max(ratioTop + 18, annotationY - 18);
+        return `<line class="fx-margin-annotation-line" x1="${annotationX}" x2="${annotationX}" y1="${ratioTop}" y2="${ratioBottom}"></line>
+          <circle class="fx-margin-annotation-dot" cx="${annotationX}" cy="${annotationY}" r="5"></circle>
+          <text class="fx-margin-annotation" x="${labelX}" y="${labelY}" text-anchor="${anchor}">${dateLabel} 最大單日下降 ${largestDrop.change.toFixed(1)} 個百分點</text>
+          <text class="fx-margin-annotation-note" x="${labelX}" y="${labelY + 16}" text-anchor="${anchor}">原因需搭配當日公告與市場資訊判讀</text>`;
+      })() : '';
+
+      const first = ratios[0], latest = ratios[ratios.length - 1];
       const latestBalance = balances[balances.length - 1];
       const change = latest - first;
       const changeClass = change > 0 ? 'up' : change < 0 ? 'down' : '';
       return `<article class="fx-chart-card">
-        <div class="fx-chart-title"><div><h3>台股上市市場融資維持率走勢</h3><p>左軸：融資金額（億元）｜右軸：融資維持率估算（%）</p></div>
+        <div class="fx-chart-title"><div><h3>台股上市市場融資維持率走勢</h3><p>上方：融資金額｜下方：融資維持率估算；共用交易日等距時間軸</p></div>
           <div class="fx-latest-group">
             <div class="fx-latest"><small>融資金額</small>${fmtFx(latestBalance, 0)} 億</div>
             <div class="fx-latest"><small>融資維持率估算</small>${fmtFx(latest, 1)}%<div class="fx-change ${changeClass}">${change >= 0 ? '+' : ''}${change.toFixed(1)} 個百分點</div></div>
           </div></div>
-        <div class="fx-legend"><span class="fx-legend-item"><i class="fx-legend-dot margin-balance"></i>上市市場融資金額</span><span class="fx-legend-item"><i class="fx-legend-dot margin-ratio"></i>融資維持率估算</span></div>
+        <div class="fx-legend"><span class="fx-legend-item"><i class="fx-legend-dot margin-balance"></i>上市市場融資金額</span><span class="fx-legend-item"><i class="fx-legend-dot" style="background:#168a5b"></i>維持率上升</span><span class="fx-legend-item"><i class="fx-legend-dot" style="background:#ef5b5b"></i>維持率下降</span></div>
         <svg class="fx-chart-svg" viewBox="0 0 ${width} ${height}" role="img" aria-label="台股上市市場融資維持率 ${escapeHtml(fxRange)} 走勢圖">
-          ${grids}${dates}${bars}<polyline class="fx-line-margin" points="${ratioPath}"></polyline>
+          <text class="fx-margin-panel-title" x="${left}" y="22">融資金額（億元）</text>
+          ${balanceGrid}${bars}
+          <line class="fx-margin-divider" x1="${left}" x2="${width - right}" y1="270" y2="270"></line>
+          <text class="fx-margin-panel-title" x="${left}" y="288">融資維持率估算（%）</text>
+          ${ratioGrid}${segments}${pointDots}${annotation}${dates}
         </svg>
       </article>`;
     };
