@@ -133,7 +133,7 @@
     }
     .fx-range-button.active { background: #1d4ed8; border-color: #1d4ed8; color: #fff; }
     .fx-chart-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 14px; }
-    .fx-chart-card { min-width: 0; padding: 16px; border-radius: 12px; background: #fff; box-shadow: 0 4px 16px rgba(31, 64, 104, 0.07); }
+    .fx-chart-card { position: relative; min-width: 0; padding: 16px; border-radius: 12px; background: #fff; box-shadow: 0 4px 16px rgba(31, 64, 104, 0.07); }
     .fx-chart-title { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; }
     .fx-chart-title h3 { margin: 0; color: #203c61; font-size: 1rem; }
     .fx-chart-title p { margin: 4px 0 0; color: #8190a3; font-size: 0.74rem; }
@@ -167,6 +167,24 @@
     .fx-margin-bar:hover { fill: #475569; opacity: 0.95; }
     .fx-margin-point { cursor: crosshair; pointer-events: all; }
     .fx-margin-point:hover { fill: #fff; stroke: #dc2626; stroke-width: 3; r: 5px; }
+    .fx-chart-tooltip {
+      position: absolute;
+      z-index: 8;
+      max-width: min(280px, calc(100% - 20px));
+      padding: 7px 10px;
+      border: 1px solid #cbd8e8;
+      border-radius: 8px;
+      background: rgba(15, 45, 80, 0.96);
+      box-shadow: 0 5px 16px rgba(15, 45, 80, 0.2);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 800;
+      line-height: 1.45;
+      white-space: nowrap;
+      pointer-events: none;
+      transform: translateY(-100%);
+    }
+    .fx-chart-tooltip[hidden] { display: none; }
     .fx-legend { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 10px; color: #51657d; font-size: 0.78rem; font-weight: 800; }
     .fx-legend-item { display: inline-flex; align-items: center; gap: 6px; }
     .fx-legend-dot { width: 22px; height: 3px; border-radius: 999px; }
@@ -2054,14 +2072,21 @@
         const xPosition = left + (timestamp - minTime) * (width - left - right) / Math.max(1, maxTime - minTime);
         return `<text class="fx-axis-label" x="${xPosition}" y="${height - 13}" text-anchor="middle">${fxDateLabel(date)}</text>`;
       }).join('');
-      const dxyHoverPoints = dxyPoints.map((point) => `<circle class="fx-hover-point dxy" cx="${x(point.date).toFixed(1)}" cy="${yFor(point.value, dxyScale).toFixed(1)}" r="7"><title>${fxDateLabel(point.date)}｜美元指數：${fmtFx(point.value, 2)}</title></circle>`).join('');
-      const twdHoverPoints = usdTwdPoints.map((point) => `<circle class="fx-hover-point usd-twd" cx="${x(point.date).toFixed(1)}" cy="${yFor(point.value, twdScale).toFixed(1)}" r="7"><title>${fxDateLabel(point.date)}｜USD/TWD：${fmtFx(point.value, 3)}</title></circle>`).join('');
+      const dxyHoverPoints = dxyPoints.map((point) => {
+        const label = `${fxDateLabel(point.date)}｜美元指數：${fmtFx(point.value, 2)}`;
+        return `<circle class="fx-hover-point dxy" data-fx-tooltip="${escapeHtml(label)}" cx="${x(point.date).toFixed(1)}" cy="${yFor(point.value, dxyScale).toFixed(1)}" r="8"><title>${escapeHtml(label)}</title></circle>`;
+      }).join('');
+      const twdHoverPoints = usdTwdPoints.map((point) => {
+        const label = `${fxDateLabel(point.date)}｜USD/TWD：${fmtFx(point.value, 3)}`;
+        return `<circle class="fx-hover-point usd-twd" data-fx-tooltip="${escapeHtml(label)}" cx="${x(point.date).toFixed(1)}" cy="${yFor(point.value, twdScale).toFixed(1)}" r="8"><title>${escapeHtml(label)}</title></circle>`;
+      }).join('');
       const dxyFirst = dxyScale.values[0], dxyLatest = dxyScale.values[dxyScale.values.length - 1];
       const twdFirst = twdScale.values[0], twdLatest = twdScale.values[twdScale.values.length - 1];
       const dxyChange = (dxyLatest / dxyFirst - 1) * 100;
       const twdChange = (twdLatest / twdFirst - 1) * 100;
       const changeMarkup = (change) => `<div class="fx-change ${change > 0 ? 'up' : change < 0 ? 'down' : ''}">${change >= 0 ? '+' : ''}${change.toFixed(2)}%</div>`;
       return `<article class="fx-chart-card">
+        <div class="fx-chart-tooltip" hidden></div>
         <div class="fx-chart-title"><div><h3>美元指數與美元兌新台幣</h3><p>左軸：美元指數 DXY｜右軸：1 美元兌新台幣</p></div>
           <div class="fx-latest-group">
             <div class="fx-latest"><small>美元指數</small>${fmtFx(dxyLatest, 2)}${changeMarkup(dxyChange)}</div>
@@ -2093,11 +2118,15 @@
         const xPosition = left + (timestamp - minTime) * (width - left - right) / Math.max(1, maxTime - minTime);
         return `<text class="fx-axis-label" x="${xPosition}" y="${height - 13}" text-anchor="middle">${fxDateLabel(date)}</text>`;
       }).join('');
-      const hoverPoints = points.map((point) => `<circle class="fx-hover-point treasury" cx="${x(point.date).toFixed(1)}" cy="${y(point.value).toFixed(1)}" r="7"><title>${fxDateLabel(point.date)}｜美國10年期公債殖利率：${fmtFx(point.value, 3)}%</title></circle>`).join('');
+      const hoverPoints = points.map((point) => {
+        const label = `${fxDateLabel(point.date)}｜美國10年期公債殖利率：${fmtFx(point.value, 3)}%`;
+        return `<circle class="fx-hover-point treasury" data-fx-tooltip="${escapeHtml(label)}" cx="${x(point.date).toFixed(1)}" cy="${y(point.value).toFixed(1)}" r="8"><title>${escapeHtml(label)}</title></circle>`;
+      }).join('');
       const first = scale.values[0], latest = scale.values[scale.values.length - 1];
       const basisPointChange = (latest - first) * 100;
       const changeClass = basisPointChange > 0 ? 'up' : basisPointChange < 0 ? 'down' : '';
       return `<article class="fx-chart-card">
+        <div class="fx-chart-tooltip" hidden></div>
         <div class="fx-chart-title"><div><h3>美國10年期公債殖利率</h3><p>US 10-Year Treasury Yield（^TNX）</p></div>
           <div class="fx-latest"><small>最新殖利率</small>${fmtFx(latest, 3)}%<div class="fx-change ${changeClass}">${basisPointChange >= 0 ? '+' : ''}${basisPointChange.toFixed(1)} bp</div></div></div>
         <div class="fx-legend"><span class="fx-legend-item"><i class="fx-legend-dot" style="background:#16a34a"></i>美國10年期公債殖利率</span></div>
@@ -2138,7 +2167,8 @@
       const barWidth = Math.max(1.5, Math.min(22, chartWidth / chartPoints.length * 0.72));
       const bars = chartPoints.map((point, index) => {
         const y = balanceY(point.marginBalanceBillion);
-        return `<rect class="fx-margin-bar" x="${(x(index) - barWidth / 2).toFixed(1)}" y="${y.toFixed(1)}" width="${barWidth.toFixed(1)}" height="${(barBottom - y).toFixed(1)}"><title>${fxDateLabel(point.date)}｜融資金額：${fmtFx(point.marginBalanceBillion, 0)} 億元</title></rect>`;
+        const label = `${fxDateLabel(point.date)}｜融資金額：${fmtFx(point.marginBalanceBillion, 0)} 億元`;
+        return `<rect class="fx-margin-bar" data-fx-tooltip="${escapeHtml(label)}" x="${(x(index) - barWidth / 2).toFixed(1)}" y="${y.toFixed(1)}" width="${barWidth.toFixed(1)}" height="${(barBottom - y).toFixed(1)}"><title>${escapeHtml(label)}</title></rect>`;
       }).join('');
       const balanceGrid = balanceTicks.map((value) => {
         const y = balanceY(value);
@@ -2155,7 +2185,10 @@
         const rising = Number(point.value) >= Number(previous.value);
         return `<line class="${rising ? 'fx-margin-segment-up' : 'fx-margin-segment-down'}" x1="${x(index).toFixed(1)}" y1="${ratioY(previous.value).toFixed(1)}" x2="${x(index + 1).toFixed(1)}" y2="${ratioY(point.value).toFixed(1)}"></line>`;
       }).join('');
-      const pointDots = chartPoints.map((point, index) => `<circle class="fx-margin-point" cx="${x(index).toFixed(1)}" cy="${ratioY(point.value).toFixed(1)}" r="3.2"><title>${fxDateLabel(point.date)}｜融資維持率估算：${fmtFx(point.value, 1)}%</title></circle>`).join('');
+      const pointDots = chartPoints.map((point, index) => {
+        const label = `${fxDateLabel(point.date)}｜融資維持率估算：${fmtFx(point.value, 1)}%`;
+        return `<circle class="fx-margin-point" data-fx-tooltip="${escapeHtml(label)}" cx="${x(index).toFixed(1)}" cy="${ratioY(point.value).toFixed(1)}" r="4.2"><title>${escapeHtml(label)}</title></circle>`;
+      }).join('');
 
       const dateTickCount = Math.min(6, chartPoints.length);
       const dateIndexes = [...new Set(Array.from({ length: dateTickCount }, (_, index) => Math.round(index * (chartPoints.length - 1) / Math.max(1, dateTickCount - 1))))];
@@ -2190,6 +2223,7 @@
       const change = latest - first;
       const changeClass = change > 0 ? 'up' : change < 0 ? 'down' : '';
       return `<article class="fx-chart-card">
+        <div class="fx-chart-tooltip" hidden></div>
         <div class="fx-chart-title"><div><h3>台股上市市場融資維持率走勢</h3><p>上方：融資金額｜下方：融資維持率估算；共用交易日等距時間軸</p></div>
           <div class="fx-latest-group">
             <div class="fx-latest"><small>融資金額</small>${fmtFx(latestBalance, 0)} 億</div>
@@ -2352,6 +2386,30 @@
       fxRange = button.dataset.fxRange || '1M';
       renderFx();
     });
+    const hideFxChartTooltips = () => {
+      fxPanelEl.querySelectorAll('.fx-chart-tooltip').forEach((tooltip) => { tooltip.hidden = true; });
+    };
+    fxPanelEl.addEventListener('mousemove', (event) => {
+      const target = event.target instanceof Element ? event.target.closest('[data-fx-tooltip]') : null;
+      if (!target) {
+        hideFxChartTooltips();
+        return;
+      }
+      const card = target.closest('.fx-chart-card');
+      const tooltip = card?.querySelector('.fx-chart-tooltip');
+      if (!card || !tooltip) return;
+      fxPanelEl.querySelectorAll('.fx-chart-tooltip').forEach((item) => {
+        if (item !== tooltip) item.hidden = true;
+      });
+      tooltip.textContent = target.dataset.fxTooltip || '';
+      tooltip.hidden = false;
+      const cardRect = card.getBoundingClientRect();
+      const proposedLeft = event.clientX - cardRect.left + 12;
+      const maxLeft = Math.max(8, cardRect.width - tooltip.offsetWidth - 8);
+      tooltip.style.left = `${Math.max(8, Math.min(proposedLeft, maxLeft))}px`;
+      tooltip.style.top = `${Math.max(tooltip.offsetHeight + 8, event.clientY - cardRect.top - 8)}px`;
+    });
+    fxPanelEl.addEventListener('mouseleave', hideFxChartTooltips);
     [searchInputEl, highFilterEl].forEach((control) => control.addEventListener('input', () => {
       if (currentView === 'recent') {
         recentRenderLimit = 0;
