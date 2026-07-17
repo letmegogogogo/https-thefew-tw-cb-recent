@@ -14,17 +14,19 @@ ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_PATH = ROOT / "outputs" / "exchange-rate-data.js"
 CBC_API_URL = "https://cpx.cbc.gov.tw/api/OpenData/FTDOpenData_Day"
 CBC_SOURCE_URL = "https://data.gov.tw/dataset/7232"
-DXY_API_URL = "https://query2.finance.yahoo.com/v8/finance/chart/DX-Y.NYB?range=18mo&interval=1d"
-DXY_FALLBACK_API_URL = "https://query1.finance.yahoo.com/v8/finance/chart/DX-Y.NYB?range=18mo&interval=1d"
+DXY_API_URL = "https://query2.finance.yahoo.com/v8/finance/chart/DX-Y.NYB?range=5y&interval=1d"
+DXY_FALLBACK_API_URL = "https://query1.finance.yahoo.com/v8/finance/chart/DX-Y.NYB?range=5y&interval=1d"
 DXY_SOURCE_URL = "https://finance.yahoo.com/quote/DX-Y.NYB/history/"
-TREASURY10Y_API_URL = "https://query2.finance.yahoo.com/v8/finance/chart/%5ETNX?range=18mo&interval=1d"
-TREASURY10Y_FALLBACK_API_URL = "https://query1.finance.yahoo.com/v8/finance/chart/%5ETNX?range=18mo&interval=1d"
+TREASURY10Y_API_URL = "https://query2.finance.yahoo.com/v8/finance/chart/%5ETNX?range=5y&interval=1d"
+TREASURY10Y_FALLBACK_API_URL = "https://query1.finance.yahoo.com/v8/finance/chart/%5ETNX?range=5y&interval=1d"
 TREASURY10Y_SOURCE_URL = "https://finance.yahoo.com/quote/%5ETNX/history/"
 TWSE_MARGIN_API_URL = "https://www.twse.com.tw/rwd/zh/marginTrading/MI_MARGN"
 TWSE_PRICE_API_URL = "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX"
 TWSE_MARGIN_SOURCE_URL = "https://www.twse.com.tw/zh/trading/margin/mi-margn.html"
 PREFIX = "window.FX_RATE_DATA = "
 TZ = timezone(timedelta(hours=8))
+HISTORY_DAYS = 5 * 366
+MARGIN_DAILY_DAYS = 400
 
 
 def load_previous() -> dict:
@@ -81,7 +83,7 @@ def fetch_first_json(urls: tuple[str, ...]):
 
 
 def cutoff_date() -> str:
-    return (datetime.now(TZ).date() - timedelta(days=380)).isoformat()
+    return (datetime.now(TZ).date() - timedelta(days=HISTORY_DAYS)).isoformat()
 
 
 def normalize_usd_twd(rows: list[dict]) -> list[dict]:
@@ -237,9 +239,15 @@ def update_margin_maintenance(previous_points: list[dict]) -> tuple[list[dict], 
     ]
     existing_dates = {point["date"] for point in valid_previous}
     missing_days = []
-    cursor = today - timedelta(days=380)
+    history_start = today - timedelta(days=HISTORY_DAYS)
+    daily_start = today - timedelta(days=MARGIN_DAILY_DAYS)
+    cursor = history_start
     while cursor <= today:
-        if cursor.weekday() < 5 and cursor.isoformat() not in existing_dates:
+        # Keep daily observations for the latest year and use weekly samples
+        # for older history. Five years of two-request daily TWSE lookups would
+        # be slow and prone to rate limits while adding little chart detail.
+        wanted = cursor.weekday() < 5 and (cursor >= daily_start or cursor.weekday() == 2)
+        if wanted and cursor.isoformat() not in existing_dates:
             missing_days.append(cursor)
         cursor += timedelta(days=1)
     # Continue past exchange holidays and other no-data weekdays instead of
@@ -263,7 +271,7 @@ def update_margin_maintenance(previous_points: list[dict]) -> tuple[list[dict], 
     merged = {
         point["date"]: point
         for point in [*valid_previous, *fetched]
-        if point.get("date") >= (today - timedelta(days=380)).isoformat()
+        if point.get("date") >= history_start.isoformat()
     }
     points = sorted(merged.values(), key=lambda point: point["date"])
     if not points:

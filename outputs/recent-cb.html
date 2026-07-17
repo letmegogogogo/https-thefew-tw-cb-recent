@@ -1041,6 +1041,7 @@
               <button class="fx-range-button active" type="button" data-fx-range="1M">1 個月</button>
               <button class="fx-range-button" type="button" data-fx-range="6M">6 個月</button>
               <button class="fx-range-button" type="button" data-fx-range="1Y">1 年</button>
+              <button class="fx-range-button" type="button" data-fx-range="5Y">5 年</button>
             </div>
           </div>
           <div class="fx-chart-grid" id="fx-chart-grid"></div>
@@ -2016,7 +2017,7 @@
       }
     };
 
-    const fxPeriodDays = { '1M': 31, '6M': 183, '1Y': 366 };
+    const fxPeriodDays = { '1M': 31, '6M': 183, '1Y': 366, '5Y': 5 * 366 };
     const filterFxPoints = (points, range) => {
       if (!points.length) return [];
       const latest = toDate(points[points.length - 1].date);
