@@ -1,69 +1,4 @@
 {
-  "3028": {
-    "accuracy": "high",
-    "companyName": "增你強",
-    "confidence": 90,
-    "fineIndustries": [
-      "電子通路",
-      "半導體通路"
-    ],
-    "groupTags": [
-      "電子通路"
-    ],
-    "officialIndustry": "電子通路業",
-    "productTags": [
-      "半導體元件",
-      "記憶體",
-      "MCU",
-      "通訊元件"
-    ],
-    "source": "official_web",
-    "sourceNote": "依增你強官方公司介紹與產品線資訊整理。",
-    "sourceUrls": [
-      "https://www.zenitron.com.tw/tw/about/overview",
-      "https://www.zenitron.com.tw/tw/products"
-    ],
-    "stockId": "3028",
-    "stockName": "增你強",
-    "themeTags": [
-      "物聯網",
-      "資料中心",
-      "電子供應鏈"
-    ],
-    "updatedAt": "2026-07-15"
-  },
-  "8054": {
-    "accuracy": "high",
-    "companyName": "安國",
-    "confidence": 90,
-    "fineIndustries": [
-      "IC設計",
-      "ASIC設計"
-    ],
-    "groupTags": [
-      "IC設計"
-    ],
-    "officialIndustry": "半導體業",
-    "productTags": [
-      "ASIC",
-      "SoC",
-      "IC設計服務"
-    ],
-    "source": "official_web",
-    "sourceNote": "依安國官方網站 ASIC、SoC 設計服務與 AI 晶片解決方案資訊整理。",
-    "sourceUrls": [
-      "https://www.alcormicro.com/zh-tw/",
-      "https://ic.tpex.org.tw/company_chain.php?stk_code=8054"
-    ],
-    "stockId": "8054",
-    "stockName": "安國",
-    "themeTags": [
-      "AI晶片",
-      "資料中心",
-      "邊緣運算"
-    ],
-    "updatedAt": "2026-07-15"
-  },
   "1101": {
     "confidence": 90,
     "fineIndustries": [
@@ -557,26 +492,41 @@
     "updatedAt": "2026-07-13"
   },
   "1717": {
-    "confidence": 60,
+    "accuracy": "high",
+    "companyName": "長興材料工業",
+    "confidence": 95,
     "fineIndustries": [
-      "化工材料"
+      "合成樹脂",
+      "電子材料",
+      "特用材料"
     ],
     "groupTags": [
-      "化工"
+      "化工材料",
+      "電子材料"
     ],
     "officialIndustry": "化學工業",
     "productTags": [
-      "化學品",
-      "樹脂",
-      "特用材料"
+      "合成樹脂",
+      "UV材料",
+      "PCB光阻材料",
+      "光電材料",
+      "鋰電池材料"
     ],
-    "source": "officialIndustryOnly",
-    "stockName": "長興",
+    "source": "official_web",
+    "sourceNote": "依長興材料官網產品資訊整理；產品涵蓋合成樹脂、特用材料、電子材料與光阻材料。",
+    "sourceUrls": [
+      "https://www.eternal-group.com/Product",
+      "https://www.eternal.com.tw/"
+    ],
+    "stockId": "1717",
+    "stockName": "長興材料工業",
     "themeTags": [
-      "材料國產化",
-      "景氣循環"
+      "電子材料",
+      "半導體材料",
+      "綠色化學",
+      "材料國產化"
     ],
-    "updatedAt": "2026-06-23"
+    "updatedAt": "2026-07-18"
   },
   "1781": {
     "confidence": 60,
@@ -1649,6 +1599,39 @@
     ],
     "updatedAt": "2026-06-23"
   },
+  "3028": {
+    "accuracy": "high",
+    "companyName": "增你強",
+    "confidence": 90,
+    "fineIndustries": [
+      "電子通路",
+      "半導體通路"
+    ],
+    "groupTags": [
+      "電子通路"
+    ],
+    "officialIndustry": "電子通路業",
+    "productTags": [
+      "半導體元件",
+      "記憶體",
+      "MCU",
+      "通訊元件"
+    ],
+    "source": "official_web",
+    "sourceNote": "依增你強官方公司介紹與產品線資訊整理。",
+    "sourceUrls": [
+      "https://www.zenitron.com.tw/tw/about/overview",
+      "https://www.zenitron.com.tw/tw/products"
+    ],
+    "stockId": "3028",
+    "stockName": "增你強",
+    "themeTags": [
+      "物聯網",
+      "資料中心",
+      "電子供應鏈"
+    ],
+    "updatedAt": "2026-07-15"
+  },
   "3032": {
     "confidence": 60,
     "fineIndustries": [
@@ -2136,28 +2119,38 @@
     "updatedAt": "2026-06-23"
   },
   "3294": {
-    "confidence": 60,
+    "accuracy": "high",
+    "companyName": "英濟",
+    "confidence": 95,
     "fineIndustries": [
-      "電子零組件"
+      "精密塑膠零組件",
+      "機光電整合"
     ],
     "groupTags": [
-      "電子零組件"
+      "精密零組件",
+      "機光電整合"
     ],
     "officialIndustry": "電子零組件業",
     "productTags": [
-      "PCB",
-      "被動元件",
-      "連接器",
-      "散熱",
-      "功率元件"
+      "精密塑膠射出",
+      "模具",
+      "機光電模組",
+      "生醫器材"
     ],
-    "source": "officialIndustryOnly",
+    "source": "official_web",
+    "sourceNote": "依英濟官網公司介紹與事業內容整理；提供高精密塑膠零組件製造、模具及機光電整合服務。",
+    "sourceUrls": [
+      "https://www.megaforce.com.tw/zh-tw/Home/index",
+      "https://www.megaforce.com.tw/zh-tw/Product/Product"
+    ],
+    "stockId": "3294",
     "stockName": "英濟",
     "themeTags": [
-      "AI伺服器",
-      "車用電子"
+      "AI應用",
+      "智慧醫療",
+      "雷射光電"
     ],
-    "updatedAt": "2026-06-23"
+    "updatedAt": "2026-07-18"
   },
   "3303": {
     "confidence": 60,
@@ -6002,6 +5995,42 @@
     ],
     "updatedAt": "2026-06-23"
   },
+  "6693": {
+    "accuracy": "high",
+    "companyName": "廣閎科技",
+    "confidence": 95,
+    "fineIndustries": [
+      "IC設計",
+      "功率半導體",
+      "馬達驅動IC"
+    ],
+    "groupTags": [
+      "IC設計",
+      "功率元件"
+    ],
+    "officialIndustry": "半導體業",
+    "productTags": [
+      "Power MOSFET",
+      "BLDC馬達驅動IC",
+      "SoC散熱風扇驅動IC",
+      "SiC二極體"
+    ],
+    "source": "official_web",
+    "sourceNote": "依廣閎科技官網公司介紹與產品頁整理；核心產品包含功率MOSFET、BLDC馬達驅動與SoC散熱風扇驅動IC。",
+    "sourceUrls": [
+      "https://www.inergy.com.tw/about/",
+      "https://www.inergy.com.tw/"
+    ],
+    "stockId": "6693",
+    "stockName": "廣閎科技",
+    "themeTags": [
+      "AI伺服器散熱",
+      "節能",
+      "電源管理",
+      "馬達控制"
+    ],
+    "updatedAt": "2026-07-18"
+  },
   "6706": {
     "confidence": 90,
     "fineIndustries": [
@@ -6406,6 +6435,42 @@
     ],
     "updatedAt": "2026-06-23"
   },
+  "6869": {
+    "accuracy": "high",
+    "companyName": "雲豹能源科技",
+    "confidence": 95,
+    "fineIndustries": [
+      "再生能源",
+      "能源整合服務"
+    ],
+    "groupTags": [
+      "綠能",
+      "能源服務"
+    ],
+    "officialIndustry": "綠能環保",
+    "productTags": [
+      "太陽光電",
+      "儲能系統",
+      "綠電交易",
+      "風力發電",
+      "水資源"
+    ],
+    "source": "official_web",
+    "sourceNote": "依雲豹能源官網公司介紹與服務內容整理；業務涵蓋再生能源開發、儲能、綠電交易及水資源。",
+    "sourceUrls": [
+      "https://www.jv-holding.com/about.aspx",
+      "https://www.jv-holding.com/"
+    ],
+    "stockId": "6869",
+    "stockName": "雲豹能源科技",
+    "themeTags": [
+      "綠能",
+      "儲能",
+      "能源轉型",
+      "淨零碳排"
+    ],
+    "updatedAt": "2026-07-18"
+  },
   "6870": {
     "confidence": 90,
     "fineIndustries": [
@@ -6531,6 +6596,43 @@
       "ESG"
     ],
     "updatedAt": "2026-06-23"
+  },
+  "6903": {
+    "accuracy": "high",
+    "companyName": "巨漢系統科技",
+    "confidence": 95,
+    "fineIndustries": [
+      "無塵室工程",
+      "機電工程",
+      "廠務工程"
+    ],
+    "groupTags": [
+      "廠務工程",
+      "機電工程"
+    ],
+    "officialIndustry": "其他電子業",
+    "productTags": [
+      "中央空調工程",
+      "潔淨室工程",
+      "監控自動化",
+      "高低壓配電",
+      "消防工程"
+    ],
+    "source": "official_web",
+    "sourceNote": "依巨漢系統官網公司介紹與服務項目整理；提供中央空調、潔淨室、監控自動化、配電與消防整合工程。",
+    "sourceUrls": [
+      "https://www.jiuhan.com.tw/",
+      "https://www.jiuhan.com.tw/service"
+    ],
+    "stockId": "6903",
+    "stockName": "巨漢系統科技",
+    "themeTags": [
+      "半導體廠務",
+      "AI資料中心",
+      "智慧建築",
+      "BIM"
+    ],
+    "updatedAt": "2026-07-18"
   },
   "6904": {
     "confidence": 90,
@@ -6859,6 +6961,38 @@
       "網安設備"
     ],
     "updatedAt": "2026-06-23"
+  },
+  "8054": {
+    "accuracy": "high",
+    "companyName": "安國",
+    "confidence": 90,
+    "fineIndustries": [
+      "IC設計",
+      "ASIC設計"
+    ],
+    "groupTags": [
+      "IC設計"
+    ],
+    "officialIndustry": "半導體業",
+    "productTags": [
+      "ASIC",
+      "SoC",
+      "IC設計服務"
+    ],
+    "source": "official_web",
+    "sourceNote": "依安國官方網站 ASIC、SoC 設計服務與 AI 晶片解決方案資訊整理。",
+    "sourceUrls": [
+      "https://www.alcormicro.com/zh-tw/",
+      "https://ic.tpex.org.tw/company_chain.php?stk_code=8054"
+    ],
+    "stockId": "8054",
+    "stockName": "安國",
+    "themeTags": [
+      "AI晶片",
+      "資料中心",
+      "邊緣運算"
+    ],
+    "updatedAt": "2026-07-15"
   },
   "8074": {
     "confidence": 90,
@@ -7374,28 +7508,38 @@
     "updatedAt": "2026-06-23"
   },
   "8442": {
-    "confidence": 60,
+    "accuracy": "high",
+    "companyName": "威宏控股",
+    "confidence": 95,
     "fineIndustries": [
-      "多角化",
-      "其他"
+      "運動用品製造",
+      "精品包袋"
     ],
     "groupTags": [
-      "其他"
+      "運動用品",
+      "包袋製造"
     ],
-    "officialIndustry": "其他業",
+    "officialIndustry": "其他",
     "productTags": [
-      "多角化經營",
-      "租賃",
-      "服務",
-      "控股"
+      "運動護具",
+      "戶外運動裝備",
+      "精品包袋",
+      "機能性包袋"
     ],
-    "source": "officialIndustryOnly",
-    "stockName": "威宏-KY",
+    "source": "official_web",
+    "sourceNote": "依威宏控股官網公司資訊與營收公告整理；主要從事專業運動裝備及精品、機能包袋製造。",
+    "sourceUrls": [
+      "https://www.ww-holding.com.tw/",
+      "https://www.ww-holding.com.tw/blog/"
+    ],
+    "stockId": "8442",
+    "stockName": "威宏控股",
     "themeTags": [
-      "內需",
-      "資產題材"
+      "運動休閒",
+      "品牌代工",
+      "消費升級"
     ],
-    "updatedAt": "2026-06-23"
+    "updatedAt": "2026-07-18"
   },
   "8462": {
     "confidence": 60,

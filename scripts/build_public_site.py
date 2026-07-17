@@ -4,6 +4,7 @@ import hashlib
 import shutil
 import json
 import re
+from datetime import date, timedelta
 from pathlib import Path
 
 
@@ -81,9 +82,44 @@ def validate_recent_cb_data(path: Path) -> None:
     rows = payload.get("rows")
     if not isinstance(rows, list) or not rows:
         raise ValueError(f"{path} has empty RECENT_CB_DATA rows")
+    validate_new_cb_company_details(path, rows)
+
+
+def validate_new_cb_company_details(path: Path, rows: list[dict]) -> None:
+    """Do not deploy newly issued CB rows with generic placeholder company tags."""
+    cutoff = date.today() - timedelta(days=45)
+    generic_tags = {"", "-", "其他", "半導體", "其他電子", "電子設備", "電子零組件"}
+    incomplete_sources = {"", "fallback", "unknown", "officialIndustryOnly"}
+    incomplete: list[str] = []
+    for row in rows:
+        raw_date = str(row.get("issueDate") or row.get("listingDate") or "")[:10]
+        try:
+            issue_date = date.fromisoformat(raw_date)
+        except ValueError:
+            continue
+        if issue_date < cutoff:
+            continue
+        products = [str(value).strip() for value in (row.get("productTags") or []) if str(value).strip()]
+        fine = [str(value).strip() for value in (row.get("fineIndustryTags") or []) if str(value).strip()]
+        themes = [str(value).strip() for value in (row.get("themeTags") or []) if str(value).strip()]
+        source = str(row.get("tagSource") or "").strip()
+        confidence = int(row.get("tagConfidence") or 0)
+        useful = any(value not in generic_tags for value in products + fine)
+        if source in incomplete_sources or confidence < 60 or not useful or not products or not themes:
+            incomplete.append(
+                f"{row.get('bondCode') or '?'} {row.get('bondName') or row.get('bondShortName') or '?'}"
+            )
+    if incomplete:
+        sample = ", ".join(incomplete[:10])
+        raise ValueError(
+            f"{path} contains {len(incomplete)} newly issued CB rows with incomplete company details: {sample}. "
+            "Run enrich_new_cb_company_tags.py and refresh recent CB data before deployment."
+        )
 
 
 def main() -> int:
+    # Validate the source before removing the last usable local public build.
+    validate_recent_cb_data(OUTPUTS / "recent-cb-data.js")
     if PUBLIC.exists():
         shutil.rmtree(PUBLIC)
     PUBLIC.mkdir(parents=True, exist_ok=True)
