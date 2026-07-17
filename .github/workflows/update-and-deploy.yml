@@ -14,6 +14,8 @@ on:
     - cron: "10 13 1-10 * *"
     # Full enrichment refresh: Taiwan time 21:40, Monday-Friday.
     - cron: "40 13 * * 1-5"
+    # Dedicated redemption scan: Taiwan time 20:30, every day.
+    - cron: "30 12 * * *"
   workflow_dispatch:
     inputs:
       mode:
@@ -27,7 +29,7 @@ on:
           - deploy
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -61,19 +63,32 @@ jobs:
             revenue-history-${{ runner.os }}-
 
       - name: Fast fetch CB redemption alerts
-        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.mode == 'deploy') && !((github.event_name == 'workflow_dispatch' && inputs.mode == 'full') || (github.event_name == 'schedule' && github.event.schedule == '40 13 * * 1-5')) }}
+        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.mode == 'deploy') && !((github.event_name == 'workflow_dispatch' && inputs.mode == 'full') || (github.event_name == 'schedule' && (github.event.schedule == '40 13 * * 1-5' || github.event.schedule == '30 12 * * *'))) }}
         run: python scripts/fetch_cb_redemption_alerts.py --max-seconds 120 --timeout 8 --max-candidates 1
 
       - name: Full fetch CB redemption alerts
-        if: ${{ (github.event_name == 'workflow_dispatch' && inputs.mode == 'full') || (github.event_name == 'schedule' && github.event.schedule == '40 13 * * 1-5') }}
+        if: ${{ (github.event_name == 'workflow_dispatch' && inputs.mode == 'full') || (github.event_name == 'schedule' && (github.event.schedule == '40 13 * * 1-5' || github.event.schedule == '30 12 * * *')) }}
         run: python scripts/fetch_cb_redemption_alerts.py --scan-all --max-seconds 480
 
-      - name: Update CB primary market data
+      - name: Persist CB redemption alerts
         if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.mode == 'deploy') }}
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/cb-redemption-alerts.json outputs/cb-redemption-alerts-log.csv
+          if ! git diff --cached --quiet; then
+            git commit -m "Update CB redemption alerts [skip ci]"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+
+      - name: Update CB primary market data
+        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.mode == 'deploy') && !(github.event_name == 'schedule' && github.event.schedule == '30 12 * * *') }}
         run: python scripts/update_cb_primary_market.py --queries-per-source 1 --search-limit 3 --follow-link-limit 8 --timeout 8
 
       - name: Update USD/TWD exchange-rate history
-        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.mode == 'deploy') }}
+        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.mode == 'deploy') && !(github.event_name == 'schedule' && github.event.schedule == '30 12 * * *') }}
         run: python scripts/update_exchange_rates.py
 
       - name: Update CB data
@@ -81,11 +96,11 @@ jobs:
         run: python scripts/update_cb_quotes.py
 
       - name: Enrich new CB company tags
-        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.mode == 'deploy') }}
+        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.mode == 'deploy') && !(github.event_name == 'schedule' && github.event.schedule == '30 12 * * *') }}
         run: python scripts/enrich_new_cb_company_tags.py --limit 20
 
       - name: Fast enrich new CB issuance purposes
-        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.mode == 'deploy') && !((github.event_name == 'workflow_dispatch' && inputs.mode == 'full') || (github.event_name == 'schedule' && github.event.schedule == '40 13 * * 1-5')) }}
+        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.mode == 'deploy') && !(github.event_name == 'schedule' && github.event.schedule == '30 12 * * *') && !((github.event_name == 'workflow_dispatch' && inputs.mode == 'full') || (github.event_name == 'schedule' && github.event.schedule == '40 13 * * 1-5')) }}
         run: python scripts/enrich_new_cb_issuance_purposes.py --limit 3 --max-candidates 2 --timeout 6
 
       - name: Full enrich new CB issuance purposes
@@ -93,7 +108,7 @@ jobs:
         run: python scripts/enrich_new_cb_issuance_purposes.py --limit 20 --max-candidates 3 --timeout 10
 
       - name: Refresh CB data with enriched tags and purposes
-        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.mode == 'deploy') }}
+        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.mode == 'deploy') && !(github.event_name == 'schedule' && github.event.schedule == '30 12 * * *') }}
         run: python scripts/update_cb_quotes.py
 
       - name: Build public site
