@@ -700,7 +700,8 @@
     .history-chart svg { display: block; width: 100%; height: auto; min-height: 300px; }
     .chart-empty { display: grid; place-items: center; min-height: 220px; color: #8091a6; }
     .eps-panel { margin-top: 12px; padding-top: 14px; border-top: 1px solid #e1e9f2; }
-    .eps-head { margin-bottom: 10px; color: #294968; font-size: 0.86rem; font-weight: 800; }
+    .eps-head { display: flex; justify-content: space-between; gap: 10px; margin-bottom: 10px; color: #294968; font-size: 0.86rem; font-weight: 800; }
+    .eps-checked-at { color: #7a8ca5; font-size: 0.72rem; font-weight: 600; }
     .eps-grid { display: grid; grid-template-columns: repeat(3, minmax(190px, 1fr)); gap: 16px; }
     .eps-card { min-height: 220px; padding: 24px 28px; border: 1px solid #d9dee5; border-radius: 15px; background: #fff; text-align: left; }
     .eps-card.focus { padding: 23px 27px; border: 2px solid #1264c5; }
@@ -1955,7 +1956,8 @@
           : `<div class="eps-stat"><span>分析師人數</span><strong>${analysts} 位</strong></div><div class="eps-stat"><span>預估區間</span><strong>${range}</strong></div>`;
         return `<div class="eps-card${isFocus ? ' focus' : ''}${value == null ? ' no-data' : ''}"><div class="eps-card-head">${calendarIcon}<span class="eps-year">${year} 年</span>${focusBadge}</div><div class="eps-value">${value == null ? '—' : fmtPrice(value, 2)}</div><div class="eps-divider"></div><div class="eps-stats">${epsStats}</div></div>`;
       }).join('');
-      return `<div class="eps-head">法人預估 EPS（分析師共識）</div><div class="eps-grid">${cards}</div>`;
+      const checkedAt = forecast?.updatedAt ? String(forecast.updatedAt).slice(0, 10) : '';
+      return `<div class="eps-head"><span>法人預估 EPS（分析師共識）</span>${checkedAt ? `<span class="eps-checked-at">公開來源查詢日期：${escapeHtml(checkedAt)}</span>` : ''}</div><div class="eps-grid">${cards}</div>`;
     };
     const renderCompanyCatalysts = () => '';
     const drawHistoryChart = (host, payload, range) => {

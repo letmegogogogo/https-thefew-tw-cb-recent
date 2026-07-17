@@ -1,4 +1,5 @@
 import concurrent.futures
+import argparse
 import html
 import json
 import re
@@ -7,7 +8,6 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import requests
-from bs4 import BeautifulSoup
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -110,6 +110,13 @@ def fetch_eps_forecast(item, cookies, crumb, old_forecast):
             "analysts": int(number((estimate.get("numberOfAnalysts") or {}).get("raw")) or 0),
         }
 
+    # A temporary Yahoo failure must not erase a previously valid consensus.
+    old = old_forecast.get(issuer_code) or {}
+    old_years = old.get("years") or {}
+    for year, item in output["years"].items():
+        if item.get("eps") is None and (old_years.get(year) or {}).get("eps") is not None:
+            output["years"][year] = old_years[year]
+
     current_trend = trends.get("0y", {})
     output["outlook"] = {
         "epsGrowth": number((current_trend.get("earningsEstimate", {}).get("growth") or {}).get("raw")),
@@ -120,7 +127,6 @@ def fetch_eps_forecast(item, cookies, crumb, old_forecast):
     output["news"] = []
 
     # Preserve manually collected analyst-report target prices; Yahoo does not provide target year attribution.
-    old = old_forecast.get(issuer_code) or {}
     for key in ("analystReportTargetsByYear", "unclassifiedAnalystTargets", "analystReportTargetUpdatedAt"):
         if key in old:
             output[key] = old[key]
@@ -128,6 +134,8 @@ def fetch_eps_forecast(item, cookies, crumb, old_forecast):
 
 
 def fetch_primary_products_services(issuer_code):
+    from bs4 import BeautifulSoup
+
     payload = {
         "step": "1",
         "firstin": "ture",
@@ -214,6 +222,9 @@ def clean_conference_reasons(reasons):
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--eps-only", action="store_true", help="Only refresh analyst EPS consensus data")
+    args = parser.parse_args()
     data = load_js(DATA_FILE, "window.RECENT_CB_DATA = ")
     old_eps = load_js(EPS_FILE, "window.CB_EPS_FORECASTS = ")
     old_insights = load_js(INSIGHTS_FILE, "window.CB_COMPANY_INSIGHTS = ")
@@ -222,7 +233,10 @@ def main():
     for row in data.get("rows", []):
         code = str(row.get("issuerCode") or "").strip()
         if code and code not in issuer_markets:
-            issuer_markets[code] = (row.get("issuerName") or row.get("issuerShortName") or "", row.get("market") or "TWSE")
+            issuer_markets[code] = (
+                row.get("issuerName") or row.get("issuerShortName") or "",
+                row.get("market") or row.get("stockMarket") or "TWSE",
+            )
 
     cookies, crumb = yahoo_auth()
     forecasts = {}
@@ -237,6 +251,21 @@ def main():
             if index % 50 == 0:
                 print(f"EPS {index}/{len(futures)}", flush=True)
     write_js(EPS_FILE, "window.CB_EPS_FORECASTS = ", forecasts)
+
+    if args.eps_only:
+        target = PUBLIC_DIR / "eps-forecast-data.js"
+        if target.parent.exists():
+            target.write_text(EPS_FILE.read_text(encoding="utf-8"), encoding="utf-8")
+        eps_covered = sum(
+            any((item.get("years", {}).get(str(CURRENT_YEAR + offset), {}) or {}).get("eps") is not None for offset in range(3))
+            for item in forecasts.values()
+        )
+        print(json.dumps({
+            "issuers": len(issuer_markets),
+            "epsCovered": eps_covered,
+            "updatedAt": datetime.now(TZ).date().isoformat(),
+        }, ensure_ascii=False))
+        return
 
     primary = {}
     failed_primary = []
