@@ -24,6 +24,7 @@ on:
         options:
           - fast
           - full
+          - deploy
 
 permissions:
   contents: read
@@ -51,6 +52,7 @@ jobs:
           python-version: "3.12"
 
       - name: Restore monthly revenue history cache
+        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.mode == 'deploy') }}
         uses: actions/cache@v4
         with:
           path: .cache/revenue-history-records.json
@@ -59,7 +61,7 @@ jobs:
             revenue-history-${{ runner.os }}-
 
       - name: Fast fetch CB redemption alerts
-        if: ${{ !((github.event_name == 'workflow_dispatch' && inputs.mode == 'full') || (github.event_name == 'schedule' && github.event.schedule == '40 13 * * 1-5')) }}
+        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.mode == 'deploy') && !((github.event_name == 'workflow_dispatch' && inputs.mode == 'full') || (github.event_name == 'schedule' && github.event.schedule == '40 13 * * 1-5')) }}
         run: python scripts/fetch_cb_redemption_alerts.py --max-seconds 120 --timeout 8 --max-candidates 1
 
       - name: Full fetch CB redemption alerts
@@ -67,19 +69,23 @@ jobs:
         run: python scripts/fetch_cb_redemption_alerts.py --scan-all --max-seconds 480
 
       - name: Update CB primary market data
+        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.mode == 'deploy') }}
         run: python scripts/update_cb_primary_market.py --queries-per-source 1 --search-limit 3 --follow-link-limit 8 --timeout 8
 
       - name: Update USD/TWD exchange-rate history
+        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.mode == 'deploy') }}
         run: python scripts/update_exchange_rates.py
 
       - name: Update CB data
+        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.mode == 'deploy') }}
         run: python scripts/update_cb_quotes.py
 
       - name: Enrich new CB company tags
+        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.mode == 'deploy') }}
         run: python scripts/enrich_new_cb_company_tags.py --limit 20
 
       - name: Fast enrich new CB issuance purposes
-        if: ${{ !((github.event_name == 'workflow_dispatch' && inputs.mode == 'full') || (github.event_name == 'schedule' && github.event.schedule == '40 13 * * 1-5')) }}
+        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.mode == 'deploy') && !((github.event_name == 'workflow_dispatch' && inputs.mode == 'full') || (github.event_name == 'schedule' && github.event.schedule == '40 13 * * 1-5')) }}
         run: python scripts/enrich_new_cb_issuance_purposes.py --limit 3 --max-candidates 2 --timeout 6
 
       - name: Full enrich new CB issuance purposes
@@ -87,9 +93,11 @@ jobs:
         run: python scripts/enrich_new_cb_issuance_purposes.py --limit 20 --max-candidates 3 --timeout 10
 
       - name: Refresh CB data with enriched tags and purposes
+        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.mode == 'deploy') }}
         run: python scripts/update_cb_quotes.py
 
       - name: Build public site
+        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.mode == 'deploy') }}
         run: python scripts/build_public_site.py
 
       - name: Setup Pages
