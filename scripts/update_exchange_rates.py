@@ -242,18 +242,24 @@ def update_margin_maintenance(previous_points: list[dict]) -> tuple[list[dict], 
         if cursor.weekday() < 5 and cursor.isoformat() not in existing_dates:
             missing_days.append(cursor)
         cursor += timedelta(days=1)
-    # Newest gaps matter most for 1M/6M charts. Small daily batches avoid
-    # triggering TWSE rate limits; repeated scheduled runs gradually fill 1Y.
-    max_days = max(1, int(os.environ.get("TWSE_MARGIN_MAX_DAYS", "15")))
-    days = sorted(missing_days, reverse=True)[:max_days]
-
+    # Continue past exchange holidays and other no-data weekdays instead of
+    # slicing the candidate list before fetching. Otherwise the same holidays
+    # permanently occupy the newest batch and older 6M/1Y gaps never fill.
+    max_days = max(1, int(os.environ.get("TWSE_MARGIN_MAX_DAYS", "40")))
+    max_attempts = max(
+        max_days,
+        int(os.environ.get("TWSE_MARGIN_MAX_ATTEMPTS", str(max(max_days * 3, 120)))),
+    )
     fetched: list[dict] = []
-    if days:
-        for day in days:
-            point = fetch_twse_margin_day(day)
-            if point:
-                fetched.append(point)
-            time.sleep(0.45)
+    attempts = 0
+    for day in sorted(missing_days, reverse=True):
+        if len(fetched) >= max_days or attempts >= max_attempts:
+            break
+        attempts += 1
+        point = fetch_twse_margin_day(day)
+        if point:
+            fetched.append(point)
+        time.sleep(0.45)
     merged = {
         point["date"]: point
         for point in [*valid_previous, *fetched]
