@@ -183,13 +183,26 @@ def search_web(query: str, timeout: int = 12) -> list[str]:
 
 
 def build_broad_queries() -> list[str]:
-    return [
+    today = datetime.now(TZ).date()
+    month_tokens: list[str] = []
+    for offset in (0, -31):
+        target = today + timedelta(days=offset)
+        month_tokens.extend((
+            f"{target.year}年{target.month}月",
+            f"{target.year - 1911}年{target.month:02d}月",
+        ))
+    queries = [
         "site:mops.twse.com.tw 行使債券贖回權 轉換公司債 終止櫃檯買賣",
         "site:tpex.org.tw 行使債券贖回權 轉換公司債 終止櫃檯買賣",
         "site:twse.com.tw 行使債券贖回權 轉換公司債 終止買賣",
         "site:tw.stock.yahoo.com/news 行使債券贖回權 轉換公司債 終止櫃檯買賣",
         "site:tw.stock.yahoo.com/news 債券收回基準日 轉換公司債 終止櫃檯買賣日期",
     ]
+    for token in dict.fromkeys(month_tokens):
+        queries.append(
+            f'site:tw.stock.yahoo.com/news "發行公司行使債券贖回權" "終止櫃檯買賣" "{token}"'
+        )
+    return list(dict.fromkeys(queries))
 
 
 def build_queries(row: dict) -> list[str]:
@@ -198,9 +211,11 @@ def build_queries(row: dict) -> list[str]:
     issuer = str(row.get("issuerName") or "").replace("股份有限公司", "").strip()
     identity = " ".join(part for part in (bond_code, bond_name, issuer) if part)
     base = [
-        f'"{bond_code}" "{bond_name}" "\u7d42\u6b62\u6ac3\u6aaf\u8cb7\u8ce3"',
-        f'site:moneydj.com "{bond_code}" "{bond_name}" "\u884c\u4f7f\u50b5\u5238\u8d16\u56de\u6b0a"',
-        f'site:tw.stock.yahoo.com/news "{bond_code}" "{bond_name}" "\u7d42\u6b62\u6ac3\u6aaf\u8cb7\u8ce3"',
+        f'"{bond_code}" "{bond_name}" "終止櫃檯買賣"',
+        f'"{bond_code}" "{bond_name}" "行使債券贖回權"',
+        f'"{bond_code}" "{bond_name}" "因發行公司行使贖回權"',
+        f'site:moneydj.com "{bond_code}" "{bond_name}" "行使債券贖回權"',
+        f'site:tw.stock.yahoo.com/news "{bond_code}" "{bond_name}" "終止櫃檯買賣"',
         f"site:mops.twse.com.tw {identity} 行使債券贖回權 終止櫃檯買賣",
         f"site:tpex.org.tw {identity} 債券收回基準日 終止櫃檯買賣日期",
         f"site:twse.com.tw {identity} 停止受理轉換 收回 轉換公司債",
@@ -243,7 +258,10 @@ def has_identity(text: str, row: dict) -> bool:
     bond_code = str(row.get("bondCode") or "").strip()
     bond_name = str(row.get("bondShortName") or "").strip()
     issuer = str(row.get("issuerName") or "").replace("股份有限公司", "").strip()
-    return bool((bond_code and bond_code in text) or (bond_name and bond_name in text) or (issuer and issuer in text and "可轉換公司債" in text))
+    issuer_bond_notice = issuer and issuer in text and any(
+        phrase in text for phrase in ("可轉換公司債", "轉換公司債", "交換公司債")
+    )
+    return bool((bond_code and bond_code in text) or (bond_name and bond_name in text) or issuer_bond_notice)
 
 
 def extract_evidence(text: str) -> str:
@@ -272,7 +290,11 @@ def is_confirmed_redemption_notice(text: str, row: dict) -> bool:
     bond_name = str(row.get("bondShortName") or "").strip()
     issuer = str(row.get("issuerName") or "").replace("股份有限公司", "").strip()
     bond_identity = bool((bond_code and bond_code in text) or (bond_name and bond_name in text))
-    has_issuer_cb = bool(issuer and issuer in text and ("本公司國內" in text or "國內第" in text) and "轉換公司債" in text)
+    has_issuer_cb = bool(
+        issuer and issuer in text
+        and ("本公司國內" in text or "國內第" in text)
+        and ("轉換公司債" in text or "交換公司債" in text)
+    )
     if bond_identity and "行使債券贖回權" in text and ("終止櫃檯買賣" in text or "終止買賣" in text):
         return True
     if bond_identity and "債券收回基準日" in text and "終止櫃檯買賣日期" in text:
@@ -544,7 +566,11 @@ def main() -> int:
     logs: list[dict] = []
     found = 0
     started_at = time.monotonic()
-    broad_alerts, broad_logs = find_alerts_from_broad_search(rows, timeout=args.timeout, max_candidates=max(args.max_candidates * 3, 3))
+    broad_alerts, broad_logs = find_alerts_from_broad_search(
+        rows,
+        timeout=args.timeout,
+        max_candidates=max(args.max_candidates * 5, 12),
+    )
     logs.extend(broad_logs)
     for code, alert in broad_alerts.items():
         if alert.get("sourceUrl") and alert.get("evidenceText"):
