@@ -258,9 +258,39 @@ def update_margin_maintenance(previous_points: list[dict]) -> tuple[list[dict], 
         max_days,
         int(os.environ.get("TWSE_MARGIN_MAX_ATTEMPTS", str(max(max_days * 3, 120)))),
     )
+    # Do not always start with the newest missing dates.  That strategy keeps
+    # consuming the budget on recent exchange holidays/gaps and can leave the
+    # advertised five-year range permanently empty.  Reserve part of every
+    # run for evenly distributed older weekly observations so a fresh cache
+    # quickly spans the whole five-year period, then progressively fills in.
+    older_missing = [day for day in missing_days if day < daily_start]
+    recent_missing = [day for day in missing_days if day >= daily_start]
+
+    def evenly_spaced(days, count):
+        ordered = sorted(days)
+        if count <= 0 or not ordered:
+            return []
+        if count >= len(ordered):
+            return ordered
+        indexes = {
+            round(index * (len(ordered) - 1) / max(1, count - 1))
+            for index in range(count)
+        }
+        return [ordered[index] for index in sorted(indexes)]
+
+    has_older_history = any(point["date"] < daily_start.isoformat() for point in valid_previous)
+    older_budget = min(
+        len(older_missing),
+        max(1, max_days // 2 if has_older_history else max_days * 3 // 4),
+    )
+    priority_days = evenly_spaced(older_missing, older_budget)
+    priority_set = set(priority_days)
+    priority_days.extend(sorted(recent_missing, reverse=True))
+    priority_days.extend(day for day in sorted(older_missing, reverse=True) if day not in priority_set)
+
     fetched: list[dict] = []
     attempts = 0
-    for day in sorted(missing_days, reverse=True):
+    for day in priority_days:
         if len(fetched) >= max_days or attempts >= max_attempts:
             break
         attempts += 1

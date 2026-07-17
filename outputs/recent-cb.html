@@ -2244,7 +2244,7 @@
       setMainDataVisibility(false);
       fxPanelEl.hidden = false;
       titleEl.textContent = SITE_TITLE;
-      descEl.textContent = '美元指數、美元兌新台幣、美國10年期公債殖利率及台股上市市場融資維持率；提供近 1 個月、6 個月與 1 年期間切換。';
+      descEl.textContent = '美元指數、美元兌新台幣、美國10年期公債殖利率及台股上市市場融資維持率；提供近 1 個月、6 個月、1 年與 5 年期間切換。';
       const legacyUsdTwd = Array.isArray(fxData.points) ? fxData.points.map((point) => ({ date: point.date, value: point.usdTwd })) : [];
       const usdTwdPoints = filterFxPoints(Array.isArray(fxData.usdTwdPoints) ? fxData.usdTwdPoints : legacyUsdTwd, fxRange);
       const dxyPoints = filterFxPoints(Array.isArray(fxData.dxyPoints) ? fxData.dxyPoints : [], fxRange);
