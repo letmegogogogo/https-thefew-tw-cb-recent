@@ -1528,7 +1528,7 @@
       const weeklyTop30 = row.weeklyTop30Rank ? `<div class="subline"><span class="badge">本週#${row.weeklyTop30Rank}｜累積${row.weeklyTop30Count || 0}次</span></div>` : '';
       const stockMove = row.stockClose == null ? '' : `<div class="subline">${row.stockMarket || ''}</div>${stockDailyMove}${stockWeeklyMove}${weeklyTop30}${stockRecordHigh ? '<div class="subline"><span class="record-label">新高</span></div>' : ''}`;
       const industryAlert = row.industryTrendAlert
-        ? `<div class="industry-alert ${row.industryWeeklyAveragePct >= 0 ? 'up' : 'down'}">${escapeHtml(row.industryTrendAlert)} ${row.industryWeeklyAveragePct >= 0 ? '+' : ''}${fmtPct(row.industryWeeklyAveragePct, 1)}</div>`
+        ? `<div class="industry-alert ${row.industryWeeklyAveragePct >= 0 ? 'up' : 'down'}" title="有效公司數：${Number(row.industryWeeklySampleCount || 0)} 家">同產業本週平均 ${row.industryWeeklyAveragePct >= 0 ? '+' : ''}${fmtPct(row.industryWeeklyAveragePct, 1)}</div>`
         : '';
       const primaryProducts = companyInsight.primaryProductsServices
         ? `<div class="product-line"><strong>主要產品／服務：</strong>${escapeHtml(companyInsight.primaryProductsServices)}</div>`

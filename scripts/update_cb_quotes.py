@@ -1400,14 +1400,16 @@ def main() -> int:
     industry_averages = {
         industry: sum(values) / len(values)
         for industry, values in industry_changes.items()
-        if values
+        if len(values) >= 5
     }
     for row in rows:
-        average = industry_averages.get(row.get("industryCategory") or "-")
+        industry = row.get("industryCategory") or "-"
+        average = industry_averages.get(industry)
+        sample_count = len(industry_changes.get(industry, []))
         row["industryWeeklyAveragePct"] = average
+        row["industryWeeklySampleCount"] = sample_count
         row["industryTrendAlert"] = (
-            "族群性上漲" if average is not None and average >= 10
-            else "族群性下跌" if average is not None and average <= -10
+            "同產業本週平均" if average is not None and abs(average) >= 10
             else None
         )
 
