@@ -4189,6 +4189,38 @@
     ],
     "updatedAt": "2026-07-07"
   },
+  "5291": {
+    "confidence": 90,
+    "fineIndustries": [
+      "PCB",
+      "高階PCB"
+    ],
+    "groupTags": [
+      "PCB"
+    ],
+    "officialIndustry": "電子零組件業",
+    "productTags": [
+      "PCB",
+      "多層板",
+      "HDI",
+      "厚銅板",
+      "LED照明"
+    ],
+    "source": "official_web",
+    "sourceNote": "公司官網說明以印刷電路板開發與製造為主，產品涵蓋高階多層板、厚銅板與HDI，並應用於工業電腦、網通與車用電子。",
+    "sourceUrls": [
+      "https://eiso.com.tw/",
+      "https://ic.tpex.org.tw/company_chain.php?stk_code=5291"
+    ],
+    "stockName": "邑昇",
+    "themeTags": [
+      "工業電腦",
+      "網通",
+      "車用電子",
+      "電動自行車"
+    ],
+    "updatedAt": "2026-07-24"
+  },
   "5306": {
     "confidence": 90,
     "fineIndustries": [

@@ -254,14 +254,36 @@ def prioritize_scan_rows(rows: list[dict], existing_alerts: dict) -> list[dict]:
     )
 
 
-def has_identity(text: str, row: dict) -> bool:
+def has_exact_bond_identity(text: str, row: dict) -> bool:
     bond_code = str(row.get("bondCode") or "").strip()
     bond_name = str(row.get("bondShortName") or "").strip()
-    issuer = str(row.get("issuerName") or "").replace("股份有限公司", "").strip()
-    issuer_bond_notice = issuer and issuer in text and any(
-        phrase in text for phrase in ("可轉換公司債", "轉換公司債", "交換公司債")
-    )
-    return bool((bond_code and bond_code in text) or (bond_name and bond_name in text) or issuer_bond_notice)
+    if not (bond_code or bond_name):
+        return False
+
+    # Search only around the actual redemption statement.  A Yahoo/MOPS page
+    # can contain navigation or recommended-news links for other CB series.
+    anchors = OFFICIAL_REDEMPTION_KEYWORDS or REDEMPTION_KEYWORDS
+    contexts = []
+    for anchor in anchors:
+        start = 0
+        while True:
+            index = text.find(anchor, start)
+            if index < 0:
+                break
+            contexts.append(text[max(0, index - 220) : index + len(anchor) + 260])
+            start = index + len(anchor)
+
+    for context in contexts:
+        code_match = bool(bond_code and re.search(rf"(?<!\\d){re.escape(bond_code)}(?!\\d)", context))
+        name_match = bool(bond_name and bond_name in context)
+        if code_match or name_match:
+            return True
+    return False
+
+
+def has_identity(text: str, row: dict) -> bool:
+    """Require the exact CB code or short name; issuer name alone is never enough."""
+    return has_exact_bond_identity(text, row)
 
 
 def extract_evidence(text: str) -> str:
@@ -284,26 +306,28 @@ def extract_evidence(text: str) -> str:
 
 
 def is_confirmed_redemption_notice(text: str, row: dict) -> bool:
-    if not has_identity(text, row):
+    # A company can have several CB series.  Never copy an announcement for
+    # one series to another merely because their issuer names are identical.
+    if not has_exact_bond_identity(text, row):
         return False
     bond_code = str(row.get("bondCode") or "").strip()
     bond_name = str(row.get("bondShortName") or "").strip()
-    issuer = str(row.get("issuerName") or "").replace("股份有限公司", "").strip()
     bond_identity = bool((bond_code and bond_code in text) or (bond_name and bond_name in text))
-    has_issuer_cb = bool(
-        issuer and issuer in text
-        and ("本公司國內" in text or "國內第" in text)
-        and ("轉換公司債" in text or "交換公司債" in text)
-    )
     if bond_identity and "行使債券贖回權" in text and ("終止櫃檯買賣" in text or "終止買賣" in text):
         return True
     if bond_identity and "債券收回基準日" in text and "終止櫃檯買賣日期" in text:
         return True
     if bond_identity and "停止受理轉換" in text and ("收回" in text or "贖回權" in text):
         return True
-    if has_issuer_cb and "行使債券贖回權" in text and "終止櫃檯買賣" in text:
-        return True
     return False
+
+
+def existing_alert_matches_row(alert: dict, row: dict) -> bool:
+    """Audit retained alerts before carrying them into a later daily run."""
+    if str(alert.get("bondCode") or "").strip() != str(row.get("bondCode") or "").strip():
+        return False
+    evidence = str(alert.get("evidenceText") or "")
+    return bool(evidence and is_confirmed_redemption_notice(evidence, row))
 
 
 DATE_PATTERN = r"(\d{2,4}(?:年\d{1,2}月\d{1,2}日|[./-]\d{1,2}[./-]\d{1,2}))"
@@ -594,9 +618,25 @@ def main() -> int:
             found += 1
 
     today_text = datetime.now(TZ).date().isoformat()
-    active_codes = {str(row.get("bondCode") or "").strip() for row in rows}
+    active_rows_by_code = {
+        str(row.get("bondCode") or "").strip(): row
+        for row in rows
+        if str(row.get("bondCode") or "").strip()
+    }
+    active_codes = set(active_rows_by_code)
     for code, existing in existing_alerts.items():
         if code in alerts:
+            continue
+        active_row = active_rows_by_code.get(code)
+        if active_row and not existing_alert_matches_row(existing, active_row):
+            logs.append(log_row(
+                active_row,
+                "existing_alert_audit",
+                existing.get("sourceUrl", ""),
+                "removed",
+                "existing_alert_identity_mismatch_removed",
+                existing.get("evidenceText", ""),
+            ))
             continue
         if code in active_codes:
             kept = dict(existing)
