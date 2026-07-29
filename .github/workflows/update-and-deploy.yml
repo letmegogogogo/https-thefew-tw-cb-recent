@@ -37,7 +37,9 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: true
+  # Keep scheduled and manual deployments in order.  Cancelling an active
+  # Pages deployment can leave the newest update without a published site.
+  cancel-in-progress: false
 
 jobs:
   update-and-deploy:
