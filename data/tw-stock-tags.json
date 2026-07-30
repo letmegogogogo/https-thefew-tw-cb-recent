@@ -3813,6 +3813,36 @@
     ],
     "updatedAt": "2026-06-23"
   },
+  "4764": {
+    "confidence": 90,
+    "fineIndustries": [
+      "特用化學",
+      "UV光固化材料"
+    ],
+    "groupTags": [
+      "特用化學"
+    ],
+    "officialIndustry": "化學工業",
+    "productTags": [
+      "塑膠添加劑",
+      "UV光固化材料",
+      "電子化學品",
+      "數位印花墨水"
+    ],
+    "source": "official_web",
+    "sourceNote": "公司官網及證交所資料揭露主要業務為塑膠添加劑、UV光固化產品與電子化學品之研發、製造及銷售。",
+    "sourceUrls": [
+      "https://www.dbc.com.tw/",
+      "https://wwwc.twse.com.tw/pdf/ch/4764_ch.pdf"
+    ],
+    "stockName": "雙鍵",
+    "themeTags": [
+      "電子材料",
+      "UV光固化",
+      "綠色化學"
+    ],
+    "updatedAt": "2026-07-30"
+  },
   "4772": {
     "confidence": 90,
     "fineIndustries": [
@@ -4472,6 +4502,35 @@
       "建案入帳"
     ],
     "updatedAt": "2026-06-23"
+  },
+  "5536": {
+    "confidence": 90,
+    "fineIndustries": [
+      "無塵室工程",
+      "廠務工程"
+    ],
+    "groupTags": [
+      "廠務工程"
+    ],
+    "officialIndustry": "其他電子業",
+    "productTags": [
+      "無塵室工程",
+      "空調工程",
+      "機電工程",
+      "環境控制系統"
+    ],
+    "source": "official_web",
+    "sourceNote": "公司官網說明業務涵蓋空氣調節、環境控制、潔淨室及相關機電、管線工程的設計、安裝與維護。",
+    "sourceUrls": [
+      "https://www.acter.com.tw/about/introduction"
+    ],
+    "stockName": "聖暉*",
+    "themeTags": [
+      "半導體建廠",
+      "廠務工程",
+      "潔淨室"
+    ],
+    "updatedAt": "2026-07-30"
   },
   "5608": {
     "confidence": 90,
@@ -7538,6 +7597,34 @@
       "待確認"
     ],
     "updatedAt": "2026-06-23"
+  },
+  "8438": {
+    "confidence": 90,
+    "fineIndustries": [
+      "電子特用化學",
+      "資源回收"
+    ],
+    "groupTags": [
+      "電子化學"
+    ],
+    "officialIndustry": "化學工業",
+    "productTags": [
+      "電子特用化學品",
+      "工業銅鹽",
+      "資源回收再生"
+    ],
+    "source": "official_web",
+    "sourceNote": "公司官網說明專注電子特用化學品、工業銅鹽與資源回收再生循環使用，服務PCB產業。",
+    "sourceUrls": [
+      "https://www.persee.com.tw/"
+    ],
+    "stockName": "昶昕",
+    "themeTags": [
+      "PCB",
+      "循環經濟",
+      "環保"
+    ],
+    "updatedAt": "2026-07-30"
   },
   "8442": {
     "accuracy": "high",
