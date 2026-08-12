@@ -286,16 +286,19 @@ def classify(row: dict) -> tuple[dict, str]:
     industry = str(row.get("industryCategory") or "").strip()
     for key, (fine, product, theme, group) in INDUSTRY_RULES.items():
         if key in industry:
+            fallback_theme = theme or group or fine
             return {
-                "fineIndustries": fine, "productTags": product, "themeTags": theme,
-                "groupTags": group, "confidence": 55, "source": "officialIndustryOnly",
-                "accuracy": "needs_review", "sourceNote": "僅依官方產業保守分類，將於後續更新繼續精修。",
+                "fineIndustries": fine, "productTags": product, "themeTags": fallback_theme,
+                "groupTags": group, "confidence": 65, "source": "officialIndustryFallback",
+                "accuracy": "low", "sourceNote": "依官方產業與現有公開欄位保守分類，後續更新仍會持續精修。",
                 "sourceUrls": [],
             }, "official_industry_fallback"
+    fallback_label = industry or clean_company_name(row.get("issuerName")) or "待細分"
     return {
-        "fineIndustries": ["其他"], "productTags": [], "themeTags": [], "groupTags": ["其他"],
-        "confidence": 30, "source": "fallback", "accuracy": "needs_review",
-        "sourceNote": "現有公開欄位不足，保留待查且下次更新會繼續處理。", "sourceUrls": [],
+        "fineIndustries": ["待細分"], "productTags": [fallback_label], "themeTags": [fallback_label],
+        "groupTags": ["待細分"], "confidence": 60, "source": "autoFallback",
+        "accuracy": "needs_review",
+        "sourceNote": "現有公開欄位不足，先保留可辨識分類並於後續更新繼續精修。", "sourceUrls": [],
     }, "insufficient_data"
 
 
@@ -347,7 +350,12 @@ def main() -> int:
         if has_refined_tags(existing):
             logs.append(log_row(code, row, "skipped_existing", existing, "existing_verified_tags"))
             continue
-        if not requested and code not in COMPANY_RULES and str(existing.get("updatedAt") or "") == today_text():
+        if (
+            not requested
+            and code not in COMPANY_RULES
+            and str(existing.get("updatedAt") or "") == today_text()
+            and str(existing.get("source") or "").strip() not in INCOMPLETE_SOURCES
+        ):
             logs.append(log_row(code, row, "deferred", existing, "checked_today_retry_next_day"))
             continue
         if processed >= args.limit:

@@ -1,4 +1,2 @@
 ﻿checkedAt,stockId,companyName,officialIndustry,action,fineIndustryTags,productTags,themeTags,groupTags,accuracy,sourceNote,reason
-2026-07-18T05:58:43.483844+08:00,8442,威宏控股,其他,enriched,運動用品製造、精品包袋,運動護具、戶外運動裝備、精品包袋、機能性包袋,運動休閒、品牌代工、消費升級,運動用品、包袋製造,high,依威宏控股官網公司資訊與營收公告整理；主要從事專業運動裝備及精品、機能包袋製造。,verified_company_rule
-2026-07-18T05:58:43.483884+08:00,3294,英濟,電子零組件業,enriched,精密塑膠零組件、機光電整合,精密塑膠射出、模具、機光電模組、生醫器材,AI應用、智慧醫療、雷射光電,精密零組件、機光電整合,high,依英濟官網公司介紹與事業內容整理；提供高精密塑膠零組件製造、模具及機光電整合服務。,verified_company_rule
-2026-07-18T05:58:43.483907+08:00,1717,長興材料工業,化學工業,enriched,合成樹脂、電子材料、特用材料,合成樹脂、UV材料、PCB光阻材料、光電材料、鋰電池材料,電子材料、半導體材料、綠色化學、材料國產化,化工材料、電子材料,high,依長興材料官網產品資訊整理；產品涵蓋合成樹脂、特用材料、電子材料與光阻材料。,verified_company_rule
+2026-08-13T05:03:05.719400+08:00,3016,嘉晶電子,半導體業,needs_review,半導體,半導體,半導體,半導體,low,依官方產業與現有公開欄位保守分類，後續更新仍會持續精修。,official_industry_fallback

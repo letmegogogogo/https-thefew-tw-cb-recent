@@ -1576,7 +1576,9 @@
     "updatedAt": "2026-06-23"
   },
   "3016": {
-    "confidence": 60,
+    "accuracy": "low",
+    "companyName": "嘉晶電子",
+    "confidence": 65,
     "fineIndustries": [
       "半導體"
     ],
@@ -1585,19 +1587,17 @@
     ],
     "officialIndustry": "半導體業",
     "productTags": [
-      "IC設計",
-      "晶圓代工",
-      "封測",
-      "設備材料"
+      "半導體"
     ],
-    "source": "officialIndustryOnly",
-    "stockName": "嘉晶",
+    "source": "officialIndustryFallback",
+    "sourceNote": "依官方產業與現有公開欄位保守分類，後續更新仍會持續精修。",
+    "sourceUrls": [],
+    "stockId": "3016",
+    "stockName": "嘉晶電子",
     "themeTags": [
-      "AI晶片",
-      "HPC",
-      "半導體循環"
+      "半導體"
     ],
-    "updatedAt": "2026-06-23"
+    "updatedAt": "2026-08-13"
   },
   "3028": {
     "accuracy": "high",
