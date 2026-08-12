@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import argparse
 import csv
 import html
 import io
@@ -1135,9 +1136,58 @@ def fetch_tpex_history(
     return summarize_history(list(points_by_date.values()), current_date)
 
 
+def apply_supplemental_metadata(rows: list[dict]) -> None:
+    stock_tags = load_stock_tags()
+    issuance_purposes = load_issuance_purposes()
+    redemption_alerts = load_redemption_alerts()
+    for row in rows:
+        tag = stock_tags.get(str(row.get("issuerCode") or ""), {})
+        row["fineIndustryTags"] = tag.get("fineIndustries", [])
+        row["productTags"] = tag.get("productTags", [])
+        row["themeTags"] = tag.get("themeTags", [])
+        row["groupTags"] = tag.get("groupTags", [])
+        row["tagConfidence"] = tag.get("confidence")
+        row["tagSource"] = tag.get("source")
+        row["tagUpdatedAt"] = tag.get("updatedAt")
+        purpose = issuance_purposes.get(str(row.get("bondCode") or "").strip(), {})
+        row["issuancePurpose"] = purpose.get("summary") or "公開資料未整理"
+        row["issuancePurposeTags"] = purpose.get("purposes") if isinstance(purpose.get("purposes"), list) else []
+        row["issuancePurposeSource"] = purpose.get("source") or "pending"
+        row["issuancePurposeUpdatedAt"] = purpose.get("updatedAt")
+        redemption = redemption_alerts.get(str(row.get("bondCode") or "").strip(), {})
+        row["redemptionStatus"] = redemption.get("status") or "normal"
+        row["redemptionAlertLevel"] = redemption.get("alertLevel") or ""
+        row["redemptionSummary"] = redemption.get("summary") or ""
+        row["redemptionStartDate"] = redemption.get("redemptionStartDate") or ""
+        row["redemptionEndDate"] = redemption.get("redemptionEndDate") or ""
+        row["redemptionDelistDate"] = redemption.get("delistDate") or ""
+        row["redemptionSourceUrl"] = redemption.get("sourceUrl") or ""
+
+
+def write_recent_cb_data(data: dict) -> None:
+    DATA_PATH.write_text(PREFIX + json.dumps(data, ensure_ascii=False, indent=2) + ";\n", encoding="utf-8")
+
+
 def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--metadata-only",
+        action="store_true",
+        help="Refresh tags, issuance purposes, and redemption alerts without fetching market quotes.",
+    )
+    args = parser.parse_args()
     HISTORY_DIR.mkdir(parents=True, exist_ok=True)
     data = load_data()
+    if args.metadata_only:
+        rows = data.get("rows", [])
+        if not isinstance(rows, list) or not rows:
+            raise ValueError("recent-cb-data.js has no rows to refresh metadata")
+        apply_supplemental_metadata(rows)
+        data["rows"] = rows
+        data["metadataRefreshedAt"] = datetime.now(TZ).isoformat()
+        write_recent_cb_data(data)
+        print(f"Refreshed supplemental metadata for {len(rows)} CB rows")
+        return 0
     try:
         rows = sync_active_rows(data)
         data.pop("issuanceSyncWarning", None)

@@ -119,7 +119,7 @@ jobs:
 
       - name: Refresh CB data with enriched tags and purposes
         if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.mode == 'deploy') && !(github.event_name == 'schedule' && github.event.schedule == '30 12 * * *') }}
-        run: python scripts/update_cb_quotes.py
+        run: python scripts/update_cb_quotes.py --metadata-only
 
       - name: Build public site
         if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.mode == 'deploy') }}
