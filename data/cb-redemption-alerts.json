@@ -58,7 +58,7 @@
     "bondCode": "24642",
     "bondName": "盟立二",
     "delistDate": "2026-08-10",
-    "evidenceText": "【公告】盟立股份有限公司國內第二次無擔保轉換公司債(簡稱：盟立二，代碼：24642)發行公司行使債券贖回權暨訂於115年08月10日終止櫃檯買賣等相關事宜。(更正115/6/16序號5重大訊息) 【公告】盟立股份有限公司國內第二次無擔保轉換公司債(簡稱：盟立二，代碼：24642)發行公司行使債券贖回權暨訂於115年08月10日終止櫃檯買賣等相關事宜。(更正115/6/16序號5重大訊息) Yahoo股市 首頁 新聞 股市 運動 TV 汽機車 購物中心 拍賣 氣象 App 下載 搜尋 登入 首頁 股市VIP 自選股 台股行情 智慧選股 期權 國際金融 新聞 AI 事件整理 房地產 投資新手村 基金 銀行服務 首頁 社群爆紅榜 Yahoo財經特派記",
+    "evidenceText": "【公告】盟立股份有限公司國內第二次無擔保轉換公司債(簡稱：盟立二，代碼：24642)發行公司行使債券贖回權暨訂於115年08月10日終止櫃檯買賣等相關事宜。 【公告】盟立股份有限公司國內第二次無擔保轉換公司債(簡稱：盟立二，代碼：24642)發行公司行使債券贖回權暨訂於115年08月10日終止櫃檯買賣等相關事宜。 Yahoo股市 首頁 新聞 股市 運動 TV 汽機車 購物中心 拍賣 氣象 App 下載 搜尋 登入 首頁 股市VIP 自選股 台股行情 智慧選股 期權 國際金融 新聞 AI 事件整理 房地產 投資新手村 基金 銀行服務 首頁 社群爆紅榜 Yahoo財經特派記者 Yahoo財經大人物 財經專輯 股市VIP 智慧選股 個股比較 ETF",
     "issuerCode": "2464",
     "issuerName": "盟立自動化股份有限公司",
     "lastCheckedAt": "2026-09-03",
@@ -66,7 +66,7 @@
     "redemptionEndDate": "",
     "redemptionStartDate": "",
     "source": "yahoo_news_confirmed_redemption",
-    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%9B%9F%E7%AB%8B%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%BA%8C%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-%E7%B0%A1%E7%A8%B1-%E7%9B%9F%E7%AB%8B%E4%BA%8C-%E4%BB%A3%E7%A2%BC-095329392.html",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%9B%9F%E7%AB%8B%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%BA%8C%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-%E7%B0%A1%E7%A8%B1-%E7%9B%9F%E7%AB%8B%E4%BA%8C-%E4%BB%A3%E7%A2%BC-080448082.html",
     "status": "已公告收回",
     "summary": "已公告收回並將終止櫃檯買賣。",
     "updatedAt": "2026-09-03"
@@ -123,7 +123,7 @@
     "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%BC%98%E5%A1%91%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%BA%8C%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-%E7%B0%A1%E7%A8%B1-%E5%BC%98%E5%A1%91%E4%BA%8C-%E4%BB%A3%E7%A2%BC-103641863.html",
     "status": "已公告收回",
     "summary": "已公告收回並將終止櫃檯買賣。",
-    "updatedAt": "2026-09-02"
+    "updatedAt": "2026-09-03"
   },
   "31352": {
     "alertLevel": "warning",
@@ -195,7 +195,7 @@
     "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%B4%87%E8%B6%8A%E9%9B%BB-%E6%9C%AC%E5%85%AC%E5%8F%B8%E5%9C%8B%E5%85%A7%E7%AC%AC-%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5%E8%A1%8C%E4%BD%BF%E5%82%B5%E5%88%B8%E8%B4%96%E5%9B%9E%E6%AC%8A-%E7%94%B3%E8%AB%8B%E8%BD%89%E6%8F%9B%E7%82%BA%E6%99%AE%E9%80%9A%E8%82%A1%E6%9C%80%E5%BE%8C%E6%9C%9F%E9%99%90%E7%82%BA115%E5%B9%B49%E6%9C%8811%E6%97%A5-%E7%82%BA%E7%A2%BA%E4%BF%9D%E6%9C%AC%E5%82%B5%E5%88%B8%E6%8C%81%E6%9C%89%E4%BA%BA%E6%AC%8A%E7%9B%8A-061400659.html",
     "status": "已公告收回",
     "summary": "已公告收回並將終止櫃檯買賣。",
-    "updatedAt": "2026-09-02"
+    "updatedAt": "2026-09-03"
   },
   "36894": {
     "alertLevel": "warning",
@@ -231,7 +231,7 @@
     "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%A4%A7%E8%81%AF%E5%A4%A7%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%9C%8B%E5%85%A7%E7%AC%AC-%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E4%BA%A4%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-%E7%B0%A1%E7%A8%B1-%E5%A4%A7%E8%81%AF%E5%A4%A7e1-085751160.html",
     "status": "已公告收回",
     "summary": "已公告收回並將終止櫃檯買賣。",
-    "updatedAt": "2026-09-02"
+    "updatedAt": "2026-09-03"
   },
   "37022": {
     "alertLevel": "warning",
@@ -267,7 +267,7 @@
     "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%A4%A7%E8%81%AF%E5%A4%A7%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%B8%89%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-%E7%B0%A1%E7%A8%B1-%E5%A4%A7%E8%81%AF%E5%A4%A7%E4%B8%89-%E4%BB%A3%E7%A2%BC-101341240.html",
     "status": "已公告收回",
     "summary": "已公告收回並將終止櫃檯買賣。",
-    "updatedAt": "2026-09-02"
+    "updatedAt": "2026-09-03"
   },
   "45421": {
     "alertLevel": "warning",
@@ -292,15 +292,15 @@
     "bondCode": "64512",
     "bondName": "訊芯二KY",
     "delistDate": "2026-09-14",
-    "evidenceText": "【公告】訊芯-KY股份有限公司中華民國境內第二次無擔保轉換公司債(簡稱：訊芯二KY，代碼：64512)發行公司行使債券贖回權暨訂於115年09月14日終止櫃檯買賣等相關事宜。 【公告】訊芯-KY股份有限公司中華民國境內第二次無擔保轉換公司債(簡稱：訊芯二KY，代碼：64512)發行公司行使債券贖回權暨訂於115年09月14日終止櫃檯買賣等相關事宜。 Yahoo股市 首頁 新聞 股市 運動 TV 汽機車 購物中心 拍賣 氣象 App 下載 搜尋 登入 首頁 股市VIP 自選股 台股行情 智慧選股 期權 國際金融 新聞 AI 事件整理 房地產 投資新手村 基金 銀行服務 首頁 社群爆紅榜 Yahoo財經特派記者 Yahoo財經大人物 財經專輯 股市VIP 智慧選股",
+    "evidenceText": "司債為上櫃買賣 公司代號： 6451 公司簡稱： 訊芯-KY 債券代碼： 64512 債券簡稱： 訊芯二KY 一、公告序號： 1 二、主旨： 公告訊芯-KY股份有限公司中華民國境內第二次無擔保轉換公司債(簡稱：訊芯二KY，代碼：64512)發行公司行使債券贖回權暨訂於115年09月14日終止櫃檯買賣等相關事宜。 三、依據： 依訊芯二KY發行及轉換辦法第二十一條規定辦理。 四、公告事項： 發行公司於 115/08/13 至 115/09/11 行使債券贖回權，贖回權價格為債券面額之 100.0000 %。 (一)本轉換公司債自發行滿三個月之翌日起(西元2025年5月28日)至到期日前四十日(西元2028 年1月18日)止，若本公司普通股之收盤價格連續三十個營業日超過當時轉換價格達百分之三十(含)以上時，本公司得於其後三十個營業日內，以掛號寄發一份三十日期滿之「債券收回通知書」(前述期間自本公司發信之",
     "issuerCode": "6451",
     "issuerName": "訊芯科技控股股份有限公司",
     "lastCheckedAt": "2026-09-03",
     "redemptionBaseDate": "",
     "redemptionEndDate": "",
     "redemptionStartDate": "",
-    "source": "yahoo_news_confirmed_redemption",
-    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%A8%8A%E8%8A%AF-ky%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E4%B8%AD%E8%8F%AF%E6%B0%91%E5%9C%8B%E5%A2%83%E5%85%A7%E7%AC%AC%E4%BA%8C%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-%E7%B0%A1%E7%A8%B1-%E8%A8%8A%E8%8A%AF%E4%BA%8Cky-072347545.html",
+    "source": "MOPS official announcement",
+    "sourceUrl": "https://mopsov.twse.com.tw/mops/web/ajax_t120sb23?TYPEK=otc&co_id=6451&date1=20260715&seq_no=1&pub_class=0&firstin=1",
     "status": "已公告收回",
     "summary": "已公告收回並將終止櫃檯買賣。",
     "updatedAt": "2026-09-03"
@@ -400,7 +400,7 @@
     "bondCode": "89964",
     "bondName": "高力四",
     "delistDate": "2026-08-28",
-    "evidenceText": "【公告】高力股份有限公司國內第四次無擔保轉換公司債(簡稱：高力四，代碼：89964)發行公司行使債券贖回權暨訂於115年08月28日終止櫃檯買賣等相關事宜。 【公告】高力股份有限公司國內第四次無擔保轉換公司債(簡稱：高力四，代碼：89964)發行公司行使債券贖回權暨訂於115年08月28日終止櫃檯買賣等相關事宜。 Yahoo股市 首頁 新聞 股市 運動 TV 汽機車 購物中心 拍賣 氣象 App 下載 搜尋 登入 首頁 股市VIP 自選股 台股行情 智慧選股 期權 國際金融 新聞 AI 事件整理 房地產 投資新手村 基金 銀行服務 首頁 社群爆紅榜 Yahoo財經特派記者 Yahoo財經大人物 財經專輯 股市VIP 智慧選股 個股比較 ETF",
+    "evidenceText": "【公告】高力股份有限公司國內第四次無擔轉換公司債轉換公司債(簡稱：高力四，代碼：89964)發行公司行使債券贖回權暨訂於115年08月28日終止櫃檯買賣等相關事宜。 【公告】高力股份有限公司國內第四次無擔轉換公司債轉換公司債(簡稱：高力四，代碼：89964)發行公司行使債券贖回權暨訂於115年08月28日終止櫃檯買賣等相關事宜。 Yahoo股市 首頁 新聞 股市 運動 TV 汽機車 購物中心 拍賣 氣象 App 下載 搜尋 登入 首頁 股市VIP 自選股 台股行情 智慧選股 期權 國際金融 新聞 AI 事件整理 房地產 投資新手村 基金 銀行服務 首頁 社群爆紅榜 Yahoo財經特派記者 Yahoo財經大人物 財經專輯 股市VIP 智慧選股 個股比較",
     "issuerCode": "8996",
     "issuerName": "高力熱處理工業股份有限公司",
     "lastCheckedAt": "2026-09-03",
@@ -408,7 +408,7 @@
     "redemptionEndDate": "",
     "redemptionStartDate": "",
     "source": "yahoo_news_confirmed_redemption",
-    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%AB%98%E5%8A%9B%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%9C%8B%E5%85%A7%E7%AC%AC%E5%9B%9B%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-%E7%B0%A1%E7%A8%B1-%E9%AB%98%E5%8A%9B%E5%9B%9B-%E4%BB%A3%E7%A2%BC-071514761.html",
+    "sourceUrl": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%AB%98%E5%8A%9B%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%9C%8B%E5%85%A7%E7%AC%AC%E5%9B%9B%E6%AC%A1%E7%84%A1%E6%93%94%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-%E7%B0%A1%E7%A8%B1-%E9%AB%98%E5%8A%9B%E5%9B%9B-%E4%BB%A3%E7%A2%BC-091425301.html",
     "status": "已公告收回",
     "summary": "已公告收回並將終止櫃檯買賣。",
     "updatedAt": "2026-09-03"
