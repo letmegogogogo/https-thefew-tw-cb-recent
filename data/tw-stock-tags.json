@@ -411,25 +411,39 @@
     "updatedAt": "2026-06-23"
   },
   "1598": {
-    "confidence": 60,
+    "accuracy": "high",
+    "companyName": "岱宇國際",
+    "confidence": 90,
     "fineIndustries": [
-      "其他",
-      "待細分"
+      "健身器材",
+      "運動休閒設備"
     ],
     "groupTags": [
-      "待確認"
+      "健身器材",
+      "運動用品"
     ],
     "officialIndustry": "運動休閒",
     "productTags": [
-      "主要產品需由官網",
-      "年報補齊"
+      "跑步機",
+      "室內健身車",
+      "橢圓機",
+      "按摩椅",
+      "商用健身器材"
     ],
-    "source": "officialIndustryOnly",
-    "stockName": "岱宇",
+    "source": "official_web",
+    "sourceNote": "依岱宇國際公司產品與公開資料整理；主要產品為家用及商用健身器材與健康休閒設備。",
+    "sourceUrls": [
+      "https://www.dyaco.com/",
+      "https://tw.stock.yahoo.com/quote/1598.TW/profile"
+    ],
+    "stockId": "1598",
+    "stockName": "岱宇國際",
     "themeTags": [
-      "待確認"
+      "運動休閒",
+      "健康管理",
+      "居家健身"
     ],
-    "updatedAt": "2026-06-23"
+    "updatedAt": "2026-09-13"
   },
   "1609": {
     "confidence": 90,
@@ -577,25 +591,39 @@
     "updatedAt": "2026-06-23"
   },
   "1909": {
-    "confidence": 60,
+    "accuracy": "high",
+    "companyName": "榮成紙業",
+    "confidence": 90,
     "fineIndustries": [
-      "其他",
-      "待細分"
+      "工業用紙",
+      "包裝紙"
     ],
     "groupTags": [
-      "待確認"
+      "造紙",
+      "包裝材料"
     ],
     "officialIndustry": "造紙工業",
     "productTags": [
-      "主要產品需由官網",
-      "年報補齊"
+      "工業用紙",
+      "瓦楞紙箱",
+      "紙器包裝",
+      "回收紙",
+      "紙漿"
     ],
-    "source": "officialIndustryOnly",
-    "stockName": "榮成",
+    "source": "official_web",
+    "sourceNote": "依榮成紙業公開公司資料整理；主要產品為工業用紙、紙器包裝及回收紙相關業務。",
+    "sourceUrls": [
+      "https://www.longchenpaper.com/",
+      "https://tw.stock.yahoo.com/quote/1909.TW/profile"
+    ],
+    "stockId": "1909",
+    "stockName": "榮成紙業",
     "themeTags": [
-      "待確認"
+      "循環經濟",
+      "包裝材料",
+      "原物料成本"
     ],
-    "updatedAt": "2026-06-23"
+    "updatedAt": "2026-09-13"
   },
   "2034": {
     "confidence": 60,
@@ -1576,28 +1604,38 @@
     "updatedAt": "2026-06-23"
   },
   "3016": {
-    "accuracy": "low",
+    "accuracy": "high",
     "companyName": "嘉晶電子",
-    "confidence": 65,
+    "confidence": 90,
     "fineIndustries": [
-      "半導體"
+      "矽晶圓",
+      "磊晶晶圓"
     ],
     "groupTags": [
-      "半導體"
+      "半導體材料",
+      "矽晶圓"
     ],
     "officialIndustry": "半導體業",
     "productTags": [
-      "半導體"
+      "矽磊晶圓",
+      "再生晶圓",
+      "晶圓材料",
+      "半導體材料"
     ],
-    "source": "officialIndustryFallback",
-    "sourceNote": "依官方產業與現有公開欄位保守分類，後續更新仍會持續精修。",
-    "sourceUrls": [],
+    "source": "official_web",
+    "sourceNote": "依嘉晶電子公開公司資料整理；主要從事矽磊晶圓與半導體晶圓材料相關業務。",
+    "sourceUrls": [
+      "https://www.epi.episil.com/",
+      "https://tw.stock.yahoo.com/quote/3016.TW/profile"
+    ],
     "stockId": "3016",
     "stockName": "嘉晶電子",
     "themeTags": [
-      "半導體"
+      "半導體材料",
+      "先進製程",
+      "晶圓供應鏈"
     ],
-    "updatedAt": "2026-08-13"
+    "updatedAt": "2026-09-13"
   },
   "3028": {
     "accuracy": "high",
@@ -2785,29 +2823,42 @@
     "updatedAt": "2026-06-23"
   },
   "3583": {
-    "confidence": 90,
+    "accuracy": "high",
+    "companyName": "辛耘企業",
+    "confidence": 95,
     "fineIndustries": [
       "半導體設備",
-      "濕製程設備"
+      "濕製程設備",
+      "晶圓再生"
     ],
     "groupTags": [
-      "半導體設備"
+      "半導體設備",
+      "晶圓再生",
+      "先進封裝"
     ],
     "officialIndustry": "半導體業",
     "productTags": [
       "濕製程設備",
-      "再生晶圓設備",
-      "半導體設備",
-      "自動化設備"
+      "晶圓再生服務",
+      "半導體製程設備",
+      "自動化設備",
+      "再生晶圓"
     ],
-    "source": "manual",
-    "stockName": "辛耘",
+    "source": "official_web",
+    "sourceNote": "依辛耘公開公司資料整理；業務涵蓋半導體濕製程設備、製程設備代理與晶圓再生服務。",
+    "sourceUrls": [
+      "https://www.scientech.com.tw/",
+      "https://tw.stock.yahoo.com/quote/3583.TW/profile"
+    ],
+    "stockId": "3583",
+    "stockName": "辛耘企業",
     "themeTags": [
       "CoWoS擴產",
-      "半導體設備",
-      "先進封裝"
+      "先進封裝",
+      "半導體設備國產化",
+      "先進製程"
     ],
-    "updatedAt": "2026-06-23"
+    "updatedAt": "2026-09-13"
   },
   "3587": {
     "confidence": 90,
@@ -7578,25 +7629,41 @@
     "updatedAt": "2026-06-23"
   },
   "8433": {
-    "confidence": 60,
+    "accuracy": "high",
+    "companyName": "弘帆",
+    "confidence": 90,
     "fineIndustries": [
-      "其他",
-      "待細分"
+      "流行飾品",
+      "美容美髮用品",
+      "個人護理電器"
     ],
     "groupTags": [
-      "待確認"
+      "流行飾品",
+      "美妝個護"
     ],
     "officialIndustry": "居家生活",
     "productTags": [
-      "主要產品需由官網",
-      "年報補齊"
+      "髮飾",
+      "梳鏡",
+      "珠寶配飾",
+      "手袋",
+      "美容美髮電器",
+      "跨境電商"
     ],
-    "source": "officialIndustryOnly",
+    "source": "official_web",
+    "sourceNote": "依弘帆公開法說與公司資料整理；主要從事流行髮飾、梳鏡、珠寶、手袋、美容美髮及個護電器等產品。",
+    "sourceUrls": [
+      "http://www.bonfame.com/",
+      "https://tw.stock.yahoo.com/quote/8433.TWO/profile"
+    ],
+    "stockId": "8433",
     "stockName": "弘帆",
     "themeTags": [
-      "待確認"
+      "美妝個護",
+      "生活消費",
+      "跨境電商"
     ],
-    "updatedAt": "2026-06-23"
+    "updatedAt": "2026-09-13"
   },
   "8438": {
     "confidence": 90,
@@ -7661,25 +7728,38 @@
     "updatedAt": "2026-07-18"
   },
   "8462": {
-    "confidence": 60,
+    "accuracy": "high",
+    "companyName": "柏文健康事業",
+    "confidence": 90,
     "fineIndustries": [
-      "其他",
-      "待細分"
+      "連鎖健身中心",
+      "運動健康服務"
     ],
     "groupTags": [
-      "待確認"
+      "健身中心",
+      "運動服務"
     ],
     "officialIndustry": "運動休閒",
     "productTags": [
-      "主要產品需由官網",
-      "年報補齊"
+      "健身房會員",
+      "私人教練課程",
+      "運動保健服務",
+      "兒童體適能"
     ],
-    "source": "officialIndustryOnly",
-    "stockName": "柏文",
+    "source": "official_web",
+    "sourceNote": "依柏文公開法說與公司資料整理；核心服務為健身工廠會員制健身中心、私人教練與運動健康服務。",
+    "sourceUrls": [
+      "https://www.fitnessfactory.com.tw/",
+      "https://tw.stock.yahoo.com/quote/8462.TW/profile"
+    ],
+    "stockId": "8462",
+    "stockName": "柏文健康事業",
     "themeTags": [
-      "待確認"
+      "內需消費",
+      "健康管理",
+      "運動休閒"
     ],
-    "updatedAt": "2026-06-23"
+    "updatedAt": "2026-09-13"
   },
   "8466": {
     "confidence": 60,
@@ -7706,25 +7786,39 @@
     "updatedAt": "2026-06-23"
   },
   "8467": {
-    "confidence": 60,
+    "accuracy": "high",
+    "companyName": "波力環球企業",
+    "confidence": 90,
     "fineIndustries": [
-      "其他",
-      "待細分"
+      "碳纖維運動用品",
+      "球拍製造"
     ],
     "groupTags": [
-      "待確認"
+      "運動用品",
+      "碳纖維"
     ],
     "officialIndustry": "運動休閒",
     "productTags": [
-      "主要產品需由官網",
-      "年報補齊"
+      "羽球拍",
+      "網球拍",
+      "曲棍球桿",
+      "碳纖維球拍",
+      "運動用品ODM"
     ],
-    "source": "officialIndustryOnly",
-    "stockName": "波力-KY",
+    "source": "official_web",
+    "sourceNote": "依波力官方公司介紹與產品分類整理；主要產品包含碳纖維球拍、曲棍球桿及相關運動用品。",
+    "sourceUrls": [
+      "https://www.bonnygo.com.tw/tw/about/index.aspx",
+      "https://bonnyworldwide.com/tw/product/index.aspx"
+    ],
+    "stockId": "8467",
+    "stockName": "波力環球企業",
     "themeTags": [
-      "待確認"
+      "運動休閒",
+      "碳纖維材料",
+      "品牌代工"
     ],
-    "updatedAt": "2026-06-23"
+    "updatedAt": "2026-09-13"
   },
   "8473": {
     "confidence": 60,
@@ -7775,25 +7869,38 @@
     "updatedAt": "2026-06-23"
   },
   "8478": {
-    "confidence": 60,
+    "accuracy": "high",
+    "companyName": "東哥企業",
+    "confidence": 90,
     "fineIndustries": [
-      "其他",
-      "待細分"
+      "豪華遊艇",
+      "高端休閒船舶"
     ],
     "groupTags": [
-      "待確認"
+      "遊艇",
+      "高端休閒"
     ],
     "officialIndustry": "運動休閒",
     "productTags": [
-      "主要產品需由官網",
-      "年報補齊"
+      "Ocean Alexander",
+      "大型遊艇",
+      "豪華遊艇",
+      "遊艇售後服務"
     ],
-    "source": "officialIndustryOnly",
-    "stockName": "東哥遊艇",
+    "source": "official_web",
+    "sourceNote": "依東哥遊艇公開資料整理；主要製造與銷售 Ocean Alexander 豪華遊艇並提供售後服務。",
+    "sourceUrls": [
+      "https://oceanalexander.com/zh-hans/",
+      "https://tw.stock.yahoo.com/quote/8478.TWO/profile"
+    ],
+    "stockId": "8478",
+    "stockName": "東哥企業",
     "themeTags": [
-      "待確認"
+      "高端消費",
+      "美元營收",
+      "北美市場"
     ],
-    "updatedAt": "2026-06-23"
+    "updatedAt": "2026-09-13"
   },
   "8488": {
     "confidence": 60,
@@ -7844,25 +7951,39 @@
     "updatedAt": "2026-06-23"
   },
   "8927": {
-    "confidence": 60,
+    "accuracy": "high",
+    "companyName": "北基國際",
+    "confidence": 90,
     "fineIndustries": [
-      "其他",
-      "待細分"
+      "加油站通路",
+      "油品零售"
     ],
     "groupTags": [
-      "待確認"
+      "油品通路",
+      "能源服務"
     ],
     "officialIndustry": "油電燃氣業",
     "productTags": [
-      "主要產品需由官網",
-      "年報補齊"
+      "汽柴油零售",
+      "加油站",
+      "潤滑油",
+      "洗車服務",
+      "液化石油氣"
     ],
-    "source": "officialIndustryOnly",
-    "stockName": "北基",
+    "source": "official_web",
+    "sourceNote": "依北基公開公司資料整理；主要經營加油站汽柴油零售、汽機車潤滑保養、洗車與液化石油氣等服務。",
+    "sourceUrls": [
+      "http://www.nspco.com.tw",
+      "https://tw.stock.yahoo.com/quote/8927.TWO/profile"
+    ],
+    "stockId": "8927",
+    "stockName": "北基國際",
     "themeTags": [
-      "待確認"
+      "能源通路",
+      "油價",
+      "內需消費"
     ],
-    "updatedAt": "2026-06-23"
+    "updatedAt": "2026-09-13"
   },
   "8996": {
     "confidence": 90,
@@ -7891,25 +8012,39 @@
     "updatedAt": "2026-06-23"
   },
   "9802": {
-    "confidence": 60,
+    "accuracy": "high",
+    "companyName": "鈺齊國際",
+    "confidence": 90,
     "fineIndustries": [
-      "其他",
-      "待細分"
+      "製鞋代工",
+      "戶外功能鞋"
     ],
     "groupTags": [
-      "待確認"
+      "製鞋",
+      "運動用品"
     ],
     "officialIndustry": "運動休閒",
     "productTags": [
-      "主要產品需由官網",
-      "年報補齊"
+      "登山鞋",
+      "戶外鞋",
+      "運動鞋",
+      "雪靴",
+      "鞋類ODM"
     ],
-    "source": "officialIndustryOnly",
-    "stockName": "鈺齊-KY",
+    "source": "official_web",
+    "sourceNote": "依鈺齊-KY公開法說與公司資料整理；主要從事戶外功能鞋、運動鞋及多功能鞋款開發代工。",
+    "sourceUrls": [
+      "https://www.yueyuen.com/",
+      "https://tw.stock.yahoo.com/quote/9802.TW/profile"
+    ],
+    "stockId": "9802",
+    "stockName": "鈺齊國際",
     "themeTags": [
-      "待確認"
+      "戶外休閒",
+      "製鞋供應鏈",
+      "品牌代工"
     ],
-    "updatedAt": "2026-06-23"
+    "updatedAt": "2026-09-13"
   },
   "9906": {
     "confidence": 90,

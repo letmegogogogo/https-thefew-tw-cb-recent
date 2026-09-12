@@ -35,6 +35,146 @@ COMPANY_RULES = {
             "https://ic.tpex.org.tw/company_chain.php?stk_code=8054",
         ],
     },
+    "8462": {
+        "fineIndustries": ["連鎖健身中心", "運動健康服務"],
+        "productTags": ["健身房會員", "私人教練課程", "運動保健服務", "兒童體適能"],
+        "themeTags": ["內需消費", "健康管理", "運動休閒"],
+        "groupTags": ["健身中心", "運動服務"],
+        "confidence": 90,
+        "accuracy": "high",
+        "source": "official_web",
+        "sourceNote": "依柏文公開法說與公司資料整理；核心服務為健身工廠會員制健身中心、私人教練與運動健康服務。",
+        "sourceUrls": [
+            "https://www.fitnessfactory.com.tw/",
+            "https://tw.stock.yahoo.com/quote/8462.TW/profile",
+        ],
+    },
+    "1598": {
+        "fineIndustries": ["健身器材", "運動休閒設備"],
+        "productTags": ["跑步機", "室內健身車", "橢圓機", "按摩椅", "商用健身器材"],
+        "themeTags": ["運動休閒", "健康管理", "居家健身"],
+        "groupTags": ["健身器材", "運動用品"],
+        "confidence": 90,
+        "accuracy": "high",
+        "source": "official_web",
+        "sourceNote": "依岱宇國際公司產品與公開資料整理；主要產品為家用及商用健身器材與健康休閒設備。",
+        "sourceUrls": [
+            "https://www.dyaco.com/",
+            "https://tw.stock.yahoo.com/quote/1598.TW/profile",
+        ],
+    },
+    "9802": {
+        "fineIndustries": ["製鞋代工", "戶外功能鞋"],
+        "productTags": ["登山鞋", "戶外鞋", "運動鞋", "雪靴", "鞋類ODM"],
+        "themeTags": ["戶外休閒", "製鞋供應鏈", "品牌代工"],
+        "groupTags": ["製鞋", "運動用品"],
+        "confidence": 90,
+        "accuracy": "high",
+        "source": "official_web",
+        "sourceNote": "依鈺齊-KY公開法說與公司資料整理；主要從事戶外功能鞋、運動鞋及多功能鞋款開發代工。",
+        "sourceUrls": [
+            "https://www.yueyuen.com/",
+            "https://tw.stock.yahoo.com/quote/9802.TW/profile",
+        ],
+    },
+    "8478": {
+        "fineIndustries": ["豪華遊艇", "高端休閒船舶"],
+        "productTags": ["Ocean Alexander", "大型遊艇", "豪華遊艇", "遊艇售後服務"],
+        "themeTags": ["高端消費", "美元營收", "北美市場"],
+        "groupTags": ["遊艇", "高端休閒"],
+        "confidence": 90,
+        "accuracy": "high",
+        "source": "official_web",
+        "sourceNote": "依東哥遊艇公開資料整理；主要製造與銷售 Ocean Alexander 豪華遊艇並提供售後服務。",
+        "sourceUrls": [
+            "https://oceanalexander.com/zh-hans/",
+            "https://tw.stock.yahoo.com/quote/8478.TWO/profile",
+        ],
+    },
+    "8467": {
+        "fineIndustries": ["碳纖維運動用品", "球拍製造"],
+        "productTags": ["羽球拍", "網球拍", "曲棍球桿", "碳纖維球拍", "運動用品ODM"],
+        "themeTags": ["運動休閒", "碳纖維材料", "品牌代工"],
+        "groupTags": ["運動用品", "碳纖維"],
+        "confidence": 90,
+        "accuracy": "high",
+        "source": "official_web",
+        "sourceNote": "依波力官方公司介紹與產品分類整理；主要產品包含碳纖維球拍、曲棍球桿及相關運動用品。",
+        "sourceUrls": [
+            "https://www.bonnygo.com.tw/tw/about/index.aspx",
+            "https://bonnyworldwide.com/tw/product/index.aspx",
+        ],
+    },
+    "8433": {
+        "fineIndustries": ["流行飾品", "美容美髮用品", "個人護理電器"],
+        "productTags": ["髮飾", "梳鏡", "珠寶配飾", "手袋", "美容美髮電器", "跨境電商"],
+        "themeTags": ["美妝個護", "生活消費", "跨境電商"],
+        "groupTags": ["流行飾品", "美妝個護"],
+        "confidence": 90,
+        "accuracy": "high",
+        "source": "official_web",
+        "sourceNote": "依弘帆公開法說與公司資料整理；主要從事流行髮飾、梳鏡、珠寶、手袋、美容美髮及個護電器等產品。",
+        "sourceUrls": [
+            "http://www.bonfame.com/",
+            "https://tw.stock.yahoo.com/quote/8433.TWO/profile",
+        ],
+    },
+    "8927": {
+        "fineIndustries": ["加油站通路", "油品零售"],
+        "productTags": ["汽柴油零售", "加油站", "潤滑油", "洗車服務", "液化石油氣"],
+        "themeTags": ["能源通路", "油價", "內需消費"],
+        "groupTags": ["油品通路", "能源服務"],
+        "confidence": 90,
+        "accuracy": "high",
+        "source": "official_web",
+        "sourceNote": "依北基公開公司資料整理；主要經營加油站汽柴油零售、汽機車潤滑保養、洗車與液化石油氣等服務。",
+        "sourceUrls": [
+            "http://www.nspco.com.tw",
+            "https://tw.stock.yahoo.com/quote/8927.TWO/profile",
+        ],
+    },
+    "1909": {
+        "fineIndustries": ["工業用紙", "包裝紙"],
+        "productTags": ["工業用紙", "瓦楞紙箱", "紙器包裝", "回收紙", "紙漿"],
+        "themeTags": ["循環經濟", "包裝材料", "原物料成本"],
+        "groupTags": ["造紙", "包裝材料"],
+        "confidence": 90,
+        "accuracy": "high",
+        "source": "official_web",
+        "sourceNote": "依榮成紙業公開公司資料整理；主要產品為工業用紙、紙器包裝及回收紙相關業務。",
+        "sourceUrls": [
+            "https://www.longchenpaper.com/",
+            "https://tw.stock.yahoo.com/quote/1909.TW/profile",
+        ],
+    },
+    "3016": {
+        "fineIndustries": ["矽晶圓", "磊晶晶圓"],
+        "productTags": ["矽磊晶圓", "再生晶圓", "晶圓材料", "半導體材料"],
+        "themeTags": ["半導體材料", "先進製程", "晶圓供應鏈"],
+        "groupTags": ["半導體材料", "矽晶圓"],
+        "confidence": 90,
+        "accuracy": "high",
+        "source": "official_web",
+        "sourceNote": "依嘉晶電子公開公司資料整理；主要從事矽磊晶圓與半導體晶圓材料相關業務。",
+        "sourceUrls": [
+            "https://www.epi.episil.com/",
+            "https://tw.stock.yahoo.com/quote/3016.TW/profile",
+        ],
+    },
+    "3583": {
+        "fineIndustries": ["半導體設備", "濕製程設備", "晶圓再生"],
+        "productTags": ["濕製程設備", "晶圓再生服務", "半導體製程設備", "自動化設備", "再生晶圓"],
+        "themeTags": ["CoWoS擴產", "先進封裝", "半導體設備國產化", "先進製程"],
+        "groupTags": ["半導體設備", "晶圓再生", "先進封裝"],
+        "confidence": 95,
+        "accuracy": "high",
+        "source": "official_web",
+        "sourceNote": "依辛耘公開公司資料整理；業務涵蓋半導體濕製程設備、製程設備代理與晶圓再生服務。",
+        "sourceUrls": [
+            "https://www.scientech.com.tw/",
+            "https://tw.stock.yahoo.com/quote/3583.TW/profile",
+        ],
+    },
     "3028": {
         "fineIndustries": ["電子通路", "半導體通路"],
         "productTags": ["半導體元件", "記憶體", "MCU", "通訊元件"],
@@ -347,7 +487,8 @@ def main() -> int:
         if requested and code not in requested:
             continue
         existing = tags.get(code, {})
-        if has_refined_tags(existing):
+        force_company_rule = bool(requested and code in COMPANY_RULES)
+        if has_refined_tags(existing) and not force_company_rule:
             logs.append(log_row(code, row, "skipped_existing", existing, "existing_verified_tags"))
             continue
         if (
