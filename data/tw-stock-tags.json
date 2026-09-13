@@ -719,6 +719,42 @@
     ],
     "updatedAt": "2026-06-23"
   },
+  "2221": {
+    "accuracy": "medium",
+    "companyName": "大甲永和機械工業",
+    "confidence": 85,
+    "fineIndustries": [
+      "航太扣件",
+      "金屬扣件"
+    ],
+    "groupTags": [
+      "扣件",
+      "航太零組件"
+    ],
+    "officialIndustry": "其他",
+    "productTags": [
+      "螺帽",
+      "航太扣件",
+      "汽車扣件",
+      "工業扣件",
+      "精密金屬零件"
+    ],
+    "source": "public_disclosure",
+    "sourceNote": "依公開公司資料與產業分類整理；公司主要從事螺帽、扣件與金屬零件製造，應用於汽車、航太及工業市場。",
+    "sourceUrls": [
+      "https://mops.twse.com.tw/mops/web/index",
+      "https://tw.stock.yahoo.com/quote/2221.TWO/profile"
+    ],
+    "stockId": "2221",
+    "stockName": "大甲永和機械工業",
+    "themeTags": [
+      "航太供應鏈",
+      "汽車零組件",
+      "扣件",
+      "精密加工"
+    ],
+    "updatedAt": "2026-09-13"
+  },
   "2228": {
     "confidence": 60,
     "fineIndustries": [
@@ -816,6 +852,42 @@
       "汽車通路"
     ],
     "updatedAt": "2026-06-23"
+  },
+  "2303": {
+    "accuracy": "high",
+    "companyName": "聯華電子",
+    "confidence": 95,
+    "fineIndustries": [
+      "晶圓代工",
+      "特殊製程"
+    ],
+    "groupTags": [
+      "晶圓代工",
+      "半導體製造"
+    ],
+    "officialIndustry": "半導體業",
+    "productTags": [
+      "邏輯製程",
+      "混合訊號製程",
+      "嵌入式高壓製程",
+      "BCD製程",
+      "RFSOI"
+    ],
+    "source": "official_web",
+    "sourceNote": "依聯華電子官網與公開公司資料整理；公司為全球晶圓代工廠，提供邏輯、混合訊號、高壓、嵌入式非揮發性記憶體、RFSOI與BCD等製程。",
+    "sourceUrls": [
+      "https://www.umc.com/zh-TW/home/Index",
+      "https://www.umc.com/zh-TW/News/press_release/Content/corporate/20240430"
+    ],
+    "stockId": "2303",
+    "stockName": "聯華電子",
+    "themeTags": [
+      "成熟製程",
+      "車用半導體",
+      "物聯網",
+      "晶圓代工"
+    ],
+    "updatedAt": "2026-09-13"
   },
   "2329": {
     "confidence": 90,
@@ -1794,6 +1866,30 @@
     ],
     "updatedAt": "2026-06-23"
   },
+  "3081": {
+    "accuracy": "low",
+    "companyName": "聯亞光電工業",
+    "confidence": 65,
+    "fineIndustries": [
+      "網通設備"
+    ],
+    "groupTags": [
+      "網通設備"
+    ],
+    "officialIndustry": "通信網路業",
+    "productTags": [
+      "網通設備"
+    ],
+    "source": "officialIndustryFallback",
+    "sourceNote": "依官方產業與現有公開欄位保守分類，後續更新仍會持續精修。",
+    "sourceUrls": [],
+    "stockId": "3081",
+    "stockName": "聯亞光電工業",
+    "themeTags": [
+      "網通"
+    ],
+    "updatedAt": "2026-09-13"
+  },
   "3088": {
     "confidence": 90,
     "fineIndustries": [
@@ -1940,7 +2036,9 @@
     "updatedAt": "2026-06-23"
   },
   "3135": {
-    "confidence": 60,
+    "accuracy": "low",
+    "companyName": "凌航科技",
+    "confidence": 65,
     "fineIndustries": [
       "半導體"
     ],
@@ -1949,19 +2047,17 @@
     ],
     "officialIndustry": "半導體業",
     "productTags": [
-      "IC設計",
-      "晶圓代工",
-      "封測",
-      "設備材料"
+      "半導體"
     ],
-    "source": "officialIndustryOnly",
-    "stockName": "凌航",
+    "source": "officialIndustryFallback",
+    "sourceNote": "依官方產業與現有公開欄位保守分類，後續更新仍會持續精修。",
+    "sourceUrls": [],
+    "stockId": "3135",
+    "stockName": "凌航科技",
     "themeTags": [
-      "AI晶片",
-      "HPC",
-      "半導體循環"
+      "半導體"
     ],
-    "updatedAt": "2026-06-23"
+    "updatedAt": "2026-09-13"
   },
   "3141": {
     "confidence": 90,
@@ -1986,6 +2082,42 @@
       "消費電子復甦"
     ],
     "updatedAt": "2026-06-23"
+  },
+  "3149": {
+    "accuracy": "high",
+    "companyName": "正達國際光電",
+    "confidence": 90,
+    "fineIndustries": [
+      "光電玻璃加工",
+      "保護玻璃"
+    ],
+    "groupTags": [
+      "光電玻璃",
+      "光學元件"
+    ],
+    "officialIndustry": "光電業",
+    "productTags": [
+      "薄化玻璃",
+      "強化玻璃",
+      "鍍膜玻璃",
+      "保護玻璃",
+      "3D成型玻璃",
+      "節能玻璃"
+    ],
+    "source": "official_web",
+    "sourceNote": "依正達國際光電官網投資人問答整理；主要產品為手機、平板、一體成型電腦、電視等終端產品使用之光電玻璃。",
+    "sourceUrls": [
+      "https://www.gtoc.com.tw/webc/html/investor/index.aspx?nav=6"
+    ],
+    "stockId": "3149",
+    "stockName": "正達國際光電",
+    "themeTags": [
+      "光電玻璃",
+      "消費電子",
+      "綠建築",
+      "車載顯示"
+    ],
+    "updatedAt": "2026-09-13"
   },
   "3167": {
     "confidence": 90,
@@ -2058,6 +2190,42 @@
       "車用電子"
     ],
     "updatedAt": "2026-06-23"
+  },
+  "3219": {
+    "accuracy": "high",
+    "companyName": "倚強科技",
+    "confidence": 90,
+    "fineIndustries": [
+      "自動化測試設備",
+      "5G毫米波天線"
+    ],
+    "groupTags": [
+      "測試設備",
+      "通訊元件"
+    ],
+    "officialIndustry": "其他電子業",
+    "productTags": [
+      "功能測試設備",
+      "射頻測試",
+      "組裝測試",
+      "可靠度測試",
+      "毫米波天線模組"
+    ],
+    "source": "official_web",
+    "sourceNote": "依倚強科技官網與公開法說資料整理；公司提供消費電子、車用電子、AI伺服器等自動化測試解決方案，並布局 5G 毫米波天線模組。",
+    "sourceUrls": [
+      "https://www.aether-tek.com/zh_cn/aethertek-story/",
+      "https://www.aether-tek.com/zh/%E5%80%9A%E5%BC%B7%E7%A7%91%E6%8A%80%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8-%E8%82%A1%E7%A5%A8%E4%BB%A3%E8%99%9F%EF%BC%9A3219-%E3%80%8C2024%E7%AC%AC%E4%BA%8C%E5%AD%A3%E7%87%9F/"
+    ],
+    "stockId": "3219",
+    "stockName": "倚強科技",
+    "themeTags": [
+      "AI伺服器測試",
+      "車用電子",
+      "5G毫米波",
+      "自動化檢測"
+    ],
+    "updatedAt": "2026-09-13"
   },
   "3257": {
     "confidence": 90,
@@ -2619,6 +2787,41 @@
       "低軌衛星"
     ],
     "updatedAt": "2026-06-23"
+  },
+  "3512": {
+    "accuracy": "high",
+    "companyName": "皇龍開發",
+    "confidence": 90,
+    "fineIndustries": [
+      "住宅建設",
+      "土地開發"
+    ],
+    "groupTags": [
+      "建設開發",
+      "營建"
+    ],
+    "officialIndustry": "建材營造",
+    "productTags": [
+      "住宅大樓",
+      "土地開發",
+      "不動產銷售",
+      "營建工程"
+    ],
+    "source": "official_web",
+    "sourceNote": "依皇龍開發官網與公開公司資料整理；主要業務為土地開發、住宅及大樓興建與銷售。",
+    "sourceUrls": [
+      "https://www.hldc.com.tw/about/",
+      "https://www.hldc.com.tw/about/about_us__1/"
+    ],
+    "stockId": "3512",
+    "stockName": "皇龍開發",
+    "themeTags": [
+      "房市",
+      "台南建案",
+      "土地資產",
+      "都更"
+    ],
+    "updatedAt": "2026-09-13"
   },
   "3516": {
     "confidence": 90,
@@ -3540,6 +3743,42 @@
     ],
     "updatedAt": "2026-06-23"
   },
+  "4541": {
+    "accuracy": "high",
+    "companyName": "晟田科技工業",
+    "confidence": 95,
+    "fineIndustries": [
+      "航太精密零件",
+      "五軸加工"
+    ],
+    "groupTags": [
+      "航太零組件",
+      "精密加工"
+    ],
+    "officialIndustry": "其他",
+    "productTags": [
+      "航太發動機零件",
+      "起落架零件",
+      "渦輪機匣",
+      "齒輪箱零件",
+      "CNC精密加工"
+    ],
+    "source": "official_web",
+    "sourceNote": "依晟田科技官網與公開法說資料整理；公司聚焦航太發動機、起落架、飛控致動器等精密零件加工。",
+    "sourceUrls": [
+      "https://www.maicl.com/index.php?inter=about",
+      "https://www.maicl.com/index.php?inter=application&nc_id=3"
+    ],
+    "stockId": "4541",
+    "stockName": "晟田科技工業",
+    "themeTags": [
+      "航太供應鏈",
+      "航太發動機",
+      "精密加工",
+      "國防航太"
+    ],
+    "updatedAt": "2026-09-13"
+  },
   "4542": {
     "confidence": 60,
     "fineIndustries": [
@@ -3751,48 +3990,52 @@
     "updatedAt": "2026-06-23"
   },
   "4714": {
-    "confidence": 60,
+    "accuracy": "low",
+    "companyName": "永捷創新科技",
+    "confidence": 65,
     "fineIndustries": [
-      "化工材料"
+      "化工"
     ],
     "groupTags": [
       "化工"
     ],
     "officialIndustry": "化學工業",
     "productTags": [
-      "化學品",
-      "樹脂",
-      "特用材料"
+      "化學品"
     ],
-    "source": "officialIndustryOnly",
-    "stockName": "永捷",
+    "source": "officialIndustryFallback",
+    "sourceNote": "依官方產業與現有公開欄位保守分類，後續更新仍會持續精修。",
+    "sourceUrls": [],
+    "stockId": "4714",
+    "stockName": "永捷創新科技",
     "themeTags": [
-      "材料國產化",
-      "景氣循環"
+      "化工"
     ],
-    "updatedAt": "2026-06-23"
+    "updatedAt": "2026-09-13"
   },
   "4722": {
-    "confidence": 60,
+    "accuracy": "low",
+    "companyName": "國精化學",
+    "confidence": 65,
     "fineIndustries": [
-      "化工材料"
+      "化工"
     ],
     "groupTags": [
       "化工"
     ],
     "officialIndustry": "化學工業",
     "productTags": [
-      "化學品",
-      "樹脂",
-      "特用材料"
+      "化學品"
     ],
-    "source": "officialIndustryOnly",
-    "stockName": "國精化",
+    "source": "officialIndustryFallback",
+    "sourceNote": "依官方產業與現有公開欄位保守分類，後續更新仍會持續精修。",
+    "sourceUrls": [],
+    "stockId": "4722",
+    "stockName": "國精化學",
     "themeTags": [
-      "材料國產化",
-      "景氣循環"
+      "化工"
     ],
-    "updatedAt": "2026-06-23"
+    "updatedAt": "2026-09-13"
   },
   "4739": {
     "confidence": 60,
@@ -3943,29 +4186,28 @@
     "updatedAt": "2026-06-23"
   },
   "4931": {
-    "confidence": 60,
+    "accuracy": "low",
+    "companyName": "新盛力科技",
+    "confidence": 65,
     "fineIndustries": [
-      "電腦週邊",
-      "系統"
+      "電腦週邊"
     ],
     "groupTags": [
       "電腦週邊"
     ],
     "officialIndustry": "電腦及週邊設備業",
     "productTags": [
-      "PC",
-      "NB",
-      "伺服器",
-      "週邊",
-      "工業電腦"
+      "電腦週邊"
     ],
-    "source": "officialIndustryOnly",
-    "stockName": "新盛力",
+    "source": "officialIndustryFallback",
+    "sourceNote": "依官方產業與現有公開欄位保守分類，後續更新仍會持續精修。",
+    "sourceUrls": [],
+    "stockId": "4931",
+    "stockName": "新盛力科技",
     "themeTags": [
-      "AI伺服器",
-      "AI PC"
+      "AI伺服器"
     ],
-    "updatedAt": "2026-06-23"
+    "updatedAt": "2026-09-13"
   },
   "4967": {
     "confidence": 90,
@@ -3989,6 +4231,43 @@
       "記憶體循環"
     ],
     "updatedAt": "2026-06-23"
+  },
+  "4973": {
+    "accuracy": "high",
+    "companyName": "廣穎電通",
+    "confidence": 90,
+    "fineIndustries": [
+      "記憶體品牌",
+      "儲存裝置"
+    ],
+    "groupTags": [
+      "記憶體",
+      "儲存裝置"
+    ],
+    "officialIndustry": "半導體業",
+    "productTags": [
+      "SSD",
+      "記憶卡",
+      "隨身碟",
+      "DRAM模組",
+      "外接式硬碟",
+      "工業用記憶體"
+    ],
+    "source": "official_web",
+    "sourceNote": "依廣穎電通官網與公司簡介整理；公司經營自有品牌 Silicon Power，產品涵蓋記憶卡、隨身碟、SSD、記憶體模組、外接硬碟與工業用記憶體。",
+    "sourceUrls": [
+      "https://www.silicon-power.com/tw/",
+      "https://www.silicon-power.com/web/cn/company_profile"
+    ],
+    "stockId": "4973",
+    "stockName": "廣穎電通",
+    "themeTags": [
+      "記憶體模組",
+      "邊緣儲存",
+      "消費電子",
+      "工業儲存"
+    ],
+    "updatedAt": "2026-09-13"
   },
   "4979": {
     "confidence": 90,
@@ -5814,6 +6093,30 @@
     ],
     "updatedAt": "2026-06-23"
   },
+  "6570": {
+    "accuracy": "low",
+    "companyName": "維田科技",
+    "confidence": 65,
+    "fineIndustries": [
+      "電腦週邊"
+    ],
+    "groupTags": [
+      "電腦週邊"
+    ],
+    "officialIndustry": "電腦及週邊設備業",
+    "productTags": [
+      "電腦週邊"
+    ],
+    "source": "officialIndustryFallback",
+    "sourceNote": "依官方產業與現有公開欄位保守分類，後續更新仍會持續精修。",
+    "sourceUrls": [],
+    "stockId": "6570",
+    "stockName": "維田科技",
+    "themeTags": [
+      "AI伺服器"
+    ],
+    "updatedAt": "2026-09-13"
+  },
   "6576": {
     "confidence": 60,
     "fineIndustries": [
@@ -6136,6 +6439,42 @@
       "AIoT"
     ],
     "updatedAt": "2026-06-23"
+  },
+  "6683": {
+    "accuracy": "high",
+    "companyName": "雍智科技",
+    "confidence": 90,
+    "fineIndustries": [
+      "IC測試載板",
+      "半導體測試介面"
+    ],
+    "groupTags": [
+      "半導體測試",
+      "測試載板"
+    ],
+    "officialIndustry": "半導體業",
+    "productTags": [
+      "Load Board",
+      "Burn-in Board",
+      "Probe Card",
+      "IC Socket",
+      "測試載板"
+    ],
+    "source": "official_web",
+    "sourceNote": "依雍智科技公開資料整理；主要產品為 IC 測試載板、老化測試板、探針卡及相關半導體測試介面產品。",
+    "sourceUrls": [
+      "https://www.ksmt.com.tw",
+      "https://tw.finance.yahoo.com/quote/6683/profile"
+    ],
+    "stockId": "6683",
+    "stockName": "雍智科技",
+    "themeTags": [
+      "半導體測試",
+      "AI晶片測試",
+      "先進封測",
+      "晶圓測試"
+    ],
+    "updatedAt": "2026-09-13"
   },
   "6693": {
     "accuracy": "high",
@@ -6952,6 +7291,41 @@
     ],
     "updatedAt": "2026-06-23"
   },
+  "7631": {
+    "accuracy": "high",
+    "companyName": "聚賢研發",
+    "confidence": 95,
+    "fineIndustries": [
+      "半導體廠務工程",
+      "特殊氣體二次配"
+    ],
+    "groupTags": [
+      "廠務工程",
+      "半導體設備"
+    ],
+    "officialIndustry": "其他電子業",
+    "productTags": [
+      "特殊氣體管路",
+      "廠務供應系統工程",
+      "製程設備零組件",
+      "管路自動雷射焊接機"
+    ],
+    "source": "official_web",
+    "sourceNote": "依聚賢研發官網與 TWSE 新上市公司介紹整理；公司聚焦高科技廠房廠務供應系統工程、特殊氣體二次配及設備零組件開發。",
+    "sourceUrls": [
+      "https://www.geniideas.com.tw/tw/service",
+      "https://wwwc.twse.com.tw/market_insights/zh/detail/8a8216d6956a7ba201957dd77499004e"
+    ],
+    "stockId": "7631",
+    "stockName": "聚賢研發",
+    "themeTags": [
+      "半導體廠務",
+      "先進製程",
+      "海外擴廠",
+      "智慧製造"
+    ],
+    "updatedAt": "2026-09-13"
+  },
   "7713": {
     "confidence": 90,
     "fineIndustries": [
@@ -6976,6 +7350,30 @@
       "檢測試劑"
     ],
     "updatedAt": "2026-06-23"
+  },
+  "7743": {
+    "accuracy": "low",
+    "companyName": "金利食安科技",
+    "confidence": 65,
+    "fineIndustries": [
+      "食品"
+    ],
+    "groupTags": [
+      "食品"
+    ],
+    "officialIndustry": "食品工業",
+    "productTags": [
+      "食品"
+    ],
+    "source": "officialIndustryFallback",
+    "sourceNote": "依官方產業與現有公開欄位保守分類，後續更新仍會持續精修。",
+    "sourceUrls": [],
+    "stockId": "7743",
+    "stockName": "金利食安科技",
+    "themeTags": [
+      "食品"
+    ],
+    "updatedAt": "2026-09-13"
   },
   "8021": {
     "confidence": 90,
@@ -7287,28 +7685,28 @@
     "updatedAt": "2026-06-23"
   },
   "8111": {
+    "accuracy": "needs_review",
+    "companyName": "立碁電子工業",
     "confidence": 60,
     "fineIndustries": [
-      "光電",
-      "顯示"
+      "待細分"
     ],
     "groupTags": [
-      "光電"
+      "待細分"
     ],
     "officialIndustry": "光電業",
     "productTags": [
-      "面板",
-      "光學",
-      "LED",
-      "光電材料"
+      "光電業"
     ],
-    "source": "officialIndustryOnly",
-    "stockName": "立碁",
+    "source": "autoFallback",
+    "sourceNote": "現有公開欄位不足，先保留可辨識分類並於後續更新繼續精修。",
+    "sourceUrls": [],
+    "stockId": "8111",
+    "stockName": "立碁電子工業",
     "themeTags": [
-      "車載顯示",
-      "光學升級"
+      "光電業"
     ],
-    "updatedAt": "2026-06-23"
+    "updatedAt": "2026-09-13"
   },
   "8112": {
     "confidence": 90,
@@ -7437,6 +7835,30 @@
       "機構件"
     ],
     "updatedAt": "2026-06-23"
+  },
+  "8222": {
+    "accuracy": "low",
+    "companyName": "寶一科技",
+    "confidence": 65,
+    "fineIndustries": [
+      "電機機械"
+    ],
+    "groupTags": [
+      "電機機械"
+    ],
+    "officialIndustry": "電機機械",
+    "productTags": [
+      "機械設備"
+    ],
+    "source": "officialIndustryFallback",
+    "sourceNote": "依官方產業與現有公開欄位保守分類，後續更新仍會持續精修。",
+    "sourceUrls": [],
+    "stockId": "8222",
+    "stockName": "寶一科技",
+    "themeTags": [
+      "電機機械"
+    ],
+    "updatedAt": "2026-09-13"
   },
   "8255": {
     "confidence": 90,
@@ -7845,28 +8267,28 @@
     "updatedAt": "2026-06-23"
   },
   "8476": {
+    "accuracy": "needs_review",
+    "companyName": "台境企業",
     "confidence": 60,
     "fineIndustries": [
-      "綠能環保"
+      "待細分"
     ],
     "groupTags": [
-      "綠能環保"
+      "待細分"
     ],
     "officialIndustry": "綠能環保",
     "productTags": [
-      "太陽能",
-      "儲能",
-      "環保工程",
-      "資源回收"
+      "綠能環保"
     ],
-    "source": "officialIndustryOnly",
-    "stockName": "台境*",
+    "source": "autoFallback",
+    "sourceNote": "現有公開欄位不足，先保留可辨識分類並於後續更新繼續精修。",
+    "sourceUrls": [],
+    "stockId": "8476",
+    "stockName": "台境企業",
     "themeTags": [
-      "綠電",
-      "儲能",
-      "碳權"
+      "綠能環保"
     ],
-    "updatedAt": "2026-06-23"
+    "updatedAt": "2026-09-13"
   },
   "8478": {
     "accuracy": "high",
@@ -7982,6 +8404,42 @@
       "能源通路",
       "油價",
       "內需消費"
+    ],
+    "updatedAt": "2026-09-13"
+  },
+  "8936": {
+    "accuracy": "high",
+    "companyName": "國統國際",
+    "confidence": 95,
+    "fineIndustries": [
+      "水利管材",
+      "管線工程"
+    ],
+    "groupTags": [
+      "水利工程",
+      "管材"
+    ],
+    "officialIndustry": "其他",
+    "productTags": [
+      "鋼管",
+      "延性鑄鐵管",
+      "輸配水管線",
+      "推進管",
+      "海水淡化工程",
+      "淨污水處理"
+    ],
+    "source": "official_web",
+    "sourceNote": "依國統國際官網公司介紹整理；公司專事大口徑輸配水管線設計、製造及裝配，並擴及水處理與管線工程。",
+    "sourceUrls": [
+      "https://www.kti.com.tw/"
+    ],
+    "stockId": "8936",
+    "stockName": "國統國際",
+    "themeTags": [
+      "水資源",
+      "公共工程",
+      "基礎建設",
+      "水利工程"
     ],
     "updatedAt": "2026-09-13"
   },

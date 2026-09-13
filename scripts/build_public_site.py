@@ -4,7 +4,7 @@ import hashlib
 import shutil
 import json
 import re
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 
@@ -82,7 +82,47 @@ def validate_recent_cb_data(path: Path) -> None:
     rows = payload.get("rows")
     if not isinstance(rows, list) or not rows:
         raise ValueError(f"{path} has empty RECENT_CB_DATA rows")
+    validate_recent_cb_freshness(path, payload, rows)
     validate_new_cb_company_details(path, rows)
+
+
+def parse_payload_date(value: str | None) -> date | None:
+    if not value:
+        return None
+    text = str(value).strip()
+    try:
+        return datetime.fromisoformat(text).date()
+    except ValueError:
+        pass
+    try:
+        return date.fromisoformat(text[:10])
+    except ValueError:
+        return None
+
+
+def validate_recent_cb_freshness(path: Path, payload: dict, rows: list[dict]) -> None:
+    """Stop deployment when the generated CB list is stale or missing current issues."""
+    today = datetime.now(timezone(timedelta(hours=8))).date()
+    fetched_day = parse_payload_date(payload.get("fetchedAt"))
+    official_day = parse_payload_date(payload.get("officialDataDate"))
+    latest_issue_day = None
+    for row in rows:
+        row_day = parse_payload_date(row.get("issueDate") or row.get("listingDate"))
+        if row_day and (latest_issue_day is None or row_day > latest_issue_day):
+            latest_issue_day = row_day
+
+    freshness_day = max([day for day in (fetched_day, official_day) if day], default=None)
+    if freshness_day and (today - freshness_day).days > 7:
+        raise ValueError(
+            f"{path} is stale: latest fetch/official date is {freshness_day}, "
+            f"but today is {today}. Run scripts/update_cb_quotes.py before deployment."
+        )
+
+    if latest_issue_day and (today - latest_issue_day).days > 45:
+        raise ValueError(
+            f"{path} has no recent CB issues: latest issue/listing date is {latest_issue_day}. "
+            "The source fetch may have failed or reused an old file."
+        )
 
 
 def validate_new_cb_company_details(path: Path, rows: list[dict]) -> None:
